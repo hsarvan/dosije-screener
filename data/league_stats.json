@@ -45,21 +45,28 @@
   "n": 27,
   "r12": 0.037,
   "r21": 0.074,
-  "name": "DEN · 1. Division",
+  "name": "Danska · 1. Division",
   "at": "2026-11-09"
  },
  "9113": {
   "n": 25,
   "r12": 0.08,
   "r21": 0.12,
-  "name": "ROU · Liga II",
+  "name": "Rumunija · Liga II",
   "at": "2026-11-09"
  },
  "9125": {
   "n": 23,
   "r12": 0.0,
   "r21": 0.0,
-  "name": "COL · Primera B",
+  "name": "Kolumbija · Primera B",
+  "at": "2026-11-09"
+ },
+ "8944": {
+  "n": 26,
+  "r12": 0.0,
+  "r21": 0.038,
+  "name": "Engleska · National North & South",
   "at": "2026-11-09"
  }
 }
