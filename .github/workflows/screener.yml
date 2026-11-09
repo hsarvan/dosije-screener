@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["*.py", "config.json", ".github/workflows/*.yml"]
+    paths: ["*.py", "config.json", "backtest_request.json", ".github/workflows/*.yml"]
 permissions:
   contents: write
 concurrency:
@@ -14,7 +14,7 @@ concurrency:
 jobs:
   screen:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 200
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,6 +26,10 @@ jobs:
           path: .cache
           key: fotmob-${{ github.run_id }}
           restore-keys: fotmob-
+      - name: Provjera pravila na odigranim utakmicama
+        if: hashFiles('backtest_request.json') != ''
+        continue-on-error: true
+        run: python screener.py --backtest && git rm -q backtest_request.json
       - name: Pregled utakmica
         continue-on-error: true
         run: python screener.py

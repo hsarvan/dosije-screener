@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 """Dosije screener: besplatni FotMob podaci, bez ključa i bez dnevnog limita.
 
-Svako jutro uzme utakmice u narednih 24 h iz liga u config.json (tvoje lige prve,
-pa niži rangovi), pročita poluvremena iz zapisnika odigranih utakmica i primijeni
-tvoja PV/K pravila (preokreti 1/2 i 2/1). Izlaz:
-  candidates/YYYY-MM-DD.json  kandidati s gotovim dokumentima za Dosije
-  results/YYYY-MM-DD.json     poluvrijeme i kraj ranijih kandidata (za učenje)
-Keš: data/ht.json (poluvremena odigranih utakmica, raste svaki dan) i
-     .cache/ (rasporedi liga; čuva ga GitHub Actions cache).
+Svako jutro uzme utakmice u narednih 24 h iz liga u config.json (tvoje lige prve, pa niži
+rangovi), za obje ekipe pročita zadnjih 15 mečeva s poluvremenom (liga, kup, Evropa) i
+primijeni tvoja PV/K pravila. Izlaz:
+  candidates/DATUM.json      kandidati za 1/2 i 2/1 s gotovim dokumentima za Dosije
+  results/DATUM.json         poluvrijeme i kraj ranijih kandidata
+  data/samples/MJESEC.json   sve pregledane utakmice: koja su pravila okinula i kako je završilo
+  data/rule_stats.json       koliko koje pravilo pogađa; po tome se važu bodovi pravila
+  backtest/*.json            naknadna provjera na odigranim utakmicama (--backtest)
+Keš: data/ht.json (poluvremena odigranih utakmica) i .cache/ (rasporedi liga i ekipa).
 """
+import concurrent.futures as cf
 import datetime as dt
+import glob
 import gzip
 import json
 import os
@@ -38,17 +42,31 @@ COUNTRY = {
     "POR": "Portugal", "NED": "Holandija", "BEL": "Belgija", "GRE": "Grčka", "RUS": "Rusija",
     "POL": "Poljska", "CZE": "Češka", "BUL": "Bugarska", "JPN": "Japan", "KOR": "Južna Koreja",
     "THA": "Tajland", "BRA": "Brazil", "MEX": "Meksiko", "ARG": "Argentina",
-    "KSA": "Saudijska Arabija", "IRN": "Iran", "SCO": "Škotska", "AUT": "Austrija", "SUI": "Švicarska",
+    "KSA": "Saudijska Arabija", "IRN": "Iran", "AUT": "Austrija", "SUI": "Švicarska",
     "NOR": "Norveška", "SWE": "Švedska", "DEN": "Danska", "ROU": "Rumunija", "COL": "Kolumbija", "CHI": "Čile",
     "URU": "Urugvaj", "SVK": "Slovačka", "HUN": "Mađarska", "CYP": "Kipar", "IND": "Indija", "QAT": "Katar",
 }
 DROP = set("fc fk nk hnk ofk cf ca cd ac as sc sk afc cr se sv us ssc rc rcd ud sd club 1".split())
+CONT = re.compile(r"champions league|europa league|conference league|uefa|libertadores|sudamericana|recopa|"
+                  r"\bafc\b|\bcaf\b|concacaf|leagues cup|club world cup", re.I)
+FRIENDLY = re.compile(r"friendl", re.I)
+
+SELS = ("1/2", "2/1")
+EVW = {"lostLead": "ispušteno vodstvo s PV", "comeback": "okrenut minus s PV"}
+WIN = {"home5": "5 kod kuće", "away5": "5 u gostima", "last10": "zadnjih 10", "last15": "zadnjih 15"}
+RULES = {"R1": "Preokreti ekipe + isti preokret u međusobnom", "R2": "Ponovljeni preokret iz zadnjeg međusobnog",
+         "R3": "Zbir preokreta obje ekipe (zadnjih 10)", "R4": "Ekipa sklona preokretima (zadnjih 15)",
+         "R5": "Gust raspored: kup ili Evropa oko utakmice"}
+PRIOR = {1: 1.25, 2: 1.6, 3: 2.0}   # koliko puta češće od prosjeka očekujemo pogodak po jačini (prije podataka)
+PRIOR_N = 40                         # težina te pretpostavke, u utakmicama
 
 CFG = {}
-HT = {}          # matchId -> [htH, htA, ftH, ftA] (htH/htA None ako nema zapisnika) | "c" (otkazano)
+HT = {}          # matchId -> [htH, htA, ftH, ftA] (htH/htA None bez zapisnika) | "c" otkazano | "n" nema podataka
+MULT = {}        # pravilo -> faktor iz provjere na odigranim utakmicama
 NOTES = []
 STATS = {"calls": 0, "details": 0, "errors": 0}
 T0 = time.time()
+ABORT = []
 
 
 class Blocked(Exception):
@@ -74,6 +92,8 @@ def jsave(path, obj, pretty=False):
 
 def get(path, **params):
     """Jedan FotMob poziv s pauzom i ponovnim pokušajima. 404/greška -> None."""
+    if ABORT:
+        raise Blocked(ABORT[0])
     url = f"{FM}/{path}" + ("?" + urllib.parse.urlencode(params) if params else "")
     hdr = {"User-Agent": UA, "Accept": "application/json", "Accept-Encoding": "gzip",
            "Referer": WEB + "/", "Origin": WEB}
@@ -91,12 +111,23 @@ def get(path, **params):
             if e.code == 404:
                 return None
             if e.code in (401, 403):
-                raise Blocked(f"FotMob je odbio pristup ({e.code})")
+                ABORT.append(f"FotMob je odbio pristup ({e.code})")
+                raise Blocked(ABORT[0])
             time.sleep(8 * (attempt + 1))
         except (urllib.error.URLError, TimeoutError, ValueError, OSError):
             time.sleep(5 * (attempt + 1))
     STATS["errors"] += 1
     return None
+
+
+def pmap(fn, items):
+    """Nekoliko poziva istovremeno (config workers), rezultati istim redom."""
+    items = list(items)
+    w = max(1, int(CFG.get("workers", 3)))
+    if w == 1 or len(items) < 2:
+        return [fn(x) for x in items]
+    with cf.ThreadPoolExecutor(max_workers=w) as ex:
+        return list(ex.map(fn, items))
 
 
 def out_of_time():
@@ -128,6 +159,10 @@ def res(a, b):
     return "1" if a > b else ("2" if a < b else "X")
 
 
+def other(sel):
+    return "2/1" if sel == "1/2" else "1/2"
+
+
 def mid_of(m):
     for k in ("id", "matchId"):
         if m.get(k):
@@ -149,7 +184,11 @@ def as_int(x):
         return None
 
 
-# ---------- lige i rasporedi ----------
+def dana(n):
+    return "dan" if n == 1 else "dana"
+
+
+# ---------- lige, ekipe i rasporedi ----------
 def cached(name, max_age_h, fetch):
     path = os.path.join(CACHE, name)
     c = jload(path, None)
@@ -190,7 +229,8 @@ def resolve_leagues():
     return out
 
 
-def rows_of(fixtures):
+def rows_of(fixtures, lid=None):
+    """FotMob utakmice -> kratki redovi. lg/ln = takmičenje (iz rasporeda ekipe ili međusobnih)."""
     rows = []
     for m in fixtures or []:
         st = m.get("status") or {}
@@ -199,10 +239,12 @@ def rows_of(fixtures):
         t = st.get("utcTime") or (m.get("time") or {}).get("utcTime")
         if not mid or not h or not a or not t:
             continue
+        tour = m.get("tournament") or m.get("league") or {}
+        can = bool(st.get("cancelled") or m.get("cancelled"))
         rows.append({"id": mid, "t": t, "h": h, "hn": tname(m.get("home")), "a": a, "an": tname(m.get("away")),
-                     "fin": bool(st.get("finished") or m.get("finished")) and not (st.get("cancelled") or m.get("cancelled"))
-                     and not st.get("awarded"),
-                     "url": m.get("pageUrl")})
+                     "fin": bool(st.get("finished") or m.get("finished")) and not can and not st.get("awarded"),
+                     "can": can, "url": m.get("pageUrl"),
+                     "lg": lid or as_int(tour.get("leagueId") or tour.get("id")), "ln": tour.get("name")})
     return rows
 
 
@@ -213,16 +255,16 @@ def league_pool(lg):
         if not js:
             return None
         return {"seasons": js.get("allAvailableSeasons") or [],
-                "rows": rows_of((js.get("fixtures") or {}).get("allMatches"))}
-    cur = cached(f"lg_{lg['id']}.json", CFG.get("leagueRefreshHours", 18), fetch_cur) or {"seasons": [], "rows": []}
+                "rows": rows_of((js.get("fixtures") or {}).get("allMatches"), lg["id"])}
+    cur = cached(f"lgb_{lg['id']}.json", CFG.get("leagueRefreshHours", 18), fetch_cur) or {"seasons": [], "rows": []}
     rows = list(cur["rows"])
     if len(cur["seasons"]) > 1:
         prev_name = cur["seasons"][1]
 
         def fetch_prev():
             js = get("leagues", id=lg["id"], season=prev_name)
-            return {"rows": rows_of((js.get("fixtures") or {}).get("allMatches"))} if js else None
-        prev = cached(f"lg_{lg['id']}_{slug(prev_name)}.json", 24 * 120, fetch_prev)
+            return {"rows": rows_of((js.get("fixtures") or {}).get("allMatches"), lg["id"])} if js else None
+        prev = cached(f"lgb_{lg['id']}_{slug(prev_name)}.json", 24 * 120, fetch_prev)
         rows += (prev or {}).get("rows", [])
     seen, out = set(), []
     for r in rows:
@@ -233,13 +275,27 @@ def league_pool(lg):
 
 
 def team_rows(team_id):
+    """Raspored ekipe u svim takmičenjima ove sezone (liga, kup, Evropa), i odigrano i zakazano."""
+    if not CFG.get("teamFixtures", True):
+        return []
+
     def fetch():
         js = get("teams", id=team_id)
         if not js:
             return None
-        fx = ((js.get("fixtures") or {}).get("allFixtures") or {}).get("fixtures")
-        return rows_of(fx)
-    return cached(f"team_{team_id}.json", CFG.get("leagueRefreshHours", 18), fetch) or []
+        return rows_of(((js.get("fixtures") or {}).get("allFixtures") or {}).get("fixtures"))
+    return cached(f"teamb_{team_id}.json", CFG.get("leagueRefreshHours", 18), fetch) or []
+
+
+def team_matches(team, pool):
+    """Sve utakmice ekipe, najnovije prve: liga iz rasporeda lige + ostala takmičenja, bez prijateljskih."""
+    by = {m["id"]: m for m in pool if team in (m["h"], m["a"])}
+    for m in team_rows(team):
+        if team not in (m["h"], m["a"]) or FRIENDLY.search(m.get("ln") or ""):
+            continue
+        old = by.get(m["id"])
+        by[m["id"]] = {**old, "ln": m.get("ln") or old.get("ln")} if old else m
+    return sorted(by.values(), key=lambda m: m["t"], reverse=True)
 
 
 # ---------- poluvremena ----------
@@ -282,16 +338,26 @@ def parse_result(js):
 
 
 def fetch_ht(ids):
-    for mid in ids:
-        if str(mid) in HT:
-            continue
-        if STATS["details"] >= CFG.get("maxDetailCalls", 1500) or out_of_time():
-            return False
-        STATS["details"] += 1
-        r = parse_result(get("matchDetails", matchId=mid))
-        if r is not None:
-            HT[str(mid)] = r
-    return True
+    """Poluvremena odigranih utakmica u keš. Vraća False ako je ostalo nepovučenih (limit poziva ili vremena)."""
+    todo = [i for i in dict.fromkeys(ids) if str(i) not in HT]
+    room = CFG.get("maxDetailCalls", 3000) - STATS["details"]
+    if not todo:
+        return True
+    if room <= 0 or out_of_time():
+        return False
+    part = todo[:room]
+    STATS["details"] += len(part)
+
+    def one(mid):
+        if out_of_time():
+            return
+        js = get("matchDetails", matchId=mid)
+        if js is None:
+            return
+        r = parse_result(js)
+        HT[str(mid)] = r if r is not None else "n"
+    pmap(one, part)
+    return len(part) == len(todo) and not out_of_time()
 
 
 def htft_of(m):
@@ -313,18 +379,13 @@ def score_txt(m):
 
 
 def line(m):
-    r = HT.get(str(m["id"]))
-    d = m["t"][:10]
-    if not isinstance(r, list):
-        return f"{d} {m['hn']}–{m['an']}"
-    ht = f" (PV {r[0]}:{r[1]})" if r[0] is not None else ""
-    return f"{d} {m['hn']}–{m['an']} {r[2]}:{r[3]}{ht}"
+    return f"{m['t'][:10]} {m['hn']}–{m['an']} {score_txt(m)}".rstrip()
 
 
 # ---------- analiza (Harisova pravila) ----------
 def team_event(m, team):
     hf = htft_of(m)
-    if hf not in ("1/2", "2/1"):
+    if hf not in SELS:
         return None
     leader = m["h"] if hf == "1/2" else m["a"]
     return "lostLead" if leader == team else "comeback"
@@ -335,22 +396,8 @@ def as_pattern(m, home_team):
     return None if ev is None else ("1/2" if ev == "lostLead" else "2/1")
 
 
-def history(team, pool, before):
-    ms = [m for m in pool if m["fin"] and (m["h"] == team or m["a"] == team) and m["t"] < before]
-    return sorted(ms, key=lambda m: m["t"], reverse=True)
-
-
 def with_ht(ms, n):
     return [m for m in ms if htft_of(m)][:n]
-
-
-def sig(sel, s, by, note, url):
-    return {"cat": "K7", "dir": sel, "s": s, "conf": "V", "note": note[:90], "src": [url] if url else [], "by": by}
-
-
-SELS = ("1/2", "2/1")
-EVW = {"lostLead": "ispušteno vodstvo s PV", "comeback": "okrenut minus s PV"}
-WIN = {"home5": "5 kod kuće", "away5": "5 u gostima", "last10": "zadnjih 10"}
 
 
 def need_event(role, sel):
@@ -360,15 +407,62 @@ def need_event(role, sel):
     return "comeback" if sel == "1/2" else "lostLead"
 
 
+def sel_for(role, event):
+    return next(s for s in SELS if need_event(role, s) == event)
+
+
+def mult(rule, s):
+    return MULT.get(f"{rule}:{s}", MULT.get(rule, 1.0))
+
+
+def sig(rule, sel, s, by, note, url, both=False):
+    out = {"cat": "K7", "dir": sel, "s": s, "conf": "V", "note": note[:90], "src": [url] if url else [],
+           "by": by, "rule": rule}
+    if both:
+        out["both"] = True
+    return out
+
+
+def congestion(team, allm, f):
+    """Gust raspored: meč u drugom takmičenju (kup, Evropa) do 4 dana prije ili poslije, ili treći meč u 8 dana."""
+    out = {"rest": None, "boost": 0, "impact": 0, "note": None, "type": None}
+
+    def days(m):
+        t = parse_utc(m["t"])
+        return None if t is None else (t - f["utc"]).total_seconds() / 86400
+    past = [m for m in allm if m["fin"] and m["t"][:16] < f["t"]]
+    prev = past[0] if past else None
+    nxt = next((m for m in reversed(allm) if m["t"][:16] > f["t"] and not m.get("can") and m["id"] != f["id"]), None)
+    dp = days(prev) if prev else None
+    dn = days(nxt) if nxt else None
+    if dp is not None:
+        out["rest"] = round(-dp, 1)
+    notes = []
+    if prev and dp is not None and -dp <= 4.6 and prev.get("lg") and prev["lg"] != f["lid"]:
+        cont = bool(CONT.search(prev.get("ln") or ""))
+        n = max(1, round(-dp))
+        notes.append(f"{prev.get('ln') or 'drugo takmičenje'} prije {n} {dana(n)}")
+        out.update({"boost": 2 if cont else 1, "impact": 2 if cont else 1, "type": "guzva"})
+    if nxt and dn is not None and dn <= 4.6 and nxt.get("lg") and nxt["lg"] != f["lid"]:
+        cont = bool(CONT.search(nxt.get("ln") or ""))
+        n = max(1, round(dn))
+        notes.append(f"{nxt.get('ln') or 'drugo takmičenje'} za {n} {dana(n)}")
+        out.update({"boost": max(out["boost"], 1), "impact": max(out["impact"], 2 if cont else 1),
+                    "type": out["type"] or "rotacija"})
+    if not notes and sum(1 for m in past[:4] if (days(m) or -99) > -8.2) >= 2:
+        notes.append("treći meč u 8 dana")
+        out.update({"impact": 1, "type": "guzva"})
+    out["note"] = "; ".join(notes) or None
+    return out
+
+
 def analyse(fx, ctx):
     H, A = fx["h"], fx["a"]
     team = {"h": (H, fx["hn"]), "a": (A, fx["an"])}
-    win = {}
-    for r, (T, _) in team.items():
-        ms = ctx["hist"][T]
-        win[r] = {"home5": with_ht([m for m in ms if m["h"] == T], 5),
-                  "away5": with_ht([m for m in ms if m["a"] == T], 5),
-                  "last10": with_ht(ms, 10)}
+    h15 = {r: with_ht(ctx["hist"][team[r][0]], 15) for r in team}
+    win = {r: {"home5": [m for m in h15[r] if m["h"] == team[r][0]][:5],
+               "away5": [m for m in h15[r] if m["a"] == team[r][0]][:5],
+               "last10": h15[r][:10], "last15": h15[r]} for r in team}
     h2h = with_ht(ctx["h2h"], 8)
     # zadnja 2 međusobna na svakom od dva terena
     recent = sorted([m for m in h2h if m["h"] == H][:2] + [m for m in h2h if m["h"] == A][:2],
@@ -386,13 +480,14 @@ def analyse(fx, ctx):
     stats["n"]["h2h"] = len(h2h)
     url = fx.get("url")
     lr = ctx.get("league_rates") or {}
-    signals, ev = [], {}
+    signals = []
+    ev = {"role": {}, "h2h": {}, "prone": {}, "cong": {}}
     for sel in SELS:
         c = stats[sel]
-        # 1) Preokreti ekipe (domaćin ili gost, kod kuće ili u gostima) + isti preokret u jednom od
-        #    zadnjih međusobnih na bilo kojem terenu (proširen primjer Técnico U – Manta)
+        # R1) Preokreti ekipe (domaćin ili gost, kod kuće ili u gostima) + isti preokret u jednom od
+        #     zadnjih međusobnih na bilo kojem terenu (primjer Técnico U – Manta)
         cands = sorted(((c[r][w], r, w) for r in team for w in WIN if c[r][w] >= 2),
-                       key=lambda x: (-x[0], x[1] != "h", x[2] == "last10"))
+                       key=lambda x: (-x[0], x[1] != "h", list(WIN).index(x[2])))
         hit = next((m for m in recent if h2h_same(m, sel)), None)
         if cands and hit:
             k, r, w = cands[0]
@@ -400,17 +495,18 @@ def analyse(fx, ctx):
             note = f"{team[r][1]} {tail}"
             if len(note) > 90:
                 note = f"{'Domaćin' if r == 'h' else 'Gost'} {tail}"
-            signals.append(sig(sel, 3, "korisnik", note, url))
-        # 2) Ponovljeni preokret: zadnji međusobni završio s istom oznakom (1/2 ili 2/1) + preokret u zadnjem
-        #    meču jedne od ekipa (primjer Wadi Degla)
+            signals.append(sig("R1", sel, 3, "korisnik", note, url))
+            ev["h2h"][sel] = hit
+        # R2) Ponovljeni preokret: zadnji međusobni završio s istom oznakom (1/2 ili 2/1) + preokret u
+        #     zadnjem meču jedne od ekipa (primjer Wadi Degla – Kahraba)
         if h2h and htft_of(h2h[0]) == sel:
-            last = [(team[r][1], ctx["hist"][team[r][0]][0]) for r in team
-                    if ctx["hist"][team[r][0]] and team_event(ctx["hist"][team[r][0]][0], team[r][0])]
+            last = [(team[r][1], h15[r][0]) for r in team if h15[r] and team_event(h15[r][0], team[r][0])]
             if last:
-                signals.append(sig(sel, 1, "korisnik",
+                signals.append(sig("R2", sel, 1, "korisnik",
                                    f"Zadnji međusobni {htft_of(h2h[0])} ({dmy(h2h[0]['t'])}); "
                                    f"{last[0][0]} u zadnjem meču {htft_of(last[0][1])}", url))
-        # 3) Zbir preokreta obje ekipe u zadnjih 10 (+1 ako liga često ima taj preokret)
+                ev["h2h"].setdefault(sel, h2h[0])
+        # R3) Zbir preokreta obje ekipe u zadnjih 10 (+1 ako liga često ima taj preokret)
         th, ta = c["h"]["last10"], c["a"]["last10"]
         if th + ta >= 3:
             s = 2 if th + ta >= 5 else 1
@@ -418,51 +514,229 @@ def analyse(fx, ctx):
             extra = ""
             if rate is not None and lr.get("n", 0) >= 40 and rate >= 0.05:
                 s, extra = min(3, s + 1), f"; liga {round(rate * 100)}%"
-            signals.append(sig(sel, s, "web", f"Preokreti {sel} u zadnjih 10: {fx['hn']} {th}, {fx['an']} {ta}{extra}", url))
-        # dokazi za obrazloženje: po ekipi prozor s najviše preokreta (prvo ekipa iz pravila 1)
+            signals.append(sig("R3", sel, s, "web",
+                               f"Preokreti {sel} u zadnjih 10: {fx['hn']} {th}, {fx['an']} {ta}{extra}", url))
         lines = []
         order = [cands[0][1]] if cands else []
         order += [r for r in ("h", "a") if r not in order]
         for r in order:
-            best_w = max(WIN, key=lambda w: (c[r][w], w != "last10"))
+            best_w = max(WIN, key=lambda w: (c[r][w], -list(WIN).index(w)))
             if c[r][best_w]:
                 lines.append((r, best_w, hits(r, best_w, sel)[:2]))
-        ev[sel] = {"lines": lines, "h2h": hit}
-    pts = {sel: sum(8 * x["s"] for x in signals if x["dir"] == sel) for sel in SELS}
-    best = max(pts, key=pts.get)
-    score = pts[best]
+        ev["role"][sel] = lines
+    # R4) Ekipa sklona preokretima: bilo koji preokret (1/2 ili 2/1) u zadnjih 15 mečeva, svježi vrijede više
+    #     (primjer Torreense – União de Leiria: 3 u zadnjih 15, 2 u zadnja 3, zadnji meč preokret)
+    feat = {}
+    for r in ("h", "a"):
+        T, name = team[r]
+        revs = [(i, m, team_event(m, T)) for i, m in enumerate(h15[r]) if team_event(m, T)]
+        n3, n5, n10, n15 = (sum(1 for i, _, _ in revs if i < k) for k in (3, 5, 10, 15))
+        last = bool(revs) and revs[0][0] == 0
+        c_l = sum(1 for _, _, e in revs if e == "lostLead")
+        c_c = len(revs) - c_l
+        feat[r] = [n3, n5, n10, n15, int(last), c_l, c_c, len(h15[r])]
+        s = 0
+        if len(h15[r]) >= 6:
+            if n10 >= 2:
+                s = 1
+            if n15 >= 3 or n5 >= 2 or (last and n10 >= 2):
+                s = 2
+            if n3 >= 2 or n15 >= 4 or (last and (n15 >= 3 or n5 >= 2)):
+                s = 3
+        if not s:
+            continue
+        event = "lostLead" if c_l > c_c else ("comeback" if c_c > c_l else revs[0][2])
+        parts = [f"{n15} preokreta u zadnjih {len(h15[r])}"]
+        if n3 >= 2:
+            parts.append(f"{n3} u zadnja 3")
+        elif n5 >= 2:
+            parts.append(f"{n5} u zadnjih 5")
+        if last:
+            parts.append("zadnji meč preokret")
+        note = f"{name}: " + ", ".join(parts)
+        if len(note) > 90:
+            note = f"{'Domaćin' if r == 'h' else 'Gost'}: " + ", ".join(parts)
+        signals.append(sig("R4", sel_for(r, event), s, "korisnik", note, url, both=True))
+        ev["prone"][r] = [m for _, m, _ in revs[:3]]
+    # R5) Gust raspored (kup ili Evropa do 4 dana prije/poslije): umor i rotacija, ekipa lakše ispusti vodstvo.
+    #     Broji se samo uz neki drugi signal preokreta.
+    cong = ctx.get("cong") or {}
+    if signals:
+        for r in ("h", "a"):
+            cg = cong.get(team[r][0]) or {}
+            if cg.get("boost"):
+                note = f"{team[r][1]}: {cg['note']} (umor, rotacija)"
+                if len(note) > 90:
+                    note = f"{'Domaćin' if r == 'h' else 'Gost'}: {cg['note']} (umor, rotacija)"
+                signals.append(sig("R5", "1/2" if r == "h" else "2/1", cg["boost"], "korisnik", note, url))
+                ev["cong"][r] = cg["note"]
+    pts = {sel: 0.0 for sel in SELS}
+    for x in signals:
+        k = mult(x["rule"], x["s"])
+        pts[x["dir"]] += 8 * x["s"] * k
+        if x.get("both") and x["s"] >= 2:
+            pts[other(x["dir"])] += 8 * (x["s"] - 1) * k
+    best = max(SELS, key=lambda s: pts[s])
+    score = min(99, round(pts[best]))
+    alt = other(best) if round(pts[other(best)]) >= CFG.get("listMin", 8) else None
+    cand = {"sel": best, "score": score}
+    if alt:
+        cand["alt"] = alt
+    feat["x"] = [len(h2h), htft_of(h2h[0]) if h2h else None]
+    feat["c"] = [(cong.get(team[r][0]) or {}).get("rest") for r in ("h", "a")] + \
+                [(cong.get(team[r][0]) or {}).get("boost", 0) for r in ("h", "a")]
     return {
-        "signals": signals,
-        "htftTip": {"sel": best, "score": min(score, 99)} if score >= CFG.get("htftMin", 20) else None,
-        "score": score, "best": best if score else None, "stats": stats, "ev": ev,
+        "signals": signals, "cand": cand if score else None,
+        "htftTip": cand if score >= CFG.get("htftMin", 20) else None,
+        "score": score, "best": best if score else None, "pts": [round(pts[s], 1) for s in SELS],
+        "stats": stats, "ev": ev, "feat": feat, "cong": cong,
         "h2h": [line(m) for m in h2h[:6]],
-        "homeLast5": [line(m) for m in win["h"]["home5"]],
-        "awayLast5": [line(m) for m in win["a"]["away5"]],
+        "homeLast": [line(m) for m in h15["h"][:15]],
+        "awayLast": [line(m) for m in h15["a"][:15]],
     }
 
 
 def reasoning(fx, a):
-    """Kao Harisov opis: čiji preokreti (kod kuće ili u gostima), pa međusobni s istim preokretom."""
+    """Kao Harisov opis: čiji preokreti i kada, međusobni s istim preokretom, gust raspored."""
     if not a["signals"]:
         return None
     sel = a["best"]
-    e = a["ev"][sel]
+    e = a["ev"]
     name = {"h": fx["hn"], "a": fx["an"]}
     tid = {"h": fx["h"], "a": fx["a"]}
 
     def item(m, t):
         who = f"protiv {m['an']}" if m["h"] == t else f"{m['hn']}–{m['an']}"
         return f"{who} {score_txt(m)} {dmy(m['t'], False)}"
-    out = [f"{name[r]}: {EVW[need_event(r, sel)]} ({WIN[w]}) – " + "; ".join(item(m, tid[r]) for m in ms)
-           for r, w, ms in e["lines"]]
-    if e["h2h"]:
-        m = e["h2h"]
+    m = e["h2h"].get(sel)
+    shown = set()
+
+    def items(ms, t):
+        shown.update(x["id"] for x in ms)
+        return "; ".join(item(x, t) + (" (međusobni)" if m and x["id"] == m["id"] else "") for x in ms)
+    out = [f"{name[r]}, preokreti: " + items(e["prone"][r], tid[r]) for r in ("h", "a") if e["prone"].get(r)]
+    if not out:
+        out = [f"{name[r]}: {EVW[need_event(r, sel)]} ({WIN[w]}) – " + items(ms, tid[r])
+               for r, w, ms in e["role"].get(sel, [])]
+    if m and m["id"] not in shown:
         where = "kod domaćina" if m["h"] == fx["h"] else "kod gosta"
         out.append(f"Međusobni {dmy(m['t'])} {where}: {m['hn']}–{m['an']} {score_txt(m)}")
-    elif a["h2h"]:
-        out.append("Zadnji međusobni: " + a["h2h"][0])
+    out += [f"{name[r]}: {e['cong'][r]}" for r in ("h", "a") if e["cong"].get(r)]
     text = ". ".join(x.rstrip(".") for x in out)
-    return (text if len(text) <= 320 else text[:317].rstrip() + "…") + "."
+    return (text if len(text) <= 380 else text[:377].rstrip() + "…") + "."
+
+
+# ---------- uzorci i provjera pravila ----------
+def month_path(day):
+    return os.path.join(DATA, "samples", f"{day[:7]}.json")
+
+
+def save_samples(rows):
+    """rows: {fixtureId: uzorak}. Upis po mjesecima; postojeći ishod se ne briše."""
+    by = {}
+    for fid, s in rows.items():
+        by.setdefault(month_path(s["d"]), {})[str(fid)] = s
+    for path, new in by.items():
+        cur = jload(path, {})
+        for fid, s in new.items():
+            if s.get("o") is None and (cur.get(fid) or {}).get("o") is not None:
+                s = {**s, "o": cur[fid]["o"]}
+            cur[fid] = s
+        jsave(path, cur)
+
+
+def outcome_of(fid):
+    """'1/2', 'X/1' ... | 'void' | 'nd' (nema poluvremena) | None (još nema rezultata)."""
+    r = HT.get(str(fid))
+    if r is None:
+        return None
+    if r == "c":
+        return "void"
+    if not isinstance(r, list) or r[0] is None:
+        return "nd"
+    return res(r[0], r[1]) + "/" + res(r[2], r[3])
+
+
+def fill_outcomes(now):
+    """Ishod za sve ranije pregledane utakmice (ne samo kandidate), da pravila uče i iz promašenih."""
+    for path in sorted(glob.glob(os.path.join(DATA, "samples", "*.json")))[-2:]:
+        cur = jload(path, {})
+        todo = []
+        for fid, s in cur.items():
+            ko = parse_utc(s.get("t"))
+            if s.get("o") is None and ko and ko + dt.timedelta(hours=2, minutes=30) < now < ko + dt.timedelta(days=8):
+                todo.append(fid)
+        if not todo:
+            continue
+        for fid in todo:
+            if HT.get(fid) == "n":
+                del HT[fid]
+        fetch_ht(todo)
+        for fid in todo:
+            cur[fid]["o"] = outcome_of(fid)
+        jsave(path, cur)
+
+
+def calibrate():
+    """Iz svih uzoraka s ishodom: koliko često pogađa koje pravilo u odnosu na prosjek lige -> faktori bodova."""
+    rows = []
+    for path in sorted(glob.glob(os.path.join(DATA, "samples", "*.json"))):
+        rows += [s for s in jload(path, {}).values() if re.fullmatch(r"[12X]/[12X]", str(s.get("o") or ""))]
+    MULT.clear()
+    if not rows:
+        return None
+    n = len(rows)
+    glob_rate = {sel: sum(1 for s in rows if s["o"] == sel) / n for sel in SELS}
+    by_lg = {}
+    for s in rows:
+        c = by_lg.setdefault(s["lg"], {"n": 0, "1/2": 0, "2/1": 0})
+        c["n"] += 1
+        if s["o"] in SELS:
+            c[s["o"]] += 1
+
+    def base(lg, sel):
+        c = by_lg[lg]
+        return (c[sel] + 30 * glob_rate[sel]) / (c["n"] + 30)
+    agg = {}
+    for s in rows:
+        for rule, d, st in s.get("s") or []:
+            for key in (rule, f"{rule}:{st}"):
+                a = agg.setdefault(key, {"n": 0, "hits": 0, "any": 0, "exp": 0.0, "pri": 0.0})
+                b = base(s["lg"], d)
+                a["n"] += 1
+                a["hits"] += int(s["o"] == d)
+                a["any"] += int(s["o"] in SELS)
+                a["exp"] += b
+                a["pri"] += b * PRIOR[st]
+    rules = {}
+    for key, a in sorted(agg.items()):
+        b = a["exp"] / a["n"]
+        if b <= 0:
+            continue
+        prior = a["pri"] / a["n"]
+        est = (a["hits"] + PRIOR_N * prior) / (a["n"] + PRIOR_N)
+        k = round(min(1.6, max(0.4, est / prior)), 2) if a["n"] >= 40 else 1.0
+        rules[key] = {"n": a["n"], "hits": a["hits"], "any": a["any"], "rate": round(a["hits"] / a["n"], 4),
+                      "base": round(b, 4), "lift": round(a["hits"] / a["n"] / b, 2), "mult": k}
+        if a["n"] >= 40:
+            MULT[key] = k
+    stats = {"at": dt.datetime.now(UTC).isoformat(timespec="seconds"), "n": n,
+             "base": {sel: round(glob_rate[sel], 4) for sel in SELS}, "rules": rules}
+    jsave(os.path.join(DATA, "rule_stats.json"), stats, pretty=True)
+    return stats
+
+
+def rules_brief(stats):
+    """Kratka tabela za Dosije (meta/scanner.rules)."""
+    if not stats:
+        return None
+    out = []
+    for rid, name in RULES.items():
+        r = stats["rules"].get(rid)
+        if r:
+            out.append({"id": rid, "name": name, "n": r["n"], "hits": r["hits"], "any": r["any"],
+                        "base": r["base"], "lift": r["lift"], "mult": r["mult"]})
+    return {"n": stats["n"], "base": stats["base"], "at": stats["at"], "rules": out}
 
 
 # ---------- rezultati ranijih kandidata ----------
@@ -475,23 +749,25 @@ def settle(now):
             continue
         path = os.path.join(ROOT, "results", f"{d}.json")
         old = {m["fixtureId"]: m for m in jload(path, {"matches": []}).get("matches", [])}
-        changed = False
+        due = []
         for c in cand["matches"]:
             fid = c["fixtureId"]
-            if fid in old and old[fid]["status"] in ("FT", "NOHT", "VOID"):
-                continue
             ko = parse_utc(c.get("utc"))
-            if ko and now < ko + dt.timedelta(hours=2, minutes=30):
+            if (fid in old and old[fid]["status"] in ("FT", "NOHT", "VOID")) or \
+                    (ko and now < ko + dt.timedelta(hours=2, minutes=30)):
                 continue
+            due.append(c)
+        if not due:
+            continue
+        for c in due:
+            if HT.get(str(c["fixtureId"])) == "n":
+                del HT[str(c["fixtureId"])]
+        fetch_ht([c["fixtureId"] for c in due])
+        changed = False
+        for c in due:
+            fid = c["fixtureId"]
             r = HT.get(str(fid))
-            if r is None:
-                if STATS["details"] >= CFG.get("maxDetailCalls", 1500) + 200:
-                    break
-                STATS["details"] += 1
-                r = parse_result(get("matchDetails", matchId=fid))
-                if r is not None:
-                    HT[str(fid)] = r
-            if r is None:
+            if r is None or r == "n":
                 continue
             if r == "c":
                 row = {"status": "VOID", "ht": None, "ft": None, "htft": None}
@@ -507,11 +783,193 @@ def settle(now):
                          "matches": sorted(old.values(), key=lambda m: str(m.get("docId")))}, pretty=True)
 
 
-# ---------- glavni tok ----------
+# ---------- pregled ----------
+def fixtures_for(days, by_id, keep):
+    out = {}
+    for d in days:
+        js = get("matches", date=d.strftime("%Y%m%d"))
+        for lg in (js or {}).get("leagues", []):
+            lid = as_int(lg.get("primaryId")) or as_int(lg.get("id"))
+            if lid not in by_id:
+                continue
+            for m in lg.get("matches", []):
+                st = m.get("status") or {}
+                t = parse_utc(st.get("utcTime"))
+                if not t or not keep(st, t):
+                    continue
+                fid = as_int(m.get("id"))
+                h, a = as_int((m.get("home") or {}).get("id")), as_int((m.get("away") or {}).get("id"))
+                if fid and h and a:
+                    out[fid] = {"id": fid, "lid": lid, "utc": t, "t": t.strftime("%Y-%m-%dT%H:%M"),
+                                "h": h, "hn": tname(m.get("home")), "a": a, "an": tname(m.get("away")),
+                                "stage": lg.get("name")}
+    return out
+
+
+def league_rate(pool, before):
+    known = [htft_of(m) for m in pool if m["fin"] and m["t"] < before and str(m["id"]) in HT]
+    known = [x for x in known if x]
+    if not known:
+        return None
+    return {"n": len(known), "r12": round(known.count("1/2") / len(known), 3),
+            "r21": round(known.count("2/1") / len(known), 3)}
+
+
+def screen(fx_list, by_id, live):
+    """Istorija obje ekipe, međusobni, poluvremena i pravila za svaku utakmicu. -> ([(utakmica, analiza)], potpuno?)"""
+    pools = {lid: league_pool(by_id[lid]) for lid in dict.fromkeys(f["lid"] for f in fx_list)}
+    pmap(team_rows, dict.fromkeys(t for f in fx_list for t in (f["h"], f["a"])))
+
+    # zapisnik same utakmice: međusobni (sve sezone i takmičenja), stadion; kod provjere unazad i rezultat
+    def detail(f):
+        if out_of_time() or not CFG.get("fixtureH2H", True):
+            return None
+        js = get("matchDetails", matchId=f["id"])
+        if not js:
+            return None
+        content = js.get("content") or {}
+        hb = content.get("h2h") or {}
+        st = ((content.get("matchFacts") or {}).get("infoBox") or {}).get("Stadium")
+        return {"h2h": rows_of(hb.get("matches") if isinstance(hb, dict) else None),
+                "venue": st.get("name") if isinstance(st, dict) else None,
+                "res": None if live else parse_result(js)}
+    dets = pmap(detail, fx_list)
+    STATS["details"] += len(fx_list)
+    ctxs, tiers = {}, [[], [], []]
+    for f, det in zip(fx_list, dets):
+        pool = pools[f["lid"]]
+        row = next((r for r in pool if r["id"] == f["id"]), None)
+        f["url"] = WEB + row["url"] if row and row.get("url") else f"{WEB}/match/{f['id']}"
+        det = det or {}
+        if det.get("res") is not None:
+            HT[str(f["id"])] = det["res"]
+        allm = {t: team_matches(t, pool) for t in (f["h"], f["a"])}
+        hist = {t: [m for m in allm[t] if m["fin"] and m["t"][:16] < f["t"]][:18] for t in allm}
+        h2h = [m for m in allm[f["h"]] if m["fin"] and f["a"] in (m["h"], m["a"]) and m["t"][:16] < f["t"]]
+        h2h += [m for m in det.get("h2h") or []
+                if m["fin"] and {m["h"], m["a"]} == {f["h"], f["a"]} and m["t"][:16] < f["t"]]
+        f["venue"] = det.get("venue")
+        seen, h2u = set(), []
+        for m in sorted(h2h, key=lambda m: m["t"], reverse=True):
+            if m["id"] not in seen:
+                seen.add(m["id"])
+                h2u.append(m)
+        ctxs[f["id"]] = {"hist": hist, "h2h": h2u[:8], "cong": {t: congestion(t, allm[t], f) for t in allm}}
+        tiers[0] += [m["id"] for m in h2u[:6]]
+        tiers[1] += [m["id"] for t in hist for m in hist[t][:6]]
+        tiers[2] += [m["id"] for t in hist for m in hist[t][:17]]
+    # poluvremena: prvo međusobni, pa zadnjih 6, pa zadnjih 15 svake ekipe
+    complete = True
+    for ids in tiers:
+        complete = fetch_ht(ids) and complete
+    out = []
+    for f in fx_list:
+        ctx = {**ctxs[f["id"]], "league_rates": league_rate(pools[f["lid"]], f["t"])}
+        out.append((f, analyse(f, ctx)))
+    return out, pools, complete
+
+
+def sample_of(f, a, o=None, bt=False):
+    s = {"d": f["utc"].astimezone(TZ).date().isoformat(), "t": f["utc"].isoformat(timespec="minutes"),
+         "lg": f["lid"], "m": f"{f['hn']} – {f['an']}", "s": [[x["rule"], x["dir"], x["s"]] for x in a["signals"]],
+         "f": a["feat"], "p": a["pts"], "o": o}
+    if bt:
+        s["bt"] = 1
+    return s
+
+
+def make_doc(f, a, lg, now):
+    local = f["utc"].astimezone(TZ)
+    league = f"{COUNTRY.get(lg['cc'], lg['cc'])} · {lg['name']}"
+    warnings = []
+    for r, key in (("home", f["h"]), ("away", f["a"])):
+        cg = a["cong"].get(key) or {}
+        if cg.get("note"):
+            warnings.append({"team": r, "type": cg["type"] or "guzva", "note": cg["note"],
+                             "impact": cg["impact"] or 1, "src": [f["url"]]})
+    doc = {
+        "date": local.date().isoformat(), "kickoff": local.strftime("%H:%M"), "league": league,
+        "home": f["hn"], "away": f["an"], "pairId": "__".join(sorted([slug(f["hn"]), slug(f["an"])])),
+        "venue": f.get("venue"), "neutral": False, "signals": a["signals"], "warnings": warnings,
+        "tip": "PASS", "score": None, "htftTip": a["htftTip"], "cand": a["cand"], "reasoning": reasoning(f, a),
+        "odds": None, "htftOdds": None, "status": "pending", "fbPending": False,
+        "sources": [f["url"]], "createdAt": now.isoformat(timespec="seconds"),
+        "run": {"screener": True, "source": "fotmob", "fixtureId": f["id"]}, "fixtureId": f["id"],
+    }
+    return {"fixtureId": f["id"], "docId": f"{local.date().isoformat()}_{slug(f['hn'])}_{slug(f['an'])}",
+            "utc": f["utc"].isoformat(timespec="minutes"), "league": league, "stage": f.get("stage"),
+            "home": f["hn"], "away": f["an"], "score": a["score"], "cand": a["cand"], "htftTip": a["htftTip"],
+            "stats": a["stats"], "h2h": a["h2h"], "homeLast": a["homeLast"], "awayLast": a["awayLast"], "doc": doc}
+
+
+def run_backtest():
+    """Provjera unazad: za odigrane utakmice u periodu izračunaj šta bi pravila rekla prije početka i uporedi s ishodom."""
+    req = jload(os.path.join(ROOT, "backtest_request.json"), None) or {}
+    d0, d1 = dt.date.fromisoformat(req["from"]), dt.date.fromisoformat(req["to"])
+    CFG["maxMinutes"] = req.get("maxMinutes", 150)
+    CFG["maxDetailCalls"] = req.get("maxDetailCalls", 40000)
+    start = dt.datetime.combine(d0, dt.time(0), TZ).astimezone(UTC)
+    end = dt.datetime.combine(d1 + dt.timedelta(days=1), dt.time(0), TZ).astimezone(UTC)
+    leagues = resolve_leagues()
+    if req.get("leagues"):
+        leagues = [lg for lg in leagues if lg["id"] in set(req["leagues"])]
+    by_id = {lg["id"]: lg for lg in leagues}
+    days = [start.date() + dt.timedelta(days=i) for i in range((end.date() - start.date()).days + 1)]
+    fixtures = fixtures_for(days, by_id, lambda st, t: st.get("finished") and not st.get("cancelled")
+                            and not st.get("awarded") and start <= t < end)
+    fx_list = sorted(fixtures.values(), key=lambda f: f["utc"])
+    res_, _, complete = screen(fx_list, by_id, live=False)
+    name = f"{d0.isoformat()}_{d1.isoformat()}"
+    report = {"from": d0.isoformat(), "to": d1.isoformat(), "leagues": len(leagues), "fixtures": len(fx_list),
+              "complete": complete, "calls": STATS["calls"], "errors": STATS["errors"],
+              "minutes": round((time.time() - T0) / 60, 1)}
+    if not complete:
+        report["note"] = "Nisu povučena sva poluvremena (limit); pokreni ponovo, nastavlja odakle je stalo."
+        jsave(os.path.join(ROOT, "backtest", f"{name}.json"), report, pretty=True)
+        print(json.dumps(report, ensure_ascii=False))
+        return 3
+    rows, table = {}, []
+    for f, a in res_:
+        o = outcome_of(f["id"])
+        rows[f["id"]] = sample_of(f, a, o, bt=True)
+        lg = by_id[f["lid"]]
+        table.append({"d": rows[f["id"]]["d"], "lg": f"{lg['cc']} {lg['name']}", "m": rows[f["id"]]["m"], "o": o,
+                      "score": a["score"], "sel": a["best"], "alt": (a["cand"] or {}).get("alt"),
+                      "why": [x["note"] for x in a["signals"]], "txt": reasoning(f, a),
+                      "home": a["homeLast"] if req.get("verbose") else None,
+                      "away": a["awayLast"] if req.get("verbose") else None})
+    save_samples(rows)
+    ok = [t for t in table if re.fullmatch(r"[12X]/[12X]", str(t["o"] or ""))]
+
+    def band(lo, hi):
+        g = [t for t in ok if lo <= t["score"] < hi]
+        return {"n": len(g), "hitSel": sum(1 for t in g if t["o"] == t["sel"]),
+                "hitAlt": sum(1 for t in g if t["alt"] and t["o"] == t["alt"]),
+                "anyReversal": sum(1 for t in g if t["o"] in SELS)}
+    t_min, l_min = CFG.get("htftMin", 20), CFG.get("listMin", 8)
+    report.update({
+        "withOutcome": len(ok),
+        "reversals": {sel: sum(1 for t in ok if t["o"] == sel) for sel in SELS},
+        "bands": {"tips": band(t_min, 1000), "candidates": band(l_min, t_min), "rest": band(0, l_min),
+                  "strong": band(40, 1000)},
+        "rules": (calibrate() or {}).get("rules"),
+        "flagged": sorted([t for t in table if t["score"] >= l_min], key=lambda t: (-t["score"], t["d"]))[:400],
+        "missed": [t for t in ok if t["o"] in SELS and t["score"] < l_min][:400],
+    })
+    jsave(os.path.join(ROOT, "backtest", f"{name}.json"), report, pretty=True)
+    print(json.dumps({k: report[k] for k in report if k not in ("flagged", "missed")}, ensure_ascii=False))
+    return 0
+
+
 def main():
     global CFG, HT
     CFG = jload(os.path.join(ROOT, "config.json"), {})
     HT = jload(os.path.join(DATA, "ht.json"), {})
+    if "--backtest" in sys.argv:
+        try:
+            return run_backtest()
+        finally:
+            jsave(os.path.join(DATA, "ht.json"), HT)
     now = dt.datetime.now(UTC)
     today = now.astimezone(TZ).date().isoformat()
     end = now + dt.timedelta(hours=CFG.get("windowHours", 24))
@@ -520,130 +978,42 @@ def main():
     matches = []
     try:
         settle(now)
+        fill_outcomes(now)
+        report["rules"] = rules_brief(calibrate())
         leagues = resolve_leagues()
         by_id = {lg["id"]: lg for lg in leagues}
-
-        # utakmice u prozoru
         days = sorted({now.date(), end.date(), now.astimezone(TZ).date(), end.astimezone(TZ).date()})
-        fixtures = {}
-        for d in days:
-            js = get("matches", date=d.strftime("%Y%m%d"))
-            for lg in (js or {}).get("leagues", []):
-                lid = as_int(lg.get("primaryId")) or as_int(lg.get("id"))
-                if lid not in by_id:
-                    continue
-                for m in lg.get("matches", []):
-                    st = m.get("status") or {}
-                    t = parse_utc(st.get("utcTime"))
-                    if st.get("started") or st.get("finished") or st.get("cancelled") or not t or not (now <= t < end):
-                        continue
-                    fid = as_int(m.get("id"))
-                    h, a = as_int((m.get("home") or {}).get("id")), as_int((m.get("away") or {}).get("id"))
-                    if fid and h and a:
-                        fixtures[fid] = {"id": fid, "lid": lid, "utc": t, "t": t.strftime("%Y-%m-%dT%H:%M"),
-                                         "h": h, "hn": tname(m.get("home")), "a": a, "an": tname(m.get("away")),
-                                         "stage": lg.get("name")}
+        fixtures = fixtures_for(days, by_id, lambda st, t: not (st.get("started") or st.get("finished")
+                                                                 or st.get("cancelled")) and now <= t < end)
         fx_all = sorted(fixtures.values(), key=lambda f: (by_id[f["lid"]]["prio"], f["utc"]))
         fx_list = fx_all[: CFG.get("maxFixtures", 80)]
         report.update({"leagues": len(leagues), "fixturesSeen": len(fx_all), "analysed": len(fx_list)})
-
-        # rasporedi liga i istorija ekipa
-        pools, ctxs = {}, {}
-        for f in fx_list:
-            if f["lid"] not in pools:
-                pools[f["lid"]] = league_pool(by_id[f["lid"]])
-        tiers = [[], [], []]
-        for f in fx_list:
-            pool = pools[f["lid"]]
-            row = next((r for r in pool if r["id"] == f["id"]), None)
-            f["url"] = WEB + row["url"] if row and row.get("url") else f"{WEB}/match/{f['id']}"
-            hist = {}
-            for team in (f["h"], f["a"]):
-                hs = history(team, pool, f["t"])
-                if len(hs) < 6:
-                    extra = [r for r in team_rows(team) if r["id"] not in {x["id"] for x in hs}]
-                    hs = sorted(hs + [r for r in extra if r["fin"] and r["t"] < f["t"]
-                                      and team in (r["h"], r["a"])], key=lambda m: m["t"], reverse=True)
-                hist[team] = hs[:14]
-            h2h = [m for m in hist[f["h"]] if f["a"] in (m["h"], m["a"])]
-            h2h += [m for m in pool if m["fin"] and {m["h"], m["a"]} == {f["h"], f["a"]} and m["t"] < f["t"]]
-            # međusobni iz zapisnika same utakmice (sve sezone i takmičenja)
-            if CFG.get("fixtureH2H", True) and not out_of_time():
-                det = get("matchDetails", matchId=f["id"])
-                STATS["details"] += 1
-                hb = ((det or {}).get("content") or {}).get("h2h") or {}
-                if CFG.get("debug") and not os.path.exists(os.path.join(ROOT, "probe", "h2h_sample.json")):
-                    jsave(os.path.join(ROOT, "probe", "h2h_sample.json"),
-                          {"keys": sorted(hb.keys()) if isinstance(hb, dict) else str(type(hb)),
-                           "first": (hb.get("matches") or [None])[:2] if isinstance(hb, dict) else None,
-                           "infoBox": (((det or {}).get("content") or {}).get("matchFacts") or {}).get("infoBox")},
-                          pretty=True)
-                for m in rows_of(hb.get("matches") if isinstance(hb, dict) else None):
-                    if m["fin"] and {m["h"], m["a"]} == {f["h"], f["a"]} and m["t"] < f["t"]:
-                        h2h.append(m)
-                ib = ((((det or {}).get("content") or {}).get("matchFacts") or {}).get("infoBox") or {})
-                f["venue"] = ((ib.get("Stadium") or {}).get("name")) if isinstance(ib.get("Stadium"), dict) else None
-            seen, h2u = set(), []
-            for m in sorted(h2h, key=lambda m: m["t"], reverse=True):
-                if m["id"] not in seen:
-                    seen.add(m["id"])
-                    h2u.append(m)
-            ctxs[f["id"]] = {"hist": hist, "h2h": h2u[:8]}
-            tiers[0] += [m["id"] for m in h2u[:6]]
-            tiers[1] += [m["id"] for m in hist[f["h"]] if m["h"] == f["h"]][:6]
-            tiers[1] += [m["id"] for m in hist[f["a"]] if m["a"] == f["a"]][:6]
-            tiers[2] += [m["id"] for m in hist[f["h"]][:12] + hist[f["a"]][:12]]
-
-        # poluvremena: prvo međusobni, pa domaći/gostujući, pa zadnjih 10
-        complete = True
-        for ids in tiers:
-            complete = fetch_ht(list(dict.fromkeys(ids))) and complete
+        res_, pools, complete = screen(fx_list, by_id, live=True)
         if not complete:
-            NOTES.append("Dio poluvremena nije povučen (limit vremena); dopunit će se sutra.")
+            NOTES.append("Dio poluvremena nije povučen (limit); dopunit će se pri sljedećem pregledu.")
 
-        # stopa preokreta po ligi iz poznatih poluvremena
-        rates = {}
-        for lid, pool in pools.items():
-            known = [htft_of(m) for m in pool if m["fin"]]
-            known = [x for x in known if x]
-            if known:
-                rates[lid] = {"n": len(known), "r12": round(known.count("1/2") / len(known), 3),
-                              "r21": round(known.count("2/1") / len(known), 3)}
+        # udio preokreta po ligi iz poznatih poluvremena
         ls = jload(os.path.join(DATA, "league_stats.json"), {})
-        for lid, r in rates.items():
-            ls[str(lid)] = {**r, "name": f"{COUNTRY.get(by_id[lid]['cc'], by_id[lid]['cc'])} · {by_id[lid]['name']}",
-                            "at": today}
+        for lid, pool in pools.items():
+            r = league_rate(pool, "9999")
+            if r:
+                ls[str(lid)] = {**r, "name": f"{COUNTRY.get(by_id[lid]['cc'], by_id[lid]['cc'])} · {by_id[lid]['name']}",
+                                "at": today}
         jsave(os.path.join(DATA, "league_stats.json"), ls, pretty=True)
 
-        # analiza i dokumenti za Dosije
-        matches, screened = [], []
-        nominal = 0
-        for f in fx_list:
+        screened, rows, nominal = [], {}, 0
+        for f, a in res_:
             lg = by_id[f["lid"]]
-            ctx = {**ctxs[f["id"]], "league_rates": rates.get(f["lid"])}
-            a = analyse(f, ctx)
-            if a["stats"]["n"]["h"]["last10"] >= 5 and a["stats"]["n"]["a"]["last10"] >= 5:
+            if min(a["stats"]["n"][r]["last15"] for r in ("h", "a")) >= 8:
                 nominal += 1
+            rows[f["id"]] = sample_of(f, a)
+            c = a["cand"] or {}
             screened.append([f["utc"].astimezone(TZ).strftime("%d.%m. %H:%M"), f"{lg['cc']} {lg['name']}",
-                             f"{f['hn']} – {f['an']}", a["score"]])
-            if a["score"] < CFG.get("listMin", 8):
-                continue
-            local = f["utc"].astimezone(TZ)
-            league = f"{COUNTRY.get(lg['cc'], lg['cc'])} · {lg['name']}"
-            doc_id = f"{local.date().isoformat()}_{slug(f['hn'])}_{slug(f['an'])}"
-            doc = {
-                "date": local.date().isoformat(), "kickoff": local.strftime("%H:%M"), "league": league,
-                "home": f["hn"], "away": f["an"], "pairId": "__".join(sorted([slug(f["hn"]), slug(f["an"])])),
-                "venue": f.get("venue"), "neutral": False, "signals": a["signals"], "warnings": [],
-                "tip": "PASS", "score": None, "htftTip": a["htftTip"], "reasoning": reasoning(f, a),
-                "odds": None, "htftOdds": None, "status": "pending", "fbPending": False,
-                "sources": [f["url"]], "createdAt": now.isoformat(timespec="seconds"),
-                "run": {"screener": True, "source": "fotmob", "fixtureId": f["id"]}, "fixtureId": f["id"],
-            }
-            matches.append({"fixtureId": f["id"], "docId": doc_id, "utc": f["utc"].isoformat(timespec="minutes"),
-                            "league": league, "stage": f.get("stage"), "home": f["hn"], "away": f["an"],
-                            "score": a["score"], "htftTip": a["htftTip"], "stats": a["stats"], "h2h": a["h2h"],
-                            "homeLast5": a["homeLast5"], "awayLast5": a["awayLast5"], "doc": doc})
+                             f"{f['hn']} – {f['an']}", a["score"],
+                             (c.get("sel") or "") + (" · " + c["alt"] if c.get("alt") else "")])
+            if a["score"] >= CFG.get("listMin", 8):
+                matches.append(make_doc(f, a, lg, now))
+        save_samples(rows)
         matches.sort(key=lambda m: (-m["score"], m["utc"]))
         matches = matches[: CFG.get("listMax", 40)]
         report["screened"] = screened
@@ -663,7 +1033,7 @@ def main():
     new_ids = {m["fixtureId"] for m in matches}
     earlier = [m for m in jload(path, {}).get("matches", []) if m["fixtureId"] not in new_ids]
     jsave(path, {**report, "matches": matches + earlier}, pretty=True)
-    print(json.dumps(report, ensure_ascii=False))
+    print(json.dumps({k: v for k, v in report.items() if k != "screened"}, ensure_ascii=False))
     return 0
 
 

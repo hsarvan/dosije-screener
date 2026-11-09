@@ -52,6 +52,8 @@ def main():
         plan["scanner"] = {"lastRunAt": cand.get("generatedAt"), "fixturesSeen": cand.get("analysed", 0),
                            "candidates": cand.get("candidates", 0), "tips": tips, "leagues": cand.get("leagues", 0),
                            "window": win, "source": "screener", "notes": " ".join(notes)[:600]}
+        if cand.get("rules"):
+            plan["scanner"]["rules"] = cand["rules"]
 
     seen = set()
     stamp = now.isoformat(timespec="seconds")
@@ -81,8 +83,11 @@ def main():
     print(json.dumps({
         "today": today, "create": len(plan["create"]), "settle": len(plan["settle"]), "dates": plan["dates"],
         "tips": [f"{c['data']['home']} – {c['data']['away']} {c['data']['date']} {c['data']['kickoff']} "
-                 f"PV/K {c['data']['htftTip']['sel']} ({c['data']['htftTip']['score']})"
+                 f"PV/K {c['data']['htftTip']['sel']}"
+                 f"{' ili ' + c['data']['htftTip']['alt'] if c['data']['htftTip'].get('alt') else ''} "
+                 f"({c['data']['htftTip']['score']})"
                  for c in plan["create"] if c["data"].get("htftTip")],
+        "candidatesWithoutTip": sum(1 for c in plan["create"] if not c["data"].get("htftTip")),
         "scanner": bool(plan["scanner"]), "plan": "/tmp/dosije_plan.json"}, ensure_ascii=False, indent=1))
 
 

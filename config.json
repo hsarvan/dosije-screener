@@ -4,13 +4,14 @@
   "listMax": 40,
   "listMin": 8,
   "htftMin": 20,
-  "maxDetailCalls": 1500,
+  "maxDetailCalls": 3000,
   "maxMinutes": 40,
   "pause": 0.3,
+  "workers": 3,
   "leagueRefreshHours": 18,
   "settleDays": 4,
   "fixtureH2H": true,
-  "debug": false,
+  "teamFixtures": true,
   "leagues": [
     {
       "id": 113,
