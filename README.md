@@ -1,6 +1,6 @@
 # Dosije screener
 
-Svako jutro u 05:20 (po Sarajevu) pregleda utakmice u narednih 24 sata u ligama iz `config.json` i traži preokrete poluvrijeme/kraj (1/2, 2/1) po tvojim pravilima. Podaci su besplatni (FotMob), bez ključa i bez dnevnog limita.
+Svako jutro oko 05:00 (po Sarajevu) pregleda utakmice u narednih 24 sata u ligama iz `config.json` i traži preokrete poluvrijeme/kraj (1/2, 2/1) po tvojim pravilima. Podaci su besplatni (FotMob), bez ključa i bez dnevnog limita.
 
 ## Pravila
 - **Preokreti domaćina kod kuće** (tvoj primjer Técnico U – Manta): domaćin ima bar 2 ista preokreta u zadnjih 5 domaćih ili zadnjih 10 utakmica, a isti preokret je bio i u jednom od zadnja 2 međusobna na njegovom terenu. Jačina 3, dovoljno za PV/K prijedlog.
