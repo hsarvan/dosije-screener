@@ -59,6 +59,7 @@ RULES = {"R1": "Preokreti ekipe + isti preokret u međusobnom", "R2": "Ponovljen
          "R5": "Gust raspored: kup ili Evropa oko utakmice"}
 PRIOR = {1: 1.25, 2: 1.6, 3: 2.0}   # koliko puta češće od prosjeka očekujemo pogodak po jačini (prije podataka)
 PRIOR_N = 40                         # težina te pretpostavke, u utakmicama
+BOTH = {"R4"}                        # pravila koja traže preokret u bilo kojem smjeru (kandidat za 1/2 i 2/1)
 
 CFG = {}
 HT = {}          # matchId -> [htH, htA, ftH, ftA] (htH/htA None bez zapisnika) | "c" otkazano | "n" nema podataka
@@ -700,11 +701,14 @@ def calibrate():
     agg = {}
     for s in rows:
         for rule, d, st in s.get("s") or []:
+            # pogodak: tačan smjer; za pravila iz BOTH bilo koji preokret (pa je i prosjek zbir oba smjera)
+            b = base(s["lg"], d) + (base(s["lg"], other(d)) if rule in BOTH else 0)
+            hit = int(s["o"] in SELS) if rule in BOTH else int(s["o"] == d)
             for key in (rule, f"{rule}:{st}"):
-                a = agg.setdefault(key, {"n": 0, "hits": 0, "any": 0, "exp": 0.0, "pri": 0.0})
-                b = base(s["lg"], d)
+                a = agg.setdefault(key, {"n": 0, "hits": 0, "sel": 0, "any": 0, "exp": 0.0, "pri": 0.0})
                 a["n"] += 1
-                a["hits"] += int(s["o"] == d)
+                a["hits"] += hit
+                a["sel"] += int(s["o"] == d)
                 a["any"] += int(s["o"] in SELS)
                 a["exp"] += b
                 a["pri"] += b * PRIOR[st]
@@ -716,7 +720,8 @@ def calibrate():
         prior = a["pri"] / a["n"]
         est = (a["hits"] + PRIOR_N * prior) / (a["n"] + PRIOR_N)
         k = round(min(1.6, max(0.4, est / prior)), 2) if a["n"] >= 40 else 1.0
-        rules[key] = {"n": a["n"], "hits": a["hits"], "any": a["any"], "rate": round(a["hits"] / a["n"], 4),
+        rules[key] = {"n": a["n"], "hits": a["hits"], "sel": a["sel"], "any": a["any"],
+                      "rate": round(a["hits"] / a["n"], 4),
                       "base": round(b, 4), "lift": round(a["hits"] / a["n"] / b, 2), "mult": k}
         if a["n"] >= 40:
             MULT[key] = k
@@ -734,7 +739,8 @@ def rules_brief(stats):
     for rid, name in RULES.items():
         r = stats["rules"].get(rid)
         if r:
-            out.append({"id": rid, "name": name, "n": r["n"], "hits": r["hits"], "any": r["any"],
+            out.append({"id": rid, "name": name, "n": r["n"], "hits": r["hits"], "sel": r["sel"], "any": r["any"],
+                        "both": rid in BOTH,
                         "base": r["base"], "lift": r["lift"], "mult": r["mult"]})
     return {"n": stats["n"], "base": stats["base"], "at": stats["at"], "rules": out}
 
@@ -908,6 +914,9 @@ def run_backtest():
     d0, d1 = dt.date.fromisoformat(req["from"]), dt.date.fromisoformat(req["to"])
     CFG["maxMinutes"] = req.get("maxMinutes", 150)
     CFG["maxDetailCalls"] = req.get("maxDetailCalls", 40000)
+    for k in ("workers", "pause"):
+        if k in req:
+            CFG[k] = req[k]
     start = dt.datetime.combine(d0, dt.time(0), TZ).astimezone(UTC)
     end = dt.datetime.combine(d1 + dt.timedelta(days=1), dt.time(0), TZ).astimezone(UTC)
     leagues = resolve_leagues()
@@ -950,8 +959,8 @@ def run_backtest():
     report.update({
         "withOutcome": len(ok),
         "reversals": {sel: sum(1 for t in ok if t["o"] == sel) for sel in SELS},
-        "bands": {"tips": band(t_min, 1000), "candidates": band(l_min, t_min), "rest": band(0, l_min),
-                  "strong": band(40, 1000)},
+        "bands": {"tips": band(t_min, 1000), "candidates": band(l_min, t_min), "rest": band(0, l_min)},
+        "byScore": {f"{lo}-{hi - 1}": band(lo, hi) for lo, hi in ((8, 16), (16, 24), (24, 32), (32, 40), (40, 56), (56, 1000))},
         "rules": (calibrate() or {}).get("rules"),
         "flagged": sorted([t for t in table if t["score"] >= l_min], key=lambda t: (-t["score"], t["d"]))[:400],
         "missed": [t for t in ok if t["o"] in SELS and t["score"] < l_min][:400],
