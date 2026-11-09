@@ -3,8 +3,8 @@
 Svako jutro oko 05:00 (po Sarajevu) pregleda utakmice u narednih 24 sata u ligama iz `config.json` i traži preokrete poluvrijeme/kraj (1/2, 2/1) po tvojim pravilima. Podaci su besplatni (FotMob), bez ključa i bez dnevnog limita.
 
 ## Pravila
-- **Preokreti domaćina kod kuće** (tvoj primjer Técnico U – Manta): domaćin ima bar 2 ista preokreta u zadnjih 5 domaćih ili zadnjih 10 utakmica, a isti preokret je bio i u jednom od zadnja 2 međusobna na njegovom terenu. Jačina 3, dovoljno za PV/K prijedlog.
-- **Ponovljeni preokret** (primjer Wadi Degla – Kahraba): zadnji međusobni je završio preokretom, a jedna ekipa je imala preokret i u svom zadnjem meču. Jačina 1.
+- **Preokreti ekipe** (tvoj primjer Técnico U – Manta, proširen): domaćin ili gost ima bar 2 preokreta koja vode na isti današnji PV/K u zadnjih 5 kod kuće, zadnjih 5 u gostima ili zadnjih 10 utakmica (za 1/2: domaćin ispušta vodstvo s poluvremena ili gost okreće minus), a isti preokret je bio i u jednom od zadnja 2 međusobna na bilo kojem od dva terena. Jačina 3, dovoljno za PV/K prijedlog.
+- **Ponovljeni preokret** (primjer Wadi Degla – Kahraba): zadnji međusobni je završio preokretom 1/2 ili 2/1, a jedna ekipa je imala preokret i u svom zadnjem meču; očekuje se ista oznaka. Jačina 1.
 - **Zbir preokreta:** obje ekipe zajedno bar 3 ista preokreta u zadnjih 10. Jačina 1, od 5 jačina 2, plus 1 ako liga ima taj preokret u bar 5% utakmica.
 
 PV/K prijedlog dobije utakmica čiji signali zajedno daju bar 20 bodova (jačina × 8).

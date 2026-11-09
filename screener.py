@@ -43,7 +43,6 @@ COUNTRY = {
     "URU": "Urugvaj", "SVK": "Slovačka", "HUN": "Mađarska", "CYP": "Kipar", "IND": "Indija", "QAT": "Katar",
 }
 DROP = set("fc fk nk hnk ofk cf ca cd ac as sc sk afc cr se sv us ssc rc rcd ud sd club 1".split())
-WORD = {"1/2": "vodio na PV pa izgubio", "2/1": "gubio na PV pa pobijedio"}
 
 CFG = {}
 HT = {}          # matchId -> [htH, htA, ftH, ftA] (htH/htA None ako nema zapisnika) | "c" (otkazano)
@@ -349,102 +348,121 @@ def sig(sel, s, by, note, url):
     return {"cat": "K7", "dir": sel, "s": s, "conf": "V", "note": note[:90], "src": [url] if url else [], "by": by}
 
 
+SELS = ("1/2", "2/1")
+EVW = {"lostLead": "ispušteno vodstvo s PV", "comeback": "okrenut minus s PV"}
+WIN = {"home5": "5 kod kuće", "away5": "5 u gostima", "last10": "zadnjih 10"}
+
+
+def need_event(role, sel):
+    """Šta ekipa treba da uradi za današnji PV/K: domaćin 1/2 = ispusti vodstvo, gost 1/2 = okrene minus."""
+    if role == "h":
+        return "lostLead" if sel == "1/2" else "comeback"
+    return "comeback" if sel == "1/2" else "lostLead"
+
+
 def analyse(fx, ctx):
-    H, A, before = fx["h"], fx["a"], fx["t"]
-    hh, ah = ctx["hist"][H], ctx["hist"][A]
-    h10, a10 = with_ht(hh, 10), with_ht(ah, 10)
-    h_home5 = with_ht([m for m in hh if m["h"] == H], 5)
-    a_away5 = with_ht([m for m in ah if m["a"] == A], 5)
+    H, A = fx["h"], fx["a"]
+    team = {"h": (H, fx["hn"]), "a": (A, fx["an"])}
+    win = {}
+    for r, (T, _) in team.items():
+        ms = ctx["hist"][T]
+        win[r] = {"home5": with_ht([m for m in ms if m["h"] == T], 5),
+                  "away5": with_ht([m for m in ms if m["a"] == T], 5),
+                  "last10": with_ht(ms, 10)}
     h2h = with_ht(ctx["h2h"], 8)
-    venue2 = [m for m in h2h if m["h"] == H][:2]
+    # zadnja 2 međusobna na svakom od dva terena
+    recent = sorted([m for m in h2h if m["h"] == H][:2] + [m for m in h2h if m["h"] == A][:2],
+                    key=lambda m: m["t"], reverse=True)
 
-    def cnt(ms, team, ev):
-        return sum(1 for m in ms if team_event(m, team) == ev)
+    def h2h_same(m, sel):
+        # isti preokret po ulogama ekipa, ili ista oznaka kad je teren bio obrnut (opet domaćin vodi pa gubi)
+        return as_pattern(m, H) == sel or (m["h"] == A and htft_of(m) == sel)
 
-    stats = {
-        "1/2": {"hHome5": cnt(h_home5, H, "lostLead"), "h10": cnt(h10, H, "lostLead"),
-                "aAway5": cnt(a_away5, A, "comeback"), "a10": cnt(a10, A, "comeback")},
-        "2/1": {"hHome5": cnt(h_home5, H, "comeback"), "h10": cnt(h10, H, "comeback"),
-                "aAway5": cnt(a_away5, A, "lostLead"), "a10": cnt(a10, A, "lostLead")},
-        "n": {"h": len(h10), "a": len(a10), "hHome": len(h_home5), "aAway": len(a_away5), "h2h": len(h2h)},
-    }
+    def hits(r, w, sel):
+        return [m for m in win[r][w] if team_event(m, team[r][0]) == need_event(r, sel)]
+
+    stats = {sel: {r: {w: len(hits(r, w, sel)) for w in WIN} for r in team} for sel in SELS}
+    stats["n"] = {r: {w: len(win[r][w]) for w in WIN} for r in team}
+    stats["n"]["h2h"] = len(h2h)
     url = fx.get("url")
     lr = ctx.get("league_rates") or {}
-    signals = []
-    for sel in ("1/2", "2/1"):
+    signals, ev = [], {}
+    for sel in SELS:
         c = stats[sel]
-        # 1) Preokreti domaćina kod kuće + isti preokret u međusobnom na istom terenu (primjer Técnico U – Manta)
-        hit = next((m for m in venue2 if as_pattern(m, H) == sel), None)
-        if hit and (c["hHome5"] >= 2 or c["h10"] >= 2):
-            k, where = (c["hHome5"], "zadnjih 5") if c["hHome5"] >= 2 else (c["h10"], "zadnjih 10")
-            note = f"{fx['hn']} kod kuće {k}× {sel} ({where}); međusobni {dmy(hit['t'])} isto {sel}"
+        # 1) Preokreti ekipe (domaćin ili gost, kod kuće ili u gostima) + isti preokret u jednom od
+        #    zadnjih međusobnih na bilo kojem terenu (proširen primjer Técnico U – Manta)
+        cands = sorted(((c[r][w], r, w) for r in team for w in WIN if c[r][w] >= 2),
+                       key=lambda x: (-x[0], x[1] != "h", x[2] == "last10"))
+        hit = next((m for m in recent if h2h_same(m, sel)), None)
+        if cands and hit:
+            k, r, w = cands[0]
+            tail = f"{k}× {EVW[need_event(r, sel)]} ({WIN[w]}); međusobni {dmy(hit['t'])} {htft_of(hit)}"
+            note = f"{team[r][1]} {tail}"
             if len(note) > 90:
-                note = f"Domaćin kod kuće {k}× {sel} ({where}); međusobni {dmy(hit['t'])} isto {sel}"
+                note = f"{'Domaćin' if r == 'h' else 'Gost'} {tail}"
             signals.append(sig(sel, 3, "korisnik", note, url))
-        # 2) Ponovljeni preokret: zadnji međusobni preokret + preokret u zadnjem meču jedne od ekipa (primjer Wadi Degla)
-        if h2h and as_pattern(h2h[0], H) == sel:
-            last = [(fx["hn"], hh[0]) if hh and team_event(hh[0], H) else None,
-                    (fx["an"], ah[0]) if ah and team_event(ah[0], A) else None]
-            last = [x for x in last if x]
+        # 2) Ponovljeni preokret: zadnji međusobni završio s istom oznakom (1/2 ili 2/1) + preokret u zadnjem
+        #    meču jedne od ekipa (primjer Wadi Degla)
+        if h2h and htft_of(h2h[0]) == sel:
+            last = [(team[r][1], ctx["hist"][team[r][0]][0]) for r in team
+                    if ctx["hist"][team[r][0]] and team_event(ctx["hist"][team[r][0]][0], team[r][0])]
             if last:
                 signals.append(sig(sel, 1, "korisnik",
                                    f"Zadnji međusobni {htft_of(h2h[0])} ({dmy(h2h[0]['t'])}); "
                                    f"{last[0][0]} u zadnjem meču {htft_of(last[0][1])}", url))
         # 3) Zbir preokreta obje ekipe u zadnjih 10 (+1 ako liga često ima taj preokret)
-        total = c["h10"] + c["a10"]
-        if total >= 3:
-            s = 2 if total >= 5 else 1
+        th, ta = c["h"]["last10"], c["a"]["last10"]
+        if th + ta >= 3:
+            s = 2 if th + ta >= 5 else 1
             rate = lr.get("r12" if sel == "1/2" else "r21")
             extra = ""
             if rate is not None and lr.get("n", 0) >= 40 and rate >= 0.05:
                 s, extra = min(3, s + 1), f"; liga {round(rate * 100)}%"
-            signals.append(sig(sel, s, "web",
-                               f"Preokreti {sel} u zadnjih 10: {fx['hn']} {c['h10']}, {fx['an']} {c['a10']}{extra}", url))
-    ev = {}
-    for sel in ("1/2", "2/1"):
-        hev, aev = ("lostLead", "comeback") if sel == "1/2" else ("comeback", "lostLead")
-        home_hits = [m for m in h_home5 if team_event(m, H) == hev] or [m for m in h10 if team_event(m, H) == hev]
-        away_hits = [m for m in a_away5 if team_event(m, A) == aev] or [m for m in a10 if team_event(m, A) == aev]
-        ev[sel] = {"home": home_hits[:3], "away": away_hits[:2],
-                   "venue": next((m for m in venue2 if as_pattern(m, H) == sel), None)}
-    pts = {sel: sum(8 * x["s"] for x in signals if x["dir"] == sel) for sel in ("1/2", "2/1")}
+            signals.append(sig(sel, s, "web", f"Preokreti {sel} u zadnjih 10: {fx['hn']} {th}, {fx['an']} {ta}{extra}", url))
+        # dokazi za obrazloženje: po ekipi prozor s najviše preokreta (prvo ekipa iz pravila 1)
+        lines = []
+        order = [cands[0][1]] if cands else []
+        order += [r for r in ("h", "a") if r not in order]
+        for r in order:
+            best_w = max(WIN, key=lambda w: (c[r][w], w != "last10"))
+            if c[r][best_w]:
+                lines.append((r, best_w, hits(r, best_w, sel)[:2]))
+        ev[sel] = {"lines": lines, "h2h": hit}
+    pts = {sel: sum(8 * x["s"] for x in signals if x["dir"] == sel) for sel in SELS}
     best = max(pts, key=pts.get)
     score = pts[best]
     return {
         "signals": signals,
         "htftTip": {"sel": best, "score": min(score, 99)} if score >= CFG.get("htftMin", 20) else None,
         "score": score, "best": best if score else None, "stats": stats, "ev": ev,
-        "h2h": [line(m) for m in h2h[:6]],  # noqa: E501
-        "homeLast5": [line(m) for m in h_home5],
-        "awayLast5": [line(m) for m in a_away5],
+        "h2h": [line(m) for m in h2h[:6]],
+        "homeLast5": [line(m) for m in win["h"]["home5"]],
+        "awayLast5": [line(m) for m in win["a"]["away5"]],
     }
 
 
 def reasoning(fx, a):
-    """Dvije rečenice kao u Harisovom opisu: preokreti domaćina kod kuće, pa međusobni na tom terenu."""
+    """Kao Harisov opis: čiji preokreti (kod kuće ili u gostima), pa međusobni s istim preokretom."""
     if not a["signals"]:
         return None
     sel = a["best"]
     e = a["ev"][sel]
-    H, A = fx["h"], fx["a"]
+    name = {"h": fx["hn"], "a": fx["an"]}
+    tid = {"h": fx["h"], "a": fx["a"]}
 
-    def item(m, team):
-        # domaći meč ekipe: samo protivnik; inače cijeli par da se vidi ko je bio domaćin
-        who = m["an"] if m["h"] == team else f"{m['hn']}–{m['an']}"
+    def item(m, t):
+        who = f"protiv {m['an']}" if m["h"] == t else f"{m['hn']}–{m['an']}"
         return f"{who} {score_txt(m)} {dmy(m['t'], False)}"
-    out = []
-    if e["home"]:
-        at_home = all(m["h"] == H for m in e["home"])
-        out.append(f"{fx['hn']}{' kod kuće' if at_home else ''} {sel}: " + "; ".join(item(m, H) for m in e["home"]))
-    if e["away"]:
-        out.append(f"{fx['an']} isti preokret: " + "; ".join(f"{m['hn']}–{m['an']} {score_txt(m)} {dmy(m['t'], False)}"
-                                                           for m in e["away"]))
-    if e["venue"]:
-        out.append(f"Međusobni na ovom terenu {dmy(e['venue']['t'])}: {score_txt(e['venue'])}")
+    out = [f"{name[r]}: {EVW[need_event(r, sel)]} ({WIN[w]}) – " + "; ".join(item(m, tid[r]) for m in ms)
+           for r, w, ms in e["lines"]]
+    if e["h2h"]:
+        m = e["h2h"]
+        where = "kod domaćina" if m["h"] == fx["h"] else "kod gosta"
+        out.append(f"Međusobni {dmy(m['t'])} {where}: {m['hn']}–{m['an']} {score_txt(m)}")
     elif a["h2h"]:
         out.append("Zadnji međusobni: " + a["h2h"][0])
     text = ". ".join(x.rstrip(".") for x in out)
-    return (text if len(text) <= 300 else text[:297].rstrip() + "…") + "."
+    return (text if len(text) <= 320 else text[:317].rstrip() + "…") + "."
 
 
 # ---------- rezultati ranijih kandidata ----------
@@ -604,7 +622,7 @@ def main():
             lg = by_id[f["lid"]]
             ctx = {**ctxs[f["id"]], "league_rates": rates.get(f["lid"])}
             a = analyse(f, ctx)
-            if a["stats"]["n"]["h"] >= 5 and a["stats"]["n"]["a"] >= 5:
+            if a["stats"]["n"]["h"]["last10"] >= 5 and a["stats"]["n"]["a"]["last10"] >= 5:
                 nominal += 1
             screened.append([f["utc"].astimezone(TZ).strftime("%d.%m. %H:%M"), f"{lg['cc']} {lg['name']}",
                              f"{f['hn']} – {f['an']}", a["score"]])
