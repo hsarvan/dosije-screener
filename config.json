@@ -132,8 +132,9 @@
       "name": "Primera Federacion"
     },
     {
+      "id": 8970,
       "cc": "FRA",
-      "name": "National"
+      "name": "Ligue 3"
     },
     {
       "id": 185,
@@ -201,8 +202,9 @@
       "name": "Liga de Expansión MX"
     },
     {
+      "id": 8965,
       "cc": "ARG",
-      "name": "Primera Nacional"
+      "name": "Primera B Nacional"
     },
     {
       "id": 10721,
@@ -215,16 +217,9 @@
       "name": "Azadegan League"
     },
     {
-      "cc": "TUR",
-      "name": "2. Lig"
-    },
-    {
+      "id": 9138,
       "cc": "ESP",
-      "name": "Segunda Federacion"
-    },
-    {
-      "cc": "ITA",
-      "name": "Serie D"
+      "name": "Segunda Federación"
     },
     {
       "cc": "GER",
@@ -235,8 +230,9 @@
       "name": "J. League 3"
     },
     {
+      "id": 8971,
       "cc": "BRA",
-      "name": "Serie C"
+      "name": "Série C"
     },
     {
       "cc": "POL",
@@ -251,8 +247,9 @@
       "name": "Challenge League"
     },
     {
+      "id": 203,
       "cc": "NOR",
-      "name": "1. Divisjon"
+      "name": "OBOS-ligaen"
     },
     {
       "cc": "SWE",
@@ -267,51 +264,57 @@
       "name": "Liga II"
     },
     {
-      "cc": "SRB",
-      "name": "Prva Liga"
-    },
-    {
-      "cc": "CRO",
-      "name": "Prva NL"
-    },
-    {
+      "id": 8944,
       "cc": "ENG",
-      "name": "National League North"
-    },
-    {
-      "cc": "ENG",
-      "name": "National League South"
-    },
-    {
-      "cc": "CHN",
-      "name": "China League Two"
-    },
-    {
-      "cc": "VIE",
-      "name": "V.League 2"
-    },
-    {
-      "cc": "PER",
-      "name": "Liga 2"
+      "name": "National North & South"
     },
     {
       "cc": "COL",
       "name": "Primera B"
     },
     {
+      "id": 9126,
       "cc": "CHI",
-      "name": "Primera B"
+      "name": "Liga de Ascenso"
     },
     {
-      "cc": "ALG",
-      "name": "Ligue 2"
+      "id": 9213,
+      "cc": "ARG",
+      "name": "Primera B Metropolitana & Torneo Federal A"
     },
     {
-      "cc": "MAR",
-      "name": "Botola 2"
+      "id": 9122,
+      "cc": "URU",
+      "name": "Segunda Division"
     },
     {
-      "cc": "KSA",
+      "id": 9537,
+      "cc": "KOR",
+      "name": "K League 3"
+    },
+    {
+      "id": 8973,
+      "cc": "SVK",
+      "name": "2. Liga"
+    },
+    {
+      "id": 9117,
+      "cc": "HUN",
+      "name": "NB II"
+    },
+    {
+      "id": 9100,
+      "cc": "CYP",
+      "name": "2. Division"
+    },
+    {
+      "id": 8982,
+      "cc": "IND",
+      "name": "Indian Football League"
+    },
+    {
+      "id": 11030,
+      "cc": "QAT",
       "name": "Second Division"
     }
   ]

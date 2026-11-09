@@ -38,7 +38,9 @@ COUNTRY = {
     "POR": "Portugal", "NED": "Holandija", "BEL": "Belgija", "GRE": "Grčka", "RUS": "Rusija",
     "POL": "Poljska", "CZE": "Češka", "BUL": "Bugarska", "JPN": "Japan", "KOR": "Južna Koreja",
     "THA": "Tajland", "BRA": "Brazil", "MEX": "Meksiko", "ARG": "Argentina",
-    "KSA": "Saudijska Arabija", "IRN": "Iran",
+    "KSA": "Saudijska Arabija", "IRN": "Iran", "SCO": "Škotska", "AUT": "Austrija", "SUI": "Švicarska",
+    "NOR": "Norveška", "SWE": "Švedska", "DEN": "Danska", "ROU": "Rumunija", "COL": "Kolumbija", "CHI": "Čile",
+    "URU": "Urugvaj", "SVK": "Slovačka", "HUN": "Mađarska", "CYP": "Kipar", "IND": "Indija", "QAT": "Katar",
 }
 DROP = set("fc fk nk hnk ofk cf ca cd ac as sc sk afc cr se sv us ssc rc rcd ud sd club 1".split())
 WORD = {"1/2": "vodio na PV pa izgubio", "2/1": "gubio na PV pa pobijedio"}
