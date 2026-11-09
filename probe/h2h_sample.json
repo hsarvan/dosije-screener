@@ -1,0 +1,152 @@
+{
+ "keys": [
+  "matches",
+  "summary"
+ ],
+ "first": [
+  {
+   "time": {
+    "utcTime": "2026-06-02T00:00:00.000Z"
+   },
+   "matchUrl": "/matches/aurora-vs-universitario-de-vinto/5i4q5jkw#1000010887",
+   "league": {
+    "name": "Primera División",
+    "id": "144",
+    "pageUrl": "/leagues/144/overview/primera-division"
+   },
+   "home": {
+    "name": "Universitario de Vinto",
+    "id": "879029"
+   },
+   "status": {
+    "utcTime": "2026-06-02T00:00:00.000Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "awarded": false,
+    "scoreStr": "1 - 2",
+    "reason": {
+     "short": "FT",
+     "shortKey": "fulltime_short",
+     "long": "Full-Time",
+     "longKey": "finished"
+    }
+   },
+   "finished": false,
+   "away": {
+    "name": "Aurora",
+    "id": "49720"
+   }
+  },
+  {
+   "time": {
+    "utcTime": "2025-12-08T00:00:00.000Z"
+   },
+   "matchUrl": "/matches/aurora-vs-universitario-de-vinto/5i4q5jkw#5024102",
+   "league": {
+    "name": "Primera División",
+    "id": "144",
+    "pageUrl": "/leagues/144/overview/primera-division"
+   },
+   "home": {
+    "name": "Aurora",
+    "id": "49720"
+   },
+   "status": {
+    "utcTime": "2025-12-08T00:00:00.000Z",
+    "finished": true,
+    "started": true,
+    "cancelled": false,
+    "awarded": false,
+    "scoreStr": "2 - 0",
+    "reason": {
+     "short": "FT",
+     "shortKey": "fulltime_short",
+     "long": "Full-Time",
+     "longKey": "finished"
+    }
+   },
+   "finished": false,
+   "away": {
+    "name": "Universitario de Vinto",
+    "id": "879029"
+   }
+  }
+ ],
+ "infoBox": {
+  "legInfo": null,
+  "Match Date": {
+   "utcTime": "2026-11-10T00:30:00.000Z",
+   "isDateCorrect": true
+  },
+  "Tournament": {
+   "id": 144,
+   "parentLeagueId": 144,
+   "link": "/leagues/144/overview/primera-division",
+   "leagueName": "Primera División",
+   "roundName": "25",
+   "round": "25"
+  },
+  "Stadium": {
+   "name": "Estadio Félix Capriles",
+   "city": "Cochabamba",
+   "country": "Bolivia",
+   "lat": -17.379212678,
+   "long": -66.161690354,
+   "capacity": 38530,
+   "surface": "grass"
+  },
+  "Referee": {
+   "imgUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/bol.png",
+   "text": "Luis Miguel Villarroel",
+   "countryCode": "BOL",
+   "country": "Bolivia",
+   "id": 1001079730,
+   "leagueId": 144,
+   "leagueName": "Primera División",
+   "stats": [
+    {
+     "type": "matches",
+     "value": 24,
+     "valueType": "total"
+    },
+    {
+     "type": "yellowCards",
+     "value": 5.92,
+     "valueType": "perMatch",
+     "average": 5.71,
+     "total": 142,
+     "averageType": "average",
+     "fillPercentage": 53.77,
+     "averagePercentage": 50
+    },
+    {
+     "type": "redCards",
+     "value": 8,
+     "valueType": "total"
+    },
+    {
+     "type": "unknown",
+     "value": 8,
+     "valueType": "total"
+    },
+    {
+     "type": "penalties",
+     "value": 18,
+     "valueType": "total"
+    },
+    {
+     "type": "fouls",
+     "value": 24.71,
+     "valueType": "perMatch",
+     "average": 24.28,
+     "total": 593,
+     "averageType": "average",
+     "fillPercentage": 52.6,
+     "averagePercentage": 50
+    }
+   ]
+  },
+  "Attendance": null
+ }
+}
