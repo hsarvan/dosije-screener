@@ -1,9 +1,9 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-09T14:22:31+00:00",
+ "generatedAt": "2026-11-09T14:23:27+00:00",
  "window": [
-  "2026-11-09T14:22+00:00",
-  "2026-11-10T14:22+00:00"
+  "2026-11-09T14:23+00:00",
+  "2026-11-10T14:23+00:00"
  ],
  "leagues": 64,
  "fixturesSeen": 15,
@@ -202,7 +202,7 @@
     "sources": [
      "https://www.fotmob.com/matches/tecnico-universitario-vs-manta/hhsui6m#1000022079"
     ],
-    "createdAt": "2026-11-09T14:22:31+00:00",
+    "createdAt": "2026-11-09T14:23:27+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -291,7 +291,7 @@
     "sources": [
      "https://www.fotmob.com/matches/ramnicu-valcea-vs-cs-dinamo-bucuresti/oww9v2e0#5976952"
     ],
-    "createdAt": "2026-11-09T14:22:31+00:00",
+    "createdAt": "2026-11-09T14:23:27+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
