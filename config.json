@@ -10,49 +10,309 @@
   "leagueRefreshHours": 18,
   "settleDays": 4,
   "fixtureH2H": true,
-  "debug": true,
+  "debug": false,
   "leagues": [
-    {"id": 113, "cc": "AUS", "name": "A-League"},
-    {"id": 120, "cc": "CHN", "name": "Super League"},
-    {"id": 8983, "cc": "IDN", "name": "Super League"},
-    {"id": 144, "cc": "BOL", "name": "Primera Division"},
-    {"id": 130, "cc": "USA", "name": "MLS"},
-    {"id": 71, "cc": "TUR", "name": "Süper Lig"},
-    {"id": 118, "cc": "ARM", "name": "Premier League"},
-    {"id": 246, "cc": "ECU", "name": "Serie A"},
-    {"id": 519, "cc": "EGY", "name": "Premier League"},
-    {"id": 8938, "cc": "AUS", "name": "Australia Championship"},
-    {"id": 9137, "cc": "CHN", "name": "China League One"},
-    {"id": 10056, "cc": "IDN", "name": "Liga 2"},
-    {"id": 165, "cc": "TUR", "name": "1. Lig"},
-    {"id": 8972, "cc": "USA", "name": "USL Championship"},
-    {"id": 9296, "cc": "USA", "name": "USL League One"},
-    {"id": 10282, "cc": "USA", "name": "MLS Next Pro"},
-    {"cc": "ENG", "name": "League One"},
-    {"cc": "ENG", "name": "League Two"},
-    {"cc": "ENG", "name": "National League"},
-    {"cc": "SCO", "name": "Championship"},
-    {"cc": "SCO", "name": "League One"},
-    {"cc": "SCO", "name": "League Two"},
-    {"id": 208, "cc": "GER", "name": "3. Liga"},
-    {"id": 147, "cc": "ITA", "name": "Serie C"},
-    {"id": 8968, "cc": "ESP", "name": "Primera Federacion"},
-    {"cc": "FRA", "name": "National"},
-    {"id": 185, "cc": "POR", "name": "Liga Portugal 2"},
-    {"id": 111, "cc": "NED", "name": "Eerste Divisie"},
-    {"id": 264, "cc": "BEL", "name": "First Division B"},
-    {"id": 8815, "cc": "GRE", "name": "Super League 2"},
-    {"id": 338, "cc": "RUS", "name": "First League"},
-    {"id": 197, "cc": "POL", "name": "I Liga"},
-    {"id": 253, "cc": "CZE", "name": "FNL"},
-    {"id": 9096, "cc": "BUL", "name": "Second Professional League"},
-    {"id": 8974, "cc": "JPN", "name": "J. League 2"},
-    {"id": 9116, "cc": "KOR", "name": "K League 2"},
-    {"id": 9498, "cc": "THA", "name": "Thai League 2"},
-    {"id": 8814, "cc": "BRA", "name": "Série B"},
-    {"id": 8976, "cc": "MEX", "name": "Liga de Expansión MX"},
-    {"cc": "ARG", "name": "Primera Nacional"},
-    {"id": 10721, "cc": "KSA", "name": "Saudi First Division"},
-    {"id": 9372, "cc": "IRN", "name": "Azadegan League"}
+    {
+      "id": 113,
+      "cc": "AUS",
+      "name": "A-League"
+    },
+    {
+      "id": 120,
+      "cc": "CHN",
+      "name": "Super League"
+    },
+    {
+      "id": 8983,
+      "cc": "IDN",
+      "name": "Super League"
+    },
+    {
+      "id": 144,
+      "cc": "BOL",
+      "name": "Primera Division"
+    },
+    {
+      "id": 130,
+      "cc": "USA",
+      "name": "MLS"
+    },
+    {
+      "id": 71,
+      "cc": "TUR",
+      "name": "Süper Lig"
+    },
+    {
+      "id": 118,
+      "cc": "ARM",
+      "name": "Premier League"
+    },
+    {
+      "id": 246,
+      "cc": "ECU",
+      "name": "Serie A"
+    },
+    {
+      "id": 519,
+      "cc": "EGY",
+      "name": "Premier League"
+    },
+    {
+      "id": 8938,
+      "cc": "AUS",
+      "name": "Australia Championship"
+    },
+    {
+      "id": 9137,
+      "cc": "CHN",
+      "name": "China League One"
+    },
+    {
+      "id": 10056,
+      "cc": "IDN",
+      "name": "Liga 2"
+    },
+    {
+      "id": 165,
+      "cc": "TUR",
+      "name": "1. Lig"
+    },
+    {
+      "id": 8972,
+      "cc": "USA",
+      "name": "USL Championship"
+    },
+    {
+      "id": 9296,
+      "cc": "USA",
+      "name": "USL League One"
+    },
+    {
+      "id": 10282,
+      "cc": "USA",
+      "name": "MLS Next Pro"
+    },
+    {
+      "cc": "ENG",
+      "name": "League One"
+    },
+    {
+      "cc": "ENG",
+      "name": "League Two"
+    },
+    {
+      "cc": "ENG",
+      "name": "National League"
+    },
+    {
+      "cc": "SCO",
+      "name": "Championship"
+    },
+    {
+      "cc": "SCO",
+      "name": "League One"
+    },
+    {
+      "cc": "SCO",
+      "name": "League Two"
+    },
+    {
+      "id": 208,
+      "cc": "GER",
+      "name": "3. Liga"
+    },
+    {
+      "id": 147,
+      "cc": "ITA",
+      "name": "Serie C"
+    },
+    {
+      "id": 8968,
+      "cc": "ESP",
+      "name": "Primera Federacion"
+    },
+    {
+      "cc": "FRA",
+      "name": "National"
+    },
+    {
+      "id": 185,
+      "cc": "POR",
+      "name": "Liga Portugal 2"
+    },
+    {
+      "id": 111,
+      "cc": "NED",
+      "name": "Eerste Divisie"
+    },
+    {
+      "id": 264,
+      "cc": "BEL",
+      "name": "First Division B"
+    },
+    {
+      "id": 8815,
+      "cc": "GRE",
+      "name": "Super League 2"
+    },
+    {
+      "id": 338,
+      "cc": "RUS",
+      "name": "First League"
+    },
+    {
+      "id": 197,
+      "cc": "POL",
+      "name": "I Liga"
+    },
+    {
+      "id": 253,
+      "cc": "CZE",
+      "name": "FNL"
+    },
+    {
+      "id": 9096,
+      "cc": "BUL",
+      "name": "Second Professional League"
+    },
+    {
+      "id": 8974,
+      "cc": "JPN",
+      "name": "J. League 2"
+    },
+    {
+      "id": 9116,
+      "cc": "KOR",
+      "name": "K League 2"
+    },
+    {
+      "id": 9498,
+      "cc": "THA",
+      "name": "Thai League 2"
+    },
+    {
+      "id": 8814,
+      "cc": "BRA",
+      "name": "Série B"
+    },
+    {
+      "id": 8976,
+      "cc": "MEX",
+      "name": "Liga de Expansión MX"
+    },
+    {
+      "cc": "ARG",
+      "name": "Primera Nacional"
+    },
+    {
+      "id": 10721,
+      "cc": "KSA",
+      "name": "Saudi First Division"
+    },
+    {
+      "id": 9372,
+      "cc": "IRN",
+      "name": "Azadegan League"
+    },
+    {
+      "cc": "TUR",
+      "name": "2. Lig"
+    },
+    {
+      "cc": "ESP",
+      "name": "Segunda Federacion"
+    },
+    {
+      "cc": "ITA",
+      "name": "Serie D"
+    },
+    {
+      "cc": "GER",
+      "name": "Regionalliga"
+    },
+    {
+      "cc": "JPN",
+      "name": "J. League 3"
+    },
+    {
+      "cc": "BRA",
+      "name": "Serie C"
+    },
+    {
+      "cc": "POL",
+      "name": "II Liga"
+    },
+    {
+      "cc": "AUT",
+      "name": "2. Liga"
+    },
+    {
+      "cc": "SUI",
+      "name": "Challenge League"
+    },
+    {
+      "cc": "NOR",
+      "name": "1. Divisjon"
+    },
+    {
+      "cc": "SWE",
+      "name": "Superettan"
+    },
+    {
+      "cc": "DEN",
+      "name": "1. Division"
+    },
+    {
+      "cc": "ROU",
+      "name": "Liga II"
+    },
+    {
+      "cc": "SRB",
+      "name": "Prva Liga"
+    },
+    {
+      "cc": "CRO",
+      "name": "Prva NL"
+    },
+    {
+      "cc": "ENG",
+      "name": "National League North"
+    },
+    {
+      "cc": "ENG",
+      "name": "National League South"
+    },
+    {
+      "cc": "CHN",
+      "name": "China League Two"
+    },
+    {
+      "cc": "VIE",
+      "name": "V.League 2"
+    },
+    {
+      "cc": "PER",
+      "name": "Liga 2"
+    },
+    {
+      "cc": "COL",
+      "name": "Primera B"
+    },
+    {
+      "cc": "CHI",
+      "name": "Primera B"
+    },
+    {
+      "cc": "ALG",
+      "name": "Ligue 2"
+    },
+    {
+      "cc": "MAR",
+      "name": "Botola 2"
+    },
+    {
+      "cc": "KSA",
+      "name": "Second Division"
+    }
   ]
 }

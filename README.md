@@ -14,6 +14,8 @@ PV/K prijedlog dobije utakmica čiji signali zajedno daju bar 20 bodova (jačina
 - `results/DATUM.json`: poluvrijeme i kraj ranijih kandidata, za učenje.
 - `data/ht.json`: poluvremena odigranih utakmica (keš koji raste svaki dan).
 - `data/league_stats.json`: udio preokreta 1/2 i 2/1 po ligi.
+- `data/available_leagues.json`: sve FotMob lige po državama (za dodavanje u `config.json`).
+- `dosije_import.py`: od kandidata i rezultata pravi plan upisa u Dosije (koristi ga jutarnji zadatak u 06:43).
 
 ## Lige
 Redoslijed u `config.json` je prioritet: prvo tvoje lige, pa niži rangovi. Dnevno se analizira do 80 utakmica, a u Dosije ide do 40 najboljih kandidata. Ligu dodaješ sa `{"cc": "ENG", "name": "League Two"}` (kod države i naziv kao na FotMobu) ili s njenim FotMob ID-jem. Svaka izmjena `config.json` odmah pokreće novi pregled.
