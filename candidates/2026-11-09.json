@@ -1,114 +1,587 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-09T14:32:55+00:00",
+ "generatedAt": "2026-11-09T22:25:40+00:00",
  "window": [
-  "2026-11-09T14:32+00:00",
-  "2026-11-10T14:32+00:00"
+  "2026-11-09T22:25+00:00",
+  "2026-11-10T22:25+00:00"
  ],
+ "rules": {
+  "n": 24,
+  "base": {
+   "1/2": 0.0417,
+   "2/1": 0.0
+  },
+  "at": "2026-11-09T22:25:40+00:00",
+  "rules": [
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 2,
+    "hits": 1,
+    "any": 1,
+    "base": 0.0558,
+    "lift": 8.96,
+    "mult": 1.0
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 5,
+    "hits": 1,
+    "any": 1,
+    "base": 0.0304,
+    "lift": 6.58,
+    "mult": 1.0
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 1,
+    "hits": 1,
+    "any": 1,
+    "base": 0.0726,
+    "lift": 13.78,
+    "mult": 1.0
+   }
+  ]
+ },
  "leagues": 64,
- "fixturesSeen": 15,
- "analysed": 15,
+ "fixturesSeen": 9,
+ "analysed": 9,
  "screened": [
   [
    "10.11. 01:30",
    "BOL Primera Division",
    "Aurora – Universitario de Vinto",
-   0
+   24,
+   "2/1"
   ],
   [
-   "09.11. 19:00",
-   "ECU Serie A",
-   "Mushuc Runa – Delfín",
-   0
-  ],
-  [
-   "09.11. 21:30",
-   "ECU Serie A",
-   "Técnico Universitario – Manta",
-   24
-  ],
-  [
-   "09.11. 20:30",
-   "ITA Serie C",
-   "Pineto – Vis Pesaro",
-   0
-  ],
-  [
-   "09.11. 20:30",
-   "ITA Serie C",
-   "Foggia – Barletta",
-   0
-  ],
-  [
-   "09.11. 20:30",
-   "ITA Serie C",
-   "Team Altamura – Cavese",
-   0
-  ],
-  [
-   "09.11. 20:45",
-   "ITA Serie C",
-   "AZ Picerno – Bari",
-   0
-  ],
-  [
-   "09.11. 21:15",
-   "POR Liga Portugal 2",
-   "Torreense – União de Leiria",
-   0
-  ],
-  [
-   "09.11. 17:30",
-   "RUS First League",
-   "Veles Moscow – KamAZ",
-   0
-  ],
-  [
-   "09.11. 16:00",
-   "BUL Second Professional League",
-   "Etar – Montana",
-   0
-  ],
-  [
-   "09.11. 16:30",
-   "BUL Second Professional League",
-   "Fratria – Sportist Svoge",
-   0
-  ],
-  [
-   "09.11. 19:00",
-   "DEN 1. Division",
-   "Hvidovre – Aarhus Fremad",
-   0
-  ],
-  [
-   "09.11. 16:00",
+   "10.11. 18:30",
    "ROU Liga II",
-   "CS Dinamo București – Râmnicu Vâlcea",
-   8
+   "Metalul Buzău – Steaua București",
+   0,
+   ""
   ],
   [
-   "09.11. 20:45",
+   "10.11. 20:45",
    "ENG National North & South",
-   "Chelmsford – Ebbsfleet United",
-   0
+   "Darlington – Oxford City",
+   0,
+   ""
   ],
   [
-   "09.11. 21:30",
+   "10.11. 20:45",
+   "ENG National North & South",
+   "Morecambe – Hereford",
+   0,
+   ""
+  ],
+  [
+   "10.11. 20:45",
+   "ENG National North & South",
+   "Scarborough Athletic – Marine",
+   0,
+   ""
+  ],
+  [
+   "10.11. 20:45",
+   "ENG National North & South",
+   "Hemel Hempstead – Torquay United",
+   24,
+   "1/2 · 2/1"
+  ],
+  [
+   "10.11. 20:45",
+   "ENG National North & South",
+   "Salisbury – Braintree Town",
+   0,
+   ""
+  ],
+  [
+   "10.11. 21:30",
    "COL Primera B",
-   "Independiente Valle del Cauca – Unión Magdalena",
-   0
+   "Envigado – Boca Juniors de Cali",
+   0,
+   ""
+  ],
+  [
+   "10.11. 20:30",
+   "URU Segunda Division",
+   "Huracan FC – River Plate",
+   8,
+   "2/1"
   ]
  ],
- "withData": 15,
- "candidates": 2,
- "tips": 1,
- "calls": 17,
- "detailCalls": 15,
+ "withData": 9,
+ "candidates": 3,
+ "tips": 2,
+ "calls": 298,
+ "detailCalls": 274,
  "errors": 0,
- "minutes": 0.1,
+ "minutes": 1.4,
  "notes": [],
  "matches": [
+  {
+   "fixtureId": 1000022378,
+   "docId": "2026-11-10_aurora_universitario-de-vinto",
+   "utc": "2026-11-10T00:30+00:00",
+   "league": "Bolivija · Primera Division",
+   "stage": "Primera División",
+   "home": "Aurora",
+   "away": "Universitario de Vinto",
+   "score": 24,
+   "cand": {
+    "sel": "2/1",
+    "score": 24
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 24
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-06-02 Universitario de Vinto–Aurora 1:2 (PV 1:1)",
+    "2025-12-08 Aurora–Universitario de Vinto 2:0 (PV 1:0)",
+    "2025-07-06 Universitario de Vinto–Aurora 1:2 (PV 1:0)",
+    "2024-10-22 Aurora–Universitario de Vinto 1:2 (PV 0:1)",
+    "2024-05-25 Universitario de Vinto–Aurora 2:2 (PV 1:1)",
+    "2023-07-30 Aurora–Universitario de Vinto 0:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-10-31 Oriente Petrolero–Aurora 1:1 (PV 1:0)",
+    "2026-10-25 Aurora–Real Tomayapo 1:0 (PV 1:0)",
+    "2026-10-17 CDT Real Oruro–Aurora 1:0 (PV 1:0)",
+    "2026-10-11 Aurora–Nacional Potosí 2:2 (PV 1:2)",
+    "2026-09-16 Guabirá–Aurora 3:1 (PV 2:1)",
+    "2026-09-11 San Antonio Bulo Bulo–Aurora 0:2 (PV 0:2)",
+    "2026-09-05 Aurora–GV San José 3:0 (PV 3:0)",
+    "2026-08-27 Always Ready–Aurora 2:2 (PV 2:1)",
+    "2026-08-22 Aurora–Real Potosí 0:0 (PV 0:0)",
+    "2026-08-15 Blooming–Aurora 3:0 (PV 1:0)",
+    "2026-08-08 Aurora–Bolívar 2:4 (PV 1:1)",
+    "2026-08-04 Independiente Petrolero–Aurora 1:1 (PV 1:0)",
+    "2026-07-31 The Strongest–Aurora 1:1 (PV 0:0)",
+    "2026-07-24 Aurora–ABB 3:2 (PV 2:1)",
+    "2026-07-19 Aurora–Oriente Petrolero 2:2 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-01 Universitario de Vinto–Always Ready 1:3 (PV 1:2)",
+    "2026-10-27 Bolívar–Universitario de Vinto 2:1 (PV 0:1)",
+    "2026-10-17 Universitario de Vinto–San Antonio Bulo Bulo 2:1 (PV 2:0)",
+    "2026-10-10 Universitario de Vinto–CDT Real Oruro 1:3 (PV 0:2)",
+    "2026-09-17 Blooming–Universitario de Vinto 1:1 (PV 0:1)",
+    "2026-09-13 Universitario de Vinto–Independiente Petrolero 3:1 (PV 1:1)",
+    "2026-09-04 ABB–Universitario de Vinto 2:0 (PV 1:0)",
+    "2026-08-25 Universitario de Vinto–Nacional Potosí 2:0 (PV 1:0)",
+    "2026-08-21 The Strongest–Universitario de Vinto 4:3 (PV 2:2)",
+    "2026-08-14 Universitario de Vinto–Real Tomayapo 0:1 (PV 0:0)",
+    "2026-08-09 Oriente Petrolero–Universitario de Vinto 5:0 (PV 2:0)",
+    "2026-08-06 Universitario de Vinto–Real Potosí 0:2 (PV 0:1)",
+    "2026-07-31 Universitario de Vinto–Guabirá 1:1 (PV 1:1)",
+    "2026-07-27 GV San José–Universitario de Vinto 2:1 (PV 0:1)",
+    "2026-07-18 Always Ready–Universitario de Vinto 4:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-10",
+    "kickoff": "01:30",
+    "league": "Bolivija · Primera Division",
+    "home": "Aurora",
+    "away": "Universitario de Vinto",
+    "pairId": "aurora__universitario-de-vinto",
+    "venue": "Estadio Félix Capriles",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Universitario de Vinto 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 06.07.2025 1/2",
+      "src": [
+       "https://www.fotmob.com/matches/aurora-vs-universitario-de-vinto/5i4q5jkw#1000022378"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 24
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 24
+    },
+    "reasoning": "Universitario de Vinto: ispušteno vodstvo s PV (zadnjih 15) – Bolívar–Universitario de Vinto 2:1 (PV 0:1) 27.10.; GV San José–Universitario de Vinto 2:1 (PV 0:1) 27.07. Međusobni 06.07.2025 kod gosta: Universitario de Vinto–Aurora 1:2 (PV 1:0).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/aurora-vs-universitario-de-vinto/5i4q5jkw#1000022378"
+    ],
+    "createdAt": "2026-11-09T22:25:40+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000022378
+    },
+    "fixtureId": 1000022378
+   }
+  },
+  {
+   "fixtureId": 5907621,
+   "docId": "2026-11-10_hemel-hempstead_torquay-united",
+   "utc": "2026-11-10T19:45+00:00",
+   "league": "Engleska · National North & South",
+   "stage": "National League South",
+   "home": "Hemel Hempstead",
+   "away": "Torquay United",
+   "score": 24,
+   "cand": {
+    "sel": "1/2",
+    "score": 24,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 24,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 2,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-04-18 Torquay United–Hemel Hempstead 1:2 (PV 1:1)",
+    "2025-08-30 Hemel Hempstead–Torquay United 2:1 (PV 1:0)",
+    "2025-04-26 Hemel Hempstead–Torquay United 1:4 (PV 0:2)",
+    "2024-12-21 Torquay United–Hemel Hempstead 1:0 (PV 0:0)",
+    "2023-12-16 Torquay United–Hemel Hempstead 3:2 (PV 2:2)",
+    "2023-09-23 Hemel Hempstead–Torquay United 3:2 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 Hemel Hempstead–Maidstone United 1:2 (PV 1:0)",
+    "2026-10-31 Billericay–Hemel Hempstead 5:0 (PV 2:0)",
+    "2026-10-27 Dorking Wanderers–Hemel Hempstead 3:3 (PV 1:2)",
+    "2026-10-24 Hemel Hempstead–AFC Totton 1:3 (PV 1:2)",
+    "2026-10-17 Tonbridge Angels–Hemel Hempstead 1:0 (PV 1:0)",
+    "2026-10-10 Dagenham & Redbridge–Hemel Hempstead 0:0 (PV 0:0)",
+    "2026-09-26 Slough Town–Hemel Hempstead 0:2 (PV 0:1)",
+    "2026-09-12 Hemel Hempstead–Tonbridge Angels 1:1 (PV 0:1)",
+    "2026-09-08 Ebbsfleet United–Hemel Hempstead 0:0 (PV 0:0)",
+    "2026-09-05 Hemel Hempstead–Farnham Town 1:1 (PV 1:1)",
+    "2026-08-31 Folkestone Invicta–Hemel Hempstead 2:0 (PV 1:0)",
+    "2026-08-29 Hemel Hempstead–Weston Super Mare 1:3 (PV 1:0)",
+    "2026-08-22 Salisbury–Hemel Hempstead 1:2 (PV 1:0)",
+    "2026-08-18 Hemel Hempstead–Maidenhead United 0:1 (PV 0:1)",
+    "2026-08-15 Farnborough–Hemel Hempstead 0:2 (PV 0:2)"
+   ],
+   "awayLast": [
+    "2026-10-31 Walton and Hersham–Torquay United 0:3 (PV 0:1)",
+    "2026-10-27 AFC Totton–Torquay United 1:0 (PV 0:0)",
+    "2026-10-24 Torquay United–Maidstone United 1:1 (PV 1:0)",
+    "2026-10-17 Torquay United–Oxford City 0:1 (PV 0:0)",
+    "2026-10-10 Torquay United–Slough Town 5:1 (PV 0:0)",
+    "2026-09-26 Billericay–Torquay United 3:0 (PV 2:0)",
+    "2026-09-12 Torquay United–Dorking Wanderers 2:2 (PV 1:1)",
+    "2026-09-08 Maidenhead United–Torquay United 0:4 (PV 0:0)",
+    "2026-09-05 Torquay United–Folkestone Invicta 3:2 (PV 2:0)",
+    "2026-08-31 Farnham Town–Torquay United 2:0 (PV 0:0)",
+    "2026-08-29 Torquay United–Hampton & Richmond 1:1 (PV 1:1)",
+    "2026-08-22 Dagenham & Redbridge–Torquay United 2:0 (PV 1:0)",
+    "2026-08-18 Torquay United–Weston Super Mare 0:0 (PV 0:0)",
+    "2026-08-15 Tonbridge Angels–Torquay United 1:2 (PV 0:1)",
+    "2026-08-08 Torquay United–Horsham 1:1 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-10",
+    "kickoff": "20:45",
+    "league": "Engleska · National North & South",
+    "home": "Hemel Hempstead",
+    "away": "Torquay United",
+    "pairId": "hemel-hempstead__torquay-united",
+    "venue": "Focus Community Arena",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Hemel Hempstead: 3 preokreta u zadnjih 15, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 24,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 24,
+     "alt": "2/1"
+    },
+    "reasoning": "Hemel Hempstead, preokreti: protiv Maidstone United 1:2 (PV 1:0) 07.11.; protiv Weston Super Mare 1:3 (PV 1:0) 29.08.; Salisbury–Hemel Hempstead 1:2 (PV 1:0) 22.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
+    ],
+    "createdAt": "2026-11-09T22:25:40+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5907621
+    },
+    "fixtureId": 5907621
+   }
+  },
+  {
+   "fixtureId": 6563633,
+   "docId": "2026-11-10_huracan_river-plate",
+   "utc": "2026-11-10T19:30+00:00",
+   "league": "Urugvaj · Segunda Division",
+   "stage": "Segunda Division",
+   "home": "Huracan FC",
+   "away": "River Plate",
+   "score": 8,
+   "cand": {
+    "sel": "2/1",
+    "score": 8
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 1
+    }
+   },
+   "h2h": [
+    "2026-08-09 River Plate–Huracan FC 2:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-10-31 Uruguay Montevideo–Huracan FC 0:0 (PV 0:0)",
+    "2026-10-25 Huracan FC–Oriental 3:2 (PV 1:1)",
+    "2026-10-16 Colon–Huracan FC 3:0 (PV 2:0)",
+    "2026-10-11 Huracan FC–Fénix 0:0 (PV 0:0)",
+    "2026-10-03 Rentistas–Huracan FC 2:1 (PV 2:0)",
+    "2026-09-27 Huracan FC–Miramar Misiones 2:1 (PV 0:1)",
+    "2026-09-20 Tacuarembo FC–Huracan FC 1:1 (PV 0:0)",
+    "2026-09-12 Huracan FC–Plaza Colonia 1:2 (PV 1:0)",
+    "2026-09-04 La Luz–Huracan FC 1:3 (PV 1:1)",
+    "2026-08-29 Huracan FC–Cerrito 2:1 (PV 1:0)",
+    "2026-08-23 Atenas–Huracan FC 0:0 (PV 0:0)",
+    "2026-08-15 Huracan FC–Paysandú 3:2 (PV 2:1)",
+    "2026-08-09 River Plate–Huracan FC 2:0 (PV 1:0)",
+    "2026-08-01 Huracan FC–Uruguay Montevideo 1:3 (PV 1:2)",
+    "2026-07-18 Oriental–Huracan FC 1:0 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-01 River Plate–Tacuarembo FC 1:1 (PV 1:1)",
+    "2026-10-24 River Plate–Uruguay Montevideo 1:2 (PV 0:1)",
+    "2026-10-18 Plaza Colonia–River Plate 2:1 (PV 1:0)",
+    "2026-10-14 Boston River–River Plate 0:0 (PV 0:0)",
+    "2026-10-10 River Plate–Oriental 3:1 (PV 1:0)",
+    "2026-10-04 La Luz–River Plate 3:2 (PV 1:2)",
+    "2026-09-26 River Plate–Colon 3:0 (PV 1:0)",
+    "2026-09-20 Cerrito–River Plate 1:1 (PV 0:1)",
+    "2026-09-13 River Plate–Fénix 0:1 (PV 0:1)",
+    "2026-09-06 Atenas–River Plate 3:2 (PV 1:1)",
+    "2026-08-30 River Plate–Rentistas 0:0 (PV 0:0)",
+    "2026-08-22 Paysandú–River Plate 0:0 (PV 0:0)",
+    "2026-08-15 River Plate–Miramar Misiones 3:0 (PV 0:0)",
+    "2026-08-09 River Plate–Huracan FC 2:0 (PV 1:0)",
+    "2026-08-02 Tacuarembo FC–River Plate 1:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-10",
+    "kickoff": "20:30",
+    "league": "Urugvaj · Segunda Division",
+    "home": "Huracan FC",
+    "away": "River Plate",
+    "pairId": "huracan__river-plate",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Huracan FC: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/river-plate-vs-huracan-fc/bbhyij6#6563633"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 8
+    },
+    "reasoning": "Huracan FC, preokreti: protiv Miramar Misiones 2:1 (PV 0:1) 27.09.; protiv Plaza Colonia 1:2 (PV 1:0) 12.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/river-plate-vs-huracan-fc/bbhyij6#6563633"
+    ],
+    "createdAt": "2026-11-09T22:25:40+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6563633
+    },
+    "fixtureId": 6563633
+   }
+  },
   {
    "fixtureId": 1000022079,
    "docId": "2026-11-09_tecnico-universitario_manta",
