@@ -1,9 +1,9 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-09T14:23:27+00:00",
+ "generatedAt": "2026-11-09T14:32:55+00:00",
  "window": [
-  "2026-11-09T14:23+00:00",
-  "2026-11-10T14:23+00:00"
+  "2026-11-09T14:32+00:00",
+  "2026-11-10T14:32+00:00"
  ],
  "leagues": 64,
  "fixturesSeen": 15,
@@ -124,22 +124,40 @@
    },
    "stats": {
     "1/2": {
-     "hHome5": 2,
-     "h10": 2,
-     "aAway5": 0,
-     "a10": 0
+     "h": {
+      "home5": 2,
+      "away5": 0,
+      "last10": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0
+     }
     },
     "2/1": {
-     "hHome5": 0,
-     "h10": 0,
-     "aAway5": 0,
-     "a10": 0
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0
+     }
     },
     "n": {
-     "h": 10,
-     "a": 10,
-     "hHome": 5,
-     "aAway": 5,
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10
+     },
      "h2h": 6
     }
    },
@@ -180,7 +198,7 @@
       "dir": "1/2",
       "s": 3,
       "conf": "V",
-      "note": "Técnico Universitario kod kuće 2× 1/2 (zadnjih 5); međusobni 29.11.2025 isto 1/2",
+      "note": "Técnico Universitario 2× ispušteno vodstvo s PV (5 kod kuće); međusobni 29.11.2025 1/2",
       "src": [
        "https://www.fotmob.com/matches/tecnico-universitario-vs-manta/hhsui6m#1000022079"
       ],
@@ -194,7 +212,7 @@
      "sel": "1/2",
      "score": 24
     },
-    "reasoning": "Técnico Universitario kod kuće 1/2: LDU de Quito 1:3 (PV 1:0) 05.09.; Guayaquil City 2:3 (PV 1:0) 22.08. Međusobni na ovom terenu 29.11.2025: 2:3 (PV 1:0).",
+    "reasoning": "Técnico Universitario: ispušteno vodstvo s PV (5 kod kuće) – protiv LDU de Quito 1:3 (PV 1:0) 05.09.; protiv Guayaquil City 2:3 (PV 1:0) 22.08. Međusobni 29.11.2025 kod domaćina: Técnico Universitario–Manta 2:3 (PV 1:0).",
     "odds": null,
     "htftOdds": null,
     "status": "pending",
@@ -202,7 +220,7 @@
     "sources": [
      "https://www.fotmob.com/matches/tecnico-universitario-vs-manta/hhsui6m#1000022079"
     ],
-    "createdAt": "2026-11-09T14:23:27+00:00",
+    "createdAt": "2026-11-09T14:32:55+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -223,22 +241,40 @@
    "htftTip": null,
    "stats": {
     "1/2": {
-     "hHome5": 1,
-     "h10": 2,
-     "aAway5": 0,
-     "a10": 1
+     "h": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1
+     }
     },
     "2/1": {
-     "hHome5": 0,
-     "h10": 1,
-     "aAway5": 0,
-     "a10": 0
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0
+     }
     },
     "n": {
-     "h": 10,
-     "a": 10,
-     "hHome": 5,
-     "aAway": 5,
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10
+     },
      "h2h": 0
     }
    },
@@ -283,7 +319,7 @@
     "tip": "PASS",
     "score": null,
     "htftTip": null,
-    "reasoning": "CS Dinamo București kod kuće 1/2: Popești Leordeni 1:2 (PV 1:0) 24.10. Râmnicu Vâlcea isti preokret: Râmnicu Vâlcea–FC Bihor Oradea 3:2 (PV 1:2) 20.09.",
+    "reasoning": "CS Dinamo București: ispušteno vodstvo s PV (zadnjih 10) – protiv Popești Leordeni 1:2 (PV 1:0) 24.10.; ASA Târgu Mureș–CS Dinamo București 4:3 (PV 0:1) 22.09. Râmnicu Vâlcea: okrenut minus s PV (5 kod kuće) – protiv FC Bihor Oradea 3:2 (PV 1:2) 20.09.",
     "odds": null,
     "htftOdds": null,
     "status": "pending",
@@ -291,7 +327,7 @@
     "sources": [
      "https://www.fotmob.com/matches/ramnicu-valcea-vs-cs-dinamo-bucuresti/oww9v2e0#5976952"
     ],
-    "createdAt": "2026-11-09T14:23:27+00:00",
+    "createdAt": "2026-11-09T14:32:55+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
