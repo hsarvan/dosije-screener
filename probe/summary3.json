@@ -1,0 +1,281 @@
+{
+ "today": "2026-11-09",
+ "allLeagues": {
+  "status": 200,
+  "wireKB": 13,
+  "sec": 0.32,
+  "keys": [
+   "countries",
+   "international",
+   "popular"
+  ],
+  "countrySample": "{\"ccode\": \"ALB\", \"name\": \"Albania\", \"leagues\": [{\"id\": 260, \"name\": \"Kategoria Superiore\", \"localizedName\": \"Kategoria Superiore\", \"pageUrl\": \"/leagues/260/overview/kategoria-superiore\", \"ccode\": \"ALB\"}, {\"id\": 9173, \"name\": \"Superiore Qualification\", \"localizedName\": \"Superiore Qualification\", \"pageUrl\": \"/leagues/9173/overview/superiore-qualification\", \"ccode\": \"ALB\"}, {\"id\": 10175, \"name\": \"Superkupa e Shqipërisë\", \"localizedName\": \"Superkupa e Shqipërisë\", \"pageUrl\": \"/leagues/10175/overview/superkupa-e-shqiperise\", \"ccode\": \"ALB\"}], \"localizedName\": \"Albania\"}",
+  "wanted": {
+   "ARM": [
+    [
+     118,
+     "Premier League"
+    ],
+    [
+     490,
+     "Super Cup"
+    ]
+   ],
+   "AUS": [
+    [
+     113,
+     "A-League"
+    ],
+    [
+     9495,
+     "A-League Women"
+    ],
+    [
+     8938,
+     "Australia Championship"
+    ],
+    [
+     9471,
+     "Australia Cup"
+    ]
+   ],
+   "BOL": [
+    [
+     144,
+     "Primera Division"
+    ],
+    [
+     9334,
+     "Primera Division Qualification"
+    ]
+   ],
+   "CHN": [
+    [
+     120,
+     "Super League"
+    ],
+    [
+     9137,
+     "China League One"
+    ],
+    [
+     9550,
+     "Chinese FA Cup"
+    ],
+    [
+     9491,
+     "Super Cup"
+    ]
+   ],
+   "ECU": [
+    [
+     246,
+     "Serie A"
+    ],
+    [
+     10046,
+     "Copa Ecuador"
+    ],
+    [
+     11035,
+     "Supercopa de Ecuador"
+    ]
+   ],
+   "EGY": [
+    [
+     519,
+     "Premier League"
+    ],
+    [
+     9941,
+     "Egypt Cup"
+    ],
+    [
+     10270,
+     "League Cup"
+    ],
+    [
+     10314,
+     "Super Cup"
+    ]
+   ],
+   "IDN": [
+    [
+     8983,
+     "Super League"
+    ],
+    [
+     10056,
+     "Liga 2"
+    ],
+    [
+     10059,
+     "President's Cup"
+    ]
+   ],
+   "TUR": [
+    [
+     71,
+     "Süper Lig"
+    ],
+    [
+     165,
+     "1. Lig"
+    ],
+    [
+     166,
+     "Super Cup"
+    ],
+    [
+     151,
+     "Turkish Cup"
+    ]
+   ],
+   "USA": [
+    [
+     130,
+     "MLS"
+    ],
+    [
+     8972,
+     "USL Championship"
+    ],
+    [
+     9296,
+     "USL League One"
+    ],
+    [
+     10282,
+     "MLS Next Pro"
+    ],
+    [
+     9441,
+     "Open Cup"
+    ],
+    [
+     9134,
+     "NWSL"
+    ],
+    [
+     10699,
+     "USL Super League Women"
+    ],
+    [
+     11157,
+     "Baller League"
+    ],
+    [
+     10084,
+     "NISA"
+    ],
+    [
+     10167,
+     "NWSL Challenge Cup"
+    ],
+    [
+     10654,
+     "USL Cup"
+    ]
+   ]
+  },
+  "nCountries": 94
+ },
+ "match5795506": {
+  "status": 200,
+  "wireKB": 36,
+  "sec": 0.15,
+  "general": "{\"matchId\": \"5795506\", \"leagueId\": 47, \"parentLeagueId\": 47, \"leagueName\": \"Premier League\", \"matchRound\": \"10\", \"matchTimeUTC\": \"Sun, Nov 8, 2026, 14:00 UTC\", \"homeTeam\": {\"name\": \"Brighton & Hove Albion\", \"id\": 10204}, \"awayTeam\": {\"name\": \"Brentford\", \"id\": 9937}, \"finished\": true, \"started\": true}",
+  "headerTeams": "[{\"name\": \"Brighton & Hove Albion\", \"id\": 10204, \"score\": 2, \"imageUrl\": \"https://images.fotmob.com/image_resources/logo/teamlogo/10204_small.png\", \"pageUrl\": \"/teams/10204/overview/brighton-hove-albion\"}, {\"name\": \"Brentford\", \"id\": 9937, \"score\": 0, \"imageUrl\": \"https://images.fotmob.com/image_resources/logo/teamlogo/9937_small.png\", \"pageUrl\": \"/teams/9937/overview/brentford\"}]",
+  "types": [
+   "AddedTime",
+   "Card",
+   "Comment",
+   "Goal",
+   "Half",
+   "Substitution",
+   "VAR"
+  ],
+  "halfEvents": "[{\"reactKey\": \"undefined45AddedTimeNaNundefinedundefined\", \"timeStr\": 45, \"type\": \"AddedTime\", \"time\": 45, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 2, \"awayScore\": 0, \"minutesAddedStr\": \"+ 4 minutes added\", \"minutesAddedKey\": \"added_injury_time\", \"minutesAddedInput\": 4}, {\"reactKey\": \"undefined45HalfNaNundefinedundefined\", \"timeStr\": 45, \"type\": \"Half\", \"time\": 45, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 2, \"awayScore\": 0, \"halfStrShort\": \"HT\", \"halfStrKey\": \"halftime_short\"}, {\"reactKey\": \"undefined90AddedTimeNaNundefinedundefined\", \"timeStr\": 90, \"type\": \"AddedTime\", \"time\": 90, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 2, \"awayScore\": 0, \"minutesAddedStr\": \"+ 5 minutes added\", \"minutesAddedKey\": \"added_injury_time\", \"minutesAddedInput\": 5}, {\"reactKey\": \"undefined90HalfNaNundefinedundefined\", \"timeStr\": 90, \"type\": \"Half\", \"time\": 90, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 2, \"awayScore\": 0, \"halfStrShort\": \"FT\", \"halfStrKey\": \"fulltime_short\"}]",
+  "goals": "[{\"time\": 15, \"overloadTime\": null, \"isHome\": true, \"newScore\": [1, 0], \"ownGoal\": null, \"homeScore\": 0, \"awayScore\": 0}, {\"time\": 42, \"overloadTime\": null, \"isHome\": true, \"newScore\": [2, 0], \"ownGoal\": null, \"homeScore\": 1, \"awayScore\": 0}]",
+  "contentKeys": [
+   "attackingZones",
+   "buzz",
+   "h2h",
+   "hasPlayoff",
+   "heatmapUrl",
+   "highlightStories",
+   "lineup",
+   "liveticker",
+   "matchFacts",
+   "momentum",
+   "playerStats",
+   "shotmap",
+   "stats",
+   "superlive",
+   "table",
+   "weather"
+  ]
+ },
+ "league71": {
+  "status": 200,
+  "wireKB": 58,
+  "sec": 0.84,
+  "seasons": [
+   "2026/2027",
+   "2025/2026",
+   "2024/2025",
+   "2023/2024"
+  ],
+  "details": "{\"id\": 71, \"name\": \"Süper Lig\", \"selectedSeason\": \"2026/2027\", \"latestSeason\": \"2026/2027\", \"country\": \"TUR\", \"type\": \"league\"}",
+  "fixtures": 306,
+  "finished": 99,
+  "prev": {
+   "season": "2025/2026",
+   "status": 200,
+   "wireKB": 53,
+   "fixtures": 306,
+   "selected": "2025/2026",
+   "first": "2025-08-08T18:30:00Z",
+   "last": "2026-05-17T17:00:00Z"
+  },
+  "lastMatch": {
+   "id": "5904801",
+   "wireKB": 28,
+   "sec": 0.85,
+   "score": "3 - 0",
+   "half": "[{\"reactKey\": \"undefined45HalfNaNundefinedundefined\", \"timeStr\": 45, \"type\": \"Half\", \"time\": 45, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 2, \"awayScore\": 0, \"halfStrShort\": \"HT\", \"halfStrKey\": \"halftime_short\"}, {\"reactKey\": \"undefined90HalfNaNundefinedundefined\", \"timeStr\": 90, \"type\": \"Half\", \"time\": 90, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 3, \"awayScore\": 0, \"halfStrShort\": \"FT\", \"halfStrKey\": \"fulltime_short\"}]",
+   "goals": "[[20, null, true, [1, 0]], [45, null, true, [2, 0]], [85, null, true, [3, 0]]]"
+  }
+ },
+ "league144": {
+  "status": 200,
+  "wireKB": 45,
+  "sec": 0.66,
+  "seasons": [
+   "2026",
+   "2025",
+   "2024",
+   "2023"
+  ],
+  "details": "{\"id\": 144, \"name\": \"Primera Division\", \"selectedSeason\": \"2026\", \"latestSeason\": \"2026\", \"country\": \"BOL\", \"type\": \"league\"}",
+  "fixtures": 224,
+  "finished": 199,
+  "prev": {
+   "season": "2025",
+   "status": 200,
+   "wireKB": 44,
+   "fixtures": 240,
+   "selected": "2025",
+   "first": "2025-03-28T19:00:00Z",
+   "last": "2025-12-15T23:00:00Z"
+  },
+  "lastMatch": {
+   "id": "1000022377",
+   "wireKB": 19,
+   "sec": 0.6,
+   "score": "0 - 1",
+   "half": "[{\"reactKey\": \"undefined45HalfNaNundefinedundefined\", \"timeStr\": 45, \"type\": \"Half\", \"time\": 45, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 0, \"awayScore\": 0, \"halfStrShort\": \"HT\", \"halfStrKey\": \"halftime_short\"}, {\"reactKey\": \"undefined90HalfNaNundefinedundefined\", \"timeStr\": 90, \"type\": \"Half\", \"time\": 90, \"overloadTime\": null, \"player\": {\"id\": null, \"profileUrl\": \"\"}, \"homeScore\": 0, \"awayScore\": 1, \"halfStrShort\": \"FT\", \"halfStrKey\": \"fulltime_short\"}]",
+   "goals": "[[75, null, false, [0, 1]]]"
+  }
+ }
+}
