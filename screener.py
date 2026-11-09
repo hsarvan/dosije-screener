@@ -428,15 +428,17 @@ def reasoning(fx, a):
     e = a["ev"][sel]
     H, A = fx["h"], fx["a"]
 
-    def opp(m, team):
-        return m["an"] if m["h"] == team else m["hn"]
+    def item(m, team):
+        # domaći meč ekipe: samo protivnik; inače cijeli par da se vidi ko je bio domaćin
+        who = m["an"] if m["h"] == team else f"{m['hn']}–{m['an']}"
+        return f"{who} {score_txt(m)} {dmy(m['t'], False)}"
     out = []
     if e["home"]:
-        out.append(f"{fx['hn']} kod kuće {sel}: " +
-                   "; ".join(f"{opp(m, H)} {score_txt(m)} {dmy(m['t'], False)}" for m in e["home"]))
+        at_home = all(m["h"] == H for m in e["home"])
+        out.append(f"{fx['hn']}{' kod kuće' if at_home else ''} {sel}: " + "; ".join(item(m, H) for m in e["home"]))
     if e["away"]:
-        out.append(f"{fx['an']} isti preokret: " +
-                   "; ".join(f"{opp(m, A)} {score_txt(m)} {dmy(m['t'], False)}" for m in e["away"]))
+        out.append(f"{fx['an']} isti preokret: " + "; ".join(f"{m['hn']}–{m['an']} {score_txt(m)} {dmy(m['t'], False)}"
+                                                           for m in e["away"]))
     if e["venue"]:
         out.append(f"Međusobni na ovom terenu {dmy(e['venue']['t'])}: {score_txt(e['venue'])}")
     elif a["h2h"]:
