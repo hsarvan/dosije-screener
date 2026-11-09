@@ -1,0 +1,42 @@
+name: Dosije screener
+on:
+  schedule:
+    - cron: "20 4 * * *"   # 05:20 po Sarajevu (zimsko vrijeme)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["*.py", "config.json", ".github/workflows/*.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: screener
+  cancel-in-progress: false
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Provjera izvora
+        if: hashFiles('probe.py') != ''
+        continue-on-error: true
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python probe.py
+      - name: Pregled utakmica
+        if: hashFiles('screener.py') != ''
+        continue-on-error: true
+        run: python screener.py
+      - name: Spremi rezultate u repozitorij
+        if: always()
+        run: |
+          git config user.name "dosije-bot"
+          git config user.email "dosije-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Nema promjena"; exit 0; fi
+          git commit -m "Dosije screener $(date -u +%F)"
+          git pull --rebase origin main
+          git push
