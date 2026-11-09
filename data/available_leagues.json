@@ -1,0 +1,620 @@
+{
+ "ALB": [
+  "260 Kategoria Superiore",
+  "9173 Superiore Qualification",
+  "10175 Superkupa e Shqipërisë"
+ ],
+ "ALG": [
+  "516 Ligue 1"
+ ],
+ "ARG": [
+  "112 Liga Profesional",
+  "8965 Primera B Nacional",
+  "9213 Primera B Metropolitana & Torneo Federal A",
+  "9305 Copa Argentina",
+  "9381 Supercopa Argentina",
+  "10007 Copa de la Liga Profesional",
+  "9170 Primera B Nacional Qualification",
+  "10832 Supercopa Internacional",
+  "10075 Torneo de Verano",
+  "10053 Trofeo de Campeones"
+ ],
+ "ARM": [
+  "118 Premier League",
+  "490 Super Cup"
+ ],
+ "AUS": [
+  "113 A-League",
+  "9495 A-League Women",
+  "8938 Australia Championship",
+  "9471 Australia Cup"
+ ],
+ "AUT": [
+  "38 Bundesliga",
+  "119 2. Liga",
+  "278 Austrian Cup",
+  "285 Landesliga"
+ ],
+ "AZE": [
+  "262 Premier League",
+  "11925 Premier League Qualification"
+ ],
+ "BAN": [
+  "10443 Bangladesh Football League"
+ ],
+ "BEL": [
+  "40 First Division A",
+  "264 First Division B",
+  "149 Belgian Cup",
+  "41 First Division A Qualification",
+  "266 Super Cup"
+ ],
+ "BIH": [
+  "267 Premier League"
+ ],
+ "BLR": [
+  "263 Premier League",
+  "9255 Premier League Qualification",
+  "9521 Belarusian Cup",
+  "9658 Super Cup"
+ ],
+ "BOL": [
+  "144 Primera Division",
+  "9334 Primera Division Qualification"
+ ],
+ "BRA": [
+  "268 Série A",
+  "8814 Série B",
+  "8971 Série C",
+  "9067 Copa do Brasil",
+  "9429 Copa do Nordeste",
+  "10077 Supercopa do Brasil",
+  "10290 Baiano",
+  "10272 Carioca",
+  "11646 Copa Paulista",
+  "10274 Gaúcho",
+  "10291 Goiano",
+  "10273 Mineiro",
+  "10244 Paulista A1",
+  "9483 Paulista A2",
+  "10078 Recopa Gaúcha",
+  "9464 Serie D"
+ ],
+ "BUL": [
+  "270 First Professional League",
+  "9096 Second Professional League",
+  "271 Bulgarian Cup",
+  "9584 First Professional League Qualification",
+  "272 Super Cup"
+ ],
+ "CAN": [
+  "9986 Premier League",
+  "9837 Canadian Championship",
+  "10872 Northern Super League"
+ ],
+ "CHI": [
+  "273 Liga de Primera",
+  "9126 Liga de Ascenso",
+  "9091 Copa Chile",
+  "11697 Copa de la Liga",
+  "9407 Super Cup"
+ ],
+ "CHN": [
+  "120 Super League",
+  "9137 China League One",
+  "9550 Chinese FA Cup",
+  "9491 Super Cup"
+ ],
+ "COL": [
+  "274 Primera A",
+  "9125 Primera B",
+  "9490 Copa Colombia",
+  "11536 Superliga"
+ ],
+ "CRC": [
+  "121 Primera Division",
+  "12888 Primera Division Qualification",
+  "10223 Super Cup"
+ ],
+ "CRO": [
+  "252 HNL",
+  "275 Croatian Cup",
+  "276 Super Cup"
+ ],
+ "CYP": [
+  "136 1. Division",
+  "9100 2. Division",
+  "330 Cyprus Cup",
+  "521 Super Cup"
+ ],
+ "CZE": [
+  "122 1. Liga",
+  "253 FNL",
+  "10025 1. Liga Qualification",
+  "254 Czech Cup"
+ ],
+ "DEN": [
+  "46 Superligaen",
+  "85 1. Division",
+  "239 2. Division",
+  "240 3. Division",
+  "256 A-Liga",
+  "241 Danmarksserien",
+  "242 DBU Pokalen"
+ ],
+ "ECU": [
+  "246 Serie A",
+  "10046 Copa Ecuador",
+  "11035 Supercopa de Ecuador"
+ ],
+ "EGY": [
+  "519 Premier League",
+  "9941 Egypt Cup",
+  "10270 League Cup",
+  "10314 Super Cup"
+ ],
+ "ENG": [
+  "47 Premier League",
+  "48 Championship",
+  "108 League One",
+  "109 League Two",
+  "117 National League",
+  "8944 National North & South",
+  "8947 Premier Division",
+  "9084 Premier League 2",
+  "247 Community Shield",
+  "132 FA Cup",
+  "133 EFL Cup",
+  "10626 FA Cup Qualification",
+  "142 EFL Trophy",
+  "9253 FA Trophy",
+  "10068 Premier League U18",
+  "9227 WSL",
+  "10082 FA Cup (Women)",
+  "9717 Women's League Cup",
+  "9294 WSL 2",
+  "10844 Baller League",
+  "12889 EFL Cup Qualification",
+  "10705 National League Cup",
+  "11839 WSL Promotion/Relegation"
+ ],
+ "ESP": [
+  "87 LaLiga",
+  "140 LaLiga2",
+  "8968 Primera Federación",
+  "9138 Segunda Federación",
+  "9907 Liga F",
+  "138 Copa del Rey",
+  "139 Supercopa de España",
+  "10651 Copa de la Reina",
+  "10776 Supercopa Femenina"
+ ],
+ "EST": [
+  "248 Regular Season",
+  "10034 Meistriliiga Qualification",
+  "9069 Super Cup"
+ ],
+ "FIN": [
+  "51 Veikkausliiga",
+  "52 Veikkausliiga Qualification",
+  "251 Ykkosliiga",
+  "143 Suomen Cup",
+  "8969 Ykkonen",
+  "10174 Kansallinen (Women)",
+  "10186 Kansallinen (Women) Qualification",
+  "342 Finland Cup",
+  "10713 Ykkosliiga Qualification"
+ ],
+ "FRA": [
+  "53 Ligue 1",
+  "110 Ligue 2",
+  "8970 Ligue 3",
+  "9677 Première Ligue Féminine",
+  "134 Coupe de France",
+  "11028 Coupe de France Féminine",
+  "9666 Ligue 1 Qualification",
+  "9667 Ligue 2 Qualification",
+  "207 Trophée des champions"
+ ],
+ "FRO": [
+  "250 Premier League",
+  "9523 Løgmanssteypið"
+ ],
+ "GEO": [
+  "439 Erovnuli Liga",
+  "9310 Erovnuli Qualification"
+ ],
+ "GER": [
+  "54 Bundesliga",
+  "146 2. Bundesliga",
+  "208 3. Liga",
+  "209 DFB Pokal",
+  "512 Regionalliga",
+  "9081 Bundesliga Qualification",
+  "9734 2. Bundesliga Qualification",
+  "10022 Regionalliga Qualification",
+  "8924 Super Cup",
+  "9676 Frauen-Bundesliga",
+  "10840 Baller League",
+  "10650 DFB Pokal Frauen",
+  "11034 Supercup der Frauen"
+ ],
+ "GHA": [
+  "522 Premier League"
+ ],
+ "GRE": [
+  "135 Super League 1",
+  "8815 Super League 2",
+  "145 Greece Cup",
+  "8816 Super Cup"
+ ],
+ "GUA": [
+  "336 Liga Nacional"
+ ],
+ "HON": [
+  "337 Liga Nacional"
+ ],
+ "HUN": [
+  "212 Nemzeti Bajnokság I",
+  "9117 NB II",
+  "213 Magyar Kupa"
+ ],
+ "IDN": [
+  "8983 Super League",
+  "10056 Liga 2",
+  "10059 President's Cup"
+ ],
+ "IND": [
+  "9478 Indian Super League",
+  "8982 Indian Football League",
+  "10309 Durand Cup",
+  "10366 Super Cup"
+ ],
+ "IRL": [
+  "126 Premier Division",
+  "221 Premier Division Qualification",
+  "218 First Division",
+  "10210 Women's Premier Division",
+  "219 FAI Cup",
+  "10307 FAI Women's Cup",
+  "9431 Super Cup"
+ ],
+ "IRN": [
+  "523 Persian Gulf",
+  "9372 Azadegan League",
+  "9487 Hazfi Cup",
+  "9409 Persian Gulf Pro League Qualification",
+  "10288 Super Cup"
+ ],
+ "IRQ": [
+  "524 Stars League",
+  "10310 Stars League Relegation Playoff"
+ ],
+ "ISL": [
+  "215 Besta deildin",
+  "216 1. Deild",
+  "217 Icelandic Cup",
+  "10009 Super Cup",
+  "10226 2. Deild",
+  "10076 League Cup"
+ ],
+ "ISR": [
+  "127 Ligat ha'Al",
+  "128 Leumit League",
+  "9735 Leumit League Qualification",
+  "9097 State Cup",
+  "9862 Super Cup",
+  "9098 Toto Cup Leumit"
+ ],
+ "ITA": [
+  "55 Serie A",
+  "86 Serie B",
+  "141 Coppa Italia",
+  "147 Serie C",
+  "222 Supercoppa",
+  "10178 Serie A Femminile",
+  "11014 Coppa Italia Women",
+  "10434 Serie A Femminile Qualification",
+  "11015 Supercoppa Italiana"
+ ],
+ "JPN": [
+  "223 J. League",
+  "8974 J. League 2",
+  "9136 J. League 3",
+  "9500 WE League",
+  "9011 Emperor's Cup",
+  "10716 J. League 3 Qualification",
+  "224 J. League Cup",
+  "11499 Japan 2/3",
+  "440 Super Cup"
+ ],
+ "KAZ": [
+  "225 Premier League",
+  "9504 Super Cup"
+ ],
+ "KOR": [
+  "9080 K League 1",
+  "9116 K League 2",
+  "9422 K League Qualification",
+  "9537 K League 3",
+  "9551 Cup",
+  "10188 K League 3 Qualification"
+ ],
+ "KSA": [
+  "536 Saudi Pro League",
+  "10721 Saudi First Division",
+  "9942 King's Cup",
+  "10074 Super Cup"
+ ],
+ "KUW": [
+  "529 Premier League"
+ ],
+ "LTU": [
+  "228 Toplyga",
+  "9632 A Lyga Qualification",
+  "9493 Super Cup"
+ ],
+ "LUX": [
+  "229 National Division",
+  "9527 Coupe de Luxembourg",
+  "9174 National Division Qualification"
+ ],
+ "LVA": [
+  "226 Virsliga",
+  "9486 Super Cup"
+ ],
+ "MAR": [
+  "530 Botola Pro",
+  "10917 Botola Pro Qualification",
+  "11840 Throne Cup"
+ ],
+ "MAS": [
+  "8985 Liga Super"
+ ],
+ "MDA": [
+  "231 National Division",
+  "9530 Cupa Moldova",
+  "10065 National Division Qualification"
+ ],
+ "MEX": [
+  "230 Liga MX",
+  "9906 Liga MX Femenil",
+  "8976 Liga de Expansión MX",
+  "11039 Campeón de Campeones"
+ ],
+ "MKD": [
+  "249 Prva Liga",
+  "9528 Macedonian Cup"
+ ],
+ "MNE": [
+  "232 1. CFL",
+  "9178 1. CFL Qualification"
+ ],
+ "NED": [
+  "57 Eredivisie",
+  "111 Eerste Divisie",
+  "9195 Tweede Divisie",
+  "10289 Eredivisie Vrouwen",
+  "58 Eredivisie Qualification",
+  "10668 KNVB Beker Women",
+  "235 KNVB Cup",
+  "237 Super Cup",
+  "11029 Super Cup",
+  "9851 Tweede Divisie Qualification"
+ ],
+ "NGA": [
+  "533 Professional Football League"
+ ],
+ "NIR": [
+  "129 Premiership",
+  "9389 Irish Cup",
+  "8978 League Cup",
+  "8979 Premiership Qualification"
+ ],
+ "NOR": [
+  "59 Eliteserien",
+  "203 OBOS-ligaen",
+  "204 2. divisjon",
+  "331 Toppserien",
+  "205 Norsk Tipping-ligaen",
+  "332 1. Division Kvinner",
+  "10714 1. Division Kvinner Qualification",
+  "60 Eliteserien Qualification",
+  "206 Norgesmesterskapet",
+  "10628 Norgesmesterskapet Kvalifisering",
+  "333 Norgesmesterskapet Kvinner",
+  "9754 OBOS-ligaen Qualification",
+  "9382 Toppserien Qualification (W)"
+ ],
+ "NZL": [
+  "8870 Championship"
+ ],
+ "PAN": [
+  "9039 LPF"
+ ],
+ "PAR": [
+  "199 Division Profesional",
+  "10230 Copa Paraguay",
+  "10259 Supercopa"
+ ],
+ "PER": [
+  "131 Liga 1"
+ ],
+ "POL": [
+  "196 Ekstraklasa",
+  "197 I Liga",
+  "8935 II Liga",
+  "198 Puchar Polski",
+  "200 Superpuchar Polski",
+  "10967 II Liga Qualification"
+ ],
+ "POR": [
+  "61 Liga Portugal",
+  "185 Liga Portugal 2",
+  "9112 Liga 3",
+  "187 League Cup",
+  "9668 Liga Portugal 2 Qualification",
+  "10215 Liga Portugal Qualification",
+  "10448 Liga Revelação",
+  "188 Super Cup",
+  "186 Taça de Portugal"
+ ],
+ "QAT": [
+  "535 Qatar Stars League",
+  "11030 Second Division",
+  "11018 Amir of Qatar Cup",
+  "11016 Qatar Cup",
+  "9661 Qatar Stars League Qualification",
+  "11017 QSL Cup"
+ ],
+ "ROU": [
+  "189 Liga I",
+  "9113 Liga II",
+  "190 Cupa României",
+  "192 Supercupa",
+  "9587 Liga I Qualification"
+ ],
+ "RSA": [
+  "537 Premier Soccer League",
+  "10708 League Cup",
+  "9473 Nedbank Cup",
+  "9474 South Africa 8 Cup",
+  "10584 South Africa League Qualification"
+ ],
+ "RUS": [
+  "63 Premier League",
+  "193 Russian Cup",
+  "9333 Premier League Qualification",
+  "195 Super Cup",
+  "338 1. Division",
+  "9123 Second League"
+ ],
+ "SCO": [
+  "64 Premiership",
+  "123 Championship",
+  "124 League One",
+  "125 League Two",
+  "181 Premiership playoff",
+  "179 Challenge Cup",
+  "9737 Championship Qualification",
+  "9545 Highland / Lowland",
+  "180 League Cup",
+  "9738 League One Qualification",
+  "9739 League Two Qualification",
+  "137 Scottish Cup",
+  "11020 SWF Scottish Cup",
+  "10791 SWPL 1",
+  "11019 SWPL Cup"
+ ],
+ "SIN": [
+  "461 Premier League",
+  "9143 Singapore Cup"
+ ],
+ "SLV": [
+  "335 Primera Division"
+ ],
+ "SRB": [
+  "182 Super Liga",
+  "183 Kup Srbije",
+  "10583 Super Liga Qualification"
+ ],
+ "SUI": [
+  "69 Super League",
+  "163 Challenge League",
+  "10433 Challenge League Qualification",
+  "70 Super League Qualification",
+  "164 Swiss Cup"
+ ],
+ "SVK": [
+  "176 1. liga",
+  "8973 2. Liga",
+  "9845 1. liga Qualification",
+  "177 Slovak Cup"
+ ],
+ "SVN": [
+  "173 Prva Liga",
+  "492 Prva Liga Qualification",
+  "174 Slovenia Cup"
+ ],
+ "SWE": [
+  "67 Allsvenskan",
+  "68 Allsvenskan Qualification",
+  "168 Superettan",
+  "172 Superettan Qualification",
+  "9089 Damallsvenskan (W)",
+  "169 Ettan",
+  "171 Svenska Cupen",
+  "10308 Elitettan (W)",
+  "10316 Damallsvenskan Qualification (W)",
+  "9634 Ettan Qualification",
+  "11194 Women Cup"
+ ],
+ "TAN": [
+  "9066 Premier League",
+  "10028 Premier League Qualification"
+ ],
+ "THA": [
+  "8984 Thai League",
+  "9498 Thai League 2",
+  "11023 FA Cup",
+  "11024 League Cup"
+ ],
+ "TUN": [
+  "544 Ligue I",
+  "9669 Ligue I Qualification"
+ ],
+ "TUR": [
+  "71 Süper Lig",
+  "165 1. Lig",
+  "166 Super Cup",
+  "151 Turkish Cup"
+ ],
+ "UAE": [
+  "538 Pro League",
+  "11027 League Cup",
+  "9943 President's Cup",
+  "11026 Super Cup"
+ ],
+ "UKR": [
+  "441 Premier League",
+  "9829 Premier League Qualification",
+  "10023 1. Division Qualification",
+  "442 Ukraine Cup"
+ ],
+ "URU": [
+  "161 Liga AUF Uruguaya",
+  "10342 Copa Uruguay",
+  "9122 Segunda Division",
+  "10343 Supercopa"
+ ],
+ "USA": [
+  "130 MLS",
+  "8972 USL Championship",
+  "9296 USL League One",
+  "10282 MLS Next Pro",
+  "9441 Open Cup",
+  "9134 NWSL",
+  "10699 USL Super League Women",
+  "11157 Baller League",
+  "10084 NISA",
+  "10167 NWSL Challenge Cup",
+  "10654 USL Cup"
+ ],
+ "UZB": [
+  "540 Superliga"
+ ],
+ "VEN": [
+  "339 Primera Division",
+  "11031 Supercopa"
+ ],
+ "VIE": [
+  "9088 V-League",
+  "10161 Cúp Quốc gia",
+  "10737 Super Cup",
+  "9628 V-League Qualification"
+ ],
+ "WAL": [
+  "116 Cymru Premier",
+  "9166 Welsh Cup"
+ ]
+}

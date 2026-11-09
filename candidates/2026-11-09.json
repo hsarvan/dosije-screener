@@ -1,23 +1,125 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-09T14:06:25+00:00",
+ "generatedAt": "2026-11-09T14:14:23+00:00",
  "window": [
-  "2026-11-09T14:06+00:00",
-  "2026-11-10T14:06+00:00"
+  "2026-11-09T14:14+00:00",
+  "2026-11-10T14:14+00:00"
  ],
- "leagues": 40,
- "fixturesSeen": 11,
- "analysed": 11,
- "withData": 11,
- "candidates": 1,
+ "leagues": 49,
+ "fixturesSeen": 14,
+ "analysed": 14,
+ "screened": [
+  [
+   "10.11. 01:30",
+   "BOL Primera Division",
+   "Aurora – Universitario de Vinto",
+   0
+  ],
+  [
+   "09.11. 19:00",
+   "ECU Serie A",
+   "Mushuc Runa – Delfín",
+   0
+  ],
+  [
+   "09.11. 21:30",
+   "ECU Serie A",
+   "Técnico Universitario – Manta",
+   24
+  ],
+  [
+   "09.11. 20:30",
+   "ITA Serie C",
+   "Pineto – Vis Pesaro",
+   0
+  ],
+  [
+   "09.11. 20:30",
+   "ITA Serie C",
+   "Foggia – Barletta",
+   0
+  ],
+  [
+   "09.11. 20:30",
+   "ITA Serie C",
+   "Team Altamura – Cavese",
+   0
+  ],
+  [
+   "09.11. 20:45",
+   "ITA Serie C",
+   "AZ Picerno – Bari",
+   0
+  ],
+  [
+   "09.11. 21:15",
+   "POR Liga Portugal 2",
+   "Torreense – União de Leiria",
+   0
+  ],
+  [
+   "09.11. 17:30",
+   "RUS First League",
+   "Veles Moscow – KamAZ",
+   0
+  ],
+  [
+   "09.11. 16:00",
+   "BUL Second Professional League",
+   "Etar – Montana",
+   0
+  ],
+  [
+   "09.11. 16:30",
+   "BUL Second Professional League",
+   "Fratria – Sportist Svoge",
+   0
+  ],
+  [
+   "09.11. 19:00",
+   "DEN 1. Division",
+   "Hvidovre – Aarhus Fremad",
+   0
+  ],
+  [
+   "09.11. 16:00",
+   "ROU Liga II",
+   "CS Dinamo București – Râmnicu Vâlcea",
+   8
+  ],
+  [
+   "09.11. 21:30",
+   "COL Primera B",
+   "Independiente Valle del Cauca – Unión Magdalena",
+   0
+  ]
+ ],
+ "withData": 14,
+ "candidates": 2,
  "tips": 1,
- "calls": 328,
- "detailCalls": 313,
+ "calls": 103,
+ "detailCalls": 95,
  "errors": 0,
- "minutes": 3.1,
+ "minutes": 1.0,
  "notes": [
   "Liga nije pronađena: FRA National",
-  "Liga nije pronađena: ARG Primera Nacional"
+  "Liga nije pronađena: ARG Primera Nacional",
+  "Liga nije pronađena: TUR 2. Lig",
+  "Liga nije pronađena: ESP Segunda Federacion",
+  "Liga nije pronađena: ITA Serie D",
+  "Liga nije pronađena: BRA Serie C",
+  "Liga nije pronađena: NOR 1. Divisjon",
+  "Liga nije pronađena: SRB Prva Liga",
+  "Liga nije pronađena: CRO Prva NL",
+  "Liga nije pronađena: ENG National League North",
+  "Liga nije pronađena: ENG National League South",
+  "Liga nije pronađena: CHN China League Two",
+  "Liga nije pronađena: VIE V.League 2",
+  "Liga nije pronađena: PER Liga 2",
+  "Liga nije pronađena: CHI Primera B",
+  "Liga nije pronađena: ALG Ligue 2",
+  "Liga nije pronađena: MAR Botola 2",
+  "Liga nije pronađena: KSA Second Division"
  ],
  "matches": [
   {
@@ -91,7 +193,7 @@
       "dir": "1/2",
       "s": 3,
       "conf": "V",
-      "note": "Técnico Universitario 2× vodio na PV pa izgubio (zadnjih 5 domaćih); međusobni 2025-11-29 ",
+      "note": "Técnico Universitario kod kuće 2× 1/2 (zadnjih 5); međusobni 29.11.2025 isto 1/2",
       "src": [
        "https://www.fotmob.com/matches/tecnico-universitario-vs-manta/hhsui6m#1000022079"
       ],
@@ -105,7 +207,7 @@
      "sel": "1/2",
      "score": 24
     },
-    "reasoning": "Técnico Universitario kod kuće 2× vodio na PV pa izgubio u zadnjih 5. Međusobni: 2026-10-10 Manta–Técnico Universitario 1:0 (PV 1:0); 2026-07-26 Técnico Universitario–Manta 1:0 (PV 0:0).",
+    "reasoning": "Técnico Universitario kod kuće 1/2: LDU de Quito 1:3 (PV 1:0) 05.09.; Guayaquil City 2:3 (PV 1:0) 22.08. Međusobni na ovom terenu 29.11.2025: 2:3 (PV 1:0).",
     "odds": null,
     "htftOdds": null,
     "status": "pending",
@@ -113,13 +215,102 @@
     "sources": [
      "https://www.fotmob.com/matches/tecnico-universitario-vs-manta/hhsui6m#1000022079"
     ],
-    "createdAt": "2026-11-09T14:06:25+00:00",
+    "createdAt": "2026-11-09T14:14:23+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
      "fixtureId": 1000022079
     },
     "fixtureId": 1000022079
+   }
+  },
+  {
+   "fixtureId": 5976952,
+   "docId": "2026-11-09_cs-dinamo-bucuresti_ramnicu-valcea",
+   "utc": "2026-11-09T15:00+00:00",
+   "league": "ROU · Liga II",
+   "stage": "Liga II",
+   "home": "CS Dinamo București",
+   "away": "Râmnicu Vâlcea",
+   "score": 8,
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "hHome5": 1,
+     "h10": 2,
+     "aAway5": 0,
+     "a10": 1
+    },
+    "2/1": {
+     "hHome5": 0,
+     "h10": 1,
+     "aAway5": 0,
+     "a10": 0
+    },
+    "n": {
+     "h": 10,
+     "a": 10,
+     "hHome": 5,
+     "aAway": 5,
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast5": [
+    "2026-10-24 CS Dinamo București–Popești Leordeni 1:2 (PV 1:0)",
+    "2026-10-10 CS Dinamo București–CSM Olimpia Satu Mare 2:2 (PV 1:2)",
+    "2026-09-12 CS Dinamo București–Concordia Chiajna 2:5 (PV 2:3)",
+    "2026-08-29 CS Dinamo București–Comunal Șelimbăr 0:1 (PV 0:1)",
+    "2026-08-15 CS Dinamo București–Metalul Buzău 0:1 (PV 0:1)"
+   ],
+   "awayLast5": [
+    "2026-10-26 FC Metaloglobus București–Râmnicu Vâlcea 2:0 (PV 0:0)",
+    "2026-10-10 Gloria Bistrița–Râmnicu Vâlcea 1:0 (PV 0:0)",
+    "2026-09-12 Cetatea Suceava–Râmnicu Vâlcea 4:0 (PV 2:0)",
+    "2026-08-29 CSC Dumbrăvița–Râmnicu Vâlcea 0:1 (PV 0:0)",
+    "2026-08-08 Steaua București–Râmnicu Vâlcea 1:2 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-09",
+    "kickoff": "16:00",
+    "league": "ROU · Liga II",
+    "home": "CS Dinamo București",
+    "away": "Râmnicu Vâlcea",
+    "pairId": "cs-dinamo-bucuresti__ramnicu-valcea",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 1/2 u zadnjih 10: CS Dinamo București 2, Râmnicu Vâlcea 1",
+      "src": [
+       "https://www.fotmob.com/matches/ramnicu-valcea-vs-cs-dinamo-bucuresti/oww9v2e0#5976952"
+      ],
+      "by": "web"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "reasoning": "CS Dinamo București kod kuće 1/2: Popești Leordeni 1:2 (PV 1:0) 24.10. Râmnicu Vâlcea isti preokret: FC Bihor Oradea 3:2 (PV 1:2) 20.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/ramnicu-valcea-vs-cs-dinamo-bucuresti/oww9v2e0#5976952"
+    ],
+    "createdAt": "2026-11-09T14:14:23+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5976952
+    },
+    "fixtureId": 5976952
    }
   }
  ]
