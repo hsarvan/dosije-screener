@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "updatedAt": "2026-11-09T22:25:40+00:00",
+ "updatedAt": "2026-11-09T23:40:41+00:00",
  "matches": [
   {
    "fixtureId": 5976952,
@@ -9,6 +9,14 @@
    "ht": "1-3",
    "ft": "2-3",
    "htft": "2/2"
+  },
+  {
+   "fixtureId": 1000022079,
+   "docId": "2026-11-09_tecnico-universitario_manta",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-2",
+   "htft": "1/2"
   }
  ]
 }
