@@ -1,17 +1,17 @@
 {
  "date": "2026-11-10",
- "generatedAt": "2026-11-10T19:44:34+00:00",
+ "generatedAt": "2026-11-10T20:50:56+00:00",
  "window": [
-  "2026-11-10T19:44+00:00",
-  "2026-11-11T19:44+00:00"
+  "2026-11-10T20:50+00:00",
+  "2026-11-11T20:50+00:00"
  ],
  "rules": {
-  "n": 3940,
+  "n": 3941,
   "base": {
    "1/2": 0.0208,
    "2/1": 0.0315
   },
-  "at": "2026-11-10T19:44:34+00:00",
+  "at": "2026-11-10T20:50:57+00:00",
   "rules": [
    {
     "id": "R1",
@@ -57,7 +57,7 @@
     "sel": 28,
     "any": 41,
     "both": true,
-    "base": 0.0581,
+    "base": 0.058,
     "lift": 1.04,
     "mult": 0.71
    },
@@ -76,8 +76,8 @@
   ]
  },
  "leagues": 64,
- "fixturesSeen": 12,
- "analysed": 12,
+ "fixturesSeen": 6,
+ "analysed": 6,
  "screened": [
   [
    "11.11. 18:45",
@@ -108,48 +108,6 @@
    ""
   ],
   [
-   "10.11. 20:45",
-   "ENG National North & South",
-   "Darlington – Oxford City",
-   0,
-   ""
-  ],
-  [
-   "10.11. 20:45",
-   "ENG National North & South",
-   "Morecambe – Hereford",
-   0,
-   ""
-  ],
-  [
-   "10.11. 20:45",
-   "ENG National North & South",
-   "Scarborough Athletic – Marine",
-   0,
-   ""
-  ],
-  [
-   "10.11. 20:45",
-   "ENG National North & South",
-   "Hemel Hempstead – Torquay United",
-   17,
-   "1/2 · 2/1"
-  ],
-  [
-   "10.11. 20:45",
-   "ENG National North & South",
-   "Salisbury – Braintree Town",
-   0,
-   ""
-  ],
-  [
-   "10.11. 21:30",
-   "COL Primera B",
-   "Envigado – Boca Juniors de Cali",
-   0,
-   ""
-  ],
-  [
    "11.11. 20:30",
    "URU Segunda Division",
    "La Luz – Fénix",
@@ -164,13 +122,13 @@
    ""
   ]
  ],
- "withData": 12,
- "candidates": 1,
+ "withData": 6,
+ "candidates": 0,
  "tips": 0,
- "calls": 52,
- "detailCalls": 22,
+ "calls": 9,
+ "detailCalls": 7,
  "errors": 0,
- "minutes": 0.3,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
