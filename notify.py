@@ -9,6 +9,7 @@ import datetime as dt
 import html
 import json
 import os
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -128,9 +129,11 @@ def build(today):
 
 
 def main():
-    token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    raw = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    m = re.search(r"\d{6,}:[A-Za-z0-9_-]{30,}", raw)
+    token = m.group(0) if m else ""
     if not token:
-        print("Nema TELEGRAM_BOT_TOKEN, poruka se ne šalje.")
+        print("TELEGRAM_BOT_TOKEN nije postavljen ili ne liči na token (broj:slova).")
         return 0
     today = dt.datetime.now(TZ).date()
     mark = os.path.join(ROOT, "data", "telegram_sent.json")
