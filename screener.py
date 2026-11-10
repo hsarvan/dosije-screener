@@ -58,7 +58,7 @@ RULES = {"R1": "Preokreti ekipe + isti preokret u međusobnom", "R2": "Ponovljen
          "R3": "Zbir preokreta obje ekipe (zadnjih 10)", "R4": "Ekipa sklona preokretima (zadnjih 15)",
          "R5": "Gust raspored: kup ili Evropa oko utakmice"}
 PRIOR = {1: 1.25, 2: 1.6, 3: 2.0}   # koliko puta češće od prosjeka očekujemo pogodak po jačini (prije podataka)
-PRIOR_N = 40                         # težina te pretpostavke, u utakmicama
+PRIOR_E = 6.0                        # težina te pretpostavke: kao 6 pogodaka koliko bi dao prosjek lige
 BOTH = {"R4"}                        # pravila koja traže preokret u bilo kojem smjeru (kandidat za 1/2 i 2/1)
 
 CFG = {}
@@ -591,6 +591,7 @@ def analyse(fx, ctx):
         "htftTip": cand if score >= CFG.get("htftMin", 20) else None,
         "score": score, "best": best if score else None, "pts": [round(pts[s], 1) for s in SELS],
         "stats": stats, "ev": ev, "feat": feat, "cong": cong,
+        "hist": h15, "h2hRows": h2h,
         "h2h": [line(m) for m in h2h[:6]],
         "homeLast": [line(m) for m in h15["h"][:15]],
         "awayLast": [line(m) for m in h15["a"][:15]],
@@ -714,17 +715,16 @@ def calibrate():
                 a["pri"] += b * PRIOR[st]
     rules = {}
     for key, a in sorted(agg.items()):
-        b = a["exp"] / a["n"]
-        if b <= 0:
+        if a["exp"] <= 0:
             continue
-        prior = a["pri"] / a["n"]
-        est = (a["hits"] + PRIOR_N * prior) / (a["n"] + PRIOR_N)
-        k = round(min(1.6, max(0.4, est / prior)), 2) if a["n"] >= 40 else 1.0
+        b = a["exp"] / a["n"]
+        prior = a["pri"] / a["exp"]                         # pretpostavljeni omjer prema prosjeku
+        est = (a["hits"] + prior * PRIOR_E) / (a["exp"] + PRIOR_E)   # izmjereni omjer, povučen ka pretpostavci
+        k = round(min(1.6, max(0.4, est / prior)), 2)
         rules[key] = {"n": a["n"], "hits": a["hits"], "sel": a["sel"], "any": a["any"],
-                      "rate": round(a["hits"] / a["n"], 4),
-                      "base": round(b, 4), "lift": round(a["hits"] / a["n"] / b, 2), "mult": k}
-        if a["n"] >= 40:
-            MULT[key] = k
+                      "rate": round(a["hits"] / a["n"], 4), "base": round(b, 4),
+                      "lift": round(a["hits"] / a["exp"], 2), "est": round(est, 2), "mult": k}
+        MULT[key] = k
     stats = {"at": dt.datetime.now(UTC).isoformat(timespec="seconds"), "n": n,
              "base": {sel: round(glob_rate[sel], 4) for sel in SELS}, "rules": rules}
     jsave(os.path.join(DATA, "rule_stats.json"), stats, pretty=True)
@@ -917,6 +917,8 @@ def run_backtest():
     for k in ("workers", "pause"):
         if k in req:
             CFG[k] = req[k]
+    if req.get("noDetail"):
+        CFG["fixtureH2H"] = False
     start = dt.datetime.combine(d0, dt.time(0), TZ).astimezone(UTC)
     end = dt.datetime.combine(d1 + dt.timedelta(days=1), dt.time(0), TZ).astimezone(UTC)
     leagues = resolve_leagues()
@@ -947,7 +949,21 @@ def run_backtest():
                       "why": [x["note"] for x in a["signals"]], "txt": reasoning(f, a),
                       "home": a["homeLast"] if req.get("verbose") else None,
                       "away": a["awayLast"] if req.get("verbose") else None})
-    save_samples(rows)
+    if not req.get("noSave"):
+        save_samples(rows)
+    if req.get("dump"):
+        def enc(m, team, f):
+            r, home = HT[str(m["id"])], m["h"] == team
+            return [(f["utc"] - parse_utc(m["t"])).days, int(home), r[0] if home else r[1], r[1] if home else r[0],
+                    r[2] if home else r[3], r[3] if home else r[2], int(m.get("lg") == f["lid"])]
+        dump = [{"id": f["id"], "d": rows[f["id"]]["d"], "lg": f["lid"], "h": f["h"], "a": f["a"], "m": rows[f["id"]]["m"],
+                 "o": HT.get(str(f["id"])), "s": rows[f["id"]]["s"], "c": a["feat"]["c"],
+                 "H": [enc(m, f["h"], f) for m in a["hist"]["h"]], "A": [enc(m, f["a"], f) for m in a["hist"]["a"]],
+                 "X": [[(f["utc"] - parse_utc(m["t"])).days, int(m["h"] == f["h"])] + HT[str(m["id"])]
+                       for m in a["h2hRows"][:6]]} for f, a in res_]
+        os.makedirs(os.path.join(ROOT, "backtest"), exist_ok=True)
+        with gzip.open(os.path.join(ROOT, "backtest", f"dump_{name}.json.gz"), "wt", encoding="utf-8") as fh:
+            json.dump(dump, fh, ensure_ascii=False, separators=(",", ":"))
     ok = [t for t in table if re.fullmatch(r"[12X]/[12X]", str(t["o"] or ""))]
 
     def band(lo, hi):
