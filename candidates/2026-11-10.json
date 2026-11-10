@@ -1,9 +1,9 @@
 {
  "date": "2026-11-10",
- "generatedAt": "2026-11-10T11:18:35+00:00",
+ "generatedAt": "2026-11-10T19:44:34+00:00",
  "window": [
-  "2026-11-10T11:18+00:00",
-  "2026-11-11T11:18+00:00"
+  "2026-11-10T19:44+00:00",
+  "2026-11-11T19:44+00:00"
  ],
  "rules": {
   "n": 3940,
@@ -11,7 +11,7 @@
    "1/2": 0.0208,
    "2/1": 0.0315
   },
-  "at": "2026-11-10T11:18:35+00:00",
+  "at": "2026-11-10T19:44:34+00:00",
   "rules": [
    {
     "id": "R1",
@@ -76,13 +76,34 @@
   ]
  },
  "leagues": 64,
- "fixturesSeen": 8,
- "analysed": 8,
+ "fixturesSeen": 12,
+ "analysed": 12,
  "screened": [
   [
-   "10.11. 18:30",
-   "ROU Liga II",
-   "Metalul Buzău – Steaua București",
+   "11.11. 18:45",
+   "ESP Segunda Federación",
+   "Castellonense – La Nucía",
+   0,
+   ""
+  ],
+  [
+   "11.11. 19:00",
+   "ESP Segunda Federación",
+   "Castellón B – Deportiva Minera",
+   7,
+   "2/1"
+  ],
+  [
+   "11.11. 19:30",
+   "ESP Segunda Federación",
+   "Alcoyano – Elche Ilicitano",
+   0,
+   ""
+  ],
+  [
+   "11.11. 20:30",
+   "ESP Segunda Federación",
+   "Cieza – Valencia B",
    0,
    ""
   ],
@@ -129,20 +150,27 @@
    ""
   ],
   [
-   "10.11. 20:30",
+   "11.11. 20:30",
    "URU Segunda Division",
-   "Huracan FC – River Plate",
-   7,
-   "2/1"
+   "La Luz – Fénix",
+   0,
+   ""
+  ],
+  [
+   "11.11. 20:30",
+   "URU Segunda Division",
+   "Tacuarembo FC – Miramar Misiones",
+   0,
+   ""
   ]
  ],
- "withData": 8,
+ "withData": 12,
  "candidates": 1,
  "tips": 0,
- "calls": 10,
- "detailCalls": 8,
+ "calls": 52,
+ "detailCalls": 22,
  "errors": 0,
- "minutes": 0.0,
+ "minutes": 0.3,
  "notes": [],
  "matches": [
   {
@@ -288,7 +316,7 @@
     "sources": [
      "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
     ],
-    "createdAt": "2026-11-10T11:18:35+00:00",
+    "createdAt": "2026-11-10T19:44:34+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
