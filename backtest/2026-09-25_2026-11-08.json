@@ -4,9 +4,9 @@
  "leagues": 64,
  "fixtures": 3913,
  "complete": true,
- "calls": 29764,
+ "calls": 51,
  "errors": 0,
- "minutes": 71.6,
+ "minutes": 0.5,
  "withOutcome": 3913,
  "reversals": {
   "1/2": 80,
@@ -14,54 +14,54 @@
  },
  "bands": {
   "tips": {
-   "n": 270,
+   "n": 245,
    "hitSel": 12,
    "hitAlt": 5,
-   "anyReversal": 18
+   "anyReversal": 17
   },
   "candidates": {
-   "n": 418,
+   "n": 429,
    "hitSel": 11,
    "hitAlt": 5,
    "anyReversal": 19
   },
   "rest": {
-   "n": 3225,
+   "n": 3239,
    "hitSel": 0,
    "hitAlt": 0,
-   "anyReversal": 167
+   "anyReversal": 168
   }
  },
  "byScore": {
   "8-15": {
-   "n": 202,
+   "n": 210,
    "hitSel": 5,
    "hitAlt": 1,
    "anyReversal": 9
   },
   "16-23": {
-   "n": 216,
+   "n": 219,
    "hitSel": 6,
    "hitAlt": 4,
    "anyReversal": 10
   },
   "24-31": {
-   "n": 158,
-   "hitSel": 7,
+   "n": 153,
+   "hitSel": 9,
    "hitAlt": 3,
-   "anyReversal": 11
+   "anyReversal": 12
   },
   "32-39": {
-   "n": 60,
+   "n": 50,
    "hitSel": 3,
    "hitAlt": 0,
    "anyReversal": 3
   },
   "40-55": {
-   "n": 45,
-   "hitSel": 2,
+   "n": 35,
+   "hitSel": 0,
    "hitAlt": 2,
-   "anyReversal": 4
+   "anyReversal": 2
   },
   "56-999": {
    "n": 7,
@@ -72,24 +72,26 @@
  },
  "rules": {
   "R1": {
-   "n": 97,
+   "n": 98,
    "hits": 4,
    "sel": 4,
    "any": 7,
-   "rate": 0.0412,
-   "base": 0.0282,
-   "lift": 1.46,
-   "mult": 0.81
+   "rate": 0.0408,
+   "base": 0.0283,
+   "lift": 1.44,
+   "est": 1.82,
+   "mult": 0.91
   },
   "R1:3": {
-   "n": 97,
+   "n": 98,
    "hits": 4,
    "sel": 4,
    "any": 7,
-   "rate": 0.0412,
-   "base": 0.0282,
-   "lift": 1.46,
-   "mult": 0.81
+   "rate": 0.0408,
+   "base": 0.0283,
+   "lift": 1.44,
+   "est": 1.82,
+   "mult": 0.91
   },
   "R2": {
    "n": 14,
@@ -98,8 +100,9 @@
    "any": 1,
    "rate": 0.0714,
    "base": 0.0263,
-   "lift": 2.71,
-   "mult": 1.0
+   "lift": 2.72,
+   "est": 1.33,
+   "mult": 1.07
   },
   "R2:1": {
    "n": 14,
@@ -108,8 +111,9 @@
    "any": 1,
    "rate": 0.0714,
    "base": 0.0263,
-   "lift": 2.71,
-   "mult": 1.0
+   "lift": 2.72,
+   "est": 1.33,
+   "mult": 1.07
   },
   "R3": {
    "n": 90,
@@ -119,7 +123,8 @@
    "rate": 0.0556,
    "base": 0.0299,
    "lift": 1.86,
-   "mult": 1.31
+   "est": 1.46,
+   "mult": 1.14
   },
   "R3:1": {
    "n": 85,
@@ -129,7 +134,8 @@
    "rate": 0.0588,
    "base": 0.0287,
    "lift": 2.05,
-   "mult": 1.44
+   "est": 1.48,
+   "mult": 1.19
   },
   "R3:2": {
    "n": 5,
@@ -139,7 +145,8 @@
    "rate": 0.0,
    "base": 0.051,
    "lift": 0.0,
-   "mult": 1.0
+   "est": 1.53,
+   "mult": 0.96
   },
   "R4": {
    "n": 681,
@@ -149,7 +156,8 @@
    "rate": 0.0587,
    "base": 0.0575,
    "lift": 1.02,
-   "mult": 0.68
+   "est": 1.09,
+   "mult": 0.7
   },
   "R4:1": {
    "n": 286,
@@ -159,7 +167,8 @@
    "rate": 0.0524,
    "base": 0.0543,
    "lift": 0.97,
-   "mult": 0.8
+   "est": 1.05,
+   "mult": 0.84
   },
   "R4:2": {
    "n": 251,
@@ -167,9 +176,10 @@
    "sel": 10,
    "any": 15,
    "rate": 0.0598,
-   "base": 0.058,
+   "base": 0.0579,
    "lift": 1.03,
-   "mult": 0.69
+   "est": 1.2,
+   "mult": 0.75
   },
   "R4:3": {
    "n": 144,
@@ -179,7 +189,8 @@
    "rate": 0.0694,
    "base": 0.0629,
    "lift": 1.1,
-   "mult": 0.65
+   "est": 1.46,
+   "mult": 0.73
   },
   "R5": {
    "n": 125,
@@ -189,7 +200,8 @@
    "rate": 0.024,
    "base": 0.0314,
    "lift": 0.76,
-   "mult": 0.7
+   "est": 1.08,
+   "mult": 0.84
   },
   "R5:1": {
    "n": 116,
@@ -199,7 +211,8 @@
    "rate": 0.0172,
    "base": 0.0311,
    "lift": 0.55,
-   "mult": 0.59
+   "est": 0.99,
+   "mult": 0.79
   },
   "R5:2": {
    "n": 9,
@@ -209,7 +222,8 @@
    "rate": 0.1111,
    "base": 0.0353,
    "lift": 3.15,
-   "mult": 1.0
+   "est": 1.68,
+   "mult": 1.05
   }
  },
  "flagged": [
@@ -357,23 +371,6 @@
   },
   {
    "d": "2026-09-26",
-   "lg": "ENG National League",
-   "m": "Boston United – AFC Fylde",
-   "o": "X/2",
-   "score": 48,
-   "sel": "1/2",
-   "alt": "2/1",
-   "why": [
-    "Boston United 3× ispušteno vodstvo s PV (zadnjih 10); međusobni 23.10.2024 1/2",
-    "Preokreti 1/2 u zadnjih 10: Boston United 3, AFC Fylde 0",
-    "Boston United: 3 preokreta u zadnjih 15"
-   ],
-   "txt": "Boston United, preokreti: protiv Hornchurch 2:3 (PV 2:1) 31.08.; Boreham Wood–Boston United 2:1 (PV 0:1) 27.08.; protiv Birmingham U21 2:3 (PV 1:0) 18.08. Međusobni 23.10.2024 kod domaćina: Boston United–AFC Fylde 1:2 (PV 1:0).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-09-26",
    "lg": "BRA Série B",
    "m": "Operário-PR – Ceará",
    "o": "1/X",
@@ -386,22 +383,6 @@
     "Ceará: 2 preokreta u zadnjih 15, zadnji meč preokret"
    ],
    "txt": "Ceará, preokreti: protiv Novorizontino 2:1 (PV 0:1) 18.09.; São Bernardo–Ceará 3:4 (PV 1:0) 26.07. Međusobni 31.05.2026 kod gosta: Ceará–Operário-PR 1:2 (PV 1:0).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-03",
-   "lg": "NOR OBOS-ligaen",
-   "m": "Strømmen – Sandnes Ulf",
-   "o": "X/X",
-   "score": 48,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "Sandnes Ulf 2× ispušteno vodstvo s PV (5 kod kuće); međusobni 18.08.2021 2/1",
-    "Sandnes Ulf: 3 preokreta u zadnjih 15, zadnji meč preokret"
-   ],
-   "txt": "Sandnes Ulf, preokreti: protiv Moss 1:2 (PV 1:0) 20.09.; Varhaug–Sandnes Ulf 2:3 (PV 2:1) 26.08.; protiv Hødd 3:4 (PV 1:0) 09.08. Međusobni 18.08.2021 kod gosta: Sandnes Ulf–Strømmen 3:2 (PV 1:2).",
    "home": null,
    "away": null
   },
@@ -438,23 +419,6 @@
    "away": null
   },
   {
-   "d": "2026-10-11",
-   "lg": "RUS First League",
-   "m": "Sochi – Ufa",
-   "o": "X/1",
-   "score": 48,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "Sochi 2× okrenut minus s PV (5 u gostima); međusobni 25.08.2024 1/2",
-    "Preokreti 2/1 u zadnjih 10: Sochi 2, Ufa 1",
-    "Sochi: 2 preokreta u zadnjih 13, 2 u zadnjih 5"
-   ],
-   "txt": "Sochi, preokreti: Veles Moscow–Sochi 1:2 (PV 1:0) 14.09.; KamAZ–Sochi 2:3 (PV 2:1) 24.08. Međusobni 25.08.2024 kod gosta: FC Ufa–PFC Sochi 3:4 (PV 3:1).",
-   "home": null,
-   "away": null
-  },
-  {
    "d": "2026-10-17",
    "lg": "ESP Segunda Federación",
    "m": "SD Gernika – SD Amorebieta",
@@ -474,22 +438,6 @@
    "away": null
   },
   {
-   "d": "2026-10-19",
-   "lg": "NED Eerste Divisie",
-   "m": "Jong FC Utrecht – Roda JC Kerkrade",
-   "o": "1/2",
-   "score": 48,
-   "sel": "1/2",
-   "alt": "2/1",
-   "why": [
-    "Jong FC Utrecht 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 22.11.2024 1/2",
-    "Jong FC Utrecht: 3 preokreta u zadnjih 15, 2 u zadnjih 5, zadnji meč preokret"
-   ],
-   "txt": "Jong FC Utrecht, preokreti: De Graafschap–Jong FC Utrecht 2:1 (PV 0:1) 09.10.; NAC Breda–Jong FC Utrecht 2:3 (PV 2:1) 11.09.; TOP Oss–Jong FC Utrecht 3:1 (PV 0:1) 06.04. Međusobni 22.11.2024 kod domaćina: Jong FC Utrecht–Roda JC Kerkrade 1:3 (PV 1:0).",
-   "home": null,
-   "away": null
-  },
-  {
    "d": "2026-10-20",
    "lg": "IDN Super League",
    "m": "Bhayangkara Presisi Lampung FC – PSIM Yogyakarta",
@@ -502,76 +450,6 @@
     "Bhayangkara Presisi Lampung FC: 4 preokreta u zadnjih 15"
    ],
    "txt": "Bhayangkara Presisi Lampung FC, preokreti: protiv Madura United 3:1 (PV 0:1) 11.05.; protiv Persib Bandung 2:4 (PV 2:1) 30.04.; protiv PSIM Yogyakarta 2:1 (PV 0:1) 17.04. (međusobni).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-23",
-   "lg": "NED Eerste Divisie",
-   "m": "FC Volendam – Jong FC Utrecht",
-   "o": "1/1",
-   "score": 48,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "Zadnji međusobni 1/2 (28.04.2025); Jong FC Utrecht u zadnjem meču 1/2",
-    "Jong FC Utrecht 2× ispušteno vodstvo s PV (zadnjih 10); međusobni 28.04.2025 1/2",
-    "Jong FC Utrecht: 3 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret",
-    "FC Volendam: KNVB Cup za 4 dana (umor, rotacija)"
-   ],
-   "txt": "Jong FC Utrecht, preokreti: protiv Roda JC Kerkrade 1:2 (PV 1:0) 19.10.; De Graafschap–Jong FC Utrecht 2:1 (PV 0:1) 09.10.; NAC Breda–Jong FC Utrecht 2:3 (PV 2:1) 11.09. Međusobni 28.04.2025 kod gosta: Jong FC Utrecht–FC Volendam 2:3 (PV 2:1). FC Volendam: KNVB Cup za 4 dana.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-24",
-   "lg": "GER 3. Liga",
-   "m": "Viktoria Köln 1904 – SC Verl",
-   "o": "2/1",
-   "score": 48,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "SC Verl 3× ispušteno vodstvo s PV (zadnjih 15); međusobni 22.09.2024 2/1",
-    "SC Verl: 4 preokreta u zadnjih 15"
-   ],
-   "txt": "SC Verl, preokreti: protiv Meppen 2:1 (PV 0:1) 12.09.; protiv MSV Duisburg 2:4 (PV 1:0) 15.08.; Alemannia Aachen–SC Verl 4:1 (PV 0:1) 09.08. Međusobni 22.09.2024 kod domaćina: Viktoria Köln 1904–SC Verl 2:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-27",
-   "lg": "GER Regionalliga",
-   "m": "Freiburg II – Eintracht Frankfurt II",
-   "o": "1/1",
-   "score": 48,
-   "sel": "1/2",
-   "alt": "2/1",
-   "why": [
-    "Eintracht Frankfurt II 2× okrenut minus s PV (zadnjih 10); međusobni 13.04.2014 1/2",
-    "Preokreti 1/2 u zadnjih 10: Freiburg II 1, Eintracht Frankfurt II 2",
-    "Eintracht Frankfurt II: 3 preokreta u zadnjih 12"
-   ],
-   "txt": "Eintracht Frankfurt II, preokreti: protiv Kaiserslautern II 2:1 (PV 0:1) 17.10.; SG Barockstadt Fulda Lehnerz–Eintracht Frankfurt II 1:2 (PV 1:0) 09.09.; SGV Heilbronn-Freiberg–Eintracht Frankfurt II 2:1 (PV 0:1) 29.08. Međusobni 13.04.2014 kod domaćina: Freiburg II–Eintracht Frankfurt II 2:3 (PV 2:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-31",
-   "lg": "ENG League One",
-   "m": "Leyton Orient – Cambridge",
-   "o": "1/1",
-   "score": 48,
-   "sel": "1/2",
-   "alt": "2/1",
-   "why": [
-    "Cambridge 2× okrenut minus s PV (zadnjih 10); međusobni 21.04.2025 1/2",
-    "Zadnji međusobni 1/2 (21.04.2025); Leyton Orient u zadnjem meču 2/1",
-    "Preokreti 1/2 u zadnjih 10: Leyton Orient 1, Cambridge 2",
-    "Cambridge: 2 preokreta u zadnjih 15",
-    "Cambridge: EFL Trophy Southern Grp. G za 3 dana (umor, rotacija)"
-   ],
-   "txt": "Cambridge, preokreti: Barnsley–Cambridge 1:2 (PV 1:0) 17.10.; protiv Reading 2:1 (PV 0:1) 12.09. Međusobni 21.04.2025 kod gosta: Cambridge United–Leyton Orient 1:2 (PV 1:0). Cambridge: EFL Trophy Southern Grp. G za 3 dana.",
    "home": null,
    "away": null
   },
@@ -708,23 +586,6 @@
   },
   {
    "d": "2026-10-10",
-   "lg": "GER Regionalliga",
-   "m": "Borussia Dortmund II – Wattenscheid",
-   "o": "1/1",
-   "score": 40,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Wattenscheid 2× ispušteno vodstvo s PV (5 u gostima); međusobni 31.10.2018 1/2",
-    "Preokreti 2/1 u zadnjih 10: Borussia Dortmund II 1, Wattenscheid 2",
-    "Wattenscheid: 2 preokreta u zadnjih 11"
-   ],
-   "txt": "Wattenscheid, preokreti: SC Paderborn 07 II–Wattenscheid 5:2 (PV 0:2) 06.09.; Borussia Mönchengladbach II–Wattenscheid 4:1 (PV 0:1) 29.08. Međusobni 31.10.2018 kod gosta: Wattenscheid–Borussia Dortmund II 1:3 (PV 1:0).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-10",
    "lg": "ENG National League",
    "m": "Boston United – Southend",
    "o": "X/2",
@@ -771,23 +632,6 @@
     "GV San José: 3 preokreta u zadnjih 15"
    ],
    "txt": "GV San José, preokreti: protiv Universitario de Vinto 2:1 (PV 0:1) 27.07.; CDT Real Oruro–GV San José 3:1 (PV 0:1) 11.07.; protiv Real Tomayapo 3:2 (PV 0:1) 07.07. Međusobni 29.11.2025 kod gosta: Guabirá–GV San José 2:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-15",
-   "lg": "USA MLS",
-   "m": "Nashville SC – Sporting KC",
-   "o": "1/1",
-   "score": 40,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "Nashville SC 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 10.04.2022 1/2",
-    "Sporting KC 2× ispušteno vodstvo s PV (zadnjih 10); međusobni 10.04.2022 1/2",
-    "Sporting KC: 2 preokreta u zadnjih 15, 2 u zadnjih 5"
-   ],
-   "txt": "Sporting KC, preokreti: Seattle Sounders–Sporting KC 2:1 (PV 0:1) 02.10.; protiv Philadelphia 3:4 (PV 3:0) 20.09. Međusobni 10.04.2022 kod gosta: Sporting Kansas City–Nashville SC 1:2 (PV 1:0).",
    "home": null,
    "away": null
   },
@@ -1116,22 +960,6 @@
    "away": null
   },
   {
-   "d": "2026-09-27",
-   "lg": "GER Regionalliga",
-   "m": "Bremer SV – SC Weiche Flensburg",
-   "o": "2/2",
-   "score": 32,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "SC Weiche Flensburg 2× okrenut minus s PV (5 u gostima); međusobni 21.04.2025 2/1",
-    "SC Weiche Flensburg: 2 preokreta u zadnjih 15"
-   ],
-   "txt": "SC Weiche Flensburg, preokreti: Eintracht Norderstedt–SC Weiche Flensburg 1:4 (PV 1:0) 23.08.; Werder Bremen II–SC Weiche Flensburg 1:2 (PV 1:0) 19.08. Međusobni 21.04.2025 kod gosta: SC Weiche Flensburg–Bremer SV 3:2 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
    "d": "2026-09-29",
    "lg": "ENG National League",
    "m": "Yeovil – Worthing",
@@ -1166,24 +994,6 @@
   {
    "d": "2026-10-03",
    "lg": "GER Regionalliga",
-   "m": "SC Weiche Flensburg – Oldenburg",
-   "o": "X/1",
-   "score": 32,
-   "sel": "1/2",
-   "alt": "2/1",
-   "why": [
-    "Oldenburg 2× okrenut minus s PV (5 kod kuće); međusobni 04.04.2025 2/1",
-    "SC Weiche Flensburg 2× okrenut minus s PV (5 u gostima); međusobni 04.04.2025 2/1",
-    "SC Weiche Flensburg: 2 preokreta u zadnjih 15",
-    "Oldenburg: 2 preokreta u zadnjih 15"
-   ],
-   "txt": "SC Weiche Flensburg, preokreti: Eintracht Norderstedt–SC Weiche Flensburg 1:4 (PV 1:0) 23.08.; Werder Bremen II–SC Weiche Flensburg 1:2 (PV 1:0) 19.08. Oldenburg, preokreti: protiv Hannover 96 II 4:3 (PV 0:2) 11.09.; protiv SV Drochtersen/Assel 3:1 (PV 0:1) 07.08. Međusobni 04.04.2025 kod gosta: Oldenburg–SC Weiche Flensburg 5:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-03",
-   "lg": "GER Regionalliga",
    "m": "Homburg – SG Barockstadt Fulda Lehnerz",
    "o": "X/X",
    "score": 32,
@@ -1195,38 +1005,6 @@
     "SG Barockstadt Fulda Lehnerz: 3 preokreta u zadnjih 15"
    ],
    "txt": "Homburg, preokreti: protiv Kaiserslautern II 2:1 (PV 0:1) 09.09.; protiv Mainz 05 II 2:1 (PV 0:1) 08.08. SG Barockstadt Fulda Lehnerz, preokreti: protiv Eintracht Frankfurt II 1:2 (PV 1:0) 09.09.; protiv FSV Frankfurt 1:2 (PV 1:0) 16.05.; protiv Hessen Kassel 2:1 (PV 0:1) 21.04.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-04",
-   "lg": "BRA Série C",
-   "m": "Paysandu – Ferroviária",
-   "o": "1/1",
-   "score": 32,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Paysandu 2× okrenut minus s PV (5 kod kuće); međusobni 30.06.2025 2/1",
-    "Paysandu: 2 preokreta u zadnjih 15"
-   ],
-   "txt": "Paysandu, preokreti: protiv Confiança 2:1 (PV 0:1) 10.08.; protiv Guarani-SP 3:2 (PV 0:2) 12.07. Međusobni 30.06.2025 kod domaćina: Paysandu–Ferroviária 2:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-09",
-   "lg": "GER Regionalliga",
-   "m": "Kickers Offenbach – Homburg",
-   "o": "X/X",
-   "score": 32,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "Homburg 2× okrenut minus s PV (5 kod kuće); međusobni 11.04.2025 2/1",
-    "Homburg: 2 preokreta u zadnjih 15"
-   ],
-   "txt": "Homburg, preokreti: protiv Kaiserslautern II 2:1 (PV 0:1) 09.09.; protiv Mainz 05 II 2:1 (PV 0:1) 08.08. Međusobni 11.04.2025 kod gosta: Homburg–Kickers Offenbach 5:1 (PV 0:1).",
    "home": null,
    "away": null
   },
@@ -1260,22 +1038,6 @@
     "Gost: National League Cup Group C prije 4 dana; National League Cup Group C za 3 dana (umo"
    ],
    "txt": "Worthing, preokreti: protiv Boreham Wood 2:3 (PV 1:0) 31.08.; Tamworth–Worthing 3:2 (PV 0:1) 28.08.; protiv West Ham United U21 1:2 (PV 1:0) 18.08. Worthing: National League Cup Group B za 3 dana. Solihull Moors: National League Cup Group C prije 4 dana; National League Cup Group C za 3 dana.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-10",
-   "lg": "ENG League One",
-   "m": "Wycombe – Luton",
-   "o": "2/2",
-   "score": 32,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "Luton 2× okrenut minus s PV (zadnjih 15); međusobni 10.04.2021 1/2",
-    "Wycombe: EFL Trophy Southern Grp. C prije 4 dana (umor, rotacija)"
-   ],
-   "txt": "Luton: okrenut minus s PV (zadnjih 15) – Reading–Luton 3:4 (PV 3:1) 15.08.; Bolton–Luton 2:3 (PV 2:1) 02.05. Međusobni 10.04.2021 kod domaćina: Wycombe Wanderers–Luton Town 1:3 (PV 1:0). Wycombe: EFL Trophy Southern Grp. C prije 4 dana.",
    "home": null,
    "away": null
   },
@@ -1356,22 +1118,6 @@
     "TSV Havelse: 3 preokreta u zadnjih 15"
    ],
    "txt": "TSV Havelse, preokreti: MSV Duisburg–TSV Havelse 2:1 (PV 0:1) 15.09.; protiv Waldhof Mannheim 3:2 (PV 1:2) 30.08.; protiv FC Schweinfurt 3:2 (PV 1:2) 10.05.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-16",
-   "lg": "GER Regionalliga",
-   "m": "RW Erfurt – FSV Zwickau",
-   "o": "2/X",
-   "score": 32,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "RW Erfurt 2× okrenut minus s PV (5 u gostima); međusobni 26.03.2025 2/1",
-    "RW Erfurt: 2 preokreta u zadnjih 15"
-   ],
-   "txt": "RW Erfurt, preokreti: Lokomotive Leipzig–RW Erfurt 3:4 (PV 1:0) 26.09.; Carl Zeiss Jena–RW Erfurt 1:2 (PV 1:0) 09.08. Međusobni 26.03.2025 kod gosta: FSV Zwickau–RW Erfurt 3:2 (PV 0:1).",
    "home": null,
    "away": null
   },
@@ -1636,22 +1382,6 @@
    "away": null
   },
   {
-   "d": "2026-10-25",
-   "lg": "GER Regionalliga",
-   "m": "Oberhausen – Wattenscheid",
-   "o": "1/1",
-   "score": 32,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Wattenscheid 2× ispušteno vodstvo s PV (5 u gostima); međusobni 26.02.2019 2/1",
-    "Wattenscheid: 2 preokreta u zadnjih 13"
-   ],
-   "txt": "Wattenscheid, preokreti: SC Paderborn 07 II–Wattenscheid 5:2 (PV 0:2) 06.09.; Borussia Mönchengladbach II–Wattenscheid 4:1 (PV 0:1) 29.08. Međusobni 26.02.2019 kod domaćina: Oberhausen–Wattenscheid 3:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
    "d": "2026-10-29",
    "lg": "USA MLS",
    "m": "Minnesota – Sporting KC",
@@ -1730,22 +1460,6 @@
     "Hoffenheim II: 2 preokreta u zadnjih 15, 2 u zadnjih 5, zadnji meč preokret"
    ],
    "txt": "Hoffenheim II, preokreti: Waldhof Mannheim–Hoffenheim II 4:1 (PV 0:1) 25.10.; MSV Duisburg–Hoffenheim II 3:2 (PV 0:2) 10.10.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-31",
-   "lg": "TUR 1. Lig",
-   "m": "Bursaspor – Bandırmaspor",
-   "o": "1/1",
-   "score": 32,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Bursaspor 2× okrenut minus s PV (5 u gostima); međusobni 15.04.2021 2/1",
-    "Bursaspor: 2 preokreta u zadnjih 12"
-   ],
-   "txt": "Bursaspor, preokreti: Batman Petrolspor–Bursaspor 1:2 (PV 1:0) 19.09.; Kayserispor–Bursaspor 1:2 (PV 1:0) 29.08. Međusobni 15.04.2021 kod domaćina: Bursaspor–Bandırmaspor 2:1 (PV 0:1).",
    "home": null,
    "away": null
   },
@@ -1917,22 +1631,6 @@
   },
   {
    "d": "2026-11-01",
-   "lg": "ESP Segunda Federación",
-   "m": "Osasuna B – Tudelano",
-   "o": "X/1",
-   "score": 32,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Tudelano 2× ispušteno vodstvo s PV (zadnjih 10); međusobni 25.08.2019 2/1",
-    "Tudelano: 2 preokreta u zadnjih 15"
-   ],
-   "txt": "Tudelano, preokreti: protiv Barça Atlètic 1:2 (PV 1:0) 04.10.; Girona B–Tudelano 3:1 (PV 0:1) 13.09. Međusobni 25.08.2019 kod gosta: Tudelano–Osasuna B 2:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-11-01",
    "lg": "ITA Serie C",
    "m": "Lumezzane – Arzignano Valchiampo",
    "o": "X/X",
@@ -2014,23 +1712,6 @@
    "away": null
   },
   {
-   "d": "2026-11-07",
-   "lg": "SCO League Two",
-   "m": "Annan Athletic – Kelty Hearts",
-   "o": "2/2",
-   "score": 32,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "Kelty Hearts 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 29.03.2025 2/1",
-    "Annan Athletic: Challenge Cup prije 4 dana (umor, rotacija)",
-    "Kelty Hearts: Challenge Cup prije 4 dana (umor, rotacija)"
-   ],
-   "txt": "Kelty Hearts: ispušteno vodstvo s PV (zadnjih 15) – Stirling Albion–Kelty Hearts 2:1 (PV 0:1) 10.10.; protiv Clydebank 2:4 (PV 2:1) 25.08. Međusobni 29.03.2025 kod domaćina: Annan Athletic–Kelty Hearts 2:1 (PV 0:1). Annan Athletic: Challenge Cup prije 4 dana. Kelty Hearts: Challenge Cup prije 4 dana.",
-   "home": null,
-   "away": null
-  },
-  {
    "d": "2026-11-08",
    "lg": "AUS A-League",
    "m": "Adelaide United – Melbourne Victory",
@@ -2106,6 +1787,22 @@
     "Tamworth: 3 preokreta u zadnjih 15, 2 u zadnjih 5, zadnji meč preokret"
    ],
    "txt": "Tamworth, preokreti: protiv Wealdstone 2:1 (PV 0:1) 19.09.; protiv Middlesbrough U21 1:3 (PV 1:0) 09.09.; protiv Worthing 3:2 (PV 0:1) 28.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-09-26",
+   "lg": "ENG National League",
+   "m": "Boston United – AFC Fylde",
+   "o": "X/2",
+   "score": 24,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Preokreti 1/2 u zadnjih 10: Boston United 3, AFC Fylde 0",
+    "Boston United: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Boston United, preokreti: protiv Hornchurch 2:3 (PV 2:1) 31.08.; Boreham Wood–Boston United 2:1 (PV 0:1) 27.08.; protiv Birmingham U21 2:3 (PV 1:0) 18.08.",
    "home": null,
    "away": null
   },
@@ -2203,21 +1900,6 @@
    "away": null
   },
   {
-   "d": "2026-09-27",
-   "lg": "USA MLS",
-   "m": "Salt Lake – New England",
-   "o": "1/1",
-   "score": 24,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "Salt Lake 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 13.03.2022 1/2"
-   ],
-   "txt": "Salt Lake: ispušteno vodstvo s PV (zadnjih 15) – Orlando–Salt Lake 2:1 (PV 0:1) 22.08.; Portland–Salt Lake 2:1 (PV 0:1) 26.07. Međusobni 13.03.2022 kod gosta: New England Revolution–Real Salt Lake 2:3 (PV 1:0).",
-   "home": null,
-   "away": null
-  },
-  {
    "d": "2026-09-29",
    "lg": "ENG National League",
    "m": "FC Halifax Town – Boston United",
@@ -2235,16 +1917,16 @@
   },
   {
    "d": "2026-10-03",
-   "lg": "GER Regionalliga",
-   "m": "SV Rödinghausen – Sportfreunde Lotte",
-   "o": "X/1",
+   "lg": "NOR OBOS-ligaen",
+   "m": "Strømmen – Sandnes Ulf",
+   "o": "X/X",
    "score": 24,
-   "sel": "1/2",
-   "alt": null,
+   "sel": "2/1",
+   "alt": "1/2",
    "why": [
-    "SV Rödinghausen 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 12.10.2024 1/2"
+    "Sandnes Ulf: 3 preokreta u zadnjih 15, zadnji meč preokret"
    ],
-   "txt": "SV Rödinghausen: ispušteno vodstvo s PV (zadnjih 15) – protiv SC Wiedenbrück 2:3 (PV 2:0) 05.09.; FC Köln II–SV Rödinghausen 2:1 (PV 0:1) 02.05. Međusobni 12.10.2024 kod domaćina: SV Rödinghausen–Sportfreunde Lotte 2:3 (PV 1:0).",
+   "txt": "Sandnes Ulf, preokreti: protiv Moss 1:2 (PV 1:0) 20.09.; Varhaug–Sandnes Ulf 2:3 (PV 2:1) 26.08.; protiv Hødd 3:4 (PV 1:0) 09.08.",
    "home": null,
    "away": null
   },
@@ -2512,21 +2194,6 @@
   },
   {
    "d": "2026-10-10",
-   "lg": "CYP 2. Division",
-   "m": "Chalkanoras Idaliou – Doxa Katokopia",
-   "o": "2/2",
-   "score": 24,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Chalkanoras Idaliou 2× okrenut minus s PV (zadnjih 15); međusobni 08.02.2025 2/1"
-   ],
-   "txt": "Chalkanoras Idaliou: okrenut minus s PV (zadnjih 15) – protiv APEA Akrotiri 3:1 (PV 0:1) 21.03.; AEZ Zakakiou–Chalkanoras Idaliou 2:4 (PV 2:1) 24.01. Međusobni 08.02.2025 kod gosta: Doxa Katokopia–Chalkanoras Idaliou 3:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-10",
    "lg": "SWE Superettan",
    "m": "Östersunds FK – Varbergs BoIS FC",
    "o": "2/X",
@@ -2604,21 +2271,6 @@
   {
    "d": "2026-10-10",
    "lg": "ITA Serie C",
-   "m": "Arzignano Valchiampo – Juventus Next Gen",
-   "o": "1/1",
-   "score": 24,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Arzignano Valchiampo 2× okrenut minus s PV (zadnjih 15); međusobni 11.12.2022 2/1"
-   ],
-   "txt": "Arzignano Valchiampo: okrenut minus s PV (zadnjih 15) – AlbinoLeffe–Arzignano Valchiampo 1:2 (PV 1:0) 17.09.; Dolomiti Bellunesi–Arzignano Valchiampo 1:2 (PV 1:0) 28.03. Međusobni 11.12.2022 kod domaćina: Arzignano Valchiampo–Juventus Next Gen 2:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-10",
-   "lg": "ITA Serie C",
    "m": "Desenzano – Dolomiti Bellunesi",
    "o": "1/1",
    "score": 24,
@@ -2664,16 +2316,17 @@
   },
   {
    "d": "2026-10-11",
-   "lg": "CHN Super League",
-   "m": "Liaoning Tieren – Wuhan Three Towns",
-   "o": "X/X",
+   "lg": "RUS First League",
+   "m": "Sochi – Ufa",
+   "o": "X/1",
    "score": 24,
    "sel": "2/1",
-   "alt": null,
+   "alt": "1/2",
    "why": [
-    "Wuhan Three Towns 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 05.06.2021 1/2"
+    "Preokreti 2/1 u zadnjih 10: Sochi 2, Ufa 1",
+    "Sochi: 2 preokreta u zadnjih 13, 2 u zadnjih 5"
    ],
-   "txt": "Wuhan Three Towns: ispušteno vodstvo s PV (zadnjih 15) – protiv Shanghai Port 2:3 (PV 1:0) 14.08.; Dalian Yingbo–Wuhan Three Towns 3:2 (PV 1:2) 04.07. Liaoning Tieren: okrenut minus s PV (5 kod kuće) – protiv Chongqing Tongliang Long 3:1 (PV 0:1) 04.07. Međusobni 05.06.2021 kod gosta: Wuhan Three Towns–Liaoning Tieren 2:3 (PV 2:1).",
+   "txt": "Sochi, preokreti: Veles Moscow–Sochi 1:2 (PV 1:0) 14.09.; KamAZ–Sochi 2:3 (PV 2:1) 24.08.",
    "home": null,
    "away": null
   },
@@ -2898,7 +2551,7 @@
    "alt": "2/1",
    "why": [
     "FC Gifu 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 08.03.2025 2/1",
-    "Fukushima United 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 15.03.2026 2/1"
+    "Fukushima United 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 08.03.2025 2/1"
    ],
    "txt": "FC Gifu: ispušteno vodstvo s PV (zadnjih 15) – protiv Yokohama FC 1:2 (PV 1:0) 29.09.; protiv FC Osaka 2:3 (PV 1:0) 29.11. Međusobni 08.03.2025 kod gosta: Fukushima United–FC Gifu 4:3 (PV 0:2).",
    "home": null,
@@ -2989,21 +2642,6 @@
   {
    "d": "2026-10-17",
    "lg": "ENG League Two",
-   "m": "Newport – York City",
-   "o": "2/X",
-   "score": 24,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Newport 2× okrenut minus s PV (zadnjih 15); međusobni 11.10.2014 2/1"
-   ],
-   "txt": "Newport: okrenut minus s PV (zadnjih 15) – Barrow–Newport 1:2 (PV 1:0) 02.05.; protiv Oldham 3:2 (PV 1:2) 25.04. Međusobni 11.10.2014 kod domaćina: Newport County–York City 3:1 (PV 0:1).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-17",
-   "lg": "ENG League Two",
    "m": "Tranmere – Barnet",
    "o": "1/2",
    "score": 24,
@@ -3058,21 +2696,6 @@
     "Independiente del Valle: 3 preokreta u zadnjih 15, zadnji meč preokret"
    ],
    "txt": "Independiente del Valle, preokreti: protiv Aucas 2:1 (PV 0:1) 10.10.; Barcelona SC–Independiente del Valle 2:1 (PV 0:1) 03.09.; Leones del Norte–Independiente del Valle 2:3 (PV 1:0) 22.08.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-18",
-   "lg": "USA MLS",
-   "m": "Atlanta United – Inter Miami CF",
-   "o": "2/2",
-   "score": 24,
-   "sel": "2/1",
-   "alt": null,
-   "why": [
-    "Inter Miami CF 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 02.11.2024 2/1"
-   ],
-   "txt": "Inter Miami CF: ispušteno vodstvo s PV (zadnjih 15) – protiv León 2:3 (PV 1:0) 12.08.; protiv Monterrey 1:2 (PV 1:0) 09.08. Atlanta United: okrenut minus s PV (zadnjih 15) – protiv NY Red Bulls 2:1 (PV 0:1) 15.08. Međusobni 02.11.2024 kod domaćina: Atlanta United–Inter Miami CF 2:1 (PV 0:1).",
    "home": null,
    "away": null
   },
@@ -3231,21 +2854,6 @@
   },
   {
    "d": "2026-10-19",
-   "lg": "USA MLS Next Pro",
-   "m": "Austin FC II – San Jose Earthquakes II",
-   "o": "2/1",
-   "score": 24,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "Austin FC II 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 06.10.2024 1/2"
-   ],
-   "txt": "Austin FC II: ispušteno vodstvo s PV (zadnjih 15) – Portland Timbers 2–Austin FC II 2:1 (PV 0:1) 30.08.; protiv Minnesota United 2 2:3 (PV 2:1) 13.07. Međusobni 06.10.2024 kod domaćina: Austin FC II–San Jose Earthquakes II 3:4 (PV 3:2).",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-19",
    "lg": "SWE Superettan",
    "m": "Varbergs BoIS FC – Helsingborg",
    "o": "X/X",
@@ -3256,6 +2864,21 @@
     "Varbergs BoIS FC: 3 preokreta u zadnjih 15, 2 u zadnja 3"
    ],
    "txt": "Varbergs BoIS FC, preokreti: protiv IK Brage 3:2 (PV 0:1) 19.09.; Norrby–Varbergs BoIS FC 1:2 (PV 1:0) 14.09.; protiv Landskrona BoIS 2:3 (PV 2:1) 22.06.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-19",
+   "lg": "NED Eerste Divisie",
+   "m": "Jong FC Utrecht – Roda JC Kerkrade",
+   "o": "1/2",
+   "score": 24,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Jong FC Utrecht: 3 preokreta u zadnjih 15, 2 u zadnjih 5, zadnji meč preokret"
+   ],
+   "txt": "Jong FC Utrecht, preokreti: De Graafschap–Jong FC Utrecht 2:1 (PV 0:1) 09.10.; NAC Breda–Jong FC Utrecht 2:3 (PV 2:1) 11.09.; TOP Oss–Jong FC Utrecht 3:1 (PV 0:1) 06.04.",
    "home": null,
    "away": null
   },
@@ -3271,21 +2894,6 @@
     "Barnsley: 2 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret"
    ],
    "txt": "Barnsley, preokreti: protiv Cambridge 1:2 (PV 1:0) 17.10.; Stockport County–Barnsley 3:1 (PV 0:1) 10.10.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-21",
-   "lg": "JPN J. League 3",
-   "m": "Fukushima United – Giravanz Kitakyushu",
-   "o": "X/1",
-   "score": 24,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "Fukushima United 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 29.06.2024 2/1"
-   ],
-   "txt": "Fukushima United: ispušteno vodstvo s PV (zadnjih 15) – Zweigen Kanazawa–Fukushima United 4:3 (PV 0:2) 15.08.; protiv Kamatamare Sanuki 1:2 (PV 1:0) 09.08. Giravanz Kitakyushu: okrenut minus s PV (zadnjih 15) – protiv Zweigen Kanazawa 2:1 (PV 0:1) 23.11. Međusobni 29.06.2024 kod gosta: Giravanz Kitakyushu–Fukushima United 2:1 (PV 0:1).",
    "home": null,
    "away": null
   },
@@ -3307,16 +2915,17 @@
   },
   {
    "d": "2026-10-23",
-   "lg": "POL I Liga",
-   "m": "Polonia Warszawa – Miedź Legnica",
-   "o": "X/X",
+   "lg": "NED Eerste Divisie",
+   "m": "FC Volendam – Jong FC Utrecht",
+   "o": "1/1",
    "score": 24,
-   "sel": "2/1",
-   "alt": null,
+   "sel": "1/2",
+   "alt": "2/1",
    "why": [
-    "Polonia Warszawa 2× okrenut minus s PV (zadnjih 15); međusobni 02.03.2025 1/2"
+    "Jong FC Utrecht: 3 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret",
+    "FC Volendam: KNVB Cup za 4 dana (umor, rotacija)"
    ],
-   "txt": "Polonia Warszawa: okrenut minus s PV (zadnjih 15) – protiv Skierniewice 3:1 (PV 0:1) 01.08.; Odra Opole–Polonia Warszawa 1:2 (PV 1:0) 24.05. Međusobni 02.03.2025 kod gosta: Miedź Legnica–Polonia Warszawa 2:4 (PV 1:0).",
+   "txt": "Jong FC Utrecht, preokreti: protiv Roda JC Kerkrade 1:2 (PV 1:0) 19.10.; De Graafschap–Jong FC Utrecht 2:1 (PV 0:1) 09.10.; NAC Breda–Jong FC Utrecht 2:3 (PV 2:1) 11.09. FC Volendam: KNVB Cup za 4 dana.",
    "home": null,
    "away": null
   },
@@ -3369,6 +2978,21 @@
   },
   {
    "d": "2026-10-24",
+   "lg": "GER 3. Liga",
+   "m": "Viktoria Köln 1904 – SC Verl",
+   "o": "2/1",
+   "score": 24,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "SC Verl: 4 preokreta u zadnjih 15"
+   ],
+   "txt": "SC Verl, preokreti: protiv Meppen 2:1 (PV 0:1) 12.09.; protiv MSV Duisburg 2:4 (PV 1:0) 15.08.; Alemannia Aachen–SC Verl 4:1 (PV 0:1) 09.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-24",
    "lg": "ENG League One",
    "m": "Reading – Barnsley",
    "o": "2/1",
@@ -3379,21 +3003,6 @@
     "Barnsley: 2 preokreta u zadnjih 15, 2 u zadnja 3"
    ],
    "txt": "Barnsley, preokreti: protiv Cambridge 1:2 (PV 1:0) 17.10.; Stockport County–Barnsley 3:1 (PV 0:1) 10.10.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-10-24",
-   "lg": "GER 3. Liga",
-   "m": "VfB Stuttgart II – Alemannia Aachen",
-   "o": "2/2",
-   "score": 24,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "Alemannia Aachen 2× okrenut minus s PV (zadnjih 15); međusobni 07.12.2024 2/1"
-   ],
-   "txt": "Alemannia Aachen: okrenut minus s PV (zadnjih 15) – protiv SC Verl 4:1 (PV 0:1) 09.08.; Jahn Regensburg–Alemannia Aachen 1:3 (PV 1:0) 17.04. Međusobni 07.12.2024 kod gosta: Alemannia Aachen–VfB Stuttgart II 2:1 (PV 0:1).",
    "home": null,
    "away": null
   },
@@ -3545,6 +3154,22 @@
     "Austin FC II: 3 preokreta u zadnjih 15, 2 u zadnjih 5, zadnji meč preokret"
    ],
    "txt": "Austin FC II, preokreti: protiv San Jose Earthquakes II 2:1 (PV 0:1) 19.10.; Portland Timbers 2–Austin FC II 2:1 (PV 0:1) 30.08.; protiv Minnesota United 2 2:3 (PV 2:1) 13.07.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-27",
+   "lg": "GER Regionalliga",
+   "m": "Freiburg II – Eintracht Frankfurt II",
+   "o": "1/1",
+   "score": 24,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Preokreti 1/2 u zadnjih 10: Freiburg II 1, Eintracht Frankfurt II 2",
+    "Eintracht Frankfurt II: 3 preokreta u zadnjih 12"
+   ],
+   "txt": "Eintracht Frankfurt II, preokreti: protiv Kaiserslautern II 2:1 (PV 0:1) 17.10.; SG Barockstadt Fulda Lehnerz–Eintracht Frankfurt II 1:2 (PV 1:0) 09.09.; SGV Heilbronn-Freiberg–Eintracht Frankfurt II 2:1 (PV 0:1) 29.08.",
    "home": null,
    "away": null
   },
@@ -4307,21 +3932,6 @@
     "Stirling Albion: Challenge Cup prije 4 dana (umor, rotacija)"
    ],
    "txt": "Stranraer, preokreti: protiv Tayport 3:1 (PV 0:1) 24.10.; protiv Dumbarton 3:1 (PV 0:1) 12.09.; protiv Celtic B 3:4 (PV 1:0) 01.09. Stirling Albion: Challenge Cup prije 4 dana.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-11-07",
-   "lg": "ENG National North & South",
-   "m": "King's Lynn Town – Spennymoor Town FC",
-   "o": "1/1",
-   "score": 24,
-   "sel": "1/2",
-   "alt": null,
-   "why": [
-    "King's Lynn Town 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 29.10.2024 1/2"
-   ],
-   "txt": "King's Lynn Town: ispušteno vodstvo s PV (zadnjih 15) – Hebburn Town–King's Lynn Town 4:2 (PV 1:2) 29.08.; protiv Marine 1:4 (PV 1:0) 22.08. Međusobni 29.10.2024 kod gosta: Spennymoor Town FC–King's Lynn Town 1:2 (PV 1:0).",
    "home": null,
    "away": null
   },
@@ -5220,6 +4830,22 @@
   },
   {
    "d": "2026-10-10",
+   "lg": "GER Regionalliga",
+   "m": "Borussia Dortmund II – Wattenscheid",
+   "o": "1/1",
+   "score": 16,
+   "sel": "2/1",
+   "alt": null,
+   "why": [
+    "Preokreti 2/1 u zadnjih 10: Borussia Dortmund II 1, Wattenscheid 2",
+    "Wattenscheid: 2 preokreta u zadnjih 11"
+   ],
+   "txt": "Wattenscheid, preokreti: SC Paderborn 07 II–Wattenscheid 5:2 (PV 0:2) 06.09.; Borussia Mönchengladbach II–Wattenscheid 4:1 (PV 0:1) 29.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-10",
    "lg": "RUS First League",
    "m": "Nizhny Novgorod – FC Yenisey Krasnoyarsk",
    "o": "1/1",
@@ -5570,6 +5196,21 @@
     "Philadelphia: 3 preokreta u zadnjih 15"
    ],
    "txt": "Philadelphia, preokreti: Sporting KC–Philadelphia 3:4 (PV 3:0) 20.09.; NYCFC–Philadelphia 2:3 (PV 2:0) 16.08.; protiv Atlanta United 3:2 (PV 0:1) 01.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-15",
+   "lg": "USA MLS",
+   "m": "Nashville SC – Sporting KC",
+   "o": "1/1",
+   "score": 16,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "Sporting KC: 2 preokreta u zadnjih 15, 2 u zadnjih 5"
+   ],
+   "txt": "Sporting KC, preokreti: Seattle Sounders–Sporting KC 2:1 (PV 0:1) 02.10.; protiv Philadelphia 3:4 (PV 3:0) 20.09.",
    "home": null,
    "away": null
   },
@@ -6489,6 +6130,354 @@
     "Fort Wayne: 3 preokreta u zadnjih 15"
    ],
    "txt": "Fort Wayne, preokreti: protiv One Knoxville SC 2:3 (PV 2:0) 16.09.; protiv Chattanooga Red Wolves SC 1:2 (PV 1:0) 15.08.; Spokane Velocity FC–Fort Wayne 3:1 (PV 0:1) 26.07.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "USA MLS",
+   "m": "Houston – Minnesota",
+   "o": "X/X",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Minnesota: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Minnesota, preokreti: protiv St. Louis City 3:2 (PV 0:2) 17.10.; protiv LA Galaxy 2:3 (PV 2:1) 20.09.; protiv Atlante 3:1 (PV 0:1) 12.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "ROU Liga II",
+   "m": "CS Afumați – Steaua București",
+   "o": "2/2",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "CS Afumați: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "CS Afumați, preokreti: Metalul Buzău–CS Afumați 3:1 (PV 0:1) 08.08.; protiv CS Dinamo București 2:1 (PV 0:1) 01.08.; protiv CSM Olimpia Satu Mare 1:3 (PV 1:0) 25.04.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "CZE FNL",
+   "m": "Slavia Prague B – SK Prostějov",
+   "o": "1/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Slavia Prague B: 2 preokreta u zadnjih 15, zadnji meč preokret",
+    "SK Prostějov: Cup za 3 dana (umor, rotacija)"
+   ],
+   "txt": "Slavia Prague B, preokreti: Baník Ostrava B–Slavia Prague B 2:1 (PV 0:1) 16.10.; Dukla Praha–Slavia Prague B 1:3 (PV 1:0) 14.08. SK Prostějov: Cup za 3 dana.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "RUS First League",
+   "m": "Volga Ulyanovsk – Veles Moscow",
+   "o": "X/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Veles Moscow: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Veles Moscow, preokreti: protiv Sochi 1:2 (PV 1:0) 14.09.; protiv Nizhny Novgorod 3:2 (PV 0:1) 19.08.; protiv FC Rotor Volgograd 2:1 (PV 0:1) 03.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "SWE Superettan",
+   "m": "Norrby – IFK Norrköping",
+   "o": "2/2",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Norrby: 2 preokreta u zadnjih 15, 2 u zadnjih 5"
+   ],
+   "txt": "Norrby, preokreti: protiv Varbergs BoIS FC 1:2 (PV 1:0) 14.09.; Ljungskile–Norrby 2:1 (PV 0:1) 09.09.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "GER 3. Liga",
+   "m": "TSV Havelse – Saarbrücken",
+   "o": "X/1",
+   "score": 16,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "TSV Havelse: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "TSV Havelse, preokreti: MSV Duisburg–TSV Havelse 2:1 (PV 0:1) 15.09.; protiv Waldhof Mannheim 3:2 (PV 1:2) 30.08.; protiv FC Schweinfurt 3:2 (PV 1:2) 10.05.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "NOR OBOS-ligaen",
+   "m": "Sandnes Ulf – Lyn",
+   "o": "1/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Sandnes Ulf: 3 preokreta u zadnjih 15",
+    "Lyn: Cup za 3 dana (umor, rotacija)"
+   ],
+   "txt": "Sandnes Ulf, preokreti: protiv Moss 1:2 (PV 1:0) 20.09.; Varhaug–Sandnes Ulf 2:3 (PV 2:1) 26.08.; protiv Hødd 3:4 (PV 1:0) 09.08. Lyn: Cup za 3 dana.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "GER 3. Liga",
+   "m": "Preussen Münster – Fortuna Köln",
+   "o": "X/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Preussen Münster: 2 preokreta u zadnjih 11, zadnji meč preokret"
+   ],
+   "txt": "Preussen Münster, preokreti: Sonnenhof Großaspach–Preussen Münster 3:2 (PV 0:2) 17.10.; protiv Karlsruher SC 1:2 (PV 1:0) 21.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "ESP Segunda Federación",
+   "m": "CD Guadalajara – Real Valladolid B",
+   "o": "X/X",
+   "score": 16,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "CD Guadalajara: 3 preokreta u zadnjih 7"
+   ],
+   "txt": "CD Guadalajara, preokreti: protiv Getafe B 4:1 (PV 0:1) 11.10.; protiv RSD Alcalá 2:1 (PV 0:1) 13.09.; protiv Salamanca CF UDS 2:3 (PV 1:0) 06.09.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "ARG Primera B Nacional",
+   "m": "CA Ferrocarril Midland – Gimnasia y Tiro",
+   "o": "1/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "CA Ferrocarril Midland: 2 preokreta u zadnjih 15, zadnji meč preokret"
+   ],
+   "txt": "CA Ferrocarril Midland, preokreti: San Martín de Tucumán–CA Ferrocarril Midland 3:2 (PV 0:1) 18.10.; Temperley–CA Ferrocarril Midland 2:1 (PV 0:1) 23.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-25",
+   "lg": "ECU Serie A",
+   "m": "Aucas – Barcelona SC",
+   "o": "2/2",
+   "score": 16,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "Barcelona SC: 2 preokreta u zadnjih 15, 2 u zadnjih 5"
+   ],
+   "txt": "Barcelona SC, preokreti: LDU de Quito–Barcelona SC 2:1 (PV 0:1) 11.10.; protiv Independiente del Valle 2:1 (PV 0:1) 03.09.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-26",
+   "lg": "BOL Primera Division",
+   "m": "Oriente Petrolero – The Strongest",
+   "o": "1/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "The Strongest: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "The Strongest, preokreti: ABB–The Strongest 1:2 (PV 1:0) 15.09.; protiv Independiente Petrolero 1:2 (PV 1:0) 08.08.; Nacional Potosí–The Strongest 2:3 (PV 2:1) 05.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-26",
+   "lg": "USA MLS",
+   "m": "LAFC – LA Galaxy",
+   "o": "2/X",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "LA Galaxy: 2 preokreta u zadnjih 15, 2 u zadnjih 5"
+   ],
+   "txt": "LA Galaxy, preokreti: protiv Colorado 3:2 (PV 0:2) 27.09.; Minnesota–LA Galaxy 2:3 (PV 2:1) 20.09.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-26",
+   "lg": "IDN Super League",
+   "m": "Bhayangkara Presisi Lampung FC – PSM Makassar",
+   "o": "X/X",
+   "score": 16,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "Bhayangkara Presisi Lampung FC: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Bhayangkara Presisi Lampung FC, preokreti: protiv Madura United 3:1 (PV 0:1) 11.05.; protiv Persib Bandung 2:4 (PV 2:1) 30.04.; protiv PSIM Yogyakarta 2:1 (PV 0:1) 17.04.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-26",
+   "lg": "IDN Super League",
+   "m": "Persebaya Surabaya – Madura United",
+   "o": "1/1",
+   "score": 16,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "Madura United: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Madura United, preokreti: protiv PSIM Yogyakarta 2:1 (PV 0:1) 18.09.; Bhayangkara Presisi Lampung FC–Madura United 3:1 (PV 0:1) 11.05.; protiv Dewa United FC 1:2 (PV 1:0) 25.04.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-26",
+   "lg": "SWE Superettan",
+   "m": "Örebro – Falkenbergs FF",
+   "o": "1/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Örebro: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Örebro, preokreti: Sandvikens IF–Örebro 4:2 (PV 1:2) 19.09.; protiv IFK Värnamo 1:3 (PV 1:0) 03.08.; Ljungskile–Örebro 3:2 (PV 1:2) 27.06.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-27",
+   "lg": "ENG National League",
+   "m": "Boston United – Gateshead FC",
+   "o": "2/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Boston United: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Boston United, preokreti: protiv Southampton U21 5:6 (PV 4:3) 13.10.; protiv Hornchurch 2:3 (PV 2:1) 31.08.; Boreham Wood–Boston United 2:1 (PV 0:1) 27.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-27",
+   "lg": "ENG National League",
+   "m": "Tamworth – Scunthorpe",
+   "o": "1/1",
+   "score": 16,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "Tamworth: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Tamworth, preokreti: protiv Wealdstone 2:1 (PV 0:1) 19.09.; protiv Middlesbrough U21 1:3 (PV 1:0) 09.09.; protiv Worthing 3:2 (PV 0:1) 28.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-27",
+   "lg": "ENG National League",
+   "m": "Woking – Boreham Wood",
+   "o": "X/2",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Boreham Wood: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Boreham Wood, preokreti: protiv Altrincham 3:1 (PV 0:1) 03.10.; Worthing–Boreham Wood 2:3 (PV 1:0) 31.08.; protiv Boston United 2:1 (PV 0:1) 27.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-27",
+   "lg": "ENG National North & South",
+   "m": "Dorking Wanderers – Hemel Hempstead",
+   "o": "2/X",
+   "score": 16,
+   "sel": "2/1",
+   "alt": null,
+   "why": [
+    "Zadnji međusobni 2/1 (28.03.2026); Dorking Wanderers u zadnjem meču 1/2",
+    "Hemel Hempstead: 2 preokreta u zadnjih 15"
+   ],
+   "txt": "Hemel Hempstead, preokreti: protiv Weston Super Mare 1:3 (PV 1:0) 29.08.; Salisbury–Hemel Hempstead 1:2 (PV 1:0) 22.08. Međusobni 28.03.2026 kod domaćina: Dorking Wanderers–Hemel Hempstead 2:1 (PV 0:1).",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-29",
+   "lg": "USA MLS",
+   "m": "NYCFC – Atlanta United",
+   "o": "X/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "NYCFC: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "NYCFC, preokreti: Chicago–NYCFC 2:1 (PV 0:1) 10.10.; protiv Philadelphia 2:3 (PV 2:0) 16.08.; protiv Necaxa 1:2 (PV 1:0) 13.08.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-29",
+   "lg": "USA MLS",
+   "m": "Chicago – Orlando",
+   "o": "2/X",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Chicago: 2 preokreta u zadnjih 15, 2 u zadnjih 5"
+   ],
+   "txt": "Chicago, preokreti: protiv Philadelphia 1:3 (PV 1:0) 15.10.; protiv NYCFC 2:1 (PV 0:1) 10.10.",
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-30",
+   "lg": "IDN Super League",
+   "m": "Java United F.C. – Bhayangkara Presisi Lampung FC",
+   "o": "1/1",
+   "score": 16,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Bhayangkara Presisi Lampung FC: 3 preokreta u zadnjih 15"
+   ],
+   "txt": "Bhayangkara Presisi Lampung FC, preokreti: protiv Madura United 3:1 (PV 0:1) 11.05.; protiv Persib Bandung 2:4 (PV 2:1) 30.04.; protiv PSIM Yogyakarta 2:1 (PV 0:1) 17.04.",
    "home": null,
    "away": null
   }
@@ -7434,6 +7423,19 @@
    "d": "2026-10-18",
    "lg": "ARG Primera B Nacional",
    "m": "San Martín de Tucumán – CA Ferrocarril Midland",
+   "o": "2/1",
+   "score": 0,
+   "sel": null,
+   "alt": null,
+   "why": [],
+   "txt": null,
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-10-19",
+   "lg": "USA MLS Next Pro",
+   "m": "Austin FC II – San Jose Earthquakes II",
    "o": "2/1",
    "score": 0,
    "sel": null,
