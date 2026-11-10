@@ -1,4 +1,6 @@
 name: Dosije screener
+# Napomena: izmjenu termina (cron) mora potpisati nalog s pristupom ovom repozitoriju (vlasnik),
+# jer GitHub pokreće zakazane preglede u ime onoga ko je zadnji mijenjao termin.
 on:
   schedule:
     - cron: "47 3 * * *"   # 04:47 po Sarajevu zimi, 05:47 ljeti

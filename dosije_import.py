@@ -26,6 +26,15 @@ def load(path):
         return json.load(f)
 
 
+def pl(n, one, few, many):
+    """Bosanska množina: 1 utakmica, 2 utakmice, 5 utakmica."""
+    if n % 10 == 1 and n % 100 != 11:
+        return one
+    if n % 10 in (2, 3, 4) and n % 100 not in (12, 13, 14):
+        return few
+    return many
+
+
 def outcome(ft):
     h, a = (int(x) for x in ft.split("-"))
     return "H" if h > a else ("A" if h < a else "D")
@@ -45,9 +54,12 @@ def main():
         w = cand.get("window") or []
         win = [dt.datetime.fromisoformat(x).astimezone(TZ).date().isoformat() for x in w[:2]]
         tips = cand.get("tips", 0)
+        n_fx, n_lg, n_c = cand.get("analysed", 0), cand.get("leagues", 0), cand.get("candidates", 0)
         notes = [f"Screener {dt.datetime.fromisoformat(cand['generatedAt']).astimezone(TZ):%d.%m. %H:%M}: "
-                 f"pregledano {cand.get('analysed', 0)} utakmica iz {cand.get('leagues', 0)} liga, "
-                 f"{cand.get('candidates', 0)} kandidata, {tips} PV/K prijedloga."]
+                 f"pregledano {n_fx} {pl(n_fx, 'utakmica', 'utakmice', 'utakmica')} iz {n_lg} "
+                 f"{pl(n_lg, 'lige', 'lige', 'liga')}, {n_c} {pl(n_c, 'kandidat', 'kandidata', 'kandidata')}, "
+                 + (f"{tips} PV/K {pl(tips, 'prijedlog', 'prijedloga', 'prijedloga')}." if tips
+                    else "bez PV/K prijedloga.")]
         notes += [n for n in cand.get("notes", []) if not n.startswith("Liga nije pronađena")]
         plan["scanner"] = {"lastRunAt": cand.get("generatedAt"), "fixturesSeen": cand.get("analysed", 0),
                            "candidates": cand.get("candidates", 0), "tips": tips, "leagues": cand.get("leagues", 0),
