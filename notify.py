@@ -128,6 +128,26 @@ def build(today):
     return text if len(text) <= 4000 else text[:3990] + "…"
 
 
+def build_upsets(today):
+    cand = load(os.path.join(ROOT, "candidates", f"{today.isoformat()}.json"), {}) or {}
+    ups = cand.get("upsets") or []
+    if not ups:
+        return None
+    out = [f"💰 <b>Velike kvote · {DAYS[today.weekday()]} {today:%d.%m.}</b>",
+           "Slabija ekipa s obrascem koji joj ide u prilog. Kvota je procjena iz forme, provjeri pravu kod kladionice."]
+    for u in ups:
+        out.append(f"\n• <b>{e(u['kickoff'])} {e(u['home'])} – {e(u['away'])}</b>\n  {e(u['league'])}\n"
+                   f"  Tip <b>{e(u['pick'])}</b> ({e(u['dog'])}) · procijenjena kvota ~{u['estOdds']:.1f}".replace(".", ",", 1)
+                   + "".join(f"\n  <i>{e(w)}</i>" for w in u.get("why", [])))
+    st = cand.get("upsetStats") or {}
+    if st.get("n"):
+        out.append(f"\nDosad: {st['won']} od {st['n']} pogođeno (prosj. kvota ~{st['avgOdds']}).")
+    else:
+        out.append("\nNa odigranim utakmicama ovakvi tipovi su prolazili u oko 28% slučajeva (inače 22%). Rizično.")
+    text = "\n".join(out)
+    return text if len(text) <= 4000 else text[:3990] + "…"
+
+
 def main():
     raw = os.environ.get("TELEGRAM_BOT_TOKEN", "")
     m = re.search(r"\d{6,}:[A-Za-z0-9_-]{30,}", raw)
@@ -147,6 +167,10 @@ def main():
         return 0
     r = tg(token, "sendMessage", chat_id=cid, text=build(today), parse_mode="HTML", disable_web_page_preview="true")
     print("Poslano:", r.get("ok"))
+    up = build_upsets(today)
+    if up:
+        r2 = tg(token, "sendMessage", chat_id=cid, text=up, parse_mode="HTML", disable_web_page_preview="true")
+        print("Velike kvote poslane:", r2.get("ok"))
     if r.get("ok"):
         with open(mark, "w", encoding="utf-8") as f:
             json.dump({"date": today.isoformat()}, f)

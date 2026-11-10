@@ -515,6 +515,61 @@ def congestion(team, allm, f):
     return out
 
 
+# ---------- velike kvote (slabija ekipa pobjeđuje) ----------
+# Vjerovatnoće 1/X/2 po razlici snage (korak 0,25), izmjereno na 3.552 odigrane utakmice (25.9.–8.11.2026).
+UPSET_P = {-6: [0.257, 0.184, 0.559], -5: [0.285, 0.213, 0.502], -4: [0.329, 0.232, 0.439], -3: [0.363, 0.257, 0.379],
+           -2: [0.398, 0.261, 0.341], -1: [0.419, 0.271, 0.311], 0: [0.447, 0.268, 0.286], 1: [0.465, 0.278, 0.257],
+           2: [0.489, 0.275, 0.237], 3: [0.502, 0.278, 0.22], 4: [0.535, 0.257, 0.208], 5: [0.559, 0.243, 0.198],
+           6: [0.622, 0.197, 0.181]}
+
+
+def team_rows_scored(team, ms):
+    """Utakmice ekipe s rezultatom iz njene perspektive: (domaća?, golovi za, golovi protiv)."""
+    out = []
+    for m in ms:
+        r = HT.get(str(m["id"]))
+        if isinstance(r, list) and r[2] is not None:
+            home = m["h"] == team
+            out.append((home, r[2] if home else r[3], r[3] if home else r[2]))
+    return out
+
+
+def ppg(rows):
+    return sum(3 if f > a else (1 if f == a else 0) for _, f, a in rows) / len(rows) if rows else None
+
+
+def upset(fx, ctx):
+    """Slabija ekipa s procijenjenom kvotom 3,5+ i obrascem koji joj ide u prilog.
+    Provjera: obrasci daju ~28% pobjeda slabije ekipe naspram ~22% inače (stabilno u obje polovine perioda)."""
+    rows = {r: team_rows_scored(t, ctx["hist"][t][:15]) for r, t in (("h", fx["h"]), ("a", fx["a"]))}
+    if min(len(rows["h"]), len(rows["a"])) < 8:
+        return None
+    venue = {"h": [x for x in rows["h"] if x[0]][:8], "a": [x for x in rows["a"] if not x[0]][:8]}
+
+    def rating(r):
+        g = sum(f - a for _, f, a in rows[r]) / len(rows[r])
+        return ppg(rows[r]) + 0.35 * g + 0.3 * ((ppg(venue[r]) or ppg(rows[r])) - ppg(rows[r]))
+    diff = rating("h") - rating("a")
+    p = UPSET_P[max(-6, min(6, round(diff / 0.25)))]
+    dog = "h" if p[0] < p[2] else "a"
+    fav = "a" if dog == "h" else "h"
+    odds = round(0.92 / (p[0] if dog == "h" else p[2]), 2)
+    if odds < CFG.get("upsetMinOdds", 3.5):
+        return None
+    fav_v5 = ppg(venue[fav][:5])
+    dog_up = ppg(rows[dog][:5]) - ppg(rows[dog])
+    fav_down = ppg(rows[fav]) - ppg(rows[fav][:5])
+    why = []
+    if fav_v5 is not None and fav_v5 <= 1.2:
+        why.append(f"{fx['hn'] if fav == 'h' else fx['an']} slab {'kod kuće' if fav == 'h' else 'u gostima'}: "
+                   f"{fav_v5:.1f} bod po meču u zadnjih 5".replace(".", ","))
+    if dog_up >= 0.4 and fav_down >= 0.4:
+        why.append(f"{fx['hn'] if dog == 'h' else fx['an']} u usponu (+{dog_up:.1f}), "
+                   f"{fx['hn'] if fav == 'h' else fx['an']} u padu (−{fav_down:.1f} boda po meču)".replace(".", ","))
+    return {"pick": "1" if dog == "h" else "2", "estOdds": odds, "flag": bool(why), "why": why,
+            "dog": fx["hn"] if dog == "h" else fx["an"]}
+
+
 def analyse(fx, ctx):
     H, A = fx["h"], fx["a"]
     team = {"h": (H, fx["hn"]), "a": (A, fx["an"])}
@@ -944,7 +999,9 @@ def screen(fx_list, by_id, live):
     for f in fx_list:
         ctx = {**ctxs[f["id"]], "league_rates": league_rate(pools[f["lid"]], f["t"]),
                "means": league_means(pools[f["lid"]], f["t"])}
-        out.append((f, analyse(f, ctx)))
+        a = analyse(f, ctx)
+        a["upset"] = upset(f, ctx)
+        out.append((f, a))
     return out, pools, complete
 
 
@@ -952,6 +1009,9 @@ def sample_of(f, a, o=None, bt=False):
     s = {"d": f["utc"].astimezone(TZ).date().isoformat(), "t": f["utc"].isoformat(timespec="minutes"),
          "lg": f["lid"], "m": f"{f['hn']} – {f['an']}", "s": [[x["rule"], x["dir"], x["s"]] for x in a["signals"]],
          "f": a["feat"], "p": a["pts"], "o": o}
+    u = a.get("upset")
+    if u:
+        s["u"] = [u["pick"], u["estOdds"], int(u["flag"])]
     if bt:
         s["bt"] = 1
     return s
@@ -1099,7 +1159,7 @@ def main():
                                 "at": today}
         jsave(os.path.join(DATA, "league_stats.json"), ls, pretty=True)
 
-        screened, rows, nominal = [], {}, 0
+        screened, rows, nominal, upsets = [], {}, 0, []
         for f, a in res_:
             lg = by_id[f["lid"]]
             if min(a["stats"]["n"][r]["last15"] for r in ("h", "a")) >= 8:
@@ -1111,6 +1171,25 @@ def main():
                              (c.get("sel") or "") + (" · " + c["alt"] if c.get("alt") else "")])
             if a["score"] >= CFG.get("listMin", 8):
                 matches.append(make_doc(f, a, lg, now))
+            u = a.get("upset")
+            if u and u["flag"]:
+                upsets.append({"fixtureId": f["id"], "utc": f["utc"].isoformat(timespec="minutes"),
+                               "kickoff": f["utc"].astimezone(TZ).strftime("%H:%M"),
+                               "date": f["utc"].astimezone(TZ).date().isoformat(),
+                               "league": f"{COUNTRY.get(lg['cc'], lg['cc'])} · {lg['name']}",
+                               "home": f["hn"], "away": f["an"], **u})
+        upsets.sort(key=lambda u: (-len(u["why"]), -u["estOdds"]))
+        st = {"n": 0, "won": 0, "odds": 0.0}
+        for path in glob.glob(os.path.join(DATA, "samples", "*.json")):
+            for smp in jload(path, {}).values():
+                u = smp.get("u")
+                if u and u[2] and re.fullmatch(r"[12X]/[12X]", str(smp.get("o") or "")) and not smp.get("bt"):
+                    st["n"] += 1
+                    st["won"] += int(smp["o"][2] == u[0])
+                    st["odds"] += u[1]
+        report["upsetStats"] = {"n": st["n"], "won": st["won"],
+                                "avgOdds": round(st["odds"] / st["n"], 2) if st["n"] else None}
+        report["upsets"] = upsets[: CFG.get("upsetMax", 12)]
         save_samples(rows)
         matches.sort(key=lambda m: (-m["score"], m["utc"]))
         matches = matches[: CFG.get("listMax", 40)]
