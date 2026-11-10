@@ -1,6 +1,6 @@
 # Dosije screener
 
-Svako jutro oko 05:00 (po Sarajevu) pregleda utakmice u narednih 24 sata u ligama iz `config.json` i izvlači kandidate za preokret poluvrijeme/kraj (1/2 i 2/1). Podaci su besplatni (FotMob), bez ključa i bez dnevnog limita.
+Svako jutro oko 05:00 (po Sarajevu, uz rezervni termin pola sata kasnije) pregleda utakmice u narednih 24 sata u ligama iz `config.json` i izvlači kandidate za preokret poluvrijeme/kraj (1/2 i 2/1). Podaci su besplatni (FotMob), bez ključa i bez dnevnog limita.
 
 Za obje ekipe čita zadnjih 15 mečeva s poluvremenom u svim takmičenjima (liga, kup, Evropa), međusobne mečeve i raspored oko utakmice.
 
@@ -11,10 +11,12 @@ Za obje ekipe čita zadnjih 15 mečeva s poluvremenom u svim takmičenjima (liga
 - **R4 Ekipa sklona preokretima** (primjer Torreense – União de Leiria): broje se svi preokreti ekipe (1/2 i 2/1) u zadnjih 15, a svježi vrijede više. Jačina 1: 2 u zadnjih 10. Jačina 2: 3 u zadnjih 15, ili 2 u zadnjih 5, ili 2 u zadnjih 10 uz preokret u zadnjem meču. Jačina 3: 2 u zadnja 3, ili 4 u zadnjih 15, ili jačina 2 uz preokret u zadnjem meču. Utakmica je kandidat za oba smjera; prvi je smjer koji odgovara vrsti preokreta te ekipe.
 - **R5 Gust raspored:** ekipa igra kup ili Evropu do 4 dana prije ili poslije (umor, rotacija), pa lakše ispusti vodstvo. Broji se samo uz neki drugi signal. Jačina 2 za Evropu prije utakmice, inače 1. Ide i u „Upozorenja i nedostaci”.
 
-Bodovi su jačina × 8 × faktor pravila. Od 8 bodova utakmica je kandidat, od 20 je PV/K prijedlog.
+- **Golovi:** iz golova obje ekipe po poluvremenima računa se koliko je preokret vjerovatan u odnosu na prosjek. Mečevi s malo golova (do 0,7 prosjeka) dobijaju 40% manje bodova, a oni s puno golova (od 1,3) 15% više. Na provjeri su mečevi s malo golova imali preokret u 3,3% slučajeva, ostali u 5,6%.
+
+Bodovi su jačina × 8 × faktor pravila, pa puta faktor golova. Od 8 bodova utakmica je kandidat, od 20 je PV/K prijedlog.
 
 ## Kako pravila uče
-Za svaku pregledanu utakmicu (i one bez signala) pamti se koja su pravila okinula, a sutradan i ishod. Iz toga se za svako pravilo računa koliko češće pogađa od prosjeka lige. Pravilo koje pogađa bolje od očekivanog dobija veći faktor (do 1,6), a ono koje ne pogađa manji (do 0,4), pa samo više ne daje prijedlog. Stanje je u `data/rule_stats.json` i u Dosijeu pod Skener.
+Za svaku pregledanu utakmicu (i one bez signala) pamti se koja su pravila okinula, a sutradan i ishod. Iz toga se za svako pravilo računa koliko češće pogađa od prosjeka lige. Pravilo koje pogađa bolje od očekivanog dobija veći faktor (do 1,6), a ono koje ne pogađa manji (do 0,4), pa samo više ne daje prijedlog. Faktor se pomjera oprezno: dok pravilo nema dovoljno slučajeva, ostaje blizu početne vrijednosti. Stanje je u `data/rule_stats.json` i u Dosijeu pod Skener.
 
 Provjera na već odigranim utakmicama: u `backtest_request.json` upiši `{"from": "2026-10-01", "to": "2026-10-31"}`. Rezultat stiže u `backtest/`.
 

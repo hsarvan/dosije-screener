@@ -16,6 +16,7 @@ import datetime as dt
 import glob
 import gzip
 import json
+import math
 import os
 import re
 import sys
@@ -60,6 +61,11 @@ RULES = {"R1": "Preokreti ekipe + isti preokret u međusobnom", "R2": "Ponovljen
 PRIOR = {1: 1.25, 2: 1.6, 3: 2.0}   # koliko puta češće od prosjeka očekujemo pogodak po jačini (prije podataka)
 PRIOR_E = 6.0                        # težina te pretpostavke: kao 6 pogodaka koliko bi dao prosjek lige
 BOTH = {"R4"}                        # pravila koja traže preokret u bilo kojem smjeru (kandidat za 1/2 i 2/1)
+# Model golova (izmjereno na 3.913 utakmica, 25.9.–8.11.2026): prosjek golova po ekipi u 1. i 2. poluvremenu,
+# prednost domaćina i prosječna šansa preokreta po modelu. Utakmice s malo golova imale su preokret u 3,3%
+# slučajeva (ostale 5,6%), pa im se bodovi smanjuju; one s puno golova dobiju mali dodatak.
+G1, G2, HFA, P_MEAN = 0.608, 0.777, 1.13, 0.0465
+GOALS_LOW, GOALS_HIGH = (0.7, 0.6), (1.3, 1.15)     # (granica omjera prema prosjeku, faktor bodova)
 
 CFG = {}
 HT = {}          # matchId -> [htH, htA, ftH, ftA] (htH/htA None bez zapisnika) | "c" otkazano | "n" nema podataka
@@ -424,6 +430,58 @@ def sig(rule, sel, s, by, note, url, both=False):
     return out
 
 
+def league_means(pool, before):
+    """Prosjek golova po ekipi u 1. i 2. poluvremenu u ligi i prednost domaćina (povučeno ka općem prosjeku)."""
+    n = g1 = g2 = hn = hg = 0
+    for m in pool:
+        r = HT.get(str(m["id"]))
+        if not m["fin"] or m["t"] >= before or not isinstance(r, list) or r[0] is None:
+            continue
+        n += 2
+        g1 += r[0] + r[1]
+        g2 += r[2] + r[3] - r[0] - r[1]
+        hn += 1
+        hg += r[2]
+    m1, m2 = (g1 + 300 * G1) / (n + 300), (g2 + 300 * G2) / (n + 300)
+    hf = ((hg + 150 * HFA * (G1 + G2)) / (hn + 150)) / (m1 + m2)
+    return m1, m2, min(1.35, max(1.0, hf))
+
+
+def pois(k, lam):
+    return math.exp(-lam) * lam ** k / math.factorial(k)
+
+
+def goal_model(fx, h15, means):
+    """Šansa za 1/2 i 2/1 iz golova obje ekipe po poluvremenima (nezavisni Poisson). -> (p12, p21)"""
+    m1, m2, hf = means
+
+    def rates(rows, team):
+        rs = [m for m in rows if m.get("lg") == fx["lid"]]
+        if len(rs) < 6:
+            rs = rows
+        k, n = 10, len(rs)
+        f1 = a1 = f2 = a2 = 0
+        for m in rs:
+            r = HT[str(m["id"])]
+            hf_, ha_, ff_, fa_ = (r[0], r[1], r[2], r[3]) if m["h"] == team else (r[1], r[0], r[3], r[2])
+            f1, a1, f2, a2 = f1 + hf_, a1 + ha_, f2 + ff_ - hf_, a2 + fa_ - ha_
+        return (f1 + k * m1) / (n + k), (a1 + k * m1) / (n + k), (f2 + k * m2) / (n + k), (a2 + k * m2) / (n + k)
+    ha1, hd1, ha2, hd2 = rates(h15["h"], fx["h"])
+    aa1, ad1, aa2, ad2 = rates(h15["a"], fx["a"])
+    s = hf ** 0.5
+    lam = (ha1 * ad1 / m1 * s, aa1 * hd1 / m1 / s, ha2 * ad2 / m2 * s, aa2 * hd2 / m2 / s)
+    n = 9
+    h1, a1_, h2, a2_ = ([pois(i, x) for i in range(n)] for x in lam)
+
+    def tail(win, lose, need):      # u drugom poluvremenu ekipa da više od zaostatka
+        return sum(win[i] * lose[j] for i in range(n) for j in range(n) if i - j > need)
+    p12 = p21 = 0.0
+    for lead in range(1, 5):
+        p12 += sum(h1[i] * a1_[i - lead] for i in range(lead, n)) * tail(a2_, h2, lead)
+        p21 += sum(a1_[i] * h1[i - lead] for i in range(lead, n)) * tail(h2, a2_, lead)
+    return p12, p21
+
+
 def congestion(team, allm, f):
     """Gust raspored: meč u drugom takmičenju (kup, Evropa) do 4 dana prije ili poslije, ili treći meč u 8 dana."""
     out = {"rest": None, "boost": 0, "impact": 0, "note": None, "type": None}
@@ -577,6 +635,16 @@ def analyse(fx, ctx):
         pts[x["dir"]] += 8 * x["s"] * k
         if x.get("both") and x["s"] >= 2:
             pts[other(x["dir"])] += 8 * (x["s"] - 1) * k
+    # golovi: u mečevima s malo golova preokret je rjeđi, s puno golova nešto češći
+    feat["g"] = None
+    if ctx.get("means") and min(len(h15["h"]), len(h15["a"])) >= 6:
+        p12, p21 = goal_model(fx, h15, ctx["means"])
+        lift = (p12 + p21) / P_MEAN
+        feat["g"] = round(lift, 2)
+        gf = GOALS_LOW[1] if lift <= GOALS_LOW[0] else (GOALS_HIGH[1] if lift >= GOALS_HIGH[0] else 1.0)
+        if gf != 1.0:
+            ev["goals"] = "malo" if gf < 1 else "puno"
+            pts = {sel: v * gf for sel, v in pts.items()}
     best = max(SELS, key=lambda s: pts[s])
     score = min(99, round(pts[best]))
     alt = other(best) if round(pts[other(best)]) >= CFG.get("listMin", 8) else None
@@ -624,6 +692,10 @@ def reasoning(fx, a):
         where = "kod domaćina" if m["h"] == fx["h"] else "kod gosta"
         out.append(f"Međusobni {dmy(m['t'])} {where}: {m['hn']}–{m['an']} {score_txt(m)}")
     out += [f"{name[r]}: {e['cong'][r]}" for r in ("h", "a") if e["cong"].get(r)]
+    if e.get("goals") == "malo":
+        out.append("Malo golova u mečevima ovih ekipa, a tada je preokret upola rjeđi")
+    elif e.get("goals") == "puno":
+        out.append("Puno golova u mečevima ovih ekipa, što ide u prilog preokretu")
     text = ". ".join(x.rstrip(".") for x in out)
     return (text if len(text) <= 380 else text[:377].rstrip() + "…") + "."
 
@@ -870,7 +942,8 @@ def screen(fx_list, by_id, live):
         complete = fetch_ht(ids) and complete
     out = []
     for f in fx_list:
-        ctx = {**ctxs[f["id"]], "league_rates": league_rate(pools[f["lid"]], f["t"])}
+        ctx = {**ctxs[f["id"]], "league_rates": league_rate(pools[f["lid"]], f["t"]),
+               "means": league_means(pools[f["lid"]], f["t"])}
         out.append((f, analyse(f, ctx)))
     return out, pools, complete
 
