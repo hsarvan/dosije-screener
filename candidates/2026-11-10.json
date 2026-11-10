@@ -1,9 +1,9 @@
 {
  "date": "2026-11-10",
- "generatedAt": "2026-11-10T06:55:51+00:00",
+ "generatedAt": "2026-11-10T11:09:13+00:00",
  "window": [
-  "2026-11-10T06:55+00:00",
-  "2026-11-11T06:55+00:00"
+  "2026-11-10T11:09+00:00",
+  "2026-11-11T11:09+00:00"
  ],
  "rules": {
   "n": 3938,
@@ -11,7 +11,7 @@
    "1/2": 0.0206,
    "2/1": 0.0315
   },
-  "at": "2026-11-10T06:55:51+00:00",
+  "at": "2026-11-10T11:09:13+00:00",
   "rules": [
    {
     "id": "R1",
@@ -142,7 +142,7 @@
  "calls": 10,
  "detailCalls": 8,
  "errors": 0,
- "minutes": 0.0,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -288,7 +288,7 @@
     "sources": [
      "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
     ],
-    "createdAt": "2026-11-10T06:55:51+00:00",
+    "createdAt": "2026-11-10T11:09:13+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
