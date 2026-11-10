@@ -57,5 +57,5 @@ jobs:
           git add -A
           if git diff --cached --quiet; then echo "Nema promjena"; exit 0; fi
           git commit -m "Dosije screener $(date -u +%F)"
-          git pull --rebase origin main
+          git pull --rebase -X theirs origin main || { git rebase --abort; git pull --no-rebase -X ours --no-edit origin main; }
           git push
