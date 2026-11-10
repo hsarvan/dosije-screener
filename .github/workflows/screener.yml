@@ -1,8 +1,8 @@
 name: Dosije screener
 on:
   schedule:
-    - cron: "50 3 * * *"   # 04:50 po Sarajevu zimi, 05:50 ljeti; Dosije uvoz je u 06:43
-    - cron: "25 4 * * *"   # rezerva ako GitHub preskoči prvi termin
+    - cron: "47 3 * * *"   # 04:47 po Sarajevu zimi, 05:47 ljeti
+    - cron: "27 4 * * *"   # rezerva ako GitHub preskoči prvi termin
   workflow_dispatch:
   push:
     branches: [main]
