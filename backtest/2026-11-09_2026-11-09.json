@@ -2,22 +2,22 @@
  "from": "2026-11-09",
  "to": "2026-11-09",
  "leagues": 64,
- "fixtures": 24,
+ "fixtures": 26,
  "complete": true,
- "calls": 560,
+ "calls": 28,
  "errors": 0,
- "minutes": 2.9,
- "withOutcome": 24,
+ "minutes": 0.1,
+ "withOutcome": 26,
  "reversals": {
-  "1/2": 1,
+  "1/2": 2,
   "2/1": 0
  },
  "bands": {
   "tips": {
-   "n": 2,
-   "hitSel": 1,
+   "n": 3,
+   "hitSel": 2,
    "hitAlt": 0,
-   "anyReversal": 1
+   "anyReversal": 2
   },
   "candidates": {
    "n": 2,
@@ -26,90 +26,204 @@
    "anyReversal": 0
   },
   "rest": {
-   "n": 20,
+   "n": 21,
+   "hitSel": 0,
+   "hitAlt": 0,
+   "anyReversal": 0
+  }
+ },
+ "byScore": {
+  "8-15": {
+   "n": 1,
    "hitSel": 0,
    "hitAlt": 0,
    "anyReversal": 0
   },
-  "strong": {
+  "16-23": {
+   "n": 1,
+   "hitSel": 0,
+   "hitAlt": 0,
+   "anyReversal": 0
+  },
+  "24-31": {
+   "n": 0,
+   "hitSel": 0,
+   "hitAlt": 0,
+   "anyReversal": 0
+  },
+  "32-39": {
    "n": 2,
    "hitSel": 1,
    "hitAlt": 0,
    "anyReversal": 1
+  },
+  "40-55": {
+   "n": 1,
+   "hitSel": 1,
+   "hitAlt": 0,
+   "anyReversal": 1
+  },
+  "56-999": {
+   "n": 0,
+   "hitSel": 0,
+   "hitAlt": 0,
+   "anyReversal": 0
   }
  },
  "rules": {
-  "R3": {
-   "n": 2,
+  "R1": {
+   "n": 99,
+   "hits": 5,
+   "sel": 5,
+   "any": 8,
+   "rate": 0.0505,
+   "base": 0.0287,
+   "lift": 1.76,
+   "est": 1.92,
+   "mult": 0.96
+  },
+  "R1:3": {
+   "n": 99,
+   "hits": 5,
+   "sel": 5,
+   "any": 8,
+   "rate": 0.0505,
+   "base": 0.0287,
+   "lift": 1.76,
+   "est": 1.92,
+   "mult": 0.96
+  },
+  "R2": {
+   "n": 14,
    "hits": 1,
+   "sel": 1,
    "any": 1,
-   "rate": 0.5,
-   "base": 0.0558,
-   "lift": 8.96,
-   "mult": 1.0
+   "rate": 0.0714,
+   "base": 0.0263,
+   "lift": 2.71,
+   "est": 1.33,
+   "mult": 1.07
+  },
+  "R2:1": {
+   "n": 14,
+   "hits": 1,
+   "sel": 1,
+   "any": 1,
+   "rate": 0.0714,
+   "base": 0.0263,
+   "lift": 2.71,
+   "est": 1.33,
+   "mult": 1.07
+  },
+  "R3": {
+   "n": 90,
+   "hits": 5,
+   "sel": 5,
+   "any": 6,
+   "rate": 0.0556,
+   "base": 0.0307,
+   "lift": 1.81,
+   "est": 1.45,
+   "mult": 1.13
   },
   "R3:1": {
-   "n": 1,
-   "hits": 1,
-   "any": 1,
-   "rate": 1.0,
-   "base": 0.0726,
-   "lift": 13.78,
-   "mult": 1.0
+   "n": 86,
+   "hits": 5,
+   "sel": 5,
+   "any": 6,
+   "rate": 0.0581,
+   "base": 0.0295,
+   "lift": 1.97,
+   "est": 1.46,
+   "mult": 1.17
   },
   "R3:2": {
-   "n": 1,
+   "n": 4,
    "hits": 0,
+   "sel": 0,
    "any": 0,
    "rate": 0.0,
-   "base": 0.0391,
+   "base": 0.056,
    "lift": 0.0,
-   "mult": 1.0
+   "est": 1.54,
+   "mult": 0.96
   },
   "R4": {
-   "n": 5,
-   "hits": 1,
-   "any": 1,
-   "rate": 0.2,
-   "base": 0.0304,
-   "lift": 6.58,
-   "mult": 1.0
+   "n": 682,
+   "hits": 41,
+   "sel": 28,
+   "any": 41,
+   "rate": 0.0601,
+   "base": 0.0581,
+   "lift": 1.04,
+   "est": 1.1,
+   "mult": 0.71
   },
   "R4:1": {
-   "n": 2,
-   "hits": 0,
-   "any": 0,
-   "rate": 0.0,
-   "base": 0.0202,
-   "lift": 0.0,
-   "mult": 1.0
+   "n": 287,
+   "hits": 16,
+   "sel": 12,
+   "any": 16,
+   "rate": 0.0557,
+   "base": 0.0549,
+   "lift": 1.02,
+   "est": 1.08,
+   "mult": 0.86
+  },
+  "R4:2": {
+   "n": 251,
+   "hits": 15,
+   "sel": 10,
+   "any": 15,
+   "rate": 0.0598,
+   "base": 0.0584,
+   "lift": 1.02,
+   "est": 1.19,
+   "mult": 0.74
   },
   "R4:3": {
-   "n": 2,
-   "hits": 1,
-   "any": 1,
-   "rate": 0.5,
-   "base": 0.0558,
-   "lift": 8.96,
-   "mult": 1.0
+   "n": 144,
+   "hits": 10,
+   "sel": 6,
+   "any": 10,
+   "rate": 0.0694,
+   "base": 0.0637,
+   "lift": 1.09,
+   "est": 1.45,
+   "mult": 0.72
   },
   "R5": {
-   "n": 1,
-   "hits": 1,
-   "any": 1,
-   "rate": 1.0,
-   "base": 0.0726,
-   "lift": 13.78,
-   "mult": 1.0
+   "n": 125,
+   "hits": 3,
+   "sel": 3,
+   "any": 3,
+   "rate": 0.024,
+   "base": 0.0314,
+   "lift": 0.76,
+   "est": 1.07,
+   "mult": 0.84
+  },
+  "R5:1": {
+   "n": 116,
+   "hits": 2,
+   "sel": 2,
+   "any": 2,
+   "rate": 0.0172,
+   "base": 0.0311,
+   "lift": 0.55,
+   "est": 0.99,
+   "mult": 0.79
   },
   "R5:2": {
-   "n": 1,
+   "n": 9,
    "hits": 1,
+   "sel": 1,
    "any": 1,
-   "rate": 1.0,
-   "base": 0.0726,
-   "lift": 13.78,
-   "mult": 1.0
+   "rate": 0.1111,
+   "base": 0.0354,
+   "lift": 3.14,
+   "est": 1.68,
+   "mult": 1.05
   }
  },
  "flagged": [
@@ -127,85 +241,40 @@
     "Torreense: Europa League prije 4 dana (umor, rotacija)"
    ],
    "txt": "União de Leiria, preokreti: protiv AVS Futebol SAD 2:1 (PV 0:1) 31.10.; protiv Bragança 2:1 (PV 0:1) 17.10. Torreense: Europa League prije 4 dana.",
-   "home": [
-    "2026-11-05 Torreense–Ararat Armenia 3:2 (PV 1:1)",
-    "2026-10-31 Portimonense–Torreense 0:0 (PV 0:0)",
-    "2026-10-26 Torreense–Amarante FC 1:0 (PV 1:0)",
-    "2026-10-22 Ferencváros–Torreense 4:1 (PV 1:1)",
-    "2026-10-15 Torreense–Sunderland 1:2 (PV 1:0)",
-    "2026-10-10 Tondela–Torreense 1:0 (PV 0:0)",
-    "2026-09-17 Lillestrøm–Torreense 1:2 (PV 0:1)",
-    "2026-09-11 Torreense–Leixões 0:0 (PV 0:0)",
-    "2026-09-05 Benfica B–Torreense 0:2 (PV 0:1)",
-    "2026-08-29 Torreense–Vizela 0:3 (PV 0:2)",
-    "2026-08-22 Lusitânia Lourosa–Torreense 2:2 (PV 1:0)",
-    "2026-08-15 Torreense–Penafiel 2:2 (PV 0:2)",
-    "2026-08-09 Farense–Torreense 2:1 (PV 0:0)",
-    "2026-08-01 FC Porto–Torreense 1:0 (PV 1:0)",
-    "2026-05-16 Torreense–Vizela 4:0 (PV 1:0)"
-   ],
-   "away": [
-    "2026-10-31 União de Leiria–AVS Futebol SAD 2:1 (PV 0:1)",
-    "2026-10-25 FC Porto B–União de Leiria 1:1 (PV 1:0)",
-    "2026-10-17 União de Leiria–Bragança 2:1 (PV 0:1)",
-    "2026-10-11 União de Leiria–Académica 0:2 (PV 0:1)",
-    "2026-09-19 O Elvas–União de Leiria 0:2 (PV 0:0)",
-    "2026-09-13 Amarante FC–União de Leiria 2:2 (PV 1:0)",
-    "2026-09-06 União de Leiria–Portimonense 1:0 (PV 1:0)",
-    "2026-08-28 União de Leiria–Tondela 2:0 (PV 0:0)",
-    "2026-08-22 Leixões–União de Leiria 2:4 (PV 1:2)",
-    "2026-08-15 União de Leiria–Benfica B 1:2 (PV 1:1)",
-    "2026-08-09 Vizela–União de Leiria 1:0 (PV 1:0)",
-    "2026-05-17 União de Leiria–Feirense 2:2 (PV 1:0)",
-    "2026-05-09 Vizela–União de Leiria 1:0 (PV 1:0)",
-    "2026-05-03 União de Leiria–Farense 0:3 (PV 0:1)",
-    "2026-04-25 Felgueiras 1932–União de Leiria 2:1 (PV 1:1)"
-   ]
+   "home": null,
+   "away": null
   },
   {
    "d": "2026-11-09",
    "lg": "ROU Liga II",
    "m": "CS Dinamo București – Râmnicu Vâlcea",
    "o": "2/2",
-   "score": 40,
+   "score": 32,
    "sel": "1/2",
    "alt": "2/1",
    "why": [
-    "Preokreti 1/2 u zadnjih 10: CS Dinamo București 2, Râmnicu Vâlcea 1; liga 5%",
+    "Preokreti 1/2 u zadnjih 10: CS Dinamo București 2, Râmnicu Vâlcea 1",
     "CS Dinamo București: 4 preokreta u zadnjih 15, 2 u zadnjih 5"
    ],
    "txt": "CS Dinamo București, preokreti: protiv Popești Leordeni 1:2 (PV 1:0) 24.10.; ASA Târgu Mureș–CS Dinamo București 4:3 (PV 0:1) 22.09.; Chindia Târgoviște–CS Dinamo București 1:2 (PV 1:0) 21.08.",
-   "home": [
-    "2026-10-30 Steaua București–CS Dinamo București 0:0 (PV 0:0)",
-    "2026-10-24 CS Dinamo București–Popești Leordeni 1:2 (PV 1:0)",
-    "2026-10-17 CSL Ștefănești–CS Dinamo București 1:4 (PV 0:3)",
-    "2026-10-10 CS Dinamo București–CSM Olimpia Satu Mare 2:2 (PV 1:2)",
-    "2026-09-22 ASA Târgu Mureș–CS Dinamo București 4:3 (PV 0:1)",
-    "2026-09-12 CS Dinamo București–Concordia Chiajna 2:5 (PV 2:3)",
-    "2026-09-05 FC Unirea Slobozia–CS Dinamo București 8:0 (PV 5:0)",
-    "2026-08-29 CS Dinamo București–Comunal Șelimbăr 0:1 (PV 0:1)",
-    "2026-08-21 Chindia Târgoviște–CS Dinamo București 1:2 (PV 1:0)",
-    "2026-08-15 CS Dinamo București–Metalul Buzău 0:1 (PV 0:1)",
-    "2026-08-08 CSM Slatina–CS Dinamo București 5:1 (PV 3:0)",
-    "2026-08-01 CS Afumați–CS Dinamo București 2:1 (PV 0:1)",
-    "2026-05-23 Comunal Șelimbăr–CS Dinamo București 2:0 (PV 0:0)",
-    "2026-05-16 CS Dinamo București–Comunal Șelimbăr 1:1 (PV 0:0)",
-    "2026-05-09 CS Dinamo București–ASA Târgu Mureș 1:3 (PV 1:2)"
+   "home": null,
+   "away": null
+  },
+  {
+   "d": "2026-11-09",
+   "lg": "ECU Serie A",
+   "m": "Técnico Universitario – Manta",
+   "o": "1/2",
+   "score": 32,
+   "sel": "1/2",
+   "alt": null,
+   "why": [
+    "Técnico Universitario 2× ispušteno vodstvo s PV (5 kod kuće); međusobni 29.11.2025 1/2",
+    "Técnico Universitario: 2 preokreta u zadnjih 15"
    ],
-   "away": [
-    "2026-10-31 Râmnicu Vâlcea–CS Afumați 3:2 (PV 1:1)",
-    "2026-10-26 FC Metaloglobus București–Râmnicu Vâlcea 2:0 (PV 0:0)",
-    "2026-10-17 Râmnicu Vâlcea–ASU Politehnica Timișoara 0:1 (PV 0:0)",
-    "2026-10-10 Gloria Bistrița–Râmnicu Vâlcea 1:0 (PV 0:0)",
-    "2026-09-20 Râmnicu Vâlcea–FC Bihor Oradea 3:2 (PV 1:2)",
-    "2026-09-12 Cetatea Suceava–Râmnicu Vâlcea 4:0 (PV 2:0)",
-    "2026-09-05 Râmnicu Vâlcea–CSM Reșița 1:2 (PV 0:2)",
-    "2026-08-29 CSC Dumbrăvița–Râmnicu Vâlcea 0:1 (PV 0:0)",
-    "2026-08-22 Râmnicu Vâlcea–FC Bacău 2:2 (PV 2:1)",
-    "2026-08-15 Râmnicu Vâlcea–CSM Slatina 0:1 (PV 0:0)",
-    "2026-08-08 Steaua București–Râmnicu Vâlcea 1:2 (PV 0:2)",
-    "2026-08-01 Râmnicu Vâlcea–Popești Leordeni 1:1 (PV 1:0)"
-   ]
+   "txt": "Técnico Universitario, preokreti: protiv LDU de Quito 1:3 (PV 1:0) 05.09.; protiv Guayaquil City 2:3 (PV 1:0) 22.08. Međusobni 29.11.2025 kod domaćina: Técnico Universitario–Manta 2:3 (PV 1:0).",
+   "home": null,
+   "away": null
   },
   {
    "d": "2026-11-09",
@@ -220,40 +289,8 @@
     "KamAZ: 2 preokreta u zadnjih 15"
    ],
    "txt": "Veles Moscow, preokreti: protiv Sochi 1:2 (PV 1:0) 14.09.; protiv Nizhny Novgorod 3:2 (PV 0:1) 19.08.; protiv FC Rotor Volgograd 2:1 (PV 0:1) 03.08. KamAZ, preokreti: protiv Neftekhimik 2:1 (PV 0:1) 17.10.; protiv Sochi 2:3 (PV 2:1) 24.08.",
-   "home": [
-    "2026-10-30 Veles Moscow–Spartak Kostroma 1:1 (PV 0:1)",
-    "2026-10-25 Volga Ulyanovsk–Veles Moscow 1:0 (PV 0:0)",
-    "2026-10-18 Veles Moscow–Shinnik Yaroslavl 1:1 (PV 0:1)",
-    "2026-10-10 Ural–Veles Moscow 1:2 (PV 0:2)",
-    "2026-10-04 Veles Moscow–Volga Ulyanovsk 1:2 (PV 0:2)",
-    "2026-09-17 Torpedo Moscow–Veles Moscow 1:1 (PV 0:0)",
-    "2026-09-14 Veles Moscow–Sochi 1:2 (PV 1:0)",
-    "2026-09-05 Ufa–Veles Moscow 1:1 (PV 1:1)",
-    "2026-08-29 Tekstilshchik–Veles Moscow 0:1 (PV 0:0)",
-    "2026-08-24 Veles Moscow–Arsenal 2:0 (PV 1:0)",
-    "2026-08-19 Veles Moscow–Nizhny Novgorod 3:2 (PV 0:1)",
-    "2026-08-15 SKA-Khabarovsk–Veles Moscow 2:0 (PV 1:0)",
-    "2026-08-09 Veles Moscow–Leningradets 2:1 (PV 0:0)",
-    "2026-08-03 Veles Moscow–FC Rotor Volgograd 2:1 (PV 0:1)",
-    "2026-07-26 FC Yenisey Krasnoyarsk–Veles Moscow 4:1 (PV 2:0)"
-   ],
-   "away": [
-    "2026-11-01 KamAZ–Torpedo Moscow 1:1 (PV 0:0)",
-    "2026-10-24 Arsenal–KamAZ 4:3 (PV 1:0)",
-    "2026-10-17 KamAZ–Neftekhimik 2:1 (PV 0:1)",
-    "2026-10-10 SKA-Khabarovsk–KamAZ 3:3 (PV 2:1)",
-    "2026-09-18 Shinnik Yaroslavl–KamAZ 0:1 (PV 0:0)",
-    "2026-09-14 KamAZ–FC Chelyabinsk 1:1 (PV 0:0)",
-    "2026-09-06 Ural–KamAZ 2:0 (PV 1:0)",
-    "2026-08-29 Leningradets–KamAZ 0:1 (PV 0:1)",
-    "2026-08-24 KamAZ–Sochi 2:3 (PV 2:1)",
-    "2026-08-19 KamAZ–Tekstilshchik 0:1 (PV 0:0)",
-    "2026-08-15 FC Yenisey Krasnoyarsk–KamAZ 2:2 (PV 0:1)",
-    "2026-08-09 KamAZ–Volga Ulyanovsk 1:2 (PV 0:1)",
-    "2026-08-03 Ufa–KamAZ 1:1 (PV 0:0)",
-    "2026-07-27 KamAZ–FC Rotor Volgograd 0:2 (PV 0:1)",
-    "2026-07-19 KamAZ–Nizhny Novgorod 1:2 (PV 0:2)"
-   ]
+   "home": null,
+   "away": null
   },
   {
    "d": "2026-11-09",
@@ -267,40 +304,8 @@
     "Hvidovre: 2 preokreta u zadnjih 15"
    ],
    "txt": "Hvidovre, preokreti: Vejle Boldklub–Hvidovre 1:2 (PV 1:0) 09.10.; protiv Fredericia 2:1 (PV 0:1) 30.08.",
-   "home": [
-    "2026-10-31 Esbjerg fB–Hvidovre 1:1 (PV 0:0)",
-    "2026-10-23 Hvidovre–HB Køge 2:2 (PV 1:0)",
-    "2026-10-18 Hvidovre–Hillerød 1:0 (PV 1:0)",
-    "2026-10-09 Vejle Boldklub–Hvidovre 1:2 (PV 1:0)",
-    "2026-09-19 Aarhus Fremad–Hvidovre 1:3 (PV 0:1)",
-    "2026-09-12 Hvidovre–AaB 2:2 (PV 1:2)",
-    "2026-09-04 Hobro–Hvidovre 1:3 (PV 0:1)",
-    "2026-08-30 Hvidovre–Fredericia 2:1 (PV 0:1)",
-    "2026-08-22 AB–Hvidovre 1:1 (PV 0:1)",
-    "2026-08-15 HB Køge–Hvidovre 0:2 (PV 0:0)",
-    "2026-08-09 Hvidovre–Esbjerg fB 2:1 (PV 0:0)",
-    "2026-08-01 Kolding IF–Hvidovre 0:1 (PV 0:1)",
-    "2026-07-25 Hvidovre–Vendsyssel FF 2:2 (PV 2:0)",
-    "2026-05-31 Hillerød–Hvidovre 2:1 (PV 1:0)",
-    "2026-05-25 Hvidovre–Esbjerg fB 1:4 (PV 0:1)"
-   ],
-   "away": [
-    "2026-11-01 Aarhus Fremad–Hillerød 2:0 (PV 1:0)",
-    "2026-10-29 Aarhus Fremad–FC København 0:3 (PV 0:2)",
-    "2026-10-24 Vejle Boldklub–Aarhus Fremad 0:0 (PV 0:0)",
-    "2026-10-16 Aarhus Fremad–Esbjerg fB 0:0 (PV 0:0)",
-    "2026-10-09 AB–Aarhus Fremad 2:0 (PV 1:0)",
-    "2026-09-19 Aarhus Fremad–Hvidovre 1:3 (PV 0:1)",
-    "2026-09-16 Hørsholm Usserød IK–Aarhus Fremad 0:0 (PV 0:0)",
-    "2026-09-11 Vendsyssel FF–Aarhus Fremad 0:0 (PV 0:0)",
-    "2026-09-06 Aarhus Fremad–Kolding IF 2:1 (PV 0:1)",
-    "2026-08-30 Aarhus Fremad–Vejle Boldklub 0:0 (PV 0:0)",
-    "2026-08-25 SGI–Aarhus Fremad 0:1 (PV 0:0)",
-    "2026-08-21 Fredericia–Aarhus Fremad 0:0 (PV 0:0)",
-    "2026-08-15 Hillerød–Aarhus Fremad 1:1 (PV 0:1)",
-    "2026-08-08 Aarhus Fremad–HB Køge 3:1 (PV 2:0)",
-    "2026-07-31 Aarhus Fremad–AaB 1:2 (PV 0:1)"
-   ]
+   "home": null,
+   "away": null
   }
  ],
  "missed": []
