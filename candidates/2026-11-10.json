@@ -1,29 +1,29 @@
 {
  "date": "2026-11-10",
- "generatedAt": "2026-11-09T23:40:41+00:00",
+ "generatedAt": "2026-11-10T06:43:58+00:00",
  "window": [
-  "2026-11-09T23:40+00:00",
-  "2026-11-10T23:40+00:00"
+  "2026-11-10T06:43+00:00",
+  "2026-11-11T06:43+00:00"
  ],
  "rules": {
-  "n": 3937,
+  "n": 3938,
   "base": {
    "1/2": 0.0206,
    "2/1": 0.0315
   },
-  "at": "2026-11-09T23:40:42+00:00",
+  "at": "2026-11-10T06:43:58+00:00",
   "rules": [
    {
     "id": "R1",
     "name": "Preokreti ekipe + isti preokret u međusobnom",
-    "n": 97,
+    "n": 98,
     "hits": 4,
     "sel": 4,
     "any": 7,
     "both": false,
-    "base": 0.0282,
-    "lift": 1.46,
-    "mult": 0.81
+    "base": 0.0283,
+    "lift": 1.44,
+    "mult": 0.8
    },
    {
     "id": "R2",
@@ -34,7 +34,7 @@
     "any": 1,
     "both": false,
     "base": 0.0263,
-    "lift": 2.71,
+    "lift": 2.72,
     "mult": 1.0
    },
    {
@@ -76,16 +76,9 @@
   ]
  },
  "leagues": 64,
- "fixturesSeen": 9,
- "analysed": 9,
+ "fixturesSeen": 8,
+ "analysed": 8,
  "screened": [
-  [
-   "10.11. 01:30",
-   "BOL Primera Division",
-   "Aurora – Universitario de Vinto",
-   19,
-   "2/1"
-  ],
   [
    "10.11. 18:30",
    "ROU Liga II",
@@ -143,15 +136,167 @@
    "2/1"
   ]
  ],
- "withData": 9,
- "candidates": 2,
+ "withData": 8,
+ "candidates": 1,
  "tips": 0,
- "calls": 13,
- "detailCalls": 10,
+ "calls": 11,
+ "detailCalls": 9,
  "errors": 0,
  "minutes": 0.1,
  "notes": [],
  "matches": [
+  {
+   "fixtureId": 5907621,
+   "docId": "2026-11-10_hemel-hempstead_torquay-united",
+   "utc": "2026-11-10T19:45+00:00",
+   "league": "Engleska · National North & South",
+   "stage": "National League South",
+   "home": "Hemel Hempstead",
+   "away": "Torquay United",
+   "score": 16,
+   "cand": {
+    "sel": "1/2",
+    "score": 16,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 2,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-04-18 Torquay United–Hemel Hempstead 1:2 (PV 1:1)",
+    "2025-08-30 Hemel Hempstead–Torquay United 2:1 (PV 1:0)",
+    "2025-04-26 Hemel Hempstead–Torquay United 1:4 (PV 0:2)",
+    "2024-12-21 Torquay United–Hemel Hempstead 1:0 (PV 0:0)",
+    "2023-12-16 Torquay United–Hemel Hempstead 3:2 (PV 2:2)",
+    "2023-09-23 Hemel Hempstead–Torquay United 3:2 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 Hemel Hempstead–Maidstone United 1:2 (PV 1:0)",
+    "2026-10-31 Billericay–Hemel Hempstead 5:0 (PV 2:0)",
+    "2026-10-27 Dorking Wanderers–Hemel Hempstead 3:3 (PV 1:2)",
+    "2026-10-24 Hemel Hempstead–AFC Totton 1:3 (PV 1:2)",
+    "2026-10-17 Tonbridge Angels–Hemel Hempstead 1:0 (PV 1:0)",
+    "2026-10-10 Dagenham & Redbridge–Hemel Hempstead 0:0 (PV 0:0)",
+    "2026-09-26 Slough Town–Hemel Hempstead 0:2 (PV 0:1)",
+    "2026-09-12 Hemel Hempstead–Tonbridge Angels 1:1 (PV 0:1)",
+    "2026-09-08 Ebbsfleet United–Hemel Hempstead 0:0 (PV 0:0)",
+    "2026-09-05 Hemel Hempstead–Farnham Town 1:1 (PV 1:1)",
+    "2026-08-31 Folkestone Invicta–Hemel Hempstead 2:0 (PV 1:0)",
+    "2026-08-29 Hemel Hempstead–Weston Super Mare 1:3 (PV 1:0)",
+    "2026-08-22 Salisbury–Hemel Hempstead 1:2 (PV 1:0)",
+    "2026-08-18 Hemel Hempstead–Maidenhead United 0:1 (PV 0:1)",
+    "2026-08-15 Farnborough–Hemel Hempstead 0:2 (PV 0:2)"
+   ],
+   "awayLast": [
+    "2026-10-31 Walton and Hersham–Torquay United 0:3 (PV 0:1)",
+    "2026-10-27 AFC Totton–Torquay United 1:0 (PV 0:0)",
+    "2026-10-24 Torquay United–Maidstone United 1:1 (PV 1:0)",
+    "2026-10-17 Torquay United–Oxford City 0:1 (PV 0:0)",
+    "2026-10-10 Torquay United–Slough Town 5:1 (PV 0:0)",
+    "2026-09-26 Billericay–Torquay United 3:0 (PV 2:0)",
+    "2026-09-12 Torquay United–Dorking Wanderers 2:2 (PV 1:1)",
+    "2026-09-08 Maidenhead United–Torquay United 0:4 (PV 0:0)",
+    "2026-09-05 Torquay United–Folkestone Invicta 3:2 (PV 2:0)",
+    "2026-08-31 Farnham Town–Torquay United 2:0 (PV 0:0)",
+    "2026-08-29 Torquay United–Hampton & Richmond 1:1 (PV 1:1)",
+    "2026-08-22 Dagenham & Redbridge–Torquay United 2:0 (PV 1:0)",
+    "2026-08-18 Torquay United–Weston Super Mare 0:0 (PV 0:0)",
+    "2026-08-15 Tonbridge Angels–Torquay United 1:2 (PV 0:1)",
+    "2026-08-08 Torquay United–Horsham 1:1 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-10",
+    "kickoff": "20:45",
+    "league": "Engleska · National North & South",
+    "home": "Hemel Hempstead",
+    "away": "Torquay United",
+    "pairId": "hemel-hempstead__torquay-united",
+    "venue": "Focus Community Arena",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Hemel Hempstead: 3 preokreta u zadnjih 15, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 16,
+     "alt": "2/1"
+    },
+    "reasoning": "Hemel Hempstead, preokreti: protiv Maidstone United 1:2 (PV 1:0) 07.11.; protiv Weston Super Mare 1:3 (PV 1:0) 29.08.; Salisbury–Hemel Hempstead 1:2 (PV 1:0) 22.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
+    ],
+    "createdAt": "2026-11-10T06:43:58+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5907621
+    },
+    "fixtureId": 5907621
+   }
+  },
   {
    "fixtureId": 1000022378,
    "docId": "2026-11-10_aurora_universitario-de-vinto",
@@ -299,158 +444,6 @@
      "fixtureId": 1000022378
     },
     "fixtureId": 1000022378
-   }
-  },
-  {
-   "fixtureId": 5907621,
-   "docId": "2026-11-10_hemel-hempstead_torquay-united",
-   "utc": "2026-11-10T19:45+00:00",
-   "league": "Engleska · National North & South",
-   "stage": "National League South",
-   "home": "Hemel Hempstead",
-   "away": "Torquay United",
-   "score": 16,
-   "cand": {
-    "sel": "1/2",
-    "score": 16,
-    "alt": "2/1"
-   },
-   "htftTip": null,
-   "stats": {
-    "1/2": {
-     "h": {
-      "home5": 2,
-      "away5": 0,
-      "last10": 1,
-      "last15": 2
-     },
-     "a": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 0
-     }
-    },
-    "2/1": {
-     "h": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 1
-     },
-     "a": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 0
-     }
-    },
-    "n": {
-     "h": {
-      "home5": 5,
-      "away5": 5,
-      "last10": 10,
-      "last15": 15
-     },
-     "a": {
-      "home5": 5,
-      "away5": 5,
-      "last10": 10,
-      "last15": 15
-     },
-     "h2h": 6
-    }
-   },
-   "h2h": [
-    "2026-04-18 Torquay United–Hemel Hempstead 1:2 (PV 1:1)",
-    "2025-08-30 Hemel Hempstead–Torquay United 2:1 (PV 1:0)",
-    "2025-04-26 Hemel Hempstead–Torquay United 1:4 (PV 0:2)",
-    "2024-12-21 Torquay United–Hemel Hempstead 1:0 (PV 0:0)",
-    "2023-12-16 Torquay United–Hemel Hempstead 3:2 (PV 2:2)",
-    "2023-09-23 Hemel Hempstead–Torquay United 3:2 (PV 1:0)"
-   ],
-   "homeLast": [
-    "2026-11-07 Hemel Hempstead–Maidstone United 1:2 (PV 1:0)",
-    "2026-10-31 Billericay–Hemel Hempstead 5:0 (PV 2:0)",
-    "2026-10-27 Dorking Wanderers–Hemel Hempstead 3:3 (PV 1:2)",
-    "2026-10-24 Hemel Hempstead–AFC Totton 1:3 (PV 1:2)",
-    "2026-10-17 Tonbridge Angels–Hemel Hempstead 1:0 (PV 1:0)",
-    "2026-10-10 Dagenham & Redbridge–Hemel Hempstead 0:0 (PV 0:0)",
-    "2026-09-26 Slough Town–Hemel Hempstead 0:2 (PV 0:1)",
-    "2026-09-12 Hemel Hempstead–Tonbridge Angels 1:1 (PV 0:1)",
-    "2026-09-08 Ebbsfleet United–Hemel Hempstead 0:0 (PV 0:0)",
-    "2026-09-05 Hemel Hempstead–Farnham Town 1:1 (PV 1:1)",
-    "2026-08-31 Folkestone Invicta–Hemel Hempstead 2:0 (PV 1:0)",
-    "2026-08-29 Hemel Hempstead–Weston Super Mare 1:3 (PV 1:0)",
-    "2026-08-22 Salisbury–Hemel Hempstead 1:2 (PV 1:0)",
-    "2026-08-18 Hemel Hempstead–Maidenhead United 0:1 (PV 0:1)",
-    "2026-08-15 Farnborough–Hemel Hempstead 0:2 (PV 0:2)"
-   ],
-   "awayLast": [
-    "2026-10-31 Walton and Hersham–Torquay United 0:3 (PV 0:1)",
-    "2026-10-27 AFC Totton–Torquay United 1:0 (PV 0:0)",
-    "2026-10-24 Torquay United–Maidstone United 1:1 (PV 1:0)",
-    "2026-10-17 Torquay United–Oxford City 0:1 (PV 0:0)",
-    "2026-10-10 Torquay United–Slough Town 5:1 (PV 0:0)",
-    "2026-09-26 Billericay–Torquay United 3:0 (PV 2:0)",
-    "2026-09-12 Torquay United–Dorking Wanderers 2:2 (PV 1:1)",
-    "2026-09-08 Maidenhead United–Torquay United 0:4 (PV 0:0)",
-    "2026-09-05 Torquay United–Folkestone Invicta 3:2 (PV 2:0)",
-    "2026-08-31 Farnham Town–Torquay United 2:0 (PV 0:0)",
-    "2026-08-29 Torquay United–Hampton & Richmond 1:1 (PV 1:1)",
-    "2026-08-22 Dagenham & Redbridge–Torquay United 2:0 (PV 1:0)",
-    "2026-08-18 Torquay United–Weston Super Mare 0:0 (PV 0:0)",
-    "2026-08-15 Tonbridge Angels–Torquay United 1:2 (PV 0:1)",
-    "2026-08-08 Torquay United–Horsham 1:1 (PV 1:0)"
-   ],
-   "doc": {
-    "date": "2026-11-10",
-    "kickoff": "20:45",
-    "league": "Engleska · National North & South",
-    "home": "Hemel Hempstead",
-    "away": "Torquay United",
-    "pairId": "hemel-hempstead__torquay-united",
-    "venue": "Focus Community Arena",
-    "neutral": false,
-    "signals": [
-     {
-      "cat": "K7",
-      "dir": "1/2",
-      "s": 3,
-      "conf": "V",
-      "note": "Hemel Hempstead: 3 preokreta u zadnjih 15, zadnji meč preokret",
-      "src": [
-       "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
-      ],
-      "by": "korisnik",
-      "rule": "R4",
-      "both": true
-     }
-    ],
-    "warnings": [],
-    "tip": "PASS",
-    "score": null,
-    "htftTip": null,
-    "cand": {
-     "sel": "1/2",
-     "score": 16,
-     "alt": "2/1"
-    },
-    "reasoning": "Hemel Hempstead, preokreti: protiv Maidstone United 1:2 (PV 1:0) 07.11.; protiv Weston Super Mare 1:3 (PV 1:0) 29.08.; Salisbury–Hemel Hempstead 1:2 (PV 1:0) 22.08.",
-    "odds": null,
-    "htftOdds": null,
-    "status": "pending",
-    "fbPending": false,
-    "sources": [
-     "https://www.fotmob.com/matches/torquay-united-vs-hemel-hempstead/6spdow3#5907621"
-    ],
-    "createdAt": "2026-11-09T23:40:41+00:00",
-    "run": {
-     "screener": true,
-     "source": "fotmob",
-     "fixtureId": 5907621
-    },
-    "fixtureId": 5907621
    }
   }
  ]
