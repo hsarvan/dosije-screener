@@ -538,9 +538,8 @@ def ppg(rows):
     return sum(3 if f > a else (1 if f == a else 0) for _, f, a in rows) / len(rows) if rows else None
 
 
-def upset(fx, ctx):
-    """Slabija ekipa s procijenjenom kvotom 3,5+ i obrascem koji joj ide u prilog.
-    Provjera: obrasci daju ~28% pobjeda slabije ekipe naspram ~22% inače (stabilno u obje polovine perioda)."""
+def strength(fx, ctx):
+    """Forma obje ekipe (zadnjih 15, sva takmičenja) -> (vjerovatnoće 1/X/2, redovi po ekipi, redovi na terenu)."""
     rows = {r: team_rows_scored(t, ctx["hist"][t][:15]) for r, t in (("h", fx["h"]), ("a", fx["a"]))}
     if min(len(rows["h"]), len(rows["a"])) < 8:
         return None
@@ -550,7 +549,38 @@ def upset(fx, ctx):
         g = sum(f - a for _, f, a in rows[r]) / len(rows[r])
         return ppg(rows[r]) + 0.35 * g + 0.3 * ((ppg(venue[r]) or ppg(rows[r])) - ppg(rows[r]))
     diff = rating("h") - rating("a")
-    p = UPSET_P[max(-6, min(6, round(diff / 0.25)))]
+    return UPSET_P[max(-6, min(6, round(diff / 0.25)))], rows, venue
+
+
+def three_for_three(fx, ctx):
+    """K2: domaćin je dobio zadnja 2 međusobna na svom terenu (zadnje 3 godine).
+    Provjera: 65% pobjeda domaćina (54 utakmice) naspram 47% očekivanih po formi; jače kad je i gost dobio kod sebe."""
+    def ft(m):
+        r = HT.get(str(m["id"]))
+        return (r[2], r[3]) if isinstance(r, list) and r[2] is not None else None
+    lim = (fx["utc"] - dt.timedelta(days=1100)).strftime("%Y-%m-%dT%H:%M")
+    h2h = [m for m in ctx["h2h"] if m["t"][:16] >= lim and ft(m)]
+    here = [m for m in h2h if m["h"] == fx["h"]][:2]
+    if len(here) < 2 or not all(ft(m)[0] > ft(m)[1] for m in here):
+        return None
+    there = [m for m in h2h if m["h"] == fx["a"]][:1]
+    both = bool(there) and ft(there[0])[0] > ft(there[0])[1]
+    st = strength(fx, ctx)
+    odds = round(0.92 / st[0][0], 2) if st else None
+    why = [f"{fx['hn']} dobio zadnja 2 međusobna kod kuće: " +
+           "; ".join(f"{ft(m)[0]}:{ft(m)[1]} ({dmy(m['t'])})" for m in here)]
+    if both:
+        why.append(f"{fx['an']} dobio zadnji kod sebe: {ft(there[0])[0]}:{ft(there[0])[1]} ({dmy(there[0]['t'])}), pravo 3 za 3")
+    return {"pick": "1", "estOdds": odds, "both": both, "why": why}
+
+
+def upset(fx, ctx):
+    """Slabija ekipa s procijenjenom kvotom 3,5+ i obrascem koji joj ide u prilog.
+    Provjera: obrasci daju ~28% pobjeda slabije ekipe naspram ~22% inače (stabilno u obje polovine perioda)."""
+    st = strength(fx, ctx)
+    if not st:
+        return None
+    p, rows, venue = st
     dog = "h" if p[0] < p[2] else "a"
     fav = "a" if dog == "h" else "h"
     odds = round(0.92 / (p[0] if dog == "h" else p[2]), 2)
@@ -1001,6 +1031,7 @@ def screen(fx_list, by_id, live):
                "means": league_means(pools[f["lid"]], f["t"])}
         a = analyse(f, ctx)
         a["upset"] = upset(f, ctx)
+        a["k2"] = three_for_three(f, ctx)
         out.append((f, a))
     return out, pools, complete
 
@@ -1012,6 +1043,8 @@ def sample_of(f, a, o=None, bt=False):
     u = a.get("upset")
     if u:
         s["u"] = [u["pick"], u["estOdds"], int(u["flag"])]
+    if a.get("k2"):
+        s["k2"] = [1, int(a["k2"]["both"])]
     if bt:
         s["bt"] = 1
     return s
@@ -1159,7 +1192,7 @@ def main():
                                 "at": today}
         jsave(os.path.join(DATA, "league_stats.json"), ls, pretty=True)
 
-        screened, rows, nominal, upsets = [], {}, 0, []
+        screened, rows, nominal, upsets, k2s = [], {}, 0, [], []
         for f, a in res_:
             lg = by_id[f["lid"]]
             if min(a["stats"]["n"][r]["last15"] for r in ("h", "a")) >= 8:
@@ -1171,6 +1204,12 @@ def main():
                              (c.get("sel") or "") + (" · " + c["alt"] if c.get("alt") else "")])
             if a["score"] >= CFG.get("listMin", 8):
                 matches.append(make_doc(f, a, lg, now))
+            if a.get("k2"):
+                k2s.append({"fixtureId": f["id"], "utc": f["utc"].isoformat(timespec="minutes"),
+                            "kickoff": f["utc"].astimezone(TZ).strftime("%H:%M"),
+                            "date": f["utc"].astimezone(TZ).date().isoformat(),
+                            "league": f"{COUNTRY.get(lg['cc'], lg['cc'])} · {lg['name']}",
+                            "home": f["hn"], "away": f["an"], **a["k2"]})
             u = a.get("upset")
             if u and u["flag"]:
                 upsets.append({"fixtureId": f["id"], "utc": f["utc"].isoformat(timespec="minutes"),
@@ -1189,6 +1228,15 @@ def main():
                     st["odds"] += u[1]
         report["upsetStats"] = {"n": st["n"], "won": st["won"],
                                 "avgOdds": round(st["odds"] / st["n"], 2) if st["n"] else None}
+        k2s.sort(key=lambda k: (not k["both"], k["utc"]))
+        report["k2"] = k2s[:12]
+        k = {"n": 0, "won": 0}
+        for path in glob.glob(os.path.join(DATA, "samples", "*.json")):
+            for smp in jload(path, {}).values():
+                if smp.get("k2") and re.fullmatch(r"[12X]/[12X]", str(smp.get("o") or "")) and not smp.get("bt"):
+                    k["n"] += 1
+                    k["won"] += int(smp["o"][2] == "1")
+        report["k2Stats"] = k
         report["upsets"] = upsets[: CFG.get("upsetMax", 12)]
         save_samples(rows)
         matches.sort(key=lambda m: (-m["score"], m["utc"]))
