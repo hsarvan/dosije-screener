@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["*.py", "config.json", "backtest_request.json", ".github/workflows/*.yml"]
+    paths: ["screener.py", "config.json", "backtest_request.json", ".github/workflows/*.yml"]
 permissions:
   contents: write
 concurrency:
@@ -36,6 +36,13 @@ jobs:
       - name: Pregled utakmica
         continue-on-error: true
         run: python screener.py
+      - name: Telegram poruka
+        if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python notify.py
       - name: Sačuvaj keš
         if: always()
         uses: actions/cache/save@v4
