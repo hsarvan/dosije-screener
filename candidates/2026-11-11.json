@@ -1,9 +1,9 @@
 {
  "date": "2026-11-11",
- "generatedAt": "2026-11-11T10:05:44+00:00",
+ "generatedAt": "2026-11-11T10:06:30+00:00",
  "window": [
-  "2026-11-11T10:05+00:00",
-  "2026-11-12T10:05+00:00"
+  "2026-11-11T10:06+00:00",
+  "2026-11-12T10:06+00:00"
  ],
  "rules": {
   "n": 3948,
@@ -11,7 +11,7 @@
    "1/2": 0.0208,
    "2/1": 0.0314
   },
-  "at": "2026-11-11T10:05:44+00:00",
+  "at": "2026-11-11T10:06:30+00:00",
   "rules": [
    {
     "id": "R1",
@@ -209,10 +209,10 @@
  "withData": 13,
  "candidates": 1,
  "tips": 1,
- "calls": 75,
- "detailCalls": 60,
+ "calls": 16,
+ "detailCalls": 14,
  "errors": 0,
- "minutes": 0.3,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -421,7 +421,7 @@
     "sources": [
      "https://www.fotmob.com/matches/barnsley-vs-oldham-athletic/2p6wqz#6015570"
     ],
-    "createdAt": "2026-11-11T10:05:44+00:00",
+    "createdAt": "2026-11-11T10:06:30+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
