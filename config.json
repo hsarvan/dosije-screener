@@ -2,7 +2,7 @@
   "windowHours": 24,
   "maxFixtures": 200,
   "listMax": 40,
-  "listMin": 8,
+  "listMin": 5,
   "htftMin": 20,
   "maxDetailCalls": 7000,
   "maxMinutes": 75,
