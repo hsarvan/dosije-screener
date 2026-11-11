@@ -18,6 +18,7 @@ from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.abspath(__file__))
 TZ = ZoneInfo("Europe/Sarajevo")
 APP = "https://claude.ai/artifact/RT8qUK2yQhwFQPvVjxCL5M"
+POT, MIN_TIP = 15, 20   # potencijalni: skor 15–19, PV/K prijedlog od 20
 DAYS = ["pon", "uto", "sri", "čet", "pet", "sub", "ned"]
 
 
@@ -59,7 +60,7 @@ def chat_id(token):
 
 
 def e(s):
-    return html.escape(str(s or ""))
+    return html.escape(str(s or ""), quote=False)
 
 
 def pl(n, one, few, many):
@@ -90,13 +91,22 @@ def build(today):
                        + (f"\n  <i>{e(why)}</i>" if why else ""))
     else:
         out.append("\n🎯 Danas nema PV/K prijedloga.")
-    if rest:
-        out.append(f"\n👀 <b>Kandidati</b> ({len(rest)})")
-        for m in rest[:10]:
-            d, c = m["doc"], m["doc"].get("cand") or {}
+    pot = [m for m in rest if (m["doc"]["cand"].get("score") or 0) >= POT]
+    low = [m for m in rest if (m["doc"]["cand"].get("score") or 0) < POT]
+    if pot:
+        out.append(f"\n🟡 <b>Potencijalni</b> (skor {POT}–{MIN_TIP - 1})")
+        for m in pot:
+            d, c = m["doc"], m["doc"]["cand"]
+            why = (d.get("signals") or [{}])[0].get("note") or ""
+            out.append(f"• <b>{e(d['kickoff'])} {e(d['home'])} – {e(d['away'])}</b>\n  {e(d['league'])}\n"
+                       f"  PV/K {e(pick(c))} · skor {c.get('score', '')}" + (f"\n  <i>{e(why)}</i>" if why else ""))
+    if low:
+        out.append(f"\n👀 <b>Kandidati</b> ({len(low)})")
+        for m in low[:10]:
+            d, c = m["doc"], m["doc"]["cand"]
             out.append(f"• {e(d['kickoff'])} {e(d['home'])} – {e(d['away'])} · {e(pick(c))} · {c.get('score', '')}")
-        if len(rest) > 10:
-            out.append(f"  … i još {len(rest) - 10} u Dosijeu")
+        if len(low) > 10:
+            out.append(f"  … i još {len(low) - 10} u Dosijeu")
     out.append(f'\n<a href="{APP}">Otvori Dosije</a>')
     text = "\n".join(out)
     return text if len(text) <= 4000 else text[:3990] + "…"
