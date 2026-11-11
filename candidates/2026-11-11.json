@@ -1,0 +1,190 @@
+{
+ "date": "2026-11-11",
+ "generatedAt": "2026-11-11T05:35:54+00:00",
+ "window": [
+  "2026-11-11T05:35+00:00",
+  "2026-11-12T05:35+00:00"
+ ],
+ "rules": {
+  "n": 3948,
+  "base": {
+   "1/2": 0.0208,
+   "2/1": 0.0314
+  },
+  "at": "2026-11-11T05:35:56+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 99,
+    "hits": 5,
+    "sel": 5,
+    "any": 8,
+    "both": false,
+    "base": 0.0287,
+    "lift": 1.76,
+    "mult": 0.96
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 14,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0262,
+    "lift": 2.73,
+    "mult": 1.07
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 90,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0306,
+    "lift": 1.81,
+    "mult": 1.13
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 684,
+    "hits": 41,
+    "sel": 28,
+    "any": 41,
+    "both": true,
+    "base": 0.058,
+    "lift": 1.03,
+    "mult": 0.71
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 125,
+    "hits": 3,
+    "sel": 3,
+    "any": 3,
+    "both": false,
+    "base": 0.0314,
+    "lift": 0.76,
+    "mult": 0.84
+   }
+  ]
+ },
+ "leagues": 64,
+ "fixturesSeen": 10,
+ "analysed": 10,
+ "upsetStats": {
+  "n": 0,
+  "won": 0,
+  "avgOdds": null
+ },
+ "k2": [
+  {
+   "fixtureId": 6540022,
+   "utc": "2026-11-12T01:10+00:00",
+   "kickoff": "02:10",
+   "date": "2026-11-12",
+   "league": "Kolumbija · Primera B",
+   "home": "Deportes Quindío",
+   "away": "Tigres FC",
+   "pick": "1",
+   "estOdds": 2.06,
+   "both": true,
+   "why": [
+    "Deportes Quindío dobio zadnja 2 međusobna kod kuće: 2:0 (24.10.2026); 1:0 (05.05.2026)",
+    "Tigres FC dobio zadnji kod sebe: 2:0 (07.11.2026), pravo 3 za 3"
+   ]
+  }
+ ],
+ "k2Stats": {
+  "n": 0,
+  "won": 0
+ },
+ "upsets": [],
+ "screened": [
+  [
+   "11.11. 23:00",
+   "BRA Série B",
+   "Londrina – Náutico",
+   0,
+   ""
+  ],
+  [
+   "12.11. 03:00",
+   "MEX Liga de Expansión MX",
+   "Piratas – Atlético La Paz",
+   0,
+   ""
+  ],
+  [
+   "11.11. 18:45",
+   "ESP Segunda Federación",
+   "Castellonense – La Nucía",
+   0,
+   ""
+  ],
+  [
+   "11.11. 19:00",
+   "ESP Segunda Federación",
+   "Castellón B – Deportiva Minera",
+   7,
+   "2/1"
+  ],
+  [
+   "11.11. 19:30",
+   "ESP Segunda Federación",
+   "Alcoyano – Elche Ilicitano",
+   0,
+   ""
+  ],
+  [
+   "11.11. 20:30",
+   "ESP Segunda Federación",
+   "Cieza – Valencia B",
+   0,
+   ""
+  ],
+  [
+   "12.11. 00:00",
+   "COL Primera B",
+   "Real Cundinamarca – Real Cartagena",
+   0,
+   ""
+  ],
+  [
+   "12.11. 02:10",
+   "COL Primera B",
+   "Deportes Quindío – Tigres FC",
+   0,
+   ""
+  ],
+  [
+   "11.11. 20:30",
+   "URU Segunda Division",
+   "La Luz – Fénix",
+   0,
+   ""
+  ],
+  [
+   "11.11. 20:30",
+   "URU Segunda Division",
+   "Tacuarembo FC – Miramar Misiones",
+   0,
+   ""
+  ]
+ ],
+ "withData": 10,
+ "candidates": 0,
+ "tips": 0,
+ "calls": 34,
+ "detailCalls": 22,
+ "errors": 0,
+ "minutes": 0.2,
+ "notes": [],
+ "matches": []
+}
