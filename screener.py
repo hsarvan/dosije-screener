@@ -57,10 +57,11 @@ EVW = {"lostLead": "ispušteno vodstvo s PV", "comeback": "okrenut minus s PV"}
 WIN = {"home5": "5 kod kuće", "away5": "5 u gostima", "last10": "zadnjih 10", "last15": "zadnjih 15"}
 RULES = {"R1": "Preokreti ekipe + isti preokret u međusobnom", "R2": "Ponovljeni preokret iz zadnjeg međusobnog",
          "R3": "Zbir preokreta obje ekipe (zadnjih 10)", "R4": "Ekipa sklona preokretima (zadnjih 15)",
-         "R5": "Gust raspored: kup ili Evropa oko utakmice"}
+         "R5": "Gust raspored: kup ili Evropa oko utakmice",
+         "R6": "Svjež preokret + preokret kod druge ekipe"}
 PRIOR = {1: 1.25, 2: 1.6, 3: 2.0}   # koliko puta češće od prosjeka očekujemo pogodak po jačini (prije podataka)
 PRIOR_E = 6.0                        # težina te pretpostavke: kao 6 pogodaka koliko bi dao prosjek lige
-BOTH = {"R4"}                        # pravila koja traže preokret u bilo kojem smjeru (kandidat za 1/2 i 2/1)
+BOTH = {"R4", "R6"}                        # pravila koja traže preokret u bilo kojem smjeru (kandidat za 1/2 i 2/1)
 # Model golova (izmjereno na 3.913 utakmica, 25.9.–8.11.2026): prosjek golova po ekipi u 1. i 2. poluvremenu,
 # prednost domaćina i prosječna šansa preokreta po modelu. Utakmice s malo golova imale su preokret u 3,3%
 # slučajeva (ostale 5,6%), pa im se bodovi smanjuju; one s puno golova dobiju mali dodatak.
@@ -668,12 +669,23 @@ def analyse(fx, ctx):
             if c[r][best_w]:
                 lines.append((r, best_w, hits(r, best_w, sel)[:2]))
         ev["role"][sel] = lines
+    # Smjer po snazi: kad je gost jasno jači, preokret je češće 1/2 (3,8% naspram 2,1%), kad je jači domaćin 2/1.
+    stp = strength(fx, ctx)
+    strong_dir = None
+    if stp:
+        p1, _, p2 = stp[0]
+        if p2 > p1 - 0.06:
+            strong_dir = "1/2"
+        elif p1 - p2 >= 0.16:
+            strong_dir = "2/1"
     # R4) Ekipa sklona preokretima: bilo koji preokret (1/2 ili 2/1) u zadnjih 15 mečeva, svježi vrijede više
     #     (primjer Torreense – União de Leiria: 3 u zadnjih 15, 2 u zadnja 3, zadnji meč preokret)
     feat = {}
     for r in ("h", "a"):
         T, name = team[r]
         revs = [(i, m, team_event(m, T)) for i, m in enumerate(h15[r]) if team_event(m, T)]
+        ev["revs"] = ev.get("revs", {})
+        ev["revs"][r] = revs
         n3, n5, n10, n15 = (sum(1 for i, _, _ in revs if i < k) for k in (3, 5, 10, 15))
         last = bool(revs) and revs[0][0] == 0
         c_l = sum(1 for _, _, e in revs if e == "lostLead")
@@ -700,8 +712,20 @@ def analyse(fx, ctx):
         note = f"{name}: " + ", ".join(parts)
         if len(note) > 90:
             note = f"{'Domaćin' if r == 'h' else 'Gost'}: " + ", ".join(parts)
-        signals.append(sig("R4", sel_for(r, event), s, "korisnik", note, url, both=True))
+        signals.append(sig("R4", strong_dir or sel_for(r, event), s, "korisnik", note, url, both=True))
         ev["prone"][r] = [m for _, m, _ in revs[:3]]
+    # R6) Svjež preokret: jedna ekipa je imala preokret u zadnjem meču, druga bar jedan u zadnjih 10
+    #     (primjeri Yokohama – Kashiwa, Leamington – Bromsgrove). Slab signal: kandidat, ne prijedlog.
+    for r, o in (("h", "a"), ("a", "h")):
+        if feat.get(r) and feat.get(o) and feat[r][4] and feat[o][2] >= 1 and feat[r][7] >= 6 and feat[o][7] >= 6:
+            ev["prone"].setdefault(r, [m for _, m, _ in ev["revs"][r][:2]])
+            ev["prone"].setdefault(o, [m for _, m, _ in ev["revs"][o][:1]])
+            first = strong_dir or sel_for(r, ev["revs"][r][0][2])
+            note = (f"{team[r][1]} preokret u zadnjem meču, {team[o][1]} {feat[o][2]}× u zadnjih 10")
+            if len(note) > 90:
+                note = f"Zadnji meč preokret ({'domaćin' if r == 'h' else 'gost'}), druga ekipa {feat[o][2]}× u zadnjih 10"
+            signals.append(sig("R6", first, 1, "korisnik", note, url, both=True))
+            break
     # R5) Gust raspored (kup ili Evropa do 4 dana prije/poslije): umor i rotacija, ekipa lakše ispusti vodstvo.
     #     Broji se samo uz neki drugi signal preokreta.
     cong = ctx.get("cong") or {}

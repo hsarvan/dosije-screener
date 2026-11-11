@@ -1,11 +1,11 @@
 {
   "windowHours": 24,
-  "maxFixtures": 80,
+  "maxFixtures": 170,
   "listMax": 40,
   "listMin": 8,
   "htftMin": 20,
-  "maxDetailCalls": 3000,
-  "maxMinutes": 40,
+  "maxDetailCalls": 7000,
+  "maxMinutes": 75,
   "pause": 0.3,
   "workers": 3,
   "leagueRefreshHours": 18,
@@ -57,6 +57,81 @@
       "id": 519,
       "cc": "EGY",
       "name": "Premier League"
+    },
+    {
+      "id": 223,
+      "cc": "JPN",
+      "name": "J. League"
+    },
+    {
+      "id": 9080,
+      "cc": "KOR",
+      "name": "K League 1"
+    },
+    {
+      "id": 142,
+      "cc": "ENG",
+      "name": "EFL Trophy"
+    },
+    {
+      "id": 133,
+      "cc": "ENG",
+      "name": "EFL Cup"
+    },
+    {
+      "id": 132,
+      "cc": "ENG",
+      "name": "FA Cup"
+    },
+    {
+      "id": 9253,
+      "cc": "ENG",
+      "name": "FA Trophy"
+    },
+    {
+      "id": 48,
+      "cc": "ENG",
+      "name": "Championship"
+    },
+    {
+      "id": 224,
+      "cc": "JPN",
+      "name": "J. League Cup"
+    },
+    {
+      "id": 9011,
+      "cc": "JPN",
+      "name": "Emperor's Cup"
+    },
+    {
+      "id": 9551,
+      "cc": "KOR",
+      "name": "FA Cup"
+    },
+    {
+      "id": 9550,
+      "cc": "CHN",
+      "name": "FA Cup"
+    },
+    {
+      "id": 9471,
+      "cc": "AUS",
+      "name": "Australia Cup"
+    },
+    {
+      "id": 180,
+      "cc": "SCO",
+      "name": "League Cup"
+    },
+    {
+      "id": 179,
+      "cc": "SCO",
+      "name": "Challenge Cup"
+    },
+    {
+      "id": 137,
+      "cc": "SCO",
+      "name": "Scottish Cup"
     },
     {
       "id": 8938,
