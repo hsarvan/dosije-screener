@@ -1,9 +1,9 @@
 {
  "date": "2026-11-11",
- "generatedAt": "2026-11-11T20:04:17+00:00",
+ "generatedAt": "2026-11-11T20:06:19+00:00",
  "window": [
-  "2026-11-11T20:04+00:00",
-  "2026-11-12T20:04+00:00"
+  "2026-11-11T20:06+00:00",
+  "2026-11-12T20:06+00:00"
  ],
  "rules": {
   "n": 3952,
@@ -11,7 +11,7 @@
    "1/2": 0.021,
    "2/1": 0.0314
   },
-  "at": "2026-11-11T20:04:18+00:00",
+  "at": "2026-11-11T20:06:19+00:00",
   "rules": [
    {
     "id": "R1",
@@ -196,10 +196,10 @@
  "withData": 9,
  "candidates": 1,
  "tips": 0,
- "calls": 51,
- "detailCalls": 35,
+ "calls": 12,
+ "detailCalls": 10,
  "errors": 0,
- "minutes": 0.3,
+ "minutes": 0.0,
  "notes": [],
  "matches": [
   {
@@ -339,7 +339,7 @@
     "sources": [
      "https://www.fotmob.com/matches/bochum-ii-vs-sc-paderborn-07-ii/2tu4u10k#5911229"
     ],
-    "createdAt": "2026-11-11T20:04:17+00:00",
+    "createdAt": "2026-11-11T20:06:19+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -764,6 +764,643 @@
      "fixtureId": 6538688
     },
     "fixtureId": 6538688
+   }
+  },
+  {
+   "fixtureId": 6006688,
+   "docId": "2026-11-11_liverpool-w_aston-villa-w",
+   "utc": "2026-11-11T19:00+00:00",
+   "league": "Engleska · Women's League Cup",
+   "stage": "Women's League Cup",
+   "home": "Liverpool (W)",
+   "away": "Aston Villa (W)",
+   "score": 28,
+   "cand": {
+    "sel": "1/2",
+    "score": 28,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 28,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-10-18 Aston Villa (W)–Liverpool (W) 2:1 (PV 0:1)",
+    "2026-02-08 Liverpool–Aston Villa 4:1 (PV 2:1)",
+    "2025-12-11 Aston Villa–Liverpool 3:0 (PV 2:0)",
+    "2025-03-30 Liverpool–Aston Villa 1:2 (PV 0:0)",
+    "2024-11-03 Aston Villa–Liverpool 1:2 (PV 0:2)",
+    "2024-03-03 Aston Villa–Liverpool 1:4 (PV 1:2)"
+   ],
+   "homeLast": [
+    "2026-11-08 Liverpool (W)–Arsenal (W) 1:2 (PV 1:2)",
+    "2026-11-01 West Ham United (W)–Liverpool (W) 4:1 (PV 3:0)",
+    "2026-10-25 Liverpool (W)–London City Lionesses (W) 2:2 (PV 1:2)",
+    "2026-10-21 Liverpool (W)–Manchester United (W) 3:5 (PV 0:3)",
+    "2026-10-18 Aston Villa (W)–Liverpool (W) 2:1 (PV 0:1)",
+    "2026-10-03 Manchester United (W)–Liverpool (W) 1:0 (PV 1:0)",
+    "2026-09-30 Birmingham City (W)–Liverpool (W) 3:4 (PV 1:1)",
+    "2026-09-27 Liverpool (W)–Everton (W) 2:0 (PV 1:0)",
+    "2026-09-23 Liverpool (W)–Sunderland (W) 4:2 (PV 1:2)",
+    "2026-09-18 Manchester City (W)–Liverpool (W) 4:2 (PV 2:2)",
+    "2026-09-13 Liverpool (W)–Tottenham Hotspur (W) 1:1 (PV 0:1)",
+    "2026-09-06 Charlton (W)–Liverpool (W) 0:4 (PV 0:1)",
+    "2025-12-21 Liverpool (W)–Chelsea (W) 1:9 (PV 0:4)",
+    "2025-11-22 Sheffield United (W)–Liverpool (W) 1:4 (PV 1:2)",
+    "2025-10-16 Durham Women FC (W)–Liverpool (W) 1:2 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-08 Aston Villa (W)–Manchester United (W) 0:1 (PV 0:0)",
+    "2026-11-01 Arsenal (W)–Aston Villa (W) 1:1 (PV 0:1)",
+    "2026-10-28 Aston Villa (W)–Birmingham City (W) 1:1 (PV 0:0)",
+    "2026-10-25 Everton (W)–Aston Villa (W) 2:3 (PV 0:2)",
+    "2026-10-21 Burnley FC Women (W)–Aston Villa (W) 0:2 (PV 0:1)",
+    "2026-10-18 Aston Villa (W)–Liverpool (W) 2:1 (PV 0:1)",
+    "2026-10-04 Aston Villa (W)–Crystal Palace (W) 1:1 (PV 0:0)",
+    "2026-09-30 Aston Villa (W)–Newcastle United (W) 3:1 (PV 1:1)",
+    "2026-09-27 Tottenham Hotspur (W)–Aston Villa (W) 4:0 (PV 0:0)",
+    "2026-09-23 Nottingham Forest WFC (W)–Aston Villa (W) 0:2 (PV 0:0)",
+    "2026-09-20 Brighton (W)–Aston Villa (W) 1:1 (PV 1:0)",
+    "2026-09-13 Aston Villa (W)–Manchester City (W) 1:4 (PV 1:2)",
+    "2026-09-05 Chelsea (W)–Aston Villa (W) 1:1 (PV 1:0)",
+    "2025-11-21 Aston Villa (W)–Birmingham City (W) 3:3 (PV 0:1)",
+    "2025-10-19 Bristol City (W)–Aston Villa (W) 0:3 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-11",
+    "kickoff": "20:00",
+    "league": "Engleska · Women's League Cup",
+    "home": "Liverpool (W)",
+    "away": "Aston Villa (W)",
+    "pairId": "aston-villa-w__liverpool-w",
+    "venue": "St Helens Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Liverpool (W): 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/aston-villa-vs-liverpool/1j6pd30x#6006688"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (18.10.2026); u zadnjih 10: Liverpool (W) 2×, Aston Villa (W) 1×",
+      "src": [
+       "https://www.fotmob.com/matches/aston-villa-vs-liverpool/1j6pd30x#6006688"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Liverpool (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/aston-villa-vs-liverpool/1j6pd30x#6006688"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Aston Villa (W): WSL prije 3 dana; WSL za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/aston-villa-vs-liverpool/1j6pd30x#6006688"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "guzva",
+      "note": "WSL prije 3 dana; WSL za 3 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/aston-villa-vs-liverpool/1j6pd30x#6006688"
+      ]
+     },
+     {
+      "team": "away",
+      "type": "guzva",
+      "note": "WSL prije 3 dana; WSL za 4 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/aston-villa-vs-liverpool/1j6pd30x#6006688"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 28,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 28,
+     "alt": "2/1"
+    },
+    "reasoning": "Liverpool (W), preokreti: Aston Villa (W)–Liverpool (W) 2:1 (PV 0:1) 18.10. (međusobni); protiv Sunderland (W) 4:2 (PV 1:2) 23.09. Liverpool (W): WSL prije 3 dana; WSL za 3 dana. Aston Villa (W): WSL prije 3 dana; WSL za 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/aston-villa-vs-liverpool/1j6pd30x#6006688"
+    ],
+    "createdAt": "2026-11-11T20:06:19+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6006688
+    },
+    "fixtureId": 6006688
+   }
+  },
+  {
+   "fixtureId": 6006689,
+   "docId": "2026-11-11_tottenham-hotspur-w_crystal-palace-w",
+   "utc": "2026-11-11T19:00+00:00",
+   "league": "Engleska · Women's League Cup",
+   "stage": "Women's League Cup",
+   "home": "Tottenham Hotspur (W)",
+   "away": "Crystal Palace (W)",
+   "score": 40,
+   "cand": {
+    "sel": "2/1",
+    "score": 40,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 40,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-09-20 Crystal Palace (W)–Tottenham Hotspur (W) 0:7 (PV 0:0)",
+    "2025-01-26 Crystal Palace–Tottenham Hotspur 2:3 (PV 0:2)",
+    "2024-12-11 Crystal Palace–Tottenham Hotspur 0:2 (PV 0:0)",
+    "2024-09-22 Tottenham Hotspur–Crystal Palace 4:0 (PV 1:0)",
+    "2018-12-09 Tottenham Hotspur–Crystal Palace 1:0 (PV 1:0)",
+    "2018-09-30 Crystal Palace–Tottenham Hotspur 1:2 (PV 1:1)"
+   ],
+   "homeLast": [
+    "2026-11-08 Tottenham Hotspur (W)–Brighton (W) 2:1 (PV 0:1)",
+    "2026-11-01 Birmingham City (W)–Tottenham Hotspur (W) 1:4 (PV 0:1)",
+    "2026-10-28 Bristol City (W)–Tottenham Hotspur (W) 1:6 (PV 1:4)",
+    "2026-10-24 Tottenham Hotspur (W)–Arsenal (W) 1:2 (PV 1:1)",
+    "2026-10-18 Chelsea (W)–Tottenham Hotspur (W) 6:2 (PV 1:1)",
+    "2026-10-04 Tottenham Hotspur (W)–London City Lionesses (W) 1:6 (PV 0:3)",
+    "2026-09-30 Brighton (W)–Tottenham Hotspur (W) 0:1 (PV 0:1)",
+    "2026-09-27 Tottenham Hotspur (W)–Aston Villa (W) 4:0 (PV 0:0)",
+    "2026-09-23 Tottenham Hotspur (W)–West Ham United (W) 0:0 (PV 0:0)",
+    "2026-09-20 Crystal Palace (W)–Tottenham Hotspur (W) 0:7 (PV 0:0)",
+    "2026-09-13 Liverpool (W)–Tottenham Hotspur (W) 1:1 (PV 0:1)",
+    "2026-09-06 Tottenham Hotspur (W)–West Ham United (W) 3:1 (PV 2:0)",
+    "2025-12-21 Manchester United (W)–Tottenham Hotspur (W) 2:1 (PV 0:1)",
+    "2025-11-23 Bristol City (W)–Tottenham Hotspur (W) 0:1 (PV 0:0)",
+    "2025-10-19 Tottenham Hotspur (W)–Birmingham City (W) 3:0 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Crystal Palace (W)–Charlton (W) 3:2 (PV 0:0)",
+    "2026-11-01 Brighton (W)–Crystal Palace (W) 2:1 (PV 0:1)",
+    "2026-10-28 London City Lionesses (W)–Crystal Palace (W) 4:2 (PV 1:0)",
+    "2026-10-25 Crystal Palace (W)–Chelsea (W) 1:3 (PV 1:0)",
+    "2026-10-21 Southampton (W)–Crystal Palace (W) 3:2 (PV 3:2)",
+    "2026-10-18 Crystal Palace (W)–West Ham United (W) 0:1 (PV 0:1)",
+    "2026-10-04 Aston Villa (W)–Crystal Palace (W) 1:1 (PV 0:0)",
+    "2026-09-30 Crystal Palace (W)–Charlton (W) 3:0 (PV 1:0)",
+    "2026-09-27 Birmingham City (W)–Crystal Palace (W) 3:3 (PV 2:1)",
+    "2026-09-23 Crystal Palace (W)–Watford (W) 1:0 (PV 0:0)",
+    "2026-09-20 Crystal Palace (W)–Tottenham Hotspur (W) 0:7 (PV 0:0)",
+    "2026-09-13 Arsenal (W)–Crystal Palace (W) 0:0 (PV 0:0)",
+    "2026-09-06 Crystal Palace (W)–Everton (W) 1:0 (PV 1:0)",
+    "2025-12-21 Crystal Palace (W)–Arsenal (W) 0:2 (PV 0:1)",
+    "2025-11-23 Leicester City (W)–Crystal Palace (W) 0:3 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-11",
+    "kickoff": "20:00",
+    "league": "Engleska · Women's League Cup",
+    "home": "Tottenham Hotspur (W)",
+    "away": "Crystal Palace (W)",
+    "pairId": "crystal-palace-w__tottenham-hotspur-w",
+    "venue": "BetWright Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 2/1 u zadnjih 10: Tottenham Hotspur (W) 1, Crystal Palace (W) 2",
+      "src": [
+       "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Crystal Palace (W): 2 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Tottenham Hotspur (W) preokret u zadnjem meču, Crystal Palace (W) 2× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Tottenham Hotspur (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Crystal Palace (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "guzva",
+      "note": "WSL prije 3 dana; WSL za 3 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+      ]
+     },
+     {
+      "team": "away",
+      "type": "guzva",
+      "note": "WSL prije 3 dana; WSL za 3 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 40,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 40,
+     "alt": "1/2"
+    },
+    "reasoning": "Tottenham Hotspur (W), preokreti: protiv Brighton (W) 2:1 (PV 0:1) 08.11.; Manchester United (W)–Tottenham Hotspur (W) 2:1 (PV 0:1) 21.12. Crystal Palace (W), preokreti: Brighton (W)–Crystal Palace (W) 2:1 (PV 0:1) 01.11.; protiv Chelsea (W) 1:3 (PV 1:0) 25.10. Tottenham Hotspur (W): WSL prije 3 dana; WSL za 3 dana. Crystal Palace (W): WSL prije 3 dana; WSL za 3 dana.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/crystal-palace-vs-tottenham-hotspur/9uv16lpy#6006689"
+    ],
+    "createdAt": "2026-11-11T20:06:19+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6006689
+    },
+    "fixtureId": 6006689
+   }
+  },
+  {
+   "fixtureId": 6006691,
+   "docId": "2026-11-11_brighton-w_watford-w",
+   "utc": "2026-11-11T19:45+00:00",
+   "league": "Engleska · Women's League Cup",
+   "stage": "Women's League Cup",
+   "home": "Brighton (W)",
+   "away": "Watford (W)",
+   "score": 37,
+   "cand": {
+    "sel": "2/1",
+    "score": 37,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 37,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 4,
+      "last10": 10,
+      "last15": 10
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2018-05-09 Watford–Brighton 0:1 (PV 0:1)",
+    "2018-05-06 Brighton–Watford 4:1 (PV 3:1)"
+   ],
+   "homeLast": [
+    "2026-11-08 Tottenham Hotspur (W)–Brighton (W) 2:1 (PV 0:1)",
+    "2026-11-01 Brighton (W)–Crystal Palace (W) 2:1 (PV 0:1)",
+    "2026-10-28 Wolverhampton WFC (W)–Brighton (W) 0:6 (PV 0:2)",
+    "2026-10-24 Brighton (W)–West Ham United (W) 3:0 (PV 1:0)",
+    "2026-10-18 Manchester City (W)–Brighton (W) 3:2 (PV 3:2)",
+    "2026-10-04 Brighton (W)–Charlton (W) 5:1 (PV 2:1)",
+    "2026-09-30 Brighton (W)–Tottenham Hotspur (W) 0:1 (PV 0:1)",
+    "2026-09-26 London City Lionesses (W)–Brighton (W) 2:0 (PV 1:0)",
+    "2026-09-23 Brighton (W)–Charlton (W) 4:0 (PV 1:0)",
+    "2026-09-20 Brighton (W)–Aston Villa (W) 1:1 (PV 1:0)",
+    "2026-09-13 Birmingham City (W)–Brighton (W) 2:2 (PV 1:0)",
+    "2026-09-06 Brighton (W)–Arsenal (W) 0:1 (PV 0:1)",
+    "2025-11-12 Brighton (W)–Charlton (W) 0:1 (PV 0:1)",
+    "2025-10-19 Brighton (W)–Southampton (W) 3:0 (PV 0:0)",
+    "2025-10-08 West Ham United (W)–Brighton (W) 2:1 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-08 Leicester City (W)–Watford (W) 0:1 (PV 0:1)",
+    "2026-10-31 Watford (W)–Ipswich Town WFC (W) 1:4 (PV 1:1)",
+    "2026-10-25 Watford (W)–Durham Women FC (W) 4:2 (PV 1:0)",
+    "2026-10-17 Watford (W)–Leicester City (W) 2:2 (PV 0:1)",
+    "2026-10-04 Wolverhampton WFC (W)–Watford (W) 2:2 (PV 1:0)",
+    "2026-09-27 Watford (W)–Sunderland (W) 1:2 (PV 0:2)",
+    "2026-09-23 Crystal Palace (W)–Watford (W) 1:0 (PV 0:0)",
+    "2026-09-20 Watford (W)–Bristol City (W) 1:5 (PV 0:1)",
+    "2026-09-13 Nottingham Forest WFC (W)–Watford (W) 2:2 (PV 1:2)",
+    "2026-09-04 Watford (W)–Burnley FC Women (W) 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-11",
+    "kickoff": "20:45",
+    "league": "Engleska · Women's League Cup",
+    "home": "Brighton (W)",
+    "away": "Watford (W)",
+    "pairId": "brighton-w__watford-w",
+    "venue": "Broadfield Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Brighton (W): 2 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/watford-vs-brighton/1d8k4l0s#6006691"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Brighton (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/watford-vs-brighton/1d8k4l0s#6006691"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Watford (W): WSL 2 prije 3 dana; WSL 2 za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/watford-vs-brighton/1d8k4l0s#6006691"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "guzva",
+      "note": "WSL prije 3 dana; WSL za 3 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/watford-vs-brighton/1d8k4l0s#6006691"
+      ]
+     },
+     {
+      "team": "away",
+      "type": "guzva",
+      "note": "WSL 2 prije 3 dana; WSL 2 za 4 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/watford-vs-brighton/1d8k4l0s#6006691"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 37,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 37,
+     "alt": "1/2"
+    },
+    "reasoning": "Brighton (W), preokreti: Tottenham Hotspur (W)–Brighton (W) 2:1 (PV 0:1) 08.11.; protiv Crystal Palace (W) 2:1 (PV 0:1) 01.11. Brighton (W): WSL prije 3 dana; WSL za 3 dana. Watford (W): WSL 2 prije 3 dana; WSL 2 za 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/watford-vs-brighton/1d8k4l0s#6006691"
+    ],
+    "createdAt": "2026-11-11T20:06:19+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6006691
+    },
+    "fixtureId": 6006691
    }
   }
  ]
