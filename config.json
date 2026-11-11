@@ -1,6 +1,6 @@
 {
   "windowHours": 24,
-  "maxFixtures": 170,
+  "maxFixtures": 200,
   "listMax": 40,
   "listMin": 8,
   "htftMin": 20,
@@ -392,6 +392,72 @@
       "id": 11030,
       "cc": "QAT",
       "name": "Second Division"
+    },
+    {
+      "id": 9227,
+      "cc": "ENG",
+      "name": "WSL"
+    },
+    {
+      "id": 9717,
+      "cc": "ENG",
+      "name": "Women's League Cup"
+    },
+    {
+      "id": 10082,
+      "cc": "ENG",
+      "name": "FA Cup (Women)"
+    },
+    {
+      "id": 9294,
+      "cc": "ENG",
+      "name": "WSL 2"
+    },
+    {
+      "id": 9907,
+      "cc": "ESP",
+      "name": "Liga F"
+    },
+    {
+      "id": 9676,
+      "cc": "GER",
+      "name": "Frauen-Bundesliga"
+    },
+    {
+      "id": 9677,
+      "cc": "FRA",
+      "name": "Première Ligue Féminine"
+    },
+    {
+      "id": 10178,
+      "cc": "ITA",
+      "name": "Serie A Femminile"
+    },
+    {
+      "id": 9134,
+      "cc": "USA",
+      "name": "NWSL"
+    },
+    {
+      "id": 9495,
+      "cc": "AUS",
+      "name": "A-League Women"
+    },
+    {
+      "id": 9500,
+      "cc": "JPN",
+      "name": "WE League"
+    },
+    {
+      "id": 9089,
+      "cc": "SWE",
+      "name": "Damallsvenskan"
+    },
+    {
+      "id": 10289,
+      "cc": "NED",
+      "name": "Eredivisie Vrouwen"
     }
-  ]
+  ],
+  "exclude": []
 }
