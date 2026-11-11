@@ -1154,6 +1154,17 @@ def run_backtest():
                       "away": a["awayLast"] if req.get("verbose") else None})
     if not req.get("noSave"):
         save_samples(rows)
+    # utakmice u toku iz provjere idu i među kandidate dana (Dosije, zatvaranje rezultata, učenje)
+    if live and req.get("addCandidates"):
+        now_ = dt.datetime.now(UTC)
+        for f, a in res_:
+            if a["score"] < CFG.get("listMin", 8) or outcome_of(f["id"]) is not None:
+                continue
+            m = make_doc(f, a, by_id[f["lid"]], now_)
+            path = os.path.join(ROOT, "candidates", f"{m['doc']['date']}.json")
+            cur = jload(path, {"date": m["doc"]["date"], "matches": []})
+            cur["matches"] = [x for x in cur.get("matches", []) if x["fixtureId"] != f["id"]] + [m]
+            jsave(path, cur, pretty=True)
     if req.get("dump"):
         def enc(m, team, f):
             r, home = HT[str(m["id"])], m["h"] == team
