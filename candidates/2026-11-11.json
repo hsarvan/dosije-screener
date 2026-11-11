@@ -1,17 +1,17 @@
 {
  "date": "2026-11-11",
- "generatedAt": "2026-11-11T12:15:19+00:00",
+ "generatedAt": "2026-11-11T20:04:17+00:00",
  "window": [
-  "2026-11-11T12:15+00:00",
-  "2026-11-12T12:15+00:00"
+  "2026-11-11T20:04+00:00",
+  "2026-11-12T20:04+00:00"
  ],
  "rules": {
-  "n": 3948,
+  "n": 3952,
   "base": {
-   "1/2": 0.0208,
+   "1/2": 0.021,
    "2/1": 0.0314
   },
-  "at": "2026-11-11T12:15:19+00:00",
+  "at": "2026-11-11T20:04:18+00:00",
   "rules": [
    {
     "id": "R1",
@@ -34,7 +34,7 @@
     "any": 1,
     "both": false,
     "base": 0.0262,
-    "lift": 2.73,
+    "lift": 2.72,
     "mult": 1.07
    },
    {
@@ -45,39 +45,39 @@
     "sel": 5,
     "any": 6,
     "both": false,
-    "base": 0.0306,
+    "base": 0.0307,
     "lift": 1.81,
     "mult": 1.13
    },
    {
     "id": "R4",
     "name": "Ekipa sklona preokretima (zadnjih 15)",
-    "n": 684,
+    "n": 685,
     "hits": 41,
     "sel": 28,
     "any": 41,
     "both": true,
-    "base": 0.058,
+    "base": 0.0581,
     "lift": 1.03,
     "mult": 0.71
    },
    {
     "id": "R5",
     "name": "Gust raspored: kup ili Evropa oko utakmice",
-    "n": 125,
+    "n": 127,
     "hits": 3,
     "sel": 3,
     "any": 3,
     "both": false,
-    "base": 0.0314,
-    "lift": 0.76,
-    "mult": 0.84
+    "base": 0.0315,
+    "lift": 0.75,
+    "mult": 0.83
    }
   ]
  },
- "leagues": 79,
- "fixturesSeen": 13,
- "analysed": 13,
+ "leagues": 92,
+ "fixturesSeen": 10,
+ "analysed": 10,
  "upsetStats": {
   "n": 0,
   "won": 0,
@@ -99,28 +99,29 @@
     "Deportes Quindío dobio zadnja 2 međusobna kod kuće: 2:0 (24.10.2026); 1:0 (05.05.2026)",
     "Tigres FC dobio zadnji kod sebe: 2:0 (07.11.2026), pravo 3 za 3"
    ]
+  },
+  {
+   "fixtureId": 6563638,
+   "utc": "2026-11-12T19:30+00:00",
+   "kickoff": "20:30",
+   "date": "2026-11-12",
+   "league": "Urugvaj · Segunda Division",
+   "home": "Plaza Colonia",
+   "away": "Rentistas",
+   "pick": "1",
+   "estOdds": 2.2,
+   "both": false,
+   "why": [
+    "Plaza Colonia dobio zadnja 2 međusobna kod kuće: 2:1 (14.09.2024); 1:0 (19.04.2024)"
+   ]
   }
  ],
  "k2Stats": {
-  "n": 0,
+  "n": 1,
   "won": 0
  },
  "upsets": [],
  "screened": [
-  [
-   "11.11. 20:00",
-   "ENG EFL Trophy",
-   "Sheff Wed – Accrington",
-   0,
-   ""
-  ],
-  [
-   "11.11. 20:00",
-   "ENG EFL Trophy",
-   "Barnsley – Oldham",
-   32,
-   "1/2 · 2/1"
-  ],
   [
    "12.11. 09:30",
    "AUS Australia Championship",
@@ -143,32 +144,11 @@
    ""
   ],
   [
-   "11.11. 18:45",
-   "ESP Segunda Federación",
-   "Castellonense – La Nucía",
-   0,
-   ""
-  ],
-  [
-   "11.11. 19:00",
-   "ESP Segunda Federación",
-   "Castellón B – Deportiva Minera",
-   7,
-   "1/2"
-  ],
-  [
-   "11.11. 19:30",
-   "ESP Segunda Federación",
-   "Alcoyano – Elche Ilicitano",
-   0,
-   ""
-  ],
-  [
-   "11.11. 20:30",
-   "ESP Segunda Federación",
-   "Cieza – Valencia B",
-   0,
-   ""
+   "12.11. 14:00",
+   "GER Regionalliga",
+   "SC Paderborn 07 II – Bochum II",
+   9,
+   "2/1"
   ],
   [
    "12.11. 00:00",
@@ -185,29 +165,189 @@
    ""
   ],
   [
-   "11.11. 20:30",
-   "URU Segunda Division",
-   "La Luz – Fénix",
+   "12.11. 19:00",
+   "ARG Primera B Metropolitana & Torneo Federal A",
+   "Kimberley – Olimpo",
    0,
    ""
   ],
   [
-   "11.11. 20:30",
+   "12.11. 20:30",
    "URU Segunda Division",
-   "Tacuarembo FC – Miramar Misiones",
+   "Atenas – Oriental",
+   0,
+   ""
+  ],
+  [
+   "12.11. 20:30",
+   "URU Segunda Division",
+   "Cerrito – Colon",
+   0,
+   ""
+  ],
+  [
+   "12.11. 20:30",
+   "URU Segunda Division",
+   "Plaza Colonia – Rentistas",
    0,
    ""
   ]
  ],
- "withData": 12,
+ "withData": 9,
  "candidates": 1,
- "tips": 1,
- "calls": 15,
- "detailCalls": 13,
+ "tips": 0,
+ "calls": 51,
+ "detailCalls": 35,
  "errors": 0,
- "minutes": 0.1,
+ "minutes": 0.3,
  "notes": [],
  "matches": [
+  {
+   "fixtureId": 5911229,
+   "docId": "2026-11-12_paderborn-07-ii_bochum-ii",
+   "utc": "2026-11-12T13:00+00:00",
+   "league": "Njemačka · Regionalliga",
+   "stage": "Regionalliga West",
+   "home": "SC Paderborn 07 II",
+   "away": "Bochum II",
+   "score": 9,
+   "cand": {
+    "sel": "2/1",
+    "score": 9
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-03-14 SC Paderborn 07 II–Bochum II 0:2 (PV 0:1)",
+    "2025-09-20 Bochum II–SC Paderborn 07 II 2:2 (PV 0:2)"
+   ],
+   "homeLast": [
+    "2026-11-07 Westfalia Rhynern–SC Paderborn 07 II 2:2 (PV 0:0)",
+    "2026-10-31 SC Paderborn 07 II–Bergisch Gladbach 3:0 (PV 1:0)",
+    "2026-10-24 FC Köln II–SC Paderborn 07 II 2:2 (PV 0:1)",
+    "2026-10-10 Sportfreunde Lotte–SC Paderborn 07 II 1:0 (PV 0:0)",
+    "2026-10-04 Oberhausen–SC Paderborn 07 II 4:0 (PV 2:0)",
+    "2026-09-25 FC Gütersloh–SC Paderborn 07 II 1:3 (PV 0:1)",
+    "2026-09-21 SC Paderborn 07 II–Borussia Dortmund II 1:1 (PV 1:1)",
+    "2026-09-12 SC Wiedenbrück–SC Paderborn 07 II 1:0 (PV 0:0)",
+    "2026-09-06 SC Paderborn 07 II–Wattenscheid 5:2 (PV 0:2)",
+    "2026-09-02 Sportfreunde Siegen–SC Paderborn 07 II 2:2 (PV 1:2)",
+    "2026-08-29 SC Paderborn 07 II–FC Bocholt 2:4 (PV 0:3)",
+    "2026-08-23 SC Paderborn 07 II–Bonner SC 1:1 (PV 0:1)",
+    "2026-08-15 SV Rödinghausen–SC Paderborn 07 II 1:1 (PV 0:0)",
+    "2026-08-08 SC Paderborn 07 II–Borussia Mönchengladbach II 1:3 (PV 0:0)",
+    "2026-08-01 Schalke 04 II–SC Paderborn 07 II 2:3 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Bochum II–Wattenscheid 3:2 (PV 0:1)",
+    "2026-10-31 Sportfreunde Siegen–Bochum II 5:0 (PV 3:0)",
+    "2026-10-24 Bochum II–FC Bocholt 3:3 (PV 1:2)",
+    "2026-10-11 Bochum II–SV Rödinghausen 6:5 (PV 2:1)",
+    "2026-10-02 Borussia Mönchengladbach II–Bochum II 2:3 (PV 2:3)",
+    "2026-09-26 Bochum II–Schalke 04 II 0:2 (PV 0:1)",
+    "2026-09-19 VfB Hilden–Bochum II 2:4 (PV 1:2)",
+    "2026-09-12 Bochum II–Westfalia Rhynern 0:1 (PV 0:0)",
+    "2026-09-06 Bergisch Gladbach–Bochum II 1:0 (PV 1:0)",
+    "2026-09-01 Bochum II–FC Köln II 0:4 (PV 0:2)",
+    "2026-08-28 Bonner SC–Bochum II 3:3 (PV 2:1)",
+    "2026-08-23 Sportfreunde Lotte–Bochum II 0:1 (PV 0:1)",
+    "2026-08-15 Bochum II–Oberhausen 1:2 (PV 0:2)",
+    "2026-08-07 FC Gütersloh–Bochum II 2:1 (PV 1:1)",
+    "2026-08-01 Bochum II–Borussia Dortmund II 1:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-12",
+    "kickoff": "14:00",
+    "league": "Njemačka · Regionalliga",
+    "home": "SC Paderborn 07 II",
+    "away": "Bochum II",
+    "pairId": "bochum-ii__paderborn-07-ii",
+    "venue": "Home Deluxe Arena",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Bochum II preokret u zadnjem meču, SC Paderborn 07 II 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/bochum-ii-vs-sc-paderborn-07-ii/2tu4u10k#5911229"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 9
+    },
+    "reasoning": "SC Paderborn 07 II, preokreti: protiv Wattenscheid 5:2 (PV 0:2) 06.09. Bochum II, preokreti: protiv Wattenscheid 3:2 (PV 0:1) 08.11. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/bochum-ii-vs-sc-paderborn-07-ii/2tu4u10k#5911229"
+    ],
+    "createdAt": "2026-11-11T20:04:17+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5911229
+    },
+    "fixtureId": 5911229
+   }
+  },
   {
    "fixtureId": 6015570,
    "docId": "2026-11-11_barnsley_oldham",
