@@ -96,5 +96,26 @@
   "r21": 0.025,
   "name": "Meksiko · Liga de Expansión MX",
   "at": "2026-11-11"
+ },
+ "142": {
+  "n": 72,
+  "r12": 0.028,
+  "r21": 0.014,
+  "name": "Engleska · EFL Trophy",
+  "at": "2026-11-11"
+ },
+ "224": {
+  "n": 50,
+  "r12": 0.02,
+  "r21": 0.0,
+  "name": "Japan · J. League Cup",
+  "at": "2026-11-11"
+ },
+ "8938": {
+  "n": 90,
+  "r12": 0.022,
+  "r21": 0.022,
+  "name": "Australija · Australia Championship",
+  "at": "2026-11-11"
  }
 }
