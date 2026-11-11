@@ -1,32 +1,32 @@
 {
  "from": "2026-11-11",
  "to": "2026-11-11",
- "leagues": 4,
- "fixtures": 6,
+ "leagues": 1,
+ "fixtures": 4,
  "complete": true,
- "calls": 8,
+ "calls": 6,
  "errors": 0,
  "minutes": 0.0,
- "withOutcome": 0,
+ "withOutcome": 4,
  "reversals": {
-  "1/2": 0,
+  "1/2": 1,
   "2/1": 0
  },
  "bands": {
   "tips": {
-   "n": 0,
+   "n": 1,
    "hitSel": 0,
    "hitAlt": 0,
    "anyReversal": 0
   },
   "candidates": {
-   "n": 0,
-   "hitSel": 0,
+   "n": 1,
+   "hitSel": 1,
    "hitAlt": 0,
-   "anyReversal": 0
+   "anyReversal": 1
   },
   "rest": {
-   "n": 0,
+   "n": 2,
    "hitSel": 0,
    "hitAlt": 0,
    "anyReversal": 0
@@ -40,13 +40,13 @@
    "anyReversal": 0
   },
   "16-23": {
-   "n": 0,
-   "hitSel": 0,
+   "n": 1,
+   "hitSel": 1,
    "hitAlt": 0,
-   "anyReversal": 0
+   "anyReversal": 1
   },
   "24-31": {
-   "n": 0,
+   "n": 1,
    "hitSel": 0,
    "hitAlt": 0,
    "anyReversal": 0
@@ -193,26 +193,26 @@
    "mult": 0.72
   },
   "R5": {
-   "n": 127,
-   "hits": 3,
-   "sel": 3,
-   "any": 3,
-   "rate": 0.0236,
-   "base": 0.0315,
-   "lift": 0.75,
-   "est": 1.07,
-   "mult": 0.83
+   "n": 129,
+   "hits": 4,
+   "sel": 4,
+   "any": 5,
+   "rate": 0.031,
+   "base": 0.0316,
+   "lift": 0.98,
+   "est": 1.16,
+   "mult": 0.91
   },
   "R5:1": {
-   "n": 118,
-   "hits": 2,
-   "sel": 2,
-   "any": 2,
-   "rate": 0.0169,
-   "base": 0.0313,
-   "lift": 0.54,
-   "est": 0.98,
-   "mult": 0.78
+   "n": 120,
+   "hits": 3,
+   "sel": 3,
+   "any": 4,
+   "rate": 0.025,
+   "base": 0.0314,
+   "lift": 0.8,
+   "est": 1.08,
+   "mult": 0.86
   },
   "R5:2": {
    "n": 9,
@@ -224,64 +224,319 @@
    "lift": 3.14,
    "est": 1.68,
    "mult": 1.05
+  },
+  "R7": {
+   "n": 1,
+   "hits": 1,
+   "sel": 1,
+   "any": 1,
+   "rate": 1.0,
+   "base": 0.0479,
+   "lift": 20.86,
+   "est": 1.41,
+   "mult": 1.12
+  },
+  "R7:1": {
+   "n": 1,
+   "hits": 1,
+   "sel": 1,
+   "any": 1,
+   "rate": 1.0,
+   "base": 0.0479,
+   "lift": 20.86,
+   "est": 1.41,
+   "mult": 1.12
   }
  },
  "flagged": [
   {
    "d": "2026-11-11",
-   "lg": "ENG Women's League Cup",
-   "m": "Tottenham Hotspur (W) – Crystal Palace (W)",
-   "o": null,
-   "score": 40,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "Preokreti 2/1 u zadnjih 10: Tottenham Hotspur (W) 1, Crystal Palace (W) 2",
-    "Crystal Palace (W): 2 preokreta u zadnjih 15, 2 u zadnjih 5",
-    "Tottenham Hotspur (W) preokret u zadnjem meču, Crystal Palace (W) 2× u zadnjih 10",
-    "Tottenham Hotspur (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
-    "Crystal Palace (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)"
-   ],
-   "txt": "Tottenham Hotspur (W), preokreti: protiv Brighton (W) 2:1 (PV 0:1) 08.11.; Manchester United (W)–Tottenham Hotspur (W) 2:1 (PV 0:1) 21.12. Crystal Palace (W), preokreti: Brighton (W)–Crystal Palace (W) 2:1 (PV 0:1) 01.11.; protiv Chelsea (W) 1:3 (PV 1:0) 25.10. Tottenham Hotspur (W): WSL prije 3 dana; WSL za 3 dana. Crystal Palace (W): WSL prije 3 dana; WSL za 3 dana.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-11-11",
-   "lg": "ENG Women's League Cup",
-   "m": "Brighton (W) – Watford (W)",
-   "o": null,
-   "score": 37,
-   "sel": "2/1",
-   "alt": "1/2",
-   "why": [
-    "Brighton (W): 2 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret",
-    "Brighton (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
-    "Watford (W): WSL 2 prije 3 dana; WSL 2 za 4 dana (umor, rotacija)"
-   ],
-   "txt": "Brighton (W), preokreti: Tottenham Hotspur (W)–Brighton (W) 2:1 (PV 0:1) 08.11.; protiv Crystal Palace (W) 2:1 (PV 0:1) 01.11. Brighton (W): WSL prije 3 dana; WSL za 3 dana. Watford (W): WSL 2 prije 3 dana; WSL 2 za 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
-   "home": null,
-   "away": null
-  },
-  {
-   "d": "2026-11-11",
-   "lg": "ENG Women's League Cup",
-   "m": "Liverpool (W) – Aston Villa (W)",
-   "o": null,
+   "lg": "JPN J. League Cup",
+   "m": "Kawasaki Frontale – Kashiwa Reysol",
+   "o": "X/2",
    "score": 28,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "Kashiwa Reysol: 3 preokreta u zadnjih 15",
+    "Kawasaki Frontale: J. League prije 4 dana (umor, rotacija)",
+    "Kashiwa Reysol: J. League prije 4 dana (umor, rotacija)"
+   ],
+   "txt": "Kashiwa Reysol, preokreti: Machida Zelvia–Kashiwa Reysol 2:4 (PV 1:0) 20.09.; Jeonbuk Hyundai Motors FC–Kashiwa Reysol 2:1 (PV 0:1) 16.09.; Kyoto Sanga FC–Kashiwa Reysol 2:3 (PV 2:0) 11.09. Kawasaki Frontale: J. League prije 4 dana. Kashiwa Reysol: J. League prije 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+   "home": [
+    "2026-11-07 Kashiwa Reysol–Kawasaki Frontale 2:1 (PV 1:1)",
+    "2026-11-01 Yokohama F.Marinos–Kawasaki Frontale 4:2 (PV 3:1)",
+    "2026-10-28 Sagan Tosu–Kawasaki Frontale 0:2 (PV 0:0)",
+    "2026-10-25 Kawasaki Frontale–Fagiano Okayama FC 2:1 (PV 1:0)",
+    "2026-10-21 Kawasaki Frontale–Vissel Kobe 2:1 (PV 0:0)",
+    "2026-10-17 Cerezo Osaka–Kawasaki Frontale 2:4 (PV 1:2)",
+    "2026-10-14 Júbilo Iwata–Kawasaki Frontale 0:4 (PV 0:1)",
+    "2026-10-11 Kawasaki Frontale–Nagoya Grampus 1:2 (PV 1:1)",
+    "2026-10-07 Kawasaki Frontale–Tegevajaro Miyazaki 2:0 (PV 1:0)",
+    "2026-09-29 Roasso Kumamoto–Kawasaki Frontale 0:1 (PV 0:0)",
+    "2026-09-19 Kawasaki Frontale–Kashima Antlers 3:3 (PV 1:1)",
+    "2026-09-12 Mito Hollyhock–Kawasaki Frontale 0:1 (PV 0:0)",
+    "2026-09-06 Kawasaki Frontale–Shimizu S-Pulse 3:1 (PV 1:0)",
+    "2026-09-02 Machida Zelvia–Kawasaki Frontale 2:1 (PV 0:0)",
+    "2026-08-29 Kawasaki Frontale–JEF United Chiba 4:2 (PV 4:2)"
+   ],
+   "away": [
+    "2026-11-07 Kashiwa Reysol–Kawasaki Frontale 2:1 (PV 1:1)",
+    "2026-11-03 Kashiwa Reysol–Daejeon Hana Citizen 2:0 (PV 0:0)",
+    "2026-10-31 Kashiwa Reysol–Urawa Red Diamonds 4:0 (PV 1:0)",
+    "2026-10-27 Ratchaburi FC–Kashiwa Reysol 0:0 (PV 0:0)",
+    "2026-10-24 Kashima Antlers–Kashiwa Reysol 2:3 (PV 1:2)",
+    "2026-10-21 FC Tokyo–Kashiwa Reysol 0:0 (PV 0:0)",
+    "2026-10-17 Kashiwa Reysol–Nagoya Grampus 1:3 (PV 1:2)",
+    "2026-10-14 Kashiwa Reysol–Port FC 5:1 (PV 5:0)",
+    "2026-10-09 Kashiwa Reysol–Vissel Kobe 4:2 (PV 1:0)",
+    "2026-10-03 Kashiwa Reysol–Gamba Osaka 3:3 (PV 1:1)",
+    "2026-09-23 Kashiwa Reysol–FC Imabari 4:0 (PV 2:0)",
+    "2026-09-20 Machida Zelvia–Kashiwa Reysol 2:4 (PV 1:0)",
+    "2026-09-16 Jeonbuk Hyundai Motors FC–Kashiwa Reysol 2:1 (PV 0:1)",
+    "2026-09-11 Kyoto Sanga FC–Kashiwa Reysol 2:3 (PV 2:0)",
+    "2026-09-06 Kashiwa Reysol–Yokohama F.Marinos 0:2 (PV 0:1)"
+   ]
+  },
+  {
+   "d": "2026-11-11",
+   "lg": "JPN J. League Cup",
+   "m": "Yokohama F.Marinos – Kashima Antlers",
+   "o": "1/2",
+   "score": 18,
    "sel": "1/2",
    "alt": "2/1",
    "why": [
-    "Liverpool (W): 2 preokreta u zadnjih 15",
-    "Zadnji međusobni 2/1 (18.10.2026); u zadnjih 10: Liverpool (W) 2×, Aston Villa (W) 1×",
-    "Liverpool (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
-    "Aston Villa (W): WSL prije 3 dana; WSL za 4 dana (umor, rotacija)"
+    "Zadnji međusobni 1/2 (07.08.2026); u zadnjih 10: Yokohama F.Marinos 1×",
+    "Yokohama F.Marinos: J. League prije 4 dana (umor, rotacija)",
+    "Kashima Antlers: J. League prije 4 dana (umor, rotacija)"
    ],
-   "txt": "Liverpool (W), preokreti: Aston Villa (W)–Liverpool (W) 2:1 (PV 0:1) 18.10. (međusobni); protiv Sunderland (W) 4:2 (PV 1:2) 23.09. Liverpool (W): WSL prije 3 dana; WSL za 3 dana. Aston Villa (W): WSL prije 3 dana; WSL za 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
-   "home": null,
-   "away": null
+   "txt": "Međusobni 07.08.2026 kod domaćina: Yokohama F.Marinos–Kashima Antlers 3:4 (PV 2:1). Yokohama F.Marinos: J. League prije 4 dana. Kashima Antlers: J. League prije 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+   "home": [
+    "2026-11-07 Yokohama F.Marinos–Fagiano Okayama FC 1:1 (PV 1:1)",
+    "2026-11-01 Yokohama F.Marinos–Kawasaki Frontale 4:2 (PV 3:1)",
+    "2026-10-28 Yokohama F.Marinos–Sanfrecce Hiroshima 4:3 (PV 0:0)",
+    "2026-10-25 Nagoya Grampus–Yokohama F.Marinos 1:1 (PV 0:1)",
+    "2026-10-21 Yokohama F.Marinos–Tokyo Verdy 2:2 (PV 1:0)",
+    "2026-10-17 JEF United Chiba–Yokohama F.Marinos 0:0 (PV 0:0)",
+    "2026-10-14 Yokohama F.Marinos–Shimizu S-Pulse 2:1 (PV 0:0)",
+    "2026-10-10 Cerezo Osaka–Yokohama F.Marinos 0:0 (PV 0:0)",
+    "2026-10-07 Yokohama F.Marinos–Kyoto Sangyo University 2:1 (PV 0:1)",
+    "2026-09-29 Montedio Yamagata–Yokohama F.Marinos 1:2 (PV 0:1)",
+    "2026-09-19 Yokohama F.Marinos–Mito Hollyhock 2:0 (PV 1:0)",
+    "2026-09-12 Machida Zelvia–Yokohama F.Marinos 1:1 (PV 0:1)",
+    "2026-09-06 Kashiwa Reysol–Yokohama F.Marinos 0:2 (PV 0:1)",
+    "2026-09-02 Yokohama F.Marinos–Kyoto Sanga FC 1:1 (PV 0:0)",
+    "2026-08-29 Urawa Red Diamonds–Yokohama F.Marinos 3:2 (PV 1:1)"
+   ],
+   "away": [
+    "2026-11-07 FC Tokyo–Kashima Antlers 2:0 (PV 0:0)",
+    "2026-11-04 Buriram United–Kashima Antlers 0:0 (PV 0:0)",
+    "2026-10-31 Kashima Antlers–Cerezo Osaka 4:1 (PV 3:1)",
+    "2026-10-28 Kashima Antlers–Pohang Steelers 3:0 (PV 0:0)",
+    "2026-10-24 Kashima Antlers–Kashiwa Reysol 2:3 (PV 1:2)",
+    "2026-10-21 Kyoto Sanga FC–Kashima Antlers 2:2 (PV 1:0)",
+    "2026-10-17 Kashima Antlers–V-Varen Nagasaki 2:0 (PV 2:0)",
+    "2026-10-13 Công An Hà Nội–Kashima Antlers 0:1 (PV 0:0)",
+    "2026-10-09 Kashima Antlers–Gamba Osaka 2:0 (PV 1:0)",
+    "2026-09-23 Kashima Antlers–Ventforet Kofu 3:1 (PV 1:0)",
+    "2026-09-19 Kawasaki Frontale–Kashima Antlers 3:3 (PV 1:1)",
+    "2026-09-15 Kashima Antlers–Newcastle Jets 7:1 (PV 5:0)",
+    "2026-09-11 Vissel Kobe–Kashima Antlers 2:1 (PV 0:0)",
+    "2026-09-06 Kashima Antlers–Urawa Red Diamonds 0:1 (PV 0:1)",
+    "2026-09-02 Mito Hollyhock–Kashima Antlers 4:2 (PV 2:0)"
+   ]
   }
  ],
  "missed": [],
- "all": null
+ "all": [
+  {
+   "d": "2026-11-11",
+   "lg": "JPN J. League Cup",
+   "m": "Kawasaki Frontale – Kashiwa Reysol",
+   "o": "X/2",
+   "score": 28,
+   "sel": "2/1",
+   "alt": "1/2",
+   "why": [
+    "Kashiwa Reysol: 3 preokreta u zadnjih 15",
+    "Kawasaki Frontale: J. League prije 4 dana (umor, rotacija)",
+    "Kashiwa Reysol: J. League prije 4 dana (umor, rotacija)"
+   ],
+   "txt": "Kashiwa Reysol, preokreti: Machida Zelvia–Kashiwa Reysol 2:4 (PV 1:0) 20.09.; Jeonbuk Hyundai Motors FC–Kashiwa Reysol 2:1 (PV 0:1) 16.09.; Kyoto Sanga FC–Kashiwa Reysol 2:3 (PV 2:0) 11.09. Kawasaki Frontale: J. League prije 4 dana. Kashiwa Reysol: J. League prije 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+   "home": [
+    "2026-11-07 Kashiwa Reysol–Kawasaki Frontale 2:1 (PV 1:1)",
+    "2026-11-01 Yokohama F.Marinos–Kawasaki Frontale 4:2 (PV 3:1)",
+    "2026-10-28 Sagan Tosu–Kawasaki Frontale 0:2 (PV 0:0)",
+    "2026-10-25 Kawasaki Frontale–Fagiano Okayama FC 2:1 (PV 1:0)",
+    "2026-10-21 Kawasaki Frontale–Vissel Kobe 2:1 (PV 0:0)",
+    "2026-10-17 Cerezo Osaka–Kawasaki Frontale 2:4 (PV 1:2)",
+    "2026-10-14 Júbilo Iwata–Kawasaki Frontale 0:4 (PV 0:1)",
+    "2026-10-11 Kawasaki Frontale–Nagoya Grampus 1:2 (PV 1:1)",
+    "2026-10-07 Kawasaki Frontale–Tegevajaro Miyazaki 2:0 (PV 1:0)",
+    "2026-09-29 Roasso Kumamoto–Kawasaki Frontale 0:1 (PV 0:0)",
+    "2026-09-19 Kawasaki Frontale–Kashima Antlers 3:3 (PV 1:1)",
+    "2026-09-12 Mito Hollyhock–Kawasaki Frontale 0:1 (PV 0:0)",
+    "2026-09-06 Kawasaki Frontale–Shimizu S-Pulse 3:1 (PV 1:0)",
+    "2026-09-02 Machida Zelvia–Kawasaki Frontale 2:1 (PV 0:0)",
+    "2026-08-29 Kawasaki Frontale–JEF United Chiba 4:2 (PV 4:2)"
+   ],
+   "away": [
+    "2026-11-07 Kashiwa Reysol–Kawasaki Frontale 2:1 (PV 1:1)",
+    "2026-11-03 Kashiwa Reysol–Daejeon Hana Citizen 2:0 (PV 0:0)",
+    "2026-10-31 Kashiwa Reysol–Urawa Red Diamonds 4:0 (PV 1:0)",
+    "2026-10-27 Ratchaburi FC–Kashiwa Reysol 0:0 (PV 0:0)",
+    "2026-10-24 Kashima Antlers–Kashiwa Reysol 2:3 (PV 1:2)",
+    "2026-10-21 FC Tokyo–Kashiwa Reysol 0:0 (PV 0:0)",
+    "2026-10-17 Kashiwa Reysol–Nagoya Grampus 1:3 (PV 1:2)",
+    "2026-10-14 Kashiwa Reysol–Port FC 5:1 (PV 5:0)",
+    "2026-10-09 Kashiwa Reysol–Vissel Kobe 4:2 (PV 1:0)",
+    "2026-10-03 Kashiwa Reysol–Gamba Osaka 3:3 (PV 1:1)",
+    "2026-09-23 Kashiwa Reysol–FC Imabari 4:0 (PV 2:0)",
+    "2026-09-20 Machida Zelvia–Kashiwa Reysol 2:4 (PV 1:0)",
+    "2026-09-16 Jeonbuk Hyundai Motors FC–Kashiwa Reysol 2:1 (PV 0:1)",
+    "2026-09-11 Kyoto Sanga FC–Kashiwa Reysol 2:3 (PV 2:0)",
+    "2026-09-06 Kashiwa Reysol–Yokohama F.Marinos 0:2 (PV 0:1)"
+   ]
+  },
+  {
+   "d": "2026-11-11",
+   "lg": "JPN J. League Cup",
+   "m": "Vissel Kobe – Machida Zelvia",
+   "o": "X/2",
+   "score": 0,
+   "sel": null,
+   "alt": null,
+   "why": [],
+   "txt": null,
+   "home": [
+    "2026-11-08 Vissel Kobe–Urawa Red Diamonds 2:2 (PV 1:0)",
+    "2026-11-03 Vissel Kobe–Ratchaburi FC 3:2 (PV 1:0)",
+    "2026-10-31 Vissel Kobe–Nagoya Grampus 3:1 (PV 1:1)",
+    "2026-10-27 Daejeon Hana Citizen–Vissel Kobe 0:1 (PV 0:0)",
+    "2026-10-24 Vissel Kobe–Machida Zelvia 0:0 (PV 0:0)",
+    "2026-10-21 Kawasaki Frontale–Vissel Kobe 2:1 (PV 0:0)",
+    "2026-10-18 Fagiano Okayama FC–Vissel Kobe 0:3 (PV 0:0)",
+    "2026-10-14 Vissel Kobe–Jeonbuk Hyundai Motors FC 2:0 (PV 1:0)",
+    "2026-10-09 Kashiwa Reysol–Vissel Kobe 4:2 (PV 1:0)",
+    "2026-09-23 Vissel Kobe–Sagan Tosu 1:0 (PV 0:0)",
+    "2026-09-20 Gamba Osaka–Vissel Kobe 0:1 (PV 0:0)",
+    "2026-09-16 Port FC–Vissel Kobe 1:2 (PV 1:1)",
+    "2026-09-11 Vissel Kobe–Kashima Antlers 2:1 (PV 0:0)",
+    "2026-09-06 Vissel Kobe–V-Varen Nagasaki 3:1 (PV 2:0)",
+    "2026-09-02 Tokyo Verdy–Vissel Kobe 0:2 (PV 0:1)"
+   ],
+   "away": [
+    "2026-11-08 Machida Zelvia–Sanfrecce Hiroshima 0:0 (PV 0:0)",
+    "2026-11-05 Machida Zelvia–Shanghai Shenhua 2:1 (PV 1:0)",
+    "2026-11-01 Machida Zelvia–Gamba Osaka 0:0 (PV 0:0)",
+    "2026-10-29 Shanghai Shenhua–Machida Zelvia 0:1 (PV 0:1)",
+    "2026-10-24 Vissel Kobe–Machida Zelvia 0:0 (PV 0:0)",
+    "2026-10-21 Shimizu S-Pulse–Machida Zelvia 0:5 (PV 0:1)",
+    "2026-10-18 Machida Zelvia–Avispa Fukuoka 3:0 (PV 1:0)",
+    "2026-10-15 Tampines Rovers FC–Machida Zelvia 0:1 (PV 0:0)",
+    "2026-10-10 Kyoto Sanga FC–Machida Zelvia 0:1 (PV 0:0)",
+    "2026-10-03 Machida Zelvia–Kyoto Sanga FC 0:0 (PV 0:0)",
+    "2026-09-23 Machida Zelvia–Tochigi City FC 2:1 (PV 1:0)",
+    "2026-09-20 Machida Zelvia–Kashiwa Reysol 2:4 (PV 1:0)",
+    "2026-09-17 Machida Zelvia–Svay Rieng 2:0 (PV 1:0)",
+    "2026-09-12 Machida Zelvia–Yokohama F.Marinos 1:1 (PV 0:1)",
+    "2026-09-06 Nagoya Grampus–Machida Zelvia 1:3 (PV 0:1)"
+   ]
+  },
+  {
+   "d": "2026-11-11",
+   "lg": "JPN J. League Cup",
+   "m": "Yokohama F.Marinos – Kashima Antlers",
+   "o": "1/2",
+   "score": 18,
+   "sel": "1/2",
+   "alt": "2/1",
+   "why": [
+    "Zadnji međusobni 1/2 (07.08.2026); u zadnjih 10: Yokohama F.Marinos 1×",
+    "Yokohama F.Marinos: J. League prije 4 dana (umor, rotacija)",
+    "Kashima Antlers: J. League prije 4 dana (umor, rotacija)"
+   ],
+   "txt": "Međusobni 07.08.2026 kod domaćina: Yokohama F.Marinos–Kashima Antlers 3:4 (PV 2:1). Yokohama F.Marinos: J. League prije 4 dana. Kashima Antlers: J. League prije 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+   "home": [
+    "2026-11-07 Yokohama F.Marinos–Fagiano Okayama FC 1:1 (PV 1:1)",
+    "2026-11-01 Yokohama F.Marinos–Kawasaki Frontale 4:2 (PV 3:1)",
+    "2026-10-28 Yokohama F.Marinos–Sanfrecce Hiroshima 4:3 (PV 0:0)",
+    "2026-10-25 Nagoya Grampus–Yokohama F.Marinos 1:1 (PV 0:1)",
+    "2026-10-21 Yokohama F.Marinos–Tokyo Verdy 2:2 (PV 1:0)",
+    "2026-10-17 JEF United Chiba–Yokohama F.Marinos 0:0 (PV 0:0)",
+    "2026-10-14 Yokohama F.Marinos–Shimizu S-Pulse 2:1 (PV 0:0)",
+    "2026-10-10 Cerezo Osaka–Yokohama F.Marinos 0:0 (PV 0:0)",
+    "2026-10-07 Yokohama F.Marinos–Kyoto Sangyo University 2:1 (PV 0:1)",
+    "2026-09-29 Montedio Yamagata–Yokohama F.Marinos 1:2 (PV 0:1)",
+    "2026-09-19 Yokohama F.Marinos–Mito Hollyhock 2:0 (PV 1:0)",
+    "2026-09-12 Machida Zelvia–Yokohama F.Marinos 1:1 (PV 0:1)",
+    "2026-09-06 Kashiwa Reysol–Yokohama F.Marinos 0:2 (PV 0:1)",
+    "2026-09-02 Yokohama F.Marinos–Kyoto Sanga FC 1:1 (PV 0:0)",
+    "2026-08-29 Urawa Red Diamonds–Yokohama F.Marinos 3:2 (PV 1:1)"
+   ],
+   "away": [
+    "2026-11-07 FC Tokyo–Kashima Antlers 2:0 (PV 0:0)",
+    "2026-11-04 Buriram United–Kashima Antlers 0:0 (PV 0:0)",
+    "2026-10-31 Kashima Antlers–Cerezo Osaka 4:1 (PV 3:1)",
+    "2026-10-28 Kashima Antlers–Pohang Steelers 3:0 (PV 0:0)",
+    "2026-10-24 Kashima Antlers–Kashiwa Reysol 2:3 (PV 1:2)",
+    "2026-10-21 Kyoto Sanga FC–Kashima Antlers 2:2 (PV 1:0)",
+    "2026-10-17 Kashima Antlers–V-Varen Nagasaki 2:0 (PV 2:0)",
+    "2026-10-13 Công An Hà Nội–Kashima Antlers 0:1 (PV 0:0)",
+    "2026-10-09 Kashima Antlers–Gamba Osaka 2:0 (PV 1:0)",
+    "2026-09-23 Kashima Antlers–Ventforet Kofu 3:1 (PV 1:0)",
+    "2026-09-19 Kawasaki Frontale–Kashima Antlers 3:3 (PV 1:1)",
+    "2026-09-15 Kashima Antlers–Newcastle Jets 7:1 (PV 5:0)",
+    "2026-09-11 Vissel Kobe–Kashima Antlers 2:1 (PV 0:0)",
+    "2026-09-06 Kashima Antlers–Urawa Red Diamonds 0:1 (PV 0:1)",
+    "2026-09-02 Mito Hollyhock–Kashima Antlers 4:2 (PV 2:0)"
+   ]
+  },
+  {
+   "d": "2026-11-11",
+   "lg": "JPN J. League Cup",
+   "m": "Urawa Red Diamonds – Cerezo Osaka",
+   "o": "X/1",
+   "score": 0,
+   "sel": null,
+   "alt": null,
+   "why": [],
+   "txt": null,
+   "home": [
+    "2026-11-08 Vissel Kobe–Urawa Red Diamonds 2:2 (PV 1:0)",
+    "2026-10-31 Kashiwa Reysol–Urawa Red Diamonds 4:0 (PV 1:0)",
+    "2026-10-28 Nagoya Grampus–Urawa Red Diamonds 1:1 (PV 0:1)",
+    "2026-10-25 Urawa Red Diamonds–V-Varen Nagasaki 1:0 (PV 0:0)",
+    "2026-10-21 Urawa Red Diamonds–JEF United Chiba 3:2 (PV 1:1)",
+    "2026-10-17 Mito Hollyhock–Urawa Red Diamonds 0:1 (PV 0:0)",
+    "2026-10-14 Yokohama FC–Urawa Red Diamonds 0:4 (PV 0:3)",
+    "2026-10-10 FC Tokyo–Urawa Red Diamonds 3:0 (PV 0:0)",
+    "2026-10-07 Urawa Red Diamonds–RB Omiya Ardija 3:2 (PV 0:0)",
+    "2026-09-29 Kataller Toyama–Urawa Red Diamonds 2:3 (PV 0:1)",
+    "2026-09-19 Urawa Red Diamonds–Tokyo Verdy 3:1 (PV 3:0)",
+    "2026-09-13 Urawa Red Diamonds–Fagiano Okayama FC 1:2 (PV 1:1)",
+    "2026-09-06 Kashima Antlers–Urawa Red Diamonds 0:1 (PV 0:1)",
+    "2026-09-02 Avispa Fukuoka–Urawa Red Diamonds 2:3 (PV 2:1)",
+    "2026-08-29 Urawa Red Diamonds–Yokohama F.Marinos 3:2 (PV 1:1)"
+   ],
+   "away": [
+    "2026-11-08 Gamba Osaka–Cerezo Osaka 2:3 (PV 0:1)",
+    "2026-10-31 Kashima Antlers–Cerezo Osaka 4:1 (PV 3:1)",
+    "2026-10-28 Mito Hollyhock–Cerezo Osaka 1:3 (PV 0:1)",
+    "2026-10-25 Cerezo Osaka–JEF United Chiba 2:2 (PV 0:1)",
+    "2026-10-21 Nagoya Grampus–Cerezo Osaka 1:1 (PV 1:0)",
+    "2026-10-17 Cerezo Osaka–Kawasaki Frontale 2:4 (PV 1:2)",
+    "2026-10-14 Gainare Tottori–Cerezo Osaka 2:3 (PV 1:2)",
+    "2026-10-10 Cerezo Osaka–Yokohama F.Marinos 0:0 (PV 0:0)",
+    "2026-10-07 Cerezo Osaka–Kagoshima United 2:0 (PV 1:0)",
+    "2026-09-29 Fujieda MYFC–Cerezo Osaka 1:2 (PV 0:1)",
+    "2026-09-19 V-Varen Nagasaki–Cerezo Osaka 1:1 (PV 1:0)",
+    "2026-09-12 Sanfrecce Hiroshima–Cerezo Osaka 6:1 (PV 3:0)",
+    "2026-09-06 Cerezo Osaka–Tokyo Verdy 0:0 (PV 0:0)",
+    "2026-09-02 Cerezo Osaka–Kashiwa Reysol 2:0 (PV 1:0)",
+    "2026-08-29 Vissel Kobe–Cerezo Osaka 1:0 (PV 0:0)"
+   ]
+  }
+ ]
 }

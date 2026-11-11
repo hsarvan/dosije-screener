@@ -1,9 +1,9 @@
 {
  "date": "2026-11-11",
- "generatedAt": "2026-11-11T20:06:19+00:00",
+ "generatedAt": "2026-11-11T20:09:13+00:00",
  "window": [
-  "2026-11-11T20:06+00:00",
-  "2026-11-12T20:06+00:00"
+  "2026-11-11T20:09+00:00",
+  "2026-11-12T20:09+00:00"
  ],
  "rules": {
   "n": 3952,
@@ -11,7 +11,7 @@
    "1/2": 0.021,
    "2/1": 0.0314
   },
-  "at": "2026-11-11T20:06:19+00:00",
+  "at": "2026-11-11T20:09:13+00:00",
   "rules": [
    {
     "id": "R1",
@@ -64,14 +64,26 @@
    {
     "id": "R5",
     "name": "Gust raspored: kup ili Evropa oko utakmice",
-    "n": 127,
-    "hits": 3,
-    "sel": 3,
-    "any": 3,
+    "n": 129,
+    "hits": 4,
+    "sel": 4,
+    "any": 5,
     "both": false,
-    "base": 0.0315,
-    "lift": 0.75,
-    "mult": 0.83
+    "base": 0.0316,
+    "lift": 0.98,
+    "mult": 0.91
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 1,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0479,
+    "lift": 20.86,
+    "mult": 1.12
    }
   ]
  },
@@ -117,7 +129,7 @@
   }
  ],
  "k2Stats": {
-  "n": 1,
+  "n": 0,
   "won": 0
  },
  "upsets": [],
@@ -199,7 +211,7 @@
  "calls": 12,
  "detailCalls": 10,
  "errors": 0,
- "minutes": 0.0,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -339,7 +351,7 @@
     "sources": [
      "https://www.fotmob.com/matches/bochum-ii-vs-sc-paderborn-07-ii/2tu4u10k#5911229"
     ],
-    "createdAt": "2026-11-11T20:06:19+00:00",
+    "createdAt": "2026-11-11T20:09:13+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
