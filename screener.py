@@ -737,6 +737,13 @@ def analyse(fx, ctx):
         m7 = h2h[0]
     elif cnt["h"] >= 1 and cnt["a"] >= 1:
         m7 = next((m for m in h2h[:3] if htft_of(m) in SELS), None)
+    # Harisovo pravilo (11.11.): obje ekipe po preokret u zadnjih 7 i preokret u zadnjih 5 međusobnih -> jačina 2
+    c7 = {r: sum(1 for m in h15[r][:7] if team_event(m, team[r][0])) for r in team}
+    s7 = 1
+    if c7["h"] >= 1 and c7["a"] >= 1:
+        m5 = next((m for m in h2h[:5] if htft_of(m) in SELS), None)
+        if m5:
+            m7, s7 = m7 or m5, 2
     if m7 and not any(x["rule"] == "R2" for x in signals):
         if True:
             m = m7
@@ -744,7 +751,7 @@ def analyse(fx, ctx):
             who = ", ".join(f"{team[r][1]} {cnt[r]}×" for r in ("h", "a") if cnt[r])
             note = (f"{'Zadnji' if m is h2h[0] else 'Raniji'} međusobni {htft_of(m)} ({dmy(m['t'])}); "
                     f"u zadnjih 10: {who}")
-            signals.append(sig("R7", sel, 1, "korisnik", note, url))
+            signals.append(sig("R7", sel, s7, "korisnik", note, url))
             ev["h2h"].setdefault(sel, m)
     # R5) Gust raspored (kup ili Evropa do 4 dana prije/poslije): umor i rotacija, ekipa lakše ispusti vodstvo.
     #     Broji se samo uz neki drugi signal preokreta.
