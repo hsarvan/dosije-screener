@@ -1116,8 +1116,9 @@ def run_backtest():
         leagues = [lg for lg in leagues if lg["id"] in set(req["leagues"])]
     by_id = {lg["id"]: lg for lg in leagues}
     days = [start.date() + dt.timedelta(days=i) for i in range((end.date() - start.date()).days + 1)]
-    fixtures = fixtures_for(days, by_id, lambda st, t: st.get("finished") and not st.get("cancelled")
-                            and not st.get("awarded") and start <= t < end)
+    live = bool(req.get("live"))   # i utakmice koje se još igraju: pravila računaju samo s podacima prije početka
+    fixtures = fixtures_for(days, by_id, lambda st, t: (st.get("finished") or (live and st.get("started")))
+                            and not st.get("cancelled") and not st.get("awarded") and start <= t < end)
     fx_list = sorted(fixtures.values(), key=lambda f: f["utc"])
     res_, _, complete = screen(fx_list, by_id, live=False)
     name = f"{d0.isoformat()}_{d1.isoformat()}"
@@ -1170,6 +1171,7 @@ def run_backtest():
         "rules": (calibrate() or {}).get("rules"),
         "flagged": sorted([t for t in table if t["score"] >= l_min], key=lambda t: (-t["score"], t["d"]))[:400],
         "missed": [t for t in ok if t["o"] in SELS and t["score"] < l_min][:400],
+        "all": table if req.get("verbose") else None,
     })
     jsave(os.path.join(ROOT, "backtest", f"{name}.json"), report, pretty=True)
     print(json.dumps({k: report[k] for k in report if k not in ("flagged", "missed")}, ensure_ascii=False))
