@@ -1,7 +1,23 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-11T20:04:17+00:00",
+ "updatedAt": "2026-11-11T22:30:18+00:00",
  "matches": [
+  {
+   "fixtureId": 6015570,
+   "docId": "2026-11-11_barnsley_oldham",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "5-2",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6006691,
+   "docId": "2026-11-11_brighton-w_watford-w",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "3-1",
+   "htft": "2/1"
+  },
   {
    "fixtureId": 6538688,
    "docId": "2026-11-11_kawasaki-frontale_kashiwa-reysol",
@@ -9,6 +25,22 @@
    "ht": "0-0",
    "ft": "1-2",
    "htft": "X/2"
+  },
+  {
+   "fixtureId": 6006688,
+   "docId": "2026-11-11_liverpool-w_aston-villa-w",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "4-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 6006689,
+   "docId": "2026-11-11_tottenham-hotspur-w_crystal-palace-w",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
   }
  ]
 }

@@ -1,17 +1,17 @@
 {
  "date": "2026-11-11",
- "generatedAt": "2026-11-11T20:09:13+00:00",
+ "generatedAt": "2026-11-11T22:30:18+00:00",
  "window": [
-  "2026-11-11T20:09+00:00",
-  "2026-11-12T20:09+00:00"
+  "2026-11-11T22:30+00:00",
+  "2026-11-12T22:30+00:00"
  ],
  "rules": {
-  "n": 3952,
+  "n": 3966,
   "base": {
-   "1/2": 0.021,
-   "2/1": 0.0314
+   "1/2": 0.0212,
+   "2/1": 0.0315
   },
-  "at": "2026-11-11T20:09:13+00:00",
+  "at": "2026-11-11T22:30:21+00:00",
   "rules": [
    {
     "id": "R1",
@@ -33,57 +33,69 @@
     "sel": 1,
     "any": 1,
     "both": false,
-    "base": 0.0262,
-    "lift": 2.72,
+    "base": 0.0272,
+    "lift": 2.63,
     "mult": 1.07
    },
    {
     "id": "R3",
     "name": "Zbir preokreta obje ekipe (zadnjih 10)",
-    "n": 90,
+    "n": 92,
     "hits": 5,
     "sel": 5,
     "any": 6,
     "both": false,
-    "base": 0.0307,
-    "lift": 1.81,
-    "mult": 1.13
+    "base": 0.0308,
+    "lift": 1.76,
+    "mult": 1.12
    },
    {
     "id": "R4",
     "name": "Ekipa sklona preokretima (zadnjih 15)",
-    "n": 685,
-    "hits": 41,
-    "sel": 28,
-    "any": 41,
+    "n": 690,
+    "hits": 42,
+    "sel": 29,
+    "any": 42,
     "both": true,
-    "base": 0.0581,
-    "lift": 1.03,
-    "mult": 0.71
+    "base": 0.0582,
+    "lift": 1.05,
+    "mult": 0.72
    },
    {
     "id": "R5",
     "name": "Gust raspored: kup ili Evropa oko utakmice",
-    "n": 129,
-    "hits": 4,
-    "sel": 4,
-    "any": 5,
+    "n": 137,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
     "both": false,
-    "base": 0.0316,
-    "lift": 0.98,
-    "mult": 0.91
+    "base": 0.0318,
+    "lift": 1.15,
+    "mult": 0.96
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 1,
+    "hits": 0,
+    "sel": 0,
+    "any": 0,
+    "both": true,
+    "base": 0.0717,
+    "lift": 0.0,
+    "mult": 0.99
    },
    {
     "id": "R7",
     "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
-    "n": 1,
-    "hits": 1,
-    "sel": 1,
-    "any": 1,
+    "n": 3,
+    "hits": 2,
+    "sel": 2,
+    "any": 2,
     "both": false,
-    "base": 0.0479,
-    "lift": 20.86,
-    "mult": 1.12
+    "base": 0.0292,
+    "lift": 22.84,
+    "mult": 1.25
    }
   ]
  },
@@ -132,7 +144,24 @@
   "n": 0,
   "won": 0
  },
- "upsets": [],
+ "upsets": [
+  {
+   "fixtureId": 5190809,
+   "utc": "2026-11-12T22:00+00:00",
+   "kickoff": "23:00",
+   "date": "2026-11-12",
+   "league": "Brazil · Série B",
+   "home": "Ponte Preta",
+   "away": "Operário-PR",
+   "pick": "1",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Operário-PR slab u gostima: 0,8 bod po meču u zadnjih 5"
+   ],
+   "dog": "Ponte Preta"
+  }
+ ],
  "screened": [
   [
    "12.11. 09:30",
@@ -142,9 +171,9 @@
    ""
   ],
   [
-   "11.11. 23:00",
+   "12.11. 23:00",
    "BRA Série B",
-   "Londrina – Náutico",
+   "Ponte Preta – Operário-PR",
    0,
    ""
   ],
@@ -208,8 +237,8 @@
  "withData": 9,
  "candidates": 1,
  "tips": 0,
- "calls": 12,
- "detailCalls": 10,
+ "calls": 31,
+ "detailCalls": 27,
  "errors": 0,
  "minutes": 0.1,
  "notes": [],
@@ -351,7 +380,7 @@
     "sources": [
      "https://www.fotmob.com/matches/bochum-ii-vs-sc-paderborn-07-ii/2tu4u10k#5911229"
     ],
-    "createdAt": "2026-11-11T20:09:13+00:00",
+    "createdAt": "2026-11-11T22:30:18+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
