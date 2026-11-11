@@ -1,9 +1,9 @@
 {
  "date": "2026-11-11",
- "generatedAt": "2026-11-11T10:09:27+00:00",
+ "generatedAt": "2026-11-11T10:10:53+00:00",
  "window": [
-  "2026-11-11T10:09+00:00",
-  "2026-11-12T10:09+00:00"
+  "2026-11-11T10:10+00:00",
+  "2026-11-12T10:10+00:00"
  ],
  "rules": {
   "n": 3948,
@@ -11,7 +11,7 @@
    "1/2": 0.0208,
    "2/1": 0.0314
   },
-  "at": "2026-11-11T10:09:27+00:00",
+  "at": "2026-11-11T10:10:53+00:00",
   "rules": [
    {
     "id": "R1",
@@ -76,30 +76,14 @@
   ]
  },
  "leagues": 79,
- "fixturesSeen": 17,
- "analysed": 17,
+ "fixturesSeen": 14,
+ "analysed": 14,
  "upsetStats": {
   "n": 0,
   "won": 0,
   "avgOdds": null
  },
  "k2": [
-  {
-   "fixtureId": 6538688,
-   "utc": "2026-11-11T10:00+00:00",
-   "kickoff": "11:00",
-   "date": "2026-11-11",
-   "league": "Japan · J. League Cup",
-   "home": "Kawasaki Frontale",
-   "away": "Kashiwa Reysol",
-   "pick": "1",
-   "estOdds": 2.06,
-   "both": true,
-   "why": [
-    "Kawasaki Frontale dobio zadnja 2 međusobna kod kuće: 5:3 (08.02.2026); 3:1 (08.10.2025)",
-    "Kashiwa Reysol dobio zadnji kod sebe: 2:1 (07.11.2026), pravo 3 za 3"
-   ]
-  },
   {
    "fixtureId": 6540022,
    "utc": "2026-11-12T01:10+00:00",
@@ -136,27 +120,6 @@
    "Barnsley – Oldham",
    32,
    "1/2 · 2/1"
-  ],
-  [
-   "11.11. 11:00",
-   "JPN J. League Cup",
-   "Kawasaki Frontale – Kashiwa Reysol",
-   21,
-   "2/1 · 1/2"
-  ],
-  [
-   "11.11. 11:00",
-   "JPN J. League Cup",
-   "Vissel Kobe – Machida Zelvia",
-   0,
-   ""
-  ],
-  [
-   "11.11. 11:00",
-   "JPN J. League Cup",
-   "Yokohama F.Marinos – Kashima Antlers",
-   0,
-   ""
   ],
   [
    "11.11. 11:30",
@@ -243,13 +206,13 @@
    ""
   ]
  ],
- "withData": 16,
- "candidates": 2,
- "tips": 2,
- "calls": 108,
- "detailCalls": 100,
+ "withData": 13,
+ "candidates": 1,
+ "tips": 1,
+ "calls": 16,
+ "detailCalls": 14,
  "errors": 0,
- "minutes": 0.5,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -458,7 +421,7 @@
     "sources": [
      "https://www.fotmob.com/matches/barnsley-vs-oldham-athletic/2p6wqz#6015570"
     ],
-    "createdAt": "2026-11-11T10:09:27+00:00",
+    "createdAt": "2026-11-11T10:10:53+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
