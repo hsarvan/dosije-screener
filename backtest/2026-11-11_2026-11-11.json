@@ -4,7 +4,7 @@
  "leagues": 1,
  "fixtures": 2,
  "complete": true,
- "calls": 8,
+ "calls": 4,
  "errors": 0,
  "minutes": 0.0,
  "withOutcome": 2,
@@ -20,24 +20,24 @@
    "anyReversal": 0
   },
   "candidates": {
-   "n": 0,
-   "hitSel": 0,
-   "hitAlt": 0,
-   "anyReversal": 0
-  },
-  "rest": {
-   "n": 2,
+   "n": 1,
    "hitSel": 1,
    "hitAlt": 0,
    "anyReversal": 1
+  },
+  "rest": {
+   "n": 1,
+   "hitSel": 0,
+   "hitAlt": 0,
+   "anyReversal": 0
   }
  },
  "byScore": {
   "8-15": {
-   "n": 0,
-   "hitSel": 0,
+   "n": 1,
+   "hitSel": 1,
    "hitAlt": 0,
-   "anyReversal": 0
+   "anyReversal": 1
   },
   "16-23": {
    "n": 0,
@@ -116,26 +116,26 @@
    "mult": 1.07
   },
   "R3": {
-   "n": 90,
+   "n": 92,
    "hits": 5,
    "sel": 5,
    "any": 6,
-   "rate": 0.0556,
-   "base": 0.0307,
-   "lift": 1.81,
-   "est": 1.45,
-   "mult": 1.13
+   "rate": 0.0543,
+   "base": 0.0308,
+   "lift": 1.76,
+   "est": 1.43,
+   "mult": 1.12
   },
   "R3:1": {
-   "n": 86,
+   "n": 88,
    "hits": 5,
    "sel": 5,
    "any": 6,
-   "rate": 0.0581,
-   "base": 0.0295,
-   "lift": 1.97,
-   "est": 1.46,
-   "mult": 1.17
+   "rate": 0.0568,
+   "base": 0.0297,
+   "lift": 1.91,
+   "est": 1.45,
+   "mult": 1.16
   },
   "R3:2": {
    "n": 4,
@@ -143,76 +143,76 @@
    "sel": 0,
    "any": 0,
    "rate": 0.0,
-   "base": 0.0559,
+   "base": 0.056,
    "lift": 0.0,
    "est": 1.54,
    "mult": 0.96
   },
   "R4": {
-   "n": 685,
-   "hits": 41,
-   "sel": 28,
-   "any": 41,
-   "rate": 0.0599,
+   "n": 690,
+   "hits": 42,
+   "sel": 29,
+   "any": 42,
+   "rate": 0.0609,
    "base": 0.0582,
-   "lift": 1.03,
-   "est": 1.1,
-   "mult": 0.71
+   "lift": 1.05,
+   "est": 1.11,
+   "mult": 0.72
   },
   "R4:1": {
-   "n": 288,
+   "n": 290,
    "hits": 16,
    "sel": 12,
    "any": 16,
-   "rate": 0.0556,
+   "rate": 0.0552,
    "base": 0.0551,
-   "lift": 1.01,
+   "lift": 1.0,
    "est": 1.07,
    "mult": 0.86
   },
   "R4:2": {
-   "n": 252,
+   "n": 254,
    "hits": 15,
    "sel": 10,
    "any": 15,
-   "rate": 0.0595,
+   "rate": 0.0591,
    "base": 0.0586,
-   "lift": 1.02,
+   "lift": 1.01,
    "est": 1.18,
    "mult": 0.74
   },
   "R4:3": {
-   "n": 145,
-   "hits": 10,
-   "sel": 6,
-   "any": 10,
-   "rate": 0.069,
+   "n": 146,
+   "hits": 11,
+   "sel": 7,
+   "any": 11,
+   "rate": 0.0753,
    "base": 0.0638,
-   "lift": 1.08,
-   "est": 1.44,
-   "mult": 0.72
+   "lift": 1.18,
+   "est": 1.5,
+   "mult": 0.75
   },
   "R5": {
-   "n": 129,
-   "hits": 4,
-   "sel": 4,
-   "any": 5,
-   "rate": 0.031,
-   "base": 0.0317,
-   "lift": 0.98,
-   "est": 1.16,
-   "mult": 0.91
+   "n": 137,
+   "hits": 5,
+   "sel": 5,
+   "any": 7,
+   "rate": 0.0365,
+   "base": 0.0318,
+   "lift": 1.15,
+   "est": 1.22,
+   "mult": 0.96
   },
   "R5:1": {
-   "n": 120,
-   "hits": 3,
-   "sel": 3,
-   "any": 4,
-   "rate": 0.025,
-   "base": 0.0314,
-   "lift": 0.8,
-   "est": 1.07,
-   "mult": 0.86
+   "n": 128,
+   "hits": 4,
+   "sel": 4,
+   "any": 6,
+   "rate": 0.0312,
+   "base": 0.0315,
+   "lift": 0.99,
+   "est": 1.15,
+   "mult": 0.92
   },
   "R5:2": {
    "n": 9,
@@ -225,37 +225,58 @@
    "est": 1.68,
    "mult": 1.05
   },
+  "R6": {
+   "n": 1,
+   "hits": 0,
+   "sel": 0,
+   "any": 0,
+   "rate": 0.0,
+   "base": 0.0717,
+   "lift": 0.0,
+   "est": 1.24,
+   "mult": 0.99
+  },
+  "R6:1": {
+   "n": 1,
+   "hits": 0,
+   "sel": 0,
+   "any": 0,
+   "rate": 0.0,
+   "base": 0.0717,
+   "lift": 0.0,
+   "est": 1.24,
+   "mult": 0.99
+  },
   "R7": {
-   "n": 2,
+   "n": 3,
    "hits": 2,
    "sel": 2,
    "any": 2,
-   "rate": 1.0,
-   "base": 0.035,
-   "lift": 28.58,
-   "est": 1.57,
+   "rate": 0.6667,
+   "base": 0.0292,
+   "lift": 22.84,
+   "est": 1.56,
    "mult": 1.25
   },
   "R7:1": {
-   "n": 2,
+   "n": 3,
    "hits": 2,
    "sel": 2,
    "any": 2,
-   "rate": 1.0,
-   "base": 0.035,
-   "lift": 28.58,
-   "est": 1.57,
+   "rate": 0.6667,
+   "base": 0.0292,
+   "lift": 22.84,
+   "est": 1.56,
    "mult": 1.25
   }
  },
- "flagged": [],
- "missed": [
+ "flagged": [
   {
    "d": "2026-11-11",
    "lg": "URU Segunda Division",
    "m": "Tacuarembo FC – Miramar Misiones",
    "o": "1/2",
-   "score": 5,
+   "score": 10,
    "sel": "1/2",
    "alt": null,
    "why": [
@@ -298,6 +319,7 @@
    ]
   }
  ],
+ "missed": [],
  "all": [
   {
    "d": "2026-11-11",
@@ -349,7 +371,7 @@
    "lg": "URU Segunda Division",
    "m": "Tacuarembo FC – Miramar Misiones",
    "o": "1/2",
-   "score": 5,
+   "score": 10,
    "sel": "1/2",
    "alt": null,
    "why": [
