@@ -729,13 +729,21 @@ def analyse(fx, ctx):
             break
     # R7) Zadnji međusobni završio preokretom, a bar jedna ekipa ima preokret u zadnjih 10
     #     (Harisov primjer Yokohama F. Marinos – Kashima Antlers, 11.11.2026). Slab signal: kandidat, ne prijedlog.
-    if h2h and htft_of(h2h[0]) in SELS and not any(x["rule"] == "R2" for x in signals):
-        cnt = {r: sum(1 for m in h15[r][:10] if team_event(m, team[r][0])) for r in team}
-        if cnt["h"] + cnt["a"] >= 1:
-            m = h2h[0]
+    #     Prošireno (primjer Tacuarembó – Miramar, 11.11.): preokret u nekom od zadnja 3 međusobna, a obje ekipe
+    #     imaju bar po jedan preokret u zadnjih 10.
+    cnt = {r: sum(1 for m in h15[r][:10] if team_event(m, team[r][0])) for r in team}
+    m7 = None
+    if h2h and htft_of(h2h[0]) in SELS and cnt["h"] + cnt["a"] >= 1:
+        m7 = h2h[0]
+    elif cnt["h"] >= 1 and cnt["a"] >= 1:
+        m7 = next((m for m in h2h[:3] if htft_of(m) in SELS), None)
+    if m7 and not any(x["rule"] == "R2" for x in signals):
+        if True:
+            m = m7
             sel = as_pattern(m, H)
             who = ", ".join(f"{team[r][1]} {cnt[r]}×" for r in ("h", "a") if cnt[r])
-            note = f"Zadnji međusobni {htft_of(m)} ({dmy(m['t'])}); u zadnjih 10: {who}"
+            note = (f"{'Zadnji' if m is h2h[0] else 'Raniji'} međusobni {htft_of(m)} ({dmy(m['t'])}); "
+                    f"u zadnjih 10: {who}")
             signals.append(sig("R7", sel, 1, "korisnik", note, url))
             ev["h2h"].setdefault(sel, m)
     # R5) Gust raspored (kup ili Evropa do 4 dana prije/poslije): umor i rotacija, ekipa lakše ispusti vodstvo.
