@@ -97,32 +97,6 @@ def build(today):
             out.append(f"• {e(d['kickoff'])} {e(d['home'])} – {e(d['away'])} · {e(pick(c))} · {c.get('score', '')}")
         if len(rest) > 10:
             out.append(f"  … i još {len(rest) - 10} u Dosijeu")
-    # jučerašnji ishodi prijedloga i kandidata
-    y = today - dt.timedelta(days=1)
-    seen, lines = set(), []
-    for day in (y, today):
-        res = load(os.path.join(ROOT, "results", f"{day.isoformat()}.json"), {}) or {}
-        cands = {}
-        for d in (y - dt.timedelta(days=1), y, today):
-            for m in (load(os.path.join(ROOT, "candidates", f"{d.isoformat()}.json"), {}) or {}).get("matches", []):
-                cands[m["fixtureId"]] = m
-        for r in res.get("matches", []):
-            m = cands.get(r["fixtureId"])
-            if not m or r["fixtureId"] in seen or r.get("status") != "FT":
-                continue
-            seen.add(r["fixtureId"])
-            d = m["doc"]
-            t = d.get("htftTip") or d.get("cand") or {}
-            if not t:
-                continue
-            hit = r.get("htft") in (t.get("sel"), t.get("alt"))
-            mark = "✅" if hit else ("❌" if d.get("htftTip") else "▫️")
-            lines.append(f"{mark} {e(d['home'])} – {e(d['away'])} {e(r['ft']).replace('-', ':')} "
-                         f"(PV {e(r['ht']).replace('-', ':')}) · {e(r.get('htft'))}"
-                         + (" · prijedlog" if d.get("htftTip") else ""))
-    if lines:
-        out.append("\n📊 <b>Jučer</b>")
-        out += lines[:12]
     out.append(f'\n<a href="{APP}">Otvori Dosije</a>')
     text = "\n".join(out)
     return text if len(text) <= 4000 else text[:3990] + "…"

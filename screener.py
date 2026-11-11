@@ -1198,8 +1198,10 @@ def main():
         leagues = resolve_leagues()
         by_id = {lg["id"]: lg for lg in leagues}
         days = sorted({now.date(), end.date(), now.astimezone(TZ).date(), end.astimezone(TZ).date()})
-        fixtures = fixtures_for(days, by_id, lambda st, t: not (st.get("started") or st.get("finished")
-                                                                 or st.get("cancelled")) and now <= t < end)
+        # i utakmice koje su počele u zadnja 2 sata (podaci prije početka su isti; korisno kad pregled kasni)
+        back = now - dt.timedelta(minutes=CFG.get("startedGraceMinutes", 120))
+        fixtures = fixtures_for(days, by_id, lambda st, t: not (st.get("finished") or st.get("cancelled"))
+                                and back <= t < end)
         fx_all = sorted(fixtures.values(), key=lambda f: (by_id[f["lid"]]["prio"], f["utc"]))
         fx_list = fx_all[: CFG.get("maxFixtures", 80)]
         report.update({"leagues": len(leagues), "fixturesSeen": len(fx_all), "analysed": len(fx_list)})
