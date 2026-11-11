@@ -58,7 +58,8 @@ WIN = {"home5": "5 kod kuće", "away5": "5 u gostima", "last10": "zadnjih 10", "
 RULES = {"R1": "Preokreti ekipe + isti preokret u međusobnom", "R2": "Ponovljeni preokret iz zadnjeg međusobnog",
          "R3": "Zbir preokreta obje ekipe (zadnjih 10)", "R4": "Ekipa sklona preokretima (zadnjih 15)",
          "R5": "Gust raspored: kup ili Evropa oko utakmice",
-         "R6": "Svjež preokret + preokret kod druge ekipe"}
+         "R6": "Svjež preokret + preokret kod druge ekipe",
+         "R7": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10"}
 PRIOR = {1: 1.25, 2: 1.6, 3: 2.0}   # koliko puta češće od prosjeka očekujemo pogodak po jačini (prije podataka)
 PRIOR_E = 6.0                        # težina te pretpostavke: kao 6 pogodaka koliko bi dao prosjek lige
 BOTH = {"R4", "R6"}                        # pravila koja traže preokret u bilo kojem smjeru (kandidat za 1/2 i 2/1)
@@ -726,6 +727,17 @@ def analyse(fx, ctx):
                 note = f"Zadnji meč preokret ({'domaćin' if r == 'h' else 'gost'}), druga ekipa {feat[o][2]}× u zadnjih 10"
             signals.append(sig("R6", first, 1, "korisnik", note, url, both=True))
             break
+    # R7) Zadnji međusobni završio preokretom, a bar jedna ekipa ima preokret u zadnjih 10
+    #     (Harisov primjer Yokohama F. Marinos – Kashima Antlers, 11.11.2026). Slab signal: kandidat, ne prijedlog.
+    if h2h and htft_of(h2h[0]) in SELS and not any(x["rule"] == "R2" for x in signals):
+        cnt = {r: sum(1 for m in h15[r][:10] if team_event(m, team[r][0])) for r in team}
+        if cnt["h"] + cnt["a"] >= 1:
+            m = h2h[0]
+            sel = as_pattern(m, H)
+            who = ", ".join(f"{team[r][1]} {cnt[r]}×" for r in ("h", "a") if cnt[r])
+            note = f"Zadnji međusobni {htft_of(m)} ({dmy(m['t'])}); u zadnjih 10: {who}"
+            signals.append(sig("R7", sel, 1, "korisnik", note, url))
+            ev["h2h"].setdefault(sel, m)
     # R5) Gust raspored (kup ili Evropa do 4 dana prije/poslije): umor i rotacija, ekipa lakše ispusti vodstvo.
     #     Broji se samo uz neki drugi signal preokreta.
     cong = ctx.get("cong") or {}
