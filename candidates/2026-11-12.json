@@ -1,17 +1,17 @@
 {
  "date": "2026-11-12",
- "generatedAt": "2026-11-12T05:36:04+00:00",
+ "generatedAt": "2026-11-12T11:54:38+00:00",
  "window": [
-  "2026-11-12T05:36+00:00",
-  "2026-11-13T05:36+00:00"
+  "2026-11-12T11:54+00:00",
+  "2026-11-13T11:54+00:00"
  ],
  "rules": {
-  "n": 3970,
+  "n": 3971,
   "base": {
    "1/2": 0.0212,
    "2/1": 0.0315
   },
-  "at": "2026-11-12T05:36:06+00:00",
+  "at": "2026-11-12T11:54:39+00:00",
   "rules": [
    {
     "id": "R1",
@@ -94,14 +94,14 @@
     "any": 2,
     "both": false,
     "base": 0.0292,
-    "lift": 22.85,
+    "lift": 22.86,
     "mult": 1.23
    }
   ]
  },
  "leagues": 92,
- "fixturesSeen": 9,
- "analysed": 9,
+ "fixturesSeen": 10,
+ "analysed": 10,
  "upsetStats": {
   "n": 0,
   "won": 0,
@@ -148,9 +148,16 @@
  ],
  "screened": [
   [
-   "12.11. 09:30",
+   "13.11. 09:30",
    "AUS Australia Championship",
-   "APIA Leichhardt FC – Adelaide City",
+   "Oakleigh Cannons – Marconi Stallions",
+   0,
+   ""
+  ],
+  [
+   "13.11. 09:30",
+   "AUS Australia Championship",
+   "Preston Lions – Lions FC",
    0,
    ""
   ],
@@ -183,7 +190,7 @@
    "2/1"
   ],
   [
-   "12.11. 19:00",
+   "12.11. 19:30",
    "ARG Primera B Metropolitana & Torneo Federal A",
    "Kimberley – Olimpo",
    0,
@@ -211,13 +218,13 @@
    ""
   ]
  ],
- "withData": 8,
+ "withData": 9,
  "candidates": 2,
  "tips": 0,
- "calls": 29,
- "detailCalls": 18,
+ "calls": 17,
+ "detailCalls": 11,
  "errors": 0,
- "minutes": 0.2,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -357,7 +364,7 @@
     "sources": [
      "https://www.fotmob.com/matches/bochum-ii-vs-sc-paderborn-07-ii/2tu4u10k#5911229"
     ],
-    "createdAt": "2026-11-12T05:36:04+00:00",
+    "createdAt": "2026-11-12T11:54:38+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -525,7 +532,7 @@
     "sources": [
      "https://www.fotmob.com/matches/atletico-morelia-vs-leones-negros/7salug8#1000022942"
     ],
-    "createdAt": "2026-11-12T05:36:04+00:00",
+    "createdAt": "2026-11-12T11:54:38+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
