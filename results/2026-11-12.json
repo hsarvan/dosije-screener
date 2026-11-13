@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-12",
+ "updatedAt": "2026-11-13T11:38:35+00:00",
+ "matches": [
+  {
+   "fixtureId": 5911229,
+   "docId": "2026-11-12_paderborn-07-ii_bochum-ii",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 1000022942,
+   "docId": "2026-11-13_atletico-morelia_udg",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  }
+ ]
+}

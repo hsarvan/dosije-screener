@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "updatedAt": "2026-11-11T22:30:18+00:00",
+ "updatedAt": "2026-11-13T11:38:35+00:00",
  "matches": [
   {
    "fixtureId": 6015570,
@@ -41,6 +41,14 @@
    "ht": "0-1",
    "ft": "1-1",
    "htft": "2/X"
+  },
+  {
+   "fixtureId": 5911229,
+   "docId": "2026-11-12_paderborn-07-ii_bochum-ii",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "2-1",
+   "htft": "1/1"
   }
  ]
 }

@@ -1,0 +1,1274 @@
+{
+ "date": "2026-11-13",
+ "generatedAt": "2026-11-13T11:38:35+00:00",
+ "window": [
+  "2026-11-13T11:38+00:00",
+  "2026-11-14T11:38+00:00"
+ ],
+ "rules": {
+  "n": 3981,
+  "base": {
+   "1/2": 0.0211,
+   "2/1": 0.0314
+  },
+  "at": "2026-11-13T11:38:38+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 99,
+    "hits": 5,
+    "sel": 5,
+    "any": 8,
+    "both": false,
+    "base": 0.0287,
+    "lift": 1.76,
+    "mult": 0.96
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 14,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0271,
+    "lift": 2.64,
+    "mult": 1.07
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 92,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0308,
+    "lift": 1.77,
+    "mult": 1.12
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 690,
+    "hits": 42,
+    "sel": 29,
+    "any": 42,
+    "both": true,
+    "base": 0.0581,
+    "lift": 1.05,
+    "mult": 0.72
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 137,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0317,
+    "lift": 1.15,
+    "mult": 0.96
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 2,
+    "hits": 0,
+    "sel": 0,
+    "any": 0,
+    "both": true,
+    "base": 0.0631,
+    "lift": 0.0,
+    "mult": 0.98
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 4,
+    "hits": 2,
+    "sel": 2,
+    "any": 2,
+    "both": false,
+    "base": 0.0291,
+    "lift": 17.17,
+    "mult": 1.23
+   }
+  ]
+ },
+ "leagues": 92,
+ "fixturesSeen": 36,
+ "analysed": 36,
+ "upsetStats": {
+  "n": 1,
+  "won": 0,
+  "avgOdds": 3.58
+ },
+ "k2": [
+  {
+   "fixtureId": 1000020332,
+   "utc": "2026-11-14T04:00+00:00",
+   "kickoff": "05:00",
+   "date": "2026-11-14",
+   "league": "Australija · A-League Women",
+   "home": "Melbourne Victory (W)",
+   "away": "Adelaide United (W)",
+   "pick": "1",
+   "estOdds": 1.88,
+   "both": true,
+   "why": [
+    "Melbourne Victory (W) dobio zadnja 2 međusobna kod kuće: 1:0 (13.12.2025); 3:1 (10.05.2025)",
+    "Adelaide United (W) dobio zadnji kod sebe: 2:1 (17.01.2026), pravo 3 za 3"
+   ]
+  }
+ ],
+ "k2Stats": {
+  "n": 2,
+  "won": 1
+ },
+ "upsets": [
+  {
+   "fixtureId": 5990554,
+   "utc": "2026-11-13T19:30+00:00",
+   "kickoff": "20:30",
+   "date": "2026-11-13",
+   "league": "Italija · Serie C",
+   "home": "Ospitaletto",
+   "away": "Dolomiti Bellunesi",
+   "pick": "2",
+   "estOdds": 4.42,
+   "flag": true,
+   "why": [
+    "Ospitaletto slab kod kuće: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "Dolomiti Bellunesi"
+  },
+  {
+   "fixtureId": 5862755,
+   "utc": "2026-11-13T17:00+00:00",
+   "kickoff": "18:00",
+   "date": "2026-11-13",
+   "league": "Poljska · II Liga",
+   "home": "Znicz Pruszków",
+   "away": "Sokół Kleczew",
+   "pick": "2",
+   "estOdds": 4.42,
+   "flag": true,
+   "why": [
+    "Sokół Kleczew u usponu (+1,3), Znicz Pruszków u padu (−0,6 boda po meču)"
+   ],
+   "dog": "Sokół Kleczew"
+  },
+  {
+   "fixtureId": 1000015945,
+   "utc": "2026-11-14T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-14",
+   "league": "Japan · WE League",
+   "home": "Sanfrecce Hiroshima Regina (W)",
+   "away": "JEF Ladies (W)",
+   "pick": "2",
+   "estOdds": 4.18,
+   "flag": true,
+   "why": [
+    "JEF Ladies (W) u usponu (+1,1), Sanfrecce Hiroshima Regina (W) u padu (−0,7 boda po meču)"
+   ],
+   "dog": "JEF Ladies (W)"
+  },
+  {
+   "fixtureId": 5836368,
+   "utc": "2026-11-14T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-14",
+   "league": "Japan · J. League 2",
+   "home": "Fujieda MYFC",
+   "away": "Ventforet Kofu",
+   "pick": "2",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Fujieda MYFC slab kod kuće: 0,4 bod po meču u zadnjih 5"
+   ],
+   "dog": "Ventforet Kofu"
+  },
+  {
+   "fixtureId": 1000015943,
+   "utc": "2026-11-14T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-14",
+   "league": "Japan · WE League",
+   "home": "AC Nagano Parceiro Ladies (W)",
+   "away": "Nojima Stella (W)",
+   "pick": "1",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Nojima Stella (W) slab u gostima: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "AC Nagano Parceiro Ladies (W)"
+  }
+ ],
+ "screened": [
+  [
+   "14.11. 05:00",
+   "AUS Australia Championship",
+   "Sydney United 58 – South Melbourne",
+   0,
+   ""
+  ],
+  [
+   "14.11. 05:00",
+   "AUS Australia Championship",
+   "South Hobart – Wollongong Wolves",
+   0,
+   ""
+  ],
+  [
+   "14.11. 09:30",
+   "AUS Australia Championship",
+   "Bayswater City – Sydney Olympic",
+   0,
+   ""
+  ],
+  [
+   "13.11. 20:30",
+   "ITA Serie C",
+   "Ospitaletto – Dolomiti Bellunesi",
+   0,
+   ""
+  ],
+  [
+   "13.11. 20:30",
+   "ITA Serie C",
+   "Latina – Campobasso",
+   0,
+   ""
+  ],
+  [
+   "13.11. 19:00",
+   "ESP Primera Federacion",
+   "Ponferradina – Cacereño",
+   0,
+   ""
+  ],
+  [
+   "13.11. 21:15",
+   "ESP Primera Federacion",
+   "Gimnàstic – Real Madrid Castilla",
+   0,
+   ""
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 2",
+   "Albirex Niigata – Tegevajaro Miyazaki",
+   0,
+   ""
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 2",
+   "Fujieda MYFC – Ventforet Kofu",
+   0,
+   ""
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 2",
+   "Oita Trinita – Tochigi City FC",
+   8,
+   "2/1"
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 2",
+   "RB Omiya Ardija – Montedio Yamagata",
+   0,
+   ""
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 2",
+   "Shonan Bellmare – Yokohama FC",
+   0,
+   ""
+  ],
+  [
+   "13.11. 19:00",
+   "GER Regionalliga",
+   "SpVgg Bayreuth – DJK Vilzing",
+   0,
+   ""
+  ],
+  [
+   "13.11. 19:00",
+   "GER Regionalliga",
+   "TSV Buchbach – Greuther Fürth II",
+   0,
+   ""
+  ],
+  [
+   "13.11. 19:00",
+   "GER Regionalliga",
+   "Homburg – FSV Frankfurt",
+   0,
+   ""
+  ],
+  [
+   "13.11. 19:30",
+   "GER Regionalliga",
+   "SV Drochtersen/Assel – Oldenburg",
+   37,
+   "1/2"
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 3",
+   "FC Gifu – Matsumoto Yamaga",
+   11,
+   "2/1 · 1/2"
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 3",
+   "Fukushima United – SC Sagamihara",
+   0,
+   ""
+  ],
+  [
+   "14.11. 06:00",
+   "JPN J. League 3",
+   "Giravanz Kitakyushu – Thespa Gunma",
+   0,
+   ""
+  ],
+  [
+   "13.11. 18:00",
+   "POL II Liga",
+   "Znicz Pruszków – Sokół Kleczew",
+   9,
+   "2/1"
+  ],
+  [
+   "14.11. 12:00",
+   "POL II Liga",
+   "Górnik Łęczna – Hutnik Kraków",
+   48,
+   "2/1 · 1/2"
+  ],
+  [
+   "14.11. 12:00",
+   "POL II Liga",
+   "Podhale Nowy Targ – Avia Świdnik",
+   0,
+   ""
+  ],
+  [
+   "13.11. 14:00",
+   "IND Indian Football League",
+   "Shillong Lajong – Sreenidi Deccan FC",
+   0,
+   ""
+  ],
+  [
+   "14.11. 11:30",
+   "IND Indian Football League",
+   "Bengaluru United – Real Kashmir FC",
+   0,
+   ""
+  ],
+  [
+   "14.11. 12:00",
+   "ESP Liga F",
+   "Espanyol (W) – UD Tenerife (W)",
+   0,
+   ""
+  ],
+  [
+   "13.11. 18:30",
+   "GER Frauen-Bundesliga",
+   "Hamburger SV (W) – Mainz 05 (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 12:00",
+   "GER Frauen-Bundesliga",
+   "TSG 1899 Hoffenheim (W) – Freiburg (W)",
+   0,
+   ""
+  ],
+  [
+   "13.11. 19:00",
+   "FRA Première Ligue Féminine",
+   "Nantes (W) – Lens (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 12:30",
+   "ITA Serie A Femminile",
+   "S.S.D. Napoli Femminile (W) – Milan (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 05:00",
+   "AUS A-League Women",
+   "Melbourne City FC (W) – Newcastle Jets (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 05:00",
+   "AUS A-League Women",
+   "Melbourne Victory (W) – Adelaide United (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 07:00",
+   "AUS A-League Women",
+   "Central Coast Mariners (W) – Perth Glory (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 06:00",
+   "JPN WE League",
+   "AC Nagano Parceiro Ladies (W) – Nojima Stella (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 06:00",
+   "JPN WE League",
+   "Sanfrecce Hiroshima Regina (W) – JEF Ladies (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 07:00",
+   "JPN WE League",
+   "NTV Tokyo Verdy Beleza (W) – Albirex Niigata Ladies (W)",
+   0,
+   ""
+  ],
+  [
+   "14.11. 07:00",
+   "JPN WE League",
+   "Urawa Ladies (W) – AS Elfen Saitama (W)",
+   0,
+   ""
+  ]
+ ],
+ "withData": 35,
+ "candidates": 5,
+ "tips": 2,
+ "calls": 570,
+ "detailCalls": 476,
+ "errors": 0,
+ "minutes": 2.1,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 5862752,
+   "docId": "2026-11-14_gornik-leczna_hutnik-krakow",
+   "utc": "2026-11-14T11:00+00:00",
+   "league": "Poljska · II Liga",
+   "stage": "II Liga",
+   "home": "Górnik Łęczna",
+   "away": "Hutnik Kraków",
+   "score": 48,
+   "cand": {
+    "sel": "2/1",
+    "score": 48,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 48,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-06 Resovia–Górnik Łęczna 0:2 (PV 0:0)",
+    "2026-10-31 Górnik Łęczna–Znicz Pruszków 3:0 (PV 2:0)",
+    "2026-10-27 Górnik Łęczna–GKS Katowice 1:0 (PV 1:0)",
+    "2026-10-24 Lechia Zielona Góra–Górnik Łęczna 0:6 (PV 0:3)",
+    "2026-10-17 Górnik Łęczna–Stal Stalowa Wola 1:2 (PV 1:0)",
+    "2026-10-11 GKS Tychy–Górnik Łęczna 3:0 (PV 1:0)",
+    "2026-10-04 Górnik Łęczna–Chojniczanka Chojnice 3:1 (PV 2:0)",
+    "2026-09-18 Zawisza Bydgoszcz–Górnik Łęczna 0:0 (PV 0:0)",
+    "2026-09-12 Górnik Łęczna–Legia Warszawa II 4:1 (PV 0:1)",
+    "2026-09-05 Sokół Kleczew–Górnik Łęczna 0:4 (PV 0:0)",
+    "2026-08-30 Górnik Łęczna–Rekord Bielsko-Biała 1:0 (PV 0:0)",
+    "2026-08-21 Sandecja Nowy Sącz–Górnik Łęczna 1:1 (PV 0:1)",
+    "2026-08-14 Górnik Łęczna–Podhale Nowy Targ 5:2 (PV 3:0)",
+    "2026-08-09 Śląsk Wrocław ll–Górnik Łęczna 2:0 (PV 1:0)",
+    "2026-08-01 Górnik Łęczna–Avia Świdnik 0:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Avia Świdnik–Hutnik Kraków 2:1 (PV 0:1)",
+    "2026-10-31 Hutnik Kraków–Rekord Bielsko-Biała 3:2 (PV 0:2)",
+    "2026-10-24 Hutnik Kraków–Olimpia Grudziądz 1:2 (PV 0:2)",
+    "2026-10-17 Hutnik Kraków–Chojniczanka Chojnice 1:2 (PV 1:1)",
+    "2026-10-11 Sokół Kleczew–Hutnik Kraków 1:2 (PV 1:1)",
+    "2026-10-03 Hutnik Kraków–GKS Tychy 0:2 (PV 0:1)",
+    "2026-09-20 Śląsk Wrocław ll–Hutnik Kraków 2:0 (PV 1:0)",
+    "2026-09-12 Hutnik Kraków–Zawisza Bydgoszcz 1:1 (PV 1:1)",
+    "2026-09-06 Znicz Pruszków–Hutnik Kraków 4:2 (PV 1:2)",
+    "2026-08-29 Hutnik Kraków–Stal Stalowa Wola 2:1 (PV 2:1)",
+    "2026-08-23 Lechia Zielona Góra–Hutnik Kraków 1:1 (PV 0:1)",
+    "2026-08-16 Hutnik Kraków–Legia Warszawa II 2:0 (PV 2:0)",
+    "2026-08-08 Podhale Nowy Targ–Hutnik Kraków 2:5 (PV 1:2)",
+    "2026-08-01 Hutnik Kraków–Swit Skolwin 3:0 (PV 2:0)",
+    "2026-07-25 Sandecja Nowy Sącz–Hutnik Kraków 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-14",
+    "kickoff": "12:00",
+    "league": "Poljska · II Liga",
+    "home": "Górnik Łęczna",
+    "away": "Hutnik Kraków",
+    "pairId": "gornik-leczna__hutnik-krakow",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Preokreti 2/1 u zadnjih 10: Górnik Łęczna 1, Hutnik Kraków 2; liga 5%",
+      "src": [
+       "https://www.fotmob.com/matches/gornik-eczna-vs-hutnik-krakow/28y4ordx#5862752"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Górnik Łęczna: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/gornik-eczna-vs-hutnik-krakow/28y4ordx#5862752"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Hutnik Kraków: 3 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/gornik-eczna-vs-hutnik-krakow/28y4ordx#5862752"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Hutnik Kraków preokret u zadnjem meču, Górnik Łęczna 2× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/gornik-eczna-vs-hutnik-krakow/28y4ordx#5862752"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 48,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 48,
+     "alt": "1/2"
+    },
+    "reasoning": "Górnik Łęczna, preokreti: protiv Stal Stalowa Wola 1:2 (PV 1:0) 17.10.; protiv Legia Warszawa II 4:1 (PV 0:1) 12.09. Hutnik Kraków, preokreti: Avia Świdnik–Hutnik Kraków 2:1 (PV 0:1) 08.11.; protiv Rekord Bielsko-Biała 3:2 (PV 0:2) 31.10.; Znicz Pruszków–Hutnik Kraków 4:2 (PV 1:2) 06.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/gornik-eczna-vs-hutnik-krakow/28y4ordx#5862752"
+    ],
+    "createdAt": "2026-11-13T11:38:35+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5862752
+    },
+    "fixtureId": 5862752
+   }
+  },
+  {
+   "fixtureId": 5911957,
+   "docId": "2026-11-13_drochtersen-assel_oldenburg",
+   "utc": "2026-11-13T18:30+00:00",
+   "league": "Njemačka · Regionalliga",
+   "stage": "Regionalliga North",
+   "home": "SV Drochtersen/Assel",
+   "away": "Oldenburg",
+   "score": 37,
+   "cand": {
+    "sel": "1/2",
+    "score": 37
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 37
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-08-07 Oldenburg–SV Drochtersen/Assel 3:1 (PV 0:1)",
+    "2026-04-10 SV Drochtersen/Assel–Oldenburg 1:3 (PV 0:0)",
+    "2025-10-01 Oldenburg–SV Drochtersen/Assel 3:4 (PV 0:0)",
+    "2025-04-12 SV Drochtersen/Assel–Oldenburg 1:1 (PV 0:0)",
+    "2024-10-06 Oldenburg–SV Drochtersen/Assel 2:3 (PV 0:2)",
+    "2024-03-17 Oldenburg–SV Drochtersen/Assel 1:3 (PV 1:3)"
+   ],
+   "homeLast": [
+    "2026-11-08 Eintracht Norderstedt–SV Drochtersen/Assel 2:2 (PV 1:1)",
+    "2026-11-01 HSC Hannover–SV Drochtersen/Assel 1:1 (PV 1:0)",
+    "2026-10-24 SV Drochtersen/Assel–SV Todesfelde 5:1 (PV 2:0)",
+    "2026-10-16 SC Weiche Flensburg–SV Drochtersen/Assel 3:0 (PV 2:0)",
+    "2026-10-11 Bremer SV–SV Drochtersen/Assel 0:3 (PV 0:1)",
+    "2026-10-03 SV Drochtersen/Assel–SSV Jeddeloh 7:2 (PV 4:1)",
+    "2026-09-25 Schöningen–SV Drochtersen/Assel 3:3 (PV 0:2)",
+    "2026-09-19 SV Drochtersen/Assel–St. Pauli II 1:0 (PV 0:0)",
+    "2026-09-15 SV Drochtersen/Assel–Kickers Emden 8:2 (PV 4:2)",
+    "2026-09-11 SV Atlas Delmenhorst–SV Drochtersen/Assel 0:3 (PV 0:1)",
+    "2026-09-04 SV Drochtersen/Assel–Eimsbütteler TV 7:1 (PV 2:1)",
+    "2026-08-29 Lübeck–SV Drochtersen/Assel 2:3 (PV 0:1)",
+    "2026-08-26 SV Drochtersen/Assel–Werder Bremen II 0:1 (PV 0:0)",
+    "2026-08-16 Hamburger SV II–SV Drochtersen/Assel 1:4 (PV 0:4)",
+    "2026-08-12 SV Drochtersen/Assel–Hannover 96 II 1:2 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 Oldenburg–St. Pauli II 1:0 (PV 0:0)",
+    "2026-10-30 SV Atlas Delmenhorst–Oldenburg 1:1 (PV 0:0)",
+    "2026-10-24 Oldenburg–HSC Hannover 2:1 (PV 2:1)",
+    "2026-10-18 Hamburger SV II–Oldenburg 1:2 (PV 0:0)",
+    "2026-10-11 Oldenburg–Kickers Emden 4:0 (PV 1:0)",
+    "2026-10-03 SC Weiche Flensburg–Oldenburg 3:2 (PV 1:1)",
+    "2026-09-19 Oldenburg–SSV Jeddeloh 1:3 (PV 0:2)",
+    "2026-09-16 Bremer SV–Oldenburg 0:4 (PV 0:2)",
+    "2026-09-11 Oldenburg–Hannover 96 II 4:3 (PV 0:2)",
+    "2026-09-06 Schöningen–Oldenburg 1:0 (PV 1:0)",
+    "2026-08-29 Oldenburg–Eimsbütteler TV 7:3 (PV 2:1)",
+    "2026-08-26 SV Todesfelde–Oldenburg 1:4 (PV 0:2)",
+    "2026-08-15 Oldenburg–Eintracht Norderstedt 4:1 (PV 1:1)",
+    "2026-08-11 Lübeck–Oldenburg 1:1 (PV 0:1)",
+    "2026-08-07 Oldenburg–SV Drochtersen/Assel 3:1 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-13",
+    "kickoff": "19:30",
+    "league": "Njemačka · Regionalliga",
+    "home": "SV Drochtersen/Assel",
+    "away": "Oldenburg",
+    "pairId": "drochtersen-assel__oldenburg",
+    "venue": "Kehdinger Stadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Oldenburg 2× okrenut minus s PV (zadnjih 15); međusobni 07.08.2026 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/oldenburg-vs-sv-drochtersenassel/bolqmy3#5911957"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (07.08.2026); u zadnjih 10: Oldenburg 1×",
+      "src": [
+       "https://www.fotmob.com/matches/oldenburg-vs-sv-drochtersenassel/bolqmy3#5911957"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 37
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 37
+    },
+    "reasoning": "Oldenburg: okrenut minus s PV (zadnjih 15) – protiv Hannover 96 II 4:3 (PV 0:2) 11.09.; protiv SV Drochtersen/Assel 3:1 (PV 0:1) 07.08. (međusobni). Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/oldenburg-vs-sv-drochtersenassel/bolqmy3#5911957"
+    ],
+    "createdAt": "2026-11-13T11:38:35+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5911957
+    },
+    "fixtureId": 5911957
+   }
+  },
+  {
+   "fixtureId": 5987248,
+   "docId": "2026-11-14_gifu_matsumoto-yamaga",
+   "utc": "2026-11-14T05:00+00:00",
+   "league": "Japan · J. League 3",
+   "stage": "J. League 3",
+   "home": "FC Gifu",
+   "away": "Matsumoto Yamaga",
+   "score": 11,
+   "cand": {
+    "sel": "2/1",
+    "score": 11,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-05-06 FC Gifu–Matsumoto Yamaga 0:3 (PV 0:1)",
+    "2026-03-21 Matsumoto Yamaga–FC Gifu 2:2 (PV 1:2)",
+    "2025-07-26 Matsumoto Yamaga–FC Gifu 1:0 (PV 1:0)",
+    "2025-03-29 FC Gifu–Matsumoto Yamaga 1:1 (PV 0:1)",
+    "2024-08-31 FC Gifu–Matsumoto Yamaga 0:1 (PV 0:1)",
+    "2024-03-31 Matsumoto Yamaga–FC Gifu 1:2 (PV 1:1)"
+   ],
+   "homeLast": [
+    "2026-11-07 FC Gifu–Giravanz Kitakyushu 1:0 (PV 1:0)",
+    "2026-11-03 FC Ryūkyū–FC Gifu 2:3 (PV 2:1)",
+    "2026-10-31 FC Gifu–FC Osaka 1:0 (PV 0:0)",
+    "2026-10-25 Roasso Kumamoto–FC Gifu 2:1 (PV 0:1)",
+    "2026-10-21 FC Gifu–SC Sagamihara 2:1 (PV 0:1)",
+    "2026-10-17 FC Gifu–Fukushima United 1:0 (PV 1:0)",
+    "2026-10-11 Gainare Tottori–FC Gifu 0:1 (PV 0:0)",
+    "2026-10-03 FC Gifu–Renofa Yamaguchi 0:2 (PV 0:2)",
+    "2026-09-29 FC Gifu–Yokohama FC 1:2 (PV 1:0)",
+    "2026-09-26 Kamatamare Sanuki–FC Gifu 3:4 (PV 2:3)",
+    "2026-09-20 Nagano Parceiro–FC Gifu 1:0 (PV 0:0)",
+    "2026-09-12 Nara Club–FC Gifu 2:1 (PV 1:0)",
+    "2026-09-05 FC Gifu–Zweigen Kanazawa 0:1 (PV 0:1)",
+    "2026-09-02 FC Gifu–Tokushima Vortis 0:0 (PV 0:0)",
+    "2026-08-29 FC Gifu–Tochigi SC 4:1 (PV 3:0)"
+   ],
+   "awayLast": [
+    "2026-11-07 Matsumoto Yamaga–Zweigen Kanazawa 0:1 (PV 0:1)",
+    "2026-11-03 Kamatamare Sanuki–Matsumoto Yamaga 1:0 (PV 0:0)",
+    "2026-10-31 Fukushima United–Matsumoto Yamaga 1:3 (PV 1:2)",
+    "2026-10-25 Matsumoto Yamaga–Renofa Yamaguchi 0:2 (PV 0:0)",
+    "2026-10-21 Matsumoto Yamaga–Thespa Gunma 2:0 (PV 1:0)",
+    "2026-10-18 Nagano Parceiro–Matsumoto Yamaga 2:1 (PV 2:1)",
+    "2026-10-14 Matsumoto Yamaga–Sanfrecce Hiroshima 0:1 (PV 0:1)",
+    "2026-10-11 Matsumoto Yamaga–Kagoshima United 1:0 (PV 0:0)",
+    "2026-10-03 Matsumoto Yamaga–Gainare Tottori 0:1 (PV 0:0)",
+    "2026-09-29 Matsumoto Yamaga–Albirex Niigata 1:0 (PV 1:0)",
+    "2026-09-26 Tochigi SC–Matsumoto Yamaga 1:2 (PV 0:1)",
+    "2026-09-18 Roasso Kumamoto–Matsumoto Yamaga 0:0 (PV 0:0)",
+    "2026-09-13 Matsumoto Yamaga–SC Sagamihara 1:3 (PV 1:2)",
+    "2026-09-09 Matsumoto Yamaga–Shonan Bellmare 3:3 (PV 1:1)",
+    "2026-09-05 Matsumoto Yamaga–FC Osaka 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-14",
+    "kickoff": "06:00",
+    "league": "Japan · J. League 3",
+    "home": "FC Gifu",
+    "away": "Matsumoto Yamaga",
+    "pairId": "gifu__matsumoto-yamaga",
+    "venue": "Himaraya Stadium Gifu",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "FC Gifu: 4 preokreta u zadnjih 15, 3 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/fc-gifu-vs-matsumoto-yamaga/t5abos0#5987248"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 11,
+     "alt": "1/2"
+    },
+    "reasoning": "FC Gifu, preokreti: FC Ryūkyū–FC Gifu 2:3 (PV 2:1) 03.11.; Roasso Kumamoto–FC Gifu 2:1 (PV 0:1) 25.10.; protiv SC Sagamihara 2:1 (PV 0:1) 21.10. Malo golova u mečevima ovih ekipa, a tada je preokret upola rjeđi.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/fc-gifu-vs-matsumoto-yamaga/t5abos0#5987248"
+    ],
+    "createdAt": "2026-11-13T11:38:35+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5987248
+    },
+    "fixtureId": 5987248
+   }
+  },
+  {
+   "fixtureId": 5862755,
+   "docId": "2026-11-13_znicz-pruszkow_sokol-kleczew",
+   "utc": "2026-11-13T17:00+00:00",
+   "league": "Poljska · II Liga",
+   "stage": "II Liga",
+   "home": "Znicz Pruszków",
+   "away": "Sokół Kleczew",
+   "score": 9,
+   "cand": {
+    "sel": "2/1",
+    "score": 9
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-07 Znicz Pruszków–Podhale Nowy Targ 2:2 (PV 2:1)",
+    "2026-10-31 Górnik Łęczna–Znicz Pruszków 3:0 (PV 2:0)",
+    "2026-10-28 Znicz Pruszków–Ruch Chorzów 0:1 (PV 0:0)",
+    "2026-10-25 Avia Świdnik–Znicz Pruszków 0:2 (PV 0:1)",
+    "2026-10-18 Znicz Pruszków–Rekord Bielsko-Biała 1:0 (PV 0:0)",
+    "2026-10-11 Zawisza Bydgoszcz–Znicz Pruszków 0:1 (PV 0:0)",
+    "2026-10-04 Znicz Pruszków–Stal Stalowa Wola 4:2 (PV 3:1)",
+    "2026-09-19 Lechia Zielona Góra–Znicz Pruszków 1:3 (PV 0:2)",
+    "2026-09-11 Znicz Pruszków–GKS Tychy 1:1 (PV 1:1)",
+    "2026-09-06 Znicz Pruszków–Hutnik Kraków 4:2 (PV 1:2)",
+    "2026-08-29 Śląsk Wrocław ll–Znicz Pruszków 2:3 (PV 1:2)",
+    "2026-08-22 Znicz Pruszków–Swit Skolwin 1:1 (PV 1:1)",
+    "2026-08-16 Znicz Pruszków–Olimpia Grudziądz 0:1 (PV 0:0)",
+    "2026-08-09 Chojniczanka Chojnice–Znicz Pruszków 1:4 (PV 0:2)",
+    "2026-07-31 Znicz Pruszków–Legia Warszawa II 2:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-07 Sokół Kleczew–Sandecja Nowy Sącz 3:2 (PV 0:1)",
+    "2026-10-31 Stal Stalowa Wola–Sokół Kleczew 1:2 (PV 1:1)",
+    "2026-10-28 Sokół Kleczew–Podhale Nowy Targ 2:1 (PV 2:0)",
+    "2026-10-23 Sokół Kleczew–Śląsk Wrocław ll 4:2 (PV 2:0)",
+    "2026-10-18 Resovia–Sokół Kleczew 0:0 (PV 0:0)",
+    "2026-10-11 Sokół Kleczew–Hutnik Kraków 1:2 (PV 1:1)",
+    "2026-10-03 Swit Skolwin–Sokół Kleczew 2:1 (PV 1:0)",
+    "2026-09-18 Sokół Kleczew–Avia Świdnik 2:2 (PV 2:0)",
+    "2026-09-11 Sokół Kleczew–Olimpia Grudziądz 1:1 (PV 1:1)",
+    "2026-09-05 Sokół Kleczew–Górnik Łęczna 0:4 (PV 0:0)",
+    "2026-08-29 Sokół Kleczew–Chojniczanka Chojnice 1:1 (PV 0:1)",
+    "2026-08-23 Legia Warszawa II–Sokół Kleczew 6:1 (PV 2:1)",
+    "2026-08-15 Sokół Kleczew–Rekord Bielsko-Biała 3:0 (PV 3:0)",
+    "2026-08-08 Lechia Zielona Góra–Sokół Kleczew 6:1 (PV 2:1)",
+    "2026-08-01 Sokół Kleczew–Podhale Nowy Targ 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-13",
+    "kickoff": "18:00",
+    "league": "Poljska · II Liga",
+    "home": "Znicz Pruszków",
+    "away": "Sokół Kleczew",
+    "pairId": "sokol-kleczew__znicz-pruszkow",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Sokół Kleczew preokret u zadnjem meču, Znicz Pruszków 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/znicz-pruszkow-vs-soko-kleczew/2wnj4dmu#5862755"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 9
+    },
+    "reasoning": "Znicz Pruszków, preokreti: protiv Hutnik Kraków 4:2 (PV 1:2) 06.09. Sokół Kleczew, preokreti: protiv Sandecja Nowy Sącz 3:2 (PV 0:1) 07.11. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/znicz-pruszkow-vs-soko-kleczew/2wnj4dmu#5862755"
+    ],
+    "createdAt": "2026-11-13T11:38:35+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5862755
+    },
+    "fixtureId": 5862755
+   }
+  },
+  {
+   "fixtureId": 5836371,
+   "docId": "2026-11-14_oita-trinita_tochigi-city",
+   "utc": "2026-11-14T05:00+00:00",
+   "league": "Japan · J. League 2",
+   "stage": "J. League 2",
+   "home": "Oita Trinita",
+   "away": "Tochigi City FC",
+   "score": 8,
+   "cand": {
+    "sel": "2/1",
+    "score": 8
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-07 Blaublitz Akita–Oita Trinita 2:1 (PV 0:1)",
+    "2026-11-03 Oita Trinita–Vanraure Hachinohe 1:0 (PV 0:0)",
+    "2026-10-31 Tegevajaro Miyazaki–Oita Trinita 2:0 (PV 1:0)",
+    "2026-10-25 Oita Trinita–Ventforet Kofu 1:1 (PV 1:0)",
+    "2026-10-21 Júbilo Iwata–Oita Trinita 0:0 (PV 0:0)",
+    "2026-10-17 Oita Trinita–Albirex Niigata 5:1 (PV 2:1)",
+    "2026-10-10 Yokohama FC–Oita Trinita 1:2 (PV 0:1)",
+    "2026-10-03 Oita Trinita–Montedio Yamagata 2:1 (PV 0:0)",
+    "2026-09-26 Oita Trinita–Fujieda MYFC 1:1 (PV 0:1)",
+    "2026-09-19 Hokkaido Consadole Sapporo–Oita Trinita 1:1 (PV 0:0)",
+    "2026-09-12 RB Omiya Ardija–Oita Trinita 0:0 (PV 0:0)",
+    "2026-09-06 Oita Trinita–FC Imabari 1:1 (PV 0:1)",
+    "2026-09-02 Roasso Kumamoto–Oita Trinita 2:0 (PV 1:0)",
+    "2026-08-29 Tokushima Vortis–Oita Trinita 1:0 (PV 0:0)",
+    "2026-08-26 Iwaki FC–Oita Trinita 0:0 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Tochigi City FC–RB Omiya Ardija 0:3 (PV 0:2)",
+    "2026-11-03 Tegevajaro Miyazaki–Tochigi City FC 3:0 (PV 2:0)",
+    "2026-10-31 Tochigi City FC–Iwaki FC 1:3 (PV 1:1)",
+    "2026-10-25 Shonan Bellmare–Tochigi City FC 2:1 (PV 0:1)",
+    "2026-10-21 Tochigi City FC–Fujieda MYFC 2:2 (PV 0:0)",
+    "2026-10-17 Tochigi City FC–Yokohama FC 1:1 (PV 0:1)",
+    "2026-10-10 Ventforet Kofu–Tochigi City FC 2:1 (PV 2:1)",
+    "2026-10-03 Tochigi City FC–FC Imabari 1:2 (PV 1:2)",
+    "2026-09-29 Tochigi City FC–Sanfrecce Hiroshima 0:2 (PV 0:2)",
+    "2026-09-26 Tokushima Vortis–Tochigi City FC 3:0 (PV 1:0)",
+    "2026-09-23 Machida Zelvia–Tochigi City FC 2:1 (PV 1:0)",
+    "2026-09-20 Tochigi City FC–Vegalta Sendai 1:3 (PV 0:2)",
+    "2026-09-12 Kataller Toyama–Tochigi City FC 0:0 (PV 0:0)",
+    "2026-09-06 Hokkaido Consadole Sapporo–Tochigi City FC 1:4 (PV 0:2)",
+    "2026-09-02 Vanraure Hachinohe–Tochigi City FC 0:2 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-14",
+    "kickoff": "06:00",
+    "league": "Japan · J. League 2",
+    "home": "Oita Trinita",
+    "away": "Tochigi City FC",
+    "pairId": "oita-trinita__tochigi-city",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Oita Trinita preokret u zadnjem meču, Tochigi City FC 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/oita-trinita-vs-tochigi-city-fc/91oeivb#5836371"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 8
+    },
+    "reasoning": "Oita Trinita, preokreti: Blaublitz Akita–Oita Trinita 2:1 (PV 0:1) 07.11. Tochigi City FC, preokreti: Shonan Bellmare–Tochigi City FC 2:1 (PV 0:1) 25.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/oita-trinita-vs-tochigi-city-fc/91oeivb#5836371"
+    ],
+    "createdAt": "2026-11-13T11:38:35+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5836371
+    },
+    "fixtureId": 5836371
+   }
+  }
+ ]
+}
