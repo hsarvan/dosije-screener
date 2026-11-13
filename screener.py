@@ -43,7 +43,7 @@ COUNTRY = {
     "POR": "Portugal", "NED": "Holandija", "BEL": "Belgija", "GRE": "Grčka", "RUS": "Rusija",
     "POL": "Poljska", "CZE": "Češka", "BUL": "Bugarska", "JPN": "Japan", "KOR": "Južna Koreja",
     "THA": "Tajland", "BRA": "Brazil", "MEX": "Meksiko", "ARG": "Argentina",
-    "KSA": "Saudijska Arabija", "IRN": "Iran", "AUT": "Austrija", "SUI": "Švicarska",
+    "INT": "Evropa", "KSA": "Saudijska Arabija", "IRN": "Iran", "AUT": "Austrija", "SUI": "Švicarska",
     "NOR": "Norveška", "SWE": "Švedska", "DEN": "Danska", "ROU": "Rumunija", "COL": "Kolumbija", "CHI": "Čile",
     "URU": "Urugvaj", "SVK": "Slovačka", "HUN": "Mađarska", "CYP": "Kipar", "IND": "Indija", "QAT": "Katar",
 }
