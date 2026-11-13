@@ -1,9 +1,9 @@
 {
  "date": "2026-11-13",
- "generatedAt": "2026-11-13T11:38:35+00:00",
+ "generatedAt": "2026-11-13T12:23:22+00:00",
  "window": [
-  "2026-11-13T11:38+00:00",
-  "2026-11-14T11:38+00:00"
+  "2026-11-13T12:23+00:00",
+  "2026-11-14T12:23+00:00"
  ],
  "rules": {
   "n": 3981,
@@ -11,7 +11,7 @@
    "1/2": 0.0211,
    "2/1": 0.0314
   },
-  "at": "2026-11-13T11:38:38+00:00",
+  "at": "2026-11-13T12:23:22+00:00",
   "rules": [
    {
     "id": "R1",
@@ -100,8 +100,8 @@
   ]
  },
  "leagues": 92,
- "fixturesSeen": 36,
- "analysed": 36,
+ "fixturesSeen": 39,
+ "analysed": 39,
  "upsetStats": {
   "n": 1,
   "won": 0,
@@ -262,6 +262,20 @@
    ""
   ],
   [
+   "14.11. 13:00",
+   "ESP Primera Federacion",
+   "Athletic Club B – Racing de Ferrol",
+   0,
+   ""
+  ],
+  [
+   "14.11. 13:00",
+   "GRE Super League 2",
+   "Hellas Syros – Panthrakikos Komotini",
+   0,
+   ""
+  ],
+  [
    "14.11. 06:00",
    "JPN J. League 2",
    "Albirex Niigata – Tegevajaro Miyazaki",
@@ -367,6 +381,13 @@
    ""
   ],
   [
+   "14.11. 13:00",
+   "POL II Liga",
+   "Śląsk Wrocław ll – Lechia Zielona Góra",
+   0,
+   ""
+  ],
+  [
    "13.11. 14:00",
    "IND Indian Football League",
    "Shillong Lajong – Sreenidi Deccan FC",
@@ -465,13 +486,13 @@
    ""
   ]
  ],
- "withData": 35,
+ "withData": 38,
  "candidates": 5,
  "tips": 2,
- "calls": 570,
- "detailCalls": 476,
+ "calls": 51,
+ "detailCalls": 42,
  "errors": 0,
- "minutes": 2.1,
+ "minutes": 0.2,
  "notes": [],
  "matches": [
   {
@@ -656,7 +677,7 @@
     "sources": [
      "https://www.fotmob.com/matches/gornik-eczna-vs-hutnik-krakow/28y4ordx#5862752"
     ],
-    "createdAt": "2026-11-13T11:38:35+00:00",
+    "createdAt": "2026-11-13T12:23:22+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -823,7 +844,7 @@
     "sources": [
      "https://www.fotmob.com/matches/oldenburg-vs-sv-drochtersenassel/bolqmy3#5911957"
     ],
-    "createdAt": "2026-11-13T11:38:35+00:00",
+    "createdAt": "2026-11-13T12:23:22+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -975,7 +996,7 @@
     "sources": [
      "https://www.fotmob.com/matches/fc-gifu-vs-matsumoto-yamaga/t5abos0#5987248"
     ],
-    "createdAt": "2026-11-13T11:38:35+00:00",
+    "createdAt": "2026-11-13T12:23:22+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1118,7 +1139,7 @@
     "sources": [
      "https://www.fotmob.com/matches/znicz-pruszkow-vs-soko-kleczew/2wnj4dmu#5862755"
     ],
-    "createdAt": "2026-11-13T11:38:35+00:00",
+    "createdAt": "2026-11-13T12:23:22+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1261,7 +1282,7 @@
     "sources": [
      "https://www.fotmob.com/matches/oita-trinita-vs-tochigi-city-fc/91oeivb#5836371"
     ],
-    "createdAt": "2026-11-13T11:38:35+00:00",
+    "createdAt": "2026-11-13T12:23:22+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
