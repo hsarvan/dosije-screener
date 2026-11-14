@@ -1,0 +1,30 @@
+{
+ "date": "2026-11-13",
+ "updatedAt": "2026-11-14T05:36:41+00:00",
+ "matches": [
+  {
+   "fixtureId": 5911957,
+   "docId": "2026-11-13_drochtersen-assel_oldenburg",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "3-2",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5181834,
+   "docId": "2026-11-13_serbia_germany",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "1-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5862755,
+   "docId": "2026-11-13_znicz-pruszkow_sokol-kleczew",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "2-2",
+   "htft": "2/X"
+  }
+ ]
+}
