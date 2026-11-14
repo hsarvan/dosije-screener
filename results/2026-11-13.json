@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "updatedAt": "2026-11-14T05:36:41+00:00",
+ "updatedAt": "2026-11-14T10:59:19+00:00",
  "matches": [
   {
    "fixtureId": 5911957,
@@ -25,6 +25,22 @@
    "ht": "0-2",
    "ft": "2-2",
    "htft": "2/X"
+  },
+  {
+   "fixtureId": 5987248,
+   "docId": "2026-11-14_gifu_matsumoto-yamaga",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5836371,
+   "docId": "2026-11-14_oita-trinita_tochigi-city",
+   "status": "FT",
+   "ht": "0-4",
+   "ft": "1-6",
+   "htft": "2/2"
   }
  ]
 }
