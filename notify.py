@@ -73,9 +73,14 @@ def pick(t):
     return t["sel"] + (f" ili {t['alt']}" if t.get("alt") else "")
 
 
+def kick(d):
+    """Redoslijed po vremenu: datum pa sat početka."""
+    return (d.get("date") or "", d.get("kickoff") or "99:99")
+
+
 def build(today):
     cand = load(os.path.join(ROOT, "candidates", f"{today.isoformat()}.json"), {}) or {}
-    ms = sorted(cand.get("matches", []), key=lambda m: (-(m.get("score") or 0), m["doc"].get("kickoff") or ""))
+    ms = sorted(cand.get("matches", []), key=lambda m: kick(m["doc"]))
     tips = [m for m in ms if m["doc"].get("htftTip")]
     rest = [m for m in ms if not m["doc"].get("htftTip") and m["doc"].get("cand")]
     out = [f"⚽ <b>Dosije · {DAYS[today.weekday()]} {today:%d.%m.}</b>",
@@ -85,10 +90,8 @@ def build(today):
         out.append("\n🎯 <b>PV/K prijedlozi</b>")
         for m in tips:
             d = m["doc"]
-            why = (d.get("signals") or [{}])[0].get("note") or ""
             out.append(f"• <b>{e(d['kickoff'])} {e(d['home'])} – {e(d['away'])}</b>\n"
-                       f"  {e(d['league'])}\n  PV/K <b>{e(pick(d['htftTip']))}</b> · skor {d['htftTip']['score']}"
-                       + (f"\n  <i>{e(why)}</i>" if why else ""))
+                       f"  {e(d['league'])} · PV/K <b>{e(pick(d['htftTip']))}</b> · skor {d['htftTip']['score']}")
     else:
         out.append("\n🎯 Danas nema PV/K prijedloga.")
     pot = [m for m in rest if (m["doc"]["cand"].get("score") or 0) >= POT]
@@ -97,16 +100,17 @@ def build(today):
         out.append(f"\n🟡 <b>Potencijalni</b> (skor {POT}–{MIN_TIP - 1})")
         for m in pot:
             d, c = m["doc"], m["doc"]["cand"]
-            why = (d.get("signals") or [{}])[0].get("note") or ""
-            out.append(f"• <b>{e(d['kickoff'])} {e(d['home'])} – {e(d['away'])}</b>\n  {e(d['league'])}\n"
-                       f"  PV/K {e(pick(c))} · skor {c.get('score', '')}" + (f"\n  <i>{e(why)}</i>" if why else ""))
+            out.append(f"• <b>{e(d['kickoff'])} {e(d['home'])} – {e(d['away'])}</b>\n"
+                       f"  {e(d['league'])} · PV/K {e(pick(c))} · skor {c.get('score', '')}")
     if low:
-        out.append(f"\n👀 <b>Kandidati</b> ({len(low)})")
-        for m in low[:10]:
+        n_low = len(low)
+        out.append(f"\n👀 <b>Kandidati</b> ({n_low})")
+        low = sorted(sorted(low, key=lambda m: -(m["doc"]["cand"].get("score") or 0))[:10], key=lambda m: kick(m["doc"]))
+        for m in low:
             d, c = m["doc"], m["doc"]["cand"]
             out.append(f"• {e(d['kickoff'])} {e(d['home'])} – {e(d['away'])} · {e(pick(c))} · {c.get('score', '')}")
-        if len(low) > 10:
-            out.append(f"  … i još {len(low) - 10} u Dosijeu")
+        if n_low > 10:
+            out.append(f"  … i još {n_low - 10} u Dosijeu")
     out.append(f'\n<a href="{APP}">Otvori Dosije</a>')
     text = "\n".join(out)
     return text if len(text) <= 4000 else text[:3990] + "…"
@@ -118,11 +122,10 @@ def build_upsets(today):
     if not ups:
         return None
     out = [f"💰 <b>Velike kvote · {DAYS[today.weekday()]} {today:%d.%m.}</b>",
-           "Slabija ekipa s obrascem koji joj ide u prilog. Kvota je procjena iz forme, provjeri pravu kod kladionice."]
-    for u in ups:
-        out.append(f"\n• <b>{e(u['kickoff'])} {e(u['home'])} – {e(u['away'])}</b>\n  {e(u['league'])}\n"
-                   f"  Tip <b>{e(u['pick'])}</b> ({e(u['dog'])}) · procijenjena kvota ~{u['estOdds']:.1f}".replace(".", ",", 1)
-                   + "".join(f"\n  <i>{e(w)}</i>" for w in u.get("why", [])))
+           ""]
+    for u in sorted(ups, key=kick):
+        out.append(f"• <b>{e(u['kickoff'])} {e(u['home'])} – {e(u['away'])}</b>\n  {e(u['league'])} · "
+                   f"Tip <b>{e(u['pick'])}</b> · kvota ~{u['estOdds']:.1f}".replace("~" + f"{u['estOdds']:.1f}", "~" + f"{u['estOdds']:.1f}".replace(".", ",")))
     st = cand.get("upsetStats") or {}
     if st.get("n"):
         out.append(f"\nDosad: {st['won']} od {st['n']} pogođeno (prosj. kvota ~{st['avgOdds']}).")
@@ -138,11 +141,11 @@ def build_k2(today):
     if not ks:
         return None
     out = [f"🏠 <b>3 za 3 · {DAYS[today.weekday()]} {today:%d.%m.}</b>",
-           "Domaćin je dobio zadnja dva međusobna na svom terenu. Tip 1."]
-    for k in ks:
-        odds = f" · procijenjena kvota ~{k['estOdds']:.2f}".replace(".", ",") if k.get("estOdds") else ""
-        out.append(f"\n• <b>{e(k['kickoff'])} {e(k['home'])} – {e(k['away'])}</b>{' ⭐' if k.get('both') else ''}\n"
-                   f"  {e(k['league'])}\n  Tip <b>1</b>{odds}" + "".join(f"\n  <i>{e(w)}</i>" for w in k.get("why", [])))
+           ""]
+    for k in sorted(ks, key=kick):
+        odds = f" · kvota ~{k['estOdds']:.2f}".replace(".", ",") if k.get("estOdds") else ""
+        out.append(f"• <b>{e(k['kickoff'])} {e(k['home'])} – {e(k['away'])}</b>{' ⭐' if k.get('both') else ''}\n"
+                   f"  {e(k['league'])} · Tip <b>1</b>{odds}")
     st = cand.get("k2Stats") or {}
     if st.get("n"):
         out.append(f"\nDosad: {st['won']} od {st['n']} pogođeno.")
