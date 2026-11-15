@@ -1,0 +1,310 @@
+{
+ "date": "2026-11-14",
+ "updatedAt": "2026-11-15T11:33:44+00:00",
+ "matches": [
+  {
+   "fixtureId": 6140260,
+   "docId": "2026-11-14_ae-larissa_nestos-chrisoupolis",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5794583,
+   "docId": "2026-11-14_airdrieonians_queen-of-the-south",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5190811,
+   "docId": "2026-11-14_america-mg_avai",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5884277,
+   "docId": "2026-11-14_amorebieta_eibar-b",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-1",
+   "htft": "1/X"
+  },
+  {
+   "fixtureId": 5884609,
+   "docId": "2026-11-14_barca-atletic_girona-b",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5981693,
+   "docId": "2026-11-14_brighton-w_liverpool-w",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5838027,
+   "docId": "2026-11-14_bristol-rovers_chesterfield",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5906549,
+   "docId": "2026-11-14_carlisle_boston-united",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5990549,
+   "docId": "2026-11-14_carpi_giana-erminio",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5883730,
+   "docId": "2026-11-14_ce-europa_sant-andreu",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5883343,
+   "docId": "2026-11-14_coria_unionistas-de-salamanca",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "4-2",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5832947,
+   "docId": "2026-11-14_de-graafschap_top-oss",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5794758,
+   "docId": "2026-11-14_dumbarton_annan-athletic",
+   "status": "FT",
+   "ht": "0-3",
+   "ft": "0-5",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5906550,
+   "docId": "2026-11-14_eastleigh_fylde",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5794759,
+   "docId": "2026-11-14_edinburgh-city_clyde",
+   "status": "FT",
+   "ht": "2-2",
+   "ft": "2-6",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5794760,
+   "docId": "2026-11-14_forfar-athletic_spartans",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5906551,
+   "docId": "2026-11-14_gateshead_barrow",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5862752,
+   "docId": "2026-11-14_gornik-leczna_hutnik-krakow",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5906552,
+   "docId": "2026-11-14_harrogate-town_altrincham",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "4-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5916114,
+   "docId": "2026-11-14_kaiserslautern-ii_aalen",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5794761,
+   "docId": "2026-11-14_kelty-hearts_stranraer",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-1",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5906555,
+   "docId": "2026-11-14_kidderminster-harriers_halifax-town",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5990552,
+   "docId": "2026-11-14_lumezzane_trento",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5981692,
+   "docId": "2026-11-14_manchester-united-w_crystal-palace-w",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5832949,
+   "docId": "2026-11-14_roda-jc-kerkrade_volendam",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "3-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5838035,
+   "docId": "2026-11-14_salford_northampton",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 5906557,
+   "docId": "2026-11-14_southend_aldershot-town",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "2-1",
+   "htft": "2/1"
+  },
+  {
+   "fixtureId": 5934569,
+   "docId": "2026-11-14_vfl-wolfsburg-w_bayern-munchen-w",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "1-4",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5916117,
+   "docId": "2026-11-14_vfr-mannheim_sandhausen",
+   "status": "VOID",
+   "ht": null,
+   "ft": null,
+   "htft": null
+  },
+  {
+   "fixtureId": 5911962,
+   "docId": "2026-11-14_weiche-flensburg_werder-bremen-ii",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "3-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5934568,
+   "docId": "2026-11-14_werder-bremen-w_union-berlin-w",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5837265,
+   "docId": "2026-11-14_wigan_barnsley",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6580858,
+   "docId": "2026-11-15_charleston-battery_louisville-city",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 1000015944,
+   "docId": "2026-11-15_inac-kobe-leonessa-w_cerezo-osaka-sakai-w",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-1",
+   "htft": "1/X"
+  },
+  {
+   "fixtureId": 6538694,
+   "docId": "2026-11-15_kashima-antlers_yokohama-f-marinos",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "3-2",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6538695,
+   "docId": "2026-11-15_kashiwa-reysol_kawasaki-frontale",
+   "status": "FT",
+   "ht": "1-3",
+   "ft": "5-4",
+   "htft": "2/1"
+  },
+  {
+   "fixtureId": 5836376,
+   "docId": "2026-11-15_vegalta-sendai_blaublitz-akita",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "4-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5987252,
+   "docId": "2026-11-15_zweigen-kanazawa_roasso-kumamoto",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "3-2",
+   "htft": "1/1"
+  }
+ ]
+}
