@@ -1,9 +1,9 @@
 {
  "date": "2026-11-16",
- "generatedAt": "2026-11-16T12:06:12+00:00",
+ "generatedAt": "2026-11-16T12:56:32+00:00",
  "window": [
-  "2026-11-16T12:06+00:00",
-  "2026-11-17T12:06+00:00"
+  "2026-11-16T12:56+00:00",
+  "2026-11-17T12:56+00:00"
  ],
  "rules": {
   "n": 4315,
@@ -11,7 +11,7 @@
    "1/2": 0.0213,
    "2/1": 0.0311
   },
-  "at": "2026-11-16T12:06:47+00:00",
+  "at": "2026-11-16T12:56:32+00:00",
   "rules": [
    {
     "id": "R1",
@@ -100,30 +100,14 @@
   ]
  },
  "leagues": 93,
- "fixturesSeen": 12,
- "analysed": 12,
+ "fixturesSeen": 11,
+ "analysed": 11,
  "upsetStats": {
   "n": 40,
   "won": 4,
   "avgOdds": 3.95
  },
  "k2": [
-  {
-   "fixtureId": 6140266,
-   "utc": "2026-11-16T12:45+00:00",
-   "kickoff": "13:45",
-   "date": "2026-11-16",
-   "league": "Grčka · Super League 2",
-   "home": "Panionios",
-   "away": "Olympiacos B",
-   "pick": "1",
-   "estOdds": 1.48,
-   "both": true,
-   "why": [
-    "Panionios dobio zadnja 2 međusobna kod kuće: 3:0 (21.03.2026); 4:1 (03.12.2025)",
-    "Olympiacos B dobio zadnji kod sebe: 2:1 (01.03.2026), pravo 3 za 3"
-   ]
-  },
   {
    "fixtureId": 5181835,
    "utc": "2026-11-16T19:45+00:00",
@@ -199,13 +183,6 @@
    ""
   ],
   [
-   "16.11. 13:45",
-   "GRE Super League 2",
-   "Panionios – Olympiacos B",
-   6,
-   "2/1"
-  ],
-  [
    "16.11. 14:00",
    "GRE Super League 2",
    "Niki Volou – Pyrgos AFC",
@@ -248,13 +225,13 @@
    "1/2 · 2/1"
   ]
  ],
- "withData": 11,
- "candidates": 4,
+ "withData": 10,
+ "candidates": 3,
  "tips": 1,
- "calls": 205,
- "detailCalls": 173,
+ "calls": 13,
+ "detailCalls": 11,
  "errors": 0,
- "minutes": 1.0,
+ "minutes": 0.0,
  "notes": [],
  "matches": [
   {
@@ -401,7 +378,7 @@
     "sources": [
      "https://www.fotmob.com/matches/greece-vs-serbia/1rcyhf#5181836"
     ],
-    "createdAt": "2026-11-16T12:06:12+00:00",
+    "createdAt": "2026-11-16T12:56:32+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -540,7 +517,7 @@
     "sources": [
      "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-qeshm-island/pdtyn2b7#6533908"
     ],
-    "createdAt": "2026-11-16T12:06:12+00:00",
+    "createdAt": "2026-11-16T12:56:32+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -681,7 +658,7 @@
     "sources": [
      "https://www.fotmob.com/matches/bayer-leverkusen-vs-vfb-stuttgart/ytfndhf0#5934567"
     ],
-    "createdAt": "2026-11-16T12:06:12+00:00",
+    "createdAt": "2026-11-16T12:56:32+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
