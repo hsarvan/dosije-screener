@@ -1,0 +1,182 @@
+{
+ "date": "2026-11-15",
+ "updatedAt": "2026-11-16T12:06:12+00:00",
+ "matches": [
+  {
+   "fixtureId": 5884932,
+   "docId": "2026-11-15_alcoyano_intercity",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "4-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5181798,
+   "docId": "2026-11-15_belgium_italy",
+   "status": "FT",
+   "ht": "3-1",
+   "ft": "4-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 1000018715,
+   "docId": "2026-11-15_burnley-women-w_southampton-w",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "0-5",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5991518,
+   "docId": "2026-11-15_cavese_crotone",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5885639,
+   "docId": "2026-11-15_conquense_guadalajara",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "3-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5181859,
+   "docId": "2026-11-15_croatia_czechia",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5882349,
+   "docId": "2026-11-15_deportivo-de-a-coruna-w_barcelona-w",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5874518,
+   "docId": "2026-11-15_feyenoord-w_heerenveen-w",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "3-2",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5884240,
+   "docId": "2026-11-15_gernika_real-oviedo-b",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-2",
+   "htft": "1/2"
+  },
+  {
+   "fixtureId": 5107974,
+   "docId": "2026-11-15_ifk-norrkoping-w_aik-w",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5885621,
+   "docId": "2026-11-15_navalcarnero_getafe-b",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5874275,
+   "docId": "2026-11-15_nesebar_fratria",
+   "status": "FT",
+   "ht": "2-2",
+   "ft": "2-3",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5990555,
+   "docId": "2026-11-15_pergolettese_pro-vercelli",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5991521,
+   "docId": "2026-11-15_potenza_scafatese",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "4-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5883734,
+   "docId": "2026-11-15_real-murcia_alcorcon",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-2",
+   "htft": "1/2"
+  },
+  {
+   "fixtureId": 5897679,
+   "docId": "2026-11-15_sochi_shinnik-yaroslavl",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5181860,
+   "docId": "2026-11-15_spain_england",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "2-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5885304,
+   "docId": "2026-11-15_tamaraceite_marbella",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-1",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5884615,
+   "docId": "2026-11-15_terrassa_tudelano",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5911964,
+   "docId": "2026-11-15_todesfelde_hannover-96-ii",
+   "status": "FT",
+   "ht": "1-2",
+   "ft": "1-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 6147176,
+   "docId": "2026-11-15_yeclano_castellon-b",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5883351,
+   "docId": "2026-11-15_zamora_real-aviles",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-2",
+   "htft": "X/X"
+  }
+ ]
+}

@@ -1,0 +1,842 @@
+{
+ "date": "2026-11-16",
+ "generatedAt": "2026-11-16T12:06:12+00:00",
+ "window": [
+  "2026-11-16T12:06+00:00",
+  "2026-11-17T12:06+00:00"
+ ],
+ "rules": {
+  "n": 4315,
+  "base": {
+   "1/2": 0.0213,
+   "2/1": 0.0311
+  },
+  "at": "2026-11-16T12:06:47+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 109,
+    "hits": 5,
+    "sel": 5,
+    "any": 8,
+    "both": false,
+    "base": 0.0281,
+    "lift": 1.63,
+    "mult": 0.94
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 19,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0307,
+    "lift": 1.71,
+    "mult": 1.03
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 102,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0309,
+    "lift": 1.59,
+    "mult": 1.08
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 752,
+    "hits": 45,
+    "sel": 31,
+    "any": 45,
+    "both": true,
+    "base": 0.0581,
+    "lift": 1.03,
+    "mult": 0.71
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 153,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0302,
+    "lift": 1.08,
+    "mult": 0.93
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 14,
+    "hits": 1,
+    "sel": 0,
+    "any": 1,
+    "both": true,
+    "base": 0.065,
+    "lift": 1.1,
+    "mult": 0.98
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 15,
+    "hits": 2,
+    "sel": 2,
+    "any": 2,
+    "both": false,
+    "base": 0.0291,
+    "lift": 4.58,
+    "mult": 1.15
+   }
+  ]
+ },
+ "leagues": 93,
+ "fixturesSeen": 12,
+ "analysed": 12,
+ "upsetStats": {
+  "n": 40,
+  "won": 4,
+  "avgOdds": 3.95
+ },
+ "k2": [
+  {
+   "fixtureId": 6140266,
+   "utc": "2026-11-16T12:45+00:00",
+   "kickoff": "13:45",
+   "date": "2026-11-16",
+   "league": "Grčka · Super League 2",
+   "home": "Panionios",
+   "away": "Olympiacos B",
+   "pick": "1",
+   "estOdds": 1.48,
+   "both": true,
+   "why": [
+    "Panionios dobio zadnja 2 međusobna kod kuće: 3:0 (21.03.2026); 4:1 (03.12.2025)",
+    "Olympiacos B dobio zadnji kod sebe: 2:1 (01.03.2026), pravo 3 za 3"
+   ]
+  },
+  {
+   "fixtureId": 5181835,
+   "utc": "2026-11-16T19:45+00:00",
+   "kickoff": "20:45",
+   "date": "2026-11-16",
+   "league": "Evropa · UEFA Nations League",
+   "home": "Germany",
+   "away": "Netherlands",
+   "pick": "1",
+   "estOdds": 2.31,
+   "both": false,
+   "why": [
+    "Germany dobio zadnja 2 međusobna kod kuće: 1:0 (14.10.2024); 2:1 (26.03.2024)"
+   ]
+  }
+ ],
+ "k2Stats": {
+  "n": 33,
+  "won": 14
+ },
+ "upsets": [
+  {
+   "fixtureId": 6533904,
+   "utc": "2026-11-17T10:30+00:00",
+   "kickoff": "11:30",
+   "date": "2026-11-17",
+   "league": "Iran · Azadegan League",
+   "home": "Havadar SC",
+   "away": "Mes Kerman",
+   "pick": "2",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Havadar SC slab kod kuće: 0,4 bod po meču u zadnjih 5"
+   ],
+   "dog": "Mes Kerman"
+  }
+ ],
+ "screened": [
+  [
+   "16.11. 20:45",
+   "INT UEFA Nations League",
+   "Germany – Netherlands",
+   0,
+   ""
+  ],
+  [
+   "16.11. 20:45",
+   "INT UEFA Nations League",
+   "Greece – Serbia",
+   23,
+   "2/1"
+  ],
+  [
+   "17.11. 03:00",
+   "USA USL Championship",
+   "New Mexico United – Sacramento Republic FC",
+   0,
+   ""
+  ],
+  [
+   "16.11. 20:30",
+   "ITA Serie C",
+   "Sorrento – Monopoli",
+   0,
+   ""
+  ],
+  [
+   "16.11. 20:45",
+   "ITA Serie C",
+   "Perugia – Torres",
+   0,
+   ""
+  ],
+  [
+   "16.11. 13:45",
+   "GRE Super League 2",
+   "Panionios – Olympiacos B",
+   6,
+   "2/1"
+  ],
+  [
+   "16.11. 14:00",
+   "GRE Super League 2",
+   "Niki Volou – Pyrgos AFC",
+   0,
+   ""
+  ],
+  [
+   "16.11. 14:00",
+   "IRN Azadegan League",
+   "Pars Jonoubi – Foolad Khuzestan B",
+   0,
+   ""
+  ],
+  [
+   "16.11. 14:30",
+   "IRN Azadegan League",
+   "Naft MIS – Qeshm Island",
+   18,
+   "2/1 · 1/2"
+  ],
+  [
+   "16.11. 14:45",
+   "IRN Azadegan League",
+   "Naft Bandar Abbas – FC Fard",
+   0,
+   ""
+  ],
+  [
+   "17.11. 11:30",
+   "IRN Azadegan League",
+   "Havadar SC – Mes Kerman",
+   0,
+   ""
+  ],
+  [
+   "16.11. 18:00",
+   "GER Frauen-Bundesliga",
+   "VfB Stuttgart (W) – Bayer Leverkusen (W)",
+   14,
+   "1/2 · 2/1"
+  ]
+ ],
+ "withData": 11,
+ "candidates": 4,
+ "tips": 1,
+ "calls": 205,
+ "detailCalls": 173,
+ "errors": 0,
+ "minutes": 1.0,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 5181836,
+   "docId": "2026-11-16_greece_serbia",
+   "utc": "2026-11-16T19:45+00:00",
+   "league": "Evropa · UEFA Nations League",
+   "stage": "UEFA Nations League A Grp. 2",
+   "home": "Greece",
+   "away": "Serbia",
+   "score": 23,
+   "cand": {
+    "sel": "2/1",
+    "score": 23
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 23
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 2,
+      "away5": 4,
+      "last10": 6,
+      "last15": 6
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 12
+     },
+     "h2h": 3
+    }
+   },
+   "h2h": [
+    "2026-09-24 Serbia–Greece 1:2 (PV 1:0)",
+    "2014-11-18 Greece–Serbia 0:2 (PV 0:0)",
+    "2010-08-11 Serbia–Greece 0:1 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-13 Netherlands–Greece 7:0 (PV 5:0)",
+    "2026-10-04 Greece–Germany 0:0 (PV 0:0)",
+    "2026-10-01 Greece–Netherlands 2:2 (PV 2:0)",
+    "2026-09-27 Germany–Greece 0:1 (PV 0:0)",
+    "2026-09-24 Serbia–Greece 1:2 (PV 1:0)",
+    "2025-11-18 Belarus–Greece 0:0 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-13 Serbia–Germany 1:3 (PV 0:2)",
+    "2026-10-04 Netherlands–Serbia 2:1 (PV 1:1)",
+    "2026-10-01 Germany–Serbia 2:0 (PV 1:0)",
+    "2026-09-27 Serbia–Netherlands 1:2 (PV 0:1)",
+    "2026-09-24 Serbia–Greece 1:2 (PV 1:0)",
+    "2025-11-16 Serbia–Latvia 2:1 (PV 0:1)",
+    "2024-11-18 Serbia–Denmark 0:0 (PV 0:0)",
+    "2024-11-15 Switzerland–Serbia 1:1 (PV 0:0)",
+    "2024-10-15 Spain–Serbia 3:0 (PV 1:0)",
+    "2024-10-12 Serbia–Switzerland 2:0 (PV 1:0)",
+    "2024-09-08 Denmark–Serbia 2:0 (PV 1:0)",
+    "2024-09-05 Serbia–Spain 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-16",
+    "kickoff": "20:45",
+    "league": "Evropa · UEFA Nations League",
+    "home": "Greece",
+    "away": "Serbia",
+    "pairId": "greece__serbia",
+    "venue": "Panthessaliko Stadio",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Serbia: 2 preokreta u zadnjih 12",
+      "src": [
+       "https://www.fotmob.com/matches/greece-vs-serbia/1rcyhf#5181836"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Zadnji međusobni 1/2 (24.09.2026); u zadnjih 10: Greece 1×, Serbia 2×",
+      "src": [
+       "https://www.fotmob.com/matches/greece-vs-serbia/1rcyhf#5181836"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 23
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 23
+    },
+    "reasoning": "Serbia, preokreti: protiv Greece 1:2 (PV 1:0) 24.09. (međusobni); protiv Latvia 2:1 (PV 0:1) 16.11.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/greece-vs-serbia/1rcyhf#5181836"
+    ],
+    "createdAt": "2026-11-16T12:06:12+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5181836
+    },
+    "fixtureId": 5181836
+   }
+  },
+  {
+   "fixtureId": 6533908,
+   "docId": "2026-11-16_naft-mis_qeshm-island",
+   "utc": "2026-11-16T13:30+00:00",
+   "league": "Iran · Azadegan League",
+   "stage": "Azadegan League",
+   "home": "Naft MIS",
+   "away": "Qeshm Island",
+   "score": 18,
+   "cand": {
+    "sel": "2/1",
+    "score": 18,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 4,
+      "away5": 5,
+      "last10": 9,
+      "last15": 9
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-08 Mes Kerman–Naft MIS 2:1 (PV 0:1)",
+    "2026-11-01 Naft MIS–Niroye Zamini 2:0 (PV 0:0)",
+    "2026-10-26 Kara Gostar–Naft MIS 2:1 (PV 0:1)",
+    "2026-10-19 Naft MIS–Saipa 1:1 (PV 1:1)",
+    "2026-10-11 Foolad Khuzestan B–Naft MIS 1:1 (PV 0:0)",
+    "2026-10-04 Naft MIS–FC Fard 1:0 (PV 1:0)",
+    "2026-09-28 Pars Jonoubi–Naft MIS 3:2 (PV 2:1)",
+    "2026-09-22 Naft MIS–Naft Bandar Abbas 0:1 (PV 0:1)",
+    "2026-09-16 Ario Islamshahr–Naft MIS 0:3 (PV 0:2)"
+   ],
+   "awayLast": [
+    "2026-11-08 Qeshm Island–Mes Rafsanjan 0:0 (PV 0:0)",
+    "2026-11-02 Shahin Bandar Ameri–Qeshm Island 1:0 (PV 1:0)",
+    "2026-10-26 Niroye Zamini–Qeshm Island 1:2 (PV 0:1)",
+    "2026-10-20 Qeshm Island–Mes Kerman 1:0 (PV 0:0)",
+    "2026-10-12 Saipa–Qeshm Island 0:1 (PV 0:0)",
+    "2026-10-04 Qeshm Island–Kara Gostar 1:0 (PV 0:0)",
+    "2026-09-27 FC Fard–Qeshm Island 0:0 (PV 0:0)",
+    "2026-09-21 Qeshm Island–Foolad Khuzestan B 2:2 (PV 1:2)",
+    "2026-09-15 Pars Jonoubi–Qeshm Island 0:0 (PV 0:0)",
+    "2026-07-11 Ario Islamshahr–Qeshm Island 1:1 (PV 0:0)",
+    "2026-07-03 Qeshm Island–Mes Shahr Babak 1:3 (PV 1:2)",
+    "2026-06-27 Kara Gostar–Qeshm Island 1:1 (PV 0:0)",
+    "2026-06-21 Qeshm Island–Naft Gachsaran 4:2 (PV 2:0)",
+    "2026-06-16 Qeshm Island–Damash 1:0 (PV 0:0)",
+    "2026-06-09 Nassaji–Qeshm Island 2:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-16",
+    "kickoff": "14:30",
+    "league": "Iran · Azadegan League",
+    "home": "Naft MIS",
+    "away": "Qeshm Island",
+    "pairId": "naft-mis__qeshm-island",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Naft MIS: 2 preokreta u zadnjih 9, 2 u zadnja 3, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-qeshm-island/pdtyn2b7#6533908"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 18,
+     "alt": "1/2"
+    },
+    "reasoning": "Naft MIS, preokreti: Mes Kerman–Naft MIS 2:1 (PV 0:1) 08.11.; Kara Gostar–Naft MIS 2:1 (PV 0:1) 26.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-qeshm-island/pdtyn2b7#6533908"
+    ],
+    "createdAt": "2026-11-16T12:06:12+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6533908
+    },
+    "fixtureId": 6533908
+   }
+  },
+  {
+   "fixtureId": 5934567,
+   "docId": "2026-11-16_vfb-stuttgart-w_bayer-leverkusen-w",
+   "utc": "2026-11-16T17:00+00:00",
+   "league": "Njemačka · Frauen-Bundesliga",
+   "stage": "Frauen-Bundesliga",
+   "home": "VfB Stuttgart (W)",
+   "away": "Bayer Leverkusen (W)",
+   "score": 14,
+   "cand": {
+    "sel": "1/2",
+    "score": 14,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 11
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-08 Mainz 05 (W)–VfB Stuttgart (W) 1:3 (PV 0:1)",
+    "2026-10-30 VfB Stuttgart (W)–SGS Essen (W) 3:0 (PV 2:0)",
+    "2026-10-24 VfB Stuttgart (W)–Eintracht Frankfurt (W) 0:3 (PV 0:0)",
+    "2026-10-19 Bayern München (W)–VfB Stuttgart (W) 5:0 (PV 2:0)",
+    "2026-10-04 VfB Stuttgart (W)–Union Berlin (W) 0:4 (PV 0:1)",
+    "2026-09-26 Turbine Potsdam (W)–VfB Stuttgart (W) 2:2 (PV 1:0)",
+    "2026-09-21 Werder Bremen (W)–VfB Stuttgart (W) 1:1 (PV 1:0)",
+    "2026-09-13 VfB Stuttgart (W)–VfL Wolfsburg (W) 0:2 (PV 0:1)",
+    "2026-09-06 Nürnberg (W)–VfB Stuttgart (W) 3:3 (PV 1:0)",
+    "2026-08-29 VfB Stuttgart (W)–Hamburger SV (W) 2:1 (PV 1:1)",
+    "2026-08-23 TSG 1899 Hoffenheim (W)–VfB Stuttgart (W) 1:2 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 Bayer Leverkusen (W)–Hamburger SV (W) 2:0 (PV 0:0)",
+    "2026-11-01 Bayern München (W)–Bayer Leverkusen (W) 1:0 (PV 0:0)",
+    "2026-10-25 Nürnberg (W)–Bayer Leverkusen (W) 2:0 (PV 0:0)",
+    "2026-10-17 Bayer Leverkusen (W)–Eintracht Frankfurt (W) 1:1 (PV 1:0)",
+    "2026-10-02 Bayer Leverkusen (W)–Werder Bremen (W) 3:2 (PV 0:2)",
+    "2026-09-27 Viktoria Berlin (W)–Bayer Leverkusen (W) 0:0 (PV 0:0)",
+    "2026-09-20 Freiburg (W)–Bayer Leverkusen (W) 1:2 (PV 1:0)",
+    "2026-09-14 Bayer Leverkusen (W)–Bayern München (W) 2:3 (PV 1:0)",
+    "2026-09-04 TSG 1899 Hoffenheim (W)–Bayer Leverkusen (W) 1:2 (PV 1:1)",
+    "2026-08-30 Bayer Leverkusen (W)–VfL Wolfsburg (W) 1:2 (PV 0:1)",
+    "2026-08-23 RB Leipzig (W)–Bayer Leverkusen (W) 0:2 (PV 0:0)",
+    "2026-05-17 Bayer Leverkusen (W)–Werder Bremen (W) 1:3 (PV 0:1)",
+    "2026-05-11 RB Leipzig (W)–Bayer Leverkusen (W) 1:3 (PV 1:2)",
+    "2026-05-03 SGS Essen (W)–Bayer Leverkusen (W) 0:4 (PV 0:2)",
+    "2026-04-26 Bayer Leverkusen (W)–Freiburg (W) 4:1 (PV 3:0)"
+   ],
+   "doc": {
+    "date": "2026-11-16",
+    "kickoff": "18:00",
+    "league": "Njemačka · Frauen-Bundesliga",
+    "home": "VfB Stuttgart (W)",
+    "away": "Bayer Leverkusen (W)",
+    "pairId": "bayer-leverkusen-w__vfb-stuttgart-w",
+    "venue": "GAZİ-Stadion auf der Waldau",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Bayer Leverkusen (W): 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/bayer-leverkusen-vs-vfb-stuttgart/ytfndhf0#5934567"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 14,
+     "alt": "2/1"
+    },
+    "reasoning": "Bayer Leverkusen (W), preokreti: protiv Werder Bremen (W) 3:2 (PV 0:2) 02.10.; Freiburg (W)–Bayer Leverkusen (W) 1:2 (PV 1:0) 20.09.; protiv Bayern München (W) 2:3 (PV 1:0) 14.09. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/bayer-leverkusen-vs-vfb-stuttgart/ytfndhf0#5934567"
+    ],
+    "createdAt": "2026-11-16T12:06:12+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5934567
+    },
+    "fixtureId": 5934567
+   }
+  },
+  {
+   "fixtureId": 6140266,
+   "docId": "2026-11-16_panionios_olympiacos-b",
+   "utc": "2026-11-16T12:45+00:00",
+   "league": "Grčka · Super League 2",
+   "stage": "Super League 2",
+   "home": "Panionios",
+   "away": "Olympiacos B",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 4
+    }
+   },
+   "h2h": [
+    "2026-03-21 Panionios–Olympiacos B 3:0 (PV 1:0)",
+    "2026-03-01 Olympiacos B–Panionios 2:1 (PV 2:0)",
+    "2025-12-03 Panionios–Olympiacos B 4:1 (PV 0:1)",
+    "2025-09-14 Olympiacos B–Panionios 1:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Athens Kallithea FC–Panionios 2:0 (PV 1:0)",
+    "2026-11-01 Panionios–Panserraikos FC 5:0 (PV 2:0)",
+    "2026-10-25 Panionios–GS Marko 0:4 (PV 0:2)",
+    "2026-10-19 Niki Volou–Panionios 1:1 (PV 1:0)",
+    "2026-10-12 Panionios–PAOK Thessaloniki B 3:0 (PV 2:0)",
+    "2026-10-04 Pyrgos AFC–Panionios 2:0 (PV 0:0)",
+    "2026-09-27 Panionios–Zakynthos APS 1:0 (PV 0:0)",
+    "2026-09-19 Anagennisi Karditsas–Panionios 0:0 (PV 0:0)",
+    "2026-09-14 Panionios–Kalamaria 1:0 (PV 1:0)",
+    "2026-09-06 Panionios–Asteras Tripolis B 2:0 (PV 2:0)",
+    "2026-08-19 Niki Volou–Panionios 0:0 (PV 0:0)",
+    "2026-03-21 Panionios–Olympiacos B 3:0 (PV 1:0)",
+    "2026-03-15 GS Marko–Panionios 2:1 (PV 1:1)",
+    "2026-03-07 Panionios–Kalamata 0:1 (PV 0:1)",
+    "2026-03-01 Olympiacos B–Panionios 2:1 (PV 2:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Olympiacos B–Hellas Syros 2:4 (PV 1:1)",
+    "2026-11-01 AE Larissa–Olympiacos B 2:1 (PV 0:0)",
+    "2026-10-24 Olympiacos B–Nestos Chrisoupolis 1:2 (PV 1:0)",
+    "2026-10-18 Panthrakikos Komotini–Olympiacos B 2:2 (PV 0:0)",
+    "2026-10-14 Olympiacos B–Athens Kallithea FC 0:1 (PV 0:0)",
+    "2026-10-11 Olympiacos B–Asteras Tripolis B 1:1 (PV 0:1)",
+    "2026-09-27 Panserraikos FC–Olympiacos B 4:1 (PV 1:1)",
+    "2026-09-20 Olympiacos B–GS Marko 2:4 (PV 0:1)",
+    "2026-09-13 Niki Volou–Olympiacos B 1:2 (PV 1:0)",
+    "2026-09-09 PAOK Thessaloniki B–Olympiacos B 1:1 (PV 0:0)",
+    "2026-03-21 Panionios–Olympiacos B 3:0 (PV 1:0)",
+    "2026-03-15 Kalamata–Olympiacos B 1:0 (PV 1:0)",
+    "2026-03-07 Olympiacos B–GS Marko 0:3 (PV 0:1)",
+    "2026-03-01 Olympiacos B–Panionios 2:1 (PV 2:0)",
+    "2026-02-21 Olympiacos B–Kalamata 0:3 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-16",
+    "kickoff": "13:45",
+    "league": "Grčka · Super League 2",
+    "home": "Panionios",
+    "away": "Olympiacos B",
+    "pairId": "olympiacos-b__panionios",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Olympiacos B: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/panionios-vs-olympiacos-b/ayyhhjam#6140266"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "Olympiacos B, preokreti: protiv Nestos Chrisoupolis 1:2 (PV 1:0) 24.10.; Niki Volou–Olympiacos B 1:2 (PV 1:0) 13.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/panionios-vs-olympiacos-b/ayyhhjam#6140266"
+    ],
+    "createdAt": "2026-11-16T12:06:12+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6140266
+    },
+    "fixtureId": 6140266
+   }
+  }
+ ]
+}
