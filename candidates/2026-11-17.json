@@ -1,17 +1,17 @@
 {
  "date": "2026-11-17",
- "generatedAt": "2026-11-17T12:32:44+00:00",
+ "generatedAt": "2026-11-17T13:38:53+00:00",
  "window": [
-  "2026-11-17T12:32+00:00",
-  "2026-11-18T12:32+00:00"
+  "2026-11-17T13:38+00:00",
+  "2026-11-18T13:38+00:00"
  ],
  "rules": {
-  "n": 4329,
+  "n": 4330,
   "base": {
-   "1/2": 0.0213,
-   "2/1": 0.031
+   "1/2": 0.0212,
+   "2/1": 0.0309
   },
-  "at": "2026-11-17T12:32:47+00:00",
+  "at": "2026-11-17T13:38:54+00:00",
   "rules": [
    {
     "id": "R1",
@@ -34,7 +34,7 @@
     "any": 1,
     "both": false,
     "base": 0.0307,
-    "lift": 1.71,
+    "lift": 1.72,
     "mult": 1.03
    },
    {
@@ -100,12 +100,12 @@
   ]
  },
  "leagues": 93,
- "fixturesSeen": 16,
- "analysed": 16,
+ "fixturesSeen": 17,
+ "analysed": 17,
  "upsetStats": {
-  "n": 40,
+  "n": 41,
   "won": 4,
-  "avgOdds": 3.95
+  "avgOdds": 3.94
  },
  "k2": [],
  "k2Stats": {
@@ -225,6 +225,13 @@
    ""
   ],
   [
+   "18.11. 14:00",
+   "IND Indian Football League",
+   "Bengaluru United – Sreenidi Deccan FC",
+   0,
+   ""
+  ],
+  [
    "18.11. 05:00",
    "JPN WE League",
    "JEF Ladies (W) – AC Nagano Parceiro Ladies (W)",
@@ -263,10 +270,10 @@
  "withData": 15,
  "candidates": 2,
  "tips": 1,
- "calls": 101,
- "detailCalls": 62,
+ "calls": 23,
+ "detailCalls": 18,
  "errors": 0,
- "minutes": 0.4,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -427,7 +434,7 @@
     "sources": [
      "https://www.fotmob.com/matches/billericay-vs-truro-city/7dx8fth#5907626"
     ],
-    "createdAt": "2026-11-17T12:32:44+00:00",
+    "createdAt": "2026-11-17T13:38:53+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -575,7 +582,7 @@
     "sources": [
      "https://www.fotmob.com/matches/macclesfield-fc-vs-oxford-city/6o7aoxp#5907104"
     ],
-    "createdAt": "2026-11-17T12:32:44+00:00",
+    "createdAt": "2026-11-17T13:38:53+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
