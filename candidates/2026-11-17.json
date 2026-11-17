@@ -1,0 +1,588 @@
+{
+ "date": "2026-11-17",
+ "generatedAt": "2026-11-17T12:32:44+00:00",
+ "window": [
+  "2026-11-17T12:32+00:00",
+  "2026-11-18T12:32+00:00"
+ ],
+ "rules": {
+  "n": 4329,
+  "base": {
+   "1/2": 0.0213,
+   "2/1": 0.031
+  },
+  "at": "2026-11-17T12:32:47+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 109,
+    "hits": 5,
+    "sel": 5,
+    "any": 8,
+    "both": false,
+    "base": 0.0281,
+    "lift": 1.63,
+    "mult": 0.94
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 19,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0307,
+    "lift": 1.71,
+    "mult": 1.03
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 102,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0308,
+    "lift": 1.59,
+    "mult": 1.08
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 756,
+    "hits": 45,
+    "sel": 31,
+    "any": 45,
+    "both": true,
+    "base": 0.0579,
+    "lift": 1.03,
+    "mult": 0.7
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 153,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0302,
+    "lift": 1.08,
+    "mult": 0.93
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 14,
+    "hits": 1,
+    "sel": 0,
+    "any": 1,
+    "both": true,
+    "base": 0.0649,
+    "lift": 1.1,
+    "mult": 0.98
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 16,
+    "hits": 2,
+    "sel": 2,
+    "any": 2,
+    "both": false,
+    "base": 0.0286,
+    "lift": 4.37,
+    "mult": 1.14
+   }
+  ]
+ },
+ "leagues": 93,
+ "fixturesSeen": 16,
+ "analysed": 16,
+ "upsetStats": {
+  "n": 40,
+  "won": 4,
+  "avgOdds": 3.95
+ },
+ "k2": [],
+ "k2Stats": {
+  "n": 36,
+  "won": 16
+ },
+ "upsets": [
+  {
+   "fixtureId": 5907625,
+   "utc": "2026-11-17T19:45+00:00",
+   "kickoff": "20:45",
+   "date": "2026-11-17",
+   "league": "Engleska · National North & South",
+   "home": "Tonbridge Angels",
+   "away": "Chesham United",
+   "pick": "2",
+   "estOdds": 4.42,
+   "flag": true,
+   "why": [
+    "Tonbridge Angels slab kod kuće: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "Chesham United"
+  },
+  {
+   "fixtureId": 5907109,
+   "utc": "2026-11-17T19:45+00:00",
+   "kickoff": "20:45",
+   "date": "2026-11-17",
+   "league": "Engleska · National North & South",
+   "home": "Spennymoor Town FC",
+   "away": "Chester FC",
+   "pick": "1",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Chester FC slab u gostima: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "Spennymoor Town FC"
+  }
+ ],
+ "screened": [
+  [
+   "17.11. 20:45",
+   "INT UEFA Nations League",
+   "Denmark – Norway",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:45",
+   "INT UEFA Nations League",
+   "Wales – Portugal",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:00",
+   "ENG EFL Trophy",
+   "Luton – Peterborough",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:45",
+   "ENG National North & South",
+   "Bedford Town – Chorley",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:45",
+   "ENG National North & South",
+   "Oxford City – Macclesfield",
+   12,
+   "1/2 · 2/1"
+  ],
+  [
+   "17.11. 20:45",
+   "ENG National North & South",
+   "South Shields – Harborough Town FC",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:45",
+   "ENG National North & South",
+   "Spalding United – Hebburn Town",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:45",
+   "ENG National North & South",
+   "Spennymoor Town FC – Chester FC",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:45",
+   "ENG National North & South",
+   "Tonbridge Angels – Chesham United",
+   0,
+   ""
+  ],
+  [
+   "17.11. 20:45",
+   "ENG National North & South",
+   "Truro City – Billericay",
+   24,
+   "2/1 · 1/2"
+  ],
+  [
+   "18.11. 00:15",
+   "ARG Primera B Metropolitana & Torneo Federal A",
+   "Olimpo – Kimberley",
+   0,
+   ""
+  ],
+  [
+   "18.11. 05:00",
+   "JPN WE League",
+   "JEF Ladies (W) – AC Nagano Parceiro Ladies (W)",
+   0,
+   ""
+  ],
+  [
+   "18.11. 06:00",
+   "JPN WE League",
+   "Albirex Niigata Ladies (W) – AS Elfen Saitama (W)",
+   0,
+   ""
+  ],
+  [
+   "18.11. 06:00",
+   "JPN WE League",
+   "Mynavi Sendai Ladies (W) – NTV Tokyo Verdy Beleza (W)",
+   0,
+   ""
+  ],
+  [
+   "18.11. 10:30",
+   "JPN WE League",
+   "Cerezo Osaka Sakai (W) – Urawa Ladies (W)",
+   0,
+   ""
+  ],
+  [
+   "18.11. 11:00",
+   "JPN WE League",
+   "Sanfrecce Hiroshima Regina (W) – Nojima Stella (W)",
+   0,
+   ""
+  ]
+ ],
+ "withData": 15,
+ "candidates": 2,
+ "tips": 1,
+ "calls": 101,
+ "detailCalls": 62,
+ "errors": 0,
+ "minutes": 0.4,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 5907626,
+   "docId": "2026-11-17_truro-city_billericay",
+   "utc": "2026-11-17T19:45+00:00",
+   "league": "Engleska · National North & South",
+   "stage": "National League South",
+   "home": "Truro City",
+   "away": "Billericay",
+   "score": 24,
+   "cand": {
+    "sel": "2/1",
+    "score": 24,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 24,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 2,
+      "last10": 3,
+      "last15": 3
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 14
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2019-02-09 Billericay–Truro City 3:2 (PV 2:1)",
+    "2018-08-04 Truro City–Billericay 0:4 (PV 0:2)"
+   ],
+   "homeLast": [
+    "2026-11-03 Truro City–West Bromwich Albion U21 1:0 (PV 0:0)",
+    "2026-10-31 Truro City–Ebbsfleet United 3:0 (PV 0:0)",
+    "2026-10-27 Truro City–Slough Town 3:1 (PV 0:1)",
+    "2026-10-24 Hampton & Richmond–Truro City 3:4 (PV 2:1)",
+    "2026-10-17 Sutton United–Truro City 1:0 (PV 1:0)",
+    "2026-10-13 Truro City–Birmingham U21 3:0 (PV 1:0)",
+    "2026-10-10 Braintree Town–Truro City 1:2 (PV 1:1)",
+    "2026-10-06 Farnham Town–Truro City 2:2 (PV 0:2)",
+    "2026-09-26 Maidstone United–Truro City 1:2 (PV 1:0)",
+    "2026-09-15 Truro City–Salisbury 0:1 (PV 0:1)",
+    "2026-09-12 Truro City–Walton and Hersham 1:1 (PV 0:0)",
+    "2026-09-08 Truro City–Leicester City U21 4:1 (PV 3:1)",
+    "2026-09-05 Truro City–Chesham United 3:1 (PV 1:1)",
+    "2026-08-31 Dorking Wanderers–Truro City 1:0 (PV 0:0)",
+    "2026-08-29 Truro City–Dagenham & Redbridge 3:0 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-07 Dagenham & Redbridge–Billericay 2:2 (PV 1:1)",
+    "2026-10-31 Billericay–Hemel Hempstead 5:0 (PV 2:0)",
+    "2026-10-27 Billericay–Hampton & Richmond 2:2 (PV 1:1)",
+    "2026-10-10 Billericay–Farnborough 4:0 (PV 2:0)",
+    "2026-09-26 Billericay–Torquay United 3:0 (PV 2:0)",
+    "2026-09-15 Billericay–Braintree Town 3:2 (PV 2:0)",
+    "2026-09-12 Maidenhead United–Billericay 2:2 (PV 1:1)",
+    "2026-09-08 Chesham United–Billericay 1:2 (PV 0:2)",
+    "2026-09-05 Billericay–Dorking Wanderers 3:3 (PV 2:2)",
+    "2026-08-31 Salisbury–Billericay 1:0 (PV 0:0)",
+    "2026-08-29 Billericay–Tonbridge Angels 2:2 (PV 2:1)",
+    "2026-08-22 Farnham Town–Billericay 2:4 (PV 1:3)",
+    "2026-08-15 AFC Totton–Billericay 1:0 (PV 0:0)",
+    "2026-08-08 Billericay–Dover 2:0 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-17",
+    "kickoff": "20:45",
+    "league": "Engleska · National North & South",
+    "home": "Truro City",
+    "away": "Billericay",
+    "pairId": "billericay__truro-city",
+    "venue": "Truro Sports Hub",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 2/1 u zadnjih 10: Truro City 3, Billericay 0",
+      "src": [
+       "https://www.fotmob.com/matches/billericay-vs-truro-city/7dx8fth#5907626"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Truro City: 3 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/billericay-vs-truro-city/7dx8fth#5907626"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 24,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 24,
+     "alt": "1/2"
+    },
+    "reasoning": "Truro City, preokreti: protiv Slough Town 3:1 (PV 0:1) 27.10.; Hampton & Richmond–Truro City 3:4 (PV 2:1) 24.10.; Maidstone United–Truro City 1:2 (PV 1:0) 26.09. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/billericay-vs-truro-city/7dx8fth#5907626"
+    ],
+    "createdAt": "2026-11-17T12:32:44+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5907626
+    },
+    "fixtureId": 5907626
+   }
+  },
+  {
+   "fixtureId": 5907104,
+   "docId": "2026-11-17_oxford-city_macclesfield",
+   "utc": "2026-11-17T19:45+00:00",
+   "league": "Engleska · National North & South",
+   "stage": "National League North",
+   "home": "Oxford City",
+   "away": "Macclesfield",
+   "score": 12,
+   "cand": {
+    "sel": "1/2",
+    "score": 12,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 3
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-01-17 Macclesfield–Oxford City 3:0 (PV 0:0)",
+    "2025-08-16 Oxford City–Macclesfield 2:1 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-10 Darlington–Oxford City 1:1 (PV 0:1)",
+    "2026-11-06 Oxford City–Leicester 2:4 (PV 1:1)",
+    "2026-10-31 Oxford City–South Shields 1:3 (PV 1:3)",
+    "2026-10-27 Oxford City–Merthyr Town 3:0 (PV 1:0)",
+    "2026-10-24 Marine–Oxford City 1:1 (PV 1:1)",
+    "2026-10-17 Torquay United–Oxford City 0:1 (PV 0:0)",
+    "2026-10-10 Hebburn Town–Oxford City 0:3 (PV 0:1)",
+    "2026-09-26 Oxford City–Morecambe 1:1 (PV 0:0)",
+    "2026-09-12 Radcliffe–Oxford City 0:3 (PV 0:2)",
+    "2026-09-08 AFC Telford United–Oxford City 1:0 (PV 0:0)",
+    "2026-09-05 Oxford City–Chorley 4:0 (PV 2:0)",
+    "2026-08-31 Worksop Town–Oxford City 0:1 (PV 0:0)",
+    "2026-08-28 Oxford City–Buxton 2:3 (PV 0:2)",
+    "2026-08-22 Spennymoor Town FC–Oxford City 1:4 (PV 1:3)",
+    "2026-08-18 Oxford City–Harborough Town FC 1:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-07 Mansfield–Macclesfield 3:0 (PV 1:0)",
+    "2026-10-31 Bedford Town–Macclesfield 0:3 (PV 0:2)",
+    "2026-10-24 Macclesfield–Hereford 1:2 (PV 0:1)",
+    "2026-10-20 Anstey Nomads–Macclesfield 0:3 (PV 0:0)",
+    "2026-10-17 Macclesfield–Anstey Nomads 1:1 (PV 0:1)",
+    "2026-10-10 Macclesfield–South Shields 4:3 (PV 2:3)",
+    "2026-09-26 Macclesfield–Harborough Town FC 1:0 (PV 1:0)",
+    "2026-09-12 Spennymoor Town FC–Macclesfield 1:1 (PV 0:1)",
+    "2026-09-08 Macclesfield–Scarborough Athletic 0:0 (PV 0:0)",
+    "2026-09-05 Merthyr Town–Macclesfield 2:1 (PV 0:0)",
+    "2026-08-31 Macclesfield–Hebburn Town 3:0 (PV 1:0)",
+    "2026-08-29 Darlington–Macclesfield 1:2 (PV 1:0)",
+    "2026-08-22 Macclesfield–Brackley Town 2:1 (PV 0:1)",
+    "2026-08-18 Spalding United–Macclesfield 0:0 (PV 0:0)",
+    "2026-08-15 Macclesfield–Radcliffe 2:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-17",
+    "kickoff": "20:45",
+    "league": "Engleska · National North & South",
+    "home": "Oxford City",
+    "away": "Macclesfield",
+    "pairId": "macclesfield__oxford-city",
+    "venue": "The MGroup Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Macclesfield: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/macclesfield-fc-vs-oxford-city/6o7aoxp#5907104"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 12,
+     "alt": "2/1"
+    },
+    "reasoning": "Macclesfield, preokreti: protiv South Shields 4:3 (PV 2:3) 10.10.; Darlington–Macclesfield 1:2 (PV 1:0) 29.08.; protiv Brackley Town 2:1 (PV 0:1) 22.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/macclesfield-fc-vs-oxford-city/6o7aoxp#5907104"
+    ],
+    "createdAt": "2026-11-17T12:32:44+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5907104
+    },
+    "fixtureId": 5907104
+   }
+  }
+ ]
+}

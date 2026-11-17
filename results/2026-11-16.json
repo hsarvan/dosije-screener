@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-16",
+ "updatedAt": "2026-11-17T12:32:44+00:00",
+ "matches": [
+  {
+   "fixtureId": 5181836,
+   "docId": "2026-11-16_greece_serbia",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 6533908,
+   "docId": "2026-11-16_naft-mis_qeshm-island",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "3-2",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6140266,
+   "docId": "2026-11-16_panionios_olympiacos-b",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5934567,
+   "docId": "2026-11-16_vfb-stuttgart-w_bayer-leverkusen-w",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "2-3",
+   "htft": "2/2"
+  }
+ ]
+}
