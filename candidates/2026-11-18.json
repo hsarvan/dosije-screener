@@ -1,0 +1,660 @@
+{
+ "date": "2026-11-18",
+ "generatedAt": "2026-11-18T12:20:07+00:00",
+ "window": [
+  "2026-11-18T12:20+00:00",
+  "2026-11-19T12:20+00:00"
+ ],
+ "rules": {
+  "n": 4344,
+  "base": {
+   "1/2": 0.0214,
+   "2/1": 0.0308
+  },
+  "at": "2026-11-18T12:20:10+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 109,
+    "hits": 5,
+    "sel": 5,
+    "any": 8,
+    "both": false,
+    "base": 0.028,
+    "lift": 1.64,
+    "mult": 0.94
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 19,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0306,
+    "lift": 1.72,
+    "mult": 1.03
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 103,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0307,
+    "lift": 1.58,
+    "mult": 1.08
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 758,
+    "hits": 45,
+    "sel": 31,
+    "any": 45,
+    "both": true,
+    "base": 0.058,
+    "lift": 1.02,
+    "mult": 0.7
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 153,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0301,
+    "lift": 1.08,
+    "mult": 0.93
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 14,
+    "hits": 1,
+    "sel": 0,
+    "any": 1,
+    "both": true,
+    "base": 0.065,
+    "lift": 1.1,
+    "mult": 0.98
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 16,
+    "hits": 2,
+    "sel": 2,
+    "any": 2,
+    "both": false,
+    "base": 0.0285,
+    "lift": 4.39,
+    "mult": 1.14
+   }
+  ]
+ },
+ "leagues": 93,
+ "fixturesSeen": 17,
+ "analysed": 17,
+ "upsetStats": {
+  "n": 43,
+  "won": 4,
+  "avgOdds": 3.95
+ },
+ "k2": [
+  {
+   "fixtureId": 6006693,
+   "utc": "2026-11-18T19:00+00:00",
+   "kickoff": "20:00",
+   "date": "2026-11-18",
+   "league": "Engleska · Women's League Cup",
+   "home": "Manchester United (W)",
+   "away": "Everton (W)",
+   "pick": "1",
+   "estOdds": 1.88,
+   "both": false,
+   "why": [
+    "Manchester United (W) dobio zadnja 2 međusobna kod kuće: 2:1 (21.03.2026); 2:0 (30.03.2025)"
+   ]
+  },
+  {
+   "fixtureId": 6006695,
+   "utc": "2026-11-18T19:00+00:00",
+   "kickoff": "20:00",
+   "date": "2026-11-18",
+   "league": "Engleska · Women's League Cup",
+   "home": "Tottenham Hotspur (W)",
+   "away": "Leicester City (W)",
+   "pick": "1",
+   "estOdds": 1.83,
+   "both": false,
+   "why": [
+    "Tottenham Hotspur (W) dobio zadnja 2 međusobna kod kuće: 3:0 (18.01.2026); 1:0 (11.01.2026)"
+   ]
+  }
+ ],
+ "k2Stats": {
+  "n": 36,
+  "won": 16
+ },
+ "upsets": [
+  {
+   "fixtureId": 6006692,
+   "utc": "2026-11-18T19:00+00:00",
+   "kickoff": "20:00",
+   "date": "2026-11-18",
+   "league": "Engleska · Women's League Cup",
+   "home": "London City Lionesses (W)",
+   "away": "Brighton (W)",
+   "pick": "2",
+   "estOdds": 5.08,
+   "flag": true,
+   "why": [
+    "Brighton (W) u usponu (+0,5), London City Lionesses (W) u padu (−0,7 boda po meču)"
+   ],
+   "dog": "Brighton (W)"
+  },
+  {
+   "fixtureId": 6006695,
+   "utc": "2026-11-18T19:00+00:00",
+   "kickoff": "20:00",
+   "date": "2026-11-18",
+   "league": "Engleska · Women's League Cup",
+   "home": "Tottenham Hotspur (W)",
+   "away": "Leicester City (W)",
+   "pick": "2",
+   "estOdds": 4.18,
+   "flag": true,
+   "why": [
+    "Tottenham Hotspur (W) slab kod kuće: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "Leicester City (W)"
+  }
+ ],
+ "screened": [
+  [
+   "19.11. 09:30",
+   "AUS Australia Championship",
+   "Lions FC – Wollongong Wolves",
+   0,
+   ""
+  ],
+  [
+   "19.11. 09:30",
+   "AUS Australia Championship",
+   "Preston Lions – South Hobart",
+   0,
+   ""
+  ],
+  [
+   "18.11. 15:30",
+   "KSA Saudi First Division",
+   "Al-Adalah – Al-Orobah FC",
+   0,
+   ""
+  ],
+  [
+   "18.11. 20:00",
+   "ESP Segunda Federación",
+   "Bergantiños CF – Sestao",
+   0,
+   ""
+  ],
+  [
+   "18.11. 20:30",
+   "ESP Segunda Federación",
+   "Salamanca CF UDS – Albacete B",
+   0,
+   ""
+  ],
+  [
+   "18.11. 19:00",
+   "GER Regionalliga",
+   "SSV Jeddeloh – 1. FC Phönix Lübeck",
+   0,
+   ""
+  ],
+  [
+   "18.11. 20:30",
+   "URU Segunda Division",
+   "Atenas – Fénix",
+   0,
+   ""
+  ],
+  [
+   "18.11. 23:30",
+   "URU Segunda Division",
+   "Colon – Oriental",
+   0,
+   ""
+  ],
+  [
+   "18.11. 14:00",
+   "IND Indian Football League",
+   "Bengaluru United – Sreenidi Deccan FC",
+   0,
+   ""
+  ],
+  [
+   "19.11. 11:30",
+   "IND Indian Football League",
+   "Dempo SC – Shillong Lajong",
+   0,
+   ""
+  ],
+  [
+   "18.11. 17:30",
+   "QAT Second Division",
+   "Al-Rayyan II – Al Mesaimeer",
+   0,
+   ""
+  ],
+  [
+   "18.11. 20:00",
+   "ENG Women's League Cup",
+   "London City Lionesses (W) – Brighton (W)",
+   25,
+   "2/1 · 1/2"
+  ],
+  [
+   "18.11. 20:00",
+   "ENG Women's League Cup",
+   "Manchester United (W) – Everton (W)",
+   0,
+   ""
+  ],
+  [
+   "18.11. 20:00",
+   "ENG Women's League Cup",
+   "Nottingham Forest WFC (W) – Liverpool (W)",
+   0,
+   ""
+  ],
+  [
+   "18.11. 20:00",
+   "ENG Women's League Cup",
+   "Tottenham Hotspur (W) – Leicester City (W)",
+   0,
+   ""
+  ],
+  [
+   "18.11. 20:00",
+   "ENG Women's League Cup",
+   "West Ham United (W) – Wolverhampton WFC (W)",
+   0,
+   ""
+  ],
+  [
+   "19.11. 10:00",
+   "JPN WE League",
+   "Omiya Ardija Ventus (W) – INAC Kobe Leonessa (W)",
+   6,
+   "1/2"
+  ]
+ ],
+ "withData": 15,
+ "candidates": 2,
+ "tips": 1,
+ "calls": 114,
+ "detailCalls": 69,
+ "errors": 0,
+ "minutes": 0.7,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 6006692,
+   "docId": "2026-11-18_london-city-lionesses-w_brighton-w",
+   "utc": "2026-11-18T19:00+00:00",
+   "league": "Engleska · Women's League Cup",
+   "stage": "Women's League Cup",
+   "home": "London City Lionesses (W)",
+   "away": "Brighton (W)",
+   "score": 25,
+   "cand": {
+    "sel": "2/1",
+    "score": 25,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 25,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 2,
+      "away5": 0,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-09-26 London City Lionesses (W)–Brighton (W) 2:0 (PV 1:0)",
+    "2026-02-01 Brighton–London City Lionesses 1:2 (PV 1:2)",
+    "2025-12-07 London City Lionesses–Brighton 0:1 (PV 0:1)",
+    "2022-11-27 London City Lionesses–Brighton 1:2 (PV 0:1)",
+    "2021-11-17 Brighton–London City Lionesses 0:1 (PV 0:0)",
+    "2018-05-20 Brighton–London City Lionesses 0:3 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-15 Arsenal (W)–London City Lionesses (W) 1:1 (PV 1:1)",
+    "2026-11-08 London City Lionesses (W)–Birmingham City (W) 4:1 (PV 2:0)",
+    "2026-11-01 London City Lionesses (W)–Manchester City (W) 1:2 (PV 0:0)",
+    "2026-10-28 London City Lionesses (W)–Crystal Palace (W) 4:2 (PV 1:0)",
+    "2026-10-25 Liverpool (W)–London City Lionesses (W) 2:2 (PV 1:2)",
+    "2026-10-21 West Ham United (W)–London City Lionesses (W) 1:2 (PV 1:2)",
+    "2026-10-18 London City Lionesses (W)–Everton (W) 2:1 (PV 2:0)",
+    "2026-10-04 Tottenham Hotspur (W)–London City Lionesses (W) 1:6 (PV 0:3)",
+    "2026-09-30 Ipswich Town WFC (W)–London City Lionesses (W) 0:1 (PV 0:0)",
+    "2026-09-26 London City Lionesses (W)–Brighton (W) 2:0 (PV 1:0)",
+    "2026-09-23 Leicester City (W)–London City Lionesses (W) 0:2 (PV 0:0)",
+    "2026-09-19 Charlton (W)–London City Lionesses (W) 1:4 (PV 1:3)",
+    "2026-09-12 West Ham United (W)–London City Lionesses (W) 2:1 (PV 1:0)",
+    "2026-09-04 London City Lionesses (W)–Manchester United (W) 2:1 (PV 1:0)",
+    "2025-11-23 Ipswich Town WFC (W)–London City Lionesses (W) 0:2 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-14 Brighton (W)–Liverpool (W) 0:3 (PV 0:1)",
+    "2026-11-11 Brighton (W)–Watford (W) 3:1 (PV 0:1)",
+    "2026-11-08 Tottenham Hotspur (W)–Brighton (W) 2:1 (PV 0:1)",
+    "2026-11-01 Brighton (W)–Crystal Palace (W) 2:1 (PV 0:1)",
+    "2026-10-28 Wolverhampton WFC (W)–Brighton (W) 0:6 (PV 0:2)",
+    "2026-10-24 Brighton (W)–West Ham United (W) 3:0 (PV 1:0)",
+    "2026-10-18 Manchester City (W)–Brighton (W) 3:2 (PV 3:2)",
+    "2026-10-04 Brighton (W)–Charlton (W) 5:1 (PV 2:1)",
+    "2026-09-30 Brighton (W)–Tottenham Hotspur (W) 0:1 (PV 0:1)",
+    "2026-09-26 London City Lionesses (W)–Brighton (W) 2:0 (PV 1:0)",
+    "2026-09-23 Brighton (W)–Charlton (W) 4:0 (PV 1:0)",
+    "2026-09-20 Brighton (W)–Aston Villa (W) 1:1 (PV 1:0)",
+    "2026-09-13 Birmingham City (W)–Brighton (W) 2:2 (PV 1:0)",
+    "2026-09-06 Brighton (W)–Arsenal (W) 0:1 (PV 0:1)",
+    "2025-11-12 Brighton (W)–Charlton (W) 0:1 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-18",
+    "kickoff": "20:00",
+    "league": "Engleska · Women's League Cup",
+    "home": "London City Lionesses (W)",
+    "away": "Brighton (W)",
+    "pairId": "brighton-w__london-city-lionesses-w",
+    "venue": "Copperjax Community Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Brighton (W): 3 preokreta u zadnjih 15, 2 u zadnja 3",
+      "src": [
+       "https://www.fotmob.com/matches/brighton-vs-london-city-lionesses/awc12a3z#6006692"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "London City Lionesses (W): WSL prije 3 dana; WSL za 3 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/brighton-vs-london-city-lionesses/awc12a3z#6006692"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Brighton (W): WSL prije 4 dana; WSL za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/brighton-vs-london-city-lionesses/awc12a3z#6006692"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "guzva",
+      "note": "WSL prije 3 dana; WSL za 3 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/brighton-vs-london-city-lionesses/awc12a3z#6006692"
+      ]
+     },
+     {
+      "team": "away",
+      "type": "guzva",
+      "note": "WSL prije 4 dana; WSL za 4 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/brighton-vs-london-city-lionesses/awc12a3z#6006692"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 25,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 25,
+     "alt": "1/2"
+    },
+    "reasoning": "Brighton (W), preokreti: protiv Watford (W) 3:1 (PV 0:1) 11.11.; Tottenham Hotspur (W)–Brighton (W) 2:1 (PV 0:1) 08.11.; protiv Crystal Palace (W) 2:1 (PV 0:1) 01.11. London City Lionesses (W): WSL prije 3 dana; WSL za 3 dana. Brighton (W): WSL prije 4 dana; WSL za 4 dana.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/brighton-vs-london-city-lionesses/awc12a3z#6006692"
+    ],
+    "createdAt": "2026-11-18T12:20:07+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6006692
+    },
+    "fixtureId": 6006692
+   }
+  },
+  {
+   "fixtureId": 1000015947,
+   "docId": "2026-11-19_omiya-ardija-ventus-w_inac-kobe-leonessa-w",
+   "utc": "2026-11-19T09:00+00:00",
+   "league": "Japan · WE League",
+   "stage": "WE League",
+   "home": "Omiya Ardija Ventus (W)",
+   "away": "INAC Kobe Leonessa (W)",
+   "score": 6,
+   "cand": {
+    "sel": "1/2",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-04-05 INAC Kobe Leonessa (W)–Omiya Ardija Ventus (W) 2:1 (PV 1:0)",
+    "2025-08-30 Omiya Ardija Ventus (W)–INAC Kobe Leonessa (W) 0:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-15 Omiya Ardija Ventus (W)–Mynavi Sendai Ladies (W) 1:0 (PV 0:0)",
+    "2026-11-08 JEF Ladies (W)–Omiya Ardija Ventus (W) 2:0 (PV 0:0)",
+    "2026-10-31 NTV Tokyo Verdy Beleza (W)–Omiya Ardija Ventus (W) 2:1 (PV 1:0)",
+    "2026-10-28 AC Nagano Parceiro Ladies (W)–Omiya Ardija Ventus (W) 0:1 (PV 0:0)",
+    "2026-10-25 Omiya Ardija Ventus (W)–Cerezo Osaka Sakai (W) 1:2 (PV 0:0)",
+    "2026-10-18 Omiya Ardija Ventus (W)–AS Elfen Saitama (W) 0:2 (PV 0:0)",
+    "2026-09-05 Omiya Ardija Ventus (W)–Albirex Niigata Ladies (W) 2:1 (PV 0:1)",
+    "2026-08-29 Sanfrecce Hiroshima Regina (W)–Omiya Ardija Ventus (W) 2:0 (PV 1:0)",
+    "2026-08-22 Omiya Ardija Ventus (W)–Urawa Ladies (W) 0:1 (PV 0:1)",
+    "2026-05-16 Omiya Ardija Ventus (W)–Nojima Stella (W) 0:4 (PV 0:2)",
+    "2026-05-10 Omiya Ardija Ventus (W)–JEF Ladies (W) 1:1 (PV 0:0)",
+    "2026-05-02 Albirex Niigata Ladies (W)–Omiya Ardija Ventus (W) 0:0 (PV 0:0)",
+    "2026-04-26 Omiya Ardija Ventus (W)–Urawa Ladies (W) 2:0 (PV 1:0)",
+    "2026-04-05 INAC Kobe Leonessa (W)–Omiya Ardija Ventus (W) 2:1 (PV 1:0)",
+    "2026-02-22 AS Elfen Saitama (W)–Omiya Ardija Ventus (W) 0:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-15 INAC Kobe Leonessa (W)–Cerezo Osaka Sakai (W) 1:1 (PV 1:0)",
+    "2026-10-24 Urawa Ladies (W)–INAC Kobe Leonessa (W) 2:0 (PV 2:0)",
+    "2026-10-21 INAC Kobe Leonessa (W)–JEF Ladies (W) 1:2 (PV 0:1)",
+    "2026-10-18 Mynavi Sendai Ladies (W)–INAC Kobe Leonessa (W) 3:4 (PV 0:2)",
+    "2026-09-06 Nojima Stella (W)–INAC Kobe Leonessa (W) 1:4 (PV 1:0)",
+    "2026-09-02 INAC Kobe Leonessa (W)–AC Nagano Parceiro Ladies (W) 2:2 (PV 1:2)",
+    "2026-08-30 AS Elfen Saitama (W)–INAC Kobe Leonessa (W) 2:1 (PV 1:0)",
+    "2026-08-22 INAC Kobe Leonessa (W)–Sanfrecce Hiroshima Regina (W) 2:1 (PV 0:1)",
+    "2026-05-16 INAC Kobe Leonessa (W)–Sanfrecce Hiroshima Regina (W) 0:1 (PV 0:0)",
+    "2026-05-10 AS Elfen Saitama (W)–INAC Kobe Leonessa (W) 0:1 (PV 0:0)",
+    "2026-05-03 INAC Kobe Leonessa (W)–AC Nagano Parceiro Ladies (W) 5:1 (PV 2:0)",
+    "2026-04-25 Mynavi Sendai Ladies (W)–INAC Kobe Leonessa (W) 1:2 (PV 0:0)",
+    "2026-04-05 INAC Kobe Leonessa (W)–Omiya Ardija Ventus (W) 2:1 (PV 1:0)",
+    "2026-03-29 INAC Kobe Leonessa (W)–JEF Ladies (W) 4:0 (PV 0:0)",
+    "2026-02-22 NTV Tokyo Verdy Beleza (W)–INAC Kobe Leonessa (W) 0:2 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-19",
+    "kickoff": "10:00",
+    "league": "Japan · WE League",
+    "home": "Omiya Ardija Ventus (W)",
+    "away": "INAC Kobe Leonessa (W)",
+    "pairId": "inac-kobe-leonessa-w__omiya-ardija-ventus-w",
+    "venue": "NACK5 Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "INAC Kobe Leonessa (W): 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/inac-kobe-leonessa-vs-omiya-ardija-ventus/mgez8epp#1000015947"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 6
+    },
+    "reasoning": "INAC Kobe Leonessa (W), preokreti: Nojima Stella (W)–INAC Kobe Leonessa (W) 1:4 (PV 1:0) 06.09.; protiv Sanfrecce Hiroshima Regina (W) 2:1 (PV 0:1) 22.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/inac-kobe-leonessa-vs-omiya-ardija-ventus/mgez8epp#1000015947"
+    ],
+    "createdAt": "2026-11-18T12:20:07+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000015947
+    },
+    "fixtureId": 1000015947
+   }
+  }
+ ]
+}
