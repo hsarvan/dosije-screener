@@ -1,0 +1,1089 @@
+{
+ "date": "2026-11-19",
+ "generatedAt": "2026-11-19T12:14:23+00:00",
+ "window": [
+  "2026-11-19T12:14+00:00",
+  "2026-11-20T12:14+00:00"
+ ],
+ "rules": {
+  "n": 4361,
+  "base": {
+   "1/2": 0.0213,
+   "2/1": 0.0307
+  },
+  "at": "2026-11-19T12:14:27+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 109,
+    "hits": 5,
+    "sel": 5,
+    "any": 8,
+    "both": false,
+    "base": 0.028,
+    "lift": 1.64,
+    "mult": 0.94
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 19,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0305,
+    "lift": 1.72,
+    "mult": 1.03
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 103,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0306,
+    "lift": 1.59,
+    "mult": 1.08
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 760,
+    "hits": 45,
+    "sel": 31,
+    "any": 45,
+    "both": true,
+    "base": 0.0578,
+    "lift": 1.02,
+    "mult": 0.7
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 155,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0299,
+    "lift": 1.08,
+    "mult": 0.93
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 14,
+    "hits": 1,
+    "sel": 0,
+    "any": 1,
+    "both": true,
+    "base": 0.0642,
+    "lift": 1.11,
+    "mult": 0.99
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 16,
+    "hits": 2,
+    "sel": 2,
+    "any": 2,
+    "both": false,
+    "base": 0.0282,
+    "lift": 4.43,
+    "mult": 1.14
+   }
+  ]
+ },
+ "leagues": 93,
+ "fixturesSeen": 25,
+ "analysed": 25,
+ "upsetStats": {
+  "n": 45,
+  "won": 5,
+  "avgOdds": 3.98
+ },
+ "k2": [
+  {
+   "fixtureId": 1000024456,
+   "utc": "2026-11-20T00:45+00:00",
+   "kickoff": "01:45",
+   "date": "2026-11-20",
+   "league": "Kolumbija · Primera B",
+   "home": "Real Cundinamarca",
+   "away": "Deportes Quindío",
+   "pick": "1",
+   "estOdds": 1.98,
+   "both": true,
+   "why": [
+    "Real Cundinamarca dobio zadnja 2 međusobna kod kuće: 3:1 (21.09.2026); 3:1 (19.09.2025)",
+    "Deportes Quindío dobio zadnji kod sebe: 2:0 (29.10.2026), pravo 3 za 3"
+   ]
+  },
+  {
+   "fixtureId": 6580834,
+   "utc": "2026-11-20T03:00+00:00",
+   "kickoff": "04:00",
+   "date": "2026-11-20",
+   "league": "SAD · MLS",
+   "home": "Seattle Sounders",
+   "away": "Salt Lake",
+   "pick": "1",
+   "estOdds": 1.83,
+   "both": true,
+   "why": [
+    "Seattle Sounders dobio zadnja 2 međusobna kod kuće: 2:0 (24.09.2026); 1:0 (12.10.2025)",
+    "Salt Lake dobio zadnji kod sebe: 2:1 (01.03.2026), pravo 3 za 3"
+   ]
+  },
+  {
+   "fixtureId": 6011910,
+   "utc": "2026-11-20T08:30+00:00",
+   "kickoff": "09:30",
+   "date": "2026-11-20",
+   "league": "Indonezija · Super League",
+   "home": "PSS Sleman",
+   "away": "Arema",
+   "pick": "1",
+   "estOdds": 2.31,
+   "both": true,
+   "why": [
+    "PSS Sleman dobio zadnja 2 međusobna kod kuće: 3:1 (20.09.2024); 4:1 (15.04.2024)",
+    "Arema dobio zadnji kod sebe: 6:2 (17.02.2025), pravo 3 za 3"
+   ]
+  },
+  {
+   "fixtureId": 6011911,
+   "utc": "2026-11-20T12:00+00:00",
+   "kickoff": "13:00",
+   "date": "2026-11-20",
+   "league": "Indonezija · Super League",
+   "home": "Dewa United FC",
+   "away": "Persita",
+   "pick": "1",
+   "estOdds": 1.65,
+   "both": false,
+   "why": [
+    "Dewa United FC dobio zadnja 2 međusobna kod kuće: 1:0 (29.11.2025); 3:0 (09.05.2025)"
+   ]
+  }
+ ],
+ "k2Stats": {
+  "n": 38,
+  "won": 18
+ },
+ "upsets": [
+  {
+   "fixtureId": 6580834,
+   "utc": "2026-11-20T03:00+00:00",
+   "kickoff": "04:00",
+   "date": "2026-11-20",
+   "league": "SAD · MLS",
+   "home": "Seattle Sounders",
+   "away": "Salt Lake",
+   "pick": "2",
+   "estOdds": 4.18,
+   "flag": true,
+   "why": [
+    "Salt Lake u usponu (+1,3), Seattle Sounders u padu (−0,5 boda po meču)"
+   ],
+   "dog": "Salt Lake"
+  },
+  {
+   "fixtureId": 1000024456,
+   "utc": "2026-11-20T00:45+00:00",
+   "kickoff": "01:45",
+   "date": "2026-11-20",
+   "league": "Kolumbija · Primera B",
+   "home": "Real Cundinamarca",
+   "away": "Deportes Quindío",
+   "pick": "2",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Real Cundinamarca slab kod kuće: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "Deportes Quindío"
+  }
+ ],
+ "screened": [
+  [
+   "20.11. 09:40",
+   "AUS A-League",
+   "Western Sydney – Adelaide United",
+   14,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 09:30",
+   "IDN Super League",
+   "Garudayaksa FC – Madura United",
+   12,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 09:30",
+   "IDN Super League",
+   "PSS Sleman – Arema",
+   0,
+   ""
+  ],
+  [
+   "20.11. 13:00",
+   "IDN Super League",
+   "Dewa United FC – Persita",
+   0,
+   ""
+  ],
+  [
+   "20.11. 01:30",
+   "USA MLS",
+   "Orlando – Cincinnati",
+   0,
+   ""
+  ],
+  [
+   "20.11. 04:00",
+   "USA MLS",
+   "Seattle Sounders – Salt Lake",
+   0,
+   ""
+  ],
+  [
+   "20.11. 12:00",
+   "ARM Premier League",
+   "Van – Ararat Armenia",
+   0,
+   ""
+  ],
+  [
+   "20.11. 11:00",
+   "JPN J. League",
+   "Kashima Antlers – Shimizu S-Pulse",
+   0,
+   ""
+  ],
+  [
+   "20.11. 11:00",
+   "JPN J. League",
+   "Kashiwa Reysol – JEF United Chiba",
+   30,
+   "2/1 · 1/2"
+  ],
+  [
+   "20.11. 11:00",
+   "JPN J. League",
+   "Vissel Kobe – Mito Hollyhock",
+   0,
+   ""
+  ],
+  [
+   "20.11. 12:35",
+   "CHN FA Cup",
+   "Beijing Guoan – Shanghai Port",
+   22,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 09:30",
+   "AUS Australia Championship",
+   "South Melbourne – Canberra Croatia",
+   0,
+   ""
+  ],
+  [
+   "20.11. 09:30",
+   "AUS Australia Championship",
+   "Sydney United 58 – Sutherland Sharks",
+   0,
+   ""
+  ],
+  [
+   "19.11. 20:45",
+   "FRA Ligue 3",
+   "Amiens – Caen",
+   0,
+   ""
+  ],
+  [
+   "19.11. 16:00",
+   "BUL Second Professional League",
+   "Dobrudzha Dobrich – Fratria",
+   0,
+   ""
+  ],
+  [
+   "20.11. 13:00",
+   "THA Thai League 2",
+   "Police Tero FC – Chanthaburi FC",
+   0,
+   ""
+  ],
+  [
+   "20.11. 12:30",
+   "POL II Liga",
+   "Swit Skolwin – Stal Stalowa Wola",
+   0,
+   ""
+  ],
+  [
+   "19.11. 19:00",
+   "DEN 1. Division",
+   "Fredericia – Hillerød",
+   0,
+   ""
+  ],
+  [
+   "19.11. 23:30",
+   "COL Primera B",
+   "Independiente Valle del Cauca – Envigado",
+   0,
+   ""
+  ],
+  [
+   "19.11. 23:30",
+   "COL Primera B",
+   "Unión Magdalena – Boca Juniors de Cali",
+   0,
+   ""
+  ],
+  [
+   "20.11. 01:45",
+   "COL Primera B",
+   "Real Cartagena – Tigres FC",
+   0,
+   ""
+  ],
+  [
+   "20.11. 01:45",
+   "COL Primera B",
+   "Real Cundinamarca – Deportes Quindío",
+   0,
+   ""
+  ],
+  [
+   "19.11. 14:00",
+   "IND Indian Football League",
+   "Samaleswari SC – Nagaland United",
+   0,
+   ""
+  ],
+  [
+   "20.11. 11:30",
+   "IND Indian Football League",
+   "Rajasthan United FC – Chanmari FC",
+   0,
+   ""
+  ],
+  [
+   "20.11. 06:50",
+   "AUS A-League Women",
+   "Western Sydney Wanderers FC (W) – Wellington Phoenix (W)",
+   0,
+   ""
+  ]
+ ],
+ "withData": 23,
+ "candidates": 4,
+ "tips": 2,
+ "calls": 206,
+ "detailCalls": 137,
+ "errors": 0,
+ "minutes": 0.9,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 5803661,
+   "docId": "2026-11-20_kashiwa-reysol_jef-united-chiba",
+   "utc": "2026-11-20T10:00+00:00",
+   "league": "Japan · J. League",
+   "stage": "J. League",
+   "home": "Kashiwa Reysol",
+   "away": "JEF United Chiba",
+   "score": 30,
+   "cand": {
+    "sel": "2/1",
+    "score": 30,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 30,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-05-23 Kashiwa Reysol–JEF United Chiba 4:2 (PV 2:1)",
+    "2026-03-07 JEF United Chiba–Kashiwa Reysol 2:1 (PV 0:0)",
+    "2019-10-20 JEF United Chiba–Kashiwa Reysol 0:3 (PV 0:2)",
+    "2019-06-22 Kashiwa Reysol–JEF United Chiba 2:0 (PV 2:0)",
+    "2010-09-19 JEF United Chiba–Kashiwa Reysol 2:3 (PV 1:2)",
+    "2010-07-25 Kashiwa Reysol–JEF United Chiba 2:2 (PV 1:1)"
+   ],
+   "homeLast": [
+    "2026-11-15 Kashiwa Reysol–Kawasaki Frontale 5:4 (PV 1:3)",
+    "2026-11-11 Kawasaki Frontale–Kashiwa Reysol 1:2 (PV 0:0)",
+    "2026-11-07 Kashiwa Reysol–Kawasaki Frontale 2:1 (PV 1:1)",
+    "2026-11-03 Kashiwa Reysol–Daejeon Hana Citizen 2:0 (PV 0:0)",
+    "2026-10-31 Kashiwa Reysol–Urawa Red Diamonds 4:0 (PV 1:0)",
+    "2026-10-27 Ratchaburi FC–Kashiwa Reysol 0:0 (PV 0:0)",
+    "2026-10-24 Kashima Antlers–Kashiwa Reysol 2:3 (PV 1:2)",
+    "2026-10-21 FC Tokyo–Kashiwa Reysol 0:0 (PV 0:0)",
+    "2026-10-17 Kashiwa Reysol–Nagoya Grampus 1:3 (PV 1:2)",
+    "2026-10-14 Kashiwa Reysol–Port FC 5:1 (PV 5:0)",
+    "2026-10-09 Kashiwa Reysol–Vissel Kobe 4:2 (PV 1:0)",
+    "2026-10-03 Kashiwa Reysol–Gamba Osaka 3:3 (PV 1:1)",
+    "2026-09-23 Kashiwa Reysol–FC Imabari 4:0 (PV 2:0)",
+    "2026-09-20 Machida Zelvia–Kashiwa Reysol 2:4 (PV 1:0)",
+    "2026-09-16 Jeonbuk Hyundai Motors FC–Kashiwa Reysol 2:1 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-08 JEF United Chiba–Mito Hollyhock 1:0 (PV 0:0)",
+    "2026-11-01 JEF United Chiba–Avispa Fukuoka 3:0 (PV 1:0)",
+    "2026-10-25 Cerezo Osaka–JEF United Chiba 2:2 (PV 0:1)",
+    "2026-10-21 Urawa Red Diamonds–JEF United Chiba 3:2 (PV 1:1)",
+    "2026-10-17 JEF United Chiba–Yokohama F.Marinos 0:0 (PV 0:0)",
+    "2026-10-11 JEF United Chiba–V-Varen Nagasaki 1:1 (PV 1:0)",
+    "2026-10-07 Fagiano Okayama FC–JEF United Chiba 1:0 (PV 0:0)",
+    "2026-09-29 Júbilo Iwata–JEF United Chiba 4:2 (PV 2:1)",
+    "2026-09-19 Shimizu S-Pulse–JEF United Chiba 2:1 (PV 0:1)",
+    "2026-09-13 Tokyo Verdy–JEF United Chiba 1:1 (PV 0:0)",
+    "2026-09-09 Kamatamare Sanuki–JEF United Chiba 0:2 (PV 0:1)",
+    "2026-09-06 JEF United Chiba–Gamba Osaka 2:0 (PV 1:0)",
+    "2026-09-02 JEF United Chiba–Fagiano Okayama FC 1:2 (PV 1:1)",
+    "2026-08-29 Kawasaki Frontale–JEF United Chiba 4:2 (PV 4:2)",
+    "2026-08-26 JEF United Chiba–Azul Claro Numazu 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "11:00",
+    "league": "Japan · J. League",
+    "home": "Kashiwa Reysol",
+    "away": "JEF United Chiba",
+    "pairId": "jef-united-chiba__kashiwa-reysol",
+    "venue": "SANKYO FRONTIER Kashiwa Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Kashiwa Reysol: 3 preokreta u zadnjih 15, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/kashiwa-reysol-vs-jef-united-chiba/2tedyo#5803661"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Kashiwa Reysol preokret u zadnjem meču, JEF United Chiba 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/kashiwa-reysol-vs-jef-united-chiba/2tedyo#5803661"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Kashiwa Reysol: AFC Champions League Elite East za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/kashiwa-reysol-vs-jef-united-chiba/2tedyo#5803661"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "rotacija",
+      "note": "AFC Champions League Elite East za 4 dana",
+      "impact": 2,
+      "src": [
+       "https://www.fotmob.com/matches/kashiwa-reysol-vs-jef-united-chiba/2tedyo#5803661"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 30,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 30,
+     "alt": "1/2"
+    },
+    "reasoning": "Kashiwa Reysol, preokreti: protiv Kawasaki Frontale 5:4 (PV 1:3) 15.11.; Machida Zelvia–Kashiwa Reysol 2:4 (PV 1:0) 20.09.; Jeonbuk Hyundai Motors FC–Kashiwa Reysol 2:1 (PV 0:1) 16.09. JEF United Chiba, preokreti: Shimizu S-Pulse–JEF United Chiba 2:1 (PV 0:1) 19.09. Kashiwa Reysol: AFC Champions League Elite East za 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog….",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/kashiwa-reysol-vs-jef-united-chiba/2tedyo#5803661"
+    ],
+    "createdAt": "2026-11-19T12:14:23+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5803661
+    },
+    "fixtureId": 5803661
+   }
+  },
+  {
+   "fixtureId": 6146317,
+   "docId": "2026-11-20_beijing-guoan_shanghai-port",
+   "utc": "2026-11-20T11:35+00:00",
+   "league": "Kina · FA Cup",
+   "stage": "Cup",
+   "home": "Beijing Guoan",
+   "away": "Shanghai Port",
+   "score": 22,
+   "cand": {
+    "sel": "1/2",
+    "score": 22,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 22,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-09-05 Shanghai Port–Beijing Guoan 0:0 (PV 0:0)",
+    "2026-05-10 Beijing Guoan–Shanghai Port 2:2 (PV 0:1)",
+    "2026-03-01 Shanghai Port–Beijing Guoan 0:2 (PV 0:1)",
+    "2025-09-21 Beijing Guoan–Shanghai Port 2:3 (PV 1:1)",
+    "2025-05-01 Shanghai Port–Beijing Guoan 1:2 (PV 1:1)",
+    "2024-07-12 Shanghai Port–Beijing Guoan 5:1 (PV 3:1)"
+   ],
+   "homeLast": [
+    "2026-11-08 Beijing Guoan–Chongqing Tongliang Long 1:0 (PV 0:0)",
+    "2026-11-03 Port FC–Beijing Guoan 7:4 (PV 3:4)",
+    "2026-10-27 Beijing Guoan–Jeonbuk Hyundai Motors FC 2:2 (PV 1:1)",
+    "2026-10-24 Henan FC–Beijing Guoan 3:4 (PV 3:0)",
+    "2026-10-18 Beijing Guoan–Qingdao West Coast 1:0 (PV 0:0)",
+    "2026-10-13 Buriram United–Beijing Guoan 0:1 (PV 0:0)",
+    "2026-10-09 Qingdao Hainiu–Beijing Guoan 0:3 (PV 0:2)",
+    "2026-09-15 Beijing Guoan–Pohang Steelers 3:1 (PV 2:1)",
+    "2026-09-05 Shanghai Port–Beijing Guoan 0:0 (PV 0:0)",
+    "2026-09-01 Beijing Guoan–Lanzhou Longyuan Athletic 3:1 (PV 1:0)",
+    "2026-08-28 Dalian Yingbo–Beijing Guoan 1:1 (PV 0:1)",
+    "2026-08-22 Beijing Guoan–Yunnan Yukun 3:3 (PV 1:0)",
+    "2026-08-18 Shanghai Shenhua–Beijing Guoan 0:3 (PV 0:1)",
+    "2026-08-15 Tianjin Jinmen Tiger–Beijing Guoan 2:4 (PV 0:2)",
+    "2026-08-07 Beijing Guoan–Shenzhen Peng City 4:0 (PV 2:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Shanghai Port–Liaoning Tieren 6:1 (PV 3:0)",
+    "2026-11-03 Newcastle Jets–Shanghai Port 2:4 (PV 0:2)",
+    "2026-10-27 Shanghai Port–Công An Hà Nội 2:3 (PV 1:1)",
+    "2026-10-24 Tianjin Jinmen Tiger–Shanghai Port 1:3 (PV 0:1)",
+    "2026-10-18 Shanghai Port–Chengdu Rongcheng FC 3:0 (PV 0:0)",
+    "2026-10-13 Shanghai Port–Daejeon Hana Citizen 1:1 (PV 0:0)",
+    "2026-10-09 Zhejiang Professional–Shanghai Port 2:4 (PV 1:2)",
+    "2026-09-15 Ratchaburi FC–Shanghai Port 4:6 (PV 0:3)",
+    "2026-09-05 Shanghai Port–Beijing Guoan 0:0 (PV 0:0)",
+    "2026-09-01 Shandong Taishan–Shanghai Port 0:3 (PV 0:2)",
+    "2026-08-28 Shenzhen Peng City–Shanghai Port 0:1 (PV 0:0)",
+    "2026-08-23 Shanghai Port–Qingdao Hainiu 2:1 (PV 1:1)",
+    "2026-08-19 Shanghai Port–Dalian Yingbo 1:1 (PV 0:1)",
+    "2026-08-14 Wuhan Three Towns–Shanghai Port 2:3 (PV 1:0)",
+    "2026-08-09 Chongqing Tongliang Long–Shanghai Port 2:3 (PV 2:2)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "12:35",
+    "league": "Kina · FA Cup",
+    "home": "Beijing Guoan",
+    "away": "Shanghai Port",
+    "pairId": "beijing-guoan__shanghai-port",
+    "venue": "Workers' Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Beijing Guoan: 2 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/beijing-guoan-vs-shanghai-port/9g2g0by#6146317"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Beijing Guoan: AFC Champions League Elite East za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/beijing-guoan-vs-shanghai-port/9g2g0by#6146317"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Shanghai Port: AFC Champions League Elite East za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/beijing-guoan-vs-shanghai-port/9g2g0by#6146317"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "rotacija",
+      "note": "AFC Champions League Elite East za 4 dana",
+      "impact": 2,
+      "src": [
+       "https://www.fotmob.com/matches/beijing-guoan-vs-shanghai-port/9g2g0by#6146317"
+      ]
+     },
+     {
+      "team": "away",
+      "type": "rotacija",
+      "note": "AFC Champions League Elite East za 4 dana",
+      "impact": 2,
+      "src": [
+       "https://www.fotmob.com/matches/beijing-guoan-vs-shanghai-port/9g2g0by#6146317"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 22,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 22,
+     "alt": "2/1"
+    },
+    "reasoning": "Beijing Guoan, preokreti: Port FC–Beijing Guoan 7:4 (PV 3:4) 03.11.; Henan FC–Beijing Guoan 3:4 (PV 3:0) 24.10. Beijing Guoan: AFC Champions League Elite East za 4 dana. Shanghai Port: AFC Champions League Elite East za 4 dana. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/beijing-guoan-vs-shanghai-port/9g2g0by#6146317"
+    ],
+    "createdAt": "2026-11-19T12:14:23+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6146317
+    },
+    "fixtureId": 6146317
+   }
+  },
+  {
+   "fixtureId": 1000017581,
+   "docId": "2026-11-20_western-sydney_adelaide-united",
+   "utc": "2026-11-20T08:40+00:00",
+   "league": "Australija · A-League",
+   "stage": "A-League",
+   "home": "Western Sydney",
+   "away": "Adelaide United",
+   "score": 14,
+   "cand": {
+    "sel": "1/2",
+    "score": 14,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-03-20 Western Sydney–Adelaide United 2:4 (PV 1:2)",
+    "2025-12-27 Adelaide United–Western Sydney 3:2 (PV 1:0)",
+    "2025-11-07 Adelaide United–Western Sydney 2:0 (PV 0:0)",
+    "2024-12-27 Adelaide United–Western Sydney Wanderers FC 2:3 (PV 2:1)",
+    "2024-11-02 Western Sydney Wanderers FC–Adelaide United 3:4 (PV 1:3)",
+    "2024-09-12 Adelaide United–Western Sydney Wanderers FC 1:1 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 Melbourne City FC–Western Sydney 2:1 (PV 1:1)",
+    "2026-10-31 Macarthur FC–Western Sydney 0:0 (PV 0:0)",
+    "2026-10-24 Western Sydney–Auckland FC 5:2 (PV 1:1)",
+    "2026-10-16 Sydney FC–Western Sydney 0:0 (PV 0:0)",
+    "2026-04-25 Western Sydney–Melbourne Victory 0:2 (PV 0:0)",
+    "2026-04-18 Wellington Phoenix–Western Sydney 2:1 (PV 1:1)",
+    "2026-04-11 Western Sydney–Sydney FC 0:2 (PV 0:1)",
+    "2026-04-04 Melbourne City FC–Western Sydney 3:0 (PV 2:0)",
+    "2026-03-20 Western Sydney–Adelaide United 2:4 (PV 1:2)",
+    "2026-03-13 Brisbane Roar FC–Western Sydney 2:2 (PV 1:2)",
+    "2026-03-07 Newcastle Jets–Western Sydney 2:1 (PV 0:1)",
+    "2026-02-28 Macarthur FC–Western Sydney 0:4 (PV 0:3)",
+    "2026-02-22 Central Coast–Western Sydney 3:2 (PV 0:1)",
+    "2026-02-13 Western Sydney–Wellington Phoenix 2:2 (PV 2:0)",
+    "2026-02-07 Western Sydney–Melbourne City FC 1:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Adelaide United–Melbourne Victory 2:2 (PV 1:0)",
+    "2026-11-05 Lion City Sailors FC–Adelaide United 5:0 (PV 3:0)",
+    "2026-11-01 Perth Glory–Adelaide United 4:0 (PV 3:0)",
+    "2026-10-29 Adelaide United–Lion City Sailors FC 0:2 (PV 0:0)",
+    "2026-10-25 Sydney FC–Adelaide United 2:1 (PV 0:1)",
+    "2026-10-15 BG Pathum United–Adelaide United 1:2 (PV 1:1)",
+    "2026-09-17 Adelaide United–Tai Po 3:0 (PV 1:0)",
+    "2026-08-11 Adelaide United–Công An Hà Nội 0:2 (PV 0:1)",
+    "2026-07-30 South Melbourne–Adelaide United 2:1 (PV 1:1)",
+    "2026-05-15 Adelaide United–Auckland FC 0:3 (PV 0:1)",
+    "2026-05-09 Auckland FC–Adelaide United 1:1 (PV 1:0)",
+    "2026-04-26 Melbourne City FC–Adelaide United 1:2 (PV 1:0)",
+    "2026-04-19 Adelaide United–Macarthur FC 3:1 (PV 0:1)",
+    "2026-04-11 Newcastle Jets–Adelaide United 1:1 (PV 0:0)",
+    "2026-04-03 Adelaide United–Auckland FC 1:1 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "09:40",
+    "league": "Australija · A-League",
+    "home": "Western Sydney",
+    "away": "Adelaide United",
+    "pairId": "adelaide-united__western-sydney",
+    "venue": "CommBank Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Adelaide United: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/adelaide-united-vs-western-sydney-wanderers-fc/pal53vv#1000017581"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 14,
+     "alt": "2/1"
+    },
+    "reasoning": "Adelaide United, preokreti: Sydney FC–Adelaide United 2:1 (PV 0:1) 25.10.; Melbourne City FC–Adelaide United 1:2 (PV 1:0) 26.04.; protiv Macarthur FC 3:1 (PV 0:1) 19.04. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/adelaide-united-vs-western-sydney-wanderers-fc/pal53vv#1000017581"
+    ],
+    "createdAt": "2026-11-19T12:14:23+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000017581
+    },
+    "fixtureId": 1000017581
+   }
+  },
+  {
+   "fixtureId": 6011909,
+   "docId": "2026-11-20_garudayaksa_madura-united",
+   "utc": "2026-11-20T08:30+00:00",
+   "league": "Indonezija · Super League",
+   "stage": "Super League",
+   "home": "Garudayaksa FC",
+   "away": "Madura United",
+   "score": 12,
+   "cand": {
+    "sel": "1/2",
+    "score": 12,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 4,
+      "away5": 5,
+      "last10": 9,
+      "last15": 9
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-07 Persijap Jepara–Garudayaksa FC 1:2 (PV 0:1)",
+    "2026-11-01 Garudayaksa FC–PSS Sleman 3:1 (PV 2:0)",
+    "2026-10-25 Garudayaksa FC–Persib Bandung 1:2 (PV 0:1)",
+    "2026-10-21 Bali United FC–Garudayaksa FC 5:0 (PV 1:0)",
+    "2026-10-17 Garudayaksa FC–Arema 3:1 (PV 2:1)",
+    "2026-10-10 Persita–Garudayaksa FC 2:1 (PV 0:0)",
+    "2026-09-19 Persebaya Surabaya–Garudayaksa FC 1:1 (PV 0:0)",
+    "2026-09-11 Garudayaksa FC–Persik 0:2 (PV 0:1)",
+    "2026-09-06 Java United F.C.–Garudayaksa FC 1:1 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-06 Madura United–Arema 3:0 (PV 2:0)",
+    "2026-10-31 PSM Makassar–Madura United 0:1 (PV 0:1)",
+    "2026-10-26 Persebaya Surabaya–Madura United 3:1 (PV 1:0)",
+    "2026-10-22 Madura United–Persib Bandung 1:0 (PV 0:0)",
+    "2026-10-16 Madura United–Bhayangkara Presisi Lampung FC 3:3 (PV 0:1)",
+    "2026-10-09 Persik–Madura United 2:0 (PV 2:0)",
+    "2026-09-18 Madura United–PSIM Yogyakarta 2:1 (PV 0:1)",
+    "2026-09-12 PSS Sleman–Madura United 1:3 (PV 0:1)",
+    "2026-09-06 Madura United–Persijap Jepara 2:0 (PV 0:0)",
+    "2026-05-23 Madura United–PSM Makassar 2:0 (PV 1:0)",
+    "2026-05-17 PSIM Yogyakarta–Madura United 2:1 (PV 2:0)",
+    "2026-05-11 Bhayangkara Presisi Lampung FC–Madura United 3:1 (PV 0:1)",
+    "2026-05-05 Madura United–Bali United FC 2:0 (PV 1:0)",
+    "2026-04-29 Semen Padang–Madura United 0:1 (PV 0:1)",
+    "2026-04-25 Madura United–Dewa United FC 1:2 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "09:30",
+    "league": "Indonezija · Super League",
+    "home": "Garudayaksa FC",
+    "away": "Madura United",
+    "pairId": "garudayaksa__madura-united",
+    "venue": "Pakansari Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Madura United: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/madura-united-vs-garudayaksa-fc/ai8dinbg#6011909"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 12,
+     "alt": "2/1"
+    },
+    "reasoning": "Madura United, preokreti: protiv PSIM Yogyakarta 2:1 (PV 0:1) 18.09.; Bhayangkara Presisi Lampung FC–Madura United 3:1 (PV 0:1) 11.05.; protiv Dewa United FC 1:2 (PV 1:0) 25.04.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/madura-united-vs-garudayaksa-fc/ai8dinbg#6011909"
+    ],
+    "createdAt": "2026-11-19T12:14:23+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6011909
+    },
+    "fixtureId": 6011909
+   }
+  }
+ ]
+}

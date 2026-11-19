@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-18",
+ "updatedAt": "2026-11-19T12:14:23+00:00",
+ "matches": [
+  {
+   "fixtureId": 6006692,
+   "docId": "2026-11-18_london-city-lionesses-w_brighton-w",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 1000015947,
+   "docId": "2026-11-19_omiya-ardija-ventus-w_inac-kobe-leonessa-w",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "5-0",
+   "htft": "1/1"
+  }
+ ]
+}
