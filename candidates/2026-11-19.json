@@ -1,17 +1,17 @@
 {
  "date": "2026-11-19",
- "generatedAt": "2026-11-19T12:14:23+00:00",
+ "generatedAt": "2026-11-19T13:33:17+00:00",
  "window": [
-  "2026-11-19T12:14+00:00",
-  "2026-11-20T12:14+00:00"
+  "2026-11-19T13:33+00:00",
+  "2026-11-20T13:33+00:00"
  ],
  "rules": {
-  "n": 4361,
+  "n": 4362,
   "base": {
    "1/2": 0.0213,
    "2/1": 0.0307
   },
-  "at": "2026-11-19T12:14:27+00:00",
+  "at": "2026-11-19T13:33:17+00:00",
   "rules": [
    {
     "id": "R1",
@@ -100,8 +100,8 @@
   ]
  },
  "leagues": 93,
- "fixturesSeen": 25,
- "analysed": 25,
+ "fixturesSeen": 26,
+ "analysed": 26,
  "upsetStats": {
   "n": 45,
   "won": 5,
@@ -338,6 +338,13 @@
    ""
   ],
   [
+   "20.11. 13:30",
+   "ROU Liga II",
+   "FC Bihor Oradea – Gloria Bistrița",
+   0,
+   ""
+  ],
+  [
    "19.11. 23:30",
    "COL Primera B",
    "Independiente Valle del Cauca – Envigado",
@@ -366,16 +373,16 @@
    ""
   ],
   [
-   "19.11. 14:00",
+   "20.11. 11:30",
    "IND Indian Football League",
-   "Samaleswari SC – Nagaland United",
+   "Rajasthan United FC – Chanmari FC",
    0,
    ""
   ],
   [
-   "20.11. 11:30",
+   "20.11. 14:00",
    "IND Indian Football League",
-   "Rajasthan United FC – Chanmari FC",
+   "Mohammedan SC – Gokulam FC",
    0,
    ""
   ],
@@ -387,13 +394,13 @@
    ""
   ]
  ],
- "withData": 23,
+ "withData": 25,
  "candidates": 4,
  "tips": 2,
- "calls": 206,
- "detailCalls": 137,
+ "calls": 41,
+ "detailCalls": 34,
  "errors": 0,
- "minutes": 0.9,
+ "minutes": 0.2,
  "notes": [],
  "matches": [
   {
@@ -582,7 +589,7 @@
     "sources": [
      "https://www.fotmob.com/matches/kashiwa-reysol-vs-jef-united-chiba/2tedyo#5803661"
     ],
-    "createdAt": "2026-11-19T12:14:23+00:00",
+    "createdAt": "2026-11-19T13:33:17+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -785,7 +792,7 @@
     "sources": [
      "https://www.fotmob.com/matches/beijing-guoan-vs-shanghai-port/9g2g0by#6146317"
     ],
-    "createdAt": "2026-11-19T12:14:23+00:00",
+    "createdAt": "2026-11-19T13:33:17+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -937,7 +944,7 @@
     "sources": [
      "https://www.fotmob.com/matches/adelaide-united-vs-western-sydney-wanderers-fc/pal53vv#1000017581"
     ],
-    "createdAt": "2026-11-19T12:14:23+00:00",
+    "createdAt": "2026-11-19T13:33:17+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1076,7 +1083,7 @@
     "sources": [
      "https://www.fotmob.com/matches/madura-united-vs-garudayaksa-fc/ai8dinbg#6011909"
     ],
-    "createdAt": "2026-11-19T12:14:23+00:00",
+    "createdAt": "2026-11-19T13:33:17+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
