@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-19",
+ "updatedAt": "2026-11-20T12:14:24+00:00",
+ "matches": [
+  {
+   "fixtureId": 6011909,
+   "docId": "2026-11-20_garudayaksa_madura-united",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 1000017581,
+   "docId": "2026-11-20_western-sydney_adelaide-united",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "4-2",
+   "htft": "2/1"
+  }
+ ]
+}

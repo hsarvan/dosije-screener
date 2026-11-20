@@ -1,0 +1,6439 @@
+{
+ "date": "2026-11-20",
+ "generatedAt": "2026-11-20T12:14:24+00:00",
+ "window": [
+  "2026-11-20T12:14+00:00",
+  "2026-11-21T12:14+00:00"
+ ],
+ "rules": {
+  "n": 4378,
+  "base": {
+   "1/2": 0.0212,
+   "2/1": 0.0308
+  },
+  "at": "2026-11-20T12:14:28+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 109,
+    "hits": 5,
+    "sel": 5,
+    "any": 8,
+    "both": false,
+    "base": 0.0279,
+    "lift": 1.64,
+    "mult": 0.94
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 19,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0305,
+    "lift": 1.73,
+    "mult": 1.03
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 103,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0307,
+    "lift": 1.58,
+    "mult": 1.08
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 762,
+    "hits": 46,
+    "sel": 31,
+    "any": 46,
+    "both": true,
+    "base": 0.058,
+    "lift": 1.04,
+    "mult": 0.71
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 155,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0305,
+    "lift": 1.06,
+    "mult": 0.92
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 14,
+    "hits": 1,
+    "sel": 0,
+    "any": 1,
+    "both": true,
+    "base": 0.0642,
+    "lift": 1.11,
+    "mult": 0.99
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 16,
+    "hits": 2,
+    "sel": 2,
+    "any": 2,
+    "both": false,
+    "base": 0.0283,
+    "lift": 4.42,
+    "mult": 1.14
+   }
+  ]
+ },
+ "leagues": 93,
+ "fixturesSeen": 131,
+ "analysed": 131,
+ "upsetStats": {
+  "n": 47,
+  "won": 6,
+  "avgOdds": 3.97
+ },
+ "k2": [
+  {
+   "fixtureId": 5803665,
+   "utc": "2026-11-21T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-21",
+   "league": "Japan · J. League",
+   "home": "Sanfrecce Hiroshima",
+   "away": "Yokohama F.Marinos",
+   "pick": "1",
+   "estOdds": 1.72,
+   "both": true,
+   "why": [
+    "Sanfrecce Hiroshima dobio zadnja 2 međusobna kod kuće: 1:0 (23.02.2025); 6:2 (22.09.2024)",
+    "Yokohama F.Marinos dobio zadnji kod sebe: 4:3 (28.10.2026), pravo 3 za 3"
+   ]
+  },
+  {
+   "fixtureId": 6011915,
+   "utc": "2026-11-21T12:00+00:00",
+   "kickoff": "13:00",
+   "date": "2026-11-21",
+   "league": "Indonezija · Super League",
+   "home": "PSM Makassar",
+   "away": "Persija Jakarta",
+   "pick": "1",
+   "estOdds": 3.23,
+   "both": true,
+   "why": [
+    "PSM Makassar dobio zadnja 2 međusobna kod kuće: 2:0 (21.09.2025); 1:0 (23.02.2025)",
+    "Persija Jakarta dobio zadnji kod sebe: 2:1 (20.02.2026), pravo 3 za 3"
+   ]
+  },
+  {
+   "fixtureId": 6142325,
+   "utc": "2026-11-20T17:00+00:00",
+   "kickoff": "18:00",
+   "date": "2026-11-20",
+   "league": "Kipar · 2. Division",
+   "home": "PAEEK",
+   "away": "Chalkanoras Idaliou",
+   "pick": "1",
+   "estOdds": 1.88,
+   "both": false,
+   "why": [
+    "PAEEK dobio zadnja 2 međusobna kod kuće: 4:0 (20.09.2025); 3:1 (22.11.2024)"
+   ]
+  },
+  {
+   "fixtureId": 5911966,
+   "utc": "2026-11-20T18:00+00:00",
+   "kickoff": "19:00",
+   "date": "2026-11-20",
+   "league": "Njemačka · Regionalliga",
+   "home": "Kickers Emden",
+   "away": "Bremer SV",
+   "pick": "1",
+   "estOdds": 1.83,
+   "both": false,
+   "why": [
+    "Kickers Emden dobio zadnja 2 međusobna kod kuće: 3:0 (09.08.2025); 3:1 (02.10.2024)"
+   ]
+  },
+  {
+   "fixtureId": 5804620,
+   "utc": "2026-11-20T18:30+00:00",
+   "kickoff": "19:30",
+   "date": "2026-11-20",
+   "league": "Švicarska · Challenge League",
+   "home": "Xamax",
+   "away": "Etoile Carouge",
+   "pick": "1",
+   "estOdds": 1.98,
+   "both": false,
+   "why": [
+    "Xamax dobio zadnja 2 međusobna kod kuće: 3:0 (11.05.2026); 2:1 (22.08.2025)"
+   ]
+  },
+  {
+   "fixtureId": 5804621,
+   "utc": "2026-11-20T19:15+00:00",
+   "kickoff": "20:15",
+   "date": "2026-11-20",
+   "league": "Švicarska · Challenge League",
+   "home": "Yverdon",
+   "away": "Winterthur",
+   "pick": "1",
+   "estOdds": 2.06,
+   "both": false,
+   "why": [
+    "Yverdon dobio zadnja 2 međusobna kod kuće: 2:1 (08.03.2025); 3:0 (02.02.2025)"
+   ]
+  },
+  {
+   "fixtureId": 5861988,
+   "utc": "2026-11-20T19:30+00:00",
+   "kickoff": "20:30",
+   "date": "2026-11-20",
+   "league": "Poljska · I Liga",
+   "home": "Miedź Legnica",
+   "away": "ŁKS Łódź",
+   "pick": "1",
+   "estOdds": 2.06,
+   "both": false,
+   "why": [
+    "Miedź Legnica dobio zadnja 2 međusobna kod kuće: 2:1 (19.08.2025); 1:0 (10.08.2024)"
+   ]
+  },
+  {
+   "fixtureId": 5987258,
+   "utc": "2026-11-21T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-21",
+   "league": "Japan · J. League 3",
+   "home": "Gainare Tottori",
+   "away": "Nagano Parceiro",
+   "pick": "1",
+   "estOdds": 2.53,
+   "both": false,
+   "why": [
+    "Gainare Tottori dobio zadnja 2 međusobna kod kuće: 2:0 (08.06.2025); 2:0 (21.09.2024)"
+   ]
+  },
+  {
+   "fixtureId": 5987262,
+   "utc": "2026-11-21T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-21",
+   "league": "Japan · J. League 3",
+   "home": "Nara Club",
+   "away": "SC Sagamihara",
+   "pick": "1",
+   "estOdds": 1.88,
+   "both": false,
+   "why": [
+    "Nara Club dobio zadnja 2 međusobna kod kuće: 2:1 (24.11.2025); 2:1 (08.06.2024)"
+   ]
+  },
+  {
+   "fixtureId": 5882361,
+   "utc": "2026-11-21T11:00+00:00",
+   "kickoff": "12:00",
+   "date": "2026-11-21",
+   "league": "Španija · Liga F",
+   "home": "Levante Badalona (W)",
+   "away": "Deportivo de A Coruña (W)",
+   "pick": "1",
+   "estOdds": 2.8,
+   "both": false,
+   "why": [
+    "Levante Badalona (W) dobio zadnja 2 međusobna kod kuće: 1:0 (18.01.2026); 1:0 (06.10.2024)"
+   ]
+  }
+ ],
+ "k2Stats": {
+  "n": 41,
+  "won": 18
+ },
+ "upsets": [
+  {
+   "fixtureId": 5973009,
+   "utc": "2026-11-20T15:00+00:00",
+   "kickoff": "16:00",
+   "date": "2026-11-20",
+   "league": "Armenija · Premier League",
+   "home": "Shirak",
+   "away": "Gandzasar",
+   "pick": "2",
+   "estOdds": 4.65,
+   "flag": true,
+   "why": [
+    "Shirak slab kod kuće: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "Gandzasar"
+  },
+  {
+   "fixtureId": 5910943,
+   "utc": "2026-11-20T18:00+00:00",
+   "kickoff": "19:00",
+   "date": "2026-11-20",
+   "league": "Njemačka · Regionalliga",
+   "home": "Lokomotive Leipzig",
+   "away": "RSV Eintracht 1949",
+   "pick": "2",
+   "estOdds": 4.65,
+   "flag": true,
+   "why": [
+    "Lokomotive Leipzig slab kod kuće: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "RSV Eintracht 1949"
+  },
+  {
+   "fixtureId": 5862761,
+   "utc": "2026-11-21T11:00+00:00",
+   "kickoff": "12:00",
+   "date": "2026-11-21",
+   "league": "Poljska · II Liga",
+   "home": "Rekord Bielsko-Biała",
+   "away": "Śląsk Wrocław ll",
+   "pick": "2",
+   "estOdds": 4.65,
+   "flag": true,
+   "why": [
+    "Rekord Bielsko-Biała slab kod kuće: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "Śląsk Wrocław ll"
+  },
+  {
+   "fixtureId": 6011912,
+   "utc": "2026-11-21T08:30+00:00",
+   "kickoff": "09:30",
+   "date": "2026-11-21",
+   "league": "Indonezija · Super League",
+   "home": "Persebaya Surabaya",
+   "away": "Java United F.C.",
+   "pick": "2",
+   "estOdds": 4.42,
+   "flag": true,
+   "why": [
+    "Java United F,C, u usponu (+0,7), Persebaya Surabaya u padu (−0,9 boda po meču)"
+   ],
+   "dog": "Java United F.C."
+  },
+  {
+   "fixtureId": 5885305,
+   "utc": "2026-11-21T11:00+00:00",
+   "kickoff": "12:00",
+   "date": "2026-11-21",
+   "league": "Španija · Segunda Federación",
+   "home": "Tenerife B",
+   "away": "UD Tamaraceite",
+   "pick": "2",
+   "estOdds": 4.42,
+   "flag": true,
+   "why": [
+    "Tenerife B slab kod kuće: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "UD Tamaraceite"
+  },
+  {
+   "fixtureId": 5836385,
+   "utc": "2026-11-21T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-21",
+   "league": "Japan · J. League 2",
+   "home": "Kataller Toyama",
+   "away": "Oita Trinita",
+   "pick": "2",
+   "estOdds": 4.18,
+   "flag": true,
+   "why": [
+    "Kataller Toyama slab kod kuće: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "Oita Trinita"
+  },
+  {
+   "fixtureId": 5987259,
+   "utc": "2026-11-21T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-21",
+   "league": "Japan · J. League 3",
+   "home": "Zweigen Kanazawa",
+   "away": "Kagoshima United",
+   "pick": "2",
+   "estOdds": 4.18,
+   "flag": true,
+   "why": [
+    "Zweigen Kanazawa slab kod kuće: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "Kagoshima United"
+  },
+  {
+   "fixtureId": 6011913,
+   "utc": "2026-11-21T08:30+00:00",
+   "kickoff": "09:30",
+   "date": "2026-11-21",
+   "league": "Indonezija · Super League",
+   "home": "Persik",
+   "away": "PSIM Yogyakarta",
+   "pick": "2",
+   "estOdds": 3.88,
+   "flag": true,
+   "why": [
+    "Persik slab kod kuće: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "PSIM Yogyakarta"
+  },
+  {
+   "fixtureId": 5832957,
+   "utc": "2026-11-20T19:00+00:00",
+   "kickoff": "20:00",
+   "date": "2026-11-20",
+   "league": "Holandija · Eerste Divisie",
+   "home": "Helmond Sport",
+   "away": "FC Dordrecht",
+   "pick": "2",
+   "estOdds": 3.88,
+   "flag": true,
+   "why": [
+    "Helmond Sport slab kod kuće: 0,8 bod po meču u zadnjih 5"
+   ],
+   "dog": "FC Dordrecht"
+  },
+  {
+   "fixtureId": 5803666,
+   "utc": "2026-11-21T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-21",
+   "league": "Japan · J. League",
+   "home": "Tokyo Verdy",
+   "away": "Nagoya Grampus",
+   "pick": "2",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Tokyo Verdy slab kod kuće: 0,8 bod po meču u zadnjih 5"
+   ],
+   "dog": "Nagoya Grampus"
+  },
+  {
+   "fixtureId": 5911629,
+   "utc": "2026-11-20T18:00+00:00",
+   "kickoff": "19:00",
+   "date": "2026-11-20",
+   "league": "Njemačka · Regionalliga",
+   "home": "TSV Buchbach",
+   "away": "TSV Schwaben Augsburg",
+   "pick": "2",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "TSV Schwaben Augsburg u usponu (+1,1), TSV Buchbach u padu (−0,9 boda po meču)"
+   ],
+   "dog": "TSV Schwaben Augsburg"
+  },
+  {
+   "fixtureId": 5987260,
+   "utc": "2026-11-21T05:00+00:00",
+   "kickoff": "06:00",
+   "date": "2026-11-21",
+   "league": "Japan · J. League 3",
+   "home": "Kochi United SC",
+   "away": "Fukushima United",
+   "pick": "1",
+   "estOdds": 3.58,
+   "flag": true,
+   "why": [
+    "Fukushima United slab u gostima: 0,8 bod po meču u zadnjih 5"
+   ],
+   "dog": "Kochi United SC"
+  }
+ ],
+ "screened": [
+  [
+   "21.11. 05:00",
+   "AUS A-League",
+   "Auckland FC – Melbourne Victory",
+   0,
+   ""
+  ],
+  [
+   "21.11. 07:00",
+   "AUS A-League",
+   "Central Coast – Perth Glory",
+   0,
+   ""
+  ],
+  [
+   "21.11. 09:40",
+   "AUS A-League",
+   "Brisbane Roar FC – Sydney FC",
+   18,
+   "1/2 · 2/1"
+  ],
+  [
+   "21.11. 09:30",
+   "IDN Super League",
+   "Persebaya Surabaya – Java United F.C.",
+   0,
+   ""
+  ],
+  [
+   "21.11. 09:30",
+   "IDN Super League",
+   "Persik – PSIM Yogyakarta",
+   6,
+   "2/1"
+  ],
+  [
+   "21.11. 13:00",
+   "IDN Super League",
+   "Bhayangkara Presisi Lampung FC – Persijap Jepara",
+   0,
+   ""
+  ],
+  [
+   "21.11. 13:00",
+   "IDN Super League",
+   "PSM Makassar – Persija Jakarta",
+   0,
+   ""
+  ],
+  [
+   "21.11. 11:30",
+   "TUR Süper Lig",
+   "Gençlerbirliği – Gaziantep FK",
+   0,
+   ""
+  ],
+  [
+   "20.11. 16:00",
+   "ARM Premier League",
+   "Shirak – Gandzasar",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:00",
+   "ARM Premier League",
+   "Syunik – Urartu FC",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:00",
+   "ECU Serie A",
+   "Independiente del Valle – CSD Macará",
+   12,
+   "2/1 · 1/2"
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League",
+   "Kyoto Sanga FC – Urawa Red Diamonds",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League",
+   "Machida Zelvia – V-Varen Nagasaki",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League",
+   "Sanfrecce Hiroshima – Yokohama F.Marinos",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League",
+   "Tokyo Verdy – Nagoya Grampus",
+   0,
+   ""
+  ],
+  [
+   "21.11. 07:00",
+   "JPN J. League",
+   "Cerezo Osaka – FC Tokyo",
+   0,
+   ""
+  ],
+  [
+   "21.11. 07:00",
+   "JPN J. League",
+   "Kawasaki Frontale – Avispa Fukuoka",
+   0,
+   ""
+  ],
+  [
+   "21.11. 08:00",
+   "JPN J. League",
+   "Gamba Osaka – Fagiano Okayama FC",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "KOR K League 1",
+   "Jeonbuk Hyundai Motors FC – FC Seoul",
+   14,
+   "1/2 · 2/1"
+  ],
+  [
+   "21.11. 06:00",
+   "KOR K League 1",
+   "Pohang Steelers – FC Anyang",
+   20,
+   "1/2 · 2/1"
+  ],
+  [
+   "21.11. 08:30",
+   "KOR K League 1",
+   "Gangwon FC – Daejeon Hana Citizen",
+   21,
+   "1/2 · 2/1"
+  ],
+  [
+   "21.11. 08:30",
+   "KOR K League 1",
+   "Incheon United – Ulsan HD FC",
+   14,
+   "2/1 · 1/2"
+  ],
+  [
+   "21.11. 05:00",
+   "AUS Australia Championship",
+   "Marconi Stallions – Sydney Olympic",
+   0,
+   ""
+  ],
+  [
+   "21.11. 05:00",
+   "AUS Australia Championship",
+   "Oakleigh Cannons – Bayswater City",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:00",
+   "TUR 1. Lig",
+   "Iğdır FK – Ümraniyespor",
+   0,
+   ""
+  ],
+  [
+   "21.11. 11:30",
+   "TUR 1. Lig",
+   "Mardin 1969 Spor – Bandırmaspor",
+   0,
+   ""
+  ],
+  [
+   "21.11. 11:30",
+   "TUR 1. Lig",
+   "İstanbulspor – Keçiörengücü",
+   0,
+   ""
+  ],
+  [
+   "20.11. 21:00",
+   "ENG League One",
+   "Barnsley – Sheff Wed",
+   21,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 20:45",
+   "ENG National League",
+   "Southend – Boreham Wood",
+   30,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 20:30",
+   "SCO Championship",
+   "Inverness – Ayr United",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "GER 3. Liga",
+   "TSV Havelse – Viktoria Köln 1904",
+   43,
+   "2/1 · 1/2"
+  ],
+  [
+   "20.11. 20:30",
+   "ITA Serie C",
+   "Trento – Cittadella",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:30",
+   "ITA Serie C",
+   "Casertana – Salernitana",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "ESP Primera Federacion",
+   "CD Teruel – Hércules",
+   0,
+   ""
+  ],
+  [
+   "20.11. 21:00",
+   "ESP Primera Federacion",
+   "Villarreal B – Gimnàstic",
+   0,
+   ""
+  ],
+  [
+   "20.11. 21:15",
+   "ESP Primera Federacion",
+   "Real Madrid Castilla – Real Murcia",
+   12,
+   "2/1 · 1/2"
+  ],
+  [
+   "21.11. 13:00",
+   "ESP Primera Federacion",
+   "CD Mirandés – Athletic Club B",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "Almere City FC – NAC Breda",
+   9,
+   "2/1"
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "De Graafschap – MVV Maastricht",
+   6,
+   "2/1"
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "FC Den Bosch – VVV-Venlo",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "FC Volendam – Jong Ajax",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "Helmond Sport – FC Dordrecht",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "Heracles – Jong PSV",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "Jong FC Utrecht – FC Emmen",
+   69,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "TOP Oss – Roda JC Kerkrade",
+   6,
+   "1/2"
+  ],
+  [
+   "20.11. 20:00",
+   "NED Eerste Divisie",
+   "Vitesse – Jong AZ Alkmaar",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:00",
+   "BEL First Division B",
+   "Club Brugge NXT – Virton",
+   14,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 20:00",
+   "BEL First Division B",
+   "K. Lierse SK – KSC Lokeren",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "RUS First League",
+   "SKA-Khabarovsk – FC Rotor Volgograd",
+   0,
+   ""
+  ],
+  [
+   "21.11. 07:30",
+   "RUS First League",
+   "FC Yenisey Krasnoyarsk – Volga Ulyanovsk",
+   0,
+   ""
+  ],
+  [
+   "21.11. 11:30",
+   "RUS First League",
+   "Nizhny Novgorod – Torpedo Moscow",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:00",
+   "POL I Liga",
+   "Chrobry Głogów – Puszcza Niepołomice",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:30",
+   "POL I Liga",
+   "Miedź Legnica – ŁKS Łódź",
+   0,
+   ""
+  ],
+  [
+   "20.11. 17:00",
+   "CZE FNL",
+   "FC Silon Táborsko – Slavia Prague B",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:00",
+   "CZE FNL",
+   "Karviná – Baník Ostrava B",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:00",
+   "CZE FNL",
+   "Příbram – Ústí nad Labem",
+   0,
+   ""
+  ],
+  [
+   "21.11. 11:15",
+   "BUL Second Professional League",
+   "FC Chernomorets Burgas – Rilski Sportist",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Blaublitz Akita – Montedio Yamagata",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Fujieda MYFC – FC Imabari",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Júbilo Iwata – RB Omiya Ardija",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Kataller Toyama – Oita Trinita",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Sagan Tosu – Vegalta Sendai",
+   8,
+   "2/1 · 1/2"
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Tegevajaro Miyazaki – Iwaki FC",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Tochigi City FC – Albirex Niigata",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Ventforet Kofu – Vanraure Hachinohe",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 2",
+   "Yokohama FC – Hokkaido Consadole Sapporo",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "KOR K League 2",
+   "Busan I'Park – Cheongju FC",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "KOR K League 2",
+   "Suwon Samsung Bluewings – Gyeongnam FC",
+   0,
+   ""
+  ],
+  [
+   "21.11. 08:30",
+   "KOR K League 2",
+   "Gimpo FC – Suwon FC",
+   6,
+   "1/2"
+  ],
+  [
+   "21.11. 08:30",
+   "KOR K League 2",
+   "Seongnam FC – Yongin FC",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:00",
+   "THA Thai League 2",
+   "Mahasarakham Sam Bai Tao – PT Satun FC",
+   14,
+   "1/2"
+  ],
+  [
+   "21.11. 12:30",
+   "THA Thai League 2",
+   "Chiangmai United – Nakhon Pathom",
+   31,
+   "1/2"
+  ],
+  [
+   "21.11. 13:00",
+   "THA Thai League 2",
+   "Chainat FC – Muang Thong United",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:00",
+   "ESP Segunda Federación",
+   "Tenerife B – UD Tamaraceite",
+   6,
+   "2/1"
+  ],
+  [
+   "20.11. 18:30",
+   "GER Regionalliga",
+   "Wattenscheid – FC Köln II",
+   30,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "FV Illertissen – VfB Eichstätt",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "TSV Buchbach – TSV Schwaben Augsburg",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "Kickers Emden – Bremer SV",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "Lokomotive Leipzig – RSV Eintracht 1949",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "Magdeburg II – FSV Zwickau",
+   7,
+   "2/1"
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "RW Erfurt – VSG Altglienicke",
+   14,
+   "2/1 · 1/2"
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "Kickers Offenbach – VfR Mannheim",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "GER Regionalliga",
+   "Mainz 05 II – TSV Steinbach",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:30",
+   "GER Regionalliga",
+   "Borussia Dortmund II – Sportfreunde Lotte",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:30",
+   "GER Regionalliga",
+   "SC Wiedenbrück – Bochum II",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 3",
+   "Ehime FC – FC Gifu",
+   27,
+   "2/1 · 1/2"
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 3",
+   "Gainare Tottori – Nagano Parceiro",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 3",
+   "Kochi United SC – Fukushima United",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 3",
+   "Matsumoto Yamaga – FC Ryūkyū",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 3",
+   "Nara Club – SC Sagamihara",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 3",
+   "Thespa Gunma – Tochigi SC",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN J. League 3",
+   "Zweigen Kanazawa – Kagoshima United",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:00",
+   "POL II Liga",
+   "Lechia Zielona Góra – Chojniczanka Chojnice",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:00",
+   "POL II Liga",
+   "Rekord Bielsko-Biała – Śląsk Wrocław ll",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:00",
+   "POL II Liga",
+   "Sokół Kleczew – GKS Tychy",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:30",
+   "POL II Liga",
+   "Avia Świdnik – Legia Warszawa II",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:30",
+   "AUT 2. Liga",
+   "Floridsdorfer AC – Austria Wien II",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:30",
+   "AUT 2. Liga",
+   "Kapfenberger SV – FC Hertha Wels",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:30",
+   "AUT 2. Liga",
+   "Rapid Wien II – BW Linz",
+   7,
+   "1/2"
+  ],
+  [
+   "20.11. 18:30",
+   "AUT 2. Liga",
+   "SKN St. Pölten – Voitsberg",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:30",
+   "AUT 2. Liga",
+   "Austria Salzburg – Admira Wacker",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:30",
+   "SUI Challenge League",
+   "FC Rapperswil-Jona – Aarau",
+   67,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 19:30",
+   "SUI Challenge League",
+   "FC Stade Lausanne-Ouchy – Kriens",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:30",
+   "SUI Challenge League",
+   "Stade Nyonnais – Wil",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:30",
+   "SUI Challenge League",
+   "Xamax – Etoile Carouge",
+   0,
+   ""
+  ],
+  [
+   "20.11. 20:15",
+   "SUI Challenge League",
+   "Yverdon – Winterthur",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "DEN 1. Division",
+   "Aarhus Fremad – Hobro",
+   0,
+   ""
+  ],
+  [
+   "20.11. 19:00",
+   "DEN 1. Division",
+   "Kolding IF – AaB",
+   0,
+   ""
+  ],
+  [
+   "20.11. 13:30",
+   "ROU Liga II",
+   "FC Bihor Oradea – Gloria Bistrița",
+   0,
+   ""
+  ],
+  [
+   "21.11. 10:00",
+   "ROU Liga II",
+   "CSC Dumbrăvița – CS Afumați",
+   0,
+   ""
+  ],
+  [
+   "21.11. 10:00",
+   "ROU Liga II",
+   "CSL Ștefănești – FC Unirea Slobozia",
+   0,
+   ""
+  ],
+  [
+   "21.11. 10:00",
+   "ROU Liga II",
+   "CSM Olimpia Satu Mare – Concordia Chiajna",
+   0,
+   ""
+  ],
+  [
+   "21.11. 10:00",
+   "ROU Liga II",
+   "CSM Reșița – FC Metaloglobus București",
+   6,
+   "2/1"
+  ],
+  [
+   "21.11. 10:00",
+   "ROU Liga II",
+   "CSM Slatina – ASA Târgu Mureș",
+   0,
+   ""
+  ],
+  [
+   "21.11. 10:00",
+   "ROU Liga II",
+   "FC Bacău – CS Dinamo București",
+   18,
+   "2/1 · 1/2"
+  ],
+  [
+   "21.11. 10:00",
+   "ROU Liga II",
+   "Popești Leordeni – Comunal Șelimbăr",
+   0,
+   ""
+  ],
+  [
+   "21.11. 11:30",
+   "ROU Liga II",
+   "Cetatea Suceava – ASU Politehnica Timișoara",
+   0,
+   ""
+  ],
+  [
+   "20.11. 22:00",
+   "CHI Liga de Ascenso",
+   "Deportes Recoleta – Santiago Wanderers",
+   0,
+   ""
+  ],
+  [
+   "21.11. 13:00",
+   "HUN NB II",
+   "BVSC Zugló – Gyirmót",
+   0,
+   ""
+  ],
+  [
+   "21.11. 13:00",
+   "HUN NB II",
+   "Nagykanizsa – Mezőkövesd SE",
+   0,
+   ""
+  ],
+  [
+   "20.11. 18:00",
+   "CYP 2. Division",
+   "PAEEK – Chalkanoras Idaliou",
+   0,
+   ""
+  ],
+  [
+   "20.11. 14:00",
+   "IND Indian Football League",
+   "Mohammedan SC – Gokulam FC",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:00",
+   "ESP Liga F",
+   "Levante Badalona (W) – Deportivo de A Coruña (W)",
+   20,
+   "1/2 · 2/1"
+  ],
+  [
+   "20.11. 18:30",
+   "GER Frauen-Bundesliga",
+   "Union Berlin (W) – Bayer Leverkusen (W)",
+   50,
+   "1/2 · 2/1"
+  ],
+  [
+   "21.11. 12:00",
+   "GER Frauen-Bundesliga",
+   "Eintracht Frankfurt (W) – Hamburger SV (W)",
+   0,
+   ""
+  ],
+  [
+   "20.11. 21:00",
+   "FRA Première Ligue Féminine",
+   "Toulouse (W) – Marseille (W)",
+   0,
+   ""
+  ],
+  [
+   "21.11. 12:30",
+   "ITA Serie A Femminile",
+   "Parma Calcio 1913 (W) – S.S.D. Napoli Femminile (W)",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:50",
+   "AUS A-League Women",
+   "Brisbane Roar FC (W) – Melbourne City FC (W)",
+   0,
+   ""
+  ],
+  [
+   "21.11. 07:00",
+   "AUS A-League Women",
+   "Sydney FC (W) – Canberra United FC (W)",
+   0,
+   ""
+  ],
+  [
+   "21.11. 06:00",
+   "JPN WE League",
+   "Mynavi Sendai Ladies (W) – Cerezo Osaka Sakai (W)",
+   0,
+   ""
+  ],
+  [
+   "21.11. 07:00",
+   "JPN WE League",
+   "AS Elfen Saitama (W) – JEF Ladies (W)",
+   0,
+   ""
+  ]
+ ],
+ "withData": 130,
+ "candidates": 31,
+ "tips": 12,
+ "calls": 1042,
+ "detailCalls": 735,
+ "errors": 0,
+ "minutes": 4.2,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 5832959,
+   "docId": "2026-11-20_jong-utrecht_emmen",
+   "utc": "2026-11-20T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "Jong FC Utrecht",
+   "away": "FC Emmen",
+   "score": 69,
+   "cand": {
+    "sel": "1/2",
+    "score": 69,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 69,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-03-02 FC Emmen–Jong FC Utrecht 1:0 (PV 1:0)",
+    "2025-11-07 Jong FC Utrecht–FC Emmen 1:2 (PV 1:0)",
+    "2025-03-14 FC Emmen–Jong FC Utrecht 2:0 (PV 1:0)",
+    "2024-08-30 Jong FC Utrecht–FC Emmen 1:2 (PV 1:0)",
+    "2024-03-15 Jong FC Utrecht–FC Emmen 2:3 (PV 1:0)",
+    "2023-09-18 FC Emmen–Jong FC Utrecht 2:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 FC Den Bosch–Jong FC Utrecht 1:1 (PV 0:0)",
+    "2026-11-02 Jong FC Utrecht–FC Dordrecht 3:2 (PV 3:1)",
+    "2026-10-23 FC Volendam–Jong FC Utrecht 6:2 (PV 3:1)",
+    "2026-10-19 Jong FC Utrecht–Roda JC Kerkrade 1:2 (PV 1:0)",
+    "2026-10-09 De Graafschap–Jong FC Utrecht 2:1 (PV 0:1)",
+    "2026-09-18 Jong FC Utrecht–VVV-Venlo 1:3 (PV 1:2)",
+    "2026-09-14 Jong FC Utrecht–Jong Ajax 6:1 (PV 3:0)",
+    "2026-09-11 NAC Breda–Jong FC Utrecht 2:3 (PV 2:1)",
+    "2026-09-07 Jong FC Utrecht–FC Eindhoven 0:0 (PV 0:0)",
+    "2026-08-31 Jong AZ Alkmaar–Jong FC Utrecht 2:1 (PV 1:1)",
+    "2026-08-28 TOP Oss–Jong FC Utrecht 2:1 (PV 1:0)",
+    "2026-08-24 Jong FC Utrecht–Heracles 1:6 (PV 0:5)",
+    "2026-08-17 Jong FC Utrecht–Vitesse 1:3 (PV 1:1)",
+    "2026-08-09 MVV Maastricht–Jong FC Utrecht 2:1 (PV 1:1)",
+    "2026-04-24 Jong Ajax–Jong FC Utrecht 0:2 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-14 NAC Breda–FC Emmen 4:2 (PV 0:1)",
+    "2026-11-08 FC Emmen–MVV Maastricht 0:2 (PV 0:1)",
+    "2026-11-01 FC Emmen–FC Den Bosch 0:5 (PV 0:2)",
+    "2026-10-29 FC Groningen–FC Emmen 0:2 (PV 0:1)",
+    "2026-10-23 Vitesse–FC Emmen 0:2 (PV 0:0)",
+    "2026-10-17 FC Emmen–Almere City FC 2:1 (PV 2:0)",
+    "2026-10-09 FC Dordrecht–FC Emmen 0:3 (PV 0:2)",
+    "2026-10-03 RKC Waalwijk–FC Emmen 1:1 (PV 1:0)",
+    "2026-09-26 FC Emmen–TOP Oss 1:0 (PV 1:0)",
+    "2026-09-18 FC Eindhoven–FC Emmen 3:1 (PV 1:0)",
+    "2026-09-11 FC Emmen–De Graafschap 1:2 (PV 1:1)",
+    "2026-09-04 FC Emmen–FC Volendam 5:3 (PV 1:0)",
+    "2026-08-30 VVV-Venlo–FC Emmen 4:0 (PV 2:0)",
+    "2026-08-21 FC Emmen–Jong AZ Alkmaar 3:1 (PV 0:0)",
+    "2026-08-17 Jong Ajax–FC Emmen 4:6 (PV 3:3)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "Jong FC Utrecht",
+    "away": "FC Emmen",
+    "pairId": "emmen__jong-utrecht",
+    "venue": "Sportcomplex Zoudenbalch",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Jong FC Utrecht 2× ispušteno vodstvo s PV (zadnjih 10); međusobni 07.11.2025 1/2",
+      "src": [
+       "https://www.fotmob.com/matches/fc-emmen-vs-jong-fc-utrecht/iql1fs6#5832959"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Jong FC Utrecht: 3 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/fc-emmen-vs-jong-fc-utrecht/iql1fs6#5832959"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "FC Emmen preokret u zadnjem meču, Jong FC Utrecht 3× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/fc-emmen-vs-jong-fc-utrecht/iql1fs6#5832959"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Raniji međusobni 1/2 (07.11.2025); u zadnjih 10: Jong FC Utrecht 3×, FC Emmen 1×",
+      "src": [
+       "https://www.fotmob.com/matches/fc-emmen-vs-jong-fc-utrecht/iql1fs6#5832959"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 69,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 69,
+     "alt": "2/1"
+    },
+    "reasoning": "Jong FC Utrecht, preokreti: protiv Roda JC Kerkrade 1:2 (PV 1:0) 19.10.; De Graafschap–Jong FC Utrecht 2:1 (PV 0:1) 09.10.; NAC Breda–Jong FC Utrecht 2:3 (PV 2:1) 11.09. FC Emmen, preokreti: NAC Breda–FC Emmen 4:2 (PV 0:1) 14.11. Međusobni 07.11.2025 kod domaćina: Jong FC Utrecht–FC Emmen 1:2 (PV 1:0). Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/fc-emmen-vs-jong-fc-utrecht/iql1fs6#5832959"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832959
+    },
+    "fixtureId": 5832959
+   }
+  },
+  {
+   "fixtureId": 5804618,
+   "docId": "2026-11-20_rapperswil-jona_aarau",
+   "utc": "2026-11-20T18:30+00:00",
+   "league": "Švicarska · Challenge League",
+   "stage": "Challenge League",
+   "home": "FC Rapperswil-Jona",
+   "away": "Aarau",
+   "score": 67,
+   "cand": {
+    "sel": "1/2",
+    "score": 67,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 67,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-09-04 Aarau–FC Rapperswil-Jona 3:2 (PV 0:1)",
+    "2026-04-04 FC Rapperswil-Jona–Aarau 4:5 (PV 3:3)",
+    "2026-02-27 Aarau–FC Rapperswil-Jona 5:3 (PV 1:2)",
+    "2025-11-01 Aarau–FC Rapperswil-Jona 2:1 (PV 1:1)",
+    "2025-08-29 FC Rapperswil-Jona–Aarau 0:1 (PV 0:0)",
+    "2019-05-26 Aarau–FC Rapperswil-Jona 1:0 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-06 Kriens–FC Rapperswil-Jona 1:0 (PV 0:0)",
+    "2026-10-30 FC Rapperswil-Jona–Stade Nyonnais 1:4 (PV 0:0)",
+    "2026-10-23 Wil–FC Rapperswil-Jona 2:2 (PV 1:1)",
+    "2026-10-16 FC Rapperswil-Jona–St. Gallen 0:2 (PV 0:1)",
+    "2026-10-09 FC Rapperswil-Jona–FC Stade Lausanne-Ouchy 0:3 (PV 0:1)",
+    "2026-09-18 Xamax–FC Rapperswil-Jona 0:3 (PV 0:2)",
+    "2026-09-11 FC Rapperswil-Jona–Yverdon 2:0 (PV 0:0)",
+    "2026-09-04 Aarau–FC Rapperswil-Jona 3:2 (PV 0:1)",
+    "2026-09-01 FC Rapperswil-Jona–Kriens 1:1 (PV 0:0)",
+    "2026-08-28 Etoile Carouge–FC Rapperswil-Jona 2:1 (PV 1:1)",
+    "2026-08-21 FC Rapperswil-Jona–Winterthur 0:2 (PV 0:1)",
+    "2026-08-07 FC Stade Lausanne-Ouchy–FC Rapperswil-Jona 2:0 (PV 1:0)",
+    "2026-07-31 Stade Nyonnais–FC Rapperswil-Jona 1:2 (PV 0:1)",
+    "2026-07-24 FC Rapperswil-Jona–Wil 4:5 (PV 2:3)",
+    "2026-05-15 FC Rapperswil-Jona–Stade Nyonnais 2:1 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-06 Aarau–Wil 0:3 (PV 0:1)",
+    "2026-10-30 Xamax–Aarau 1:3 (PV 1:0)",
+    "2026-10-24 Aarau–Etoile Carouge 1:2 (PV 1:0)",
+    "2026-10-18 Aarau–FC Zürich 2:0 (PV 0:0)",
+    "2026-10-09 Stade Nyonnais–Aarau 2:1 (PV 0:0)",
+    "2026-09-18 Winterthur–Aarau 2:1 (PV 1:1)",
+    "2026-09-12 Aarau–Kriens 2:2 (PV 1:2)",
+    "2026-09-04 Aarau–FC Rapperswil-Jona 3:2 (PV 0:1)",
+    "2026-08-31 Wil–Aarau 2:2 (PV 0:2)",
+    "2026-08-28 Aarau–Xamax 2:1 (PV 0:0)",
+    "2026-08-23 Yverdon–Aarau 2:1 (PV 2:0)",
+    "2026-08-07 Aarau–Stade Nyonnais 2:1 (PV 1:0)",
+    "2026-08-01 Aarau–FC Stade Lausanne-Ouchy 1:1 (PV 1:0)",
+    "2026-07-24 Etoile Carouge–Aarau 3:0 (PV 0:0)",
+    "2026-05-15 Aarau–Yverdon 2:2 (PV 2:1)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "19:30",
+    "league": "Švicarska · Challenge League",
+    "home": "FC Rapperswil-Jona",
+    "away": "Aarau",
+    "pairId": "aarau__rapperswil-jona",
+    "venue": "Sportstadion Grünfeld",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Aarau 2× okrenut minus s PV (zadnjih 10); međusobni 04.09.2026 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/aarau-vs-fc-rapperswil-jona/8ru23jl#5804618"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 1/2 u zadnjih 10: FC Rapperswil-Jona 1, Aarau 2",
+      "src": [
+       "https://www.fotmob.com/matches/aarau-vs-fc-rapperswil-jona/8ru23jl#5804618"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Aarau: 3 preokreta u zadnjih 15, 2 u zadnja 3",
+      "src": [
+       "https://www.fotmob.com/matches/aarau-vs-fc-rapperswil-jona/8ru23jl#5804618"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (04.09.2026); u zadnjih 10: FC Rapperswil-Jona 1×, Aarau 3×",
+      "src": [
+       "https://www.fotmob.com/matches/aarau-vs-fc-rapperswil-jona/8ru23jl#5804618"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 67,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 67,
+     "alt": "2/1"
+    },
+    "reasoning": "Aarau, preokreti: Xamax–Aarau 1:3 (PV 1:0) 30.10.; protiv Etoile Carouge 1:2 (PV 1:0) 24.10.; protiv FC Rapperswil-Jona 3:2 (PV 0:1) 04.09. (međusobni). Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/aarau-vs-fc-rapperswil-jona/8ru23jl#5804618"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5804618
+    },
+    "fixtureId": 5804618
+   }
+  },
+  {
+   "fixtureId": 5934576,
+   "docId": "2026-11-20_union-berlin-w_bayer-leverkusen-w",
+   "utc": "2026-11-20T17:30+00:00",
+   "league": "Njemačka · Frauen-Bundesliga",
+   "stage": "Frauen-Bundesliga",
+   "home": "Union Berlin (W)",
+   "away": "Bayer Leverkusen (W)",
+   "score": 50,
+   "cand": {
+    "sel": "1/2",
+    "score": 50,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 50,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-01-23 Union Berlin (W)–Bayer Leverkusen (W) 1:2 (PV 1:0)",
+    "2025-09-15 Bayer Leverkusen (W)–Union Berlin (W) 3:2 (PV 2:1)"
+   ],
+   "homeLast": [
+    "2026-11-14 Werder Bremen (W)–Union Berlin (W) 2:0 (PV 2:0)",
+    "2026-11-08 Union Berlin (W)–TSG 1899 Hoffenheim (W) 1:1 (PV 1:1)",
+    "2026-10-31 Hamburger SV (W)–Union Berlin (W) 3:3 (PV 2:0)",
+    "2026-10-25 Hamburger SV (W)–Union Berlin (W) 4:4 (PV 2:1)",
+    "2026-10-18 Union Berlin (W)–Nürnberg (W) 2:1 (PV 2:1)",
+    "2026-10-04 VfB Stuttgart (W)–Union Berlin (W) 0:4 (PV 0:1)",
+    "2026-09-27 Magdeburg (W)–Union Berlin (W) 0:5 (PV 0:3)",
+    "2026-09-20 Union Berlin (W)–RB Leipzig (W) 3:2 (PV 1:0)",
+    "2026-09-12 FC Köln (W)–Union Berlin (W) 3:0 (PV 1:0)",
+    "2026-09-07 Union Berlin (W)–Eintracht Frankfurt (W) 0:1 (PV 0:1)",
+    "2026-08-29 Freiburg (W)–Union Berlin (W) 1:0 (PV 0:0)",
+    "2026-08-21 Union Berlin (W)–Bayern München (W) 1:4 (PV 0:1)",
+    "2026-05-17 Eintracht Frankfurt (W)–Union Berlin (W) 4:2 (PV 2:2)",
+    "2026-05-10 Union Berlin (W)–TSG 1899 Hoffenheim (W) 0:2 (PV 0:2)",
+    "2026-05-01 Hamburger SV (W)–Union Berlin (W) 0:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-16 VfB Stuttgart (W)–Bayer Leverkusen (W) 2:3 (PV 0:1)",
+    "2026-11-07 Bayer Leverkusen (W)–Hamburger SV (W) 2:0 (PV 0:0)",
+    "2026-11-01 Bayern München (W)–Bayer Leverkusen (W) 1:0 (PV 0:0)",
+    "2026-10-25 Nürnberg (W)–Bayer Leverkusen (W) 2:0 (PV 0:0)",
+    "2026-10-17 Bayer Leverkusen (W)–Eintracht Frankfurt (W) 1:1 (PV 1:0)",
+    "2026-10-02 Bayer Leverkusen (W)–Werder Bremen (W) 3:2 (PV 0:2)",
+    "2026-09-27 Viktoria Berlin (W)–Bayer Leverkusen (W) 0:0 (PV 0:0)",
+    "2026-09-20 Freiburg (W)–Bayer Leverkusen (W) 1:2 (PV 1:0)",
+    "2026-09-14 Bayer Leverkusen (W)–Bayern München (W) 2:3 (PV 1:0)",
+    "2026-09-04 TSG 1899 Hoffenheim (W)–Bayer Leverkusen (W) 1:2 (PV 1:1)",
+    "2026-08-30 Bayer Leverkusen (W)–VfL Wolfsburg (W) 1:2 (PV 0:1)",
+    "2026-08-23 RB Leipzig (W)–Bayer Leverkusen (W) 0:2 (PV 0:0)",
+    "2026-05-17 Bayer Leverkusen (W)–Werder Bremen (W) 1:3 (PV 0:1)",
+    "2026-05-11 RB Leipzig (W)–Bayer Leverkusen (W) 1:3 (PV 1:2)",
+    "2026-05-03 SGS Essen (W)–Bayer Leverkusen (W) 0:4 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "18:30",
+    "league": "Njemačka · Frauen-Bundesliga",
+    "home": "Union Berlin (W)",
+    "away": "Bayer Leverkusen (W)",
+    "pairId": "bayer-leverkusen-w__union-berlin-w",
+    "venue": "Stadion An der Alten Försterei",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Bayer Leverkusen (W) 2× okrenut minus s PV (zadnjih 10); međusobni 23.01.2026 1/2",
+      "src": [
+       "https://www.fotmob.com/matches/bayer-leverkusen-vs-union-berlin/ytf82qa5#5934576"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Bayer Leverkusen (W): 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/bayer-leverkusen-vs-union-berlin/ytf82qa5#5934576"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 1/2 (23.01.2026); u zadnjih 10: Bayer Leverkusen (W) 3×",
+      "src": [
+       "https://www.fotmob.com/matches/bayer-leverkusen-vs-union-berlin/ytf82qa5#5934576"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 50,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 50,
+     "alt": "2/1"
+    },
+    "reasoning": "Bayer Leverkusen (W), preokreti: protiv Werder Bremen (W) 3:2 (PV 0:2) 02.10.; Freiburg (W)–Bayer Leverkusen (W) 1:2 (PV 1:0) 20.09.; protiv Bayern München (W) 2:3 (PV 1:0) 14.09. Međusobni 23.01.2026 kod domaćina: Union Berlin (W)–Bayer Leverkusen (W) 1:2 (PV 1:0). Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/bayer-leverkusen-vs-union-berlin/ytf82qa5#5934576"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5934576
+    },
+    "fixtureId": 5934576
+   }
+  },
+  {
+   "fixtureId": 5905986,
+   "docId": "2026-11-20_tsv-havelse_viktoria-koln-1904",
+   "utc": "2026-11-20T18:00+00:00",
+   "league": "Njemačka · 3. Liga",
+   "stage": "3. Liga",
+   "home": "TSV Havelse",
+   "away": "Viktoria Köln 1904",
+   "score": 43,
+   "cand": {
+    "sel": "2/1",
+    "score": 43,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 43,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 4
+    }
+   },
+   "h2h": [
+    "2026-03-14 TSV Havelse–Viktoria Köln 1904 3:2 (PV 0:2)",
+    "2025-10-04 Viktoria Köln 1904–TSV Havelse 4:1 (PV 2:0)",
+    "2022-02-25 Viktoria Köln 1904–TSV Havelse 0:0 (PV 0:0)",
+    "2021-09-17 TSV Havelse–Viktoria Köln 1904 1:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 Wehen Wiesbaden–TSV Havelse 3:0 (PV 1:0)",
+    "2026-10-31 TSV Havelse–Ingolstadt 1:1 (PV 1:1)",
+    "2026-10-25 TSV Havelse–Saarbrücken 3:2 (PV 1:1)",
+    "2026-10-18 Meppen–TSV Havelse 1:1 (PV 1:1)",
+    "2026-10-13 TSV Havelse–Würzburger Kickers 2:2 (PV 2:0)",
+    "2026-10-10 Jahn Regensburg–TSV Havelse 5:0 (PV 2:0)",
+    "2026-09-25 TSV Havelse–Fortuna Köln 1:3 (PV 0:1)",
+    "2026-09-15 MSV Duisburg–TSV Havelse 2:1 (PV 0:1)",
+    "2026-09-12 TSV Havelse–Sonnenhof Großaspach 2:2 (PV 1:2)",
+    "2026-09-05 Preussen Münster–TSV Havelse 2:1 (PV 1:1)",
+    "2026-08-30 TSV Havelse–Waldhof Mannheim 3:2 (PV 1:2)",
+    "2026-08-15 RW Essen–TSV Havelse 1:0 (PV 0:0)",
+    "2026-08-08 TSV Havelse–VfB Stuttgart II 2:3 (PV 1:1)",
+    "2026-05-16 Alemannia Aachen–TSV Havelse 6:1 (PV 1:0)",
+    "2026-05-10 TSV Havelse–FC Schweinfurt 3:2 (PV 1:2)"
+   ],
+   "awayLast": [
+    "2026-11-06 Viktoria Köln 1904–Saarbrücken 5:3 (PV 3:0)",
+    "2026-10-31 Hoffenheim II–Viktoria Köln 1904 0:1 (PV 0:1)",
+    "2026-10-24 Viktoria Köln 1904–SC Verl 3:1 (PV 0:1)",
+    "2026-10-18 MSV Duisburg–Viktoria Köln 1904 1:1 (PV 1:0)",
+    "2026-10-14 Viktoria Köln 1904–Sonnenhof Großaspach 2:2 (PV 2:0)",
+    "2026-10-11 Alemannia Aachen–Viktoria Köln 1904 2:5 (PV 1:4)",
+    "2026-09-19 Viktoria Köln 1904–Ingolstadt 3:0 (PV 0:0)",
+    "2026-09-15 Meppen–Viktoria Köln 1904 1:3 (PV 0:1)",
+    "2026-09-11 Viktoria Köln 1904–Hansa Rostock 4:0 (PV 2:0)",
+    "2026-09-05 RW Essen–Viktoria Köln 1904 1:0 (PV 1:0)",
+    "2026-08-30 Viktoria Köln 1904–Preussen Münster 4:1 (PV 3:1)",
+    "2026-08-22 Viktoria Köln 1904–1. FC Nürnberg 1:1 (PV 0:0)",
+    "2026-08-16 VfB Stuttgart II–Viktoria Köln 1904 1:3 (PV 0:1)",
+    "2026-08-08 Viktoria Köln 1904–Jahn Regensburg 2:5 (PV 0:2)",
+    "2026-05-16 MSV Duisburg–Viktoria Köln 1904 1:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "19:00",
+    "league": "Njemačka · 3. Liga",
+    "home": "TSV Havelse",
+    "away": "Viktoria Köln 1904",
+    "pairId": "tsv-havelse__viktoria-koln-1904",
+    "venue": "Eilenriedestadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "TSV Havelse 2× okrenut minus s PV (zadnjih 15); međusobni 14.03.2026 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/tsv-havelse-vs-viktoria-koln-1904/upb3ut5#5905986"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "TSV Havelse: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/tsv-havelse-vs-viktoria-koln-1904/upb3ut5#5905986"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (14.03.2026); u zadnjih 10: TSV Havelse 1×, Viktoria Köln 1904 1×",
+      "src": [
+       "https://www.fotmob.com/matches/tsv-havelse-vs-viktoria-koln-1904/upb3ut5#5905986"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 43,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 43,
+     "alt": "1/2"
+    },
+    "reasoning": "TSV Havelse, preokreti: MSV Duisburg–TSV Havelse 2:1 (PV 0:1) 15.09.; protiv Waldhof Mannheim 3:2 (PV 1:2) 30.08.; protiv FC Schweinfurt 3:2 (PV 1:2) 10.05. Međusobni 14.03.2026 kod domaćina: TSV Havelse–Viktoria Köln 1904 3:2 (PV 0:2). Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/tsv-havelse-vs-viktoria-koln-1904/upb3ut5#5905986"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5905986
+    },
+    "fixtureId": 5905986
+   }
+  },
+  {
+   "fixtureId": 1000018200,
+   "docId": "2026-11-21_chiangmai-united_nakhon-pathom",
+   "utc": "2026-11-21T11:30+00:00",
+   "league": "Tajland · Thai League 2",
+   "stage": "Thai League 2",
+   "home": "Chiangmai United",
+   "away": "Nakhon Pathom",
+   "score": 31,
+   "cand": {
+    "sel": "1/2",
+    "score": 31
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 31
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-02-28 Nakhon Pathom–Chiangmai United 2:5 (PV 2:1)",
+    "2025-11-03 Chiangmai United–Nakhon Pathom 0:1 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-08 PT Satun FC–Chiangmai United 1:1 (PV 0:1)",
+    "2026-11-01 Chiangmai United–Uttaradit FC 1:1 (PV 1:1)",
+    "2026-10-25 Chanthaburi FC–Chiangmai United 0:0 (PV 0:0)",
+    "2026-10-17 Chiangmai United–Songkhla United FC 1:1 (PV 1:1)",
+    "2026-10-14 Nong Bua Pitchaya FC–Chiangmai United 3:1 (PV 0:0)",
+    "2026-10-10 Chiangmai United–Kasetsart 2:0 (PV 0:0)",
+    "2026-09-19 Muang Thong United–Chiangmai United 1:0 (PV 1:0)",
+    "2026-09-15 Chiangmai United–Khonkaen United FC 3:1 (PV 2:0)",
+    "2026-09-12 Nakhon Ratchasima FC–Chiangmai United 1:2 (PV 1:2)",
+    "2026-09-05 Chiangmai United–Pattaya Dolphins United 0:1 (PV 0:0)",
+    "2026-04-25 Kasetsart–Chiangmai United 3:4 (PV 1:1)",
+    "2026-04-18 Chiangmai United–Nong Bua Pitchaya FC 3:0 (PV 0:0)",
+    "2026-04-04 Chiangmai United–Rasisalai United 1:2 (PV 0:1)",
+    "2026-03-21 Khonkaen United FC–Chiangmai United 2:1 (PV 0:1)",
+    "2026-03-14 Chiangmai United–Trat FC 0:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Nakhon Pathom–Mahasarakham Sam Bai Tao 6:2 (PV 0:2)",
+    "2026-11-01 PT Satun FC–Nakhon Pathom 0:0 (PV 0:0)",
+    "2026-10-24 Uttaradit FC–Nakhon Pathom 2:0 (PV 1:0)",
+    "2026-10-20 Uthai Thani FC–Nakhon Pathom 2:0 (PV 1:0)",
+    "2026-10-17 Nakhon Pathom–Nong Bua Pitchaya FC 4:3 (PV 3:2)",
+    "2026-10-14 Chanthaburi FC–Nakhon Pathom 3:0 (PV 1:0)",
+    "2026-10-10 Nakhon Pathom–Muang Thong United 1:0 (PV 0:0)",
+    "2026-09-20 Kasetsart–Nakhon Pathom 0:0 (PV 0:0)",
+    "2026-09-16 Nakhon Pathom–Kanchanaburi Power 1:1 (PV 0:0)",
+    "2026-09-13 Phrae United–Nakhon Pathom 0:0 (PV 0:0)",
+    "2026-09-05 Nakhon Pathom–Nakhon Ratchasima FC 2:2 (PV 1:0)",
+    "2026-04-25 Phrae United–Nakhon Pathom 0:2 (PV 0:1)",
+    "2026-04-19 Nakhon Pathom–Bangkok FC 0:3 (PV 0:1)",
+    "2026-04-04 Mahasarakham Sam Bai Tao–Nakhon Pathom 0:2 (PV 0:1)",
+    "2026-03-22 Nakhon Pathom–Nong Bua Pitchaya FC 3:1 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "12:30",
+    "league": "Tajland · Thai League 2",
+    "home": "Chiangmai United",
+    "away": "Nakhon Pathom",
+    "pairId": "chiangmai-united__nakhon-pathom",
+    "venue": "100th Anniversary CMRU Sport Center Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Nakhon Pathom 2× okrenut minus s PV (zadnjih 15); međusobni 28.02.2026 1/2",
+      "src": [
+       "https://www.fotmob.com/matches/nakhon-pathom-vs-chiangmai-united/8wlwpqfi#1000018200"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 1/2 (28.02.2026); Nakhon Pathom u zadnjem meču 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/nakhon-pathom-vs-chiangmai-united/8wlwpqfi#1000018200"
+      ],
+      "by": "korisnik",
+      "rule": "R2"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 31
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 31
+    },
+    "reasoning": "Nakhon Pathom: okrenut minus s PV (zadnjih 15) – protiv Mahasarakham Sam Bai Tao 6:2 (PV 0:2) 08.11.; protiv Nong Bua Pitchaya FC 3:1 (PV 0:1) 22.03. Chiangmai United: ispušteno vodstvo s PV (zadnjih 15) – Khonkaen United FC–Chiangmai United 2:1 (PV 0:1) 21.03. Međusobni 28.02.2026 kod gosta: Nakhon Pathom–Chiangmai United 2:5 (PV 2:1).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/nakhon-pathom-vs-chiangmai-united/8wlwpqfi#1000018200"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000018200
+    },
+    "fixtureId": 1000018200
+   }
+  },
+  {
+   "fixtureId": 5911268,
+   "docId": "2026-11-20_wattenscheid_koln-ii",
+   "utc": "2026-11-20T17:30+00:00",
+   "league": "Njemačka · Regionalliga",
+   "stage": "Regionalliga West",
+   "home": "Wattenscheid",
+   "away": "FC Köln II",
+   "score": 30,
+   "cand": {
+    "sel": "1/2",
+    "score": 30,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 30,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 3
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2022-10-01 FC Köln II–Wattenscheid 3:2 (PV 2:1)",
+    "2019-04-13 FC Köln II–Wattenscheid 0:0 (PV 0:0)",
+    "2018-10-06 Wattenscheid–FC Köln II 1:1 (PV 1:0)",
+    "2018-02-25 FC Köln II–Wattenscheid 3:0 (PV 1:0)",
+    "2017-09-02 Wattenscheid–FC Köln II 1:0 (PV 0:0)",
+    "2017-02-25 FC Köln II–Wattenscheid 2:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Bochum II–Wattenscheid 3:2 (PV 0:1)",
+    "2026-10-31 Wattenscheid–Sportfreunde Lotte 0:0 (PV 0:0)",
+    "2026-10-25 Oberhausen–Wattenscheid 3:0 (PV 2:0)",
+    "2026-10-16 Wattenscheid–FC Gütersloh 1:2 (PV 0:1)",
+    "2026-10-10 Borussia Dortmund II–Wattenscheid 3:2 (PV 2:1)",
+    "2026-10-03 Wattenscheid–SC Wiedenbrück 3:1 (PV 2:1)",
+    "2026-09-27 Wattenscheid–Bonner SC 1:1 (PV 1:0)",
+    "2026-09-18 Sportfreunde Siegen–Wattenscheid 2:1 (PV 1:1)",
+    "2026-09-12 Wattenscheid–FC Bocholt 1:1 (PV 1:1)",
+    "2026-09-06 SC Paderborn 07 II–Wattenscheid 5:2 (PV 0:2)",
+    "2026-09-02 Wattenscheid–SV Rödinghausen 2:1 (PV 2:0)",
+    "2026-08-29 Borussia Mönchengladbach II–Wattenscheid 4:1 (PV 0:1)",
+    "2026-08-21 Wattenscheid–Schalke 04 II 3:0 (PV 0:0)",
+    "2026-08-15 VfB Hilden–Wattenscheid 2:0 (PV 1:0)",
+    "2026-08-08 Wattenscheid–Westfalia Rhynern 1:2 (PV 1:2)"
+   ],
+   "awayLast": [
+    "2026-11-08 FC Köln II–Sportfreunde Siegen 2:2 (PV 1:1)",
+    "2026-11-01 FC Bocholt–FC Köln II 2:2 (PV 0:1)",
+    "2026-10-24 FC Köln II–SC Paderborn 07 II 2:2 (PV 0:1)",
+    "2026-10-20 Schalke 04 II–FC Köln II 1:3 (PV 0:1)",
+    "2026-10-16 SV Rödinghausen–FC Köln II 2:3 (PV 1:2)",
+    "2026-10-11 FC Köln II–Borussia Mönchengladbach II 1:2 (PV 0:2)",
+    "2026-09-26 FC Köln II–VfB Hilden 4:3 (PV 3:2)",
+    "2026-09-19 Westfalia Rhynern–FC Köln II 3:2 (PV 1:0)",
+    "2026-09-13 FC Köln II–Bergisch Gladbach 1:2 (PV 1:0)",
+    "2026-09-04 Bonner SC–FC Köln II 2:1 (PV 1:1)",
+    "2026-09-01 Bochum II–FC Köln II 0:4 (PV 0:2)",
+    "2026-08-29 FC Köln II–Sportfreunde Lotte 2:2 (PV 1:1)",
+    "2026-08-22 Oberhausen–FC Köln II 1:2 (PV 0:2)",
+    "2026-08-16 FC Köln II–FC Gütersloh 0:3 (PV 0:2)",
+    "2026-08-07 Borussia Dortmund II–FC Köln II 1:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "18:30",
+    "league": "Njemačka · Regionalliga",
+    "home": "Wattenscheid",
+    "away": "FC Köln II",
+    "pairId": "koln-ii__wattenscheid",
+    "venue": "Lohrheidestadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Wattenscheid: 3 preokreta u zadnjih 15, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/wattenscheid-vs-fc-koln-ii/26djj0#5911268"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Wattenscheid preokret u zadnjem meču, FC Köln II 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/wattenscheid-vs-fc-koln-ii/26djj0#5911268"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 30,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 30,
+     "alt": "2/1"
+    },
+    "reasoning": "Wattenscheid, preokreti: Bochum II–Wattenscheid 3:2 (PV 0:1) 08.11.; SC Paderborn 07 II–Wattenscheid 5:2 (PV 0:2) 06.09.; Borussia Mönchengladbach II–Wattenscheid 4:1 (PV 0:1) 29.08. FC Köln II, preokreti: protiv Bergisch Gladbach 1:2 (PV 1:0) 13.09. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/wattenscheid-vs-fc-koln-ii/26djj0#5911268"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5911268
+    },
+    "fixtureId": 5911268
+   }
+  },
+  {
+   "fixtureId": 5906561,
+   "docId": "2026-11-20_southend_boreham-wood",
+   "utc": "2026-11-20T19:45+00:00",
+   "league": "Engleska · National League",
+   "stage": "National League",
+   "home": "Southend",
+   "away": "Boreham Wood",
+   "score": 30,
+   "cand": {
+    "sel": "1/2",
+    "score": 30,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 30,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-02-24 Southend–Boreham Wood 0:2 (PV 0:1)",
+    "2025-09-30 Boreham Wood–Southend 1:1 (PV 0:0)",
+    "2024-04-01 Southend United–Boreham Wood 4:2 (PV 3:0)",
+    "2023-10-28 Boreham Wood–Southend United 1:1 (PV 0:1)",
+    "2023-03-14 Boreham Wood–Southend United 1:0 (PV 0:0)",
+    "2022-12-20 Southend United–Boreham Wood 2:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-14 Southend–Aldershot Town 2:1 (PV 0:1)",
+    "2026-10-31 Wealdstone–Southend 3:2 (PV 1:2)",
+    "2026-10-27 Worthing–Southend 3:3 (PV 0:2)",
+    "2026-10-24 Southend–FC Halifax Town 2:2 (PV 1:1)",
+    "2026-10-17 Southend–Berkhamsted 1:2 (PV 1:1)",
+    "2026-10-10 Boston United–Southend 1:2 (PV 1:1)",
+    "2026-10-03 Southend–AFC Fylde 3:1 (PV 2:1)",
+    "2026-09-30 Eastleigh–Southend 1:1 (PV 0:1)",
+    "2026-09-26 Southend–Barrow 2:4 (PV 0:0)",
+    "2026-09-19 Gateshead FC–Southend 1:6 (PV 0:6)",
+    "2026-09-15 Southend–Tamworth 3:1 (PV 0:0)",
+    "2026-09-12 Carlisle–Southend 2:2 (PV 1:0)",
+    "2026-09-05 Southend–Yeovil 3:2 (PV 0:1)",
+    "2026-08-31 Woking–Southend 1:1 (PV 0:1)",
+    "2026-08-28 Southend–Kidderminster Harriers 1:3 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-14 Yeovil–Boreham Wood 2:2 (PV 2:1)",
+    "2026-11-07 Boreham Wood–Wigan 0:3 (PV 0:2)",
+    "2026-10-31 Boreham Wood–Hartlepool United 4:3 (PV 2:0)",
+    "2026-10-27 Woking–Boreham Wood 1:2 (PV 1:1)",
+    "2026-10-24 Boreham Wood–AFC Fylde 4:0 (PV 3:0)",
+    "2026-10-20 Boreham Wood–Middlesbrough U21 7:1 (PV 3:0)",
+    "2026-10-17 Boreham Wood–Woking 3:2 (PV 2:2)",
+    "2026-10-09 Sutton United–Boreham Wood 0:2 (PV 0:0)",
+    "2026-10-03 Boreham Wood–Altrincham 3:1 (PV 0:1)",
+    "2026-09-29 Boreham Wood–Kidderminster Harriers 3:1 (PV 2:0)",
+    "2026-09-26 Solihull Moors–Boreham Wood 0:3 (PV 0:1)",
+    "2026-09-23 Boreham Wood–Everton U21 1:1 (PV 0:0)",
+    "2026-09-19 Boreham Wood–Harrogate Town 4:1 (PV 2:1)",
+    "2026-09-16 Scunthorpe–Boreham Wood 1:2 (PV 0:0)",
+    "2026-09-12 Eastleigh–Boreham Wood 1:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "20:45",
+    "league": "Engleska · National League",
+    "home": "Southend",
+    "away": "Boreham Wood",
+    "pairId": "boreham-wood__southend",
+    "venue": "Roots Hall",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Southend: 4 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/boreham-wood-vs-southend-united/10y8wm#5906561"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Southend preokret u zadnjem meču, Boreham Wood 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/boreham-wood-vs-southend-united/10y8wm#5906561"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 30,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 30,
+     "alt": "2/1"
+    },
+    "reasoning": "Southend, preokreti: protiv Aldershot Town 2:1 (PV 0:1) 14.11.; Wealdstone–Southend 3:2 (PV 1:2) 31.10.; protiv Yeovil 3:2 (PV 0:1) 05.09. Boreham Wood, preokreti: protiv Altrincham 3:1 (PV 0:1) 03.10. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/boreham-wood-vs-southend-united/10y8wm#5906561"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5906561
+    },
+    "fixtureId": 5906561
+   }
+  },
+  {
+   "fixtureId": 5987257,
+   "docId": "2026-11-21_ehime_gifu",
+   "utc": "2026-11-21T05:00+00:00",
+   "league": "Japan · J. League 3",
+   "stage": "J. League 3",
+   "home": "Ehime FC",
+   "away": "FC Gifu",
+   "score": 27,
+   "cand": {
+    "sel": "2/1",
+    "score": 27,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 27,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2023-08-05 FC Gifu–Ehime FC 0:0 (PV 0:0)",
+    "2023-04-08 Ehime FC–FC Gifu 2:1 (PV 1:0)",
+    "2022-08-27 Ehime FC–FC Gifu 1:1 (PV 1:1)",
+    "2022-03-19 FC Gifu–Ehime FC 3:0 (PV 2:0)",
+    "2019-10-20 FC Gifu–Ehime FC 2:0 (PV 0:0)",
+    "2019-04-07 Ehime FC–FC Gifu 2:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-15 Nagano Parceiro–Ehime FC 1:0 (PV 1:0)",
+    "2026-11-07 Ehime FC–Reilac Shiga 1:0 (PV 1:0)",
+    "2026-11-03 Kochi United SC–Ehime FC 4:0 (PV 1:0)",
+    "2026-10-31 Tochigi SC–Ehime FC 2:0 (PV 0:0)",
+    "2026-10-25 Ehime FC–Fukushima United 2:4 (PV 1:2)",
+    "2026-10-21 Ehime FC–Renofa Yamaguchi 2:1 (PV 2:0)",
+    "2026-10-17 Kagoshima United–Ehime FC 4:2 (PV 2:0)",
+    "2026-10-11 Roasso Kumamoto–Ehime FC 0:2 (PV 0:1)",
+    "2026-10-03 Ehime FC–Thespa Gunma 3:1 (PV 0:1)",
+    "2026-09-29 Ehime FC–FC Tokyo 0:2 (PV 0:1)",
+    "2026-09-26 FC Ryūkyū–Ehime FC 1:1 (PV 0:0)",
+    "2026-09-19 Ehime FC–Kamatamare Sanuki 2:1 (PV 1:0)",
+    "2026-09-14 FC Osaka–Ehime FC 2:1 (PV 1:0)",
+    "2026-09-05 Ehime FC–Giravanz Kitakyushu 4:2 (PV 2:1)",
+    "2026-09-02 Ehime FC–Blaublitz Akita 1:0 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-14 FC Gifu–Matsumoto Yamaga 0:0 (PV 0:0)",
+    "2026-11-07 FC Gifu–Giravanz Kitakyushu 1:0 (PV 1:0)",
+    "2026-11-03 FC Ryūkyū–FC Gifu 2:3 (PV 2:1)",
+    "2026-10-31 FC Gifu–FC Osaka 1:0 (PV 0:0)",
+    "2026-10-25 Roasso Kumamoto–FC Gifu 2:1 (PV 0:1)",
+    "2026-10-21 FC Gifu–SC Sagamihara 2:1 (PV 0:1)",
+    "2026-10-17 FC Gifu–Fukushima United 1:0 (PV 1:0)",
+    "2026-10-11 Gainare Tottori–FC Gifu 0:1 (PV 0:0)",
+    "2026-10-03 FC Gifu–Renofa Yamaguchi 0:2 (PV 0:2)",
+    "2026-09-29 FC Gifu–Yokohama FC 1:2 (PV 1:0)",
+    "2026-09-26 Kamatamare Sanuki–FC Gifu 3:4 (PV 2:3)",
+    "2026-09-20 Nagano Parceiro–FC Gifu 1:0 (PV 0:0)",
+    "2026-09-12 Nara Club–FC Gifu 2:1 (PV 1:0)",
+    "2026-09-05 FC Gifu–Zweigen Kanazawa 0:1 (PV 0:1)",
+    "2026-09-02 FC Gifu–Tokushima Vortis 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "06:00",
+    "league": "Japan · J. League 3",
+    "home": "Ehime FC",
+    "away": "FC Gifu",
+    "pairId": "ehime__gifu",
+    "venue": "Ningineer Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 2/1 u zadnjih 10: Ehime FC 1, FC Gifu 2",
+      "src": [
+       "https://www.fotmob.com/matches/fc-gifu-vs-ehime-fc/o66foi0#5987257"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "FC Gifu: 4 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/fc-gifu-vs-ehime-fc/o66foi0#5987257"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 27,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 27,
+     "alt": "1/2"
+    },
+    "reasoning": "FC Gifu, preokreti: FC Ryūkyū–FC Gifu 2:3 (PV 2:1) 03.11.; Roasso Kumamoto–FC Gifu 2:1 (PV 0:1) 25.10.; protiv SC Sagamihara 2:1 (PV 0:1) 21.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/fc-gifu-vs-ehime-fc/o66foi0#5987257"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5987257
+    },
+    "fixtureId": 5987257
+   }
+  },
+  {
+   "fixtureId": 5837267,
+   "docId": "2026-11-20_barnsley_sheff-wed",
+   "utc": "2026-11-20T20:00+00:00",
+   "league": "Engleska · League One",
+   "stage": "League One",
+   "home": "Barnsley",
+   "away": "Sheff Wed",
+   "score": 21,
+   "cand": {
+    "sel": "1/2",
+    "score": 21,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 21,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 2,
+      "last10": 3,
+      "last15": 3
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 0,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2023-05-29 Barnsley–Sheffield Wednesday 0:0 (PV 0:0)",
+    "2023-03-21 Barnsley–Sheffield Wednesday 4:2 (PV 2:1)",
+    "2022-09-03 Sheffield Wednesday–Barnsley 0:2 (PV 0:1)",
+    "2021-03-20 Barnsley–Sheffield Wednesday 1:2 (PV 0:1)",
+    "2020-12-12 Sheffield Wednesday–Barnsley 1:2 (PV 1:2)",
+    "2020-02-08 Barnsley–Sheffield Wednesday 1:1 (PV 1:1)"
+   ],
+   "homeLast": [
+    "2026-11-14 Wigan–Barnsley 2:1 (PV 1:0)",
+    "2026-11-11 Barnsley–Oldham 5:2 (PV 3:0)",
+    "2026-11-07 Barnsley–Aldershot Town 7:2 (PV 4:0)",
+    "2026-10-31 Barnsley–Oxford Utd 1:1 (PV 1:0)",
+    "2026-10-24 Reading–Barnsley 2:1 (PV 0:1)",
+    "2026-10-20 Luton–Barnsley 2:1 (PV 2:0)",
+    "2026-10-17 Barnsley–Cambridge 1:2 (PV 1:0)",
+    "2026-10-10 Stockport County–Barnsley 3:1 (PV 0:1)",
+    "2026-10-06 Fleetwood–Barnsley 4:1 (PV 0:0)",
+    "2026-09-22 Barnsley–Leeds United U21 3:4 (PV 0:3)",
+    "2026-09-19 Barnsley–Leicester 1:1 (PV 0:1)",
+    "2026-09-15 Peterborough–Barnsley 3:3 (PV 2:2)",
+    "2026-09-12 Plymouth–Barnsley 3:0 (PV 2:0)",
+    "2026-09-05 Barnsley–Stevenage 1:5 (PV 1:1)",
+    "2026-09-02 Barnsley–Blackpool 2:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-14 Sheff Wed–Plymouth 3:0 (PV 1:0)",
+    "2026-11-11 Sheff Wed–Accrington 0:4 (PV 0:2)",
+    "2026-11-08 Oldham–Sheff Wed 1:1 (PV 0:0)",
+    "2026-11-01 Sheff Wed–Blackpool 1:1 (PV 1:0)",
+    "2026-10-27 Sheff Wed–Cambridge 1:1 (PV 0:0)",
+    "2026-10-24 Doncaster–Sheff Wed 2:0 (PV 2:0)",
+    "2026-10-20 Notts County–Sheff Wed 2:0 (PV 1:0)",
+    "2026-10-17 Sheff Wed–Wimbledon 5:0 (PV 3:0)",
+    "2026-10-10 Huddersfield–Sheff Wed 2:2 (PV 0:0)",
+    "2026-10-06 Sheff Wed–Sunderland U21 2:0 (PV 1:0)",
+    "2026-09-22 Salford–Sheff Wed 1:2 (PV 1:0)",
+    "2026-09-19 Sheff Wed–Stockport County 0:0 (PV 0:0)",
+    "2026-09-12 Sheff Wed–Wigan 0:0 (PV 0:0)",
+    "2026-09-05 Peterborough–Sheff Wed 1:2 (PV 0:1)",
+    "2026-09-01 Wycombe–Sheff Wed 1:2 (PV 1:2)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "21:00",
+    "league": "Engleska · League One",
+    "home": "Barnsley",
+    "away": "Sheff Wed",
+    "pairId": "barnsley__sheff-wed",
+    "venue": "Oakwell",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 1/2 u zadnjih 10: Barnsley 3, Sheff Wed 0",
+      "src": [
+       "https://www.fotmob.com/matches/barnsley-vs-sheffield-wednesday/2tasp0#5837267"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Barnsley: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/barnsley-vs-sheffield-wednesday/2tasp0#5837267"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 21,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 21,
+     "alt": "2/1"
+    },
+    "reasoning": "Barnsley, preokreti: Reading–Barnsley 2:1 (PV 0:1) 24.10.; protiv Cambridge 1:2 (PV 1:0) 17.10.; Stockport County–Barnsley 3:1 (PV 0:1) 10.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/barnsley-vs-sheffield-wednesday/2tasp0#5837267"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5837267
+    },
+    "fixtureId": 5837267
+   }
+  },
+  {
+   "fixtureId": 6503839,
+   "docId": "2026-11-21_gangwon_daejeon-hana-citizen",
+   "utc": "2026-11-21T07:30+00:00",
+   "league": "Južna Koreja · K League 1",
+   "stage": "K-League 1 Final Group A",
+   "home": "Gangwon FC",
+   "away": "Daejeon Hana Citizen",
+   "score": 21,
+   "cand": {
+    "sel": "1/2",
+    "score": 21,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 21,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 2,
+      "away5": 0,
+      "last10": 2,
+      "last15": 3
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-08-23 Daejeon Hana Citizen–Gangwon FC 3:0 (PV 0:0)",
+    "2026-05-12 Gangwon FC–Daejeon Hana Citizen 2:0 (PV 0:0)",
+    "2026-04-12 Daejeon Hana Citizen–Gangwon FC 0:2 (PV 0:1)",
+    "2025-11-22 Daejeon Hana Citizen–Gangwon FC 1:1 (PV 1:0)",
+    "2025-09-27 Gangwon FC–Daejeon Hana Citizen 0:0 (PV 0:0)",
+    "2025-07-19 Gangwon FC–Daejeon Hana Citizen 2:2 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Gangwon FC–Jeonbuk Hyundai Motors FC 3:2 (PV 2:1)",
+    "2026-11-05 Kuching City–Gangwon FC 2:0 (PV 2:0)",
+    "2026-11-01 Ulsan HD FC–Gangwon FC 2:1 (PV 0:1)",
+    "2026-10-29 Gangwon FC–Kuching City 1:0 (PV 1:0)",
+    "2026-10-24 FC Seoul–Gangwon FC 1:1 (PV 0:0)",
+    "2026-10-18 Gangwon FC–Incheon United 1:1 (PV 1:1)",
+    "2026-10-15 Gangwon FC–Phnom Penh 1:2 (PV 0:1)",
+    "2026-10-09 Gangwon FC–Bucheon FC 1995 2:0 (PV 0:0)",
+    "2026-09-27 Gangwon FC–Incheon United 0:0 (PV 0:0)",
+    "2026-09-20 Gangwon FC–Jeju SK 0:1 (PV 0:1)",
+    "2026-09-17 Kitchee–Gangwon FC 0:0 (PV 0:0)",
+    "2026-09-13 Gimcheon Sangmu–Gangwon FC 2:2 (PV 2:0)",
+    "2026-09-09 Gangwon FC–Jeonbuk Hyundai Motors FC 1:1 (PV 0:1)",
+    "2026-09-06 FC Anyang–Gangwon FC 0:3 (PV 0:1)",
+    "2026-08-30 Gangwon FC–Pohang Steelers 0:0 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 Daejeon Hana Citizen–Incheon United 2:0 (PV 0:0)",
+    "2026-11-03 Kashiwa Reysol–Daejeon Hana Citizen 2:0 (PV 0:0)",
+    "2026-10-31 Jeonbuk Hyundai Motors FC–Daejeon Hana Citizen 0:0 (PV 0:0)",
+    "2026-10-27 Daejeon Hana Citizen–Vissel Kobe 0:1 (PV 0:0)",
+    "2026-10-24 Gimcheon Sangmu–Daejeon Hana Citizen 1:2 (PV 0:0)",
+    "2026-10-18 Daejeon Hana Citizen–Gwangju FC 3:2 (PV 0:2)",
+    "2026-10-13 Shanghai Port–Daejeon Hana Citizen 1:1 (PV 0:0)",
+    "2026-10-09 Daejeon Hana Citizen–Jeonbuk Hyundai Motors FC 2:1 (PV 0:1)",
+    "2026-09-20 Incheon United–Daejeon Hana Citizen 1:1 (PV 1:0)",
+    "2026-09-15 Daejeon Hana Citizen–Kyoto Sanga FC 1:0 (PV 0:0)",
+    "2026-09-12 Daejeon Hana Citizen–Pohang Steelers 2:2 (PV 0:0)",
+    "2026-09-09 Daejeon Hana Citizen–FC Anyang 3:2 (PV 0:1)",
+    "2026-09-05 Bucheon FC 1995–Daejeon Hana Citizen 0:5 (PV 0:2)",
+    "2026-08-30 Jeju SK–Daejeon Hana Citizen 3:1 (PV 1:0)",
+    "2026-08-26 Daejeon Hana Citizen–Ulsan HD FC 2:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "08:30",
+    "league": "Južna Koreja · K League 1",
+    "home": "Gangwon FC",
+    "away": "Daejeon Hana Citizen",
+    "pairId": "daejeon-hana-citizen__gangwon",
+    "venue": "Gangneung High1 Arena",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 1/2 u zadnjih 10: Gangwon FC 1, Daejeon Hana Citizen 2",
+      "src": [
+       "https://www.fotmob.com/matches/daejeon-hana-citizen-vs-gangwon-fc/khglgqd#6503839"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Daejeon Hana Citizen: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/daejeon-hana-citizen-vs-gangwon-fc/khglgqd#6503839"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Daejeon Hana Citizen: AFC Champions League Elite East za 3 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/daejeon-hana-citizen-vs-gangwon-fc/khglgqd#6503839"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "away",
+      "type": "rotacija",
+      "note": "AFC Champions League Elite East za 3 dana",
+      "impact": 2,
+      "src": [
+       "https://www.fotmob.com/matches/daejeon-hana-citizen-vs-gangwon-fc/khglgqd#6503839"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 21,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 21,
+     "alt": "2/1"
+    },
+    "reasoning": "Daejeon Hana Citizen, preokreti: protiv Gwangju FC 3:2 (PV 0:2) 18.10.; protiv Jeonbuk Hyundai Motors FC 2:1 (PV 0:1) 09.10.; protiv FC Anyang 3:2 (PV 0:1) 09.09. Daejeon Hana Citizen: AFC Champions League Elite East za 3 dana.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/daejeon-hana-citizen-vs-gangwon-fc/khglgqd#6503839"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6503839
+    },
+    "fixtureId": 6503839
+   }
+  },
+  {
+   "fixtureId": 6503954,
+   "docId": "2026-11-21_pohang-steelers_anyang",
+   "utc": "2026-11-21T05:00+00:00",
+   "league": "Južna Koreja · K League 1",
+   "stage": "K-League 1 Final Group B",
+   "home": "Pohang Steelers",
+   "away": "FC Anyang",
+   "score": 20,
+   "cand": {
+    "sel": "1/2",
+    "score": 20,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 20,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-10-18 Pohang Steelers–FC Anyang 0:0 (PV 0:0)",
+    "2026-07-04 FC Anyang–Pohang Steelers 2:3 (PV 1:1)",
+    "2026-04-19 Pohang Steelers–FC Anyang 0:1 (PV 0:0)",
+    "2025-08-15 FC Anyang–Pohang Steelers 0:1 (PV 0:1)",
+    "2025-05-23 FC Anyang–Pohang Steelers 0:2 (PV 0:0)",
+    "2025-04-12 Pohang Steelers–FC Anyang 2:1 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-08 Bucheon FC 1995–Pohang Steelers 2:2 (PV 0:1)",
+    "2026-11-04 Pohang Steelers–Gamba Osaka 3:3 (PV 0:1)",
+    "2026-11-01 Pohang Steelers–Jeju SK 1:1 (PV 1:1)",
+    "2026-10-28 Kashima Antlers–Pohang Steelers 3:0 (PV 0:0)",
+    "2026-10-24 Ulsan HD FC–Pohang Steelers 2:2 (PV 0:2)",
+    "2026-10-18 Pohang Steelers–FC Anyang 0:0 (PV 0:0)",
+    "2026-10-13 Pohang Steelers–Johor Darul Ta'zim 0:2 (PV 0:0)",
+    "2026-10-09 Incheon United–Pohang Steelers 3:0 (PV 3:0)",
+    "2026-09-20 Pohang Steelers–FC Seoul 2:1 (PV 2:0)",
+    "2026-09-15 Beijing Guoan–Pohang Steelers 3:1 (PV 2:1)",
+    "2026-09-12 Daejeon Hana Citizen–Pohang Steelers 2:2 (PV 0:0)",
+    "2026-09-09 Pohang Steelers–Gimcheon Sangmu 0:0 (PV 0:0)",
+    "2026-09-05 Jeonbuk Hyundai Motors FC–Pohang Steelers 2:0 (PV 0:0)",
+    "2026-08-30 Gangwon FC–Pohang Steelers 0:0 (PV 0:0)",
+    "2026-08-25 Jeju SK–Pohang Steelers 1:2 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 Gimcheon Sangmu–FC Anyang 1:0 (PV 0:0)",
+    "2026-11-01 FC Anyang–Bucheon FC 1995 2:1 (PV 0:1)",
+    "2026-10-24 FC Anyang–Jeonbuk Hyundai Motors FC 1:1 (PV 1:0)",
+    "2026-10-18 Pohang Steelers–FC Anyang 0:0 (PV 0:0)",
+    "2026-10-10 Gimcheon Sangmu–FC Anyang 0:1 (PV 0:1)",
+    "2026-09-19 FC Anyang–Ulsan HD FC 2:1 (PV 1:0)",
+    "2026-09-13 Gwangju FC–FC Anyang 1:1 (PV 1:1)",
+    "2026-09-09 Daejeon Hana Citizen–FC Anyang 3:2 (PV 0:1)",
+    "2026-09-06 FC Anyang–Gangwon FC 0:3 (PV 0:1)",
+    "2026-08-29 Bucheon FC 1995–FC Anyang 1:1 (PV 0:0)",
+    "2026-08-26 FC Anyang–Incheon United 2:1 (PV 1:1)",
+    "2026-08-22 FC Anyang–FC Seoul 0:7 (PV 0:5)",
+    "2026-08-19 FC Anyang–Jeju SK 2:1 (PV 0:1)",
+    "2026-08-15 Jeju SK–FC Anyang 2:0 (PV 1:0)",
+    "2026-08-08 FC Anyang–Daejeon Hana Citizen 1:2 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "06:00",
+    "league": "Južna Koreja · K League 1",
+    "home": "Pohang Steelers",
+    "away": "FC Anyang",
+    "pairId": "anyang__pohang-steelers",
+    "venue": "Steelyard",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "FC Anyang: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/pohang-steelers-vs-fc-anyang/1uoornhf#6503954"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Pohang Steelers: AFC Champions League Elite East za 3 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/pohang-steelers-vs-fc-anyang/1uoornhf#6503954"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "rotacija",
+      "note": "AFC Champions League Elite East za 3 dana",
+      "impact": 2,
+      "src": [
+       "https://www.fotmob.com/matches/pohang-steelers-vs-fc-anyang/1uoornhf#6503954"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 20,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 20,
+     "alt": "2/1"
+    },
+    "reasoning": "FC Anyang, preokreti: protiv Bucheon FC 1995 2:1 (PV 0:1) 01.11.; Daejeon Hana Citizen–FC Anyang 3:2 (PV 0:1) 09.09.; protiv Jeju SK 2:1 (PV 0:1) 19.08. Pohang Steelers: AFC Champions League Elite East za 3 dana.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/pohang-steelers-vs-fc-anyang/1uoornhf#6503954"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6503954
+    },
+    "fixtureId": 6503954
+   }
+  },
+  {
+   "fixtureId": 5882361,
+   "docId": "2026-11-21_levante-badalona-w_deportivo-de-a-coruna-w",
+   "utc": "2026-11-21T11:00+00:00",
+   "league": "Španija · Liga F",
+   "stage": "Liga F",
+   "home": "Levante Badalona (W)",
+   "away": "Deportivo de A Coruña (W)",
+   "score": 20,
+   "cand": {
+    "sel": "1/2",
+    "score": 20,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 20,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 4
+    }
+   },
+   "h2h": [
+    "2026-01-18 Levante Badalona (W)–Deportivo de A Coruña (W) 1:0 (PV 1:0)",
+    "2025-08-30 Deportivo de A Coruña (W)–Levante Badalona (W) 0:0 (PV 0:0)",
+    "2025-04-12 Deportivo de A Coruña–Levante Badalona 3:1 (PV 2:1)",
+    "2024-10-06 Levante Badalona–Deportivo de A Coruña 1:0 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-14 Real Madrid (W)–Levante Badalona (W) 3:3 (PV 0:1)",
+    "2026-11-09 Atlético Madrid (W)–Levante Badalona (W) 3:0 (PV 0:0)",
+    "2026-11-01 Levante Badalona (W)–Barcelona (W) 0:4 (PV 0:1)",
+    "2026-10-24 Logroño United (W)–Levante Badalona (W) 1:0 (PV 0:0)",
+    "2026-10-17 Levante Badalona (W)–UD Tenerife (W) 0:4 (PV 0:3)",
+    "2026-10-03 Sevilla (W)–Levante Badalona (W) 3:3 (PV 1:0)",
+    "2026-09-26 Levante Badalona (W)–Granada (W) 0:1 (PV 0:0)",
+    "2026-09-19 Levante Badalona (W)–Real Sociedad (W) 0:0 (PV 0:0)",
+    "2026-09-13 Eibar (W)–Levante Badalona (W) 1:4 (PV 0:0)",
+    "2026-09-05 Espanyol (W)–Levante Badalona (W) 0:1 (PV 0:0)",
+    "2026-08-30 Athletic Club (W)–Levante Badalona (W) 3:1 (PV 1:1)",
+    "2026-05-31 Levante (W)–Levante Badalona (W) 0:1 (PV 0:1)",
+    "2026-05-26 Levante Badalona (W)–Real Madrid (W) 0:4 (PV 0:0)",
+    "2026-05-09 Espanyol (W)–Levante Badalona (W) 1:1 (PV 1:1)",
+    "2026-05-02 Levante Badalona (W)–Athletic Club (W) 0:1 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-15 Deportivo de A Coruña (W)–Barcelona (W) 1:1 (PV 0:0)",
+    "2026-11-12 CE Europa (W)–Deportivo de A Coruña (W) 0:1 (PV 0:0)",
+    "2026-11-09 Deportivo de A Coruña (W)–Valencia (W) 0:2 (PV 0:0)",
+    "2026-10-31 Madrid CFF (W)–Deportivo de A Coruña (W) 2:1 (PV 0:1)",
+    "2026-10-25 Deportivo de A Coruña (W)–Deportivo Alavés (W) 2:1 (PV 0:1)",
+    "2026-10-18 Eibar (W)–Deportivo de A Coruña (W) 2:3 (PV 0:1)",
+    "2026-10-03 Deportivo de A Coruña (W)–Atlético Madrid (W) 1:2 (PV 0:1)",
+    "2026-09-27 Deportivo de A Coruña (W)–Espanyol (W) 1:1 (PV 0:1)",
+    "2026-09-20 Granada (W)–Deportivo de A Coruña (W) 0:3 (PV 0:2)",
+    "2026-09-11 Deportivo de A Coruña (W)–Real Madrid (W) 0:2 (PV 0:2)",
+    "2026-09-06 UD Tenerife (W)–Deportivo de A Coruña (W) 0:0 (PV 0:0)",
+    "2026-08-29 Deportivo de A Coruña (W)–Sevilla (W) 0:1 (PV 0:1)",
+    "2026-05-31 UD Tenerife (W)–Deportivo de A Coruña (W) 2:0 (PV 0:0)",
+    "2026-05-27 Deportivo de A Coruña (W)–Espanyol (W) 2:2 (PV 1:1)",
+    "2026-05-09 Athletic Club (W)–Deportivo de A Coruña (W) 0:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "12:00",
+    "league": "Španija · Liga F",
+    "home": "Levante Badalona (W)",
+    "away": "Deportivo de A Coruña (W)",
+    "pairId": "deportivo-de-a-coruna-w__levante-badalona-w",
+    "venue": "Estadio Nou Municipal de Palamós",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Deportivo de A Coruña (W): 2 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/deportivo-de-coruna-vs-levante-badalona/131q0jtp0#5882361"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Levante Badalona (W): Copa de la Reina za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/deportivo-de-coruna-vs-levante-badalona/131q0jtp0#5882361"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "rotacija",
+      "note": "Copa de la Reina za 4 dana",
+      "impact": 1,
+      "src": [
+       "https://www.fotmob.com/matches/deportivo-de-coruna-vs-levante-badalona/131q0jtp0#5882361"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 20,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 20,
+     "alt": "2/1"
+    },
+    "reasoning": "Deportivo de A Coruña (W), preokreti: Madrid CFF (W)–Deportivo de A Coruña (W) 2:1 (PV 0:1) 31.10.; protiv Deportivo Alavés (W) 2:1 (PV 0:1) 25.10. Levante Badalona (W): Copa de la Reina za 4 dana.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/deportivo-de-coruna-vs-levante-badalona/131q0jtp0#5882361"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5882361
+    },
+    "fixtureId": 5882361
+   }
+  },
+  {
+   "fixtureId": 1000017584,
+   "docId": "2026-11-21_brisbane-roar_sydney",
+   "utc": "2026-11-21T08:40+00:00",
+   "league": "Australija · A-League",
+   "stage": "A-League",
+   "home": "Brisbane Roar FC",
+   "away": "Sydney FC",
+   "score": 18,
+   "cand": {
+    "sel": "1/2",
+    "score": 18,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-08-09 Brisbane Roar FC–Sydney FC 2:4 (PV 1:3)",
+    "2026-04-02 Brisbane Roar FC–Sydney FC 0:0 (PV 0:0)",
+    "2026-02-21 Sydney FC–Brisbane Roar FC 1:0 (PV 0:0)",
+    "2025-01-18 Sydney FC–Brisbane Roar FC 3:4 (PV 1:3)",
+    "2024-11-01 Brisbane Roar FC–Sydney FC 2:3 (PV 0:0)",
+    "2024-03-10 Sydney FC–Brisbane Roar FC 1:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Macarthur FC–Brisbane Roar FC 1:2 (PV 0:0)",
+    "2026-10-30 Brisbane Roar FC–Auckland FC 1:1 (PV 0:1)",
+    "2026-10-23 Brisbane Roar FC–Perth Glory 2:1 (PV 2:0)",
+    "2026-04-25 Perth Glory–Brisbane Roar FC 2:1 (PV 1:0)",
+    "2026-04-18 Brisbane Roar FC–Melbourne City FC 2:3 (PV 1:0)",
+    "2026-04-10 Central Coast–Brisbane Roar FC 2:2 (PV 0:1)",
+    "2026-04-02 Brisbane Roar FC–Sydney FC 0:0 (PV 0:0)",
+    "2026-03-21 Brisbane Roar FC–Wellington Phoenix 1:2 (PV 1:1)",
+    "2026-03-13 Brisbane Roar FC–Western Sydney 2:2 (PV 1:2)",
+    "2026-02-28 Brisbane Roar FC–Perth Glory 1:1 (PV 1:1)",
+    "2026-02-21 Sydney FC–Brisbane Roar FC 1:0 (PV 0:0)",
+    "2026-02-14 Melbourne Victory–Brisbane Roar FC 1:1 (PV 1:0)",
+    "2026-02-07 Brisbane Roar FC–Central Coast 1:2 (PV 1:1)",
+    "2026-01-31 Newcastle Jets–Brisbane Roar FC 4:1 (PV 1:0)",
+    "2026-01-24 Brisbane Roar FC–Adelaide United 2:3 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-06 Sydney FC–Central Coast 4:1 (PV 2:0)",
+    "2026-10-31 Melbourne City FC–Sydney FC 2:1 (PV 0:1)",
+    "2026-10-25 Sydney FC–Adelaide United 2:1 (PV 0:1)",
+    "2026-10-16 Sydney FC–Western Sydney 0:0 (PV 0:0)",
+    "2026-09-09 Sydney FC–Melbourne Victory 0:2 (PV 0:1)",
+    "2026-08-18 SD Raiders FC–Sydney FC 0:1 (PV 0:1)",
+    "2026-05-23 Auckland FC–Sydney FC 1:0 (PV 0:0)",
+    "2026-05-16 Newcastle Jets–Sydney FC 1:1 (PV 0:0)",
+    "2026-05-09 Sydney FC–Newcastle Jets 1:1 (PV 0:0)",
+    "2026-05-02 Melbourne Victory–Sydney FC 0:1 (PV 0:0)",
+    "2026-04-26 Sydney FC–Auckland FC 2:2 (PV 0:0)",
+    "2026-04-18 Sydney FC–Perth Glory 0:0 (PV 0:0)",
+    "2026-04-11 Western Sydney–Sydney FC 0:2 (PV 0:1)",
+    "2026-04-02 Brisbane Roar FC–Sydney FC 0:0 (PV 0:0)",
+    "2026-03-22 Sydney FC–Newcastle Jets 1:2 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "09:40",
+    "league": "Australija · A-League",
+    "home": "Brisbane Roar FC",
+    "away": "Sydney FC",
+    "pairId": "brisbane-roar__sydney",
+    "venue": "Kayo Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Sydney FC: 2 preokreta u zadnjih 15, 2 u zadnja 3",
+      "src": [
+       "https://www.fotmob.com/matches/brisbane-roar-fc-vs-sydney-fc/2ri8nx#1000017584"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 18,
+     "alt": "2/1"
+    },
+    "reasoning": "Sydney FC, preokreti: Melbourne City FC–Sydney FC 2:1 (PV 0:1) 31.10.; protiv Adelaide United 2:1 (PV 0:1) 25.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/brisbane-roar-fc-vs-sydney-fc/2ri8nx#1000017584"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000017584
+    },
+    "fixtureId": 1000017584
+   }
+  },
+  {
+   "fixtureId": 5976964,
+   "docId": "2026-11-21_bacau_cs-dinamo-bucuresti",
+   "utc": "2026-11-21T09:00+00:00",
+   "league": "Rumunija · Liga II",
+   "stage": "Liga II",
+   "home": "FC Bacău",
+   "away": "CS Dinamo București",
+   "score": 18,
+   "cand": {
+    "sel": "2/1",
+    "score": 18,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 3
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 1
+    }
+   },
+   "h2h": [
+    "2025-08-31 CS Dinamo București–FC Bacău 1:1 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 CS Afumați–FC Bacău 1:1 (PV 0:1)",
+    "2026-10-31 FC Bacău–FC Metaloglobus București 1:4 (PV 1:0)",
+    "2026-10-28 Sporting Liesti–FC Bacău 0:0 (PV 0:0)",
+    "2026-10-24 ASU Politehnica Timișoara–FC Bacău 1:0 (PV 1:0)",
+    "2026-10-18 FC Bacău–Gloria Bistrița 3:0 (PV 3:0)",
+    "2026-10-11 FC Bihor Oradea–FC Bacău 1:0 (PV 1:0)",
+    "2026-09-19 FC Bacău–Cetatea Suceava 2:2 (PV 1:0)",
+    "2026-09-15 CSM Reșița–FC Bacău 0:1 (PV 0:0)",
+    "2026-09-06 FC Bacău–CSC Dumbrăvița 6:1 (PV 1:0)",
+    "2026-09-03 FC Bacău–Universitatea Craiova 1:2 (PV 0:2)",
+    "2026-08-31 FC Bacău–CSM Slatina 0:0 (PV 0:0)",
+    "2026-08-22 Râmnicu Vâlcea–FC Bacău 2:2 (PV 2:1)",
+    "2026-08-16 FC Bacău–Steaua București 3:0 (PV 2:0)",
+    "2026-08-08 Popești Leordeni–FC Bacău 3:2 (PV 1:1)",
+    "2026-08-01 FC Bacău–CSL Ștefănești 3:0 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-09 CS Dinamo București–Râmnicu Vâlcea 2:3 (PV 1:3)",
+    "2026-10-30 Steaua București–CS Dinamo București 0:0 (PV 0:0)",
+    "2026-10-24 CS Dinamo București–Popești Leordeni 1:2 (PV 1:0)",
+    "2026-10-17 CSL Ștefănești–CS Dinamo București 1:4 (PV 0:3)",
+    "2026-10-10 CS Dinamo București–CSM Olimpia Satu Mare 2:2 (PV 1:2)",
+    "2026-09-22 ASA Târgu Mureș–CS Dinamo București 4:3 (PV 0:1)",
+    "2026-09-12 CS Dinamo București–Concordia Chiajna 2:5 (PV 2:3)",
+    "2026-09-05 FC Unirea Slobozia–CS Dinamo București 8:0 (PV 5:0)",
+    "2026-08-29 CS Dinamo București–Comunal Șelimbăr 0:1 (PV 0:1)",
+    "2026-08-21 Chindia Târgoviște–CS Dinamo București 1:2 (PV 1:0)",
+    "2026-08-15 CS Dinamo București–Metalul Buzău 0:1 (PV 0:1)",
+    "2026-08-08 CSM Slatina–CS Dinamo București 5:1 (PV 3:0)",
+    "2026-08-01 CS Afumați–CS Dinamo București 2:1 (PV 0:1)",
+    "2026-05-23 Comunal Șelimbăr–CS Dinamo București 2:0 (PV 0:0)",
+    "2026-05-16 CS Dinamo București–Comunal Șelimbăr 1:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "10:00",
+    "league": "Rumunija · Liga II",
+    "home": "FC Bacău",
+    "away": "CS Dinamo București",
+    "pairId": "bacau__cs-dinamo-bucuresti",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "CS Dinamo București: 4 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/fc-bacau-vs-cs-dinamo-bucuresti/29kr88q02#5976964"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 18,
+     "alt": "1/2"
+    },
+    "reasoning": "CS Dinamo București, preokreti: protiv Popești Leordeni 1:2 (PV 1:0) 24.10.; ASA Târgu Mureș–CS Dinamo București 4:3 (PV 0:1) 22.09.; Chindia Târgoviște–CS Dinamo București 1:2 (PV 1:0) 21.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/fc-bacau-vs-cs-dinamo-bucuresti/29kr88q02#5976964"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5976964
+    },
+    "fixtureId": 5976964
+   }
+  },
+  {
+   "fixtureId": 5910941,
+   "docId": "2026-11-20_rw-erfurt_vsg-altglienicke",
+   "utc": "2026-11-20T18:00+00:00",
+   "league": "Njemačka · Regionalliga",
+   "stage": "Regionalliga Northeast",
+   "home": "RW Erfurt",
+   "away": "VSG Altglienicke",
+   "score": 14,
+   "cand": {
+    "sel": "2/1",
+    "score": 14,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 3
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-04-15 RW Erfurt–VSG Altglienicke 1:1 (PV 1:0)",
+    "2025-08-26 VSG Altglienicke–RW Erfurt 1:3 (PV 0:2)",
+    "2025-05-11 VSG Altglienicke–RW Erfurt 0:1 (PV 0:1)",
+    "2024-11-23 RW Erfurt–VSG Altglienicke 1:1 (PV 0:1)",
+    "2024-02-24 RW Erfurt–VSG Altglienicke 2:2 (PV 0:2)",
+    "2023-08-31 VSG Altglienicke–RW Erfurt 1:1 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-06 BSG Chemie Leipzig–RW Erfurt 0:2 (PV 0:0)",
+    "2026-11-01 RW Erfurt–Babelsberg 4:1 (PV 2:0)",
+    "2026-10-24 Greifswalder FC–RW Erfurt 2:3 (PV 2:1)",
+    "2026-10-16 RW Erfurt–FSV Zwickau 2:2 (PV 1:2)",
+    "2026-10-11 Chemnitzer FC–RW Erfurt 3:1 (PV 1:0)",
+    "2026-09-26 Lokomotive Leipzig–RW Erfurt 3:4 (PV 1:0)",
+    "2026-09-19 RW Erfurt–Erzgebirge Aue 2:2 (PV 1:0)",
+    "2026-09-15 Hertha Berlin II–RW Erfurt 1:2 (PV 1:1)",
+    "2026-09-11 RW Erfurt–RSV Eintracht 1949 5:0 (PV 1:0)",
+    "2026-08-29 RW Erfurt–BFC Preussen 1:1 (PV 0:0)",
+    "2026-08-25 FSV Luckenwalde–RW Erfurt 0:5 (PV 0:3)",
+    "2026-08-15 RW Erfurt–Magdeburg II 4:1 (PV 2:0)",
+    "2026-08-09 Carl Zeiss Jena–RW Erfurt 1:2 (PV 1:0)",
+    "2026-08-05 RW Erfurt–Tasmania Berlin 6:0 (PV 3:0)",
+    "2026-08-02 Hallescher FC–RW Erfurt 1:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-06 VSG Altglienicke–Tasmania Berlin 5:0 (PV 4:0)",
+    "2026-10-30 Lokomotive Leipzig–VSG Altglienicke 3:1 (PV 2:0)",
+    "2026-10-23 VSG Altglienicke–FSV Luckenwalde 3:1 (PV 2:0)",
+    "2026-10-17 BFC Preussen–VSG Altglienicke 1:3 (PV 0:2)",
+    "2026-10-09 VSG Altglienicke–BFC Dynamo 0:1 (PV 0:1)",
+    "2026-09-25 Magdeburg II–VSG Altglienicke 0:1 (PV 0:0)",
+    "2026-09-19 VSG Altglienicke–RSV Eintracht 1949 3:1 (PV 2:1)",
+    "2026-09-15 FSV Zwickau–VSG Altglienicke 1:2 (PV 0:1)",
+    "2026-09-11 VSG Altglienicke–Chemnitzer FC 0:2 (PV 0:0)",
+    "2026-09-02 Carl Zeiss Jena–VSG Altglienicke 1:0 (PV 1:0)",
+    "2026-08-28 VSG Altglienicke–BSG Chemie Leipzig 1:1 (PV 1:1)",
+    "2026-08-24 VSG Altglienicke–Wolfsburg 2:2 (PV 1:0)",
+    "2026-08-16 VSG Altglienicke–Hallescher FC 2:1 (PV 1:0)",
+    "2026-08-11 VSG Altglienicke–Hertha Berlin II 3:1 (PV 3:0)",
+    "2026-08-07 Greifswalder FC–VSG Altglienicke 1:3 (PV 1:2)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "19:00",
+    "league": "Njemačka · Regionalliga",
+    "home": "RW Erfurt",
+    "away": "VSG Altglienicke",
+    "pairId": "rw-erfurt__vsg-altglienicke",
+    "venue": "Steigerwaldstadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "RW Erfurt: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/rw-erfurt-vs-vsg-altglienicke/ru9o3du#5910941"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 14,
+     "alt": "1/2"
+    },
+    "reasoning": "RW Erfurt, preokreti: Greifswalder FC–RW Erfurt 2:3 (PV 2:1) 24.10.; Lokomotive Leipzig–RW Erfurt 3:4 (PV 1:0) 26.09.; Carl Zeiss Jena–RW Erfurt 1:2 (PV 1:0) 09.08. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/rw-erfurt-vs-vsg-altglienicke/ru9o3du#5910941"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5910941
+    },
+    "fixtureId": 5910941
+   }
+  },
+  {
+   "fixtureId": 1000015510,
+   "docId": "2026-11-20_brugge-nxt_virton",
+   "utc": "2026-11-20T19:00+00:00",
+   "league": "Belgija · First Division B",
+   "stage": "First Division B",
+   "home": "Club Brugge NXT",
+   "away": "Virton",
+   "score": 14,
+   "cand": {
+    "sel": "1/2",
+    "score": 14,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 4,
+      "last10": 10,
+      "last15": 10
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2023-02-05 Club Brugge NXT–Virton 1:0 (PV 0:0)",
+    "2022-09-30 Virton–Club Brugge NXT 3:3 (PV 2:2)"
+   ],
+   "homeLast": [
+    "2026-11-07 Anderlecht Futures–Club Brugge NXT 4:0 (PV 1:0)",
+    "2026-10-31 Club Brugge NXT–Sporting Hasselt 3:4 (PV 1:0)",
+    "2026-10-24 Genk U23–Club Brugge NXT 0:0 (PV 0:0)",
+    "2026-10-09 FCV Dender EH–Club Brugge NXT 3:0 (PV 2:0)",
+    "2026-09-18 Club Brugge NXT–Gent U23 2:2 (PV 1:1)",
+    "2026-09-13 FC Liège–Club Brugge NXT 4:4 (PV 2:2)",
+    "2026-09-05 Club Brugge NXT–Eupen 0:1 (PV 0:0)",
+    "2026-08-29 Patro Eisden–Club Brugge NXT 1:2 (PV 0:1)",
+    "2026-08-22 Club Brugge NXT–RFC Seraing 3:2 (PV 1:0)",
+    "2026-04-11 Lommel–Club Brugge NXT 0:1 (PV 0:0)",
+    "2026-04-04 Club Brugge NXT–Eupen 0:1 (PV 0:1)",
+    "2026-03-21 Gent U23–Club Brugge NXT 3:2 (PV 0:0)",
+    "2026-03-14 Club Brugge NXT–SK Beveren 2:2 (PV 2:0)",
+    "2026-03-10 Genk U23–Club Brugge NXT 0:0 (PV 0:0)",
+    "2026-03-07 K. Lierse SK–Club Brugge NXT 2:1 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-07 Virton–Beerschot 1:2 (PV 0:1)",
+    "2026-11-01 Eupen–Virton 1:2 (PV 1:0)",
+    "2026-10-24 RFC Seraing–Virton 3:1 (PV 1:1)",
+    "2026-10-17 Virton–Genk 0:2 (PV 0:2)",
+    "2026-10-10 Virton–Sporting Hasselt 3:4 (PV 2:1)",
+    "2026-09-20 KSC Lokeren–Virton 1:1 (PV 0:0)",
+    "2026-09-12 Virton–Genk U23 3:0 (PV 1:0)",
+    "2026-08-30 Virton–Francs Borains 0:1 (PV 0:0)",
+    "2026-08-21 Anderlecht Futures–Virton 0:1 (PV 0:1)",
+    "2026-08-15 Virton–K. Lierse SK 3:0 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "20:00",
+    "league": "Belgija · First Division B",
+    "home": "Club Brugge NXT",
+    "away": "Virton",
+    "pairId": "brugge-nxt__virton",
+    "venue": "The NEST",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Virton: 2 preokreta u zadnjih 10, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/virton-vs-club-brugge-nxt/8whbc86u#1000015510"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 14,
+     "alt": "2/1"
+    },
+    "reasoning": "Virton, preokreti: Eupen–Virton 1:2 (PV 1:0) 01.11.; protiv Sporting Hasselt 3:4 (PV 2:1) 10.10. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/virton-vs-club-brugge-nxt/8whbc86u#1000015510"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000015510
+    },
+    "fixtureId": 1000015510
+   }
+  },
+  {
+   "fixtureId": 6503838,
+   "docId": "2026-11-21_jeonbuk-hyundai-motors_seoul",
+   "utc": "2026-11-21T05:00+00:00",
+   "league": "Južna Koreja · K League 1",
+   "stage": "K-League 1 Final Group A",
+   "home": "Jeonbuk Hyundai Motors FC",
+   "away": "FC Seoul",
+   "score": 14,
+   "cand": {
+    "sel": "1/2",
+    "score": 14,
+    "alt": "2/1"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-09-12 Jeonbuk Hyundai Motors FC–FC Seoul 1:2 (PV 1:1)",
+    "2026-08-01 Jeonbuk Hyundai Motors FC–FC Seoul 0:0 (PV 0:0)",
+    "2026-04-11 FC Seoul–Jeonbuk Hyundai Motors FC 1:0 (PV 0:0)",
+    "2025-11-30 Jeonbuk Hyundai Motors FC–FC Seoul 2:1 (PV 0:0)",
+    "2025-09-27 FC Seoul–Jeonbuk Hyundai Motors FC 1:1 (PV 0:0)",
+    "2025-07-02 FC Seoul–Jeonbuk Hyundai Motors FC 0:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Gangwon FC–Jeonbuk Hyundai Motors FC 3:2 (PV 2:1)",
+    "2026-11-03 Jeonbuk Hyundai Motors FC–Johor Darul Ta'zim 2:0 (PV 2:0)",
+    "2026-10-31 Jeonbuk Hyundai Motors FC–Daejeon Hana Citizen 0:0 (PV 0:0)",
+    "2026-10-27 Beijing Guoan–Jeonbuk Hyundai Motors FC 2:2 (PV 1:1)",
+    "2026-10-24 FC Anyang–Jeonbuk Hyundai Motors FC 1:1 (PV 1:0)",
+    "2026-10-18 Jeonbuk Hyundai Motors FC–Jeju SK 3:2 (PV 1:1)",
+    "2026-10-14 Vissel Kobe–Jeonbuk Hyundai Motors FC 2:0 (PV 1:0)",
+    "2026-10-09 Daejeon Hana Citizen–Jeonbuk Hyundai Motors FC 2:1 (PV 0:1)",
+    "2026-09-20 Jeonbuk Hyundai Motors FC–Gwangju FC 2:2 (PV 1:1)",
+    "2026-09-16 Jeonbuk Hyundai Motors FC–Kashiwa Reysol 2:1 (PV 0:1)",
+    "2026-09-12 Jeonbuk Hyundai Motors FC–FC Seoul 1:2 (PV 1:1)",
+    "2026-09-09 Gangwon FC–Jeonbuk Hyundai Motors FC 1:1 (PV 0:1)",
+    "2026-09-05 Jeonbuk Hyundai Motors FC–Pohang Steelers 2:0 (PV 0:0)",
+    "2026-08-30 Incheon United–Jeonbuk Hyundai Motors FC 1:1 (PV 0:0)",
+    "2026-08-25 Gimcheon Sangmu–Jeonbuk Hyundai Motors FC 0:0 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 FC Seoul–Ulsan HD FC 1:2 (PV 0:1)",
+    "2026-11-04 FC Seoul–Viettel 3:0 (PV 0:0)",
+    "2026-11-01 FC Seoul–Incheon United 0:1 (PV 0:0)",
+    "2026-10-28 Viettel–FC Seoul 0:5 (PV 0:4)",
+    "2026-10-24 FC Seoul–Gangwon FC 1:1 (PV 0:0)",
+    "2026-10-18 FC Seoul–Gimcheon Sangmu 2:2 (PV 1:1)",
+    "2026-10-14 Melbourne Victory–FC Seoul 3:0 (PV 0:0)",
+    "2026-10-10 FC Seoul–Jeju SK 2:1 (PV 0:0)",
+    "2026-09-20 Pohang Steelers–FC Seoul 2:1 (PV 2:0)",
+    "2026-09-16 FC Seoul–Persib Bandung 0:1 (PV 0:1)",
+    "2026-09-12 Jeonbuk Hyundai Motors FC–FC Seoul 1:2 (PV 1:1)",
+    "2026-09-08 Ulsan HD FC–FC Seoul 1:0 (PV 0:0)",
+    "2026-09-05 FC Seoul–Incheon United 1:0 (PV 0:0)",
+    "2026-08-30 Gwangju FC–FC Seoul 2:5 (PV 1:3)",
+    "2026-08-25 FC Seoul–Bucheon FC 1995 1:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "06:00",
+    "league": "Južna Koreja · K League 1",
+    "home": "Jeonbuk Hyundai Motors FC",
+    "away": "FC Seoul",
+    "pairId": "jeonbuk-hyundai-motors__seoul",
+    "venue": "Jeonju World Cup Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Jeonbuk Hyundai Motors FC: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/jeonbuk-hyundai-motors-fc-vs-fc-seoul/4f09kz8#6503838"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Jeonbuk Hyundai Motors FC: AFC Champions League Elite East za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/jeonbuk-hyundai-motors-fc-vs-fc-seoul/4f09kz8#6503838"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "FC Seoul: AFC Champions League Two za 4 dana (umor, rotacija)",
+      "src": [
+       "https://www.fotmob.com/matches/jeonbuk-hyundai-motors-fc-vs-fc-seoul/4f09kz8#6503838"
+      ],
+      "by": "korisnik",
+      "rule": "R5"
+     }
+    ],
+    "warnings": [
+     {
+      "team": "home",
+      "type": "rotacija",
+      "note": "AFC Champions League Elite East za 4 dana",
+      "impact": 2,
+      "src": [
+       "https://www.fotmob.com/matches/jeonbuk-hyundai-motors-fc-vs-fc-seoul/4f09kz8#6503838"
+      ]
+     },
+     {
+      "team": "away",
+      "type": "rotacija",
+      "note": "AFC Champions League Two za 4 dana",
+      "impact": 2,
+      "src": [
+       "https://www.fotmob.com/matches/jeonbuk-hyundai-motors-fc-vs-fc-seoul/4f09kz8#6503838"
+      ]
+     }
+    ],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 14,
+     "alt": "2/1"
+    },
+    "reasoning": "Jeonbuk Hyundai Motors FC, preokreti: Daejeon Hana Citizen–Jeonbuk Hyundai Motors FC 2:1 (PV 0:1) 09.10.; protiv Kashiwa Reysol 2:1 (PV 0:1) 16.09. Jeonbuk Hyundai Motors FC: AFC Champions League Elite East za 4 dana. FC Seoul: AFC Champions League Two za 4 dana.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/jeonbuk-hyundai-motors-fc-vs-fc-seoul/4f09kz8#6503838"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6503838
+    },
+    "fixtureId": 6503838
+   }
+  },
+  {
+   "fixtureId": 6503840,
+   "docId": "2026-11-21_incheon-united_ulsan-hd",
+   "utc": "2026-11-21T07:30+00:00",
+   "league": "Južna Koreja · K League 1",
+   "stage": "K-League 1 Final Group A",
+   "home": "Incheon United",
+   "away": "Ulsan HD FC",
+   "score": 14,
+   "cand": {
+    "sel": "2/1",
+    "score": 14,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 2,
+      "away5": 0,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-09-12 Ulsan HD FC–Incheon United 2:1 (PV 0:0)",
+    "2026-07-21 Ulsan HD FC–Incheon United 1:2 (PV 1:1)",
+    "2026-04-11 Incheon United–Ulsan HD FC 1:2 (PV 0:1)",
+    "2025-05-14 Ulsan HD FC–Incheon United 3:0 (PV 1:0)",
+    "2024-09-22 Incheon United–Ulsan HD FC 0:0 (PV 0:0)",
+    "2024-07-17 Ulsan HD FC–Incheon United 1:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Daejeon Hana Citizen–Incheon United 2:0 (PV 0:0)",
+    "2026-11-01 FC Seoul–Incheon United 0:1 (PV 0:0)",
+    "2026-10-24 Incheon United–Jeju SK 3:1 (PV 0:0)",
+    "2026-10-18 Gangwon FC–Incheon United 1:1 (PV 1:1)",
+    "2026-10-09 Incheon United–Pohang Steelers 3:0 (PV 3:0)",
+    "2026-09-27 Gangwon FC–Incheon United 0:0 (PV 0:0)",
+    "2026-09-20 Incheon United–Daejeon Hana Citizen 1:1 (PV 1:0)",
+    "2026-09-12 Ulsan HD FC–Incheon United 2:1 (PV 0:0)",
+    "2026-09-08 Incheon United–Bucheon FC 1995 2:1 (PV 1:1)",
+    "2026-09-05 FC Seoul–Incheon United 1:0 (PV 0:0)",
+    "2026-08-30 Incheon United–Jeonbuk Hyundai Motors FC 1:1 (PV 0:0)",
+    "2026-08-26 FC Anyang–Incheon United 2:1 (PV 1:1)",
+    "2026-08-23 Gwangju FC–Incheon United 0:1 (PV 0:0)",
+    "2026-08-16 Incheon United–Gimcheon Sangmu 1:1 (PV 0:0)",
+    "2026-08-02 Jeju SK–Incheon United 3:3 (PV 2:2)"
+   ],
+   "awayLast": [
+    "2026-11-08 FC Seoul–Ulsan HD FC 1:2 (PV 0:1)",
+    "2026-11-01 Ulsan HD FC–Gangwon FC 2:1 (PV 0:1)",
+    "2026-10-24 Ulsan HD FC–Pohang Steelers 2:2 (PV 0:2)",
+    "2026-10-17 Ulsan HD FC–Bucheon FC 1995 2:1 (PV 0:1)",
+    "2026-10-11 Gwangju FC–Ulsan HD FC 4:3 (PV 2:2)",
+    "2026-09-19 FC Anyang–Ulsan HD FC 2:1 (PV 1:0)",
+    "2026-09-12 Ulsan HD FC–Incheon United 2:1 (PV 0:0)",
+    "2026-09-08 Ulsan HD FC–FC Seoul 1:0 (PV 0:0)",
+    "2026-09-05 Jeju SK–Ulsan HD FC 0:0 (PV 0:0)",
+    "2026-08-29 Ulsan HD FC–Gimcheon Sangmu 3:1 (PV 1:1)",
+    "2026-08-26 Daejeon Hana Citizen–Ulsan HD FC 2:1 (PV 0:0)",
+    "2026-08-22 Jeonbuk Hyundai Motors FC–Ulsan HD FC 1:0 (PV 0:0)",
+    "2026-08-16 Ulsan HD FC–Gangwon FC 2:3 (PV 1:2)",
+    "2026-08-08 Pohang Steelers–Ulsan HD FC 0:2 (PV 0:0)",
+    "2026-08-02 Ulsan HD FC–FC Anyang 3:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "08:30",
+    "league": "Južna Koreja · K League 1",
+    "home": "Incheon United",
+    "away": "Ulsan HD FC",
+    "pairId": "incheon-united__ulsan-hd",
+    "venue": "Sungui Arena Park",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Ulsan HD FC: 2 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/incheon-united-vs-ulsan-hd-fc/ggzwgw0#6503840"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 14,
+     "alt": "1/2"
+    },
+    "reasoning": "Ulsan HD FC, preokreti: protiv Gangwon FC 2:1 (PV 0:1) 01.11.; protiv Bucheon FC 1995 2:1 (PV 0:1) 17.10. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/incheon-united-vs-ulsan-hd-fc/ggzwgw0#6503840"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6503840
+    },
+    "fixtureId": 6503840
+   }
+  },
+  {
+   "fixtureId": 1000018199,
+   "docId": "2026-11-21_mahasarakham-sam-bai-tao_pt-satun",
+   "utc": "2026-11-21T11:00+00:00",
+   "league": "Tajland · Thai League 2",
+   "stage": "Thai League 2",
+   "home": "Mahasarakham Sam Bai Tao",
+   "away": "PT Satun FC",
+   "score": 14,
+   "cand": {
+    "sel": "1/2",
+    "score": 14
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 4,
+      "last10": 10,
+      "last15": 11
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-08 Nakhon Pathom–Mahasarakham Sam Bai Tao 6:2 (PV 0:2)",
+    "2026-10-30 Mahasarakham Sam Bai Tao–Chanthaburi FC 1:0 (PV 1:0)",
+    "2026-10-24 Nong Bua Pitchaya FC–Mahasarakham Sam Bai Tao 3:0 (PV 2:0)",
+    "2026-10-18 Mahasarakham Sam Bai Tao–Muang Thong United 0:0 (PV 0:0)",
+    "2026-10-14 Kasetsart–Mahasarakham Sam Bai Tao 3:1 (PV 1:0)",
+    "2026-10-11 Mahasarakham Sam Bai Tao–Uttaradit FC 2:3 (PV 0:3)",
+    "2026-09-19 Kanchanaburi Power–Mahasarakham Sam Bai Tao 1:1 (PV 1:0)",
+    "2026-09-16 Mahasarakham Sam Bai Tao–Nakhon Ratchasima FC 1:1 (PV 1:0)",
+    "2026-09-12 Khonkaen United FC–Mahasarakham Sam Bai Tao 3:0 (PV 2:0)",
+    "2026-09-05 Mahasarakham Sam Bai Tao–Songkhla United FC 1:1 (PV 1:0)",
+    "2026-04-25 Mahasarakham Sam Bai Tao–Khonkaen United FC 2:2 (PV 1:1)",
+    "2026-04-18 Rasisalai United–Mahasarakham Sam Bai Tao 3:0 (PV 0:0)",
+    "2026-04-04 Mahasarakham Sam Bai Tao–Nakhon Pathom 0:2 (PV 0:1)",
+    "2026-03-22 Trat FC–Mahasarakham Sam Bai Tao 2:0 (PV 1:0)",
+    "2026-03-15 Pattani FC–Mahasarakham Sam Bai Tao 2:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-08 PT Satun FC–Chiangmai United 1:1 (PV 0:1)",
+    "2026-11-01 PT Satun FC–Nakhon Pathom 0:0 (PV 0:0)",
+    "2026-10-24 Kasetsart–PT Satun FC 1:3 (PV 0:2)",
+    "2026-10-18 PT Satun FC–Chanthaburi FC 0:0 (PV 0:0)",
+    "2026-10-15 Uttaradit FC–PT Satun FC 1:1 (PV 0:1)",
+    "2026-10-11 PT Satun FC–Khonkaen United FC 1:0 (PV 1:0)",
+    "2026-09-19 Nong Bua Pitchaya FC–PT Satun FC 4:3 (PV 2:0)",
+    "2026-09-15 PT Satun FC–Muang Thong United 3:0 (PV 1:0)",
+    "2026-09-12 Songkhla United FC–PT Satun FC 1:3 (PV 1:0)",
+    "2026-09-06 PT Satun FC–Kanchanaburi Power 2:4 (PV 2:1)",
+    "2025-12-28 PT Satun FC–Lamphun Warrior 0:2 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "12:00",
+    "league": "Tajland · Thai League 2",
+    "home": "Mahasarakham Sam Bai Tao",
+    "away": "PT Satun FC",
+    "pairId": "mahasarakham-sam-bai-tao__pt-satun",
+    "venue": "Maha Sarakham Provincial Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "PT Satun FC: 2 preokreta u zadnjih 11",
+      "src": [
+       "https://www.fotmob.com/matches/pt-satun-fc-vs-mahasarakham-sam-bai-tao/x856tqrg#1000018199"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Mahasarakham Sam Bai Tao preokret u zadnjem meču, PT Satun FC 2× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/pt-satun-fc-vs-mahasarakham-sam-bai-tao/x856tqrg#1000018199"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 14
+    },
+    "reasoning": "Mahasarakham Sam Bai Tao, preokreti: Nakhon Pathom–Mahasarakham Sam Bai Tao 6:2 (PV 0:2) 08.11. PT Satun FC, preokreti: Songkhla United FC–PT Satun FC 1:3 (PV 1:0) 12.09.; protiv Kanchanaburi Power 2:4 (PV 2:1) 06.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/pt-satun-fc-vs-mahasarakham-sam-bai-tao/x856tqrg#1000018199"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000018199
+    },
+    "fixtureId": 1000018199
+   }
+  },
+  {
+   "fixtureId": 1000022038,
+   "docId": "2026-11-20_independiente-del-valle_csd-macara",
+   "utc": "2026-11-20T17:00+00:00",
+   "league": "Ekvador · Serie A",
+   "stage": "Serie A - Championship Round",
+   "home": "Independiente del Valle",
+   "away": "CSD Macará",
+   "score": 12,
+   "cand": {
+    "sel": "2/1",
+    "score": 12,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 7
+    }
+   },
+   "h2h": [
+    "2026-10-17 CSD Macará–Independiente del Valle 1:0 (PV 0:0)",
+    "2026-09-05 Independiente del Valle–CSD Macará 3:1 (PV 3:0)",
+    "2026-05-16 CSD Macará–Independiente del Valle 0:3 (PV 0:1)",
+    "2025-07-12 CSD Macará–Independiente del Valle 1:2 (PV 1:1)",
+    "2025-03-16 Independiente del Valle–CSD Macará 1:1 (PV 0:1)",
+    "2024-11-24 Independiente del Valle–CSD Macará 7:0 (PV 6:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Aucas–Independiente del Valle 2:4 (PV 1:3)",
+    "2026-11-01 Independiente del Valle–LDU de Quito 2:0 (PV 0:0)",
+    "2026-10-23 Independiente del Valle–Universidad Católica 0:0 (PV 0:0)",
+    "2026-10-17 CSD Macará–Independiente del Valle 1:0 (PV 0:0)",
+    "2026-10-10 Independiente del Valle–Aucas 2:1 (PV 0:1)",
+    "2026-09-18 Flamengo–Independiente del Valle 1:1 (PV 0:1)",
+    "2026-09-13 Libertad–Independiente del Valle 2:3 (PV 1:2)",
+    "2026-09-11 Independiente del Valle–Flamengo 0:2 (PV 0:0)",
+    "2026-09-05 Independiente del Valle–CSD Macará 3:1 (PV 3:0)",
+    "2026-09-03 Barcelona SC–Independiente del Valle 2:1 (PV 0:1)",
+    "2026-08-29 Independiente del Valle–Universidad Católica 2:2 (PV 0:0)",
+    "2026-08-26 Independiente del Valle–Tolima 3:1 (PV 0:0)",
+    "2026-08-22 Leones del Norte–Independiente del Valle 2:3 (PV 1:0)",
+    "2026-08-19 Tolima–Independiente del Valle 0:1 (PV 0:1)",
+    "2026-08-15 Independiente del Valle–Delfín 3:2 (PV 3:1)"
+   ],
+   "awayLast": [
+    "2026-11-08 CSD Macará–Universidad Católica 2:2 (PV 0:1)",
+    "2026-10-31 CSD Macará–Barcelona SC 3:0 (PV 2:0)",
+    "2026-10-24 LDU de Quito–CSD Macará 1:2 (PV 0:1)",
+    "2026-10-17 CSD Macará–Independiente del Valle 1:0 (PV 0:0)",
+    "2026-10-11 Universidad Católica–CSD Macará 0:1 (PV 0:1)",
+    "2026-09-19 Aucas–CSD Macará 1:2 (PV 0:1)",
+    "2026-09-13 CSD Macará–Emelec 1:0 (PV 0:0)",
+    "2026-09-05 Independiente del Valle–CSD Macará 3:1 (PV 3:0)",
+    "2026-09-02 CSD Macará–Manta 4:3 (PV 1:1)",
+    "2026-08-30 Orense–CSD Macará 1:2 (PV 0:2)",
+    "2026-08-25 Libertad–CSD Macará 1:0 (PV 1:0)",
+    "2026-08-20 CSD Macará–Santos 0:0 (PV 0:0)",
+    "2026-08-18 CSD Macará–Universidad Católica 1:1 (PV 0:0)",
+    "2026-08-13 Santos–CSD Macará 2:1 (PV 1:1)",
+    "2026-08-09 Barcelona SC–CSD Macará 1:2 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "18:00",
+    "league": "Ekvador · Serie A",
+    "home": "Independiente del Valle",
+    "away": "CSD Macará",
+    "pairId": "csd-macara__independiente-del-valle",
+    "venue": "Estadio Banco Guayaquil",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Independiente del Valle: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/csd-macara-vs-independiente-del-valle/9526lx3#1000022038"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 12,
+     "alt": "1/2"
+    },
+    "reasoning": "Independiente del Valle, preokreti: protiv Aucas 2:1 (PV 0:1) 10.10.; Barcelona SC–Independiente del Valle 2:1 (PV 0:1) 03.09.; Leones del Norte–Independiente del Valle 2:3 (PV 1:0) 22.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/csd-macara-vs-independiente-del-valle/9526lx3#1000022038"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000022038
+    },
+    "fixtureId": 1000022038
+   }
+  },
+  {
+   "fixtureId": 5883743,
+   "docId": "2026-11-20_real-madrid-castilla_real-murcia",
+   "utc": "2026-11-20T20:15+00:00",
+   "league": "Španija · Primera Federacion",
+   "stage": "Primera Federacion - Group 2",
+   "home": "Real Madrid Castilla",
+   "away": "Real Murcia",
+   "score": 12,
+   "cand": {
+    "sel": "2/1",
+    "score": 12,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2025-03-21 Real Madrid Castilla–Real Murcia 0:0 (PV 0:0)",
+    "2024-12-06 Real Murcia–Real Madrid Castilla 3:1 (PV 2:0)",
+    "2024-02-24 Real Madrid Castilla–Real Murcia 5:1 (PV 0:0)",
+    "2023-11-12 Real Murcia–Real Madrid Castilla 0:0 (PV 0:0)",
+    "2014-06-07 Real Murcia–Real Madrid Castilla 1:0 (PV 1:0)",
+    "2014-01-11 Real Madrid Castilla–Real Murcia 2:2 (PV 2:1)"
+   ],
+   "homeLast": [
+    "2026-11-13 Gimnàstic–Real Madrid Castilla 0:1 (PV 0:1)",
+    "2026-11-08 Real Madrid Castilla–Hércules 2:2 (PV 0:1)",
+    "2026-10-31 Real Madrid Castilla–Cartagena 2:0 (PV 2:0)",
+    "2026-10-25 Algeciras–Real Madrid Castilla 2:0 (PV 1:0)",
+    "2026-10-18 Real Madrid Castilla–Antequera 3:2 (PV 1:1)",
+    "2026-10-09 UD Ibiza–Real Madrid Castilla 1:1 (PV 1:0)",
+    "2026-10-02 Real Madrid Castilla–Atlético Madrileño 3:2 (PV 1:1)",
+    "2026-09-27 Real Madrid Castilla–Alcorcón 1:2 (PV 1:2)",
+    "2026-09-23 Sant Andreu–Real Madrid Castilla 1:1 (PV 1:1)",
+    "2026-09-12 CDA Águilas FC–Real Madrid Castilla 1:0 (PV 1:0)",
+    "2026-09-05 Real Madrid Castilla–Juventud Torremolinos CF 2:0 (PV 1:0)",
+    "2026-08-31 CD Teruel–Real Madrid Castilla 0:0 (PV 0:0)",
+    "2026-06-05 Sabadell–Real Madrid Castilla 3:0 (PV 2:0)",
+    "2026-05-29 Real Madrid Castilla–Sabadell 2:0 (PV 0:0)",
+    "2026-05-23 CD Guadalajara–Real Madrid Castilla 2:2 (PV 2:1)"
+   ],
+   "awayLast": [
+    "2026-11-15 Real Murcia–Alcorcón 1:2 (PV 1:0)",
+    "2026-11-08 Real Murcia–Algeciras 1:1 (PV 1:1)",
+    "2026-11-01 Antequera–Real Murcia 0:1 (PV 0:1)",
+    "2026-10-24 Juventud Torremolinos CF–Real Murcia 1:0 (PV 0:0)",
+    "2026-10-18 Real Murcia–Real Zaragoza 0:0 (PV 0:0)",
+    "2026-10-11 Rayo Majadahonda–Real Murcia 0:1 (PV 0:1)",
+    "2026-10-07 Cartagena–Real Murcia 1:0 (PV 0:0)",
+    "2026-10-04 Real Murcia–Gimnàstic 2:0 (PV 1:0)",
+    "2026-09-19 Real Murcia–CE Europa 2:1 (PV 0:1)",
+    "2026-09-13 Atlético Madrileño–Real Murcia 4:0 (PV 2:0)",
+    "2026-09-06 Real Murcia–CD Teruel 4:0 (PV 1:0)",
+    "2026-08-29 Hércules–Real Murcia 1:2 (PV 0:0)",
+    "2026-05-24 Real Murcia–Eldense 3:0 (PV 2:0)",
+    "2026-05-16 Juventud Torremolinos CF–Real Murcia 1:3 (PV 0:2)",
+    "2026-05-10 Real Murcia–Betis Deportivo Balompie 1:2 (PV 1:2)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "21:15",
+    "league": "Španija · Primera Federacion",
+    "home": "Real Madrid Castilla",
+    "away": "Real Murcia",
+    "pairId": "real-madrid-castilla__real-murcia",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Real Murcia: 2 preokreta u zadnjih 15, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/real-madrid-castilla-vs-real-murcia/2bmazw#5883743"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 12,
+     "alt": "1/2"
+    },
+    "reasoning": "Real Murcia, preokreti: protiv Alcorcón 1:2 (PV 1:0) 15.11.; protiv CE Europa 2:1 (PV 0:1) 19.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/real-madrid-castilla-vs-real-murcia/2bmazw#5883743"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5883743
+    },
+    "fixtureId": 5883743
+   }
+  },
+  {
+   "fixtureId": 5832953,
+   "docId": "2026-11-20_almere-city_nac-breda",
+   "utc": "2026-11-20T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "Almere City FC",
+   "away": "NAC Breda",
+   "score": 9,
+   "cand": {
+    "sel": "2/1",
+    "score": 9
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2025-03-14 Almere City FC–NAC Breda 1:1 (PV 1:1)",
+    "2024-11-30 NAC Breda–Almere City FC 1:0 (PV 1:0)",
+    "2023-05-07 Almere City FC–NAC Breda 0:2 (PV 0:2)",
+    "2022-12-16 NAC Breda–Almere City FC 0:1 (PV 0:1)",
+    "2022-04-16 Almere City FC–NAC Breda 1:2 (PV 0:0)",
+    "2021-12-10 NAC Breda–Almere City FC 1:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-14 Almere City FC–Helmond Sport 6:1 (PV 3:0)",
+    "2026-11-06 Jong AZ Alkmaar–Almere City FC 1:3 (PV 0:1)",
+    "2026-10-30 RKC Waalwijk–Almere City FC 1:2 (PV 0:1)",
+    "2026-10-27 Telstar–Almere City FC 0:2 (PV 0:0)",
+    "2026-10-23 Almere City FC–Roda JC Kerkrade 2:3 (PV 1:0)",
+    "2026-10-17 FC Emmen–Almere City FC 2:1 (PV 2:0)",
+    "2026-10-09 Almere City FC–FC Eindhoven 3:0 (PV 2:0)",
+    "2026-10-03 Almere City FC–FC Volendam 1:0 (PV 1:0)",
+    "2026-09-25 FC Dordrecht–Almere City FC 3:2 (PV 1:1)",
+    "2026-09-18 Almere City FC–Heracles 1:0 (PV 0:0)",
+    "2026-09-11 MVV Maastricht–Almere City FC 0:4 (PV 0:0)",
+    "2026-09-04 Almere City FC–Jong Ajax 0:1 (PV 0:0)",
+    "2026-08-29 De Graafschap–Almere City FC 1:4 (PV 1:1)",
+    "2026-08-21 Vitesse–Almere City FC 0:3 (PV 0:0)",
+    "2026-08-14 Almere City FC–Jong PSV 3:1 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-14 NAC Breda–FC Emmen 4:2 (PV 0:1)",
+    "2026-11-06 FC Dordrecht–NAC Breda 0:0 (PV 0:0)",
+    "2026-11-02 Jong PSV–NAC Breda 0:2 (PV 0:0)",
+    "2026-10-28 JOS Watergraafsmeer–NAC Breda 1:3 (PV 1:2)",
+    "2026-10-23 NAC Breda–Heracles 1:1 (PV 1:1)",
+    "2026-10-16 Helmond Sport–NAC Breda 0:2 (PV 0:1)",
+    "2026-10-09 NAC Breda–MVV Maastricht 1:0 (PV 1:0)",
+    "2026-10-03 Vitesse–NAC Breda 2:2 (PV 1:2)",
+    "2026-09-26 NAC Breda–FC Eindhoven 4:2 (PV 1:0)",
+    "2026-09-20 De Graafschap–NAC Breda 1:2 (PV 1:2)",
+    "2026-09-11 NAC Breda–Jong FC Utrecht 2:3 (PV 2:1)",
+    "2026-09-04 RKC Waalwijk–NAC Breda 4:2 (PV 1:0)",
+    "2026-08-28 Roda JC Kerkrade–NAC Breda 2:2 (PV 1:1)",
+    "2026-08-22 NAC Breda–Jong Ajax 3:2 (PV 1:0)",
+    "2026-08-14 NAC Breda–VVV-Venlo 0:2 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "Almere City FC",
+    "away": "NAC Breda",
+    "pairId": "almere-city__nac-breda",
+    "venue": "Yanmar Hanasaka Stadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "NAC Breda preokret u zadnjem meču, Almere City FC 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/almere-city-fc-vs-nac-breda/1lc3aw#5832953"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 9
+    },
+    "reasoning": "Almere City FC, preokreti: protiv Roda JC Kerkrade 2:3 (PV 1:0) 23.10. NAC Breda, preokreti: protiv FC Emmen 4:2 (PV 0:1) 14.11.; protiv Jong FC Utrecht 2:3 (PV 2:1) 11.09. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/almere-city-fc-vs-nac-breda/1lc3aw#5832953"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832953
+    },
+    "fixtureId": 5832953
+   }
+  },
+  {
+   "fixtureId": 5836381,
+   "docId": "2026-11-21_sagan-tosu_vegalta-sendai",
+   "utc": "2026-11-21T05:00+00:00",
+   "league": "Japan · J. League 2",
+   "stage": "J. League 2",
+   "home": "Sagan Tosu",
+   "away": "Vegalta Sendai",
+   "score": 8,
+   "cand": {
+    "sel": "2/1",
+    "score": 8,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2025-10-26 Vegalta Sendai–Sagan Tosu 3:2 (PV 0:1)",
+    "2025-02-15 Sagan Tosu–Vegalta Sendai 0:1 (PV 0:0)",
+    "2021-08-29 Vegalta Sendai–Sagan Tosu 0:1 (PV 0:0)",
+    "2021-03-10 Sagan Tosu–Vegalta Sendai 5:0 (PV 3:0)",
+    "2020-11-25 Sagan Tosu–Vegalta Sendai 0:1 (PV 0:0)",
+    "2020-11-08 Vegalta Sendai–Sagan Tosu 0:3 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-15 Hokkaido Consadole Sapporo–Sagan Tosu 1:2 (PV 1:0)",
+    "2026-11-07 Sagan Tosu–Kataller Toyama 1:2 (PV 0:1)",
+    "2026-11-03 Shonan Bellmare–Sagan Tosu 0:1 (PV 0:0)",
+    "2026-10-31 Júbilo Iwata–Sagan Tosu 2:0 (PV 0:0)",
+    "2026-10-28 Sagan Tosu–Kawasaki Frontale 0:2 (PV 0:0)",
+    "2026-10-25 Sagan Tosu–Vanraure Hachinohe 2:0 (PV 1:0)",
+    "2026-10-21 Albirex Niigata–Sagan Tosu 2:1 (PV 1:0)",
+    "2026-10-17 Sagan Tosu–RB Omiya Ardija 2:1 (PV 1:0)",
+    "2026-10-14 Sagan Tosu–Avispa Fukuoka 2:1 (PV 1:1)",
+    "2026-10-10 Sagan Tosu–Fujieda MYFC 1:0 (PV 0:0)",
+    "2026-10-04 Blaublitz Akita–Sagan Tosu 1:0 (PV 0:0)",
+    "2026-09-29 Sagan Tosu–Tokyo Verdy 1:1 (PV 0:0)",
+    "2026-09-26 Montedio Yamagata–Sagan Tosu 2:0 (PV 2:0)",
+    "2026-09-23 Vissel Kobe–Sagan Tosu 1:0 (PV 0:0)",
+    "2026-09-19 Sagan Tosu–Iwaki FC 1:3 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-15 Vegalta Sendai–Blaublitz Akita 4:0 (PV 2:0)",
+    "2026-11-08 Vegalta Sendai–Ventforet Kofu 5:1 (PV 4:0)",
+    "2026-11-03 Kataller Toyama–Vegalta Sendai 1:0 (PV 0:0)",
+    "2026-10-31 Vegalta Sendai–RB Omiya Ardija 1:2 (PV 0:1)",
+    "2026-10-25 Albirex Niigata–Vegalta Sendai 2:1 (PV 1:1)",
+    "2026-10-21 Vegalta Sendai–FC Imabari 3:1 (PV 0:1)",
+    "2026-10-17 Vegalta Sendai–Tokushima Vortis 0:0 (PV 0:0)",
+    "2026-10-11 Montedio Yamagata–Vegalta Sendai 0:1 (PV 0:1)",
+    "2026-10-04 Vegalta Sendai–Júbilo Iwata 2:1 (PV 1:1)",
+    "2026-09-26 Iwaki FC–Vegalta Sendai 0:2 (PV 0:1)",
+    "2026-09-20 Tochigi City FC–Vegalta Sendai 1:3 (PV 0:2)",
+    "2026-09-13 Vegalta Sendai–Hokkaido Consadole Sapporo 1:1 (PV 1:1)",
+    "2026-09-09 Fukushima United–Vegalta Sendai 4:3 (PV 1:0)",
+    "2026-09-05 Shonan Bellmare–Vegalta Sendai 1:3 (PV 1:2)",
+    "2026-08-29 Vegalta Sendai–Tegevajaro Miyazaki 4:2 (PV 3:1)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "06:00",
+    "league": "Japan · J. League 2",
+    "home": "Sagan Tosu",
+    "away": "Vegalta Sendai",
+    "pairId": "sagan-tosu__vegalta-sendai",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (26.10.2025); Sagan Tosu u zadnjem meču 1/2",
+      "src": [
+       "https://www.fotmob.com/matches/vegalta-sendai-vs-sagan-tosu/o64i5he#5836381"
+      ],
+      "by": "korisnik",
+      "rule": "R2"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Sagan Tosu preokret u zadnjem meču, Vegalta Sendai 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/vegalta-sendai-vs-sagan-tosu/o64i5he#5836381"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 8,
+     "alt": "1/2"
+    },
+    "reasoning": "Sagan Tosu, preokreti: Hokkaido Consadole Sapporo–Sagan Tosu 1:2 (PV 1:0) 15.11. Vegalta Sendai, preokreti: protiv FC Imabari 3:1 (PV 0:1) 21.10. Međusobni 26.10.2025 kod gosta: Vegalta Sendai–Sagan Tosu 3:2 (PV 0:1).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/vegalta-sendai-vs-sagan-tosu/o64i5he#5836381"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5836381
+    },
+    "fixtureId": 5836381
+   }
+  },
+  {
+   "fixtureId": 5875026,
+   "docId": "2026-11-20_rapid-wien-ii_bw-linz",
+   "utc": "2026-11-20T17:30+00:00",
+   "league": "Austrija · 2. Liga",
+   "stage": "2. Liga",
+   "home": "Rapid Wien II",
+   "away": "BW Linz",
+   "score": 7,
+   "cand": {
+    "sel": "1/2",
+    "score": 7
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 14
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2023-05-26 Rapid Wien II–BW Linz 0:1 (PV 0:0)",
+    "2022-08-28 BW Linz–Rapid Wien II 4:1 (PV 2:0)",
+    "2022-03-11 Rapid Wien II–BW Linz 0:3 (PV 0:0)",
+    "2021-08-20 BW Linz–Rapid Wien II 1:0 (PV 1:0)",
+    "2021-04-14 Rapid Wien II–BW Linz 2:5 (PV 1:2)",
+    "2020-10-31 BW Linz–Rapid Wien II 3:1 (PV 2:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 SW Bregenz–Rapid Wien II 1:1 (PV 0:0)",
+    "2026-10-31 Rapid Wien II–FC Liefering 1:2 (PV 1:2)",
+    "2026-10-23 SKU Amstetten–Rapid Wien II 3:2 (PV 2:0)",
+    "2026-10-16 SKN St. Pölten–Rapid Wien II 0:0 (PV 0:0)",
+    "2026-10-10 Rapid Wien II–FC Wacker Innsbruck 1:2 (PV 0:1)",
+    "2026-09-20 Austria Wien II–Rapid Wien II 4:1 (PV 1:0)",
+    "2026-09-11 Rapid Wien II–First Vienna FC 0:2 (PV 0:1)",
+    "2026-08-30 Sturm Graz II–Rapid Wien II 5:2 (PV 2:1)",
+    "2026-08-22 Rapid Wien II–Floridsdorfer AC 0:2 (PV 0:0)",
+    "2026-08-14 FC Hertha Wels–Rapid Wien II 1:2 (PV 0:1)",
+    "2026-08-08 Rapid Wien II–Voitsberg 1:3 (PV 0:2)",
+    "2026-07-31 Admira Wacker–Rapid Wien II 0:1 (PV 0:1)",
+    "2026-05-14 Sturm Graz II–Rapid Wien II 1:2 (PV 0:1)",
+    "2026-05-08 Rapid Wien II–First Vienna FC 1:0 (PV 0:0)",
+    "2026-05-03 SK Austria Klagenfurt–Rapid Wien II 2:1 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 BW Linz–Floridsdorfer AC 3:0 (PV 0:0)",
+    "2026-10-31 First Vienna FC–BW Linz 0:6 (PV 0:2)",
+    "2026-10-23 Austria Salzburg–BW Linz 0:1 (PV 0:1)",
+    "2026-10-17 BW Linz–FC Liefering 4:1 (PV 1:1)",
+    "2026-10-09 SKU Amstetten–BW Linz 1:1 (PV 0:1)",
+    "2026-09-18 BW Linz–Admira Wacker 3:0 (PV 1:0)",
+    "2026-09-12 BW Linz–FC Hertha Wels 4:1 (PV 0:1)",
+    "2026-09-05 BW Linz–FC Wacker Innsbruck 2:3 (PV 2:0)",
+    "2026-08-28 Kapfenberger SV–BW Linz 2:1 (PV 1:0)",
+    "2026-08-23 BW Linz–Voitsberg 5:1 (PV 1:0)",
+    "2026-08-14 SKN St. Pölten–BW Linz 0:1 (PV 0:0)",
+    "2026-08-07 BW Linz–FC Wacker Innsbruck 3:0 (PV 2:0)",
+    "2026-07-31 Austria Wien II–BW Linz 0:3 (PV 0:1)",
+    "2026-07-24 Union Gurten–BW Linz 1:1 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "18:30",
+    "league": "Austrija · 2. Liga",
+    "home": "Rapid Wien II",
+    "away": "BW Linz",
+    "pairId": "bw-linz__rapid-wien-ii",
+    "venue": "Allianz Stadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "BW Linz: 2 preokreta u zadnjih 14",
+      "src": [
+       "https://www.fotmob.com/matches/rapid-wien-ii-vs-bw-linz/5q5v6#5875026"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 7
+    },
+    "reasoning": "BW Linz, preokreti: protiv FC Hertha Wels 4:1 (PV 0:1) 12.09.; protiv FC Wacker Innsbruck 2:3 (PV 2:0) 05.09. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/rapid-wien-ii-vs-bw-linz/5q5v6#5875026"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5875026
+    },
+    "fixtureId": 5875026
+   }
+  },
+  {
+   "fixtureId": 5910945,
+   "docId": "2026-11-20_magdeburg-ii_fsv-zwickau",
+   "utc": "2026-11-20T18:00+00:00",
+   "league": "Njemačka · Regionalliga",
+   "stage": "Regionalliga Northeast",
+   "home": "Magdeburg II",
+   "away": "FSV Zwickau",
+   "score": 7,
+   "cand": {
+    "sel": "2/1",
+    "score": 7
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-03-07 Magdeburg II–FSV Zwickau 1:2 (PV 0:2)",
+    "2025-09-16 FSV Zwickau–Magdeburg II 1:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Hertha Berlin II–Magdeburg II 4:4 (PV 2:1)",
+    "2026-10-31 Magdeburg II–Hallescher FC 1:1 (PV 1:0)",
+    "2026-10-24 Chemnitzer FC–Magdeburg II 1:2 (PV 0:0)",
+    "2026-10-18 Magdeburg II–Greifswalder FC 4:2 (PV 0:0)",
+    "2026-10-10 Carl Zeiss Jena–Magdeburg II 2:1 (PV 1:0)",
+    "2026-09-25 Magdeburg II–VSG Altglienicke 0:1 (PV 0:0)",
+    "2026-09-20 BFC Dynamo–Magdeburg II 4:1 (PV 2:1)",
+    "2026-09-16 Magdeburg II–Erzgebirge Aue 1:2 (PV 0:0)",
+    "2026-09-12 BFC Preussen–Magdeburg II 4:1 (PV 0:1)",
+    "2026-08-30 RSV Eintracht 1949–Magdeburg II 2:4 (PV 2:1)",
+    "2026-08-25 Magdeburg II–BSG Chemie Leipzig 1:0 (PV 1:0)",
+    "2026-08-15 RW Erfurt–Magdeburg II 4:1 (PV 2:0)",
+    "2026-08-11 Magdeburg II–Babelsberg 3:1 (PV 1:1)",
+    "2026-08-04 Magdeburg II–FSV Luckenwalde 0:1 (PV 0:0)",
+    "2026-08-02 Lokomotive Leipzig–Magdeburg II 3:3 (PV 2:1)"
+   ],
+   "awayLast": [
+    "2026-11-08 FSV Zwickau–Lokomotive Leipzig 1:2 (PV 0:2)",
+    "2026-10-31 BFC Preussen–FSV Zwickau 3:0 (PV 1:0)",
+    "2026-10-24 FSV Zwickau–Erzgebirge Aue 0:3 (PV 0:1)",
+    "2026-10-16 RW Erfurt–FSV Zwickau 2:2 (PV 1:2)",
+    "2026-10-09 FSV Zwickau–Tasmania Berlin 2:0 (PV 0:0)",
+    "2026-09-27 Hertha Berlin II–FSV Zwickau 1:1 (PV 1:0)",
+    "2026-09-18 FSV Zwickau–Hallescher FC 1:3 (PV 1:1)",
+    "2026-09-15 FSV Zwickau–VSG Altglienicke 1:2 (PV 0:1)",
+    "2026-09-12 BSG Chemie Leipzig–FSV Zwickau 2:2 (PV 0:2)",
+    "2026-08-29 FSV Zwickau–Babelsberg 1:0 (PV 1:0)",
+    "2026-08-26 RSV Eintracht 1949–FSV Zwickau 1:2 (PV 0:0)",
+    "2026-08-14 FSV Zwickau–FSV Luckenwalde 2:1 (PV 2:1)",
+    "2026-08-09 BFC Dynamo–FSV Zwickau 0:0 (PV 0:0)",
+    "2026-08-04 Chemnitzer FC–FSV Zwickau 3:1 (PV 2:0)",
+    "2026-08-01 FSV Zwickau–Greifswalder FC 0:3 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "19:00",
+    "league": "Njemačka · Regionalliga",
+    "home": "Magdeburg II",
+    "away": "FSV Zwickau",
+    "pairId": "fsv-zwickau__magdeburg-ii",
+    "venue": "Avnet Arena",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Magdeburg II: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/fsv-zwickau-vs-magdeburg-ii/dbhenn6#5910945"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 7
+    },
+    "reasoning": "Magdeburg II, preokreti: BFC Preussen–Magdeburg II 4:1 (PV 0:1) 12.09.; RSV Eintracht 1949–Magdeburg II 2:4 (PV 2:1) 30.08. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/fsv-zwickau-vs-magdeburg-ii/dbhenn6#5910945"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5910945
+    },
+    "fixtureId": 5910945
+   }
+  },
+  {
+   "fixtureId": 5832954,
+   "docId": "2026-11-20_de-graafschap_mvv-maastricht",
+   "utc": "2026-11-20T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "De Graafschap",
+   "away": "MVV Maastricht",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-02-27 MVV Maastricht–De Graafschap 3:3 (PV 1:2)",
+    "2025-08-22 De Graafschap–MVV Maastricht 0:1 (PV 0:0)",
+    "2025-03-22 De Graafschap–MVV Maastricht 0:0 (PV 0:0)",
+    "2024-11-08 MVV Maastricht–De Graafschap 0:0 (PV 0:0)",
+    "2024-04-26 De Graafschap–MVV Maastricht 3:0 (PV 1:0)",
+    "2023-09-24 MVV Maastricht–De Graafschap 1:2 (PV 1:1)"
+   ],
+   "homeLast": [
+    "2026-11-14 De Graafschap–TOP Oss 1:2 (PV 0:1)",
+    "2026-10-30 FC Volendam–De Graafschap 1:2 (PV 1:0)",
+    "2026-10-27 Roda JC Kerkrade–De Graafschap 1:0 (PV 0:0)",
+    "2026-10-23 De Graafschap–RKC Waalwijk 1:1 (PV 1:0)",
+    "2026-10-19 Jong Ajax–De Graafschap 2:1 (PV 1:1)",
+    "2026-10-09 De Graafschap–Jong FC Utrecht 2:1 (PV 0:1)",
+    "2026-10-03 FC Eindhoven–De Graafschap 2:2 (PV 1:0)",
+    "2026-09-27 De Graafschap–FC Den Bosch 1:0 (PV 1:0)",
+    "2026-09-20 De Graafschap–NAC Breda 1:2 (PV 1:2)",
+    "2026-09-11 FC Emmen–De Graafschap 1:2 (PV 1:1)",
+    "2026-09-04 Heracles–De Graafschap 5:0 (PV 2:0)",
+    "2026-08-29 De Graafschap–Almere City FC 1:4 (PV 1:1)",
+    "2026-08-23 VVV-Venlo–De Graafschap 2:1 (PV 2:1)",
+    "2026-08-17 De Graafschap–Jong AZ Alkmaar 2:5 (PV 1:1)",
+    "2026-08-09 Helmond Sport–De Graafschap 1:1 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-15 MVV Maastricht–Vitesse 2:1 (PV 1:0)",
+    "2026-11-08 FC Emmen–MVV Maastricht 0:2 (PV 0:1)",
+    "2026-10-31 MVV Maastricht–VVV-Venlo 1:2 (PV 0:2)",
+    "2026-10-28 MVV Maastricht–Excelsior 0:3 (PV 0:1)",
+    "2026-10-23 FC Den Bosch–MVV Maastricht 2:2 (PV 1:0)",
+    "2026-10-18 MVV Maastricht–Heracles 1:5 (PV 1:2)",
+    "2026-10-09 NAC Breda–MVV Maastricht 1:0 (PV 1:0)",
+    "2026-10-03 TOP Oss–MVV Maastricht 4:1 (PV 1:1)",
+    "2026-09-26 MVV Maastricht–Helmond Sport 2:0 (PV 0:0)",
+    "2026-09-18 RKC Waalwijk–MVV Maastricht 6:1 (PV 3:0)",
+    "2026-09-11 MVV Maastricht–Almere City FC 0:4 (PV 0:0)",
+    "2026-09-06 MVV Maastricht–Roda JC Kerkrade 1:1 (PV 1:0)",
+    "2026-08-28 Jong AZ Alkmaar–MVV Maastricht 1:2 (PV 0:1)",
+    "2026-08-21 MVV Maastricht–FC Volendam 1:0 (PV 0:0)",
+    "2026-08-14 FC Eindhoven–MVV Maastricht 2:3 (PV 1:1)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "De Graafschap",
+    "away": "MVV Maastricht",
+    "pairId": "de-graafschap__mvv-maastricht",
+    "venue": "Stadion De Vijverberg",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "De Graafschap: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/de-graafschap-vs-mvv-maastricht/2sehck#5832954"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "De Graafschap, preokreti: FC Volendam–De Graafschap 1:2 (PV 1:0) 30.10.; protiv Jong FC Utrecht 2:1 (PV 0:1) 09.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/de-graafschap-vs-mvv-maastricht/2sehck#5832954"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832954
+    },
+    "fixtureId": 5832954
+   }
+  },
+  {
+   "fixtureId": 5832960,
+   "docId": "2026-11-20_top-oss_roda-jc-kerkrade",
+   "utc": "2026-11-20T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "TOP Oss",
+   "away": "Roda JC Kerkrade",
+   "score": 6,
+   "cand": {
+    "sel": "1/2",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-01-23 Roda JC Kerkrade–TOP Oss 1:2 (PV 0:0)",
+    "2025-09-26 TOP Oss–Roda JC Kerkrade 1:2 (PV 0:1)",
+    "2025-01-17 TOP Oss–Roda JC Kerkrade 0:2 (PV 0:1)",
+    "2024-08-16 Roda JC Kerkrade–TOP Oss 0:0 (PV 0:0)",
+    "2024-04-12 TOP Oss–Roda JC Kerkrade 1:4 (PV 0:3)",
+    "2023-08-25 Roda JC Kerkrade–TOP Oss 2:0 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-14 De Graafschap–TOP Oss 1:2 (PV 0:1)",
+    "2026-11-06 TOP Oss–RKC Waalwijk 1:1 (PV 1:0)",
+    "2026-11-02 Heracles–TOP Oss 2:0 (PV 1:0)",
+    "2026-10-28 PEC Zwolle–TOP Oss 1:2 (PV 1:1)",
+    "2026-10-23 TOP Oss–Jong Ajax 3:3 (PV 0:2)",
+    "2026-10-16 FC Den Bosch–TOP Oss 2:1 (PV 2:0)",
+    "2026-10-09 TOP Oss–Helmond Sport 3:1 (PV 2:1)",
+    "2026-10-03 TOP Oss–MVV Maastricht 4:1 (PV 1:1)",
+    "2026-09-26 FC Emmen–TOP Oss 1:0 (PV 1:0)",
+    "2026-09-18 TOP Oss–FC Dordrecht 3:0 (PV 2:0)",
+    "2026-09-11 VVV-Venlo–TOP Oss 3:1 (PV 2:1)",
+    "2026-09-04 Vitesse–TOP Oss 2:1 (PV 0:0)",
+    "2026-08-28 TOP Oss–Jong FC Utrecht 2:1 (PV 1:0)",
+    "2026-08-24 Jong PSV–TOP Oss 1:0 (PV 1:0)",
+    "2026-08-15 FC Volendam–TOP Oss 3:0 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-14 Roda JC Kerkrade–FC Volendam 3:1 (PV 1:1)",
+    "2026-11-06 Heracles–Roda JC Kerkrade 5:1 (PV 3:1)",
+    "2026-10-30 Roda JC Kerkrade–Jong AZ Alkmaar 2:1 (PV 1:0)",
+    "2026-10-27 Roda JC Kerkrade–De Graafschap 1:0 (PV 0:0)",
+    "2026-10-23 Almere City FC–Roda JC Kerkrade 2:3 (PV 1:0)",
+    "2026-10-19 Jong FC Utrecht–Roda JC Kerkrade 1:2 (PV 1:0)",
+    "2026-10-09 Roda JC Kerkrade–Jong PSV 1:1 (PV 0:0)",
+    "2026-10-04 VVV-Venlo–Roda JC Kerkrade 2:0 (PV 0:0)",
+    "2026-09-26 Roda JC Kerkrade–RKC Waalwijk 2:0 (PV 1:0)",
+    "2026-09-18 Jong Ajax–Roda JC Kerkrade 0:0 (PV 0:0)",
+    "2026-09-12 Roda JC Kerkrade–Vitesse 1:0 (PV 1:0)",
+    "2026-09-06 MVV Maastricht–Roda JC Kerkrade 1:1 (PV 1:0)",
+    "2026-08-28 Roda JC Kerkrade–NAC Breda 2:2 (PV 1:1)",
+    "2026-08-21 FC Dordrecht–Roda JC Kerkrade 0:1 (PV 0:1)",
+    "2026-08-14 Roda JC Kerkrade–Helmond Sport 2:1 (PV 1:1)"
+   ],
+   "doc": {
+    "date": "2026-11-20",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "TOP Oss",
+    "away": "Roda JC Kerkrade",
+    "pairId": "roda-jc-kerkrade__top-oss",
+    "venue": "Frans Heesen Stadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Roda JC Kerkrade: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/top-oss-vs-roda-jc-kerkrade/2k1zc3#5832960"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 6
+    },
+    "reasoning": "Roda JC Kerkrade, preokreti: Almere City FC–Roda JC Kerkrade 2:3 (PV 1:0) 23.10.; Jong FC Utrecht–Roda JC Kerkrade 1:2 (PV 1:0) 19.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/top-oss-vs-roda-jc-kerkrade/2k1zc3#5832960"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832960
+    },
+    "fixtureId": 5832960
+   }
+  },
+  {
+   "fixtureId": 5155962,
+   "docId": "2026-11-21_gimpo_suwon",
+   "utc": "2026-11-21T07:30+00:00",
+   "league": "Južna Koreja · K League 2",
+   "stage": "K League 2",
+   "home": "Gimpo FC",
+   "away": "Suwon FC",
+   "score": 6,
+   "cand": {
+    "sel": "1/2",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 2,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 1
+    }
+   },
+   "h2h": [
+    "2026-04-26 Suwon FC–Gimpo FC 1:1 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-07 Gimpo FC–Ansan Greeners 2:2 (PV 0:1)",
+    "2026-10-31 Chungnam Asan FC–Gimpo FC 5:1 (PV 0:1)",
+    "2026-10-24 Gimpo FC–Gimhae FC 2008 1:2 (PV 0:0)",
+    "2026-10-17 Gimpo FC–Paju Frontier 4:1 (PV 1:1)",
+    "2026-10-09 Gimpo FC–Seoul E-Land FC 0:1 (PV 0:0)",
+    "2026-09-19 Gimpo FC–Busan I'Park 1:0 (PV 1:0)",
+    "2026-09-13 Jeonnam Dragons–Gimpo FC 2:2 (PV 1:1)",
+    "2026-09-06 Gimpo FC–Seongnam FC 1:2 (PV 0:1)",
+    "2026-08-29 Gimpo FC–Suwon Samsung Bluewings 1:4 (PV 0:1)",
+    "2026-08-19 Gimpo FC–Gimcheon Sangmu 2:1 (PV 0:1)",
+    "2026-08-16 Gimpo FC–Cheonan City 1:1 (PV 1:1)",
+    "2026-08-07 Gimpo FC–Cheongju FC 3:0 (PV 2:0)",
+    "2026-08-02 Gimpo FC–Gyeongnam FC 1:1 (PV 1:1)",
+    "2026-07-26 Gimpo FC–Yongin FC 1:1 (PV 0:0)",
+    "2026-07-18 Gimpo FC–Daegu FC 1:1 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 Suwon FC–Gyeongnam FC 3:0 (PV 2:0)",
+    "2026-11-01 Suwon FC–Ansan Greeners 1:0 (PV 0:0)",
+    "2026-10-25 Suwon FC–Chungnam Asan FC 0:1 (PV 0:1)",
+    "2026-10-17 Seongnam FC–Suwon FC 1:2 (PV 0:1)",
+    "2026-10-09 Suwon FC–Hwaseong FC 1:0 (PV 0:0)",
+    "2026-09-19 Jeonnam Dragons–Suwon FC 0:3 (PV 0:1)",
+    "2026-09-13 Suwon FC–Cheonan City 1:1 (PV 0:0)",
+    "2026-09-05 Yongin FC–Suwon FC 1:1 (PV 1:0)",
+    "2026-08-30 Suwon FC–Busan I'Park 2:1 (PV 1:1)",
+    "2026-08-22 Suwon FC–Gimhae FC 2008 2:0 (PV 1:0)",
+    "2026-08-15 Suwon Samsung Bluewings–Suwon FC 2:2 (PV 1:1)",
+    "2026-08-08 Paju Frontier–Suwon FC 0:1 (PV 0:0)",
+    "2026-07-25 Daegu FC–Suwon FC 1:2 (PV 0:2)",
+    "2026-07-18 Suwon FC–Seoul E-Land FC 2:2 (PV 1:0)",
+    "2026-07-10 Suwon FC–Jeonnam Dragons 5:0 (PV 2:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "08:30",
+    "league": "Južna Koreja · K League 2",
+    "home": "Gimpo FC",
+    "away": "Suwon FC",
+    "pairId": "gimpo__suwon",
+    "venue": "Gimpo Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Gimpo FC: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/suwon-fc-vs-gimpo-fc/6nq6v16p#5155962"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 6
+    },
+    "reasoning": "Gimpo FC, preokreti: Chungnam Asan FC–Gimpo FC 5:1 (PV 0:1) 31.10.; protiv Gimcheon Sangmu 2:1 (PV 0:1) 19.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/suwon-fc-vs-gimpo-fc/6nq6v16p#5155962"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5155962
+    },
+    "fixtureId": 5155962
+   }
+  },
+  {
+   "fixtureId": 6011913,
+   "docId": "2026-11-21_persik_psim-yogyakarta",
+   "utc": "2026-11-21T08:30+00:00",
+   "league": "Indonezija · Super League",
+   "stage": "Super League",
+   "home": "Persik",
+   "away": "PSIM Yogyakarta",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-02-13 Persik–PSIM Yogyakarta 2:2 (PV 1:1)",
+    "2025-10-31 PSIM Yogyakarta–Persik 2:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-08 Bali United FC–Persik 3:0 (PV 3:0)",
+    "2026-10-31 Persik–Persita 1:5 (PV 0:2)",
+    "2026-10-26 Persija Jakarta–Persik 2:1 (PV 0:1)",
+    "2026-10-22 Persik–PSS Sleman 2:1 (PV 2:1)",
+    "2026-10-18 Persib Bandung–Persik 1:0 (PV 0:0)",
+    "2026-10-09 Persik–Madura United 2:0 (PV 2:0)",
+    "2026-09-18 Arema–Persik 1:1 (PV 1:1)",
+    "2026-09-11 Garudayaksa FC–Persik 0:2 (PV 0:1)",
+    "2026-09-05 Persik–Dewa United FC 0:1 (PV 0:1)",
+    "2026-05-23 Persebaya Surabaya–Persik 5:0 (PV 2:0)",
+    "2026-05-16 Persik–Persija Jakarta 1:3 (PV 1:1)",
+    "2026-05-08 Semen Padang–Persik 0:3 (PV 0:1)",
+    "2026-05-03 Persik–Arema 3:2 (PV 3:0)",
+    "2026-04-29 Persik–Borneo Samarinda 0:1 (PV 0:0)",
+    "2026-04-23 PSM Makassar–Persik 3:1 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-06 PSIM Yogyakarta–Dewa United FC 1:2 (PV 0:1)",
+    "2026-11-01 PSIM Yogyakarta–Borneo Samarinda 2:1 (PV 0:1)",
+    "2026-10-24 Isenmulang Kalteng–PSIM Yogyakarta 0:0 (PV 0:0)",
+    "2026-10-20 Bhayangkara Presisi Lampung FC–PSIM Yogyakarta 1:0 (PV 0:0)",
+    "2026-10-16 PSIM Yogyakarta–PSM Makassar 1:2 (PV 0:0)",
+    "2026-10-10 PSIM Yogyakarta–Persija Jakarta 0:4 (PV 0:0)",
+    "2026-09-18 Madura United–PSIM Yogyakarta 2:1 (PV 0:1)",
+    "2026-09-13 Persebaya Surabaya–PSIM Yogyakarta 1:0 (PV 0:0)",
+    "2026-09-05 PSIM Yogyakarta–Persita 1:1 (PV 0:0)",
+    "2026-05-22 Arema–PSIM Yogyakarta 3:1 (PV 1:0)",
+    "2026-05-17 PSIM Yogyakarta–Madura United 2:1 (PV 2:0)",
+    "2026-05-10 PSIM Yogyakarta–Java United F.C. 2:0 (PV 1:0)",
+    "2026-05-04 Persib Bandung–PSIM Yogyakarta 1:0 (PV 1:0)",
+    "2026-04-30 PSIM Yogyakarta–Persita 0:1 (PV 0:1)",
+    "2026-04-22 PSIM Yogyakarta–Persija Jakarta 1:1 (PV 1:1)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "09:30",
+    "league": "Indonezija · Super League",
+    "home": "Persik",
+    "away": "PSIM Yogyakarta",
+    "pairId": "persik__psim-yogyakarta",
+    "venue": "Brawijaya Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "PSIM Yogyakarta: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/persik-vs-psim-yogyakarta/3lkdekdy#6011913"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "PSIM Yogyakarta, preokreti: protiv Borneo Samarinda 2:1 (PV 0:1) 01.11.; Madura United–PSIM Yogyakarta 2:1 (PV 0:1) 18.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/persik-vs-psim-yogyakarta/3lkdekdy#6011913"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6011913
+    },
+    "fixtureId": 6011913
+   }
+  },
+  {
+   "fixtureId": 5976962,
+   "docId": "2026-11-21_csm-resita_metaloglobus-bucuresti",
+   "utc": "2026-11-21T09:00+00:00",
+   "league": "Rumunija · Liga II",
+   "stage": "Liga II",
+   "home": "CSM Reșița",
+   "away": "FC Metaloglobus București",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 13
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2025-04-25 CSM Reșița–FC Metaloglobus București 1:1 (PV 1:1)",
+    "2025-03-27 FC Metaloglobus București–CSM Reșița 0:4 (PV 0:3)",
+    "2024-10-26 FC Metaloglobus București–CSM Reșița 1:0 (PV 1:0)",
+    "2024-04-13 CSM Reșița–FC Metaloglobus București 2:1 (PV 1:0)",
+    "2023-11-04 CSM Reșița–FC Metaloglobus București 5:0 (PV 2:0)",
+    "2020-10-10 FC Metaloglobus București–CSM Reșița 0:0 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-09 ASU Politehnica Timișoara–CSM Reșița 0:0 (PV 0:0)",
+    "2026-11-01 CSM Reșița–Gloria Bistrița 1:0 (PV 1:0)",
+    "2026-10-22 FC Bihor Oradea–CSM Reșița 2:0 (PV 2:0)",
+    "2026-10-17 CSM Reșița–Cetatea Suceava 0:2 (PV 0:2)",
+    "2026-10-10 CSM Reșița–CSM Slatina 3:1 (PV 1:1)",
+    "2026-09-22 CSC Dumbrăvița–CSM Reșița 0:2 (PV 0:1)",
+    "2026-09-15 CSM Reșița–FC Bacău 0:1 (PV 0:0)",
+    "2026-09-05 Râmnicu Vâlcea–CSM Reșița 1:2 (PV 0:2)",
+    "2026-08-29 CSM Reșița–Steaua București 2:1 (PV 1:0)",
+    "2026-08-22 Popești Leordeni–CSM Reșița 4:1 (PV 1:1)",
+    "2026-08-15 CSM Reșița–CSL Ștefănești 2:0 (PV 1:0)",
+    "2026-08-08 CSM Olimpia Satu Mare–CSM Reșița 0:2 (PV 0:2)",
+    "2026-08-01 CSM Reșița–ASA Târgu Mureș 2:1 (PV 2:1)",
+    "2026-05-09 CS Tunari–CSM Reșița 3:1 (PV 0:1)",
+    "2026-05-02 CSM Reșița–Comunal Șelimbăr 0:2 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 FC Metaloglobus București–CSC Dumbrăvița 1:0 (PV 1:0)",
+    "2026-10-31 FC Bacău–FC Metaloglobus București 1:4 (PV 1:0)",
+    "2026-10-26 FC Metaloglobus București–Râmnicu Vâlcea 2:0 (PV 0:0)",
+    "2026-10-17 Steaua București–FC Metaloglobus București 0:0 (PV 0:0)",
+    "2026-10-10 FC Metaloglobus București–Popești Leordeni 0:3 (PV 0:1)",
+    "2026-09-19 CSL Ștefănești–FC Metaloglobus București 0:1 (PV 0:1)",
+    "2026-09-12 FC Metaloglobus București–CSM Olimpia Satu Mare 1:1 (PV 0:1)",
+    "2026-09-05 ASA Târgu Mureș–FC Metaloglobus București 3:2 (PV 2:1)",
+    "2026-08-29 FC Metaloglobus București–Concordia Chiajna 1:3 (PV 0:1)",
+    "2026-08-25 FC Unirea Slobozia–FC Metaloglobus București 1:2 (PV 1:0)",
+    "2026-08-15 FC Metaloglobus București–Comunal Șelimbăr 3:1 (PV 1:0)",
+    "2026-08-09 Chindia Târgoviște–FC Metaloglobus București 3:1 (PV 1:0)",
+    "2026-08-01 FC Metaloglobus București–Metalul Buzău 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "10:00",
+    "league": "Rumunija · Liga II",
+    "home": "CSM Reșița",
+    "away": "FC Metaloglobus București",
+    "pairId": "csm-resita__metaloglobus-bucuresti",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "FC Metaloglobus București: 2 preokreta u zadnjih 13",
+      "src": [
+       "https://www.fotmob.com/matches/fc-metaloglobus-bucuresti-vs-csm-resita/47rwgyy7#5976962"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "FC Metaloglobus București, preokreti: FC Bacău–FC Metaloglobus București 1:4 (PV 1:0) 31.10.; FC Unirea Slobozia–FC Metaloglobus București 1:2 (PV 1:0) 25.08.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/fc-metaloglobus-bucuresti-vs-csm-resita/47rwgyy7#5976962"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5976962
+    },
+    "fixtureId": 5976962
+   }
+  },
+  {
+   "fixtureId": 5885305,
+   "docId": "2026-11-21_tenerife-b_tamaraceite",
+   "utc": "2026-11-21T11:00+00:00",
+   "league": "Španija · Segunda Federación",
+   "stage": "Segunda Federacion - Group 4",
+   "home": "Tenerife B",
+   "away": "UD Tamaraceite",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 11
+     },
+     "h2h": 0
+    }
+   },
+   "h2h": [],
+   "homeLast": [
+    "2026-11-15 Tenerife B–Linares Deportivo 1:2 (PV 1:1)",
+    "2026-11-02 Tenerife B–Don Benito 0:1 (PV 0:1)",
+    "2026-10-25 Sevilla Atletico–Tenerife B 2:0 (PV 1:0)",
+    "2026-10-18 Tenerife B–Mijas-Las Lagunas 1:3 (PV 1:3)",
+    "2026-10-11 Las Palmas B–Tenerife B 1:1 (PV 1:0)",
+    "2026-10-04 Xerez–Tenerife B 2:1 (PV 0:1)",
+    "2026-09-27 Tenerife B–CD Estepona 2:1 (PV 1:1)",
+    "2026-09-20 Ciudad Lucena–Tenerife B 1:2 (PV 0:2)",
+    "2026-09-13 Tenerife B–Atletico Central 3:1 (PV 0:0)",
+    "2026-09-06 CD Badajoz–Tenerife B 2:1 (PV 1:0)",
+    "2026-05-03 Tenerife B–San Sebastian de los Reyes 1:3 (PV 0:1)",
+    "2026-04-26 Conquense–Tenerife B 1:0 (PV 1:0)",
+    "2026-04-19 Tenerife B–CD Coria 4:0 (PV 2:0)",
+    "2026-04-12 Tenerife B–Elche Ilicitano 1:3 (PV 1:1)",
+    "2026-04-05 Socuellamos–Tenerife B 0:3 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-15 UD Tamaraceite–Marbella FC 0:1 (PV 0:1)",
+    "2026-11-08 CD Estepona–UD Tamaraceite 5:0 (PV 3:0)",
+    "2026-11-01 UD Tamaraceite–Xerez 1:3 (PV 0:2)",
+    "2026-10-25 Atletico Central–UD Tamaraceite 1:0 (PV 1:0)",
+    "2026-10-18 UD Tamaraceite–Betis Deportivo Balompie 3:2 (PV 0:2)",
+    "2026-10-11 Puente Genil–UD Tamaraceite 1:0 (PV 1:0)",
+    "2026-10-04 UD Tamaraceite–CA Antoniano 1:0 (PV 1:0)",
+    "2026-09-27 Mijas-Las Lagunas–UD Tamaraceite 6:2 (PV 3:2)",
+    "2026-09-20 UD Tamaraceite–Recreativo Huelva 1:3 (PV 1:0)",
+    "2026-09-13 Atletico Sanluqueño CF–UD Tamaraceite 1:0 (PV 0:0)",
+    "2026-09-06 UD Tamaraceite–Sevilla Atletico 0:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-21",
+    "kickoff": "12:00",
+    "league": "Španija · Segunda Federación",
+    "home": "Tenerife B",
+    "away": "UD Tamaraceite",
+    "pairId": "tamaraceite__tenerife-b",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "UD Tamaraceite: 2 preokreta u zadnjih 11",
+      "src": [
+       "https://www.fotmob.com/matches/tenerife-b-vs-ud-tamaraceite/aok9rf1c#5885305"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "UD Tamaraceite, preokreti: protiv Betis Deportivo Balompie 3:2 (PV 0:2) 18.10.; protiv Recreativo Huelva 1:3 (PV 1:0) 20.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/tenerife-b-vs-ud-tamaraceite/aok9rf1c#5885305"
+    ],
+    "createdAt": "2026-11-20T12:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5885305
+    },
+    "fixtureId": 5885305
+   }
+  }
+ ]
+}
