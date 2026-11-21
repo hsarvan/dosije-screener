@@ -1,7 +1,15 @@
 {
  "date": "2026-11-19",
- "updatedAt": "2026-11-20T13:14:09+00:00",
+ "updatedAt": "2026-11-21T11:50:25+00:00",
  "matches": [
+  {
+   "fixtureId": 6146317,
+   "docId": "2026-11-20_beijing-guoan_shanghai-port",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-2",
+   "htft": "2/2"
+  },
   {
    "fixtureId": 6011909,
    "docId": "2026-11-20_garudayaksa_madura-united",

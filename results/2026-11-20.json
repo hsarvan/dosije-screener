@@ -1,0 +1,222 @@
+{
+ "date": "2026-11-20",
+ "updatedAt": "2026-11-21T11:50:25+00:00",
+ "matches": [
+  {
+   "fixtureId": 5832953,
+   "docId": "2026-11-20_almere-city_nac-breda",
+   "status": "FT",
+   "ht": "0-3",
+   "ft": "1-4",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5837267,
+   "docId": "2026-11-20_barnsley_sheff-wed",
+   "status": "FT",
+   "ht": "1-2",
+   "ft": "1-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 1000015510,
+   "docId": "2026-11-20_brugge-nxt_virton",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-2",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5832954,
+   "docId": "2026-11-20_de-graafschap_mvv-maastricht",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "3-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 1000022038,
+   "docId": "2026-11-20_independiente-del-valle_csd-macara",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-1",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5832959,
+   "docId": "2026-11-20_jong-utrecht_emmen",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5910945,
+   "docId": "2026-11-20_magdeburg-ii_fsv-zwickau",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "3-3",
+   "htft": "1/X"
+  },
+  {
+   "fixtureId": 5875026,
+   "docId": "2026-11-20_rapid-wien-ii_bw-linz",
+   "status": "FT",
+   "ht": "1-3",
+   "ft": "1-6",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5804618,
+   "docId": "2026-11-20_rapperswil-jona_aarau",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5883743,
+   "docId": "2026-11-20_real-madrid-castilla_real-murcia",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "0-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5910941,
+   "docId": "2026-11-20_rw-erfurt_vsg-altglienicke",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "3-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5906561,
+   "docId": "2026-11-20_southend_boreham-wood",
+   "status": "FT",
+   "ht": "0-3",
+   "ft": "2-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5832960,
+   "docId": "2026-11-20_top-oss_roda-jc-kerkrade",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5905986,
+   "docId": "2026-11-20_tsv-havelse_viktoria-koln-1904",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "1-6",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5934576,
+   "docId": "2026-11-20_union-berlin-w_bayer-leverkusen-w",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "0-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5911268,
+   "docId": "2026-11-20_wattenscheid_koln-ii",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5976964,
+   "docId": "2026-11-21_bacau_cs-dinamo-bucuresti",
+   "status": "FT",
+   "ht": "3-1",
+   "ft": "7-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 1000017584,
+   "docId": "2026-11-21_brisbane-roar_sydney",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5976962,
+   "docId": "2026-11-21_csm-resita_metaloglobus-bucuresti",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5987257,
+   "docId": "2026-11-21_ehime_gifu",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 6503839,
+   "docId": "2026-11-21_gangwon_daejeon-hana-citizen",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "1-3",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5155962,
+   "docId": "2026-11-21_gimpo_suwon",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-1",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 6503840,
+   "docId": "2026-11-21_incheon-united_ulsan-hd",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6503838,
+   "docId": "2026-11-21_jeonbuk-hyundai-motors_seoul",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 6011913,
+   "docId": "2026-11-21_persik_psim-yogyakarta",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-2",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 6503954,
+   "docId": "2026-11-21_pohang-steelers_anyang",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-1",
+   "htft": "1/X"
+  },
+  {
+   "fixtureId": 5836381,
+   "docId": "2026-11-21_sagan-tosu_vegalta-sendai",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  }
+ ]
+}
