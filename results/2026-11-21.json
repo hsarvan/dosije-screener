@@ -1,0 +1,326 @@
+{
+ "date": "2026-11-21",
+ "updatedAt": "2026-11-22T12:01:39+00:00",
+ "matches": [
+  {
+   "fixtureId": 5905978,
+   "docId": "2026-11-21_alemannia-aachen_waldhof-mannheim",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "3-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5794763,
+   "docId": "2026-11-21_annan-athletic_forfar-athletic",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5973006,
+   "docId": "2026-11-21_ararat_bkma",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-1",
+   "htft": "1/X"
+  },
+  {
+   "fixtureId": 5838040,
+   "docId": "2026-11-21_barnet_port-vale",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5911263,
+   "docId": "2026-11-21_bocholt_westfalia-rhynern",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5836934,
+   "docId": "2026-11-21_bolton_portsmouth",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5794764,
+   "docId": "2026-11-21_clyde_stirling-albion",
+   "status": "FT",
+   "ht": "3-2",
+   "ft": "4-3",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5905980,
+   "docId": "2026-11-21_dusseldorf_sonnenhof-grossaspach",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "3-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5916119,
+   "docId": "2026-11-21_eintracht-trier_eintracht-frankfurt-ii",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 1000015511,
+   "docId": "2026-11-21_eupen_sporting-hasselt",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5906565,
+   "docId": "2026-11-21_gateshead_hartlepool-united",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5910942,
+   "docId": "2026-11-21_greifswalder_carl-zeiss-jena",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "3-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5991529,
+   "docId": "2026-11-21_inter-u23_potenza",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5886586,
+   "docId": "2026-11-21_la-roche-vf_concarneau",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 1000015509,
+   "docId": "2026-11-21_liege_anderlecht-futures",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5874285,
+   "docId": "2026-11-21_ludogorets-razgrad-ii_marek-dupnitsa",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "3-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6580838,
+   "docId": "2026-11-21_new-england_philadelphia",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5836939,
+   "docId": "2026-11-21_norwich_cardiff",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5861986,
+   "docId": "2026-11-21_pogon-grodzisk-mazowiecki_arka-gdynia",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "2-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5884269,
+   "docId": "2026-11-21_rs-gimnastica_portugalete",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5862765,
+   "docId": "2026-11-21_sandecja-nowy-sacz_znicz-pruszkow",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5897670,
+   "docId": "2026-11-21_sochi_veles-moscow",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "2-2",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 5906567,
+   "docId": "2026-11-21_solihull-moors_altrincham",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5874287,
+   "docId": "2026-11-21_spartak-pleven_nesebar",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 5911269,
+   "docId": "2026-11-21_sportfreunde-siegen_bergisch-gladbach",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "3-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5911969,
+   "docId": "2026-11-21_ssv-jeddeloh_weiche-flensburg",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5794767,
+   "docId": "2026-11-21_stranraer_elgin-city",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "3-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5836943,
+   "docId": "2026-11-21_swansea_west-brom",
+   "status": "FT",
+   "ht": "2-2",
+   "ft": "2-2",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 1000022081,
+   "docId": "2026-11-21_tecnico-universitario_deportivo-cuenca",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5990566,
+   "docId": "2026-11-21_treviso_pergolettese",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5916125,
+   "docId": "2026-11-21_ulm_kaiserslautern-ii",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5905987,
+   "docId": "2026-11-21_verl_rw-essen",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5906572,
+   "docId": "2026-11-21_yeovil_forest-green",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "3-2",
+   "htft": "2/1"
+  },
+  {
+   "fixtureId": 1000024180,
+   "docId": "2026-11-22_atletico-morelia_atletico-la-paz",
+   "status": "FT",
+   "ht": "3-1",
+   "ft": "4-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6284014,
+   "docId": "2026-11-22_avondale_apia-leichhardt",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6503956,
+   "docId": "2026-11-22_gwangju_bucheon-1995",
+   "status": "FT",
+   "ht": "1-2",
+   "ft": "4-2",
+   "htft": "2/1"
+  },
+  {
+   "fixtureId": 6011916,
+   "docId": "2026-11-22_isenmulang-kalteng_borneo-samarinda",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5155965,
+   "docId": "2026-11-22_jeonnam-dragons_ansan-greeners",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-2",
+   "htft": "1/2"
+  },
+  {
+   "fixtureId": 5987264,
+   "docId": "2026-11-22_roasso-kumamoto_giravanz-kitakyushu",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 1000015766,
+   "docId": "2026-11-22_zizkov_opava",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  }
+ ]
+}

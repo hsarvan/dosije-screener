@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "updatedAt": "2026-11-21T11:50:25+00:00",
+ "updatedAt": "2026-11-22T12:01:39+00:00",
  "matches": [
   {
    "fixtureId": 5832953,
@@ -139,12 +139,28 @@
    "htft": "1/1"
   },
   {
+   "fixtureId": 5911263,
+   "docId": "2026-11-21_bocholt_westfalia-rhynern",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
    "fixtureId": 1000017584,
    "docId": "2026-11-21_brisbane-roar_sydney",
    "status": "FT",
    "ht": "0-0",
    "ft": "0-0",
    "htft": "X/X"
+  },
+  {
+   "fixtureId": 1000018200,
+   "docId": "2026-11-21_chiangmai-united_nakhon-pathom",
+   "status": "FT",
+   "ht": "0-3",
+   "ft": "2-5",
+   "htft": "2/2"
   },
   {
    "fixtureId": 5976962,
@@ -155,12 +171,28 @@
    "htft": "1/1"
   },
   {
+   "fixtureId": 5905980,
+   "docId": "2026-11-21_dusseldorf_sonnenhof-grossaspach",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "3-1",
+   "htft": "1/1"
+  },
+  {
    "fixtureId": 5987257,
    "docId": "2026-11-21_ehime_gifu",
    "status": "FT",
    "ht": "0-1",
    "ft": "1-2",
    "htft": "2/2"
+  },
+  {
+   "fixtureId": 5916119,
+   "docId": "2026-11-21_eintracht-trier_eintracht-frankfurt-ii",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
   },
   {
    "fixtureId": 6503839,
@@ -195,6 +227,38 @@
    "htft": "X/2"
   },
   {
+   "fixtureId": 5882361,
+   "docId": "2026-11-21_levante-badalona-w_deportivo-de-a-coruna-w",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5874285,
+   "docId": "2026-11-21_ludogorets-razgrad-ii_marek-dupnitsa",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "3-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 1000018199,
+   "docId": "2026-11-21_mahasarakham-sam-bai-tao_pt-satun",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "3-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5836939,
+   "docId": "2026-11-21_norwich_cardiff",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
    "fixtureId": 6011913,
    "docId": "2026-11-21_persik_psim-yogyakarta",
    "status": "FT",
@@ -217,6 +281,46 @@
    "ht": "0-1",
    "ft": "1-1",
    "htft": "2/X"
+  },
+  {
+   "fixtureId": 5911269,
+   "docId": "2026-11-21_sportfreunde-siegen_bergisch-gladbach",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "3-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5885305,
+   "docId": "2026-11-21_tenerife-b_tamaraceite",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5916125,
+   "docId": "2026-11-21_ulm_kaiserslautern-ii",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5764475,
+   "docId": "2026-11-21_vendsyssel-ff_hvidovre",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5905987,
+   "docId": "2026-11-21_verl_rw-essen",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-3",
+   "htft": "2/2"
   }
  ]
 }
