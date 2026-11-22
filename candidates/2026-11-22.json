@@ -1,9 +1,9 @@
 {
  "date": "2026-11-22",
- "generatedAt": "2026-11-22T12:01:39+00:00",
+ "generatedAt": "2026-11-22T12:42:24+00:00",
  "window": [
-  "2026-11-22T12:01+00:00",
-  "2026-11-23T12:01+00:00"
+  "2026-11-22T12:42+00:00",
+  "2026-11-23T12:42+00:00"
  ],
  "rules": {
   "n": 4702,
@@ -11,7 +11,7 @@
    "1/2": 0.0219,
    "2/1": 0.0302
   },
-  "at": "2026-11-22T12:02:17+00:00",
+  "at": "2026-11-22T12:42:24+00:00",
   "rules": [
    {
     "id": "R1",
@@ -100,46 +100,14 @@
   ]
  },
  "leagues": 93,
- "fixturesSeen": 113,
- "analysed": 113,
+ "fixturesSeen": 107,
+ "analysed": 107,
  "upsetStats": {
   "n": 85,
   "won": 12,
   "avgOdds": 3.99
  },
  "k2": [
-  {
-   "fixtureId": 5905985,
-   "utc": "2026-11-22T12:30+00:00",
-   "kickoff": "13:30",
-   "date": "2026-11-22",
-   "league": "Njemačka · 3. Liga",
-   "home": "VfB Stuttgart II",
-   "away": "Ingolstadt",
-   "pick": "1",
-   "estOdds": 2.8,
-   "both": true,
-   "why": [
-    "VfB Stuttgart II dobio zadnja 2 međusobna kod kuće: 2:1 (10.08.2025); 3:2 (14.09.2024)",
-    "Ingolstadt dobio zadnji kod sebe: 2:1 (24.01.2026), pravo 3 za 3"
-   ]
-  },
-  {
-   "fixtureId": 5874286,
-   "utc": "2026-11-22T12:30+00:00",
-   "kickoff": "13:30",
-   "date": "2026-11-22",
-   "league": "Bugarska · Second Professional League",
-   "home": "Montana",
-   "away": "Dobrudzha Dobrich",
-   "pick": "1",
-   "estOdds": 1.88,
-   "both": true,
-   "why": [
-    "Montana dobio zadnja 2 međusobna kod kuće: 1:0 (27.04.2026); 1:0 (29.08.2025)",
-    "Dobrudzha Dobrich dobio zadnji kod sebe: 2:1 (19.10.2026), pravo 3 za 3"
-   ]
-  },
   {
    "fixtureId": 5908710,
    "utc": "2026-11-22T13:00+00:00",
@@ -292,6 +260,36 @@
    "why": [
     "Barakaldo dobio zadnja 2 međusobna kod kuće: 5:0 (03.01.2026); 3:1 (23.02.2025)"
    ]
+  },
+  {
+   "fixtureId": 1000015513,
+   "utc": "2026-11-22T15:00+00:00",
+   "kickoff": "16:00",
+   "date": "2026-11-22",
+   "league": "Belgija · First Division B",
+   "home": "Beerschot",
+   "away": "Genk U23",
+   "pick": "1",
+   "estOdds": 1.48,
+   "both": false,
+   "why": [
+    "Beerschot dobio zadnja 2 međusobna kod kuće: 1:0 (06.03.2026); 1:0 (29.03.2024)"
+   ]
+  },
+  {
+   "fixtureId": 5905984,
+   "utc": "2026-11-22T15:30+00:00",
+   "kickoff": "16:30",
+   "date": "2026-11-22",
+   "league": "Njemačka · 3. Liga",
+   "home": "Saarbrücken",
+   "away": "Wehen Wiesbaden",
+   "pick": "1",
+   "estOdds": 2.31,
+   "both": false,
+   "why": [
+    "Saarbrücken dobio zadnja 2 međusobna kod kuće: 2:0 (04.03.2026); 3:1 (09.11.2024)"
+   ]
   }
  ],
  "k2Stats": {
@@ -378,22 +376,6 @@
     "Manisa Futbol Kulübü slab kod kuće: 0,8 bod po meču u zadnjih 5"
    ],
    "dog": "Pendikspor"
-  },
-  {
-   "fixtureId": 5874286,
-   "utc": "2026-11-22T12:30+00:00",
-   "kickoff": "13:30",
-   "date": "2026-11-22",
-   "league": "Bugarska · Second Professional League",
-   "home": "Montana",
-   "away": "Dobrudzha Dobrich",
-   "pick": "2",
-   "estOdds": 3.88,
-   "flag": true,
-   "why": [
-    "Montana slab kod kuće: 0,6 bod po meču u zadnjih 5"
-   ],
-   "dog": "Dobrudzha Dobrich"
   },
   {
    "fixtureId": 6533910,
@@ -581,13 +563,6 @@
    ""
   ],
   [
-   "22.11. 13:30",
-   "GER 3. Liga",
-   "VfB Stuttgart II – Ingolstadt",
-   0,
-   ""
-  ],
-  [
    "22.11. 16:30",
    "GER 3. Liga",
    "Saarbrücken – Wehen Wiesbaden",
@@ -763,23 +738,9 @@
    "1/2 · 2/1"
   ],
   [
-   "22.11. 13:30",
-   "CZE FNL",
-   "FC Vlašim – SK Prostějov",
-   0,
-   ""
-  ],
-  [
-   "22.11. 13:30",
-   "CZE FNL",
-   "Kladno – Vysočina Jihlava",
-   0,
-   ""
-  ],
-  [
-   "22.11. 13:30",
+   "23.11. 13:30",
    "BUL Second Professional League",
-   "Montana – Dobrudzha Dobrich",
+   "PFC CSKA Sofia II – Beroe",
    0,
    ""
   ],
@@ -952,13 +913,6 @@
    ""
   ],
   [
-   "22.11. 13:30",
-   "GER Regionalliga",
-   "BFC Preussen – BSG Chemie Leipzig",
-   6,
-   "2/1"
-  ],
-  [
    "22.11. 14:00",
    "GER Regionalliga",
    "Nürnberg II – DJK Vilzing",
@@ -1053,20 +1007,6 @@
    "22.11. 17:00",
    "HUN NB II",
    "Soroksár SC – Szeged-Csanád Grosics Akademia",
-   0,
-   ""
-  ],
-  [
-   "22.11. 13:30",
-   "CYP 2. Division",
-   "AEP Polemidion – Anagennisi Deryneia",
-   0,
-   ""
-  ],
-  [
-   "22.11. 13:30",
-   "CYP 2. Division",
-   "Akritas Chlorakas – Doxa Katokopia",
    0,
    ""
   ],
@@ -1253,13 +1193,13 @@
    ""
   ]
  ],
- "withData": 112,
- "candidates": 18,
+ "withData": 107,
+ "candidates": 17,
  "tips": 7,
- "calls": 891,
- "detailCalls": 630,
+ "calls": 111,
+ "detailCalls": 107,
  "errors": 0,
- "minutes": 3.4,
+ "minutes": 0.4,
  "notes": [],
  "matches": [
   {
@@ -1449,7 +1389,7 @@
     "sources": [
      "https://www.fotmob.com/matches/msv-duisburg-vs-hansa-rostock/29wu2w#5905979"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1621,7 +1561,7 @@
     "sources": [
      "https://www.fotmob.com/matches/strongest-vs-blooming/mjclvd#1000022383"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1806,7 +1746,7 @@
     "sources": [
      "https://www.fotmob.com/matches/chicago-fire-fc-vs-charlotte-fc/bailzapa#6580835"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1986,7 +1926,7 @@
     "sources": [
      "https://www.fotmob.com/matches/rayo-cantabria-vs-sd-gernika/scy6jr9#5884273"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2181,7 +2121,7 @@
     "sources": [
      "https://www.fotmob.com/matches/madrid-cff-vs-ud-tenerife/9ou36f8q#5882360"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2338,7 +2278,7 @@
     "sources": [
      "https://www.fotmob.com/matches/cd-guadalajara-vs-albacete-b/sfzvuyk#5885640"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2510,7 +2450,7 @@
     "sources": [
      "https://www.fotmob.com/matches/aucas-vs-ldu-de-quito/1gw8uy#1000022039"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2705,7 +2645,7 @@
     "sources": [
      "https://www.fotmob.com/matches/brighton-vs-everton/1j6rzmxv#5981700"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2853,7 +2793,7 @@
     "sources": [
      "https://www.fotmob.com/matches/polonia-bytom-vs-stal-rzeszow/7w7qeco#5861997"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2999,7 +2939,7 @@
     "sources": [
      "https://www.fotmob.com/matches/lechia-gdansk-vs-odra-opole/24yaqy#5861987"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3144,7 +3084,7 @@
     "sources": [
      "https://www.fotmob.com/matches/sv-todesfelde-vs-sv-atlas-delmenhorst/4mu48706#5911972"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3292,159 +3232,13 @@
     "sources": [
      "https://www.fotmob.com/matches/ipswich-town-wfc-vs-southampton/wtwlnkte#6006697"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
      "fixtureId": 6006697
     },
     "fixtureId": 6006697
-   }
-  },
-  {
-   "fixtureId": 5910940,
-   "docId": "2026-11-22_bfc-preussen_bsg-chemie-leipzig",
-   "utc": "2026-11-22T12:30+00:00",
-   "league": "Njemačka · Regionalliga",
-   "stage": "Regionalliga Northeast",
-   "home": "BFC Preussen",
-   "away": "BSG Chemie Leipzig",
-   "score": 6,
-   "cand": {
-    "sel": "2/1",
-    "score": 6
-   },
-   "htftTip": null,
-   "stats": {
-    "1/2": {
-     "h": {
-      "home5": 0,
-      "away5": 1,
-      "last10": 1,
-      "last15": 1
-     },
-     "a": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 0
-     }
-    },
-    "2/1": {
-     "h": {
-      "home5": 1,
-      "away5": 0,
-      "last10": 1,
-      "last15": 1
-     },
-     "a": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 0
-     }
-    },
-    "n": {
-     "h": {
-      "home5": 5,
-      "away5": 5,
-      "last10": 10,
-      "last15": 15
-     },
-     "a": {
-      "home5": 5,
-      "away5": 5,
-      "last10": 10,
-      "last15": 15
-     },
-     "h2h": 2
-    }
-   },
-   "h2h": [
-    "2026-03-18 BSG Chemie Leipzig–BFC Preussen 2:2 (PV 0:1)",
-    "2025-08-26 BFC Preussen–BSG Chemie Leipzig 2:1 (PV 1:0)"
-   ],
-   "homeLast": [
-    "2026-11-06 Carl Zeiss Jena–BFC Preussen 1:1 (PV 0:1)",
-    "2026-10-31 BFC Preussen–FSV Zwickau 3:0 (PV 1:0)",
-    "2026-10-23 Babelsberg–BFC Preussen 1:0 (PV 0:0)",
-    "2026-10-17 BFC Preussen–VSG Altglienicke 1:3 (PV 0:2)",
-    "2026-10-10 BFC Preussen–Hertha Berlin II 1:1 (PV 1:1)",
-    "2026-09-26 Hallescher FC–BFC Preussen 3:2 (PV 1:2)",
-    "2026-09-19 BFC Preussen–Tasmania Berlin 1:1 (PV 1:1)",
-    "2026-09-15 FSV Luckenwalde–BFC Preussen 0:2 (PV 0:0)",
-    "2026-09-12 BFC Preussen–Magdeburg II 4:1 (PV 0:1)",
-    "2026-08-29 RW Erfurt–BFC Preussen 1:1 (PV 0:0)",
-    "2026-08-25 BFC Dynamo–BFC Preussen 2:0 (PV 1:0)",
-    "2026-08-15 BFC Preussen–Greifswalder FC 1:1 (PV 0:0)",
-    "2026-08-09 Erzgebirge Aue–BFC Preussen 2:1 (PV 1:0)",
-    "2026-08-05 BFC Preussen–Lokomotive Leipzig 1:2 (PV 0:1)",
-    "2026-07-31 Chemnitzer FC–BFC Preussen 3:0 (PV 0:0)"
-   ],
-   "awayLast": [
-    "2026-11-06 BSG Chemie Leipzig–RW Erfurt 0:2 (PV 0:0)",
-    "2026-11-01 Greifswalder FC–BSG Chemie Leipzig 1:1 (PV 1:1)",
-    "2026-10-25 BSG Chemie Leipzig–Hertha Berlin II 2:0 (PV 0:0)",
-    "2026-10-17 Lokomotive Leipzig–BSG Chemie Leipzig 2:2 (PV 1:2)",
-    "2026-10-09 BSG Chemie Leipzig–FSV Luckenwalde 1:3 (PV 0:1)",
-    "2026-09-27 Erzgebirge Aue–BSG Chemie Leipzig 1:2 (PV 1:1)",
-    "2026-09-20 BSG Chemie Leipzig–Chemnitzer FC 1:3 (PV 0:1)",
-    "2026-09-16 Tasmania Berlin–BSG Chemie Leipzig 2:5 (PV 2:3)",
-    "2026-09-12 BSG Chemie Leipzig–FSV Zwickau 2:2 (PV 0:2)",
-    "2026-08-28 VSG Altglienicke–BSG Chemie Leipzig 1:1 (PV 1:1)",
-    "2026-08-25 Magdeburg II–BSG Chemie Leipzig 1:0 (PV 1:0)",
-    "2026-08-14 BSG Chemie Leipzig–Carl Zeiss Jena 0:1 (PV 0:0)",
-    "2026-08-08 RSV Eintracht 1949–BSG Chemie Leipzig 1:1 (PV 0:1)",
-    "2026-08-05 BSG Chemie Leipzig–Hallescher FC 0:1 (PV 0:0)",
-    "2026-08-01 BFC Dynamo–BSG Chemie Leipzig 2:0 (PV 0:0)"
-   ],
-   "doc": {
-    "date": "2026-11-22",
-    "kickoff": "13:30",
-    "league": "Njemačka · Regionalliga",
-    "home": "BFC Preussen",
-    "away": "BSG Chemie Leipzig",
-    "pairId": "bfc-preussen__bsg-chemie-leipzig",
-    "venue": "Preußenstadion",
-    "neutral": false,
-    "signals": [
-     {
-      "cat": "K7",
-      "dir": "2/1",
-      "s": 1,
-      "conf": "V",
-      "note": "BFC Preussen: 2 preokreta u zadnjih 15",
-      "src": [
-       "https://www.fotmob.com/matches/bfc-preussen-vs-bsg-chemie-leipzig/2yld4vof#5910940"
-      ],
-      "by": "korisnik",
-      "rule": "R4",
-      "both": true
-     }
-    ],
-    "warnings": [],
-    "tip": "PASS",
-    "score": null,
-    "htftTip": null,
-    "cand": {
-     "sel": "2/1",
-     "score": 6
-    },
-    "reasoning": "BFC Preussen, preokreti: Hallescher FC–BFC Preussen 3:2 (PV 1:2) 26.09.; protiv Magdeburg II 4:1 (PV 0:1) 12.09.",
-    "odds": null,
-    "htftOdds": null,
-    "status": "pending",
-    "fbPending": false,
-    "sources": [
-     "https://www.fotmob.com/matches/bfc-preussen-vs-bsg-chemie-leipzig/2yld4vof#5910940"
-    ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
-    "run": {
-     "screener": true,
-     "source": "fotmob",
-     "fixtureId": 5910940
-    },
-    "fixtureId": 5910940
    }
   },
   {
@@ -3577,7 +3371,7 @@
     "sources": [
      "https://www.fotmob.com/matches/kalamaria-vs-olympiacos-b/avjro3t7#6140271"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3723,7 +3517,7 @@
     "sources": [
      "https://www.fotmob.com/matches/sandhausen-vs-stuttgarter-kickers/26x1mw#5916124"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3861,7 +3655,7 @@
     "sources": [
      "https://www.fotmob.com/matches/rc-deportivo-fabril-vs-cd-coria/sdz0dn3#5883357"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -4011,7 +3805,7 @@
     "sources": [
      "https://www.fotmob.com/matches/san-marcos-vs-magallanes/18963rrn#1000024445"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -4167,13 +3961,159 @@
     "sources": [
      "https://www.fotmob.com/matches/ntv-tokyo-verdy-beleza-vs-inac-kobe-leonessa/98enoqdp#1000015954"
     ],
-    "createdAt": "2026-11-22T12:01:39+00:00",
+    "createdAt": "2026-11-22T12:42:24+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
      "fixtureId": 1000015954
     },
     "fixtureId": 1000015954
+   }
+  },
+  {
+   "fixtureId": 5910940,
+   "docId": "2026-11-22_bfc-preussen_bsg-chemie-leipzig",
+   "utc": "2026-11-22T12:30+00:00",
+   "league": "Njemačka · Regionalliga",
+   "stage": "Regionalliga Northeast",
+   "home": "BFC Preussen",
+   "away": "BSG Chemie Leipzig",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-03-18 BSG Chemie Leipzig–BFC Preussen 2:2 (PV 0:1)",
+    "2025-08-26 BFC Preussen–BSG Chemie Leipzig 2:1 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-06 Carl Zeiss Jena–BFC Preussen 1:1 (PV 0:1)",
+    "2026-10-31 BFC Preussen–FSV Zwickau 3:0 (PV 1:0)",
+    "2026-10-23 Babelsberg–BFC Preussen 1:0 (PV 0:0)",
+    "2026-10-17 BFC Preussen–VSG Altglienicke 1:3 (PV 0:2)",
+    "2026-10-10 BFC Preussen–Hertha Berlin II 1:1 (PV 1:1)",
+    "2026-09-26 Hallescher FC–BFC Preussen 3:2 (PV 1:2)",
+    "2026-09-19 BFC Preussen–Tasmania Berlin 1:1 (PV 1:1)",
+    "2026-09-15 FSV Luckenwalde–BFC Preussen 0:2 (PV 0:0)",
+    "2026-09-12 BFC Preussen–Magdeburg II 4:1 (PV 0:1)",
+    "2026-08-29 RW Erfurt–BFC Preussen 1:1 (PV 0:0)",
+    "2026-08-25 BFC Dynamo–BFC Preussen 2:0 (PV 1:0)",
+    "2026-08-15 BFC Preussen–Greifswalder FC 1:1 (PV 0:0)",
+    "2026-08-09 Erzgebirge Aue–BFC Preussen 2:1 (PV 1:0)",
+    "2026-08-05 BFC Preussen–Lokomotive Leipzig 1:2 (PV 0:1)",
+    "2026-07-31 Chemnitzer FC–BFC Preussen 3:0 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-06 BSG Chemie Leipzig–RW Erfurt 0:2 (PV 0:0)",
+    "2026-11-01 Greifswalder FC–BSG Chemie Leipzig 1:1 (PV 1:1)",
+    "2026-10-25 BSG Chemie Leipzig–Hertha Berlin II 2:0 (PV 0:0)",
+    "2026-10-17 Lokomotive Leipzig–BSG Chemie Leipzig 2:2 (PV 1:2)",
+    "2026-10-09 BSG Chemie Leipzig–FSV Luckenwalde 1:3 (PV 0:1)",
+    "2026-09-27 Erzgebirge Aue–BSG Chemie Leipzig 1:2 (PV 1:1)",
+    "2026-09-20 BSG Chemie Leipzig–Chemnitzer FC 1:3 (PV 0:1)",
+    "2026-09-16 Tasmania Berlin–BSG Chemie Leipzig 2:5 (PV 2:3)",
+    "2026-09-12 BSG Chemie Leipzig–FSV Zwickau 2:2 (PV 0:2)",
+    "2026-08-28 VSG Altglienicke–BSG Chemie Leipzig 1:1 (PV 1:1)",
+    "2026-08-25 Magdeburg II–BSG Chemie Leipzig 1:0 (PV 1:0)",
+    "2026-08-14 BSG Chemie Leipzig–Carl Zeiss Jena 0:1 (PV 0:0)",
+    "2026-08-08 RSV Eintracht 1949–BSG Chemie Leipzig 1:1 (PV 0:1)",
+    "2026-08-05 BSG Chemie Leipzig–Hallescher FC 0:1 (PV 0:0)",
+    "2026-08-01 BFC Dynamo–BSG Chemie Leipzig 2:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-22",
+    "kickoff": "13:30",
+    "league": "Njemačka · Regionalliga",
+    "home": "BFC Preussen",
+    "away": "BSG Chemie Leipzig",
+    "pairId": "bfc-preussen__bsg-chemie-leipzig",
+    "venue": "Preußenstadion",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "BFC Preussen: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/bfc-preussen-vs-bsg-chemie-leipzig/2yld4vof#5910940"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "BFC Preussen, preokreti: Hallescher FC–BFC Preussen 3:2 (PV 1:2) 26.09.; protiv Magdeburg II 4:1 (PV 0:1) 12.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/bfc-preussen-vs-bsg-chemie-leipzig/2yld4vof#5910940"
+    ],
+    "createdAt": "2026-11-22T12:01:39+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5910940
+    },
+    "fixtureId": 5910940
    }
   }
  ]
