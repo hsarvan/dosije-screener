@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "updatedAt": "2026-11-22T12:01:39+00:00",
+ "updatedAt": "2026-11-23T13:44:00+00:00",
  "matches": [
   {
    "fixtureId": 5905978,
@@ -267,6 +267,30 @@
    "htft": "2/1"
   },
   {
+   "fixtureId": 5883739,
+   "docId": "2026-11-22_alcorcon_algeciras",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6147890,
+   "docId": "2026-11-22_antoniano_puente-genil",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "3-2",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5883353,
+   "docId": "2026-11-22_arenas-getxo_real-aviles",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "1-2",
+   "htft": "X/2"
+  },
+  {
    "fixtureId": 1000024180,
    "docId": "2026-11-22_atletico-morelia_atletico-la-paz",
    "status": "FT",
@@ -281,6 +305,30 @@
    "ht": "1-0",
    "ft": "2-1",
    "htft": "1/1"
+  },
+  {
+   "fixtureId": 5836935,
+   "docId": "2026-11-22_burnley_blackburn",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-2",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5885606,
+   "docId": "2026-11-22_getafe-b_rsd-alcala",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5884588,
+   "docId": "2026-11-22_girona-b_logrones-b",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
   },
   {
    "fixtureId": 6503956,
@@ -313,6 +361,14 @@
    "ht": "0-0",
    "ft": "1-0",
    "htft": "X/1"
+  },
+  {
+   "fixtureId": 5861992,
+   "docId": "2026-11-22_skierniewice_pogon-siedlce",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
   },
   {
    "fixtureId": 1000015766,

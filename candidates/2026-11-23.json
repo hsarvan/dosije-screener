@@ -1,0 +1,1880 @@
+{
+ "date": "2026-11-23",
+ "generatedAt": "2026-11-23T13:44:00+00:00",
+ "window": [
+  "2026-11-23T13:44+00:00",
+  "2026-11-24T13:44+00:00"
+ ],
+ "rules": {
+  "n": 4849,
+  "base": {
+   "1/2": 0.0217,
+   "2/1": 0.0303
+  },
+  "at": "2026-11-23T13:44:29+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 127,
+    "hits": 5,
+    "sel": 5,
+    "any": 10,
+    "both": false,
+    "base": 0.0286,
+    "lift": 1.38,
+    "mult": 0.88
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 23,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0298,
+    "lift": 1.46,
+    "mult": 1.02
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 117,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0303,
+    "lift": 1.41,
+    "mult": 1.04
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 858,
+    "hits": 50,
+    "sel": 33,
+    "any": 50,
+    "both": true,
+    "base": 0.0577,
+    "lift": 1.01,
+    "mult": 0.69
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 168,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0297,
+    "lift": 1.0,
+    "mult": 0.9
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 33,
+    "hits": 1,
+    "sel": 0,
+    "any": 1,
+    "both": true,
+    "base": 0.061,
+    "lift": 0.5,
+    "mult": 0.85
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 33,
+    "hits": 4,
+    "sel": 4,
+    "any": 4,
+    "both": false,
+    "base": 0.0296,
+    "lift": 4.09,
+    "mult": 1.26
+   }
+  ]
+ },
+ "leagues": 93,
+ "fixturesSeen": 35,
+ "analysed": 35,
+ "upsetStats": {
+  "n": 98,
+  "won": 14,
+  "avgOdds": 3.98
+ },
+ "k2": [],
+ "k2Stats": {
+  "n": 86,
+  "won": 45
+ },
+ "upsets": [
+  {
+   "fixtureId": 5922829,
+   "utc": "2026-11-23T18:30+00:00",
+   "kickoff": "19:30",
+   "date": "2026-11-23",
+   "league": "Mađarska · NB II",
+   "home": "Diosgyori VTK",
+   "away": "Karcagi SE",
+   "pick": "2",
+   "estOdds": 4.18,
+   "flag": true,
+   "why": [
+    "Diosgyori VTK slab kod kuće: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "Karcagi SE"
+  },
+  {
+   "fixtureId": 1000022446,
+   "utc": "2026-11-24T13:00+00:00",
+   "kickoff": "14:00",
+   "date": "2026-11-24",
+   "league": "Indija · Indian Football League",
+   "home": "Sreenidi Deccan FC",
+   "away": "Chanmari FC",
+   "pick": "2",
+   "estOdds": 4.18,
+   "flag": true,
+   "why": [
+    "Chanmari FC u usponu (+0,4), Sreenidi Deccan FC u padu (−0,5 boda po meču)"
+   ],
+   "dog": "Chanmari FC"
+  },
+  {
+   "fixtureId": 5832964,
+   "utc": "2026-11-23T19:00+00:00",
+   "kickoff": "20:00",
+   "date": "2026-11-23",
+   "league": "Holandija · Eerste Divisie",
+   "home": "Jong PSV",
+   "away": "Jong FC Utrecht",
+   "pick": "2",
+   "estOdds": 3.88,
+   "flag": true,
+   "why": [
+    "Jong PSV slab kod kuće: 1,0 bod po meču u zadnjih 5"
+   ],
+   "dog": "Jong FC Utrecht"
+  },
+  {
+   "fixtureId": 1000018513,
+   "utc": "2026-11-24T12:15+00:00",
+   "kickoff": "13:15",
+   "date": "2026-11-24",
+   "league": "Saudijska Arabija · Saudi First Division",
+   "home": "Al-Raed",
+   "away": "Al Akhdoud",
+   "pick": "2",
+   "estOdds": 3.88,
+   "flag": true,
+   "why": [
+    "Al-Raed slab kod kuće: 1,2 bod po meču u zadnjih 5"
+   ],
+   "dog": "Al Akhdoud"
+  }
+ ],
+ "screened": [
+  [
+   "23.11. 20:00",
+   "BOL Primera Division",
+   "CDT Real Oruro – Guabirá",
+   0,
+   ""
+  ],
+  [
+   "23.11. 22:15",
+   "BOL Primera Division",
+   "Universitario de Vinto – GV San José",
+   39,
+   "1/2"
+  ],
+  [
+   "24.11. 02:00",
+   "USA MLS",
+   "St. Louis City – LAFC",
+   0,
+   ""
+  ],
+  [
+   "23.11. 18:00",
+   "TUR Süper Lig",
+   "Başakşehir – Çorum FK",
+   0,
+   ""
+  ],
+  [
+   "23.11. 16:00",
+   "EGY Premier League",
+   "El Gouna FC – Zamalek SC",
+   0,
+   ""
+  ],
+  [
+   "23.11. 16:00",
+   "EGY Premier League",
+   "Wadi Degla FC – Al Ittihad Alexandria",
+   0,
+   ""
+  ],
+  [
+   "23.11. 19:00",
+   "EGY Premier League",
+   "Al Ahly SC – Pyramids FC",
+   0,
+   ""
+  ],
+  [
+   "23.11. 18:00",
+   "TUR 1. Lig",
+   "Bodrum FK – Van Spor Kulübü",
+   0,
+   ""
+  ],
+  [
+   "23.11. 20:30",
+   "ITA Serie C",
+   "Grosseto – Guidonia Montecelio",
+   0,
+   ""
+  ],
+  [
+   "23.11. 20:45",
+   "ITA Serie C",
+   "Lecco – Lumezzane",
+   12,
+   "2/1 · 1/2"
+  ],
+  [
+   "23.11. 20:45",
+   "FRA Ligue 3",
+   "Orléans – Thionville Lusitanos",
+   0,
+   ""
+  ],
+  [
+   "23.11. 20:00",
+   "NED Eerste Divisie",
+   "Jong Ajax – Jong AZ Alkmaar",
+   19,
+   "1/2"
+  ],
+  [
+   "23.11. 20:00",
+   "NED Eerste Divisie",
+   "Jong PSV – Jong FC Utrecht",
+   33,
+   "2/1 · 1/2"
+  ],
+  [
+   "23.11. 20:00",
+   "NED Eerste Divisie",
+   "Vitesse – De Graafschap",
+   6,
+   "2/1"
+  ],
+  [
+   "23.11. 15:00",
+   "RUS First League",
+   "FC Chelyabinsk – Leningradets",
+   6,
+   "2/1"
+  ],
+  [
+   "23.11. 18:00",
+   "POL I Liga",
+   "TS Podbeskidzie Bielsko-Biała – Termalica Nieciecza",
+   19,
+   "2/1 · 1/2"
+  ],
+  [
+   "24.11. 12:00",
+   "THA Thai League 2",
+   "Chanthaburi FC – Pattaya Dolphins United",
+   0,
+   ""
+  ],
+  [
+   "24.11. 13:00",
+   "THA Thai League 2",
+   "Nakhon Pathom – Chainat FC",
+   0,
+   ""
+  ],
+  [
+   "23.11. 15:30",
+   "KSA Saudi First Division",
+   "Al Jeel – Al-Saqer FC",
+   0,
+   ""
+  ],
+  [
+   "23.11. 16:15",
+   "KSA Saudi First Division",
+   "Jeddah – Damac FC",
+   0,
+   ""
+  ],
+  [
+   "24.11. 13:15",
+   "KSA Saudi First Division",
+   "Al-Raed – Al Akhdoud",
+   0,
+   ""
+  ],
+  [
+   "24.11. 13:20",
+   "KSA Saudi First Division",
+   "Al Jabalain – Al-Zulfi",
+   0,
+   ""
+  ],
+  [
+   "24.11. 13:20",
+   "KSA Saudi First Division",
+   "Al-Orobah FC – Al Najma",
+   0,
+   ""
+  ],
+  [
+   "23.11. 14:45",
+   "IRN Azadegan League",
+   "Qeshm Island – Naft Gachsaran",
+   0,
+   ""
+  ],
+  [
+   "24.11. 12:00",
+   "IRN Azadegan League",
+   "Niroye Zamini – Havadar SC",
+   0,
+   ""
+  ],
+  [
+   "24.11. 12:30",
+   "IRN Azadegan League",
+   "FC Fard – Pars Jonoubi",
+   0,
+   ""
+  ],
+  [
+   "24.11. 14:15",
+   "IRN Azadegan League",
+   "Shahin Bandar Ameri – Naft MIS",
+   43,
+   "2/1 · 1/2"
+  ],
+  [
+   "23.11. 16:00",
+   "ROU Liga II",
+   "Steaua București – Chindia Târgoviște",
+   0,
+   ""
+  ],
+  [
+   "23.11. 20:45",
+   "ENG National North & South",
+   "Chelmsford – Maidstone United",
+   7,
+   "1/2"
+  ],
+  [
+   "24.11. 01:30",
+   "COL Primera B",
+   "Boca Juniors de Cali – Deportes Quindío",
+   0,
+   ""
+  ],
+  [
+   "23.11. 19:30",
+   "HUN NB II",
+   "Diosgyori VTK – Karcagi SE",
+   0,
+   ""
+  ],
+  [
+   "24.11. 11:30",
+   "IND Indian Football League",
+   "Samaleswari SC – Bengaluru United",
+   0,
+   ""
+  ],
+  [
+   "24.11. 14:00",
+   "IND Indian Football League",
+   "Sreenidi Deccan FC – Chanmari FC",
+   0,
+   ""
+  ],
+  [
+   "23.11. 20:00",
+   "ESP Liga F",
+   "Espanyol (W) – Valencia (W)",
+   0,
+   ""
+  ],
+  [
+   "23.11. 18:00",
+   "GER Frauen-Bundesliga",
+   "Bayern München (W) – TSG 1899 Hoffenheim (W)",
+   0,
+   ""
+  ]
+ ],
+ "withData": 34,
+ "candidates": 9,
+ "tips": 3,
+ "calls": 393,
+ "detailCalls": 301,
+ "errors": 0,
+ "minutes": 1.5,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 6533917,
+   "docId": "2026-11-24_shahin-bandar-ameri_naft-mis",
+   "utc": "2026-11-24T13:15+00:00",
+   "league": "Iran · Azadegan League",
+   "stage": "Azadegan League",
+   "home": "Shahin Bandar Ameri",
+   "away": "Naft MIS",
+   "score": 43,
+   "cand": {
+    "sel": "2/1",
+    "score": 43,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 43,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 4,
+      "away5": 5,
+      "last10": 10,
+      "last15": 10
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 10
+     },
+     "h2h": 3
+    }
+   },
+   "h2h": [
+    "2024-03-04 Shahin Bandar Ameri–Naft Masjed Soleyman FC 2:1 (PV 0:1)",
+    "2023-10-02 Naft Masjed Soleyman FC–Shahin Bandar Ameri 1:1 (PV 1:0)",
+    "2022-01-18 Naft Masjed Soleyman FC–Shahin Bandar Ameri 1:2 (PV 1:1)"
+   ],
+   "homeLast": [
+    "2026-11-16 Mes Rafsanjan–Shahin Bandar Ameri 1:0 (PV 0:0)",
+    "2026-11-08 Niroye Zamini–Shahin Bandar Ameri 1:2 (PV 0:0)",
+    "2026-11-02 Shahin Bandar Ameri–Qeshm Island 1:0 (PV 1:0)",
+    "2026-10-26 Mes Kerman–Shahin Bandar Ameri 1:1 (PV 0:0)",
+    "2026-10-19 Shahin Bandar Ameri–Kara Gostar 2:3 (PV 1:2)",
+    "2026-10-11 FC Fard–Shahin Bandar Ameri 3:0 (PV 0:0)",
+    "2026-10-04 Shahin Bandar Ameri–Saipa 2:0 (PV 2:0)",
+    "2026-09-27 Foolad Khuzestan B–Shahin Bandar Ameri 2:2 (PV 2:2)",
+    "2026-09-21 Shahin Bandar Ameri–Pars Jonoubi 0:0 (PV 0:0)",
+    "2026-09-15 Naft Bandar Abbas–Shahin Bandar Ameri 1:1 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-16 Naft MIS–Qeshm Island 3:2 (PV 2:0)",
+    "2026-11-08 Mes Kerman–Naft MIS 2:1 (PV 0:1)",
+    "2026-11-01 Naft MIS–Niroye Zamini 2:0 (PV 0:0)",
+    "2026-10-26 Kara Gostar–Naft MIS 2:1 (PV 0:1)",
+    "2026-10-19 Naft MIS–Saipa 1:1 (PV 1:1)",
+    "2026-10-11 Foolad Khuzestan B–Naft MIS 1:1 (PV 0:0)",
+    "2026-10-04 Naft MIS–FC Fard 1:0 (PV 1:0)",
+    "2026-09-28 Pars Jonoubi–Naft MIS 3:2 (PV 2:1)",
+    "2026-09-22 Naft MIS–Naft Bandar Abbas 0:1 (PV 0:1)",
+    "2026-09-16 Ario Islamshahr–Naft MIS 0:3 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-24",
+    "kickoff": "14:15",
+    "league": "Iran · Azadegan League",
+    "home": "Shahin Bandar Ameri",
+    "away": "Naft MIS",
+    "pairId": "naft-mis__shahin-bandar-ameri",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Naft MIS 2× ispušteno vodstvo s PV (5 u gostima); međusobni 04.03.2024 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-shahin-bandar-ameri/ipi1n39i#6533917"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Naft MIS: 2 preokreta u zadnjih 10, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-shahin-bandar-ameri/ipi1n39i#6533917"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (04.03.2024); u zadnjih 10: Naft MIS 2×",
+      "src": [
+       "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-shahin-bandar-ameri/ipi1n39i#6533917"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 43,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 43,
+     "alt": "1/2"
+    },
+    "reasoning": "Naft MIS, preokreti: Mes Kerman–Naft MIS 2:1 (PV 0:1) 08.11.; Kara Gostar–Naft MIS 2:1 (PV 0:1) 26.10. Međusobni 04.03.2024 kod domaćina: Shahin Bandar Ameri–Naft Masjed Soleyman FC 2:1 (PV 0:1).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-shahin-bandar-ameri/ipi1n39i#6533917"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 6533917
+    },
+    "fixtureId": 6533917
+   }
+  },
+  {
+   "fixtureId": 1000022386,
+   "docId": "2026-11-23_universitario-de-vinto_gv-san-jose",
+   "utc": "2026-11-23T21:15+00:00",
+   "league": "Bolivija · Primera Division",
+   "stage": "Primera División",
+   "home": "Universitario de Vinto",
+   "away": "GV San José",
+   "score": 39,
+   "cand": {
+    "sel": "1/2",
+    "score": 39
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 39
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 5
+    }
+   },
+   "h2h": [
+    "2026-07-27 GV San José–Universitario de Vinto 2:1 (PV 0:1)",
+    "2025-12-13 GV San José–Universitario de Vinto 5:0 (PV 3:0)",
+    "2025-07-20 Universitario de Vinto–GV San José 4:0 (PV 4:0)",
+    "2024-12-03 GV San José–Universitario de Vinto 4:1 (PV 2:0)",
+    "2024-08-07 Universitario de Vinto–GV San José 1:1 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-10 Aurora–Universitario de Vinto 1:1 (PV 0:0)",
+    "2026-11-01 Universitario de Vinto–Always Ready 1:3 (PV 1:2)",
+    "2026-10-27 Bolívar–Universitario de Vinto 2:1 (PV 0:1)",
+    "2026-10-17 Universitario de Vinto–San Antonio Bulo Bulo 2:1 (PV 2:0)",
+    "2026-10-10 Universitario de Vinto–CDT Real Oruro 1:3 (PV 0:2)",
+    "2026-09-17 Blooming–Universitario de Vinto 1:1 (PV 0:1)",
+    "2026-09-13 Universitario de Vinto–Independiente Petrolero 3:1 (PV 1:1)",
+    "2026-09-04 ABB–Universitario de Vinto 2:0 (PV 1:0)",
+    "2026-08-25 Universitario de Vinto–Nacional Potosí 2:0 (PV 1:0)",
+    "2026-08-21 The Strongest–Universitario de Vinto 4:3 (PV 2:2)",
+    "2026-08-14 Universitario de Vinto–Real Tomayapo 0:1 (PV 0:0)",
+    "2026-08-09 Oriente Petrolero–Universitario de Vinto 5:0 (PV 2:0)",
+    "2026-08-06 Universitario de Vinto–Real Potosí 0:2 (PV 0:1)",
+    "2026-07-31 Universitario de Vinto–Guabirá 1:1 (PV 1:1)",
+    "2026-07-27 GV San José–Universitario de Vinto 2:1 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 GV San José–CDT Real Oruro 1:3 (PV 0:1)",
+    "2026-11-01 The Strongest–GV San José 4:2 (PV 0:2)",
+    "2026-10-24 GV San José–Blooming 2:1 (PV 0:0)",
+    "2026-10-17 Real Tomayapo–GV San José 1:0 (PV 1:0)",
+    "2026-10-12 GV San José–Guabirá 4:1 (PV 3:1)",
+    "2026-09-18 Bolívar–GV San José 4:2 (PV 3:0)",
+    "2026-09-12 GV San José–Nacional Potosí 0:3 (PV 0:1)",
+    "2026-09-05 Aurora–GV San José 3:0 (PV 3:0)",
+    "2026-08-25 GV San José–Oriente Petrolero 3:3 (PV 1:1)",
+    "2026-08-22 ABB–GV San José 2:2 (PV 2:0)",
+    "2026-08-17 Independiente Petrolero–GV San José 1:0 (PV 1:0)",
+    "2026-08-09 GV San José–Always Ready 2:3 (PV 1:2)",
+    "2026-08-05 GV San José–San Antonio Bulo Bulo 0:0 (PV 0:0)",
+    "2026-08-02 Real Potosí–GV San José 0:0 (PV 0:0)",
+    "2026-07-27 GV San José–Universitario de Vinto 2:1 (PV 0:1)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "22:15",
+    "league": "Bolivija · Primera Division",
+    "home": "Universitario de Vinto",
+    "away": "GV San José",
+    "pairId": "gv-san-jose__universitario-de-vinto",
+    "venue": "Estadio Félix Capriles",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "Universitario de Vinto 2× ispušteno vodstvo s PV (zadnjih 15); međusobni 27.07.2026 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/universitario-de-vinto-vs-gv-san-jose/10993fit5#1000022386"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (27.07.2026); u zadnjih 10: Universitario de Vinto 1×, GV San José 1×",
+      "src": [
+       "https://www.fotmob.com/matches/universitario-de-vinto-vs-gv-san-jose/10993fit5#1000022386"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 39
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 39
+    },
+    "reasoning": "Universitario de Vinto: ispušteno vodstvo s PV (zadnjih 15) – Bolívar–Universitario de Vinto 2:1 (PV 0:1) 27.10.; GV San José–Universitario de Vinto 2:1 (PV 0:1) 27.07. (međusobni). GV San José: okrenut minus s PV (zadnjih 15) – protiv Universitario de Vinto 2:1 (PV 0:1) 27.07. (međusobni).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/universitario-de-vinto-vs-gv-san-jose/10993fit5#1000022386"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000022386
+    },
+    "fixtureId": 1000022386
+   }
+  },
+  {
+   "fixtureId": 5832964,
+   "docId": "2026-11-23_jong-psv_jong-utrecht",
+   "utc": "2026-11-23T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "Jong PSV",
+   "away": "Jong FC Utrecht",
+   "score": 33,
+   "cand": {
+    "sel": "2/1",
+    "score": 33,
+    "alt": "1/2"
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 33,
+    "alt": "1/2"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-01-19 Jong FC Utrecht–Jong PSV 5:3 (PV 2:3)",
+    "2025-11-21 Jong PSV–Jong FC Utrecht 3:3 (PV 2:0)",
+    "2025-05-09 Jong PSV–Jong FC Utrecht 3:1 (PV 2:0)",
+    "2024-08-16 Jong FC Utrecht–Jong PSV 0:2 (PV 0:1)",
+    "2024-04-22 Jong PSV–Jong FC Utrecht 2:0 (PV 1:0)",
+    "2023-12-01 Jong FC Utrecht–Jong PSV 0:0 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-20 Heracles–Jong PSV 2:1 (PV 1:0)",
+    "2026-11-06 VVV-Venlo–Jong PSV 1:1 (PV 0:1)",
+    "2026-11-02 Jong PSV–NAC Breda 0:2 (PV 0:0)",
+    "2026-10-23 FC Eindhoven–Jong PSV 1:2 (PV 1:1)",
+    "2026-10-19 Jong PSV–FC Dordrecht 0:1 (PV 0:1)",
+    "2026-10-09 Roda JC Kerkrade–Jong PSV 1:1 (PV 0:0)",
+    "2026-09-19 Vitesse–Jong PSV 3:1 (PV 1:1)",
+    "2026-09-14 Jong PSV–Jong AZ Alkmaar 1:1 (PV 1:0)",
+    "2026-09-11 Helmond Sport–Jong PSV 3:1 (PV 1:1)",
+    "2026-09-07 Jong PSV–FC Den Bosch 3:1 (PV 0:0)",
+    "2026-08-31 Jong PSV–Jong Ajax 1:1 (PV 0:1)",
+    "2026-08-28 RKC Waalwijk–Jong PSV 2:2 (PV 2:1)",
+    "2026-08-24 Jong PSV–TOP Oss 1:0 (PV 1:0)",
+    "2026-08-14 Almere City FC–Jong PSV 3:1 (PV 1:1)",
+    "2026-08-10 Jong PSV–FC Volendam 3:2 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-20 Jong FC Utrecht–FC Emmen 1:0 (PV 0:0)",
+    "2026-11-07 FC Den Bosch–Jong FC Utrecht 1:1 (PV 0:0)",
+    "2026-11-02 Jong FC Utrecht–FC Dordrecht 3:2 (PV 3:1)",
+    "2026-10-23 FC Volendam–Jong FC Utrecht 6:2 (PV 3:1)",
+    "2026-10-19 Jong FC Utrecht–Roda JC Kerkrade 1:2 (PV 1:0)",
+    "2026-10-09 De Graafschap–Jong FC Utrecht 2:1 (PV 0:1)",
+    "2026-09-18 Jong FC Utrecht–VVV-Venlo 1:3 (PV 1:2)",
+    "2026-09-14 Jong FC Utrecht–Jong Ajax 6:1 (PV 3:0)",
+    "2026-09-11 NAC Breda–Jong FC Utrecht 2:3 (PV 2:1)",
+    "2026-09-07 Jong FC Utrecht–FC Eindhoven 0:0 (PV 0:0)",
+    "2026-08-31 Jong AZ Alkmaar–Jong FC Utrecht 2:1 (PV 1:1)",
+    "2026-08-28 TOP Oss–Jong FC Utrecht 2:1 (PV 1:0)",
+    "2026-08-24 Jong FC Utrecht–Heracles 1:6 (PV 0:5)",
+    "2026-08-17 Jong FC Utrecht–Vitesse 1:3 (PV 1:1)",
+    "2026-08-09 MVV Maastricht–Jong FC Utrecht 2:1 (PV 1:1)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "Jong PSV",
+    "away": "Jong FC Utrecht",
+    "pairId": "jong-psv__jong-utrecht",
+    "venue": "TenCate Stadion De Herdgang",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Jong FC Utrecht 2× ispušteno vodstvo s PV (zadnjih 10); međusobni 19.01.2026 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/jong-fc-utrecht-vs-jong-psv/3fwjnnxv#5832964"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     },
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Jong FC Utrecht: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/jong-fc-utrecht-vs-jong-psv/3fwjnnxv#5832964"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (19.01.2026); u zadnjih 10: Jong FC Utrecht 3×",
+      "src": [
+       "https://www.fotmob.com/matches/jong-fc-utrecht-vs-jong-psv/3fwjnnxv#5832964"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 33,
+     "alt": "1/2"
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 33,
+     "alt": "1/2"
+    },
+    "reasoning": "Jong FC Utrecht, preokreti: protiv Roda JC Kerkrade 1:2 (PV 1:0) 19.10.; De Graafschap–Jong FC Utrecht 2:1 (PV 0:1) 09.10.; NAC Breda–Jong FC Utrecht 2:3 (PV 2:1) 11.09. Međusobni 19.01.2026 kod gosta: Jong FC Utrecht–Jong PSV 5:3 (PV 2:3).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/jong-fc-utrecht-vs-jong-psv/3fwjnnxv#5832964"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832964
+    },
+    "fixtureId": 5832964
+   }
+  },
+  {
+   "fixtureId": 5861989,
+   "docId": "2026-11-23_ts-podbeskidzie-bielsko-biala_termalica-nieciecza",
+   "utc": "2026-11-23T17:00+00:00",
+   "league": "Poljska · I Liga",
+   "stage": "I Liga",
+   "home": "TS Podbeskidzie Bielsko-Biała",
+   "away": "Termalica Nieciecza",
+   "score": 19,
+   "cand": {
+    "sel": "2/1",
+    "score": 19,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2024-03-30 TS Podbeskidzie Bielsko-Biała–Termalica Nieciecza 2:1 (PV 0:1)",
+    "2023-09-17 Termalica Nieciecza–TS Podbeskidzie Bielsko-Biała 2:2 (PV 1:2)",
+    "2023-04-30 TS Podbeskidzie Bielsko-Biała–Termalica Nieciecza 2:2 (PV 1:2)",
+    "2022-10-02 Termalica Nieciecza–TS Podbeskidzie Bielsko-Biała 2:2 (PV 1:2)",
+    "2020-06-06 TS Podbeskidzie Bielsko-Biała–Termalica Nieciecza 1:0 (PV 1:0)",
+    "2019-08-31 Termalica Nieciecza–TS Podbeskidzie Bielsko-Biała 2:2 (PV 1:1)"
+   ],
+   "homeLast": [
+    "2026-11-07 Arka Gdynia–TS Podbeskidzie Bielsko-Biała 3:1 (PV 0:1)",
+    "2026-10-31 TS Podbeskidzie Bielsko-Biała–Warta Poznań 1:1 (PV 0:1)",
+    "2026-10-25 TS Podbeskidzie Bielsko-Biała–Stal Rzeszów 2:1 (PV 0:1)",
+    "2026-10-18 ŁKS Łódź–TS Podbeskidzie Bielsko-Biała 1:0 (PV 0:0)",
+    "2026-10-09 TS Podbeskidzie Bielsko-Biała–Pogoń Siedlce 1:0 (PV 1:0)",
+    "2026-09-20 TS Podbeskidzie Bielsko-Biała–Skierniewice 1:1 (PV 0:0)",
+    "2026-09-12 Ruch Chorzów–TS Podbeskidzie Bielsko-Biała 3:3 (PV 1:1)",
+    "2026-09-06 Polonia Bytom–TS Podbeskidzie Bielsko-Biała 0:0 (PV 0:0)",
+    "2026-08-29 Puszcza Niepołomice–TS Podbeskidzie Bielsko-Biała 2:0 (PV 1:0)",
+    "2026-08-22 TS Podbeskidzie Bielsko-Biała–Odra Opole 1:1 (PV 0:1)",
+    "2026-08-15 Chrobry Głogów–TS Podbeskidzie Bielsko-Biała 1:1 (PV 1:0)",
+    "2026-08-08 TS Podbeskidzie Bielsko-Biała–Lechia Gdańsk 2:2 (PV 1:1)",
+    "2026-08-02 Stal Mielec–TS Podbeskidzie Bielsko-Biała 3:3 (PV 3:0)",
+    "2026-07-27 Miedź Legnica–TS Podbeskidzie Bielsko-Biała 1:1 (PV 0:1)",
+    "2026-06-06 TS Podbeskidzie Bielsko-Biała–Sandecja Nowy Sącz 3:1 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-07 Termalica Nieciecza–Chrobry Głogów 2:2 (PV 1:0)",
+    "2026-10-31 Miedź Legnica–Termalica Nieciecza 1:1 (PV 0:1)",
+    "2026-10-27 Olimpia Grudziądz–Termalica Nieciecza 0:1 (PV 0:0)",
+    "2026-10-24 Arka Gdynia–Termalica Nieciecza 3:1 (PV 3:0)",
+    "2026-10-19 Termalica Nieciecza–Puszcza Niepołomice 2:0 (PV 1:0)",
+    "2026-10-10 Skierniewice–Termalica Nieciecza 2:2 (PV 1:2)",
+    "2026-09-19 Termalica Nieciecza–Odra Opole 1:0 (PV 1:0)",
+    "2026-09-14 Stal Mielec–Termalica Nieciecza 1:2 (PV 1:1)",
+    "2026-09-04 Termalica Nieciecza–Lechia Gdańsk 2:1 (PV 0:0)",
+    "2026-08-28 Pogoń Grodzisk Mazowiecki–Termalica Nieciecza 2:2 (PV 1:1)",
+    "2026-08-22 Termalica Nieciecza–Polonia Warszawa 1:3 (PV 0:1)",
+    "2026-08-16 ŁKS Łódź–Termalica Nieciecza 2:1 (PV 2:0)",
+    "2026-08-09 Termalica Nieciecza–Warta Poznań 1:2 (PV 0:1)",
+    "2026-08-01 Pogoń Siedlce–Termalica Nieciecza 1:2 (PV 1:0)",
+    "2026-07-26 Termalica Nieciecza–Ruch Chorzów 2:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "18:00",
+    "league": "Poljska · I Liga",
+    "home": "TS Podbeskidzie Bielsko-Biała",
+    "away": "Termalica Nieciecza",
+    "pairId": "termalica-nieciecza__ts-podbeskidzie-bielsko-biala",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 2/1 (30.03.2024); TS Podbeskidzie Bielsko-Biała u zadnjem meču 2/1",
+      "src": [
+       "https://www.fotmob.com/matches/ts-podbeskidzie-bielsko-biaa-vs-termalica-nieciecza/7w7udek#5861989"
+      ],
+      "by": "korisnik",
+      "rule": "R2"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 3,
+      "conf": "V",
+      "note": "TS Podbeskidzie Bielsko-Biała: 2 preokreta u zadnjih 15, 2 u zadnja 3, zadnji meč preokret",
+      "src": [
+       "https://www.fotmob.com/matches/ts-podbeskidzie-bielsko-biaa-vs-termalica-nieciecza/7w7udek#5861989"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 19,
+     "alt": "1/2"
+    },
+    "reasoning": "TS Podbeskidzie Bielsko-Biała, preokreti: Arka Gdynia–TS Podbeskidzie Bielsko-Biała 3:1 (PV 0:1) 07.11.; protiv Stal Rzeszów 2:1 (PV 0:1) 25.10. Međusobni 30.03.2024 kod domaćina: TS Podbeskidzie Bielsko-Biała–Termalica Nieciecza 2:1 (PV 0:1).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/ts-podbeskidzie-bielsko-biaa-vs-termalica-nieciecza/7w7udek#5861989"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5861989
+    },
+    "fixtureId": 5861989
+   }
+  },
+  {
+   "fixtureId": 5832963,
+   "docId": "2026-11-23_jong-ajax_jong-az-alkmaar",
+   "utc": "2026-11-23T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "Jong Ajax",
+   "away": "Jong AZ Alkmaar",
+   "score": 19,
+   "cand": {
+    "sel": "1/2",
+    "score": 19
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-01-12 Jong AZ Alkmaar–Jong Ajax 1:2 (PV 0:1)",
+    "2025-08-18 Jong Ajax–Jong AZ Alkmaar 4:1 (PV 2:1)",
+    "2025-01-13 Jong AZ Alkmaar–Jong Ajax 2:1 (PV 0:1)",
+    "2024-09-17 Jong Ajax–Jong AZ Alkmaar 1:2 (PV 1:0)",
+    "2024-05-10 Jong Ajax–Jong AZ Alkmaar 1:4 (PV 0:2)",
+    "2023-09-18 Jong AZ Alkmaar–Jong Ajax 5:2 (PV 2:2)"
+   ],
+   "homeLast": [
+    "2026-11-20 FC Volendam–Jong Ajax 1:2 (PV 1:0)",
+    "2026-11-06 FC Eindhoven–Jong Ajax 0:3 (PV 0:1)",
+    "2026-11-02 Jong Ajax–Vitesse 1:1 (PV 1:0)",
+    "2026-10-23 TOP Oss–Jong Ajax 3:3 (PV 0:2)",
+    "2026-10-19 Jong Ajax–De Graafschap 2:1 (PV 1:1)",
+    "2026-10-09 Jong Ajax–VVV-Venlo 0:3 (PV 0:1)",
+    "2026-09-18 Jong Ajax–Roda JC Kerkrade 0:0 (PV 0:0)",
+    "2026-09-14 Jong FC Utrecht–Jong Ajax 6:1 (PV 3:0)",
+    "2026-09-11 Jong Ajax–RKC Waalwijk 0:2 (PV 0:0)",
+    "2026-09-04 Almere City FC–Jong Ajax 0:1 (PV 0:0)",
+    "2026-08-31 Jong PSV–Jong Ajax 1:1 (PV 0:1)",
+    "2026-08-28 Jong Ajax–Helmond Sport 3:2 (PV 2:1)",
+    "2026-08-22 NAC Breda–Jong Ajax 3:2 (PV 1:0)",
+    "2026-08-17 Jong Ajax–FC Emmen 4:6 (PV 3:3)",
+    "2026-08-07 FC Dordrecht–Jong Ajax 2:1 (PV 2:1)"
+   ],
+   "awayLast": [
+    "2026-11-20 Vitesse–Jong AZ Alkmaar 0:3 (PV 0:3)",
+    "2026-11-06 Jong AZ Alkmaar–Almere City FC 1:3 (PV 0:1)",
+    "2026-10-30 Roda JC Kerkrade–Jong AZ Alkmaar 2:1 (PV 1:0)",
+    "2026-10-23 Jong AZ Alkmaar–Helmond Sport 5:4 (PV 2:2)",
+    "2026-10-16 VVV-Venlo–Jong AZ Alkmaar 4:4 (PV 1:2)",
+    "2026-10-09 Jong AZ Alkmaar–FC Den Bosch 0:1 (PV 0:1)",
+    "2026-09-18 Jong AZ Alkmaar–FC Volendam 4:1 (PV 2:0)",
+    "2026-09-14 Jong PSV–Jong AZ Alkmaar 1:1 (PV 1:0)",
+    "2026-09-11 Heracles–Jong AZ Alkmaar 3:2 (PV 1:2)",
+    "2026-09-05 FC Dordrecht–Jong AZ Alkmaar 3:6 (PV 2:3)",
+    "2026-08-31 Jong AZ Alkmaar–Jong FC Utrecht 2:1 (PV 1:1)",
+    "2026-08-28 Jong AZ Alkmaar–MVV Maastricht 1:2 (PV 0:1)",
+    "2026-08-21 FC Emmen–Jong AZ Alkmaar 3:1 (PV 0:0)",
+    "2026-08-17 De Graafschap–Jong AZ Alkmaar 2:5 (PV 1:1)",
+    "2026-08-10 Jong AZ Alkmaar–FC Eindhoven 0:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "Jong Ajax",
+    "away": "Jong AZ Alkmaar",
+    "pairId": "jong-ajax__jong-az-alkmaar",
+    "venue": "Sportpark De Toekomst",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Jong Ajax preokret u zadnjem meču, Jong AZ Alkmaar 1× u zadnjih 10",
+      "src": [
+       "https://www.fotmob.com/matches/jong-ajax-vs-jong-az-alkmaar/4juhfoyj#5832963"
+      ],
+      "by": "korisnik",
+      "rule": "R6",
+      "both": true
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Raniji međusobni 2/1 (13.01.2025); u zadnjih 10: Jong Ajax 1×, Jong AZ Alkmaar 1×",
+      "src": [
+       "https://www.fotmob.com/matches/jong-ajax-vs-jong-az-alkmaar/4juhfoyj#5832963"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 19
+    },
+    "reasoning": "Jong Ajax, preokreti: FC Volendam–Jong Ajax 1:2 (PV 1:0) 20.11. Jong AZ Alkmaar, preokreti: Heracles–Jong AZ Alkmaar 3:2 (PV 1:2) 11.09. Međusobni 13.01.2025 kod gosta: Jong AZ Alkmaar–Jong Ajax 2:1 (PV 0:1). Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/jong-ajax-vs-jong-az-alkmaar/4juhfoyj#5832963"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832963
+    },
+    "fixtureId": 5832963
+   }
+  },
+  {
+   "fixtureId": 5990563,
+   "docId": "2026-11-23_lecco_lumezzane",
+   "utc": "2026-11-23T19:45+00:00",
+   "league": "Italija · Serie C",
+   "stage": "Serie C - Girone A",
+   "home": "Lecco",
+   "away": "Lumezzane",
+   "score": 12,
+   "cand": {
+    "sel": "2/1",
+    "score": 12,
+    "alt": "1/2"
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 2,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 4
+    }
+   },
+   "h2h": [
+    "2026-04-19 Lecco–Lumezzane 2:2 (PV 2:1)",
+    "2025-12-13 Lumezzane–Lecco 1:1 (PV 1:1)",
+    "2025-01-11 Lumezzane–Lecco 4:0 (PV 1:0)",
+    "2024-09-07 Lecco–Lumezzane 1:1 (PV 1:0)"
+   ],
+   "homeLast": [
+    "2026-11-15 Novara–Lecco 1:1 (PV 1:1)",
+    "2026-11-08 Lecco–Juventus Next Gen 4:0 (PV 1:0)",
+    "2026-11-01 Dolomiti Bellunesi–Lecco 0:4 (PV 0:1)",
+    "2026-10-25 Lecco–Folgore Caratese 2:2 (PV 1:1)",
+    "2026-10-16 Pro Vercelli–Lecco 0:5 (PV 0:2)",
+    "2026-10-11 Lecco–Alcione Milano 1:1 (PV 0:1)",
+    "2026-10-04 Lecco–Union Brescia 2:2 (PV 1:0)",
+    "2026-09-26 Cittadella–Lecco 3:0 (PV 0:0)",
+    "2026-09-20 Lecco–Pergolettese 0:0 (PV 0:0)",
+    "2026-09-17 Desenzano–Lecco 1:3 (PV 0:2)",
+    "2026-09-13 Lecco–Giana Erminio 1:0 (PV 1:0)",
+    "2026-09-07 Trento–Lecco 1:0 (PV 0:0)",
+    "2026-08-31 Treviso–Lecco 1:0 (PV 0:0)",
+    "2026-08-22 Lecco–Arzignano Valchiampo 0:0 (PV 0:0)",
+    "2026-05-20 Catania–Lecco 3:3 (PV 2:2)"
+   ],
+   "awayLast": [
+    "2026-11-14 Lumezzane–Trento 1:2 (PV 0:1)",
+    "2026-11-06 Alcione Milano–Lumezzane 0:1 (PV 0:0)",
+    "2026-11-01 Lumezzane–Arzignano Valchiampo 1:1 (PV 1:1)",
+    "2026-10-25 Pergolettese–Lumezzane 2:1 (PV 0:1)",
+    "2026-10-17 Carpi–Lumezzane 3:1 (PV 0:1)",
+    "2026-10-13 Juventus Next Gen–Lumezzane 0:0 (PV 0:0)",
+    "2026-10-10 Lumezzane–AlbinoLeffe 3:2 (PV 2:1)",
+    "2026-09-26 Lumezzane–Folgore Caratese 1:2 (PV 1:2)",
+    "2026-09-21 Dolomiti Bellunesi–Lumezzane 1:2 (PV 1:1)",
+    "2026-09-17 Lumezzane–Novara 0:0 (PV 0:0)",
+    "2026-09-13 Lumezzane–Renate 2:2 (PV 1:1)",
+    "2026-09-06 Cittadella–Lumezzane 2:1 (PV 2:1)",
+    "2026-08-30 Lumezzane–Giana Erminio 1:0 (PV 1:0)",
+    "2026-08-22 Ospitaletto–Lumezzane 2:0 (PV 0:0)",
+    "2026-05-06 Cittadella–Lumezzane 1:0 (PV 1:0)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "20:45",
+    "league": "Italija · Serie C",
+    "home": "Lecco",
+    "away": "Lumezzane",
+    "pairId": "lecco__lumezzane",
+    "venue": "Stadio Rigamonti Ceppi",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 2,
+      "conf": "V",
+      "note": "Lumezzane: 2 preokreta u zadnjih 15, 2 u zadnjih 5",
+      "src": [
+       "https://www.fotmob.com/matches/lumezzane-vs-lecco/1e1e16#5990563"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 12,
+     "alt": "1/2"
+    },
+    "reasoning": "Lumezzane, preokreti: Pergolettese–Lumezzane 2:1 (PV 0:1) 25.10.; Carpi–Lumezzane 3:1 (PV 0:1) 17.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/lumezzane-vs-lecco/1e1e16#5990563"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5990563
+    },
+    "fixtureId": 5990563
+   }
+  },
+  {
+   "fixtureId": 5907688,
+   "docId": "2026-11-23_chelmsford_maidstone-united",
+   "utc": "2026-11-23T19:45+00:00",
+   "league": "Engleska · National North & South",
+   "stage": "National League South",
+   "home": "Chelmsford",
+   "away": "Maidstone United",
+   "score": 7,
+   "cand": {
+    "sel": "1/2",
+    "score": 7
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-02-16 Chelmsford–Maidstone United 1:1 (PV 0:0)",
+    "2025-08-25 Maidstone United–Chelmsford 0:0 (PV 0:0)",
+    "2025-01-27 Chelmsford–Maidstone United 0:0 (PV 0:0)",
+    "2024-09-03 Maidstone United–Chelmsford 1:5 (PV 1:2)",
+    "2024-03-12 Maidstone United–Chelmsford 2:0 (PV 0:0)",
+    "2023-11-20 Chelmsford–Maidstone United 0:1 (PV 0:1)"
+   ],
+   "homeLast": [
+    "2026-11-21 Walton and Hersham–Chelmsford 2:2 (PV 0:2)",
+    "2026-11-09 Chelmsford–Ebbsfleet United 2:2 (PV 1:1)",
+    "2026-11-07 Chelmsford–Farnborough 2:1 (PV 0:1)",
+    "2026-11-02 Chelmsford–Farnham Town 0:2 (PV 0:0)",
+    "2026-10-31 AFC Totton–Chelmsford 1:3 (PV 0:3)",
+    "2026-10-27 Dover–Chelmsford 0:1 (PV 0:1)",
+    "2026-10-24 Chelmsford–Tonbridge Angels 3:3 (PV 1:0)",
+    "2026-10-17 Wimborne Town–Chelmsford 1:0 (PV 0:0)",
+    "2026-10-10 Chesham United–Chelmsford 0:5 (PV 0:5)",
+    "2026-09-26 Chelmsford–Horsham 0:0 (PV 0:0)",
+    "2026-09-12 Hampton & Richmond–Chelmsford 1:1 (PV 0:0)",
+    "2026-09-08 Dorking Wanderers–Chelmsford 3:3 (PV 2:3)",
+    "2026-09-05 Chelmsford–Salisbury 1:1 (PV 1:1)",
+    "2026-08-31 Weston Super Mare–Chelmsford 1:1 (PV 0:0)",
+    "2026-08-29 Chelmsford–Maidenhead United 1:0 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-21 Maidstone United–Farnham Town 0:1 (PV 0:1)",
+    "2026-11-07 Hemel Hempstead–Maidstone United 1:2 (PV 1:0)",
+    "2026-10-31 Maidstone United–Slough Town 2:1 (PV 1:0)",
+    "2026-10-27 Maidstone United–Ebbsfleet United 1:3 (PV 0:1)",
+    "2026-10-24 Torquay United–Maidstone United 1:1 (PV 1:0)",
+    "2026-10-17 Maidstone United–Maidenhead United 2:1 (PV 1:0)",
+    "2026-10-10 Horsham–Maidstone United 1:2 (PV 0:1)",
+    "2026-09-26 Maidstone United–Truro City 1:2 (PV 1:0)",
+    "2026-09-12 Braintree Town–Maidstone United 2:1 (PV 0:0)",
+    "2026-09-08 Tonbridge Angels–Maidstone United 0:1 (PV 0:0)",
+    "2026-09-05 Maidstone United–Weston Super Mare 1:0 (PV 0:0)",
+    "2026-08-31 Hampton & Richmond–Maidstone United 1:4 (PV 0:1)",
+    "2026-08-29 Maidstone United–Salisbury 2:1 (PV 1:1)",
+    "2026-08-22 Dorking Wanderers–Maidstone United 2:3 (PV 1:1)",
+    "2026-08-18 Maidstone United–Folkestone Invicta 1:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "20:45",
+    "league": "Engleska · National North & South",
+    "home": "Chelmsford",
+    "away": "Maidstone United",
+    "pairId": "chelmsford__maidstone-united",
+    "venue": "Melbourne Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Maidstone United: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/maidstone-united-vs-chelmsford/nzf5hv#5907688"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 7
+    },
+    "reasoning": "Maidstone United, preokreti: Hemel Hempstead–Maidstone United 1:2 (PV 1:0) 07.11.; protiv Truro City 1:2 (PV 1:0) 26.09. Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/maidstone-united-vs-chelmsford/nzf5hv#5907688"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5907688
+    },
+    "fixtureId": 5907688
+   }
+  },
+  {
+   "fixtureId": 5897665,
+   "docId": "2026-11-23_chelyabinsk_leningradets",
+   "utc": "2026-11-23T14:00+00:00",
+   "league": "Rusija · First League",
+   "stage": "First League",
+   "home": "FC Chelyabinsk",
+   "away": "Leningradets",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 1
+    }
+   },
+   "h2h": [
+    "2026-08-23 Leningradets–FC Chelyabinsk 1:1 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-15 FC Chelyabinsk–Veles Moscow 4:2 (PV 3:1)",
+    "2026-11-07 Arsenal–FC Chelyabinsk 1:2 (PV 0:0)",
+    "2026-11-01 FC Chelyabinsk–Shinnik Yaroslavl 2:0 (PV 1:0)",
+    "2026-10-25 FC Chelyabinsk–Ural 1:3 (PV 1:0)",
+    "2026-10-18 Tekstilshchik–FC Chelyabinsk 2:1 (PV 1:0)",
+    "2026-10-13 Spartak Kostroma–FC Chelyabinsk 1:0 (PV 0:0)",
+    "2026-10-09 Neftekhimik–FC Chelyabinsk 2:4 (PV 0:2)",
+    "2026-09-26 FC Chelyabinsk–FC Yenisey Krasnoyarsk 1:1 (PV 0:1)",
+    "2026-09-18 FC Chelyabinsk–Ufa 2:1 (PV 0:1)",
+    "2026-09-14 KamAZ–FC Chelyabinsk 1:1 (PV 0:0)",
+    "2026-09-05 FC Chelyabinsk–Spartak Kostroma 0:1 (PV 0:1)",
+    "2026-08-30 Sochi–FC Chelyabinsk 2:1 (PV 0:0)",
+    "2026-08-23 Leningradets–FC Chelyabinsk 1:1 (PV 0:0)",
+    "2026-08-15 FC Chelyabinsk–Torpedo Moscow 0:4 (PV 0:1)",
+    "2026-08-09 FC Rotor Volgograd–FC Chelyabinsk 4:1 (PV 3:1)"
+   ],
+   "awayLast": [
+    "2026-11-15 SKA-Khabarovsk–Leningradets 1:0 (PV 1:0)",
+    "2026-11-08 FC Rotor Volgograd–Leningradets 1:1 (PV 0:1)",
+    "2026-11-04 Leningradets–SKA-Khabarovsk 1:1 (PV 1:1)",
+    "2026-10-31 Leningradets–FC Yenisey Krasnoyarsk 3:0 (PV 1:0)",
+    "2026-10-25 Neftekhimik–Leningradets 1:1 (PV 0:0)",
+    "2026-10-17 Spartak Kostroma–Leningradets 2:0 (PV 1:0)",
+    "2026-10-14 Leningradets–Luki-Energiya 2:0 (PV 0:0)",
+    "2026-10-10 Leningradets–Torpedo Moscow 1:3 (PV 0:2)",
+    "2026-09-26 Volga Ulyanovsk–Leningradets 0:1 (PV 0:0)",
+    "2026-09-17 Nizhny Novgorod–Leningradets 6:0 (PV 1:0)",
+    "2026-09-13 Leningradets–Tekstilshchik 2:2 (PV 1:0)",
+    "2026-09-05 Leningradets–SKA-Khabarovsk 3:2 (PV 2:1)",
+    "2026-08-29 Leningradets–KamAZ 0:1 (PV 0:1)",
+    "2026-08-23 Leningradets–FC Chelyabinsk 1:1 (PV 0:0)",
+    "2026-08-15 Leningradets–Arsenal 0:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "15:00",
+    "league": "Rusija · First League",
+    "home": "FC Chelyabinsk",
+    "away": "Leningradets",
+    "pairId": "chelyabinsk__leningradets",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "FC Chelyabinsk: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/fc-chelyabinsk-vs-leningradets/82tggcjg#5897665"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "FC Chelyabinsk, preokreti: protiv Ural 1:3 (PV 1:0) 25.10.; protiv Ufa 2:1 (PV 0:1) 18.09.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/fc-chelyabinsk-vs-leningradets/82tggcjg#5897665"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5897665
+    },
+    "fixtureId": 5897665
+   }
+  },
+  {
+   "fixtureId": 5832943,
+   "docId": "2026-11-23_vitesse_de-graafschap",
+   "utc": "2026-11-23T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "Vitesse",
+   "away": "De Graafschap",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-03-08 De Graafschap–Vitesse 1:4 (PV 0:2)",
+    "2025-12-04 Vitesse–De Graafschap 1:2 (PV 1:1)",
+    "2025-02-16 Vitesse–De Graafschap 2:0 (PV 1:0)",
+    "2024-09-29 De Graafschap–Vitesse 3:1 (PV 1:0)",
+    "2019-10-29 Vitesse–De Graafschap 2:0 (PV 1:0)",
+    "2019-05-12 Vitesse–De Graafschap 6:1 (PV 2:0)"
+   ],
+   "homeLast": [
+    "2026-11-20 Vitesse–Jong AZ Alkmaar 0:3 (PV 0:3)",
+    "2026-11-15 MVV Maastricht–Vitesse 2:1 (PV 1:0)",
+    "2026-11-02 Jong Ajax–Vitesse 1:1 (PV 1:0)",
+    "2026-10-28 VVV-Venlo–Vitesse 0:2 (PV 0:2)",
+    "2026-10-23 Vitesse–FC Emmen 0:2 (PV 0:0)",
+    "2026-10-16 FC Eindhoven–Vitesse 0:1 (PV 0:1)",
+    "2026-10-09 FC Volendam–Vitesse 2:0 (PV 1:0)",
+    "2026-10-03 Vitesse–NAC Breda 2:2 (PV 1:2)",
+    "2026-09-26 Heracles–Vitesse 2:0 (PV 2:0)",
+    "2026-09-19 Vitesse–Jong PSV 3:1 (PV 1:1)",
+    "2026-09-12 Roda JC Kerkrade–Vitesse 1:0 (PV 1:0)",
+    "2026-09-04 Vitesse–TOP Oss 2:1 (PV 0:0)",
+    "2026-08-28 FC Den Bosch–Vitesse 1:4 (PV 0:3)",
+    "2026-08-21 Vitesse–Almere City FC 0:3 (PV 0:0)",
+    "2026-08-17 Jong FC Utrecht–Vitesse 1:3 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-20 De Graafschap–MVV Maastricht 3:0 (PV 0:0)",
+    "2026-11-14 De Graafschap–TOP Oss 1:2 (PV 0:1)",
+    "2026-10-30 FC Volendam–De Graafschap 1:2 (PV 1:0)",
+    "2026-10-27 Roda JC Kerkrade–De Graafschap 1:0 (PV 0:0)",
+    "2026-10-23 De Graafschap–RKC Waalwijk 1:1 (PV 1:0)",
+    "2026-10-19 Jong Ajax–De Graafschap 2:1 (PV 1:1)",
+    "2026-10-09 De Graafschap–Jong FC Utrecht 2:1 (PV 0:1)",
+    "2026-10-03 FC Eindhoven–De Graafschap 2:2 (PV 1:0)",
+    "2026-09-27 De Graafschap–FC Den Bosch 1:0 (PV 1:0)",
+    "2026-09-20 De Graafschap–NAC Breda 1:2 (PV 1:2)",
+    "2026-09-11 FC Emmen–De Graafschap 1:2 (PV 1:1)",
+    "2026-09-04 Heracles–De Graafschap 5:0 (PV 2:0)",
+    "2026-08-29 De Graafschap–Almere City FC 1:4 (PV 1:1)",
+    "2026-08-23 VVV-Venlo–De Graafschap 2:1 (PV 2:1)",
+    "2026-08-17 De Graafschap–Jong AZ Alkmaar 2:5 (PV 1:1)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "Vitesse",
+    "away": "De Graafschap",
+    "pairId": "de-graafschap__vitesse",
+    "venue": "GelreDome",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "De Graafschap: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/vitesse-vs-de-graafschap/2c24uc#5832943"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "De Graafschap, preokreti: FC Volendam–De Graafschap 1:2 (PV 1:0) 30.10.; protiv Jong FC Utrecht 2:1 (PV 0:1) 09.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/vitesse-vs-de-graafschap/2c24uc#5832943"
+    ],
+    "createdAt": "2026-11-23T13:44:00+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832943
+    },
+    "fixtureId": 5832943
+   }
+  }
+ ]
+}

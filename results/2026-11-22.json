@@ -1,0 +1,150 @@
+{
+ "date": "2026-11-22",
+ "updatedAt": "2026-11-23T13:44:00+00:00",
+ "matches": [
+  {
+   "fixtureId": 5885640,
+   "docId": "2026-11-22_albacete-b_guadalajara",
+   "status": "FT",
+   "ht": "0-3",
+   "ft": "0-4",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5910940,
+   "docId": "2026-11-22_bfc-preussen_bsg-chemie-leipzig",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5883357,
+   "docId": "2026-11-22_deportivo-fabril_coria",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "3-3",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5981700,
+   "docId": "2026-11-22_everton-w_brighton-w",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-1",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5884273,
+   "docId": "2026-11-22_gernika_rayo-cantabria",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "3-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6006697,
+   "docId": "2026-11-22_ipswich-town-wfc-w_southampton-w",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 1000022039,
+   "docId": "2026-11-22_ldu-de-quito_aucas",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5861987,
+   "docId": "2026-11-22_lechia-gdansk_odra-opole",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5905979,
+   "docId": "2026-11-22_msv-duisburg_hansa-rostock",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 6140271,
+   "docId": "2026-11-22_olympiacos-b_kalamaria",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 1000024445,
+   "docId": "2026-11-22_san-marcos_magallanes",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5916124,
+   "docId": "2026-11-22_sandhausen_stuttgarter-kickers",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-2",
+   "htft": "1/2"
+  },
+  {
+   "fixtureId": 5861997,
+   "docId": "2026-11-22_stal-rzeszow_polonia-bytom",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "4-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5882360,
+   "docId": "2026-11-22_tenerife-w_madrid-cff-w",
+   "status": "FT",
+   "ht": "0-2",
+   "ft": "0-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 1000022383,
+   "docId": "2026-11-22_the-strongest_blooming",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "4-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5911972,
+   "docId": "2026-11-22_todesfelde_atlas-delmenhorst",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 6580835,
+   "docId": "2026-11-23_chicago_charlotte",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 1000015954,
+   "docId": "2026-11-23_ntv-tokyo-verdy-beleza-w_inac-kobe-leonessa-w",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "6-0",
+   "htft": "1/1"
+  }
+ ]
+}
