@@ -1,17 +1,17 @@
 {
  "date": "2026-11-23",
- "generatedAt": "2026-11-23T13:44:00+00:00",
+ "generatedAt": "2026-11-23T14:58:10+00:00",
  "window": [
-  "2026-11-23T13:44+00:00",
-  "2026-11-24T13:44+00:00"
+  "2026-11-23T14:58+00:00",
+  "2026-11-24T14:58+00:00"
  ],
  "rules": {
-  "n": 4849,
+  "n": 4851,
   "base": {
-   "1/2": 0.0217,
+   "1/2": 0.0216,
    "2/1": 0.0303
   },
-  "at": "2026-11-23T13:44:29+00:00",
+  "at": "2026-11-23T14:58:10+00:00",
   "rules": [
    {
     "id": "R1",
@@ -100,8 +100,8 @@
   ]
  },
  "leagues": 93,
- "fixturesSeen": 35,
- "analysed": 35,
+ "fixturesSeen": 33,
+ "analysed": 33,
  "upsetStats": {
   "n": 98,
   "won": 14,
@@ -109,7 +109,7 @@
  },
  "k2": [],
  "k2Stats": {
-  "n": 86,
+  "n": 87,
   "won": 45
  },
  "upsets": [
@@ -278,13 +278,6 @@
    "2/1"
   ],
   [
-   "23.11. 15:00",
-   "RUS First League",
-   "FC Chelyabinsk – Leningradets",
-   6,
-   "2/1"
-  ],
-  [
    "23.11. 18:00",
    "POL I Liga",
    "TS Podbeskidzie Bielsko-Biała – Termalica Nieciecza",
@@ -302,13 +295,6 @@
    "24.11. 13:00",
    "THA Thai League 2",
    "Nakhon Pathom – Chainat FC",
-   0,
-   ""
-  ],
-  [
-   "23.11. 15:30",
-   "KSA Saudi First Division",
-   "Al Jeel – Al-Saqer FC",
    0,
    ""
   ],
@@ -341,9 +327,9 @@
    ""
   ],
   [
-   "23.11. 14:45",
-   "IRN Azadegan League",
-   "Qeshm Island – Naft Gachsaran",
+   "24.11. 15:30",
+   "KSA Saudi First Division",
+   "Hajer – Al Taee",
    0,
    ""
   ],
@@ -425,13 +411,13 @@
    ""
   ]
  ],
- "withData": 34,
- "candidates": 9,
+ "withData": 32,
+ "candidates": 8,
  "tips": 3,
- "calls": 393,
- "detailCalls": 301,
+ "calls": 39,
+ "detailCalls": 35,
  "errors": 0,
- "minutes": 1.5,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -596,7 +582,7 @@
     "sources": [
      "https://www.fotmob.com/matches/naft-masjed-soleyman-fc-vs-shahin-bandar-ameri/ipi1n39i#6533917"
     ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
+    "createdAt": "2026-11-23T14:58:10+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -762,7 +748,7 @@
     "sources": [
      "https://www.fotmob.com/matches/universitario-de-vinto-vs-gv-san-jose/10993fit5#1000022386"
     ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
+    "createdAt": "2026-11-23T14:58:10+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -946,7 +932,7 @@
     "sources": [
      "https://www.fotmob.com/matches/jong-fc-utrecht-vs-jong-psv/3fwjnnxv#5832964"
     ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
+    "createdAt": "2026-11-23T14:58:10+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1110,7 +1096,7 @@
     "sources": [
      "https://www.fotmob.com/matches/ts-podbeskidzie-bielsko-biaa-vs-termalica-nieciecza/7w7udek#5861989"
     ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
+    "createdAt": "2026-11-23T14:58:10+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1272,7 +1258,7 @@
     "sources": [
      "https://www.fotmob.com/matches/jong-ajax-vs-jong-az-alkmaar/4juhfoyj#5832963"
     ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
+    "createdAt": "2026-11-23T14:58:10+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1422,7 +1408,7 @@
     "sources": [
      "https://www.fotmob.com/matches/lumezzane-vs-lecco/1e1e16#5990563"
     ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
+    "createdAt": "2026-11-23T14:58:10+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1572,13 +1558,163 @@
     "sources": [
      "https://www.fotmob.com/matches/maidstone-united-vs-chelmsford/nzf5hv#5907688"
     ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
+    "createdAt": "2026-11-23T14:58:10+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
      "fixtureId": 5907688
     },
     "fixtureId": 5907688
+   }
+  },
+  {
+   "fixtureId": 5832943,
+   "docId": "2026-11-23_vitesse_de-graafschap",
+   "utc": "2026-11-23T19:00+00:00",
+   "league": "Holandija · Eerste Divisie",
+   "stage": "Eerste Divisie",
+   "home": "Vitesse",
+   "away": "De Graafschap",
+   "score": 6,
+   "cand": {
+    "sel": "2/1",
+    "score": 6
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-03-08 De Graafschap–Vitesse 1:4 (PV 0:2)",
+    "2025-12-04 Vitesse–De Graafschap 1:2 (PV 1:1)",
+    "2025-02-16 Vitesse–De Graafschap 2:0 (PV 1:0)",
+    "2024-09-29 De Graafschap–Vitesse 3:1 (PV 1:0)",
+    "2019-10-29 Vitesse–De Graafschap 2:0 (PV 1:0)",
+    "2019-05-12 Vitesse–De Graafschap 6:1 (PV 2:0)"
+   ],
+   "homeLast": [
+    "2026-11-20 Vitesse–Jong AZ Alkmaar 0:3 (PV 0:3)",
+    "2026-11-15 MVV Maastricht–Vitesse 2:1 (PV 1:0)",
+    "2026-11-02 Jong Ajax–Vitesse 1:1 (PV 1:0)",
+    "2026-10-28 VVV-Venlo–Vitesse 0:2 (PV 0:2)",
+    "2026-10-23 Vitesse–FC Emmen 0:2 (PV 0:0)",
+    "2026-10-16 FC Eindhoven–Vitesse 0:1 (PV 0:1)",
+    "2026-10-09 FC Volendam–Vitesse 2:0 (PV 1:0)",
+    "2026-10-03 Vitesse–NAC Breda 2:2 (PV 1:2)",
+    "2026-09-26 Heracles–Vitesse 2:0 (PV 2:0)",
+    "2026-09-19 Vitesse–Jong PSV 3:1 (PV 1:1)",
+    "2026-09-12 Roda JC Kerkrade–Vitesse 1:0 (PV 1:0)",
+    "2026-09-04 Vitesse–TOP Oss 2:1 (PV 0:0)",
+    "2026-08-28 FC Den Bosch–Vitesse 1:4 (PV 0:3)",
+    "2026-08-21 Vitesse–Almere City FC 0:3 (PV 0:0)",
+    "2026-08-17 Jong FC Utrecht–Vitesse 1:3 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-20 De Graafschap–MVV Maastricht 3:0 (PV 0:0)",
+    "2026-11-14 De Graafschap–TOP Oss 1:2 (PV 0:1)",
+    "2026-10-30 FC Volendam–De Graafschap 1:2 (PV 1:0)",
+    "2026-10-27 Roda JC Kerkrade–De Graafschap 1:0 (PV 0:0)",
+    "2026-10-23 De Graafschap–RKC Waalwijk 1:1 (PV 1:0)",
+    "2026-10-19 Jong Ajax–De Graafschap 2:1 (PV 1:1)",
+    "2026-10-09 De Graafschap–Jong FC Utrecht 2:1 (PV 0:1)",
+    "2026-10-03 FC Eindhoven–De Graafschap 2:2 (PV 1:0)",
+    "2026-09-27 De Graafschap–FC Den Bosch 1:0 (PV 1:0)",
+    "2026-09-20 De Graafschap–NAC Breda 1:2 (PV 1:2)",
+    "2026-09-11 FC Emmen–De Graafschap 1:2 (PV 1:1)",
+    "2026-09-04 Heracles–De Graafschap 5:0 (PV 2:0)",
+    "2026-08-29 De Graafschap–Almere City FC 1:4 (PV 1:1)",
+    "2026-08-23 VVV-Venlo–De Graafschap 2:1 (PV 2:1)",
+    "2026-08-17 De Graafschap–Jong AZ Alkmaar 2:5 (PV 1:1)"
+   ],
+   "doc": {
+    "date": "2026-11-23",
+    "kickoff": "20:00",
+    "league": "Holandija · Eerste Divisie",
+    "home": "Vitesse",
+    "away": "De Graafschap",
+    "pairId": "de-graafschap__vitesse",
+    "venue": "GelreDome",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 1,
+      "conf": "V",
+      "note": "De Graafschap: 2 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/vitesse-vs-de-graafschap/2c24uc#5832943"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "2/1",
+     "score": 6
+    },
+    "reasoning": "De Graafschap, preokreti: FC Volendam–De Graafschap 1:2 (PV 1:0) 30.10.; protiv Jong FC Utrecht 2:1 (PV 0:1) 09.10.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/vitesse-vs-de-graafschap/2c24uc#5832943"
+    ],
+    "createdAt": "2026-11-23T14:58:10+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5832943
+    },
+    "fixtureId": 5832943
    }
   },
   {
@@ -1724,156 +1860,6 @@
      "fixtureId": 5897665
     },
     "fixtureId": 5897665
-   }
-  },
-  {
-   "fixtureId": 5832943,
-   "docId": "2026-11-23_vitesse_de-graafschap",
-   "utc": "2026-11-23T19:00+00:00",
-   "league": "Holandija · Eerste Divisie",
-   "stage": "Eerste Divisie",
-   "home": "Vitesse",
-   "away": "De Graafschap",
-   "score": 6,
-   "cand": {
-    "sel": "2/1",
-    "score": 6
-   },
-   "htftTip": null,
-   "stats": {
-    "1/2": {
-     "h": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 0
-     },
-     "a": {
-      "home5": 1,
-      "away5": 1,
-      "last10": 2,
-      "last15": 2
-     }
-    },
-    "2/1": {
-     "h": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 0
-     },
-     "a": {
-      "home5": 0,
-      "away5": 0,
-      "last10": 0,
-      "last15": 0
-     }
-    },
-    "n": {
-     "h": {
-      "home5": 5,
-      "away5": 5,
-      "last10": 10,
-      "last15": 15
-     },
-     "a": {
-      "home5": 5,
-      "away5": 5,
-      "last10": 10,
-      "last15": 15
-     },
-     "h2h": 6
-    }
-   },
-   "h2h": [
-    "2026-03-08 De Graafschap–Vitesse 1:4 (PV 0:2)",
-    "2025-12-04 Vitesse–De Graafschap 1:2 (PV 1:1)",
-    "2025-02-16 Vitesse–De Graafschap 2:0 (PV 1:0)",
-    "2024-09-29 De Graafschap–Vitesse 3:1 (PV 1:0)",
-    "2019-10-29 Vitesse–De Graafschap 2:0 (PV 1:0)",
-    "2019-05-12 Vitesse–De Graafschap 6:1 (PV 2:0)"
-   ],
-   "homeLast": [
-    "2026-11-20 Vitesse–Jong AZ Alkmaar 0:3 (PV 0:3)",
-    "2026-11-15 MVV Maastricht–Vitesse 2:1 (PV 1:0)",
-    "2026-11-02 Jong Ajax–Vitesse 1:1 (PV 1:0)",
-    "2026-10-28 VVV-Venlo–Vitesse 0:2 (PV 0:2)",
-    "2026-10-23 Vitesse–FC Emmen 0:2 (PV 0:0)",
-    "2026-10-16 FC Eindhoven–Vitesse 0:1 (PV 0:1)",
-    "2026-10-09 FC Volendam–Vitesse 2:0 (PV 1:0)",
-    "2026-10-03 Vitesse–NAC Breda 2:2 (PV 1:2)",
-    "2026-09-26 Heracles–Vitesse 2:0 (PV 2:0)",
-    "2026-09-19 Vitesse–Jong PSV 3:1 (PV 1:1)",
-    "2026-09-12 Roda JC Kerkrade–Vitesse 1:0 (PV 1:0)",
-    "2026-09-04 Vitesse–TOP Oss 2:1 (PV 0:0)",
-    "2026-08-28 FC Den Bosch–Vitesse 1:4 (PV 0:3)",
-    "2026-08-21 Vitesse–Almere City FC 0:3 (PV 0:0)",
-    "2026-08-17 Jong FC Utrecht–Vitesse 1:3 (PV 1:1)"
-   ],
-   "awayLast": [
-    "2026-11-20 De Graafschap–MVV Maastricht 3:0 (PV 0:0)",
-    "2026-11-14 De Graafschap–TOP Oss 1:2 (PV 0:1)",
-    "2026-10-30 FC Volendam–De Graafschap 1:2 (PV 1:0)",
-    "2026-10-27 Roda JC Kerkrade–De Graafschap 1:0 (PV 0:0)",
-    "2026-10-23 De Graafschap–RKC Waalwijk 1:1 (PV 1:0)",
-    "2026-10-19 Jong Ajax–De Graafschap 2:1 (PV 1:1)",
-    "2026-10-09 De Graafschap–Jong FC Utrecht 2:1 (PV 0:1)",
-    "2026-10-03 FC Eindhoven–De Graafschap 2:2 (PV 1:0)",
-    "2026-09-27 De Graafschap–FC Den Bosch 1:0 (PV 1:0)",
-    "2026-09-20 De Graafschap–NAC Breda 1:2 (PV 1:2)",
-    "2026-09-11 FC Emmen–De Graafschap 1:2 (PV 1:1)",
-    "2026-09-04 Heracles–De Graafschap 5:0 (PV 2:0)",
-    "2026-08-29 De Graafschap–Almere City FC 1:4 (PV 1:1)",
-    "2026-08-23 VVV-Venlo–De Graafschap 2:1 (PV 2:1)",
-    "2026-08-17 De Graafschap–Jong AZ Alkmaar 2:5 (PV 1:1)"
-   ],
-   "doc": {
-    "date": "2026-11-23",
-    "kickoff": "20:00",
-    "league": "Holandija · Eerste Divisie",
-    "home": "Vitesse",
-    "away": "De Graafschap",
-    "pairId": "de-graafschap__vitesse",
-    "venue": "GelreDome",
-    "neutral": false,
-    "signals": [
-     {
-      "cat": "K7",
-      "dir": "2/1",
-      "s": 1,
-      "conf": "V",
-      "note": "De Graafschap: 2 preokreta u zadnjih 15",
-      "src": [
-       "https://www.fotmob.com/matches/vitesse-vs-de-graafschap/2c24uc#5832943"
-      ],
-      "by": "korisnik",
-      "rule": "R4",
-      "both": true
-     }
-    ],
-    "warnings": [],
-    "tip": "PASS",
-    "score": null,
-    "htftTip": null,
-    "cand": {
-     "sel": "2/1",
-     "score": 6
-    },
-    "reasoning": "De Graafschap, preokreti: FC Volendam–De Graafschap 1:2 (PV 1:0) 30.10.; protiv Jong FC Utrecht 2:1 (PV 0:1) 09.10.",
-    "odds": null,
-    "htftOdds": null,
-    "status": "pending",
-    "fbPending": false,
-    "sources": [
-     "https://www.fotmob.com/matches/vitesse-vs-de-graafschap/2c24uc#5832943"
-    ],
-    "createdAt": "2026-11-23T13:44:00+00:00",
-    "run": {
-     "screener": true,
-     "source": "fotmob",
-     "fixtureId": 5832943
-    },
-    "fixtureId": 5832943
    }
   }
  ]
