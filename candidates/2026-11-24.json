@@ -1,17 +1,17 @@
 {
  "date": "2026-11-24",
- "generatedAt": "2026-11-24T14:20:04+00:00",
+ "generatedAt": "2026-11-24T14:59:52+00:00",
  "window": [
-  "2026-11-24T14:20+00:00",
-  "2026-11-25T14:20+00:00"
+  "2026-11-24T14:59+00:00",
+  "2026-11-25T14:59+00:00"
  ],
  "rules": {
-  "n": 4881,
+  "n": 4885,
   "base": {
    "1/2": 0.0215,
-   "2/1": 0.0305
+   "2/1": 0.0307
   },
-  "at": "2026-11-24T14:20:11+00:00",
+  "at": "2026-11-24T14:59:53+00:00",
   "rules": [
    {
     "id": "R1",
@@ -34,7 +34,7 @@
     "any": 1,
     "both": false,
     "base": 0.0303,
-    "lift": 1.38,
+    "lift": 1.37,
     "mult": 1.01
    },
    {
@@ -100,12 +100,12 @@
   ]
  },
  "leagues": 93,
- "fixturesSeen": 102,
- "analysed": 102,
+ "fixturesSeen": 101,
+ "analysed": 101,
  "upsetStats": {
-  "n": 100,
+  "n": 101,
   "won": 14,
-  "avgOdds": 3.99
+  "avgOdds": 3.98
  },
  "k2": [
   {
@@ -869,13 +869,6 @@
    ""
   ],
   [
-   "24.11. 15:30",
-   "KSA Saudi First Division",
-   "Hajer – Al Taee",
-   0,
-   ""
-  ],
-  [
    "25.11. 13:10",
    "KSA Saudi First Division",
    "Al Anwar – Al-Jandal",
@@ -1128,13 +1121,13 @@
    ""
   ]
  ],
- "withData": 100,
+ "withData": 99,
  "candidates": 18,
  "tips": 6,
- "calls": 800,
- "detailCalls": 574,
+ "calls": 107,
+ "detailCalls": 105,
  "errors": 0,
- "minutes": 3.6,
+ "minutes": 0.4,
  "notes": [],
  "matches": [
   {
@@ -1313,7 +1306,7 @@
     "sources": [
      "https://www.fotmob.com/matches/slough-town-vs-farnborough/1pm87h#5907697"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1486,7 +1479,7 @@
     "sources": [
      "https://www.fotmob.com/matches/southend-united-vs-forest-green-rovers/2toa9o#5906578"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1698,7 +1691,7 @@
     "sources": [
      "https://www.fotmob.com/matches/oxford-united-vs-tottenham-hotspur-u21/4tn1ex45#6016271"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -1870,7 +1863,7 @@
     "sources": [
      "https://www.fotmob.com/matches/thespa-gunma-vs-fc-gifu/o65nva9#5987271"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2042,7 +2035,7 @@
     "sources": [
      "https://www.fotmob.com/matches/barnsley-vs-bradford-city/2bp6jo#5837171"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2214,7 +2207,7 @@
     "sources": [
      "https://www.fotmob.com/matches/barnet-vs-crawley-town/2c8zf8#5837945"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2379,7 +2372,7 @@
     "sources": [
      "https://www.fotmob.com/matches/yeovil-town-vs-eastleigh/6sn0w64#5906577"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2545,7 +2538,7 @@
     "sources": [
      "https://www.fotmob.com/matches/tranmere-rovers-vs-everton-u21/3wgb7i8y#6015016"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2707,7 +2700,7 @@
     "sources": [
      "https://www.fotmob.com/matches/morecambe-vs-macclesfield-fc/2exng7#5907177"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -2862,7 +2855,7 @@
     "sources": [
      "https://www.fotmob.com/matches/horsham-vs-truro-city/ichu2zy#5907695"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3008,7 +3001,7 @@
     "sources": [
      "https://www.fotmob.com/matches/nagoya-grampus-vs-jef-united-chiba/2lxeof#5803669"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3158,7 +3151,7 @@
     "sources": [
      "https://www.fotmob.com/matches/altrincham-vs-wealdstone/6ruwbf7#5906574"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3306,7 +3299,7 @@
     "sources": [
      "https://www.fotmob.com/matches/barrow-vs-boston-united/1uybq0#5906575"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3456,7 +3449,7 @@
     "sources": [
      "https://www.fotmob.com/matches/middlesbrough-vs-swansea-city/2ugtz5#5836949"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3606,7 +3599,7 @@
     "sources": [
      "https://www.fotmob.com/matches/norwich-city-vs-queens-park-rangers/3bck07#5836950"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3756,7 +3749,7 @@
     "sources": [
      "https://www.fotmob.com/matches/fc-halifax-town-vs-afc-fylde/jnx3go4#5906573"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -3904,7 +3897,7 @@
     "sources": [
      "https://www.fotmob.com/matches/gateshead-fc-vs-scunthorpe-united/1rh11l#5906580"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -4053,7 +4046,7 @@
     "sources": [
      "https://www.fotmob.com/matches/roasso-kumamoto-vs-fc-ryukyu/t59wf22#5987267"
     ],
-    "createdAt": "2026-11-24T14:20:04+00:00",
+    "createdAt": "2026-11-24T14:59:52+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
