@@ -1,0 +1,70 @@
+{
+ "date": "2026-11-23",
+ "updatedAt": "2026-11-24T14:20:04+00:00",
+ "matches": [
+  {
+   "fixtureId": 5907688,
+   "docId": "2026-11-23_chelmsford_maidstone-united",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5897665,
+   "docId": "2026-11-23_chelyabinsk_leningradets",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "2-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5832963,
+   "docId": "2026-11-23_jong-ajax_jong-az-alkmaar",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "3-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5832964,
+   "docId": "2026-11-23_jong-psv_jong-utrecht",
+   "status": "FT",
+   "ht": "1-2",
+   "ft": "3-2",
+   "htft": "2/1"
+  },
+  {
+   "fixtureId": 5990563,
+   "docId": "2026-11-23_lecco_lumezzane",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5861989,
+   "docId": "2026-11-23_ts-podbeskidzie-bielsko-biala_termalica-nieciecza",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 1000022386,
+   "docId": "2026-11-23_universitario-de-vinto_gv-san-jose",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "3-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5832943,
+   "docId": "2026-11-23_vitesse_de-graafschap",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  }
+ ]
+}
