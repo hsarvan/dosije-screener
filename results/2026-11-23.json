@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "updatedAt": "2026-11-24T14:20:04+00:00",
+ "updatedAt": "2026-11-25T13:36:28+00:00",
  "matches": [
   {
    "fixtureId": 5907688,
@@ -65,6 +65,14 @@
    "ht": "0-0",
    "ft": "0-1",
    "htft": "X/2"
+  },
+  {
+   "fixtureId": 6533917,
+   "docId": "2026-11-24_shahin-bandar-ameri_naft-mis",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
   }
  ]
 }

@@ -1,0 +1,150 @@
+{
+ "date": "2026-11-24",
+ "updatedAt": "2026-11-25T13:36:28+00:00",
+ "matches": [
+  {
+   "fixtureId": 5906574,
+   "docId": "2026-11-24_altrincham_wealdstone",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "3-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5906575,
+   "docId": "2026-11-24_boston-united_barrow",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5837171,
+   "docId": "2026-11-24_bradford_barnsley",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "3-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5837945,
+   "docId": "2026-11-24_crawley_barnet",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-0",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5906577,
+   "docId": "2026-11-24_eastleigh_yeovil",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5906578,
+   "docId": "2026-11-24_forest-green_southend",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5906573,
+   "docId": "2026-11-24_fylde_halifax-town",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5907695,
+   "docId": "2026-11-24_horsham_truro-city",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5907177,
+   "docId": "2026-11-24_macclesfield_morecambe",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "3-2",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5836949,
+   "docId": "2026-11-24_middlesbrough_swansea",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5836950,
+   "docId": "2026-11-24_norwich_qpr",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 6016271,
+   "docId": "2026-11-24_oxford-utd_tottenham-hotspur-u21",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5906580,
+   "docId": "2026-11-24_scunthorpe_gateshead",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "1-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5907697,
+   "docId": "2026-11-24_slough-town_farnborough",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "4-2",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6015016,
+   "docId": "2026-11-24_tranmere_everton-u21",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-1",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5987271,
+   "docId": "2026-11-25_gifu_thespa-gunma",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-1",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5803669,
+   "docId": "2026-11-25_jef-united-chiba_nagoya-grampus",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "1-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5987267,
+   "docId": "2026-11-25_ryukyu_roasso-kumamoto",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  }
+ ]
+}
