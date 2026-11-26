@@ -1,0 +1,838 @@
+{
+ "date": "2026-11-26",
+ "generatedAt": "2026-11-26T13:14:24+00:00",
+ "window": [
+  "2026-11-26T13:14+00:00",
+  "2026-11-27T13:14+00:00"
+ ],
+ "rules": {
+  "n": 5011,
+  "base": {
+   "1/2": 0.0212,
+   "2/1": 0.0307
+  },
+  "at": "2026-11-26T13:14:30+00:00",
+  "rules": [
+   {
+    "id": "R1",
+    "name": "Preokreti ekipe + isti preokret u međusobnom",
+    "n": 130,
+    "hits": 6,
+    "sel": 6,
+    "any": 11,
+    "both": false,
+    "base": 0.0284,
+    "lift": 1.62,
+    "mult": 0.93
+   },
+   {
+    "id": "R2",
+    "name": "Ponovljeni preokret iz zadnjeg međusobnog",
+    "n": 24,
+    "hits": 1,
+    "sel": 1,
+    "any": 1,
+    "both": false,
+    "base": 0.0298,
+    "lift": 1.4,
+    "mult": 1.01
+   },
+   {
+    "id": "R3",
+    "name": "Zbir preokreta obje ekipe (zadnjih 10)",
+    "n": 121,
+    "hits": 5,
+    "sel": 5,
+    "any": 6,
+    "both": false,
+    "base": 0.0302,
+    "lift": 1.37,
+    "mult": 1.03
+   },
+   {
+    "id": "R4",
+    "name": "Ekipa sklona preokretima (zadnjih 15)",
+    "n": 887,
+    "hits": 51,
+    "sel": 34,
+    "any": 51,
+    "both": true,
+    "base": 0.0578,
+    "lift": 1.0,
+    "mult": 0.68
+   },
+   {
+    "id": "R5",
+    "name": "Gust raspored: kup ili Evropa oko utakmice",
+    "n": 171,
+    "hits": 5,
+    "sel": 5,
+    "any": 7,
+    "both": false,
+    "base": 0.0295,
+    "lift": 0.99,
+    "mult": 0.9
+   },
+   {
+    "id": "R6",
+    "name": "Svjež preokret + preokret kod druge ekipe",
+    "n": 38,
+    "hits": 1,
+    "sel": 0,
+    "any": 1,
+    "both": true,
+    "base": 0.0619,
+    "lift": 0.42,
+    "mult": 0.81
+   },
+   {
+    "id": "R7",
+    "name": "Zadnji međusobni preokret + preokret ekipe u zadnjih 10",
+    "n": 41,
+    "hits": 4,
+    "sel": 4,
+    "any": 5,
+    "both": false,
+    "base": 0.0298,
+    "lift": 3.28,
+    "mult": 1.22
+   }
+  ]
+ },
+ "leagues": 93,
+ "fixturesSeen": 11,
+ "analysed": 11,
+ "upsetStats": {
+  "n": 112,
+  "won": 17,
+  "avgOdds": 3.99
+ },
+ "k2": [
+  {
+   "fixtureId": 1000017586,
+   "utc": "2026-11-27T08:40+00:00",
+   "kickoff": "09:40",
+   "date": "2026-11-27",
+   "league": "Australija · A-League",
+   "home": "Macarthur FC",
+   "away": "Melbourne City FC",
+   "pick": "1",
+   "estOdds": 2.31,
+   "both": false,
+   "why": [
+    "Macarthur FC dobio zadnja 2 međusobna kod kuće: 6:2 (24.01.2026); 1:0 (25.01.2025)"
+   ]
+  }
+ ],
+ "k2Stats": {
+  "n": 97,
+  "won": 50
+ },
+ "upsets": [],
+ "screened": [
+  [
+   "27.11. 09:40",
+   "AUS A-League",
+   "Macarthur FC – Melbourne City FC",
+   21,
+   "1/2 · 2/1"
+  ],
+  [
+   "27.11. 12:00",
+   "ARM Premier League",
+   "Syunik – Van",
+   0,
+   ""
+  ],
+  [
+   "27.11. 09:30",
+   "AUS Australia Championship",
+   "Broadmeadow Magic – Lions FC",
+   0,
+   ""
+  ],
+  [
+   "26.11. 21:00",
+   "ENG League One",
+   "Doncaster – Huddersfield",
+   9,
+   "1/2"
+  ],
+  [
+   "26.11. 15:00",
+   "RUS First League",
+   "Ural – Arsenal",
+   0,
+   ""
+  ],
+  [
+   "26.11. 17:00",
+   "RUS First League",
+   "Nizhny Novgorod – Tekstilshchik",
+   0,
+   ""
+  ],
+  [
+   "26.11. 19:00",
+   "DEN 1. Division",
+   "AaB – Esbjerg fB",
+   0,
+   ""
+  ],
+  [
+   "26.11. 15:45",
+   "ROU Liga II",
+   "Gloria Bistrița – CSM Slatina",
+   9,
+   "1/2"
+  ],
+  [
+   "26.11. 23:00",
+   "CHI Liga de Ascenso",
+   "Santiago Wanderers – Deportes Recoleta",
+   0,
+   ""
+  ],
+  [
+   "26.11. 15:15",
+   "QAT Second Division",
+   "Muaither SC – Al-Waab SC",
+   26,
+   "2/1"
+  ],
+  [
+   "26.11. 17:30",
+   "QAT Second Division",
+   "Umm Salal – Al-Rayyan II",
+   0,
+   ""
+  ]
+ ],
+ "withData": 10,
+ "candidates": 4,
+ "tips": 2,
+ "calls": 89,
+ "detailCalls": 56,
+ "errors": 0,
+ "minutes": 0.4,
+ "notes": [],
+ "matches": [
+  {
+   "fixtureId": 1000018632,
+   "docId": "2026-11-26_muaither_al-waab",
+   "utc": "2026-11-26T14:15+00:00",
+   "league": "Katar · Second Division",
+   "stage": "Second Division",
+   "home": "Muaither SC",
+   "away": "Al-Waab SC",
+   "score": 26,
+   "cand": {
+    "sel": "2/1",
+    "score": 26
+   },
+   "htftTip": {
+    "sel": "2/1",
+    "score": 26
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 0,
+      "last15": 2
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 13
+     },
+     "h2h": 4
+    }
+   },
+   "h2h": [
+    "2026-02-08 Al-Waab SC–Muaither SC 2:3 (PV 2:0)",
+    "2025-08-26 Muaither SC–Al-Waab SC 1:0 (PV 0:0)",
+    "2025-02-14 Muaither SC–Al-Waab SC 2:2 (PV 1:1)",
+    "2024-10-03 Al-Waab SC–Muaither SC 4:3 (PV 3:0)"
+   ],
+   "homeLast": [
+    "2026-11-04 Al-Bidda SC–Muaither SC 1:0 (PV 1:0)",
+    "2026-10-28 Al-Shamal II–Muaither SC 1:1 (PV 1:1)",
+    "2026-09-07 Al-Gharafa II–Muaither SC 0:1 (PV 0:0)",
+    "2026-08-31 Muaither SC–Al-Rayyan II 5:1 (PV 3:1)",
+    "2026-08-24 Al Mesaimeer–Muaither SC 1:0 (PV 0:0)",
+    "2026-04-30 Al Mesaimeer–Muaither SC 1:3 (PV 0:1)",
+    "2026-04-25 Muaither SC–Al-Kharaitiyat SC 1:2 (PV 0:0)",
+    "2026-04-18 Al-Bidda SC–Muaither SC 3:4 (PV 0:2)",
+    "2026-04-15 Al-Rayyan–Muaither SC 2:0 (PV 1:0)",
+    "2026-04-05 Al Markhiya–Muaither SC 3:4 (PV 1:2)",
+    "2026-03-29 Muaither SC–Al-Arabi 3:3 (PV 3:1)",
+    "2026-03-25 Muaither SC–Al Markhiya 3:2 (PV 0:1)",
+    "2026-03-14 Muaither SC–Lusail SC 2:2 (PV 0:0)",
+    "2026-02-08 Al-Waab SC–Muaither SC 2:3 (PV 2:0)",
+    "2026-02-03 Muaither SC–Al-Khor 1:1 (PV 1:1)"
+   ],
+   "awayLast": [
+    "2026-11-05 Al Markhiya–Al-Waab SC 2:0 (PV 0:0)",
+    "2026-10-29 Al-Waab SC–Al-Kharaitiyat SC 0:1 (PV 0:0)",
+    "2026-10-14 Al-Waab SC–Umm Salal 0:1 (PV 0:0)",
+    "2026-08-31 Al-Shamal II–Al-Waab SC 0:2 (PV 0:1)",
+    "2026-08-25 Al-Waab SC–Al-Rayyan II 1:0 (PV 1:0)",
+    "2026-04-30 Al-Kharaitiyat SC–Al-Waab SC 0:1 (PV 0:0)",
+    "2026-04-25 Al Mesaimeer–Al-Waab SC 3:0 (PV 2:0)",
+    "2026-04-12 Al-Waab SC–Al Markhiya 1:1 (PV 0:0)",
+    "2026-04-05 Al-Bidda SC–Al-Waab SC 0:2 (PV 0:1)",
+    "2026-03-25 Al-Arabi–Al-Waab SC 3:1 (PV 1:1)",
+    "2026-03-15 Al-Waab SC–Al-Khor 1:2 (PV 0:1)",
+    "2026-02-08 Al-Waab SC–Muaither SC 2:3 (PV 2:0)",
+    "2026-02-03 Lusail SC–Al-Waab SC 1:2 (PV 0:2)"
+   ],
+   "doc": {
+    "date": "2026-11-26",
+    "kickoff": "15:15",
+    "league": "Katar · Second Division",
+    "home": "Muaither SC",
+    "away": "Al-Waab SC",
+    "pairId": "al-waab__muaither",
+    "venue": "Grand Hamad Stadium (Al-Arabi Stadium)",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "2/1",
+      "s": 3,
+      "conf": "V",
+      "note": "Muaither SC 2× okrenut minus s PV (zadnjih 15); međusobni 08.02.2026 1/2",
+      "src": [
+       "https://www.fotmob.com/matches/muaither-sc-vs-al-waab-sc/x8davu4p#1000018632"
+      ],
+      "by": "korisnik",
+      "rule": "R1"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "2/1",
+     "score": 26
+    },
+    "cand": {
+     "sel": "2/1",
+     "score": 26
+    },
+    "reasoning": "Muaither SC: okrenut minus s PV (zadnjih 15) – protiv Al Markhiya 3:2 (PV 0:1) 25.03.; Al-Waab SC–Muaither SC 2:3 (PV 2:0) 08.02. (međusobni). Al-Waab SC: ispušteno vodstvo s PV (zadnjih 15) – protiv Muaither SC 2:3 (PV 2:0) 08.02. (međusobni). Puno golova u mečevima ovih ekipa, što ide u prilog preokretu.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/muaither-sc-vs-al-waab-sc/x8davu4p#1000018632"
+    ],
+    "createdAt": "2026-11-26T13:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000018632
+    },
+    "fixtureId": 1000018632
+   }
+  },
+  {
+   "fixtureId": 1000017586,
+   "docId": "2026-11-27_macarthur_melbourne-city",
+   "utc": "2026-11-27T08:40+00:00",
+   "league": "Australija · A-League",
+   "stage": "A-League",
+   "home": "Macarthur FC",
+   "away": "Melbourne City FC",
+   "score": 21,
+   "cand": {
+    "sel": "1/2",
+    "score": 21,
+    "alt": "2/1"
+   },
+   "htftTip": {
+    "sel": "1/2",
+    "score": 21,
+    "alt": "2/1"
+   },
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 1,
+      "away5": 1,
+      "last10": 2,
+      "last15": 2
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-01-24 Macarthur FC–Melbourne City FC 6:2 (PV 3:1)",
+    "2025-12-23 Melbourne City FC–Macarthur FC 1:1 (PV 1:1)",
+    "2025-03-07 Melbourne City FC–Macarthur FC 2:0 (PV 1:0)",
+    "2025-01-25 Macarthur FC–Melbourne City FC 1:0 (PV 0:0)",
+    "2024-03-01 Macarthur FC–Melbourne City FC 2:0 (PV 0:0)",
+    "2023-11-12 Melbourne City FC–Macarthur FC 3:3 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-22 Wellington Phoenix–Macarthur FC 1:2 (PV 0:2)",
+    "2026-11-08 Macarthur FC–Brisbane Roar FC 1:2 (PV 0:0)",
+    "2026-10-31 Macarthur FC–Western Sydney 0:0 (PV 0:0)",
+    "2026-10-24 Newcastle Jets–Macarthur FC 1:1 (PV 1:0)",
+    "2026-10-17 Macarthur FC–Perth Glory 2:1 (PV 0:0)",
+    "2026-04-24 Macarthur FC–Wellington Phoenix 4:0 (PV 3:0)",
+    "2026-04-19 Adelaide United–Macarthur FC 3:1 (PV 0:1)",
+    "2026-04-12 Perth Glory–Macarthur FC 3:1 (PV 0:0)",
+    "2026-04-02 Macarthur FC–Newcastle Jets 3:2 (PV 2:2)",
+    "2026-03-21 Auckland FC–Macarthur FC 1:2 (PV 0:2)",
+    "2026-03-15 Melbourne Victory–Macarthur FC 4:1 (PV 2:1)",
+    "2026-03-04 Macarthur FC–Central Coast 1:3 (PV 0:1)",
+    "2026-02-28 Macarthur FC–Western Sydney 0:4 (PV 0:3)",
+    "2026-02-22 Newcastle Jets–Macarthur FC 1:0 (PV 0:0)",
+    "2026-02-06 Macarthur FC–Perth Glory 2:2 (PV 0:1)"
+   ],
+   "awayLast": [
+    "2026-11-07 Melbourne City FC–Western Sydney 2:1 (PV 1:1)",
+    "2026-10-31 Melbourne City FC–Sydney FC 2:1 (PV 0:1)",
+    "2026-10-24 Melbourne Victory–Melbourne City FC 1:1 (PV 1:0)",
+    "2026-10-17 Auckland FC–Melbourne City FC 3:1 (PV 1:1)",
+    "2026-05-02 Auckland FC–Melbourne City FC 1:1 (PV 1:0)",
+    "2026-04-26 Melbourne City FC–Adelaide United 1:2 (PV 1:0)",
+    "2026-04-18 Brisbane Roar FC–Melbourne City FC 2:3 (PV 1:0)",
+    "2026-04-12 Melbourne City FC–Wellington Phoenix 2:0 (PV 1:0)",
+    "2026-04-07 Melbourne City FC–Central Coast 2:1 (PV 1:0)",
+    "2026-04-04 Melbourne City FC–Western Sydney 3:0 (PV 2:0)",
+    "2026-03-22 Perth Glory–Melbourne City FC 1:1 (PV 0:1)",
+    "2026-03-17 Sydney FC–Melbourne City FC 0:1 (PV 0:0)",
+    "2026-02-28 Auckland FC–Melbourne City FC 3:0 (PV 1:0)",
+    "2026-02-21 Melbourne City FC–Melbourne Victory 1:3 (PV 1:1)",
+    "2026-02-07 Western Sydney–Melbourne City FC 1:1 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-27",
+    "kickoff": "09:40",
+    "league": "Australija · A-League",
+    "home": "Macarthur FC",
+    "away": "Melbourne City FC",
+    "pairId": "macarthur__melbourne-city",
+    "venue": "Campbelltown Sports Stadium",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Preokreti 1/2 u zadnjih 10: Macarthur FC 1, Melbourne City FC 2",
+      "src": [
+       "https://www.fotmob.com/matches/melbourne-city-fc-vs-macarthur-fc/cqynav7n#1000017586"
+      ],
+      "by": "web",
+      "rule": "R3"
+     },
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 2,
+      "conf": "V",
+      "note": "Melbourne City FC: 3 preokreta u zadnjih 15",
+      "src": [
+       "https://www.fotmob.com/matches/melbourne-city-fc-vs-macarthur-fc/cqynav7n#1000017586"
+      ],
+      "by": "korisnik",
+      "rule": "R4",
+      "both": true
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": {
+     "sel": "1/2",
+     "score": 21,
+     "alt": "2/1"
+    },
+    "cand": {
+     "sel": "1/2",
+     "score": 21,
+     "alt": "2/1"
+    },
+    "reasoning": "Melbourne City FC, preokreti: protiv Sydney FC 2:1 (PV 0:1) 31.10.; protiv Adelaide United 1:2 (PV 1:0) 26.04.; Brisbane Roar FC–Melbourne City FC 2:3 (PV 1:0) 18.04.",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/melbourne-city-fc-vs-macarthur-fc/cqynav7n#1000017586"
+    ],
+    "createdAt": "2026-11-26T13:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 1000017586
+    },
+    "fixtureId": 1000017586
+   }
+  },
+  {
+   "fixtureId": 5976976,
+   "docId": "2026-11-26_gloria-bistrita_csm-slatina",
+   "utc": "2026-11-26T14:45+00:00",
+   "league": "Rumunija · Liga II",
+   "stage": "Liga II",
+   "home": "Gloria Bistrița",
+   "away": "CSM Slatina",
+   "score": 9,
+   "cand": {
+    "sel": "1/2",
+    "score": 9
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 1,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 2
+    }
+   },
+   "h2h": [
+    "2026-03-21 Gloria Bistrița–CSM Slatina 1:2 (PV 1:0)",
+    "2025-08-02 CSM Slatina–Gloria Bistrița 0:0 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-20 FC Bihor Oradea–Gloria Bistrița 5:1 (PV 2:0)",
+    "2026-11-07 Gloria Bistrița–Cetatea Suceava 3:1 (PV 2:0)",
+    "2026-11-01 CSM Reșița–Gloria Bistrița 1:0 (PV 1:0)",
+    "2026-10-29 Gloria Bistrița–FCSB 1:0 (PV 1:0)",
+    "2026-10-24 Gloria Bistrița–CSC Dumbrăvița 2:1 (PV 1:1)",
+    "2026-10-18 FC Bacău–Gloria Bistrița 3:0 (PV 3:0)",
+    "2026-09-19 Steaua București–Gloria Bistrița 2:1 (PV 1:0)",
+    "2026-09-12 Gloria Bistrița–Popești Leordeni 2:3 (PV 2:3)",
+    "2026-09-05 CSL Ștefănești–Gloria Bistrița 1:2 (PV 1:2)",
+    "2026-09-02 Gloria Bistrița–Csikszereda Miercurea Ciuc 0:2 (PV 0:1)",
+    "2026-08-29 Gloria Bistrița–CSM Olimpia Satu Mare 1:0 (PV 0:0)",
+    "2026-08-22 ASA Târgu Mureș–Gloria Bistrița 1:0 (PV 1:0)",
+    "2026-08-15 Gloria Bistrița–Concordia Chiajna 1:2 (PV 1:1)",
+    "2026-08-07 FC Unirea Slobozia–Gloria Bistrița 0:3 (PV 0:0)",
+    "2026-08-01 Gloria Bistrița–Comunal Șelimbăr 2:1 (PV 0:0)"
+   ],
+   "awayLast": [
+    "2026-11-21 CSM Slatina–ASA Târgu Mureș 3:2 (PV 2:1)",
+    "2026-11-07 FC Bihor Oradea–CSM Slatina 0:1 (PV 0:1)",
+    "2026-11-01 CSM Slatina–Concordia Chiajna 1:2 (PV 0:2)",
+    "2026-10-24 Cetatea Suceava–CSM Slatina 2:0 (PV 1:0)",
+    "2026-10-17 CSM Slatina–FC Unirea Slobozia 1:0 (PV 1:0)",
+    "2026-10-10 CSM Reșița–CSM Slatina 3:1 (PV 1:1)",
+    "2026-09-19 CSM Slatina–Comunal Șelimbăr 2:1 (PV 0:1)",
+    "2026-09-12 CSC Dumbrăvița–CSM Slatina 0:2 (PV 0:1)",
+    "2026-09-04 CSM Slatina–Chindia Târgoviște 3:2 (PV 1:0)",
+    "2026-08-31 FC Bacău–CSM Slatina 0:0 (PV 0:0)",
+    "2026-08-22 CSM Slatina–Metalul Buzău 2:0 (PV 1:0)",
+    "2026-08-15 Râmnicu Vâlcea–CSM Slatina 0:1 (PV 0:0)",
+    "2026-08-08 CSM Slatina–CS Dinamo București 5:1 (PV 3:0)",
+    "2026-08-02 Steaua București–CSM Slatina 1:2 (PV 0:1)",
+    "2026-05-09 CSM Slatina–CSM Politehnica Iași 1:0 (PV 0:0)"
+   ],
+   "doc": {
+    "date": "2026-11-26",
+    "kickoff": "15:45",
+    "league": "Rumunija · Liga II",
+    "home": "Gloria Bistrița",
+    "away": "CSM Slatina",
+    "pairId": "csm-slatina__gloria-bistrita",
+    "venue": null,
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 1/2 (21.03.2026); u zadnjih 10: CSM Slatina 1×",
+      "src": [
+       "https://www.fotmob.com/matches/csm-slatina-vs-gloria-bistrita/r9idw96e#5976976"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 9
+    },
+    "reasoning": "CSM Slatina: okrenut minus s PV (5 kod kuće) – protiv Comunal Șelimbăr 2:1 (PV 0:1) 19.09. Međusobni 21.03.2026 kod domaćina: Gloria Bistrița–CSM Slatina 1:2 (PV 1:0).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/csm-slatina-vs-gloria-bistrita/r9idw96e#5976976"
+    ],
+    "createdAt": "2026-11-26T13:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5976976
+    },
+    "fixtureId": 5976976
+   }
+  },
+  {
+   "fixtureId": 5837281,
+   "docId": "2026-11-26_doncaster_huddersfield",
+   "utc": "2026-11-26T20:00+00:00",
+   "league": "Engleska · League One",
+   "stage": "League One",
+   "home": "Doncaster",
+   "away": "Huddersfield",
+   "score": 9,
+   "cand": {
+    "sel": "1/2",
+    "score": 9
+   },
+   "htftTip": null,
+   "stats": {
+    "1/2": {
+     "h": {
+      "home5": 1,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 1
+     }
+    },
+    "2/1": {
+     "h": {
+      "home5": 0,
+      "away5": 1,
+      "last10": 1,
+      "last15": 1
+     },
+     "a": {
+      "home5": 0,
+      "away5": 0,
+      "last10": 0,
+      "last15": 0
+     }
+    },
+    "n": {
+     "h": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "a": {
+      "home5": 5,
+      "away5": 5,
+      "last10": 10,
+      "last15": 15
+     },
+     "h2h": 6
+    }
+   },
+   "h2h": [
+    "2026-09-08 Doncaster–Huddersfield 1:3 (PV 1:0)",
+    "2026-02-17 Doncaster–Huddersfield 1:0 (PV 1:0)",
+    "2026-02-10 Huddersfield Town–Doncaster Rovers 1:1 (PV 0:1)",
+    "2025-08-19 Huddersfield–Doncaster 2:0 (PV 0:0)",
+    "2024-09-03 Doncaster Rovers–Huddersfield Town 2:1 (PV 1:0)",
+    "2022-07-16 Doncaster Rovers–Huddersfield Town 1:0 (PV 0:0)"
+   ],
+   "homeLast": [
+    "2026-11-21 Bradford–Doncaster 2:2 (PV 0:0)",
+    "2026-11-07 Kidderminster Harriers–Doncaster 3:0 (PV 2:0)",
+    "2026-11-03 Rochdale–Doncaster 1:4 (PV 1:0)",
+    "2026-10-31 MK Dons–Doncaster 6:1 (PV 2:0)",
+    "2026-10-27 Luton–Doncaster 3:1 (PV 1:0)",
+    "2026-10-24 Doncaster–Sheff Wed 2:0 (PV 2:0)",
+    "2026-10-20 Doncaster–Stockport County 0:2 (PV 0:0)",
+    "2026-10-17 Leicester–Doncaster 2:1 (PV 1:0)",
+    "2026-10-10 Doncaster–Burton 1:0 (PV 1:0)",
+    "2026-10-06 Doncaster–Liverpool U21 1:0 (PV 1:0)",
+    "2026-09-19 Peterborough–Doncaster 0:2 (PV 0:1)",
+    "2026-09-12 Wimbledon–Doncaster 1:0 (PV 1:0)",
+    "2026-09-08 Doncaster–Huddersfield 1:3 (PV 1:0)",
+    "2026-09-05 Doncaster–Plymouth 2:3 (PV 0:1)",
+    "2026-09-01 Doncaster–Notts County 1:1 (PV 1:0)"
+   ],
+   "awayLast": [
+    "2026-11-21 Huddersfield–Leicester 0:1 (PV 0:0)",
+    "2026-11-10 Huddersfield–Liverpool U21 4:0 (PV 3:0)",
+    "2026-11-07 Huddersfield–Exeter 1:2 (PV 0:1)",
+    "2026-11-03 Huddersfield–Luton 1:1 (PV 0:1)",
+    "2026-10-31 Bradford–Huddersfield 0:3 (PV 0:1)",
+    "2026-10-24 Huddersfield–Wigan 2:1 (PV 1:0)",
+    "2026-10-20 Huddersfield–Peterborough 4:1 (PV 1:0)",
+    "2026-10-17 Plymouth–Huddersfield 0:2 (PV 0:1)",
+    "2026-10-10 Huddersfield–Sheff Wed 2:2 (PV 0:0)",
+    "2026-10-06 Huddersfield–Rochdale 5:0 (PV 2:0)",
+    "2026-10-03 Burton–Huddersfield 1:3 (PV 1:2)",
+    "2026-09-19 Bromley–Huddersfield 2:1 (PV 1:1)",
+    "2026-09-12 Mansfield–Huddersfield 0:0 (PV 0:0)",
+    "2026-09-08 Doncaster–Huddersfield 1:3 (PV 1:0)",
+    "2026-09-05 Huddersfield–Notts County 1:1 (PV 1:1)"
+   ],
+   "doc": {
+    "date": "2026-11-26",
+    "kickoff": "21:00",
+    "league": "Engleska · League One",
+    "home": "Doncaster",
+    "away": "Huddersfield",
+    "pairId": "doncaster__huddersfield",
+    "venue": "Club Doncaster Sports Village",
+    "neutral": false,
+    "signals": [
+     {
+      "cat": "K7",
+      "dir": "1/2",
+      "s": 1,
+      "conf": "V",
+      "note": "Zadnji međusobni 1/2 (08.09.2026); u zadnjih 10: Doncaster 1×",
+      "src": [
+       "https://www.fotmob.com/matches/huddersfield-town-vs-doncaster-rovers/37j24d#5837281"
+      ],
+      "by": "korisnik",
+      "rule": "R7"
+     }
+    ],
+    "warnings": [],
+    "tip": "PASS",
+    "score": null,
+    "htftTip": null,
+    "cand": {
+     "sel": "1/2",
+     "score": 9
+    },
+    "reasoning": "Doncaster: ispušteno vodstvo s PV (5 kod kuće) – protiv Huddersfield 1:3 (PV 1:0) 08.09. (međusobni). Huddersfield: okrenut minus s PV (zadnjih 15) – Doncaster–Huddersfield 1:3 (PV 1:0) 08.09. (međusobni).",
+    "odds": null,
+    "htftOdds": null,
+    "status": "pending",
+    "fbPending": false,
+    "sources": [
+     "https://www.fotmob.com/matches/huddersfield-town-vs-doncaster-rovers/37j24d#5837281"
+    ],
+    "createdAt": "2026-11-26T13:14:24+00:00",
+    "run": {
+     "screener": true,
+     "source": "fotmob",
+     "fixtureId": 5837281
+    },
+    "fixtureId": 5837281
+   }
+  }
+ ]
+}

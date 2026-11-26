@@ -1,0 +1,62 @@
+{
+ "date": "2026-11-25",
+ "updatedAt": "2026-11-26T13:14:24+00:00",
+ "matches": [
+  {
+   "fixtureId": 5916109,
+   "docId": "2026-11-25_eintracht-frankfurt-ii_mainz-05-ii",
+   "status": "VOID",
+   "ht": null,
+   "ft": null,
+   "htft": null
+  },
+  {
+   "fixtureId": 5897675,
+   "docId": "2026-11-25_kamaz_yenisey-krasnoyarsk",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-2",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5874232,
+   "docId": "2026-11-25_ludogorets-razgrad-ii_etar",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-1",
+   "htft": "1/X"
+  },
+  {
+   "fixtureId": 5885630,
+   "docId": "2026-11-25_talavera-de-la-reina_conquense",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-0",
+   "htft": "X/1"
+  },
+  {
+   "fixtureId": 5836957,
+   "docId": "2026-11-25_watford_blackburn",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 1000022020,
+   "docId": "2026-11-26_barcelona_independiente-del-valle",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 6011918,
+   "docId": "2026-11-26_borneo-samarinda_persita",
+   "status": "FT",
+   "ht": "1-1",
+   "ft": "2-3",
+   "htft": "X/2"
+  }
+ ]
+}
