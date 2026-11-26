@@ -1,17 +1,17 @@
 {
  "date": "2026-11-26",
- "generatedAt": "2026-11-26T13:14:24+00:00",
+ "generatedAt": "2026-11-26T14:02:55+00:00",
  "window": [
-  "2026-11-26T13:14+00:00",
-  "2026-11-27T13:14+00:00"
+  "2026-11-26T14:02+00:00",
+  "2026-11-27T14:02+00:00"
  ],
  "rules": {
-  "n": 5011,
+  "n": 5012,
   "base": {
-   "1/2": 0.0212,
+   "1/2": 0.0211,
    "2/1": 0.0307
   },
-  "at": "2026-11-26T13:14:30+00:00",
+  "at": "2026-11-26T14:02:56+00:00",
   "rules": [
    {
     "id": "R1",
@@ -57,7 +57,7 @@
     "sel": 34,
     "any": 51,
     "both": true,
-    "base": 0.0578,
+    "base": 0.0577,
     "lift": 1.0,
     "mult": 0.68
    },
@@ -100,8 +100,8 @@
   ]
  },
  "leagues": 93,
- "fixturesSeen": 11,
- "analysed": 11,
+ "fixturesSeen": 10,
+ "analysed": 10,
  "upsetStats": {
   "n": 112,
   "won": 17,
@@ -159,13 +159,6 @@
    "1/2"
   ],
   [
-   "26.11. 15:00",
-   "RUS First League",
-   "Ural – Arsenal",
-   0,
-   ""
-  ],
-  [
    "26.11. 17:00",
    "RUS First League",
    "Nizhny Novgorod – Tekstilshchik",
@@ -208,13 +201,13 @@
    ""
   ]
  ],
- "withData": 10,
+ "withData": 9,
  "candidates": 4,
  "tips": 2,
- "calls": 89,
- "detailCalls": 56,
+ "calls": 13,
+ "detailCalls": 11,
  "errors": 0,
- "minutes": 0.4,
+ "minutes": 0.1,
  "notes": [],
  "matches": [
   {
@@ -359,7 +352,7 @@
     "sources": [
      "https://www.fotmob.com/matches/muaither-sc-vs-al-waab-sc/x8davu4p#1000018632"
     ],
-    "createdAt": "2026-11-26T13:14:24+00:00",
+    "createdAt": "2026-11-26T14:02:55+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -531,7 +524,7 @@
     "sources": [
      "https://www.fotmob.com/matches/melbourne-city-fc-vs-macarthur-fc/cqynav7n#1000017586"
     ],
-    "createdAt": "2026-11-26T13:14:24+00:00",
+    "createdAt": "2026-11-26T14:02:55+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -676,7 +669,7 @@
     "sources": [
      "https://www.fotmob.com/matches/csm-slatina-vs-gloria-bistrita/r9idw96e#5976976"
     ],
-    "createdAt": "2026-11-26T13:14:24+00:00",
+    "createdAt": "2026-11-26T14:02:55+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
@@ -825,7 +818,7 @@
     "sources": [
      "https://www.fotmob.com/matches/huddersfield-town-vs-doncaster-rovers/37j24d#5837281"
     ],
-    "createdAt": "2026-11-26T13:14:24+00:00",
+    "createdAt": "2026-11-26T14:02:55+00:00",
     "run": {
      "screener": true,
      "source": "fotmob",
