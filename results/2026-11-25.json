@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "updatedAt": "2026-11-26T13:14:24+00:00",
+ "updatedAt": "2026-11-27T13:12:01+00:00",
  "matches": [
   {
    "fixtureId": 5916109,
@@ -57,6 +57,14 @@
    "ht": "1-1",
    "ft": "2-3",
    "htft": "X/2"
+  },
+  {
+   "fixtureId": 1000018632,
+   "docId": "2026-11-26_muaither_al-waab",
+   "status": "NOHT",
+   "ht": null,
+   "ft": "3-3",
+   "htft": null
   }
  ]
 }

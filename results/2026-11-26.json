@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-26",
+ "updatedAt": "2026-11-27T13:12:01+00:00",
+ "matches": [
+  {
+   "fixtureId": 5837281,
+   "docId": "2026-11-26_doncaster_huddersfield",
+   "status": "FT",
+   "ht": "1-2",
+   "ft": "2-3",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5976976,
+   "docId": "2026-11-26_gloria-bistrita_csm-slatina",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 1000018632,
+   "docId": "2026-11-26_muaither_al-waab",
+   "status": "NOHT",
+   "ht": null,
+   "ft": "3-3",
+   "htft": null
+  },
+  {
+   "fixtureId": 1000017586,
+   "docId": "2026-11-27_macarthur_melbourne-city",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  }
+ ]
+}
