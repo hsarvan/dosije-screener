@@ -1,0 +1,142 @@
+{
+ "date": "2026-11-27",
+ "updatedAt": "2026-11-28T12:27:50+00:00",
+ "matches": [
+  {
+   "fixtureId": 5883362,
+   "docId": "2026-11-27_athletic-b_cultural-leonesa",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5910949,
+   "docId": "2026-11-27_bfc-dynamo_rw-erfurt",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-2",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5861999,
+   "docId": "2026-11-27_chrobry-glogow_skierniewice",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 1000015515,
+   "docId": "2026-11-27_genk-u23_anderlecht-futures",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-5",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5764478,
+   "docId": "2026-11-27_hvidovre_kolding-if",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "2-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5804623,
+   "docId": "2026-11-27_kriens_aarau",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5875036,
+   "docId": "2026-11-27_wacker-innsbruck_first-vienna",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "0-1",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 6503957,
+   "docId": "2026-11-28_anyang_jeju",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "1-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5976975,
+   "docId": "2026-11-28_asa-targu-mures_csm-olimpia-satu-mare",
+   "status": "FT",
+   "ht": "1-0",
+   "ft": "2-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6503958,
+   "docId": "2026-11-28_bucheon-1995_gimcheon-sangmu",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-2",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 5976980,
+   "docId": "2026-11-28_comunal-selimbar_steaua-bucuresti",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "0-4",
+   "htft": "2/2"
+  },
+  {
+   "fixtureId": 5976973,
+   "docId": "2026-11-28_concordia-chiajna_csl-stefanesti",
+   "status": "FT",
+   "ht": "3-0",
+   "ft": "4-0",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 5976974,
+   "docId": "2026-11-28_cs-dinamo-bucuresti_csc-dumbravita",
+   "status": "FT",
+   "ht": "0-1",
+   "ft": "1-1",
+   "htft": "2/X"
+  },
+  {
+   "fixtureId": 5803675,
+   "docId": "2026-11-28_kashima-antlers_fagiano-okayama",
+   "status": "FT",
+   "ht": "0-0",
+   "ft": "1-1",
+   "htft": "X/X"
+  },
+  {
+   "fixtureId": 5803678,
+   "docId": "2026-11-28_kyoto-sanga_cerezo-osaka",
+   "status": "FT",
+   "ht": "2-1",
+   "ft": "4-1",
+   "htft": "1/1"
+  },
+  {
+   "fixtureId": 6503959,
+   "docId": "2026-11-28_pohang-steelers_gwangju",
+   "status": "FT",
+   "ht": "2-2",
+   "ft": "2-4",
+   "htft": "X/2"
+  },
+  {
+   "fixtureId": 6503841,
+   "docId": "2026-11-28_seoul_daejeon-hana-citizen",
+   "status": "FT",
+   "ht": "2-0",
+   "ft": "4-1",
+   "htft": "1/1"
+  }
+ ]
+}
